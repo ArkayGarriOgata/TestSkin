@@ -29,7 +29,9 @@
 					"top": 16,
 					"width": 330,
 					"height": 17,
-					"dataSource": "Form:C1466.tSource"
+					"dataSource": "tSource",
+					"enterable": false,
+					"events": []
 				},
 				"Skin_Entr_nSource": {
 					"type": "button",
@@ -40,7 +42,8 @@
 					"height": 20,
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/Skin_Entr_nSource.4dm"
 				},
 				"Skin_Entr_tDestination": {
 					"type": "input",
@@ -48,7 +51,7 @@
 					"top": 49,
 					"width": 330,
 					"height": 17,
-					"dataSource": "Form:C1466.tDestination"
+					"dataSource": "tDestination"
 				},
 				"Skin_Entr_nDestination": {
 					"type": "button",
@@ -64,7 +67,7 @@
 				"Skin_Entr_nOnLoad": {
 					"type": "button",
 					"text": "OnLoad",
-					"top": 134,
+					"top": 329,
 					"left": 13,
 					"width": 80,
 					"height": 20,
@@ -142,7 +145,7 @@
 				},
 				"Skin_Entr_nOK": {
 					"type": "pictureButton",
-					"top": 79,
+					"top": 275,
 					"left": 423,
 					"width": 28,
 					"height": 28,
@@ -154,11 +157,12 @@
 					"method": "ObjectMethods/Skin_Entr_nOK.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"switchBackWhenReleased": true
 				},
 				"Skin_Entr_nCancel": {
 					"type": "pictureButton",
-					"top": 79,
+					"top": 275,
 					"left": 395,
 					"width": 28,
 					"height": 28,
@@ -170,12 +174,32 @@
 					"method": "ObjectMethods/Skin_Entr_nCancel.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"switchBackWhenReleased": true
+				},
+				"atSelected": {
+					"type": "list",
+					"left": 13,
+					"top": 111,
+					"width": 373,
+					"height": 192,
+					"events": [
+						"onSelectionChange"
+					],
+					"dataSource": "atSelected"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Selected Files",
+					"top": 93,
+					"left": 12,
+					"width": 90,
+					"height": 16
 				}
 			}
 		}
 	],
-	"geometryStamp": 101,
+	"geometryStamp": 120,
 	"formSizeAnchor": "Skin_Entr_nOK",
 	"editor": {
 		"activeView": "View 1",
