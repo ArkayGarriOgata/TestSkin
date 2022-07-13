@@ -1,0 +1,380 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 97,
+	"markerBody": 122,
+	"markerBreak": 124,
+	"markerFooter": 162,
+	"events": [
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 10,
+					"width": 67,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Job Form"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 77,
+					"left": 144,
+					"width": 130,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "RM Code"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 77,
+					"left": 404,
+					"width": 38,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "UOM"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 77,
+					"left": 287,
+					"width": 94,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": " Planned Qty"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 77,
+					"left": 546,
+					"width": 160,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "CommKey"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 77,
+					"left": 465,
+					"width": 68,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "CC"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 101,
+					"left": 8,
+					"width": 74,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]JobForm:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 101,
+					"left": 100,
+					"width": 25,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]Sequence:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 101,
+					"left": 144,
+					"width": 130,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]Raw_Matl_Code:7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 101,
+					"left": 287,
+					"width": 94,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]Planned_Qty:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 101,
+					"left": 404,
+					"width": 38,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]UOM:5",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 101,
+					"left": 465,
+					"width": 68,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]CostCenterID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 101,
+					"left": 546,
+					"width": 160,
+					"height": 15,
+					"dataSource": "[Job_Forms_Materials:55]Commodity_Key:12",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 132,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Next",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 132,
+					"left": 108,
+					"width": 103,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"action": "accept",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Print Pick List",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 132,
+					"left": 94,
+					"width": 5,
+					"height": 5,
+					"dataSource": "bNext",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 77,
+					"left": 101,
+					"width": 27,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Seq"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

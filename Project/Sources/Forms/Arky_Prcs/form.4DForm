@@ -1,0 +1,568 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "CorenHList1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Arky_nPrcs_Home": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 13,
+					"width": 42,
+					"height": 42,
+					"picture": "/RESOURCES/Skin/Master/StoryBoard.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_Home.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CorenHList1": {
+					"type": "list",
+					"top": 58,
+					"left": 612,
+					"width": 198,
+					"height": 420,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CorenHList1",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"class": "FormField",
+					"method": "ObjectMethods/CorenHList1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Arky_nPrcs_OnLoad": {
+					"type": "button",
+					"top": 518,
+					"left": 19,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Arky_nPrcs_OnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Arky_nPrcs_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"ProcessName": {
+					"type": "input",
+					"top": 13,
+					"left": 183,
+					"width": 416,
+					"height": 20,
+					"dataSource": "Form:C1466.cPage[FORM Get current page:C276]",
+					"class": "Form_Title",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"multiline": "no",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Modl_tFormName_Find": {
+					"type": "subform",
+					"top": 13,
+					"left": 612,
+					"width": 205,
+					"height": 30,
+					"dataSource": "Modl_tFormName_Find",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Modl_tFormName_Find.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Arky_uPrcs_Document": {
+					"type": "write",
+					"top": 62,
+					"left": 183,
+					"width": 416,
+					"height": 416,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Arky_uPrcs_Document",
+					"focusable": false,
+					"hideFocusRing": true,
+					"spellcheck": true,
+					"dragging": "none",
+					"dropping": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"showSelection": true,
+					"showPageFrames": true,
+					"showReferences": true,
+					"layoutMode": "embedded"
+				},
+				"Arky_gPrcs_BusinessUnit": {
+					"type": "input",
+					"top": 13,
+					"left": 64,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.gBusinessUnit",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"method": "ObjectMethods/Arky_gPrcs_BusinessUnit.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CorenHList2": {
+					"type": "list",
+					"top": 64,
+					"left": 13,
+					"width": 158,
+					"height": 405,
+					"sizingY": "grow",
+					"dataSource": "CorenHList2",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/CorenHList2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Title": {
+					"type": "text",
+					"top": 39,
+					"left": 183,
+					"width": 416,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Title"
+				},
+				"Button": {
+					"type": "button",
+					"top": 21,
+					"left": 503,
+					"width": 89,
+					"height": 34,
+					"text": "Button",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Arky_uPrcs_Document",
+				"CorenHList2",
+				"Button"
+			]
+		},
+		{
+			"objects": {
+				"Oval": {
+					"type": "oval",
+					"top": 81,
+					"left": 104,
+					"width": 375,
+					"height": 354,
+					"fill": "transparent",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 3
+				},
+				"Customer Service1": {
+					"type": "pictureButton",
+					"top": 226,
+					"left": 457,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Skin/Master/CustomerService.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Customer Service1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Sales1": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 261,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Skin/Master/Sales.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Sales1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Production1": {
+					"type": "pictureButton",
+					"top": 389,
+					"left": 261,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Skin/Master/Production.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Production1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Warehouse1": {
+					"type": "pictureButton",
+					"top": 226,
+					"left": 79,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Skin/Master/Warehouse.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Warehouse1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Sales": {
+					"type": "text",
+					"top": 66,
+					"left": 339,
+					"width": 40,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Sales"
+				},
+				"Customer Service": {
+					"type": "text",
+					"top": 209,
+					"left": 476,
+					"width": 126,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Customer Service"
+				},
+				"Production": {
+					"type": "text",
+					"top": 437,
+					"left": 322,
+					"width": 77,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Production"
+				},
+				"Warehouse": {
+					"type": "text",
+					"top": 209,
+					"left": 35,
+					"width": 80,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Warehouse"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 132,
+					"left": 166,
+					"width": 225,
+					"height": 17,
+					"text": "Sales Under Construction"
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 81,
+					"left": 104,
+					"width": 375,
+					"height": 354,
+					"fill": "transparent",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 3
+				}
+			}
+		},
+		{
+			"objects": {
+				"Oval2": {
+					"type": "oval",
+					"top": 81,
+					"left": 104,
+					"width": 375,
+					"height": 354,
+					"fill": "transparent",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 3
+				},
+				"Arky_nPrcs_ArtWork": {
+					"type": "pictureButton",
+					"top": 344,
+					"left": 133,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.ArtWork",
+					"picture": "/RESOURCES/Skin/Master/ArtWork.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_ArtWork.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Process|Estimate": {
+					"type": "pictureButton",
+					"top": 237,
+					"left": 458,
+					"width": 42,
+					"height": 42,
+					"picture": "/RESOURCES/Skin/Master/Calculator.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Process%7CEstimate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arky_nPrcs_Contract": {
+					"type": "pictureButton",
+					"top": 344,
+					"left": 420,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.Contract",
+					"picture": "/RESOURCES/Skin/Master/Contract.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_Contract.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Process|Customer": {
+					"type": "pictureButton",
+					"top": 50,
+					"left": 272,
+					"width": 42,
+					"height": 42,
+					"picture": "/RESOURCES/Skin/Master/Customer.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Process%7CCustomer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arky_nPrcs_JobBag": {
+					"type": "pictureButton",
+					"top": 237,
+					"left": 79,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.JobBag",
+					"picture": "/RESOURCES/Skin/Master/JobBag.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_JobBag.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arky_nPrcs_Schedule": {
+					"type": "pictureButton",
+					"top": 122,
+					"left": 136,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.Schedule",
+					"picture": "/RESOURCES/Skin/Master/Schedule.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_Schedule.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arky_nPrcs_Signature": {
+					"type": "pictureButton",
+					"top": 417,
+					"left": 272,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.Signature",
+					"picture": "/RESOURCES/Skin/Master/Signature.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_Signature.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arky_nPrcs_GetAQuote": {
+					"type": "pictureButton",
+					"top": 125,
+					"left": 422,
+					"width": 42,
+					"height": 42,
+					"dataSource": "Form:C1466.GetAQuote",
+					"picture": "/RESOURCES/Skin/Master/GetAQuote.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arky_nPrcs_GetAQuote.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Customer": {
+					"type": "text",
+					"top": 55,
+					"left": 321,
+					"width": 70,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Customer"
+				},
+				"RFQ": {
+					"type": "text",
+					"top": 140,
+					"left": 474,
+					"width": 70,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "RFQ"
+				},
+				"Estimate": {
+					"type": "text",
+					"top": 250,
+					"left": 507,
+					"width": 70,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Estimate"
+				},
+				"Quote": {
+					"type": "text",
+					"top": 357,
+					"left": 467,
+					"width": 70,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Quote"
+				},
+				"POReceived": {
+					"type": "text",
+					"top": 443,
+					"left": 321,
+					"width": 82,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "PO Received"
+				},
+				"ArtWork": {
+					"type": "text",
+					"top": 357,
+					"left": 62,
+					"width": 61,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Art Work"
+				},
+				"JobBag": {
+					"type": "text",
+					"top": 250,
+					"left": 27,
+					"width": 61,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Job Bag"
+				},
+				"Scheduling": {
+					"type": "text",
+					"top": 140,
+					"left": 62,
+					"width": 74,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Scheduling"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 132,
+					"left": 166,
+					"width": 225,
+					"height": 17,
+					"text": "Production Under Construction"
+				},
+				"Oval3": {
+					"type": "oval",
+					"top": 81,
+					"left": 104,
+					"width": 375,
+					"height": 354,
+					"fill": "transparent",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 3
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 132,
+					"left": 166,
+					"width": 225,
+					"height": 17,
+					"text": "Warehouse Under Construction"
+				},
+				"Oval4": {
+					"type": "oval",
+					"top": 81,
+					"left": 104,
+					"width": 375,
+					"height": 354,
+					"fill": "transparent",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 3
+				}
+			}
+		}
+	]
+}

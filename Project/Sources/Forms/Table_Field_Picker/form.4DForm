@@ -1,0 +1,285 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PickTables": {
+					"type": "listbox",
+					"top": 34,
+					"left": 26,
+					"width": 211,
+					"height": 500,
+					"sizingX": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Box4",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#E2FFDF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/PickTables.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column31",
+							"dataSource": "<>axFiles",
+							"width": 158,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onLoad",
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header31",
+								"text": "Header31",
+								"dataSource": "Header31",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer31",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column32",
+							"dataSource": "<>axFileNums",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header32",
+								"text": "Header32",
+								"dataSource": "Header32",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer32",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"PickFields": {
+					"type": "listbox",
+					"top": 34,
+					"left": 257,
+					"width": 231,
+					"height": 500,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "box3",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/PickFields.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column33",
+							"dataSource": "aFieldNames",
+							"width": 250,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header33",
+								"text": "Header33",
+								"dataSource": "Header33",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer33",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "aFieldNums",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 17,
+					"left": 26,
+					"width": 81,
+					"height": 13,
+					"class": "BaseInformation",
+					"text": "Table Names"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 17,
+					"left": 257,
+					"width": 81,
+					"height": 13,
+					"class": "BaseInformation",
+					"text": "Field Names"
+				},
+				"Button": {
+					"type": "button",
+					"top": 562,
+					"left": 384,
+					"width": 104,
+					"height": 36,
+					"action": "accept",
+					"text": "Use",
+					"class": "BaseButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 562,
+					"left": 257,
+					"width": 104,
+					"height": 36,
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

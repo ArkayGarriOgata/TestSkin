@@ -1,0 +1,319 @@
+{
+	"destination": "detailPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 285,
+	"markerBreak": 309,
+	"markerFooter": 338,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "4 x 6",
+		"paperWidth": "288pt",
+		"paperHeight": "432pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 3,
+					"left": 1,
+					"width": 419,
+					"height": 280,
+					"fill": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 180,
+					"left": 7,
+					"width": 45,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "SKU:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 207,
+					"left": 7,
+					"width": 67,
+					"height": 13,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "SKU DESC:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 7,
+					"left": 7,
+					"width": 151,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "CASE NUMBER:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 174,
+					"left": 81,
+					"width": 316,
+					"height": 23,
+					"dataSource": "sCPN",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 201,
+					"left": 81,
+					"width": 316,
+					"height": 23,
+					"dataSource": "sDesc",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 139,
+					"left": 111,
+					"width": 126,
+					"height": 23,
+					"dataSource": "dDate",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 252,
+					"left": 81,
+					"width": 161,
+					"height": 22,
+					"dataSource": "iQty",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 228,
+					"left": 81,
+					"width": 161,
+					"height": 20,
+					"dataSource": "sJMI",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 25,
+					"left": 11,
+					"width": 405,
+					"height": 63,
+					"dataSource": "iItemNumber",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "IDAutomationHC39M",
+					"fontSize": 20,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "RK000000000",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line17": {
+					"type": "line",
+					"top": 110,
+					"left": 2,
+					"width": 416,
+					"height": 1,
+					"startPoint": "bottomLeft"
+				},
+				"Line18": {
+					"type": "line",
+					"top": 168,
+					"left": 2,
+					"width": 416,
+					"height": 1,
+					"startPoint": "bottomLeft"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 257,
+					"left": 7,
+					"width": 63,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "QTY:"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 233,
+					"left": 7,
+					"width": 62,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "LOT #:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 144,
+					"left": 7,
+					"width": 91,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "MFG DATE:"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 116,
+					"left": 7,
+					"width": 321,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "COUNTRY OF ORIGIN:   UNITED STATES OF AMERICA"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 96,
+					"left": 318,
+					"width": 14,
+					"height": 12,
+					"class": "Default",
+					"text": "to "
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 96,
+					"left": 338,
+					"width": 78,
+					"height": 12,
+					"dataSource": "ilastLabel",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "RK000000000",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 136,
+					"left": 246,
+					"width": 166,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/ArkayLogo III.png"
+				}
+			}
+		}
+	]
+}

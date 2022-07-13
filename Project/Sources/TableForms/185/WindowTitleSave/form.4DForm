@@ -1,0 +1,360 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 14,
+					"left": 17,
+					"width": 351,
+					"height": 30,
+					"dataSource": "tInfo",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Move": {
+					"type": "listbox",
+					"top": 55,
+					"left": 17,
+					"width": 351,
+					"height": 256,
+					"resizingMode": "legacy",
+					"dataSource": "bWindowNames",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Move.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "abDefault",
+							"dataSource": "abDefault",
+							"dataSourceTypeHint": "boolean",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/abDefault.4dm",
+							"header": {
+								"name": "Header1",
+								"text": "Default",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atWindowSets",
+							"dataSource": "atWindowSets",
+							"width": 277,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atWindowSets.4dm",
+							"header": {
+								"name": "Header2",
+								"text": "Window Sets",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "asUUID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header3",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Move2": {
+					"type": "button",
+					"top": 394,
+					"left": 304,
+					"width": 64,
+					"height": 18,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Move1": {
+					"type": "button",
+					"top": 394,
+					"left": 236,
+					"width": 64,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SaveFunction1": {
+					"type": "button",
+					"top": 391,
+					"left": 160,
+					"width": 25,
+					"height": 25,
+					"visibility": "hidden",
+					"dataSource": "bRemove",
+					"text": "-",
+					"fontTheme": "normal",
+					"method": "ObjectMethods/SaveFunction1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SaveFunction": {
+					"type": "button",
+					"top": 391,
+					"left": 191,
+					"width": 25,
+					"height": 25,
+					"visibility": "hidden",
+					"dataSource": "bAdd",
+					"text": "+",
+					"fontTheme": "normal",
+					"method": "ObjectMethods/SaveFunction.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 346,
+					"left": 17,
+					"width": 351,
+					"height": 36,
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "Note: Not all windows are supported... If you save a window in a set and it doesn't appear when you call the set, this is why."
+				},
+				"RestoreFunction": {
+					"type": "checkbox",
+					"top": 318,
+					"left": 17,
+					"width": 342,
+					"height": 17,
+					"dataSource": "bRestoreFunction",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"text": "Close Existing Windows Before Opening New Windows",
+					"fontTheme": "normal",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bVideo": {
+					"type": "pictureButton",
+					"top": 378,
+					"left": 22,
+					"width": 55,
+					"height": 50,
+					"dataSource": "bVideo",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/HelpVideoButton.png",
+					"loopBackToFirstFrame": true,
+					"frameDelay": 0.16666666666667,
+					"borderStyle": "raised",
+					"method": "ObjectMethods/bVideo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,326 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 122,
+	"markerFooter": 157,
+	"events": [
+		"onLoad",
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 75,
+					"left": 200,
+					"width": 128,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Description"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 75,
+					"left": 9,
+					"width": 150,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Commodity_Key"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 75,
+					"left": 507,
+					"width": 69,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Std Cost"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 75,
+					"left": 583,
+					"width": 49,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "UM"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 75,
+					"left": 639,
+					"width": 62,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Factor"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 75,
+					"left": 469,
+					"width": 29,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Rec't"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 100,
+					"left": 9,
+					"width": 185,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Groups:22]Commodity_Key:3",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 201,
+					"width": 234,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Groups:22]Description:2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 445,
+					"width": 18,
+					"height": 16,
+					"dataSource": "[Raw_Materials_Groups:22]UseForEst:12",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 100,
+					"left": 475,
+					"width": 15,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Groups:22]ReceiptType:13",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 100,
+					"left": 508,
+					"width": 67,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Groups:22]Std_Cost:4",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 100,
+					"left": 587,
+					"width": 41,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Groups:22]UOM:8",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 100,
+					"left": 643,
+					"width": 55,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Groups:22]Flex2:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###.####",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 128,
+					"left": 9,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bDup",
+					"text": "Duplicate RM Group",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 128,
+					"left": 173,
+					"width": 140,
+					"height": 20,
+					"dataSource": "bRestore",
+					"text": "Restore Selection",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

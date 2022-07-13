@@ -1,0 +1,594 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 583,
+					"left": 431,
+					"width": 192,
+					"height": 110,
+					"class": "BaseGroupBox",
+					"text": "Show:"
+				},
+				"ListBox1": {
+					"type": "listbox",
+					"top": 14,
+					"left": 9,
+					"width": 401,
+					"height": 677,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "list_Box1",
+					"movableRows": false,
+					"showFooters": true,
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 25,
+					"highlightSet": "$ListboxSet1",
+					"detailForm": "Input",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#EEFFEB",
+					"alternateFill": "automatic",
+					"method": "ObjectMethods/ListBox1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[Raw_Materials_Locations:25]Raw_Matl_Code:1",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#EEFFEB",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "RM_Code",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "#EEFFEB",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[Raw_Materials_Locations:25]POItemKey:19",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "### #### ##",
+							"stroke": "automatic",
+							"fill": "#EEFFEB",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "PO Item#",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "#EEFFEB",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[Raw_Materials_Locations:25]QtyOH:9",
+							"dataSourceTypeHint": "number",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "#EEFFEB",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "QtyOH",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "automatic",
+								"fill": "#EEFFEB",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "[Raw_Materials_Locations:25]Location:2",
+							"width": 51,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"stroke": "automatic",
+							"fill": "#EEFFEB",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Location",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "#EEFFEB",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"ListBox2": {
+					"type": "listbox",
+					"top": 14,
+					"left": 647,
+					"width": 677,
+					"height": 677,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"movableRows": false,
+					"showFooters": true,
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 171,
+					"highlightSet": "$ListboxSet2",
+					"detailForm": "Input",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#B1C4DD",
+					"alternateFill": "automatic",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"sizingX": "grow",
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "[Raw_Material_Labels:171]Label_id:2",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#B1C4DD",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"header": {
+								"name": "Header4",
+								"text": "Label ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[Raw_Material_Labels:171]Qty:8",
+							"dataSourceTypeHint": "integer",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"enterable": false,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "#B1C4DD",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"header": {
+								"name": "Header5",
+								"text": "Qty",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[Raw_Material_Labels:171]Location:10",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 120,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#B1C4DD",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Location",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							}
+						},
+						{
+							"header": {
+								"name": "Header11",
+								"text": "Created"
+							},
+							"name": "Column11",
+							"dataSource": "[Raw_Material_Labels:171]When_inserted:5",
+							"footer": {
+								"name": "Footer11"
+							},
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 140,
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column7",
+							"dataSource": "[Raw_Material_Labels:171]When_touched:6",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 140,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#B1C4DD",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Touched",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"truncateMode": "none"
+						},
+						{
+							"name": "Column8",
+							"dataSource": "[Raw_Material_Labels:171]Raw_Matl_Code:4",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "#B1C4DD",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "RM_Code",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "[Raw_Material_Labels:171]POItemKey:3",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 140,
+							"textFormat": "### #### ##",
+							"stroke": "automatic",
+							"fill": "#B1C4DD",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Courier",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "PO Item#",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "#B1C4DD",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Courier",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"rmLabelButton": {
+					"type": "button",
+					"top": 451,
+					"left": 449,
+					"width": 170,
+					"height": 35,
+					"text": "Distribute Label Qty -->",
+					"stroke": "#FF0000",
+					"focusable": false,
+					"method": "ObjectMethods/rmLabelButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 71,
+					"left": 449,
+					"width": 167,
+					"height": 316,
+					"class": "BaseLabel",
+					"text": "Items are listed on the left if they were found to have a quantity not matching the sum of their positive quantity labels.\r\rSelect an item on the left to have its labels displayed on the right.\r\rClick the 'Set OnHand Qty' button to make the quantity on the left match the quantity total on the right. \r\rDouble click an item in either list to manually update or delete it.\r\r\r\r\r\r"
+				},
+				"Qty_Mismatches": {
+					"type": "radio",
+					"top": 604,
+					"left": 449,
+					"width": 174,
+					"height": 20,
+					"dataSource": "r1",
+					"text": "Quantity Mismatches",
+					"class": "BaseRadioButton",
+					"focusable": false,
+					"radioGroup": "Group8",
+					"method": "ObjectMethods/Qty_Mismatches.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Qty_All": {
+					"type": "radio",
+					"top": 634,
+					"left": 449,
+					"width": 174,
+					"height": 20,
+					"dataSource": "r2",
+					"text": "All Labeled Inventory",
+					"class": "BaseRadioButton",
+					"focusable": false,
+					"radioGroup": "Group8",
+					"method": "ObjectMethods/Qty_All.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Orphans": {
+					"type": "radio",
+					"top": 664,
+					"left": 449,
+					"width": 174,
+					"height": 20,
+					"dataSource": "r3",
+					"text": "Orphaned Labels",
+					"class": "BaseRadioButton",
+					"focusable": false,
+					"radioGroup": "Group8",
+					"method": "ObjectMethods/Orphans.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rmReport": {
+					"type": "button",
+					"top": 508,
+					"left": 449,
+					"width": 170,
+					"height": 35,
+					"text": "Phys Inv Report",
+					"focusable": false,
+					"method": "ObjectMethods/rmReport.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"linkLabelToLocation": {
+					"type": "button",
+					"top": 396,
+					"left": 449,
+					"width": 170,
+					"height": 35,
+					"text": "<-- Link Selected Labels",
+					"focusable": false,
+					"method": "ObjectMethods/linkLabelToLocation.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"reviewRawMaterial": {
+					"type": "button",
+					"top": 14,
+					"left": 446,
+					"width": 170,
+					"height": 35,
+					"text": "Review Raw Material",
+					"focusable": false,
+					"method": "ObjectMethods/reviewRawMaterial.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group8": [
+				"Qty_Mismatches",
+				"Qty_All",
+				"Orphans"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"memorizeGeometry": true,
+	"geometryStamp": 5,
+	"windowMaxWidth": 1500,
+	"windowMaxHeight": 1800
+}

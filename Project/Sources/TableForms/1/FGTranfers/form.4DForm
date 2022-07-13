@@ -1,0 +1,667 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"menuBar": "Default",
+	"markerHeader": 4,
+	"markerBody": 171,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"ReasonGroupBox": {
+					"type": "groupBox",
+					"top": 252,
+					"left": 9,
+					"width": 390,
+					"height": 112,
+					"stroke": "#000099",
+					"class": "BaseGroupBox",
+					"text": "<tReason>"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 9,
+					"width": 390,
+					"height": 154,
+					"stroke": "#000099",
+					"class": "BaseGroupBox",
+					"text": "Transaction:"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 12,
+					"left": 9,
+					"width": 390,
+					"height": 71,
+					"stroke": "#000099",
+					"class": "BaseGroupBox",
+					"text": "Item:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"sJobit": {
+					"type": "input",
+					"top": 52,
+					"left": 22,
+					"width": 93,
+					"height": 14,
+					"dataSource": "sJobit",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"multiline": "no",
+					"method": "ObjectMethods/sJobit.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"sCriterion6": {
+					"type": "input",
+					"top": 52,
+					"left": 182,
+					"width": 69,
+					"height": 14,
+					"dataSource": "sCriterion6",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;.\"",
+					"method": "ObjectMethods/sCriterion6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"sCriter12": {
+					"type": "input",
+					"top": 52,
+					"left": 294,
+					"width": 69,
+					"height": 14,
+					"dataSource": "sCriter12",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9\"",
+					"method": "ObjectMethods/sCriter12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReasonText8": {
+					"type": "text",
+					"top": 275,
+					"left": 22,
+					"width": 54,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Reason:"
+				},
+				"ReasonText9": {
+					"type": "text",
+					"top": 315,
+					"left": 22,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Action Taken:"
+				},
+				"ReasonText10": {
+					"type": "text",
+					"top": 274,
+					"left": 130,
+					"width": 130,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Reason Comments:"
+				},
+				"ReasonVariable16": {
+					"type": "input",
+					"top": 292,
+					"left": 23,
+					"width": 104,
+					"height": 14,
+					"dataSource": "sCriterion9",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ReturnReject"
+					},
+					"method": "ObjectMethods/ReasonVariable16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReasonVariable17": {
+					"type": "input",
+					"top": 292,
+					"left": 134,
+					"width": 186,
+					"height": 14,
+					"dataSource": "sCriterion7",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReasonVariable18": {
+					"type": "input",
+					"top": 332,
+					"left": 24,
+					"width": 296,
+					"height": 14,
+					"dataSource": "sCriterion8",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Last3": {
+					"type": "button",
+					"top": 373,
+					"left": 49,
+					"width": 139,
+					"height": 19,
+					"dataSource": "cb1",
+					"text": "Job Item Complete",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Last3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 373,
+					"left": 197,
+					"width": 87,
+					"height": 19,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PostFGTransfer": {
+					"type": "button",
+					"top": 373,
+					"left": 293,
+					"width": 106,
+					"height": 19,
+					"dataSource": "bPost",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"shortcutKey": "[Enter]",
+					"text": "Post <enter>",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PostFGTransfer.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Last2": {
+					"type": "radio",
+					"top": 282,
+					"left": 22,
+					"width": 65,
+					"height": 30,
+					"dataSource": "bLastSkid2",
+					"text": "Yes",
+					"fontFamily": "Geneva",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Last1": {
+					"type": "radio",
+					"top": 282,
+					"left": 101,
+					"width": 65,
+					"height": 30,
+					"dataSource": "bLastSkid1",
+					"text": "No",
+					"fontFamily": "Geneva",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 113,
+					"left": 22,
+					"width": 144,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Customer Product Nº:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 113,
+					"left": 186,
+					"width": 90,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Customer Nº:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 152,
+					"left": 301,
+					"width": 64,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Quantity:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 152,
+					"left": 24,
+					"width": 98,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "From Location:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 152,
+					"left": 164,
+					"width": 82,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "To Location:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 35,
+					"left": 22,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "JobIt Nº:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 35,
+					"left": 182,
+					"width": 89,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Order Nº.Item:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 195,
+					"left": 22,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Skid Number:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 194,
+					"left": 211,
+					"width": 85,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "User Initials:"
+				},
+				"asCriter2": {
+					"type": "dropdown",
+					"top": 129,
+					"left": 186,
+					"width": 61,
+					"height": 19,
+					"dataSource": "asCriter2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"class": "BaseInformation",
+					"method": "ObjectMethods/asCriter2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 35,
+					"left": 294,
+					"width": 88,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Arkay Release:"
+				},
+				"sCriterion1": {
+					"type": "input",
+					"top": 130,
+					"left": 22,
+					"width": 159,
+					"height": 14,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/sCriterion1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"asFromLocation": {
+					"type": "input",
+					"top": 170,
+					"left": 59,
+					"width": 95,
+					"height": 14,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"method": "ObjectMethods/asFromLocation.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"asToLocation": {
+					"type": "input",
+					"top": 170,
+					"left": 197,
+					"width": 97,
+					"height": 14,
+					"dataSource": "sCriterion4",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"method": "ObjectMethods/asToLocation.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"rReal1": {
+					"type": "input",
+					"top": 170,
+					"left": 303,
+					"width": 79,
+					"height": 14,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&\"0-9;.;-\"",
+					"method": "ObjectMethods/rReal1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"skid_number": {
+					"type": "input",
+					"top": 212,
+					"left": 23,
+					"width": 167,
+					"height": 14,
+					"dataSource": "sCriter10",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"method": "ObjectMethods/skid_number.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"sCriter11": {
+					"type": "input",
+					"top": 211,
+					"left": 259,
+					"width": 34,
+					"height": 14,
+					"dataSource": "sCriter11",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"asFrom1": {
+					"type": "dropdown",
+					"top": 168,
+					"left": 22,
+					"width": 30,
+					"height": 19,
+					"dataSource": "asFrom",
+					"class": "BaseInformation",
+					"method": "ObjectMethods/asFrom1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"asMove1": {
+					"type": "dropdown",
+					"top": 168,
+					"left": 164,
+					"width": 30,
+					"height": 19,
+					"dataSource": "asMove",
+					"method": "ObjectMethods/asMove1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"sJobit",
+				"sCriterion6",
+				"sCriter12",
+				"ReasonVariable16",
+				"ReasonVariable17",
+				"ReasonVariable18",
+				"Last3",
+				"Variable19",
+				"PostFGTransfer",
+				"Group1",
+				"Last2",
+				"Last1",
+				"asCriter2",
+				"sCriterion1",
+				"asFromLocation",
+				"asToLocation",
+				"rReal1",
+				"skid_number",
+				"sCriter11",
+				"asFrom1",
+				"asMove1"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Last2",
+				"Last1"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+OPEN URL:C673("http://intranet.arkay.com/ams/categories/faqs/2003/09/15.html#a37")

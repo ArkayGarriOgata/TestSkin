@@ -1,0 +1,149 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 5,
+					"width": 331,
+					"height": 13,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "What are you going to do with the R/M On-Hand report?"
+				},
+				"Variable1": {
+					"type": "radio",
+					"top": 17,
+					"left": 54,
+					"width": 250,
+					"height": 19,
+					"dataSource": "rb1",
+					"text": "Check Warehouse Quantities and Costs",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 42,
+					"left": 54,
+					"width": 250,
+					"height": 19,
+					"dataSource": "rb2",
+					"text": "Something else",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 71,
+					"left": 210,
+					"width": 70,
+					"height": 23,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Ok",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 75,
+					"left": 289,
+					"width": 11,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Ok",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Variable1",
+				"Variable2"
+			]
+		}
+	}
+}

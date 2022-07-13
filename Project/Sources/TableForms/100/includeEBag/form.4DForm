@@ -1,0 +1,315 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 17,
+	"markerBody": 37,
+	"markerBreak": 37,
+	"markerFooter": 37,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line10": {
+					"type": "line",
+					"top": 74,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 74,
+					"left": 864,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 502,
+					"height": 65,
+					"fill": "#FFFFDF",
+					"stroke": "#FFFFC0"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 501,
+					"height": 17,
+					"fill": "#FFFFC0",
+					"stroke": "#FFFFC0"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 36,
+					"left": 0,
+					"width": 498,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#DFE4FF",
+					"startPoint": "bottomLeft"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 16,
+					"left": 0,
+					"width": 497,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#FFE0E0"
+				},
+				"S2_Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 105,
+					"width": 295,
+					"height": 13,
+					"sizingX": "grow",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": "Task  (double click to see complete task)  Assigned To    Done By"
+				},
+				"S2_Field1": {
+					"type": "input",
+					"top": 20,
+					"left": 105,
+					"width": 180,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[To_Do_Tasks:100]Task:3",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 50,
+					"height": 37,
+					"stroke": "#FFC0C0"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 52,
+					"height": 37,
+					"stroke": "#FFC0C0"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 497,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#FFE0E0"
+				},
+				"Field1": {
+					"type": "checkbox",
+					"top": 20,
+					"left": 4,
+					"width": 11,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[To_Do_Tasks:100]Done:4",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 12,
+					"width": 32,
+					"height": 13,
+					"sizingX": "grow",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": "Done"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 20,
+					"left": 58,
+					"width": 39,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[To_Do_Tasks:100]Category:2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 1,
+					"left": 57,
+					"width": 45,
+					"height": 13,
+					"sizingX": "grow",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": "Category"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 20,
+					"left": 16,
+					"width": 31,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[To_Do_Tasks:100]DateDone:6",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 20,
+					"left": 298,
+					"width": 59,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[To_Do_Tasks:100]AssignedTo:9",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 20,
+					"left": 357,
+					"width": 59,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[To_Do_Tasks:100]DoneBy:7",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

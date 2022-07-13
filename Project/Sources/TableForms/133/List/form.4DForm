@@ -1,0 +1,159 @@
+{
+	"destination": "listScreen",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 96,
+	"markerBody": 122,
+	"markerBreak": 124,
+	"markerFooter": 125,
+	"events": [
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 76,
+					"left": 12,
+					"width": 71,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "JobFormID : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 76,
+					"left": 115,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "LinkID : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 76,
+					"left": 273,
+					"width": 270,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "DocPath : "
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 100,
+					"left": 12,
+					"width": 71,
+					"height": 16,
+					"dataSource": "[x_linked_documents:133]LookUpKey:1",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 100,
+					"left": 115,
+					"width": 126,
+					"height": 16,
+					"dataSource": "[x_linked_documents:133]linkID:2",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 100,
+					"left": 273,
+					"width": 270,
+					"height": 16,
+					"dataSource": "[x_linked_documents:133]DocPath:3",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

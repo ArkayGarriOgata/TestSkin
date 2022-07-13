@@ -1,0 +1,239 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 120,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 198,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Enter Missing Ink to Issue"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 85,
+					"left": 27,
+					"width": 66,
+					"height": 22,
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 85,
+					"left": 107,
+					"width": 66,
+					"height": 22,
+					"dataSource": "baOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"shortcutKey": "[Enter]",
+					"text": "Issue",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 60,
+					"left": 31,
+					"width": 54,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Quantity"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 40,
+					"left": 7,
+					"width": 78,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Material Code"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 21,
+					"left": 31,
+					"width": 54,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "JobForm"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 22,
+					"left": 88,
+					"width": 65,
+					"height": 12,
+					"dataSource": "sJobform",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 41,
+					"left": 88,
+					"width": 105,
+					"height": 12,
+					"dataSource": "sRMCode",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 60,
+					"left": 88,
+					"width": 65,
+					"height": 12,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 87,
+					"left": 180,
+					"width": 10,
+					"height": 16,
+					"dataSource": "baOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

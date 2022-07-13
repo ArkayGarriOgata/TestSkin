@@ -1,0 +1,1 @@
+wms_print_location_catalog

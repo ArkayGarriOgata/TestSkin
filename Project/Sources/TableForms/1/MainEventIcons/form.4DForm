@@ -1,0 +1,524 @@
+{
+	"destination": "detailScreen",
+	"width": 401,
+	"height": 287,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture19": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 423,
+					"height": 316,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26829.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Salesmen": {
+					"type": "picture",
+					"top": 527,
+					"left": 11,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26810.png"
+				},
+				"Addresses": {
+					"type": "picture",
+					"top": 471,
+					"left": 11,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26811.png"
+				},
+				"Customers": {
+					"type": "picture",
+					"top": 414,
+					"left": 11,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26812.png"
+				},
+				"AskMe": {
+					"type": "picture",
+					"top": 359,
+					"left": 11,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26813.png"
+				},
+				"AskMe1": {
+					"type": "button",
+					"top": 359,
+					"left": 11,
+					"width": 82,
+					"height": 49,
+					"dataSource": "<>ibaskme",
+					"display": false,
+					"method": "ObjectMethods/AskMe1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RawMaterials": {
+					"type": "picture",
+					"top": 527,
+					"left": 312,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26814.png"
+				},
+				"Purchasing": {
+					"type": "picture",
+					"top": 527,
+					"left": 212,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26815.png"
+				},
+				"Requisitions": {
+					"type": "picture",
+					"top": 527,
+					"left": 110,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26816.png"
+				},
+				"FinishedGoods": {
+					"type": "picture",
+					"top": 471,
+					"left": 312,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26817.png"
+				},
+				"QA": {
+					"type": "picture",
+					"top": 471,
+					"left": 212,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26818.png"
+				},
+				"Standards": {
+					"type": "picture",
+					"top": 471,
+					"left": 110,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26819.png"
+				},
+				"Jobs": {
+					"type": "picture",
+					"top": 414,
+					"left": 312,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26820.png"
+				},
+				"Orders": {
+					"type": "picture",
+					"top": 414,
+					"left": 212,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26821.png"
+				},
+				"Estimates": {
+					"type": "picture",
+					"top": 414,
+					"left": 110,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26822.png"
+				},
+				"Schedule": {
+					"type": "picture",
+					"top": 359,
+					"left": 312,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26823.png"
+				},
+				"JobMaster": {
+					"type": "picture",
+					"top": 359,
+					"left": 212,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26824.png"
+				},
+				"Projects": {
+					"type": "picture",
+					"top": 359,
+					"left": 110,
+					"width": 83,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26825.png"
+				},
+				"Projects1": {
+					"type": "button",
+					"top": 359,
+					"left": 109,
+					"width": 85,
+					"height": 49,
+					"dataSource": "bPjt",
+					"display": false,
+					"method": "ObjectMethods/Projects1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"JobMaster1": {
+					"type": "button",
+					"top": 359,
+					"left": 211,
+					"width": 85,
+					"height": 49,
+					"dataSource": "bsAEC",
+					"display": false,
+					"method": "ObjectMethods/JobMaster1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schedule1": {
+					"type": "button",
+					"top": 359,
+					"left": 311,
+					"width": 85,
+					"height": 49,
+					"dataSource": "<>ibSchdule",
+					"display": false,
+					"method": "ObjectMethods/Schedule1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Customers1": {
+					"type": "button",
+					"top": 414,
+					"left": 11,
+					"width": 82,
+					"height": 49,
+					"dataSource": "<>ibCust",
+					"display": false,
+					"method": "ObjectMethods/Customers1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Salesmen1": {
+					"type": "button",
+					"top": 526,
+					"left": 11,
+					"width": 82,
+					"height": 50,
+					"dataSource": "<>ibSale",
+					"display": false,
+					"method": "ObjectMethods/Salesmen1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Addresses1": {
+					"type": "button",
+					"top": 471,
+					"left": 11,
+					"width": 82,
+					"height": 49,
+					"dataSource": "<>ibAddr",
+					"display": false,
+					"method": "ObjectMethods/Addresses1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Estimates1": {
+					"type": "button",
+					"top": 414,
+					"left": 109,
+					"width": 85,
+					"height": 49,
+					"dataSource": "<>ibEst",
+					"display": false,
+					"method": "ObjectMethods/Estimates1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Orders1": {
+					"type": "button",
+					"top": 414,
+					"left": 210,
+					"width": 86,
+					"height": 49,
+					"dataSource": "<>ibOrd",
+					"display": false,
+					"method": "ObjectMethods/Orders1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Jobs1": {
+					"type": "button",
+					"top": 413,
+					"left": 311,
+					"width": 85,
+					"height": 50,
+					"dataSource": "<>ibJob",
+					"display": false,
+					"method": "ObjectMethods/Jobs1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FinishedGoods1": {
+					"type": "button",
+					"top": 470,
+					"left": 311,
+					"width": 85,
+					"height": 50,
+					"dataSource": "<>ibFG",
+					"display": false,
+					"method": "ObjectMethods/FinishedGoods1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"QA1": {
+					"type": "button",
+					"top": 470,
+					"left": 210,
+					"width": 86,
+					"height": 50,
+					"dataSource": "<>ibQA",
+					"display": false,
+					"method": "ObjectMethods/QA1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Standards1": {
+					"type": "button",
+					"top": 471,
+					"left": 109,
+					"width": 85,
+					"height": 49,
+					"dataSource": "<>ibCC",
+					"display": false,
+					"method": "ObjectMethods/Standards1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Requisitions1": {
+					"type": "button",
+					"top": 526,
+					"left": 109,
+					"width": 84,
+					"height": 50,
+					"dataSource": "<>ibReq",
+					"display": false,
+					"method": "ObjectMethods/Requisitions1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Purchasing1": {
+					"type": "button",
+					"top": 526,
+					"left": 210,
+					"width": 86,
+					"height": 50,
+					"dataSource": "<>ibPO",
+					"display": false,
+					"method": "ObjectMethods/Purchasing1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RawMaterials1": {
+					"type": "button",
+					"top": 526,
+					"left": 311,
+					"width": 85,
+					"height": 50,
+					"dataSource": "<>ibRM",
+					"display": false,
+					"method": "ObjectMethods/RawMaterials1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture25": {
+					"type": "picture",
+					"top": 260,
+					"left": 210,
+					"width": 83,
+					"height": 19,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26826.png"
+				},
+				"Picture26": {
+					"type": "picture",
+					"top": 260,
+					"left": 108,
+					"width": 83,
+					"height": 19,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26827.png"
+				},
+				"Picture27": {
+					"type": "picture",
+					"top": 260,
+					"left": 310,
+					"width": 83,
+					"height": 19,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26828.png"
+				},
+				"edi": {
+					"type": "button",
+					"top": 261,
+					"left": 108,
+					"width": 83,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "<>ibedi",
+					"display": false,
+					"method": "ObjectMethods/edi.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"eBag1": {
+					"type": "button",
+					"top": 261,
+					"left": 211,
+					"width": 83,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "<>ibeBag",
+					"display": false,
+					"method": "ObjectMethods/eBag1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help1": {
+					"type": "button",
+					"top": 261,
+					"left": 310,
+					"width": 40,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "<>ibHelp",
+					"display": false,
+					"method": "ObjectMethods/Help1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FAQ1": {
+					"type": "button",
+					"top": 261,
+					"left": 354,
+					"width": 40,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "<>ibFAQ",
+					"display": false,
+					"method": "ObjectMethods/FAQ1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 320,
+					"left": 8,
+					"width": 365,
+					"height": 30,
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Leave the items on this form where they are. The method that uses this form will move them where they need to go."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

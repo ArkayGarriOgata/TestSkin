@@ -1,0 +1,692 @@
+{
+	"destination": "detailScreen",
+	"width": 482,
+	"height": 70,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Field1": {
+					"type": "text",
+					"top": 16,
+					"left": 22,
+					"width": 45,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Field"
+				},
+				"Value1": {
+					"type": "text",
+					"top": 16,
+					"left": 259,
+					"width": 45,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Value"
+				},
+				"CoreOK1": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 445,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"dataSource": "CorenOK",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRight.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreCancel1": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 421,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"dataSource": "CorenCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 31,
+					"left": 20,
+					"width": 168
+				},
+				"Line3": {
+					"type": "line",
+					"top": 31,
+					"left": 257,
+					"width": 157
+				}
+			}
+		},
+		{
+			"objects": {
+				"Qury_View_tCriterion5": {
+					"type": "input",
+					"top": 192,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_nOnLoad": {
+					"type": "button",
+					"top": 269,
+					"left": 20,
+					"width": 70,
+					"height": 24,
+					"sizingY": "move",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/Qury_View_nOnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Field": {
+					"type": "text",
+					"top": 16,
+					"left": 22,
+					"width": 45,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Field"
+				},
+				"Value": {
+					"type": "text",
+					"top": 16,
+					"left": 259,
+					"width": 45,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Value"
+				},
+				"Qury_View_nSearch": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 445,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRight.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Qury_View_nSearch.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreCancel": {
+					"type": "pictureButton",
+					"top": 9,
+					"left": 421,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"dataSource": "CorenCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 31,
+					"left": 20,
+					"width": 168
+				},
+				"Line1": {
+					"type": "line",
+					"top": 31,
+					"left": 257,
+					"width": 157
+				},
+				"Qury_View_tField0": {
+					"type": "input",
+					"top": 42,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria10": {
+					"type": "input",
+					"top": 42,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tField1": {
+					"type": "input",
+					"top": 72,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria11": {
+					"type": "input",
+					"top": 72,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tField2": {
+					"type": "input",
+					"top": 102,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria12": {
+					"type": "input",
+					"top": 102,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tField3": {
+					"type": "input",
+					"top": 132,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria13": {
+					"type": "input",
+					"top": 132,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tField4": {
+					"type": "input",
+					"top": 162,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria14": {
+					"type": "input",
+					"top": 162,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tField5": {
+					"type": "input",
+					"top": 192,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria15": {
+					"type": "input",
+					"top": 192,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tField6": {
+					"type": "input",
+					"top": 222,
+					"left": 22,
+					"width": 166,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria16": {
+					"type": "input",
+					"top": 222,
+					"left": 258,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriterion0": {
+					"type": "input",
+					"top": 42,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriterion1": {
+					"type": "input",
+					"top": 72,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriterion2": {
+					"type": "input",
+					"top": 102,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriterion3": {
+					"type": "input",
+					"top": 132,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriterion4": {
+					"type": "input",
+					"top": 162,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction0": {
+					"type": "input",
+					"top": 42,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction1": {
+					"type": "input",
+					"top": 72,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction2": {
+					"type": "input",
+					"top": 102,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction3": {
+					"type": "input",
+					"top": 132,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction4": {
+					"type": "input",
+					"top": 162,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction5": {
+					"type": "input",
+					"top": 192,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriterion6": {
+					"type": "input",
+					"top": 222,
+					"left": 199,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tConjunction6": {
+					"type": "input",
+					"top": 223,
+					"left": 422,
+					"width": 50,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Qury_View_tCriteria20": {
+					"type": "input",
+					"top": 42,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriteria21": {
+					"type": "input",
+					"top": 72,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriteria22": {
+					"type": "input",
+					"top": 102,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriteria23": {
+					"type": "input",
+					"top": 132,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriteria24": {
+					"type": "input",
+					"top": 162,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriteria25": {
+					"type": "input",
+					"top": 192,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Qury_View_tCriteria26": {
+					"type": "input",
+					"top": 222,
+					"left": 498,
+					"width": 156,
+					"height": 16,
+					"class": "Form_Value",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

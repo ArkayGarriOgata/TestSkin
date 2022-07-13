@@ -1,0 +1,283 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 370,
+	"markerBreak": 370,
+	"markerFooter": 370,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 358,
+					"left": 486,
+					"width": 64,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Sched Date"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 358,
+					"left": 429,
+					"width": 52,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Times Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "DD Date"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 290,
+					"left": 19,
+					"width": 530,
+					"height": 60,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 12,
+					"text": "In order for Arkay Packaging to process an order, we must have Artwork, black & white signed by Packaging, EL Specifications, Signed Size & Style, and Standard approval.  Below is a list of all the components needed for the following codes.  This information is needed on or before the drop dead (DD) date.  Failure to supply us with the necessary components by the drop dead date will cause delivery delays.  A new ship date will be given for any components received after the drop dead date."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 248,
+					"left": 0,
+					"width": 17,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 12,
+					"text": "Re:"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 412,
+					"left": 143,
+					"width": 196,
+					"height": 158,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26571.png"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 447,
+					"left": 151,
+					"width": 164,
+					"height": 24,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "spacing for letter head\u0003"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 410,
+					"left": 20,
+					"width": 78,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "370 pixels"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 358,
+					"left": 20,
+					"width": 80,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Product Code Number"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 358,
+					"left": 202,
+					"width": 122,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Components Needed"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 159,
+					"left": 19,
+					"width": 184,
+					"height": 12,
+					"dataSource": "dDate",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 175,
+					"left": 19,
+					"width": 184,
+					"height": 61,
+					"dataSource": "sAddress",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 247,
+					"left": 19,
+					"width": 184,
+					"height": 12,
+					"dataSource": "sBrand",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 272,
+					"left": 2,
+					"width": 210,
+					"height": 12,
+					"dataSource": "sBuyerName",
+					"stroke": "#000000",
+					"fontFamily": "Times Roman",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Text1",
+				"Text2"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

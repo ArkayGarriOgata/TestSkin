@@ -1,0 +1,254 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ListBox": {
+					"type": "listbox",
+					"top": 74,
+					"left": 5,
+					"width": 525,
+					"height": 278,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.jobItems",
+					"currentItemSource": "Form:C1466.currItem",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Monaco",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBox.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Jobit",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Jobit",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.PldCostTotal",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|BigReal2Decimal",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Cost",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.Glued",
+							"dataSourceTypeHint": "date",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "shortCentury",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Glued",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.ProductCode",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "ProductCode",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Select": {
+					"type": "button",
+					"top": 372,
+					"left": 203,
+					"width": 103,
+					"height": 37,
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Use",
+					"class": "BigButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 372,
+					"left": 80,
+					"width": 103,
+					"height": 37,
+					"sizingY": "move",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BigButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 23,
+					"left": 31,
+					"width": 382,
+					"height": 38,
+					"class": "BigButtons",
+					"text": "Select the desired Jobit and click the 'Use' button, or just double-click the Jobit you want."
+				}
+			}
+		}
+	]
+}

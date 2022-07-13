@@ -1,0 +1,630 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 17,
+	"markerBody": 32,
+	"markerBreak": 36,
+	"markerFooter": 56,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 663,
+					"height": 35
+				},
+				"Line1": {
+					"type": "line",
+					"top": 15,
+					"left": 0,
+					"width": 663
+				},
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 2,
+					"width": 66,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "PoItemKey"
+				},
+				"Line2": {
+					"type": "line",
+					"top": -1,
+					"left": 66,
+					"height": 35
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 68,
+					"width": 123,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Raw_Matl_Code"
+				},
+				"Line3": {
+					"type": "line",
+					"top": -1,
+					"left": 189,
+					"height": 35
+				},
+				"Text3": {
+					"type": "text",
+					"top": 2,
+					"left": 191,
+					"width": 40,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "CostCenter"
+				},
+				"Line4": {
+					"type": "line",
+					"top": -1,
+					"left": 228,
+					"height": 35
+				},
+				"Text4": {
+					"type": "text",
+					"top": 2,
+					"left": 230,
+					"width": 84,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Posted"
+				},
+				"Line5": {
+					"type": "line",
+					"top": -1,
+					"left": 312,
+					"height": 35
+				},
+				"Text5": {
+					"type": "text",
+					"top": 2,
+					"left": 314,
+					"width": 118,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "JobForm"
+				},
+				"Line6": {
+					"type": "line",
+					"top": -1,
+					"left": 430,
+					"height": 35
+				},
+				"Text6": {
+					"type": "text",
+					"top": 2,
+					"left": 432,
+					"width": 64,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Quantity"
+				},
+				"Line7": {
+					"type": "line",
+					"top": -1,
+					"left": 494,
+					"height": 35
+				},
+				"Text7": {
+					"type": "text",
+					"top": 2,
+					"left": 496,
+					"width": 63,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "PostDate"
+				},
+				"Line8": {
+					"type": "line",
+					"top": -1,
+					"left": 557,
+					"height": 35
+				},
+				"Text8": {
+					"type": "text",
+					"top": 2,
+					"left": 559,
+					"width": 63,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "PostTime"
+				},
+				"Line9": {
+					"type": "line",
+					"top": -1,
+					"left": 620,
+					"height": 35
+				},
+				"Text9": {
+					"type": "text",
+					"top": 2,
+					"left": 622,
+					"width": 41,
+					"height": 12,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Who"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 2,
+					"width": 63,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]PoItemKey:1",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 68,
+					"width": 120,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]Raw_Matl_Code:2",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 19,
+					"left": 191,
+					"width": 36,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]CostCenter:3",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 19,
+					"left": 230,
+					"width": 80,
+					"height": 12,
+					"dataSource": "xText",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 19,
+					"left": 314,
+					"width": 115,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]JobForm:5",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 19,
+					"left": 432,
+					"width": 61,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]Quantity:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 19,
+					"left": 496,
+					"width": 60,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]PostDate:8",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 19,
+					"left": 559,
+					"width": 60,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]PostTime:9",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 19,
+					"left": 622,
+					"width": 36,
+					"height": 12,
+					"dataSource": "[Job_Forms_Issue_Tickets:90]ModWho:10",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 39,
+					"left": 3,
+					"width": 59,
+					"height": 14,
+					"dataSource": "bSort",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"text": "Sort",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 39,
+					"left": 70,
+					"width": 64,
+					"height": 14,
+					"dataSource": "bSearch",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"text": "Search",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 39,
+					"left": 137,
+					"width": 72,
+					"height": 14,
+					"dataSource": "bRefresh",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"text": "Refresh",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 39,
+					"left": 586,
+					"width": 59,
+					"height": 14,
+					"dataSource": "bOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"action": "cancel",
+					"text": "Done",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 72,
+					"left": 401,
+					"width": 59,
+					"height": 12,
+					"dataSource": "bOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Done",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 90,
+					"left": 397,
+					"width": 59,
+					"height": 12,
+					"dataSource": "bOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"action": "accept",
+					"text": "Done",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

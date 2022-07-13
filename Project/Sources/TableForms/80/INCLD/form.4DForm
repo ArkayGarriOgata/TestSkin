@@ -1,0 +1,235 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 16,
+	"markerBreak": 16,
+	"markerFooter": 16,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line1": {
+					"type": "line",
+					"top": 15,
+					"left": 0,
+					"width": 389,
+					"height": 1,
+					"stroke": "#5F6000"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 93,
+					"width": 1,
+					"height": 15,
+					"stroke": "#5F6000"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 1,
+					"left": 147,
+					"width": 1,
+					"height": 15,
+					"stroke": "#5F6000"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 1,
+					"left": 202,
+					"width": 1,
+					"height": 15,
+					"stroke": "#5F6000"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 1,
+					"left": 255,
+					"width": 1,
+					"height": 15,
+					"stroke": "#5F6000"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 2,
+					"left": 4,
+					"width": 87,
+					"height": 12,
+					"dataSource": "[Purchase_Orders_Requisitions:80]po_number:2",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 2,
+					"left": 96,
+					"width": 49,
+					"height": 12,
+					"dataSource": "[Purchase_Orders_Requisitions:80]vendor_id:3",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 2,
+					"left": 150,
+					"width": 50,
+					"height": 12,
+					"dataSource": "[Purchase_Orders_Requisitions:80]requisitioned_by:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 2,
+					"left": 204,
+					"width": 49,
+					"height": 12,
+					"dataSource": "[Purchase_Orders_Requisitions:80]date_requisition:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 2,
+					"left": 258,
+					"width": 130,
+					"height": 12,
+					"dataSource": "[Purchase_Orders_Requisitions:80]Comments:6",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

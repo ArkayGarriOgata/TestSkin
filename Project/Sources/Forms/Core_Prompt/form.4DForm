@@ -1,0 +1,155 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_Background",
+	"formSizeAnchor": "Core_nPrompt_Default",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Core_tPrompt_Message": {
+					"type": "input",
+					"top": 13,
+					"left": 81,
+					"width": 358,
+					"height": 16,
+					"sizingY": "grow",
+					"dataSource": "Core_tPrompt_Message",
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"wordwrap": "normal",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Form.tValue": {
+					"type": "input",
+					"top": 37,
+					"left": 81,
+					"width": 358,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.tValue",
+					"class": "Form_Value",
+					"borderStyle": "sunken",
+					"multiline": "yes",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Core_nPrompt_OnLoad": {
+					"type": "button",
+					"top": 119,
+					"left": 8,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Core_nPrompt_OnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Core_nPrompt_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Core_nPrompt_NonDefault": {
+					"type": "button",
+					"top": 66,
+					"left": 178,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Core_nPrompt_NonDefault",
+					"action": "cancel",
+					"class": "Form_Label",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "NonDefault",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Core_nPrompt_Cancel": {
+					"type": "button",
+					"top": 66,
+					"left": 271,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Core_nPrompt_Cancel",
+					"action": "cancel",
+					"class": "Form_Label",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Cancel",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Core_nPrompt_Default": {
+					"type": "button",
+					"top": 66,
+					"left": 361,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Core_nPrompt_Default",
+					"action": "cancel",
+					"class": "Form_Label",
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Default",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Form.gIcon": {
+					"type": "input",
+					"top": 14,
+					"left": 13,
+					"width": 48,
+					"height": 48,
+					"dataSource": "Form:C1466.gIcon",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none"
+				}
+			},
+			"entryOrder": [
+				"Core_tPrompt_Message",
+				"Form.tValue",
+				"Core_nPrompt_OnLoad"
+			]
+		}
+	]
+}

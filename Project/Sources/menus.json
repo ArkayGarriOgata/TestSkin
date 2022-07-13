@@ -1,0 +1,1044 @@
+{
+	"bars": [
+		{
+			"id": 1,
+			"name": "UserRuntime",
+			"items": [
+				{
+					"link": 19371
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 9451
+				},
+				{
+					"link": 15897
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "FileWithQuit",
+			"items": [
+				{
+					"link": 8110
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "File",
+			"items": [
+				{
+					"link": 22888
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Default",
+			"items": [
+				{
+					"link": 19371
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 9451
+				},
+				{
+					"link": 15897
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Palettes",
+			"items": [
+				{
+					"link": 9451
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "Scheduling_full",
+			"items": [
+				{
+					"link": 22888
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 9451
+				},
+				{
+					"link": 15897
+				},
+				{
+					"link": 21128
+				},
+				{
+					"link": 28678
+				},
+				{
+					"link": 24182
+				},
+				{
+					"link": 20622
+				},
+				{
+					"link": 32000
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "AdHoc",
+			"items": [
+				{
+					"link": 3089
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "DBA",
+			"items": [
+				{
+					"link": 22888
+				},
+				{
+					"link": 11968
+				},
+				{
+					"link": 16180
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "JML",
+			"items": [
+				{
+					"link": 33000
+				},
+				{
+					"link": 11064
+				},
+				{
+					"link": 3089
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "empty",
+			"items": []
+		},
+		{
+			"id": 11,
+			"name": "Scheduling",
+			"items": [
+				{
+					"link": 21128
+				},
+				{
+					"link": 33000
+				},
+				{
+					"link": 28678
+				},
+				{
+					"link": 24182
+				},
+				{
+					"link": 20622
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "Shortcut",
+			"items": [
+				{
+					"link": 15897
+				},
+				{
+					"link": 33000
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "Quality",
+			"items": [
+				{
+					"link": 3089
+				},
+				{
+					"link": 21675
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 19371,
+			"title": "File",
+			"items": [
+				{
+					"title": "Explorer",
+					"method": "EXPL_StartUp"
+				},
+				{
+					"title": "Window List",
+					"method": "uProcessList"
+				},
+				{
+					"title": "User Mode",
+					"method": "util_MainWindowVisible"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Change Login...",
+					"method": "uChangeAccess"
+				},
+				{
+					"title": "Change Password...",
+					"method": "util_UserChangePassword"
+				},
+				{
+					"title": "Item 15",
+					"isSeparator": true
+				},
+				{
+					"title": "Change Mode",
+					"action": "design"
+				},
+				{
+					"title": "Connect to WMS",
+					"method": "wms_start_from_menu"
+				},
+				{
+					"title": "Check MustShip",
+					"method": "Rel_MustShip"
+				},
+				{
+					"title": "Start THC Daemon",
+					"method": "THC_start_from_menu"
+				},
+				{
+					"title": "Press Performance",
+					"method": "JOB_ProdPerformance"
+				},
+				{
+					"title": "Item 14",
+					"isSeparator": true
+				},
+				{
+					"title": "User Notification",
+					"method": "NotifySetup"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Print Destination...",
+					"method": "PDF_onOff"
+				},
+				{
+					"title": "Print...",
+					"method": "util_Print"
+				},
+				{
+					"title": "Print Settings",
+					"method": "Core_Print_Setting",
+					"startNewProcess": true
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 9451,
+			"title": "Palettes",
+			"items": [
+				{
+					"title": "Main",
+					"method": "prMain2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "M"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Customer",
+					"method": "prCust2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "1"
+				},
+				{
+					"title": "Addresses",
+					"method": "prAddr2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "2"
+				},
+				{
+					"title": "Contacts",
+					"method": "Contact_UI",
+					"shortcutAccel": true,
+					"shortcutKey": "3"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quality",
+					"method": "prQA2Front"
+				},
+				{
+					"title": "Estimate",
+					"method": "prEst2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "4"
+				},
+				{
+					"title": "Finished Goods",
+					"method": "prFG2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "5"
+				},
+				{
+					"title": "Customer Order",
+					"method": "prOrd2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "6"
+				},
+				{
+					"title": "Job",
+					"method": "prJob2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "7"
+				},
+				{
+					"title": "Cost Standards",
+					"method": "prCC2Front"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Raw Materials",
+					"method": "prRM2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "8"
+				},
+				{
+					"title": "Requistion",
+					"method": "prReq2Front"
+				},
+				{
+					"title": "Vendor",
+					"method": "Vendor_UI"
+				},
+				{
+					"title": "Purchasing",
+					"method": "prPO2Front",
+					"shortcutAccel": true,
+					"shortcutKey": "9"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "WMS",
+					"method": "prWMS2Front"
+				},
+				{
+					"title": "Physical Inventory",
+					"method": "prPI2Front"
+				},
+				{
+					"title": "Transactions",
+					"method": "prTransactions"
+				},
+				{
+					"title": "Departments",
+					"method": "prDepartments"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "EDI",
+					"method": "prEDI2Front"
+				},
+				{
+					"title": "Human Resources",
+					"method": "prHR2Front"
+				},
+				{
+					"title": "Rama",
+					"method": "prRAMA2Front"
+				}
+			]
+		},
+		{
+			"link": 15897,
+			"title": "Shortcuts",
+			"items": [
+				{
+					"title": "aMs User Support",
+					"method": "UsSp_Menu_Entry"
+				},
+				{
+					"title": "Help",
+					"method": "Help_View_Menu"
+				},
+				{
+					"title": "AskMe",
+					"method": "sAskMe_UI",
+					"shortcutAccel": true,
+					"shortcutKey": ","
+				},
+				{
+					"title": "Test ORDA AskMe",
+					"method": "FG_AskMe_orda"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Projects",
+					"method": "Pjt_ProjectUserInterface",
+					"shortcutAccel": true,
+					"shortcutKey": "P"
+				},
+				{
+					"title": "Job Master Log",
+					"method": "JML_ShowListing",
+					"shortcutAccel": true,
+					"shortcutKey": "J"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "Production Schedule",
+					"method": "PS_ShowAll",
+					"shortcutAccel": true,
+					"shortcutKey": "S"
+				},
+				{
+					"title": "Advanced Job Scheduler",
+					"method": "Launch_AdvancedScheduler"
+				},
+				{
+					"title": "Glue Schedule",
+					"method": "PSG_All",
+					"shortcutAccel": true,
+					"shortcutKey": "G"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "Shift Card",
+					"method": "MT_ShiftCard",
+					"shortcutAccel": true,
+					"shortcutKey": "O"
+				},
+				{
+					"title": "e'Bag",
+					"method": "eBag_UI",
+					"shortcutAccel": true,
+					"shortcutKey": "E"
+				},
+				{
+					"title": "Plates Made",
+					"method": "RMX_PlatesUpdate"
+				},
+				{
+					"title": "Bag Tracker",
+					"method": "JTB_bagTrack_UI",
+					"shortcutAccel": true,
+					"shortcutKey": "B"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Maintenance Repairs Supplies",
+					"method": "MRO_ControlCenter_UI"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "ToDo",
+					"method": "ToDo_UI",
+					"shortcutAccel": true,
+					"shortcutKey": "T"
+				},
+				{
+					"title": "Report...",
+					"method": "Rprt_Dialog_Pick",
+					"startNewProcess": true
+				},
+				{
+					"title": "Quick...",
+					"method": "Quik_Menu_List",
+					"startNewProcess": true
+				},
+				{
+					"title": "Search...",
+					"method": "mSearch",
+					"shortcutAccel": true,
+					"shortcutKey": "]"
+				},
+				{
+					"title": "SQL...",
+					"method": "SQL_adhoc_query"
+				}
+			]
+		},
+		{
+			"link": 8110,
+			"title": "File",
+			"items": [
+				{
+					"title": "Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 22888,
+			"title": "File",
+			"items": [
+				{
+					"title": "Change Login",
+					"method": "uChangeAccess"
+				},
+				{
+					"title": "Close Window",
+					"method": "uCloseWindow",
+					"shortcutAccel": true,
+					"shortcutKey": "w"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Quit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 11968,
+			"title": ":79,5",
+			"items": [
+				{
+					"title": ":131,18",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"executeWithoutValidating": true,
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":131,20",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"executeWithoutValidating": true,
+					"action": "cut"
+				},
+				{
+					"title": ":131,21",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"executeWithoutValidating": true,
+					"action": "copy"
+				},
+				{
+					"title": ":131,22",
+					"shortcutShift": true,
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"executeWithoutValidating": true,
+					"action": "paste"
+				},
+				{
+					"title": ":131,23",
+					"executeWithoutValidating": true,
+					"action": "clear"
+				},
+				{
+					"title": ":131,24",
+					"shortcutShift": true,
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"executeWithoutValidating": true,
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":131,25",
+					"executeWithoutValidating": true,
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 21128,
+			"title": "Press",
+			"items": [
+				{
+					"title": "418 8|c Heidleberg",
+					"method": "PS_Show418"
+				},
+				{
+					"title": "419 8|c Heidleberg",
+					"method": "PS_Show419"
+				},
+				{
+					"title": "420 8|c Heidleberg",
+					"method": "PS_Show420"
+				},
+				{
+					"title": "421 8|c Heidleberg",
+					"method": "PS_Show421"
+				},
+				{
+					"title": "All Press Listing",
+					"method": "PS_ShowAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Make Ready Timer",
+					"method": "PS_TimerMR",
+					"shortcutAccel": true,
+					"shortcutKey": "M"
+				},
+				{
+					"title": "Run Timer",
+					"method": "PS_TimerRun",
+					"shortcutAccel": true,
+					"shortcutKey": "R"
+				},
+				{
+					"title": "Manual Timer",
+					"method": "PS_MakeReadyTimer",
+					"parameter": "1"
+				},
+				{
+					"title": "Skids in WIP...",
+					"method": "PS_skidsInWIP",
+					"startNewProcess": true
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Update Job Info",
+					"method": "JML_cacheInfoUpdate",
+					"shortcutAccel": true,
+					"shortcutKey": "u"
+				},
+				{
+					"title": "Ink Room Viewer",
+					"method": "PS_InkRoomViewer_ui"
+				},
+				{
+					"title": "Prepress Viewer",
+					"method": "PS_PrePressViewer_ui"
+				},
+				{
+					"title": "Tile Press Windows",
+					"method": "PS_Tile",
+					"shortcutAccel": true,
+					"shortcutKey": "Y"
+				},
+				{
+					"title": "Show Revisions",
+					"method": "PS_RevisionShow"
+				}
+			]
+		},
+		{
+			"link": 28678,
+			"title": "Board",
+			"items": [
+				{
+					"title": "Sheeting-429",
+					"method": "PS_Show429"
+				},
+				{
+					"title": "Straight Cutter-497",
+					"method": "PS_Show497"
+				}
+			]
+		},
+		{
+			"link": 24182,
+			"title": "Finishing",
+			"items": [
+				{
+					"title": "All Die Cutters",
+					"method": "PS_ShowDC"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Roanoke Stamping-452",
+					"method": "PS_Show452"
+				},
+				{
+					"title": "Roanoke Stamping-454",
+					"method": "PS_Show454"
+				},
+				{
+					"title": "Roanoke Stamping-455",
+					"method": "PS_Show455"
+				},
+				{
+					"title": "Roanoke Blanking-467",
+					"method": "PS_Show467"
+				},
+				{
+					"title": "Roanoke Blanking-469",
+					"method": "PS_Show469"
+				},
+				{
+					"title": "Roanoke Blanking-470",
+					"method": "PS_Show470"
+				},
+				{
+					"title": "Roanoke Blanking-471",
+					"method": "PS_Show471"
+				},
+				{
+					"title": "Item 1",
+					"isSeparator": true
+				},
+				{
+					"title": "Roanoke Windowing-472",
+					"method": "PS_Show472"
+				},
+				{
+					"title": "Item 9",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Billhofer Laminator-474",
+					"method": "PS_Show474"
+				},
+				{
+					"title": "Roanoke Laminator-475",
+					"method": "PS_Show475"
+				}
+			]
+		},
+		{
+			"link": 20622,
+			"title": "OutsideServices",
+			"items": []
+		},
+		{
+			"link": 3089,
+			"title": "AdHoc",
+			"items": [
+				{
+					"title": "Report...",
+					"method": "mReport"
+				},
+				{
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": "Search Selection...",
+					"method": "mSearch",
+					"shortcutAccel": true,
+					"shortcutKey": "G"
+				},
+				{
+					"title": "New Search...",
+					"method": "mNewSearch",
+					"shortcutAccel": true,
+					"shortcutKey": "N"
+				},
+				{
+					"title": "Sort...",
+					"method": "mSort"
+				}
+			]
+		},
+		{
+			"link": 16180,
+			"title": ":79,6",
+			"items": [
+				{
+					"title": ":131,27",
+					"shortcutAccel": true,
+					"shortcutKey": "Y",
+					"action": "design"
+				},
+				{
+					"title": ":131,28",
+					"shortcutShift": true,
+					"shortcutAccel": true,
+					"shortcutKey": "U",
+					"action": "userMode"
+				},
+				{
+					"title": ":131,29",
+					"state": "checked",
+					"shortcutShift": true,
+					"shortcutAccel": true,
+					"shortcutKey": "I",
+					"action": "application"
+				}
+			]
+		},
+		{
+			"link": 11064,
+			"title": "Commands",
+			"items": [
+				{
+					"title": "New Record",
+					"method": "JML_NewRecord",
+					"shortcutAccel": true,
+					"shortcutKey": "R",
+					"startNewProcess": true
+				},
+				{
+					"title": "Find Job...",
+					"method": "JML_findJob",
+					"shortcutAccel": true,
+					"shortcutKey": "F"
+				}
+			]
+		},
+		{
+			"link": 21675,
+			"title": "Quality",
+			"items": [
+				{
+					"title": "Set Highlighted to Completed...",
+					"method": "CAR_setToCompleted"
+				}
+			]
+		},
+		{
+			"link": 33000,
+			"title": ":xliff:CommonMenuEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonMenuItemCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonMenuItemPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonMenuItemClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonMenuItemSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				},
+				{
+					"title": "Item 10",
+					"isSeparator": true
+				},
+				{
+					"title": "Save Window Set",
+					"method": "WindowPositionSave"
+				},
+				{
+					"title": "Restore Window Set",
+					"method": "WindowPositionRestore"
+				},
+				{
+					"title": "Item 13",
+					"isSeparator": true
+				},
+				{
+					"title": "aMs Training Videos",
+					"method": "aMs_OpenScreenCastWebsite"
+				},
+				{
+					"title": "Show Storage",
+					"method": "util_ShowStorage"
+				}
+			]
+		},
+		{
+			"link": 32000,
+			"title": "Gluers",
+			"items": [
+				{
+					"title": "All Gluers",
+					"method": "PSG_All",
+					"parameter": "All"
+				},
+				{
+					"title": "Item 2",
+					"isSeparator": true
+				},
+				{
+					"title": "476 (Int'l)",
+					"method": "PSG_476"
+				},
+				{
+					"title": "478 (Bobst)",
+					"method": "PSG_478"
+				},
+				{
+					"title": "479 (Bobst)",
+					"method": "PSG_479"
+				},
+				{
+					"title": "480 (Alpina 75)",
+					"method": "PSG_480"
+				},
+				{
+					"title": "481 (Bobst)",
+					"method": "PSG_481"
+				},
+				{
+					"title": "482 (Diana)",
+					"method": "PSG_482"
+				},
+				{
+					"title": "483 (Heidelberg 110)",
+					"method": "PSG_483"
+				},
+				{
+					"title": "484 (Bobst 110)",
+					"method": "PSG_484"
+				},
+				{
+					"title": "485 (Alpina 110)",
+					"method": "PSG_485"
+				},
+				{
+					"title": "487 (new)",
+					"method": "PSG_487"
+				},
+				{
+					"title": "491 (Flat Pack)",
+					"method": "PSG_493"
+				},
+				{
+					"title": "9xx (O/S Glue)",
+					"method": "PSG_9xx"
+				},
+				{
+					"title": "test",
+					"method": "PS_Show480"
+				}
+			]
+		}
+	]
+}

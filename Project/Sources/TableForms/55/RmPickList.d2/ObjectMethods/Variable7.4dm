@@ -1,0 +1,1 @@
+Self:C308->:=fBarCodeSym(39; Self:C308->; Self:C308)

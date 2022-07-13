@@ -1,0 +1,1 @@
+QryPurgeEsts(->r12; ->r32; ->r52; "Kill")

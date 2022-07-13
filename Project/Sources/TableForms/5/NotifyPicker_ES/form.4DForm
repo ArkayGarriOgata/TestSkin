@@ -1,0 +1,162 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"users_LB": {
+					"type": "listbox",
+					"top": 29,
+					"left": 25,
+					"width": 264,
+					"height": 359,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.subscribedUsers_c",
+					"currentItemSource": "Form:C1466.currentItem",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"method": "ObjectMethods/users_LB.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.UserName",
+							"width": 169,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "User",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.NotifyPressSchdChg",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"numberFormat": "√;;",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Notify",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						}
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 403,
+					"left": 75,
+					"width": 100,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 403,
+					"left": 189,
+					"width": 100,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "accept",
+					"text": "Notify √'d",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

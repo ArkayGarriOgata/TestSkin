@@ -1,0 +1,703 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 750,
+	"height": 550,
+	"menuBar": "UserRuntime",
+	"markerBody": 409,
+	"markerBreak": 409,
+	"markerFooter": 419,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 90
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 92,
+					"left": 1,
+					"width": 748,
+					"height": 457,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFDFFF",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 246,
+					"left": 355,
+					"width": 198,
+					"height": 185,
+					"class": "BaseGroupBox",
+					"text": "Manual Overrides"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 246,
+					"left": 21,
+					"width": 323,
+					"height": 185,
+					"class": "BaseGroupBox",
+					"text": "Additional Information"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 112,
+					"left": 117,
+					"width": 45,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]CostCenterID:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 142,
+					"left": 117,
+					"width": 44,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]Seq_Num:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 168,
+					"left": 117,
+					"width": 436,
+					"height": 60,
+					"dataSource": "[Process_Specs_Machines:28]Comment:21",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 275,
+					"left": 198,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field1:12",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 296,
+					"left": 198,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field2:13",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 317,
+					"left": 198,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field3:14",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 338,
+					"left": 198,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field4:15",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 359,
+					"left": 198,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field7:18",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field18": {
+					"type": "checkbox",
+					"top": 380,
+					"left": 196,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field5:16",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "checkbox",
+					"top": 402,
+					"left": 196,
+					"width": 136,
+					"height": 18,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field6:17",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 275,
+					"left": 490,
+					"width": 50,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]MR_Override:19",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 297,
+					"left": 490,
+					"width": 50,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]Run_Override:20",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 320,
+					"left": 490,
+					"width": 50,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]WasteAdj_Percen:22",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/PercentFormat"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/PercentFilter"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "checkbox",
+					"top": 345,
+					"left": 369,
+					"width": 120,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]formChangeHere:9",
+					"text": "Form Change ƒ",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field21": {
+					"type": "checkbox",
+					"top": 369,
+					"left": 369,
+					"width": 120,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]OutsideService:23",
+					"text": "Outside Service",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 451,
+					"left": 12,
+					"width": 541,
+					"height": 88,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 56,
+					"listForm": "INCL",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"printFrame": "fixed",
+					"borderStyle": "sunken"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 2,
+					"left": 603,
+					"width": 26,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]ModWho:8",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 2,
+					"left": 632,
+					"width": 54,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]ModDate:7",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 35,
+					"left": 553,
+					"width": 87,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"text": "Customer Id"
+				},
+				"DisplayOnly1": {
+					"type": "input",
+					"top": 56,
+					"left": 553,
+					"width": 185,
+					"height": 30,
+					"dataSource": "[Process_Specs_Machines:28]ProcessSpec:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 36,
+					"left": 641,
+					"width": 60,
+					"height": 15,
+					"dataSource": "[Process_Specs_Machines:28]CustID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 276,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel1",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 297,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 318,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel3",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 339,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 383,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel5",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 405,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel6",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 361,
+					"left": 33,
+					"width": 155,
+					"height": 16,
+					"dataSource": "sMachLabel7",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"top": 141,
+					"left": 20,
+					"width": 94,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": " Sequence:"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 168,
+					"left": 21,
+					"width": 86,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": " Comments:"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 275,
+					"left": 360,
+					"width": 122,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "MR (hrs)•:"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 296,
+					"left": 360,
+					"width": 122,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "RunRate (units/hr)•:"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 317,
+					"left": 360,
+					"width": 122,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Waste Adj††•:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 112,
+					"left": 21,
+					"width": 94,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": " Cost Center ID:"
+				}
+			},
+			"entryOrder": [
+				"Field2",
+				"Field9",
+				"Field20",
+				"Field13",
+				"Field14",
+				"Field15",
+				"Field16",
+				"Field17",
+				"Field18",
+				"Field19",
+				"Field8",
+				"Field10",
+				"Field11",
+				"Field12",
+				"Field21",
+				"Subform1",
+				"Field4",
+				"Field5",
+				"Field3",
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Variable7"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text2"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

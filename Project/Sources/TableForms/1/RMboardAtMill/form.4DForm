@@ -1,0 +1,353 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Mill  Production",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "679pt",
+		"paperHeight": "524pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 70,
+					"left": 1,
+					"width": 340,
+					"height": 22,
+					"fill": "#FFE0E0",
+					"stroke": "#FFE0E0"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 73,
+					"left": 255,
+					"width": 77,
+					"height": 18
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 69,
+					"width": 105,
+					"height": 18
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 340,
+					"height": 71,
+					"fill": "#FFA0A0",
+					"stroke": "#FFA0A0"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 49,
+					"left": 1,
+					"width": 340,
+					"height": 22,
+					"fill": "#FFC0C0",
+					"stroke": "#FFC0C0"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 51,
+					"left": 142,
+					"width": 115,
+					"height": 18
+				},
+				"Text1": {
+					"type": "text",
+					"top": 52,
+					"left": 10,
+					"width": 130,
+					"height": 16,
+					"fill": "#FFC0C0",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Quantity Produced:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 11,
+					"left": 10,
+					"width": 130,
+					"height": 16,
+					"fill": "#FFA0A0",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "PO Number:"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 142,
+					"width": 115,
+					"height": 18
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 32,
+					"left": 7,
+					"width": 288,
+					"height": 12,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFA0A0",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 11,
+					"left": 145,
+					"width": 111,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9#########",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 52,
+					"left": 145,
+					"width": 111,
+					"height": 16,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 73,
+					"left": 72,
+					"width": 101,
+					"height": 16,
+					"dataSource": "sCriterion4",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 74,
+					"left": 259,
+					"width": 71,
+					"height": 16,
+					"dataSource": "dDate",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 98,
+					"left": 2,
+					"width": 340,
+					"height": 21,
+					"dataSource": "bPost",
+					"shortcutKey": "[Enter]",
+					"text": "Move To Warehouse",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 20,
+					"left": 312,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 6,
+					"left": 33,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Enter]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 5,
+					"left": 7,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Return]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 1,
+					"left": 312,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 74,
+					"left": 183,
+					"width": 70,
+					"height": 16,
+					"fill": "#FFE0E0",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "TransDate:"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 52,
+					"left": 260,
+					"width": 52,
+					"height": 16,
+					"dataSource": "t3",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "#FFC0C0",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 74,
+					"left": 13,
+					"width": 51,
+					"height": 16,
+					"fill": "#FFE0E0",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Mill Nº:"
+				}
+			}
+		}
+	]
+}

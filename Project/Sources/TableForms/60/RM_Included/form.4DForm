@@ -1,0 +1,143 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 31,
+	"markerBreak": 31,
+	"markerFooter": 31,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line1": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 420
+				},
+				"Line2": {
+					"type": "line",
+					"top": 30,
+					"left": 0,
+					"width": 423,
+					"stroke": "#0000FF"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 1,
+					"left": 0,
+					"width": 139,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "R/M_Code"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 1,
+					"left": 140,
+					"width": 123,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Mix % (0.75 = 75%)"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 17,
+					"left": 2,
+					"width": 135,
+					"height": 12,
+					"dataSource": "[Raw_Materials_Components:60]Compnt_Raw_Matl:2",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 17,
+					"left": 141,
+					"width": 123,
+					"height": 12,
+					"dataSource": "[Raw_Materials_Components:60]MixPercent:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

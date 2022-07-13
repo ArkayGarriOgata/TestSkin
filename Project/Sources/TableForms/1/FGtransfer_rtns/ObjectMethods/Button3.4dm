@@ -1,0 +1,1 @@
+OPEN URL:C673("http://intranet.arkay.com/ams/stories/2003/08/27/returnGoodsAuthorizations.html")

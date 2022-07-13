@@ -1,0 +1,234 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 42,
+	"markerBody": 374,
+	"markerBreak": 375,
+	"markerFooter": 388,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 719,
+					"height": 40,
+					"sizingX": "grow",
+					"fill": "#DDDDDD"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 3,
+					"left": 4,
+					"width": 697,
+					"height": 20,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "PressSchedule"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 12,
+					"left": 25,
+					"width": 39,
+					"height": 17,
+					"dataSource": "sCriterion1",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PressNumbers"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 48,
+					"left": 2,
+					"width": 701,
+					"height": 321,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 110,
+					"detailForm": "Input",
+					"listForm": "IncludePrint",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 17,
+					"left": 435,
+					"width": 22,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "rReal1",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "##0",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 12,
+					"left": 71,
+					"width": 314,
+					"height": 22,
+					"dataSource": "[Cost_Centers:27]Description:3",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 5,
+					"left": 393,
+					"width": 42,
+					"height": 12,
+					"sizingY": "move",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Work day:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 5,
+					"left": 442,
+					"width": 15,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "i",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 17,
+					"left": 386,
+					"width": 48,
+					"height": 12,
+					"sizingY": "move",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Effi'ency%:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 5,
+					"left": 462,
+					"width": 78,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "xText",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 17,
+					"left": 462,
+					"width": 78,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "xTitle",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 20,
+					"left": 569,
+					"width": 131,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "t1",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

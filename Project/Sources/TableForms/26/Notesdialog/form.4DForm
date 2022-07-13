@@ -1,0 +1,116 @@
+{
+	"windowTitle": "Living Large",
+	"formSizeAnchor": "bOK",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 10,
+					"left": 11,
+					"width": 454,
+					"height": 238,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xNotes",
+					"dataSourceTypeHint": "picture",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 260,
+					"left": 284,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCANCEL",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 260,
+					"left": 383,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bSearch",
+					"action": "accept",
+					"text": "OK",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

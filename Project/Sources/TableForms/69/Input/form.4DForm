@@ -1,0 +1,450 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 352,
+	"markerBreak": 352,
+	"markerFooter": 362,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line6": {
+					"type": "line",
+					"top": 94,
+					"left": 16,
+					"width": 490,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Last"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 309,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 297,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 381,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 369,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 453,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 441,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 110,
+					"left": 47,
+					"width": 135,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Core_ValidValue_Key : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 137,
+					"left": 47,
+					"width": 65,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Identifier : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 212,
+					"left": 47,
+					"width": 67,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Category : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 287,
+					"left": 47,
+					"width": 74,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "ValidValue : "
+				},
+				"Core_ValidValue_Key": {
+					"type": "input",
+					"top": 110,
+					"left": 187,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[Core_ValidValue:69]Core_ValidValue_Key:1",
+					"stroke": "#000000",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Identifier": {
+					"type": "input",
+					"top": 137,
+					"left": 117,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Core_ValidValue:69]Identifier:2",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Category": {
+					"type": "input",
+					"top": 212,
+					"left": 119,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Core_ValidValue:69]Category:3",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ValidValue": {
+					"type": "input",
+					"top": 287,
+					"left": 126,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Core_ValidValue:69]ValidValue:4",
+					"dataSourceTypeHint": "object",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"multiline": "yes",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line6"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bFirstlabel",
+					"bPrevious",
+					"bPreviouslabel",
+					"bNext",
+					"bNextlabel",
+					"bLast",
+					"bLastlabel",
+					"bDelete",
+					"bDeletelabel",
+					"bCancel",
+					"bCancellabel",
+					"bValidate",
+					"bValidatelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

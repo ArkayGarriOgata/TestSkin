@@ -1,0 +1,73 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Web Area",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 727,
+					"left": 13,
+					"width": 87,
+					"height": 25,
+					"sizingY": "move",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Web Area": {
+					"type": "webArea",
+					"top": 38,
+					"left": 1,
+					"width": 700,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"contextMenu": "none"
+				},
+				"WbAr_Video_atFilePathName": {
+					"type": "dropdown",
+					"top": 10,
+					"left": 59,
+					"width": 475,
+					"height": 20,
+					"dataSource": "WbAr_Video_atFilePathName",
+					"focusable": false,
+					"method": "ObjectMethods/WbAr_Video_atFilePathName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 43,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "right",
+					"text": "Movie:"
+				}
+			}
+		}
+	]
+}

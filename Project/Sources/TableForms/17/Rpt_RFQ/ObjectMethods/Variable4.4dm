@@ -1,0 +1,1 @@
+t3:=String:C10(Current date:C33; 1)

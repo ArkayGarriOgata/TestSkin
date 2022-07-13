@@ -1,0 +1,167 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 3,
+	"markerBody": 145,
+	"markerBreak": 145,
+	"markerFooter": 155,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line4": {
+					"type": "line",
+					"top": 65,
+					"left": 15,
+					"width": 261,
+					"sizingX": "grow"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 77,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 77,
+					"left": 228,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bValidate",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 7,
+					"left": 1,
+					"width": 99,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "OrderLine : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 31,
+					"left": 6,
+					"width": 116,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "PlannerComment : "
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 6,
+					"left": 104,
+					"width": 82,
+					"height": 17,
+					"dataSource": "orderline",
+					"fontFamily": "Geneva",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 31,
+					"left": 125,
+					"width": 151,
+					"height": 17,
+					"dataSource": "plannerComment",
+					"fontFamily": "Geneva",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PlannerComments"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

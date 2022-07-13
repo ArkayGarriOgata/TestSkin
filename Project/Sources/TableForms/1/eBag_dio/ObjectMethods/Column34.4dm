@@ -1,0 +1,1 @@
+tText:=Num:C11(FG_LaunchItem("is"; [Job_Forms_Items:44]ProductCode:3))*"Launch"

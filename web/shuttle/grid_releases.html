@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+</head>
+
+<body>
+    <h1 class="m-4">Release Schedule</h1>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <input type="text" placeholder="Search ShipTo..." id="queryBox" onchange="queryGrid();"><br><br>
+            <div id="myGrid" style="height: 500px;width:100%;" class="ag-theme-balham"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="gridDetail"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" charset="utf-8">
+
+
+    // specify the columns
+    var columnDefs = [
+        { headerName: "ProductCode", field: "ProductCode", sortable: true, filter: true, width: 140  },
+        { headerName: "Sched_Date", field: "Sched_Date", sortable: true, filter: true, width: 120 },
+        { headerName: "Sched_Qty", field: "Sched_Qty", sortable: false, filter: true, width: 110 },
+        { headerName: "Shipto", field: "Shipto", sortable: true, filter: true, width: 80 },
+        { headerName: "CustomerRefer", field: "CustomerRefer", sortable: true, filter: true, width: 150 },
+        { headerName: "Expedite", field: "Expedite", sortable: true, filter: true, width: 110 },
+    ];
+
+    // let the grid know which columns and what data to use
+    var gridOptions = {
+        columnDefs: columnDefs,
+        rowSelection: 'multiple',
+        rowData: [],
+        onSelectionChanged: onSelectionChanged
+    };
+
+    fillGrid("");
+
+    function onSelectionChanged() {
+        var selectedNodes = gridOptions.api.getSelectedNodes();
+        var selectedData = selectedNodes.map(function (node) { return node.data });
+        var selectedDataStringPresentation = selectedData.map(function (node) { return fillRecordTemplate(node) }).join('<br>');
+        document.getElementById("gridDetail").innerHTML = selectedDataStringPresentation;
+    }
+
+    function fillRecordTemplate(record) {
+        recordHtml = "<div><h2 class=\"mt-5\">CPN:  " + record.ProductCode +  "<br>"+"PO:  " + record.CustomerRefer + "</h2>";
+        // recordHtml += '<img src="/4DACTION/getCustomerPhoto?id=' + record.Customer_ID + '&thumbnail=1" /><br>';
+
+        recordHtml += "<b>Sched_Date: </b>" + record.Sched_Date + "<br>";
+        recordHtml += "<b>Sched_Qty: </b>" + record.Sched_Qty + "<br>";
+        recordHtml += "<b>Shipto: </b>" + record.Shipto + "<br>";
+        recordHtml += "<b>Expedite: </b>" + record.Expedite + "<br>";
+        recordHtml += "<b>CustID: </b>" + record.CustID + "<br>";
+        recordHtml += "<b>CustomerLine: </b>" + record.CustomerLine + "<br>";
+        recordHtml += "<b>RemarkLine1: </b>" + record.RemarkLine1 + "<br>";
+        recordHtml += "<b>RemarkLine2: </b>" + record.RemarkLine2 + "<br>";
+
+        return recordHtml;
+    }
+
+    function queryGrid() {
+
+        queryValue = document.getElementById("queryBox").value;
+        fillGrid(queryValue);
+
+    }
+
+    function fillGrid(queryValue) {
+
+
+        // lookup the container we want the Grid to use
+        document.getElementById('myGrid').innerHTML = ''; // Force refreshing of grid
+        var eGridDiv = document.querySelector('#myGrid');
+
+        // create the grid passing in the div to use together with the columns & data we want to use
+        new agGrid.Grid(eGridDiv, gridOptions);
+
+        //Call to the API
+
+        if (queryValue !== "") {
+            url = "/api/Customers_ReleaseSchedules?q=(Shipto='" + queryValue + "')";
+
+        } else {
+            url = "/api/Customers_ReleaseSchedules";
+
+        }
+
+
+        fetch(url).then(function (response) {
+            return response.json();
+        }).then(function (resp) {
+            gridOptions.api.setRowData(resp.data);
+        });
+
+    }
+
+</script>

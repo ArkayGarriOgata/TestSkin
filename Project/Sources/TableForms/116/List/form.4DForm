@@ -1,0 +1,160 @@
+{
+	"destination": "listScreen",
+	"windowTitle": "Shop Calendar",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 122,
+	"markerBreak": 124,
+	"markerFooter": 127,
+	"events": [
+		"onLoad",
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "475pt",
+		"paperHeight": "367pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 45,
+					"width": 37,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Month"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 100,
+					"left": 50,
+					"width": 23,
+					"height": 16,
+					"dataSource": "[ProductionSchedules_Shop_Cal:116]psMonth:1",
+					"stroke": "#000000",
+					"fontFamily": "Monaco",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 94,
+					"width": 79,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Shifts/Day"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 322,
+					"height": 17,
+					"dataSource": "[ProductionSchedules_Shop_Cal:116]Shifts:2",
+					"stroke": "#000000",
+					"class": "Fixed_13_Courier",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 6,
+					"width": 33,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Dept"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 6,
+					"width": 33,
+					"height": 16,
+					"dataSource": "[ProductionSchedules_Shop_Cal:116]Dept:3",
+					"stroke": "#000000",
+					"fontFamily": "Monaco",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+qryCostCenter([Estimates_Machines:20]CostCtrID:4; [Estimates_Machines:20]UseStdDated:43)  //3/15/95 upr 66

@@ -1,0 +1,1 @@
+[Finished_Goods:26]Depth_Dec:11:=fInches2Dec(Self:C308->)

@@ -1,0 +1,103 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 24,
+					"left": 11,
+					"width": 525,
+					"height": 105,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "tText",
+					"class": "BaseField",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 8,
+					"left": 11,
+					"width": 179,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "SQL \"UPDATE\" Statement:"
+				},
+				"Button": {
+					"type": "button",
+					"top": 138,
+					"left": 46,
+					"width": 74,
+					"height": 28,
+					"sizingY": "move",
+					"dataSource": "b1",
+					"text": "Run",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 138,
+					"left": 140,
+					"width": 74,
+					"height": 28,
+					"sizingY": "move",
+					"dataSource": "b2",
+					"text": "Last Stmt",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable",
+				"Button",
+				"Button1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

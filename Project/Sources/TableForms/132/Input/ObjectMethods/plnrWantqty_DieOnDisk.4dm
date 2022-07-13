@@ -1,0 +1,1 @@
+[Finished_Goods_SizeAndStyles:132]DieOnDisk:29:=([Finished_Goods_SizeAndStyles:132]qty_DieOnDisk:36>0)

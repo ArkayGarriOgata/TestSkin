@@ -1,0 +1,369 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 103,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Height:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 20,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Sheets/Load:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 130,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Subform:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 155,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Sequence:"
+				},
+				"height": {
+					"type": "input",
+					"top": 103,
+					"left": 163,
+					"width": 43,
+					"height": 17,
+					"dataSource": "Form:C1466.height",
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/height.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					]
+				},
+				"caliper": {
+					"type": "input",
+					"top": 73,
+					"left": 163,
+					"width": 43,
+					"height": 17,
+					"dataSource": "Form:C1466.caliper",
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/caliper.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					]
+				},
+				"qty": {
+					"type": "input",
+					"top": 20,
+					"left": 163,
+					"width": 43,
+					"height": 17,
+					"dataSource": "Form:C1466.qty",
+					"class": "BaseManditory",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/qty.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"numberLoads": {
+					"type": "input",
+					"top": 45,
+					"left": 163,
+					"width": 43,
+					"height": 17,
+					"dataSource": "Form:C1466.numberLoads",
+					"class": "BaseManditory",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"subform": {
+					"type": "input",
+					"top": 130,
+					"left": 163,
+					"width": 43,
+					"height": 17,
+					"dataSource": "Form:C1466.subform",
+					"class": "BaseManditory",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"sequence": {
+					"type": "input",
+					"top": 155,
+					"left": 163,
+					"width": 43,
+					"height": 17,
+					"dataSource": "Form:C1466.sequence",
+					"class": "BaseManditory",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"location": {
+					"type": "input",
+					"top": 180,
+					"left": 163,
+					"width": 223,
+					"height": 17,
+					"dataSource": "Form:C1466.location",
+					"class": "BaseManditory",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"location1": {
+					"type": "input",
+					"top": 208,
+					"left": 163,
+					"width": 223,
+					"height": 17,
+					"dataSource": "Form:C1466.po",
+					"class": "BaseManditory",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/location1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cancel": {
+					"type": "button",
+					"top": 240,
+					"left": 163,
+					"width": 99,
+					"height": 35,
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ok": {
+					"type": "button",
+					"top": 240,
+					"left": 284,
+					"width": 99,
+					"height": 35,
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Enter",
+					"class": "BaseButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 73,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Caliper:"
+				},
+				"gross": {
+					"type": "input",
+					"top": 20,
+					"left": 422,
+					"width": 91,
+					"height": 17,
+					"dataSource": "Form:C1466.grossSheets",
+					"dataSourceTypeHint": "number",
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 20,
+					"left": 344,
+					"width": 75,
+					"height": 17,
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Gross:"
+				},
+				"gross1": {
+					"type": "input",
+					"top": 46,
+					"left": 422,
+					"width": 91,
+					"height": 17,
+					"dataSource": "Form:C1466.calcGross",
+					"dataSourceTypeHint": "number",
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 46,
+					"left": 344,
+					"width": 75,
+					"height": 17,
+					"stroke": "#808080",
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Calculated:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 180,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Location:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 208,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Purchase Order:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 45,
+					"left": 26,
+					"width": 125,
+					"height": 17,
+					"class": "BaseManditory",
+					"textAlign": "right",
+					"text": "Number of Loads:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 82,
+					"left": 226,
+					"width": 97,
+					"height": 33,
+					"stroke": "#808080",
+					"text": "double-click\rto change"
+				},
+				"Line": {
+					"type": "line",
+					"top": 81,
+					"left": 217,
+					"height": 34
+				},
+				"Line1": {
+					"type": "line",
+					"top": 81,
+					"left": 211,
+					"width": 6
+				},
+				"Line2": {
+					"type": "line",
+					"top": 114,
+					"left": 211,
+					"width": 6
+				},
+				"Line3": {
+					"type": "line",
+					"top": 98,
+					"left": 217,
+					"width": 6
+				}
+			}
+		}
+	]
+}

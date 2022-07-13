@@ -1,0 +1,372 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Certificate of Anaylsis Specs",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button1": {
+					"type": "button",
+					"top": 140,
+					"left": 443,
+					"width": 60,
+					"height": 22,
+					"dataSource": "bOk",
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"abShowSpecsLB": {
+					"type": "listbox",
+					"top": 12,
+					"left": 15,
+					"width": 488,
+					"height": 118,
+					"resizingMode": "legacy",
+					"dataSource": "abShowSpecsLB",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "aAttribute",
+							"dataSource": "aAttribute",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Attribute",
+								"dataSource": "Header9",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aNominal",
+							"dataSource": "aNominal",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Nominal",
+								"dataSource": "Header10",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aLowerLimit",
+							"dataSource": "aLowerLimit",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Low",
+								"dataSource": "Header11",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aUpperLimit",
+							"dataSource": "aUpperLimit",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "High",
+								"dataSource": "Header12",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aMean",
+							"dataSource": "aMean",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Mean",
+								"dataSource": "Header13",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aStdDev",
+							"dataSource": "aStdDev",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Std Dev",
+								"dataSource": "Header14",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aCpk",
+							"dataSource": "aCpk",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Cpk",
+								"dataSource": "Header15",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aPPM",
+							"dataSource": "aPPM",
+							"width": 49,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "PPM",
+								"dataSource": "Header16",
+								"stroke": "automatic",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

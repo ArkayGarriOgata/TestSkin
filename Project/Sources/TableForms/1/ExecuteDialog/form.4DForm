@@ -1,0 +1,176 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable3": {
+					"type": "input",
+					"top": 23,
+					"left": 7,
+					"width": 398,
+					"height": 48,
+					"dataSource": "vCommand",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 85,
+					"left": 76,
+					"width": 68,
+					"height": 24,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Done",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 85,
+					"left": 159,
+					"width": 165,
+					"height": 24,
+					"dataSource": "cbOnce",
+					"action": "accept",
+					"text": "OK and Next Command",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 85,
+					"left": 339,
+					"width": 68,
+					"height": 24,
+					"dataSource": "bok",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 22,
+					"left": 409,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 4,
+					"left": 5,
+					"width": 265,
+					"height": 16,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Enter a Command or pick from popup:"
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 23,
+					"left": 409,
+					"width": 18,
+					"height": 14,
+					"dataSource": "<>ib_delvr_schd",
+					"display": false,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

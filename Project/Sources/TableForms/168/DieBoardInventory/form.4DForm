@@ -1,0 +1,700 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"SearchPicker": {
+					"type": "subform",
+					"top": 3,
+					"left": 16,
+					"width": 198,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "vSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 35,
+					"left": 0,
+					"width": 965,
+					"height": 512,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "lrDieBoards",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "2em",
+					"table": 168,
+					"highlightSet": "DieBoardSet",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[Job_DieBoard_Inv:168]CatelogID:10",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Location",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[Job_DieBoard_Inv:168]Customer:2",
+							"width": 224,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Customer",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[Job_DieBoard_Inv:168]DieNumber:3",
+							"width": 167,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Job #",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[Job_DieBoard_Inv:168]OutlineNumber:4",
+							"width": 98,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "A #",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[Job_DieBoard_Inv:168]UpNumber:5",
+							"dataSourceTypeHint": "integer",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Up #",
+								"dataSource": "Header6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "[Job_DieBoard_Inv:168]Type:7",
+							"width": 53,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "B/S",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "[Job_DieBoard_Inv:168]DateEntered:6",
+							"dataSourceTypeHint": "date",
+							"width": 77,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"dateFormat": "shortCentury",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Date",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "[Job_DieBoard_Inv:168]DateLastUsed:13",
+							"dataSourceTypeHint": "date",
+							"width": 86,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "shortCentury",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Last\\Used",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[Job_DieBoard_Inv:168]Impressions:14",
+							"dataSourceTypeHint": "integer",
+							"width": 83,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Impressions\\Past Yr",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 576,
+					"left": 564,
+					"width": 207,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "ttQueryString",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 576,
+					"left": 811,
+					"width": 114,
+					"height": 30,
+					"sizingY": "move",
+					"text": "Refresh",
+					"class": "BaseButtons",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLabels": {
+					"type": "button",
+					"top": 558,
+					"left": 8,
+					"width": 48,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bLabels",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Labels"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Labels",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Label.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bLabels.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 634,
+					"left": 0,
+					"width": 965,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "move"
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 558,
+					"left": 222,
+					"width": 48,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/Buttons/Glass/DeleteRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete1": {
+					"type": "button",
+					"top": 558,
+					"left": 290,
+					"width": 48,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/Glass/NewRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 576,
+					"left": 517,
+					"width": 51,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Query : "
+				},
+				"3D Button": {
+					"type": "button",
+					"top": 577,
+					"left": 726,
+					"width": 44,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "3D Button",
+					"text": "Find",
+					"method": "ObjectMethods/3D Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bbImport": {
+					"type": "button",
+					"top": 558,
+					"left": 128,
+					"width": 48,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bbImport",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Labels"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Import",
+					"icon": "/RESOURCES/Images/Buttons/Glass/PreviousRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bbImport.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bbPrintList": {
+					"type": "button",
+					"top": 558,
+					"left": 68,
+					"width": 48,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bbPrintList",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Labels"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Print List",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Print.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bbPrintList.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBy": {
+					"type": "button",
+					"top": 558,
+					"left": 352,
+					"width": 54,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Order by",
+					"icon": "/RESOURCES/Images/Buttons/Glass/OrderBy.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuery": {
+					"type": "button",
+					"top": 558,
+					"left": 419,
+					"width": 48,
+					"height": 66,
+					"sizingY": "move",
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Query",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line1"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bLabels",
+					"bDelete",
+					"bOrderBy",
+					"bQuery"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

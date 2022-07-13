@@ -1,0 +1,612 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 0,
+					"left": 1,
+					"width": 1208,
+					"height": 658,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "sttAdvSchedPage",
+					"dataSourceTypeHint": "arrayText",
+					"method": "ObjectMethods/Tab Control.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture4": {
+					"type": "picture",
+					"top": 24,
+					"left": 1181,
+					"width": 21,
+					"height": 21,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26771.png"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 26,
+					"left": 1,
+					"width": 1200,
+					"height": 19,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Advanced Production Scheduler"
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 70,
+					"left": 1,
+					"width": 1223,
+					"height": 588,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "lbJobs",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"borderStyle": "solid",
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onColumnMove",
+						"onColumnResize",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": [
+								"sttJobNum",
+								"sttJobFormID",
+								"sttJobFormSeq"
+							],
+							"width": 332,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Job Number",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "sxrJobQty",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Planned Qty",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "siSelectMachine",
+							"dataSourceTypeHint": "picture",
+							"width": 20,
+							"minWidth": 20,
+							"maxWidth": 20,
+							"resizable": false,
+							"enterable": false,
+							"pictureFormat": "truncatedCenter",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column13.4dm",
+							"header": {
+								"name": "Header13",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "sttJobMachine",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Target Machine",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "siGoToMachine",
+							"dataSourceTypeHint": "picture",
+							"width": 20,
+							"minWidth": 20,
+							"maxWidth": 20,
+							"resizable": false,
+							"enterable": false,
+							"pictureFormat": "truncatedCenter",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column3.4dm",
+							"header": {
+								"name": "Header3",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "sttJobOnMachine",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Scheduled To",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "sttJobCompletedOn",
+							"width": 138,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Scheduled For",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "siJobGraph",
+							"dataSourceTypeHint": "picture",
+							"width": 212,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "30 Day Forcast",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "sttJobFormSeq",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Header7",
+								"dataSource": "Header7",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "sttJobOnMachineID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Header8",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "sttJobFormID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Header9",
+								"dataSource": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "sttJobType",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Header10",
+								"dataSource": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "sttJobTypeDesc",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Header11",
+								"dataSource": "Header11",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "sttJobMachineID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Header12",
+								"dataSource": "Header12",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 47,
+					"left": 11,
+					"width": 17,
+					"height": 17,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/gotoicon.png"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 3,
+					"left": 9,
+					"width": 21,
+					"height": 21,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/popupicon.png"
+				},
+				"Text": {
+					"type": "text",
+					"top": 7,
+					"left": 34,
+					"width": 329,
+					"height": 35,
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontStyle": "italic",
+					"text": "Click to schedule an operation to a Machine\r* Hold option key down to select from ALL machines"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 47,
+					"left": 34,
+					"width": 329,
+					"height": 15,
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"fontStyle": "italic",
+					"text": "Click to view the operation on the Schedule"
+				},
+				"3D Button": {
+					"type": "button",
+					"top": 22,
+					"left": 1178,
+					"width": 26,
+					"height": 25,
+					"sizingX": "move",
+					"dataSource": "3D Button",
+					"focusable": false,
+					"text": "Button 3D",
+					"style": "toolbar",
+					"method": "ObjectMethods/3D Button.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		null
+	]
+}

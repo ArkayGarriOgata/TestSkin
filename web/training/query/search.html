@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+<title>aMs Training Videos - Searching</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" rev="" href="../css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+</head>
+
+<body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+
+<button onclick="location.href = '../'">Home</button>
+
+<h1 id="query-editor">The Query Editor</h1>
+
+<p>aMs presents the Query Editor dialog when you select Search from the Shortcuts menu, click the Find (magnifier icon) on a record listing, or when the Query Editor radio button is chosen from the ubiquitous "Find records in the Xxxxx table where" dialog.</p>
+
+<p>Complete documentation on the Query Editor can be found <a href="https://doc.4d.com/4Dv17/4D/17/Searching-records.200-3743433.en.html">here</a>.</p>
+
+<H2>Basic Query</h2>
+<p>Demonstrates using the Query Editor to find records in a table that share a common value in a field. In this example will find inventory that shares the same customer id.</p>
+
+<video controls>
+   <source src="search-simple.webm" type="video/webm">
+   <source src="search-simple.mp4" type="video/mp4">
+</video>
+
+<p>Updated 02/12/19</p>
+
+<H2>Query on Related Fields</h2>
+<p>Demonstrates using fields from a related table to filter records. This example will find inventory by customer name that was glued before a given date. Note that for this to work there needs to be an explicit relationship between the table of interest and the table of the external field. Diagrams showing these relations can be found on the <a href="../img/carrot.gif">aMs Relations</a> page.</p>
+
+<video controls>
+  <source src="search-related-table.webm" type="video/webm">
+  <source src="search-related-table.mp4" type="video/mp4">
+</video>
+
+<H2>Saving and Loading Queries</h2>
+<p>Demonstrates using the Query Editor Save and Load commands that are available under the Action (little gear) icon. Note that the queries you save are specific to the table that you selected as the master table; therefore, the name given to the saved query should in someway indicate the master table, for instance a prefix.</p>
+
+<video controls>
+  <source src="search-save-load.webm" type="video/webm">
+  <source src="search-save-load.mp4" type="video/mp4">
+</video>
+
+<p>Updated 02/12/19</p>
+
+<H2>Query Selection Options</h2>
+<p>Demonstrates applying addition criteria to the current selection of records as well as excluding those that meet a condition. When the number of records in the current selection is small, you may be able to leverage sorting and command+clicking then using the "Exclude" or "Include" buttons; manually selecting records when the current selection is large becomes very inefficient.</p>
+<video controls>
+  <source src="search-selection-options.webm" type="video/webm">
+  <source src="search-selection-options.mp4" type="video/mp4">
+</video>
+
+<p>Updated 02/12/19</p>
+
+<H2>Query By Formula</h2>
+<p>Demonstrates using a formuala as part of the criteria for selecting records. The formula needs to be an expression that evaluates to either true or false for each record tested. Examples are comparing 2 fields with in a record or using a function provided by the development department.</p>
+<video controls>
+  <source src="search-by-formula.webm" type="video/webm">
+  <source src="search-by-formula.mp4" type="video/mp4">
+</video>
+
+<p>Updated 02/13/19</p>
+
+	      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

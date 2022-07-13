@@ -1,0 +1,128 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture2": {
+					"type": "picture",
+					"top": 4,
+					"left": 3,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Questions McGee.png"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 7,
+					"left": 38,
+					"width": 325,
+					"height": 76,
+					"dataSource": "MyText",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 98,
+					"left": 257,
+					"width": 106,
+					"height": 23,
+					"dataSource": "bAccept",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Yes",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 98,
+					"left": 136,
+					"width": 106,
+					"height": 23,
+					"dataSource": "bNo",
+					"shortcutKey": "n",
+					"text": "No (n)",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 98,
+					"left": 15,
+					"width": 106,
+					"height": 23,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 123,
+					"left": 277,
+					"width": 96,
+					"height": 5,
+					"dataSource": "bAccept",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Yes",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Variable4",
+				"Variable3",
+				"Variable2"
+			]
+		}
+	]
+}

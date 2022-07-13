@@ -1,0 +1,230 @@
+{
+	"windowTitle": "Click to Pick",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable5",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable3": {
+					"type": "input",
+					"top": 7,
+					"left": 11,
+					"width": 173,
+					"height": 39,
+					"sizingX": "grow",
+					"dataSource": "t10",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"OrLn_abPrCd": {
+					"type": "listbox",
+					"top": 48,
+					"left": 13,
+					"width": 170,
+					"height": 208,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "OrLn_abPrCd",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "aBullet",
+							"dataSource": "aBullet",
+							"width": 28,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/aBullet.4dm",
+							"header": {
+								"name": "Header11",
+								"text": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aOL",
+							"dataSource": "aOL",
+							"width": 170,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick"
+							],
+							"method": "ObjectMethods/aOL.4dm",
+							"header": {
+								"name": "Header12",
+								"text": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 263,
+					"left": 11,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bNoPick",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 263,
+					"left": 104,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bPick",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 303,
+					"left": 142,
+					"width": 41,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bPick",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

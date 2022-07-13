@@ -1,0 +1,285 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 39,
+	"markerBody": 61,
+	"markerBreak": 61,
+	"markerFooter": 105,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line1": {
+					"type": "line",
+					"top": 59,
+					"left": 397,
+					"width": 88,
+					"strokeWidth": 0.1
+				},
+				"Line2": {
+					"type": "line",
+					"top": 59,
+					"left": 290,
+					"width": 102,
+					"strokeWidth": 0.1
+				},
+				"Line3": {
+					"type": "line",
+					"top": 59,
+					"left": 490,
+					"width": 57,
+					"strokeWidth": 0.1
+				},
+				"Line4": {
+					"type": "line",
+					"top": 59,
+					"left": 2,
+					"width": 138,
+					"strokeWidth": 0.1
+				},
+				"Line5": {
+					"type": "line",
+					"top": 59,
+					"left": 146,
+					"width": 138,
+					"strokeWidth": 0.1
+				},
+				"Text1": {
+					"type": "text",
+					"top": 26,
+					"left": 489,
+					"width": 58,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Initials"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 26,
+					"left": 154,
+					"width": 123,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Job Number & Item"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 26,
+					"left": 10,
+					"width": 122,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Customer Product Code"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 26,
+					"left": 293,
+					"width": 96,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Location"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 26,
+					"left": 400,
+					"width": 82,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Quantity"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 37,
+					"left": 2,
+					"width": 548
+				},
+				"Text6": {
+					"type": "text",
+					"top": 64,
+					"left": 3,
+					"width": 546,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "• Record ONLY NEW inventory on these forms.  Record ALL information requested, record counts in TOTAL UNITS."
+				},
+				"Text7": {
+					"type": "text",
+					"top": 78,
+					"left": 3,
+					"width": 546,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "• Record any inventory COUNT CHANGES on form labeled: \"Finished Goods:  Count Sheet for... <your site location>\""
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 3,
+					"left": 3,
+					"width": 546,
+					"height": 15,
+					"dataSource": "t2",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Order_By"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 3,
+					"left": 499,
+					"width": 50,
+					"height": 11,
+					"dataSource": "dDate",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 92,
+					"left": 483,
+					"width": 66,
+					"height": 11,
+					"dataSource": "sPage",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Prev_Rec"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

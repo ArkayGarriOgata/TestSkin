@@ -1,0 +1,37 @@
+
+<script>
+    $(document).ready(function () {
+        hideShowMenuIcon();  
+         
+    });
+
+    $(window).resize(function(){
+        hideShowMenuIcon();      
+    });
+</script>
+    
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="brand">
+        <a href="/"><img src="/shuttle/assets/img/arkay-logo-on-tp.png" alt="Arkay Logo" width="120" class="img-responsive logo"></a>
+    </div>
+    <div class="menuicon" id="menuicon" style="position: absolute; bottom: 2px; left:5px;" onclick="hideShowMenu()">
+        <img src="/portal/images/icons8-menu-64.png" alt="Arkay Logo" width="30" class="img-responsive logo">
+    </div>
+
+    <div class="container-fluid">
+        <div id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lnr lnr-user"> </span> <span>User</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onClick="window.open('/training/portal/index.html', '_blank')"><i class="lnr lnr-envelope"></i> <span>Help</span></a></li>
+                        <li><a href="#" onclick="logout()"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

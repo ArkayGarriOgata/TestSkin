@@ -1,0 +1,401 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 479,
+					"height": 258,
+					"fill": "#DFE4FF"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 6,
+					"left": 85,
+					"width": 116,
+					"height": 14
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 37,
+					"left": 85,
+					"width": 76,
+					"height": 14
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 53,
+					"left": 85,
+					"width": 76,
+					"height": 14
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 85,
+					"width": 76,
+					"height": 14
+				},
+				"Text1": {
+					"type": "text",
+					"top": 7,
+					"left": 6,
+					"width": 78,
+					"height": 12,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Color"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 38,
+					"left": 6,
+					"width": 78,
+					"height": 12,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "In"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 54,
+					"left": 6,
+					"width": 78,
+					"height": 12,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Out"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 72,
+					"left": 6,
+					"width": 78,
+					"height": 12,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Returned"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 91,
+					"left": 6,
+					"width": 78,
+					"height": 12,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Is OK"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 21,
+					"left": 85,
+					"width": 116,
+					"height": 14
+				},
+				"Text6": {
+					"type": "text",
+					"top": 22,
+					"left": 6,
+					"width": 78,
+					"height": 12,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "JobForm"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 120,
+					"left": 52,
+					"width": 160,
+					"height": 24,
+					"fill": "#DFE4FF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "Enter your criterian to narrow the search, then click the Find button."
+				},
+				"Field1": {
+					"type": "input",
+					"top": 7,
+					"left": 88,
+					"width": 112,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Color_Submission:78]Color:2",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 22,
+					"left": 88,
+					"width": 112,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Color_Submission:78]JobForm:8",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 38,
+					"left": 88,
+					"width": 72,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Color_Submission:78]dateIn:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 54,
+					"left": 88,
+					"width": 72,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Color_Submission:78]dateOut:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 72,
+					"left": 88,
+					"width": 72,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Color_Submission:78]Returned:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6_first": {
+					"type": "radio",
+					"top": 89,
+					"left": 87,
+					"width": 35,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Color_Submission:78]Is_Ok:6",
+					"text": "OK",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"radioGroup": "Field6_group",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "radio",
+					"top": 89,
+					"left": 142,
+					"width": 39,
+					"height": 16,
+					"dataSource": "Not:C34([Finished_Goods_Color_Submission:78]Is_Ok:6)",
+					"text": "NG",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"radioGroup": "Field6_group",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 101,
+					"left": 315,
+					"width": 67,
+					"height": 19,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 131,
+					"left": 315,
+					"width": 67,
+					"height": 19,
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Find",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

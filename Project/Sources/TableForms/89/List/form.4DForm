@@ -1,0 +1,211 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 32,
+	"markerBreak": 32,
+	"markerFooter": 32,
+	"events": [
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 216,
+					"height": 34
+				},
+				"Line1": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 216
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 3,
+					"width": 45,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"text": "Comm"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 46,
+					"height": 33
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 50,
+					"width": 126,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"text": "Description"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 183,
+					"width": 31,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"text": "Dept"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 180,
+					"height": 33
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 2,
+					"width": 42,
+					"height": 12,
+					"dataSource": "[y_accounting_dept_commodities:89]CommodityCode:1",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 50,
+					"width": 128,
+					"height": 12,
+					"dataSource": "[y_accounting_dept_commodities:89]CommDesc:3",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 19,
+					"left": 183,
+					"width": 29,
+					"height": 12,
+					"dataSource": "[y_accounting_dept_commodities:89]DepartmentID:2",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 19,
+					"left": 220,
+					"width": 128,
+					"height": 12,
+					"dataSource": "[Raw_Material_Commodities:54]CommodityName:2",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 221,
+					"width": 126,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"text": "CommodityName"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

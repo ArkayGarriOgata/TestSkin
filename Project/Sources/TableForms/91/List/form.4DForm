@@ -1,0 +1,267 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 123,
+	"markerFooter": 125,
+	"events": [
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 10,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Outline"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 93,
+					"width": 71,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CaseCount"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 78,
+					"left": 276,
+					"width": 138,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "RM_Code"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 78,
+					"left": 469,
+					"width": 160,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CaseSizeABH"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 78,
+					"left": 656,
+					"width": 73,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "StockCaliper"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 100,
+					"left": 6,
+					"width": 80,
+					"height": 16,
+					"dataSource": "[Finished_Goods_PackingSpecs:91]FileOutlineNum:1",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 99,
+					"width": 63,
+					"height": 16,
+					"dataSource": "[Finished_Goods_PackingSpecs:91]CaseCount:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 100,
+					"left": 191,
+					"width": 65,
+					"height": 16,
+					"dataSource": "[Finished_Goods_PackingSpecs:91]UnitsPerSkid:30",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 100,
+					"left": 276,
+					"width": 166,
+					"height": 16,
+					"dataSource": "[Finished_Goods_PackingSpecs:91]RM_Code:36",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 100,
+					"left": 465,
+					"width": 170,
+					"height": 16,
+					"dataSource": "[Finished_Goods_PackingSpecs:91]CaseSizeLWH:7",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 100,
+					"left": 658,
+					"width": 73,
+					"height": 16,
+					"dataSource": "[Finished_Goods_PackingSpecs:91]StockCaliper:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Caliper"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 78,
+					"left": 185,
+					"width": 71,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Units/Skid"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

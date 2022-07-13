@@ -1,0 +1,76 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 145,
+	"markerBreak": 195,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 17,
+					"left": 16,
+					"width": 470,
+					"height": 84,
+					"dataSource": "sPOIcode39",
+					"textAlign": "center",
+					"fontFamily": "IDAutomationC39M",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 109,
+					"left": 16,
+					"width": 472,
+					"height": 24,
+					"dataSource": "sPOIcode39",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,246 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 46,
+					"left": 24,
+					"width": 280,
+					"height": 394,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "colTables",
+					"currentItemSource": "Form:C1466.currentTable",
+					"scrollbarHorizontal": "automatic",
+					"verticalLineStroke": "transparent",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "This:C1470.tableName",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Table",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pie1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "This:C1470.publish",
+							"dataSourceTypeHint": "boolean",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Publish",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pie3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 454,
+					"left": 420,
+					"width": 90,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 454,
+					"left": 520,
+					"width": 90,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 18,
+					"left": 24,
+					"width": 242,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Choose tables and fields to publish"
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 46,
+					"left": 330,
+					"width": 280,
+					"height": 394,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.currentTable.fields",
+					"scrollbarHorizontal": "automatic",
+					"verticalLineStroke": "transparent",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D2",
+							"dataSource": "This:C1470.fieldName",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Field",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pie2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Barras 2D4",
+							"dataSource": "This:C1470.publish",
+							"dataSourceTypeHint": "boolean",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Publish",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pie4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 454,
+					"left": 24,
+					"width": 90,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"shortcutKey": "[Esc]",
+					"text": "Reload",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

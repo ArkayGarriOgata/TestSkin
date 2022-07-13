@@ -1,0 +1,244 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "RmTr_nFoil_Save",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"RmTr_atFoil_Vendor": {
+					"type": "dropdown",
+					"top": 12,
+					"left": 71,
+					"width": 22,
+					"height": 18,
+					"dataSource": "RmTr_atFoil_Vendor",
+					"focusable": false,
+					"class": "Form_Label",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_atFoil_Width": {
+					"type": "dropdown",
+					"top": 44,
+					"left": 71,
+					"width": 22,
+					"height": 20,
+					"dataSource": "RmTr_atFoil_Width",
+					"focusable": false,
+					"class": "Form_Label",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_atFoil_Color": {
+					"type": "dropdown",
+					"top": 74,
+					"left": 71,
+					"width": 22,
+					"height": 20,
+					"dataSource": "RmTr_atFoil_Color",
+					"focusable": false,
+					"class": "Form_Label",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_atFoil_Quantity": {
+					"type": "dropdown",
+					"top": 105,
+					"left": 71,
+					"width": 22,
+					"height": 20,
+					"dataSource": "RmTr_atFoil_Quantity",
+					"focusable": false,
+					"class": "Form_Label",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_nFoil_Cancel": {
+					"type": "button",
+					"top": 136,
+					"left": 109,
+					"width": 70,
+					"height": 20,
+					"dataSource": "RmTr_nFoil_Cancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"RmTr_nFoil_Save": {
+					"type": "button",
+					"top": 136,
+					"left": 181,
+					"width": 70,
+					"height": 20,
+					"dataSource": "RmTr_nFoil_Save",
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/RmTr_nFoil_Save.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RmTr_nFoil_OnLoad": {
+					"type": "button",
+					"top": 197,
+					"left": 4,
+					"width": 75,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "RmTr_nFoil_OnLoad",
+					"action": "cancel",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/RmTr_nFoil_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Vendor": {
+					"type": "text",
+					"top": 15,
+					"left": 13,
+					"width": 55,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Vendor"
+				},
+				"Width": {
+					"type": "text",
+					"top": 46,
+					"left": 13,
+					"width": 55,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Width"
+				},
+				"Color": {
+					"type": "text",
+					"top": 76,
+					"left": 13,
+					"width": 55,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Color"
+				},
+				"Quantity": {
+					"type": "text",
+					"top": 107,
+					"left": 13,
+					"width": 55,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Quantity"
+				},
+				"RmTr_tFoil_Vendor": {
+					"type": "input",
+					"top": 15,
+					"left": 98,
+					"width": 129,
+					"height": 16,
+					"dataSource": "RmTr_tFoil_Vendor",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_tFoil_Width": {
+					"type": "input",
+					"top": 46,
+					"left": 98,
+					"width": 129,
+					"height": 16,
+					"dataSource": "RmTr_tFoil_Width",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_tFoil_Color": {
+					"type": "input",
+					"top": 76,
+					"left": 98,
+					"width": 129,
+					"height": 16,
+					"dataSource": "RmTr_tFoil_Color",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RmTr_tFoil_Quantity": {
+					"type": "input",
+					"top": 107,
+					"left": 98,
+					"width": 129,
+					"height": 16,
+					"dataSource": "RmTr_tFoil_Quantity",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

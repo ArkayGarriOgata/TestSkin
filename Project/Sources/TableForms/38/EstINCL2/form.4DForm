@@ -1,0 +1,331 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 19,
+	"markerBody": 37,
+	"markerBreak": 37,
+	"markerFooter": 37,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 19,
+					"left": 1,
+					"width": 696,
+					"height": 16,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 23,
+					"height": 17,
+					"fill": "#405EFF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Nº"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 193,
+					"height": 17,
+					"fill": "#405EFF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"text": "  Process Spec"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 18,
+					"left": 0,
+					"width": 697,
+					"stroke": "#AAAAAA"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 428,
+					"width": 89,
+					"height": 17,
+					"fill": "#405EFF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": " Want Qty"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 218,
+					"width": 209,
+					"height": 17,
+					"fill": "#405EFF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"text": "   Differential Tag"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 21,
+					"left": 2,
+					"width": 19,
+					"height": 13,
+					"dataSource": "[Estimates_Differentials:38]diffNum:3",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 21,
+					"left": 430,
+					"width": 76,
+					"height": 13,
+					"dataSource": "[Estimates_Differentials:38]TotalPieces:8",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,###;ERROR;Calculate",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 35,
+					"left": 0,
+					"width": 697,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 608,
+					"width": 89,
+					"height": 17,
+					"fill": "#405EFF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "per Thousand"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 21,
+					"left": 615,
+					"width": 66,
+					"height": 14,
+					"dataSource": "rReal1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$^,^^0.00;ERROR; ",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 518,
+					"width": 89,
+					"height": 17,
+					"fill": "#405EFF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": " Total Cost"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 21,
+					"left": 519,
+					"width": 80,
+					"height": 13,
+					"dataSource": "[Estimates_Differentials:38]CostTTL:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$^^,^^^,^^0;ERROR;Calculate",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 21,
+					"left": 30,
+					"width": 184,
+					"height": 13,
+					"dataSource": "[Estimates_Differentials:38]ProcessSpec:5",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 21,
+					"left": 223,
+					"width": 201,
+					"height": 13,
+					"dataSource": "[Estimates_Differentials:38]PSpec_Qty_TAG:25",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

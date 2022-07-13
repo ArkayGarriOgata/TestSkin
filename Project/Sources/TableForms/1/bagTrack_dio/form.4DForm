@@ -1,0 +1,1455 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Transfer Bag Tracker",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control1": {
+					"type": "tab",
+					"top": 0,
+					"left": 0,
+					"width": 506,
+					"height": 316,
+					"dataSource": "iBagTabs",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/bagTrackTabs"
+					},
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"action": "gotoPage",
+					"method": "ObjectMethods/Tab Control1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 307,
+					"left": 495,
+					"width": 7,
+					"height": 6,
+					"dataSource": "bDummy",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 38,
+					"left": 122,
+					"width": 90,
+					"height": 15,
+					"dataSource": "sCriterion1",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 38,
+					"left": 12,
+					"width": 129,
+					"height": 15,
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "Bag, Item or Job:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 37,
+					"left": 228,
+					"width": 60,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Project:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 59,
+					"left": 9,
+					"width": 69,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Customer:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 59,
+					"left": 301,
+					"width": 33,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Line:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 77,
+					"left": 9,
+					"width": 69,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Jobform:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 77,
+					"left": 170,
+					"width": 21,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "At:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 37,
+					"left": 293,
+					"width": 204,
+					"height": 15,
+					"dataSource": "sCriterion2",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 59,
+					"left": 84,
+					"width": 219,
+					"height": 15,
+					"dataSource": "sCriterion3",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 59,
+					"left": 341,
+					"width": 156,
+					"height": 15,
+					"dataSource": "sCriterion4",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 77,
+					"left": 84,
+					"width": 79,
+					"height": 15,
+					"dataSource": "sCriterion5",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 77,
+					"left": 196,
+					"width": 301,
+					"height": 15,
+					"dataSource": "sCriterion6",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Highlight Button1": {
+					"type": "button",
+					"top": 167,
+					"left": 32,
+					"width": 86,
+					"height": 34,
+					"dataSource": "bMove",
+					"text": "Move",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"method": "ObjectMethods/Highlight Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 95,
+					"left": 7,
+					"width": 71,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Item Type:"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 95,
+					"left": 84,
+					"width": 403,
+					"height": 15,
+					"dataSource": "tTitle",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 113,
+					"left": 5,
+					"width": 73,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Desc:"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 113,
+					"left": 84,
+					"width": 403,
+					"height": 45,
+					"dataSource": "tMessage1",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 209,
+					"left": 33,
+					"width": 85,
+					"height": 15,
+					"dataSource": "sLocation",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 208,
+					"left": 119,
+					"width": 18,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 208,
+					"left": 4,
+					"width": 22,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "To:"
+				},
+				"Pop-up/Drop-down List1": {
+					"type": "dropdown",
+					"top": 208,
+					"left": 120,
+					"width": 18,
+					"height": 14,
+					"dataSource": "aItemTypes",
+					"display": false,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Pop-up%2FDrop-down List1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 282,
+					"left": 6,
+					"width": 132,
+					"height": 18,
+					"dataSource": "cb2",
+					"text": "Continuous Scan",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Subform3": {
+					"type": "subform",
+					"top": 349,
+					"left": 26,
+					"width": 436,
+					"height": 103,
+					"dataSourceTypeHint": "text",
+					"table": 100,
+					"detailForm": "Input",
+					"listForm": "includeEBag",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"printFrame": "variable",
+					"borderStyle": "solid"
+				},
+				"Button7": {
+					"type": "button",
+					"top": 320,
+					"left": 9,
+					"width": 99,
+					"height": 20,
+					"dataSource": "Button4",
+					"text": "New To Do",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BgTk_abDesc": {
+					"type": "listbox",
+					"top": 164,
+					"left": 140,
+					"width": 356,
+					"height": 134,
+					"resizingMode": "legacy",
+					"dataSource": "BgTk_abDesc",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "aKey",
+							"dataSource": "aKey",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "axRelTemp",
+							"dataSource": "axRelTemp",
+							"width": 242,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Highlight Button1",
+				"Variable9",
+				"Variable10",
+				"Variable8",
+				"Pop-up/Drop-down List1",
+				"Check Box1",
+				"Subform3",
+				"Button7",
+				"BgTk_abDesc"
+			]
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 31,
+					"left": 14,
+					"width": 70,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Scan Bag:"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 31,
+					"left": 88,
+					"width": 93,
+					"height": 16,
+					"dataSource": "sCriterion1",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 31,
+					"left": 208,
+					"width": 60,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Project:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 51,
+					"left": 12,
+					"width": 72,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Customer:"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 51,
+					"left": 305,
+					"width": 36,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Line:"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 67,
+					"left": 12,
+					"width": 72,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Jobform:"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 67,
+					"left": 171,
+					"width": 24,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "At:"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 31,
+					"left": 268,
+					"width": 229,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 51,
+					"left": 84,
+					"width": 219,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 51,
+					"left": 341,
+					"width": 156,
+					"height": 16,
+					"dataSource": "sCriterion4",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 67,
+					"left": 84,
+					"width": 79,
+					"height": 16,
+					"dataSource": "sCriterion5",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 67,
+					"left": 196,
+					"width": 301,
+					"height": 16,
+					"dataSource": "sCriterion6",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 226,
+					"left": 13,
+					"width": 75,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Scan JPSI:"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 226,
+					"left": 91,
+					"width": 87,
+					"height": 16,
+					"dataSource": "sCriterion7",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 85,
+					"left": 11,
+					"width": 342,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Job Physical Support Items in the Transfer Bag:"
+				},
+				"Highlight Button3": {
+					"type": "button",
+					"top": 257,
+					"left": 32,
+					"width": 86,
+					"height": 34,
+					"dataSource": "rb1",
+					"text": "Check-In",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"method": "ObjectMethods/Highlight Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Highlight Button5": {
+					"type": "button",
+					"top": 107,
+					"left": 32,
+					"width": 86,
+					"height": 34,
+					"dataSource": "bPrint",
+					"text": "Print",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"method": "ObjectMethods/Highlight Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 226,
+					"left": 183,
+					"width": 297,
+					"height": 16,
+					"dataSource": "tTitle",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 244,
+					"left": 183,
+					"width": 297,
+					"height": 56,
+					"dataSource": "tMessage1",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 294,
+					"left": 33,
+					"width": 93,
+					"height": 14,
+					"dataSource": "cb1",
+					"text": "Continuous Scan",
+					"class": "Default",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BgTk_abDesc1": {
+					"type": "listbox",
+					"top": 106,
+					"left": 135,
+					"width": 358,
+					"height": 112,
+					"resizingMode": "legacy",
+					"dataSource": "BgTk_abDesc",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "aKey1",
+							"dataSource": "aKey",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "axRelTemp1",
+							"dataSource": "axRelTemp",
+							"width": 247,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable19": {
+					"type": "input",
+					"top": 31,
+					"left": 146,
+					"width": 185,
+					"height": 13,
+					"dataSource": "sLocation",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 30,
+					"left": 332,
+					"width": 18,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Pop-up/Drop-down List2": {
+					"type": "dropdown",
+					"top": 30,
+					"left": 333,
+					"width": 18,
+					"height": 14,
+					"dataSource": "aItemTypes",
+					"display": false,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Pop-up%2FDrop-down List2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 30,
+					"left": 117,
+					"width": 25,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "At:"
+				},
+				"BgTk_abDesc2": {
+					"type": "listbox",
+					"top": 53,
+					"left": 63,
+					"width": 358,
+					"height": 244,
+					"resizingMode": "legacy",
+					"dataSource": "BgTk_abDesc",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "aKey2",
+							"dataSource": "aKey",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "axRelTemp2",
+							"dataSource": "axRelTemp",
+							"width": 247,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subform1": {
+					"type": "subform",
+					"top": 55,
+					"left": 34,
+					"width": 419,
+					"height": 241,
+					"dataSourceTypeHint": "text",
+					"table": 112,
+					"listForm": "IncludePjt",
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 27,
+					"left": 190,
+					"width": 86,
+					"height": 24,
+					"dataSource": "Button2",
+					"text": "Print",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Subform2": {
+					"type": "subform",
+					"top": 322,
+					"left": 33,
+					"width": 420,
+					"height": 123,
+					"dataSourceTypeHint": "text",
+					"table": 114,
+					"listForm": "Included",
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"Text": {
+					"type": "text",
+					"top": 320,
+					"left": 8,
+					"width": 20,
+					"height": 11,
+					"class": "Default",
+					"text": "Log:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text19": {
+					"type": "text",
+					"top": 31,
+					"left": 14,
+					"width": 70,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Scan Bag:"
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 31,
+					"left": 88,
+					"width": 93,
+					"height": 16,
+					"dataSource": "sCriterion1",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text20": {
+					"type": "text",
+					"top": 31,
+					"left": 208,
+					"width": 60,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Project:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 51,
+					"left": 12,
+					"width": 72,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Customer:"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 51,
+					"left": 305,
+					"width": 36,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Line:"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 67,
+					"left": 12,
+					"width": 72,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Jobform:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 67,
+					"left": 171,
+					"width": 24,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "At:"
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 31,
+					"left": 268,
+					"width": 229,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 51,
+					"left": 84,
+					"width": 219,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 51,
+					"left": 341,
+					"width": 156,
+					"height": 16,
+					"dataSource": "sCriterion4",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 67,
+					"left": 84,
+					"width": 79,
+					"height": 16,
+					"dataSource": "sCriterion5",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 67,
+					"left": 196,
+					"width": 301,
+					"height": 16,
+					"dataSource": "sCriterion6",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 85,
+					"left": 11,
+					"width": 342,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Job Physical Support Items in the Transfer Bag:"
+				},
+				"Highlight Button2": {
+					"type": "button",
+					"top": 107,
+					"left": 32,
+					"width": 86,
+					"height": 34,
+					"dataSource": "bPrint",
+					"text": "Put Away",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"method": "ObjectMethods/Highlight Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BgTk_abDesc3": {
+					"type": "listbox",
+					"top": 106,
+					"left": 135,
+					"width": 358,
+					"height": 112,
+					"resizingMode": "legacy",
+					"dataSource": "BgTk_abDesc",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "aKey3",
+							"dataSource": "aKey",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "axRelTemp3",
+							"dataSource": "axRelTemp",
+							"width": 247,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 16,
+					"left": 17,
+					"width": 390,
+					"height": 33,
+					"text": "Test color combinations"
+				},
+				"Core_Tmpl_tColor": {
+					"type": "input",
+					"top": 59,
+					"left": 185,
+					"width": 186,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Core_ObjectSetColor": {
+					"type": "button",
+					"top": 56,
+					"left": 24,
+					"width": 155,
+					"height": 23,
+					"text": "Core_ObjectSetColor",
+					"focusable": false,
+					"method": "ObjectMethods/Core_ObjectSetColor.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

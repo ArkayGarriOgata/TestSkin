@@ -1,0 +1,274 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerBody": 135,
+	"markerBreak": 135,
+	"markerFooter": 145,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 105,
+					"left": 61,
+					"width": 78,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Clause ID:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 137,
+					"left": 61,
+					"width": 78,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Clause Title:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 169,
+					"left": 61,
+					"width": 78,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Clause Text:"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 104,
+					"left": 148,
+					"width": 40,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Clauses:14]ID:1",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field3.4dm"
+				},
+				"Field6": {
+					"type": "checkbox",
+					"top": 134,
+					"left": 376,
+					"width": 158,
+					"height": 17,
+					"dataSource": "[Purchase_Orders_Clauses:14]ParmReqd:4",
+					"text": " Parameters Required",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 134,
+					"left": 148,
+					"width": 213,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Clauses:14]Title:2",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 169,
+					"left": 148,
+					"width": 548,
+					"height": 120,
+					"dataSource": "[Purchase_Orders_Clauses:14]ClauseText:3",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none"
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 18,
+					"left": 331,
+					"width": 42,
+					"height": 61,
+					"dataSource": "bDelete",
+					"shortcutKey": "d",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 18,
+					"left": 393,
+					"width": 52,
+					"height": 66,
+					"dataSource": "bCancelRec",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 40,
+					"left": 544,
+					"width": 93,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"fontWeight": "bold",
+					"text": "PO CLAUSE"
+				},
+				"Variable21": {
+					"type": "button",
+					"top": 330,
+					"left": 294,
+					"width": 67,
+					"height": 21,
+					"dataSource": "bAddIncl",
+					"text": "Add",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 332,
+					"left": 147,
+					"width": 126,
+					"height": 183,
+					"dataSourceTypeHint": "text",
+					"table": 83,
+					"detailForm": "Input",
+					"listForm": "ClauseIncld",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"printFrame": "fixed",
+					"borderStyle": "sunken"
+				},
+				"Variable22": {
+					"type": "button",
+					"top": 357,
+					"left": 293,
+					"width": 67,
+					"height": 21,
+					"dataSource": "bDelIncl",
+					"action": "deleteSubrecord",
+					"text": "Delete",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 318,
+					"left": 146,
+					"width": 144,
+					"height": 13,
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"text": "Commodity Code Links:"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

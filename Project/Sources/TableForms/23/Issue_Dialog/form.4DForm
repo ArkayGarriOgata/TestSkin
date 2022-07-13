@@ -1,0 +1,513 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Roll_id": {
+					"type": "input",
+					"top": 84,
+					"left": 246,
+					"width": 120,
+					"height": 16,
+					"dataSource": "tRoll_id",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Roll_id.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 28,
+					"left": 17,
+					"width": 84,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Job.Form:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 84,
+					"left": 17,
+					"width": 84,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "PO Item:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 178,
+					"left": 17,
+					"width": 84,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Quantity:"
+				},
+				"Field": {
+					"type": "input",
+					"top": 28,
+					"left": 106,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]JobForm:12",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 28,
+					"left": 191,
+					"width": 118,
+					"height": 15,
+					"dataSource": "[Job_Forms:42]CustomerLine:62",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 28,
+					"left": 303,
+					"width": 44,
+					"height": 15,
+					"dataSource": "[Job_Forms:42]cust_id:82",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 56,
+					"left": 106,
+					"width": 30,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]Sequence:13",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 56,
+					"left": 153,
+					"width": 39,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]CostCenter:19",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 84,
+					"left": 106,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]POItemKey:4",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 113,
+					"left": 51,
+					"width": 141,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]Commodity_Key:22",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 113,
+					"left": 203,
+					"width": 141,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]Raw_Matl_Code:1",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 148,
+					"left": 106,
+					"width": 117,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]viaLocation:11",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 148,
+					"left": 232,
+					"width": 53,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Locations:25]QtyOH:9",
+					"dataSourceTypeHint": "number",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 178,
+					"left": 106,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]Qty:6",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 208,
+					"left": 106,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]XferDate:3",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 208,
+					"left": 204,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]XferTime:25",
+					"dataSourceTypeHint": "time",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"timeFormat": "hh_mm_ss",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 239,
+					"left": 106,
+					"width": 117,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]ReferenceNo:14",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 239,
+					"left": 17,
+					"width": 84,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Refer:"
+				},
+				"Button10": {
+					"type": "button",
+					"top": 289,
+					"left": 206,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 289,
+					"left": 291,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOk",
+					"text": "Issue",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 56,
+					"left": 41,
+					"width": 60,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Sequence:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 148,
+					"left": 17,
+					"width": 84,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Location:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 208,
+					"left": 17,
+					"width": 84,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Date:"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 178,
+					"left": 232,
+					"width": 105,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Transactions:23]ActExtCost:10",
+					"dataSourceTypeHint": "number",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 148,
+					"left": 292,
+					"width": 53,
+					"height": 15,
+					"dataSource": "[Raw_Materials_Locations:25]ActCost:18",
+					"dataSourceTypeHint": "number",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Amt.Format"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Hint": {
+					"type": "input",
+					"top": 28,
+					"left": 384,
+					"width": 288,
+					"height": 234,
+					"dataSource": "tText",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 84,
+					"left": 198,
+					"width": 43,
+					"height": 17,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Roll_id : "
+				}
+			},
+			"entryOrder": [
+				"Roll_id",
+				"Field",
+				"Field11",
+				"Field12",
+				"Field5",
+				"Field6",
+				"Field1",
+				"Field4",
+				"Field8",
+				"Field7",
+				"Field13",
+				"Field2",
+				"Field9",
+				"Field10",
+				"Field3",
+				"Button10",
+				"Button1",
+				"Field14",
+				"Field15"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

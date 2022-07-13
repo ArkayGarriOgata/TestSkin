@@ -1,0 +1,1 @@
+[Finished_Goods_SizeAndStyles:132]DieSamples:33:=([Finished_Goods_SizeAndStyles:132]qty_DieSamples:40>0)

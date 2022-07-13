@@ -1,0 +1,1 @@
+<>WMS_ALT_LABELS:=[zz_control:1]wms_alternateLabel:59

@@ -1,0 +1,288 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_BackgroudButton",
+	"windowMinWidth": 296,
+	"windowMinHeight": 221,
+	"formSizeAnchor": "Core_nWindow_Resize",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Core_nPick_Find": {
+					"type": "pictureButton",
+					"top": 5,
+					"left": 6,
+					"width": 215,
+					"height": 30,
+					"dataSource": "Core_nPick_Find",
+					"picture": "/RESOURCES/Skin/Master/FindBox.png",
+					"useLastFrameAsDisabled": true
+				},
+				"Core_tPick_Find": {
+					"type": "input",
+					"top": 13,
+					"left": 46,
+					"width": 159,
+					"height": 16,
+					"dataSource": "Core_tPick_Find",
+					"class": "Form_Value",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"multiline": "no",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Core_tPick_Find.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Core_abPick": {
+					"type": "listbox",
+					"top": 55,
+					"left": 17,
+					"width": 263,
+					"height": 148,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Core_abPick",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"hideExtraBlankRows": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"rowControlSource": "Core_anPick_RowControl",
+					"showHeaders": false,
+					"headerHeight": "17px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#FFFFFF",
+					"fill": "#FFFFFF",
+					"alternateFill": "#B1C4DD",
+					"rowFillSource": "Core_anPick_RowBackground",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Core_abPick.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Core_abPick_Picked",
+							"dataSource": "Core_abPick_Picked",
+							"dataSourceTypeHint": "boolean",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#FFFFFF",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Core_atPick_Value",
+							"dataSource": "Core_atPick_Value",
+							"width": 223,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#FFFFFF",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Core_nPick_OnLoad": {
+					"type": "button",
+					"top": 270,
+					"left": 20,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Core_nPick_OnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Core_nPick_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 853,
+					"left": 29,
+					"width": 110,
+					"height": 30,
+					"text": "Button",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 874,
+					"left": 359,
+					"width": 10,
+					"height": 10,
+					"text": "Button",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreOK": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 252,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "CorenOK",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRight.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreCancel": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 224,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "CorenCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Core_nWindow_Resize": {
+					"type": "pictureButton",
+					"top": 203,
+					"left": 279,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Core_nWindow_Resize",
+					"picture": "/RESOURCES/Skin/Master/ResizeWindow.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Core_nWindow_Resize.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					]
+				},
+				"Core_tPick_Default": {
+					"type": "input",
+					"top": 39,
+					"left": 20,
+					"width": 242,
+					"height": 16,
+					"dataSource": "Core_tPick_Default",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"multiline": "no",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

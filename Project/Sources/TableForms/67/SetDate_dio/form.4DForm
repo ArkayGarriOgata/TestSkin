@@ -1,0 +1,1419 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Set Dates",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box10": {
+					"type": "groupBox",
+					"top": 225,
+					"left": 430,
+					"width": 194,
+					"height": 92,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Roanoke Laminating"
+				},
+				"Group Box9": {
+					"type": "groupBox",
+					"top": 36,
+					"left": 430,
+					"width": 194,
+					"height": 184,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Outside Services"
+				},
+				"SeqGroup Box10": {
+					"type": "groupBox",
+					"top": 146,
+					"left": 430,
+					"width": 194,
+					"height": 74,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "WIP"
+				},
+				"Group Box8": {
+					"type": "groupBox",
+					"top": 307,
+					"left": 17,
+					"width": 204,
+					"height": 73,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "All Tooling &/or Material Ready"
+				},
+				"Group Box7": {
+					"type": "groupBox",
+					"top": 87,
+					"left": 17,
+					"width": 204,
+					"height": 88,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Sheeting"
+				},
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 191,
+					"left": 17,
+					"width": 204,
+					"height": 112,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Printing"
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 36,
+					"left": 228,
+					"width": 194,
+					"height": 52,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Hauppauge Finishing"
+				},
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 179,
+					"left": 228,
+					"width": 194,
+					"height": 52,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Embossing"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 86,
+					"left": 228,
+					"width": 194,
+					"height": 92,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Stamping"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 230,
+					"left": 228,
+					"width": 194,
+					"height": 112,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Blanking"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 36,
+					"left": 17,
+					"width": 204,
+					"height": 52,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Roanoke Start"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 11,
+					"left": 18,
+					"width": 70,
+					"height": 16,
+					"fontSize": 12,
+					"text": "Job Form:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 10,
+					"left": 91,
+					"width": 67,
+					"height": 15,
+					"dataSource": "sJobForm",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "#####.##",
+					"entryFilter": "!0&9#####.##",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 10,
+					"left": 240,
+					"width": 30,
+					"height": 15,
+					"dataSource": "i1",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"jobRoanRecd": {
+					"type": "checkbox",
+					"top": 50,
+					"left": 24,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue8",
+					"text": "Bag Received",
+					"class": "BaseCheckBox",
+					"method": "ObjectMethods/jobRoanRecd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobRoanAppvd": {
+					"type": "checkbox",
+					"top": 69,
+					"left": 24,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue9",
+					"text": "Bag Approved",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box8": {
+					"type": "checkbox",
+					"top": 104,
+					"left": 24,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue1",
+					"text": "Stock Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box1": {
+					"type": "checkbox",
+					"top": 135,
+					"left": 24,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue10",
+					"text": "Stock Sheeted",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box2": {
+					"type": "checkbox",
+					"top": 206,
+					"left": 46,
+					"width": 107,
+					"height": 16,
+					"dataSource": "Lvalue2",
+					"text": "Plates Made",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box7": {
+					"type": "checkbox",
+					"top": 225,
+					"left": 46,
+					"width": 107,
+					"height": 16,
+					"dataSource": "Lvalue7",
+					"text": "Cyrels Made",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box3": {
+					"type": "checkbox",
+					"top": 244,
+					"left": 46,
+					"width": 93,
+					"height": 16,
+					"dataSource": "Lvalue3",
+					"text": "Ink Made",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box10": {
+					"type": "checkbox",
+					"top": 263,
+					"left": 46,
+					"width": 103,
+					"height": 16,
+					"dataSource": "Lvalue22",
+					"text": "Norm'd PDF",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box4": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 24,
+					"width": 73,
+					"height": 16,
+					"dataSource": "Lvalue4",
+					"text": "Printed",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box6": {
+					"type": "checkbox",
+					"top": 328,
+					"left": 24,
+					"width": 126,
+					"height": 16,
+					"dataSource": "Lvalue26",
+					"text": "Die Files Ready",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box20": {
+					"type": "checkbox",
+					"top": 350,
+					"left": 24,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue20",
+					"text": "Job Locked Up",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box6": {
+					"type": "checkbox",
+					"top": 50,
+					"left": 233,
+					"width": 107,
+					"height": 16,
+					"dataSource": "Lvalue11",
+					"text": "Bag Returned",
+					"class": "BaseCheckBox",
+					"method": "ObjectMethods/jobCheck Box6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box11": {
+					"type": "checkbox",
+					"top": 69,
+					"left": 233,
+					"width": 108,
+					"height": 16,
+					"dataSource": "Lvalue12",
+					"text": "WIP Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box5": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue5",
+					"text": "Dies Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box14": {
+					"type": "checkbox",
+					"top": 118,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue13",
+					"text": "Film Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box19": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 233,
+					"width": 153,
+					"height": 16,
+					"dataSource": "Lvalue14",
+					"text": "Leaf Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box15": {
+					"type": "checkbox",
+					"top": 193,
+					"left": 233,
+					"width": 163,
+					"height": 16,
+					"dataSource": "Lvalue15",
+					"text": "Dies Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box16": {
+					"type": "checkbox",
+					"top": 212,
+					"left": 233,
+					"width": 163,
+					"height": 16,
+					"dataSource": "Lvalue16",
+					"text": "Film Received",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box22": {
+					"type": "checkbox",
+					"top": 245,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue17",
+					"text": "Counters Rec'd",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box18": {
+					"type": "checkbox",
+					"top": 264,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue18",
+					"text": "Die Board Rec'd",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box17": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue19",
+					"text": "Blanker Rec'd",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box12": {
+					"type": "checkbox",
+					"top": 302,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue6",
+					"text": "Ready To Glue",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box21": {
+					"type": "checkbox",
+					"top": 322,
+					"left": 233,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue21",
+					"text": "Female Stripper",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box8": {
+					"type": "checkbox",
+					"top": 51,
+					"left": 435,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue23",
+					"text": "In-house",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField": {
+					"type": "input",
+					"top": 69,
+					"left": 550,
+					"width": 63,
+					"height": 13,
+					"dataSource": "sReq",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"r;R;0-9\"",
+					"method": "ObjectMethods/seqField.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"seqField11": {
+					"type": "input",
+					"top": 88,
+					"left": 550,
+					"width": 63,
+					"height": 13,
+					"dataSource": "sPO",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/seqField11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"seqCheck Box1": {
+					"type": "checkbox",
+					"top": 109,
+					"left": 435,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue24",
+					"text": "Tooling & Mat'l",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box4": {
+					"type": "checkbox",
+					"top": 128,
+					"left": 435,
+					"width": 123,
+					"height": 16,
+					"dataSource": "Lvalue25",
+					"text": "Standards",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField12": {
+					"type": "input",
+					"top": 180,
+					"left": 509,
+					"width": 65,
+					"height": 13,
+					"dataSource": "iSheetsSent",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"seqField8": {
+					"type": "input",
+					"top": 180,
+					"left": 582,
+					"width": 29,
+					"height": 13,
+					"dataSource": "iSkidsSent",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"seqField6": {
+					"type": "input",
+					"top": 202,
+					"left": 509,
+					"width": 65,
+					"height": 13,
+					"dataSource": "iSheetsRet",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"seqField9": {
+					"type": "input",
+					"top": 202,
+					"left": 582,
+					"width": 29,
+					"height": 13,
+					"dataSource": "iSkidsRet",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 361,
+					"left": 441,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bbOK",
+					"shortcutKey": "[Enter]",
+					"text": "Set Dates",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 361,
+					"left": 533,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bbCancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Done",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 6,
+					"left": 277,
+					"width": 240,
+					"height": 22,
+					"class": "Default",
+					"text": "Enter the Jobform number of event you want to log. Some entries will require the Sequence number also."
+				},
+				"jobField1": {
+					"type": "input",
+					"top": 137,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateStockSheeted:47",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField2": {
+					"type": "input",
+					"top": 207,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]PlatesReady:18",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField3": {
+					"type": "input",
+					"top": 245,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]InkReady:20",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobField4": {
+					"type": "input",
+					"top": 284,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]Printed:32",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField5": {
+					"type": "input",
+					"top": 103,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]StampingDies:28",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobField6": {
+					"type": "input",
+					"top": 52,
+					"left": 355,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateBagReturned:52",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField7": {
+					"type": "input",
+					"top": 226,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]CyrelsReady:19",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobField8": {
+					"type": "input",
+					"top": 101,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateStockRecd:17",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobField9": {
+					"type": "input",
+					"top": 71,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateBagApproved:49",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobField10": {
+					"type": "input",
+					"top": 52,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateBagReceived:48",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 11,
+					"left": 166,
+					"width": 74,
+					"height": 16,
+					"fontSize": 12,
+					"text": "Sequence:"
+				},
+				"jobField11": {
+					"type": "input",
+					"top": 71,
+					"left": 355,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateWIPreceived:53",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobField12": {
+					"type": "input",
+					"top": 303,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Job_Forms_Master_Schedule:67]GlueReady:28",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField24": {
+					"type": "input",
+					"top": 214,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateFilmEmbossRcd:44",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField23": {
+					"type": "input",
+					"top": 122,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateFilmStampingRcd:43",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField15": {
+					"type": "input",
+					"top": 195,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]EmbossingDies:29",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField26": {
+					"type": "input",
+					"top": 265,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateDieBoardRecd:45",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField27": {
+					"type": "input",
+					"top": 284,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateBlankerRecd:42",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField25": {
+					"type": "input",
+					"top": 246,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateCountersRecd:41",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField19": {
+					"type": "input",
+					"top": 139,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]Leaf:30",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField20": {
+					"type": "input",
+					"top": 353,
+					"left": 152,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]JobLockedUp:27",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField21": {
+					"type": "input",
+					"top": 323,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]FemaleStripperBoard:26",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField22": {
+					"type": "input",
+					"top": 264,
+					"left": 159,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]NormalizedPDF:82",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField1": {
+					"type": "input",
+					"top": 109,
+					"left": 558,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]ToolingSent:39",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField4": {
+					"type": "input",
+					"top": 129,
+					"left": 558,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]StandardsSent:40",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField10": {
+					"type": "input",
+					"top": 52,
+					"left": 556,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]InHouse:32",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"SeqText4": {
+					"type": "text",
+					"top": 163,
+					"left": 522,
+					"width": 94,
+					"height": 14,
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"text": "Sheets     Skids"
+				},
+				"SeqText5": {
+					"type": "text",
+					"top": 89,
+					"left": 439,
+					"width": 108,
+					"height": 18,
+					"fontSize": 12,
+					"text": "Purchase Order:"
+				},
+				"SeqText6": {
+					"type": "text",
+					"top": 69,
+					"left": 439,
+					"width": 81,
+					"height": 18,
+					"fontSize": 12,
+					"text": "Requisition:"
+				},
+				"SeqText7": {
+					"type": "text",
+					"top": 179,
+					"left": 434,
+					"width": 69,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Sent:"
+				},
+				"SeqText8": {
+					"type": "text",
+					"top": 201,
+					"left": 434,
+					"width": 69,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": " Returned:"
+				},
+				"seqField13": {
+					"type": "input",
+					"top": 328,
+					"left": 152,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateDieFilesReady:46",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box9": {
+					"type": "checkbox",
+					"top": 241,
+					"left": 437,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Lvalue27",
+					"text": "Latisealed",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box11": {
+					"type": "checkbox",
+					"top": 260,
+					"left": 437,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Lvalue28",
+					"text": "Windows Cut",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box12": {
+					"type": "checkbox",
+					"top": 279,
+					"left": 437,
+					"width": 111,
+					"height": 16,
+					"dataSource": "Lvalue29",
+					"text": "Adhesive OK",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box13": {
+					"type": "checkbox",
+					"top": 298,
+					"left": 437,
+					"width": 111,
+					"height": 16,
+					"dataSource": "Lvalue30",
+					"text": "Laminate OK",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField14": {
+					"type": "input",
+					"top": 242,
+					"left": 553,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateLatisealed:47",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField16": {
+					"type": "input",
+					"top": 280,
+					"left": 553,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateAdhesiveOK:49",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField17": {
+					"type": "input",
+					"top": 261,
+					"left": 553,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateWindowsCut:48",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField18": {
+					"type": "input",
+					"top": 299,
+					"left": 553,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateLaminateOK:50",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobCheck Box2": {
+					"type": "checkbox",
+					"top": 119,
+					"left": 24,
+					"width": 85,
+					"height": 16,
+					"dataSource": "Lvalue31",
+					"text": "Staged",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"notReleasedText": {
+					"type": "text",
+					"top": 0,
+					"left": 271,
+					"width": 367,
+					"height": 46,
+					"stroke": "#EE0000",
+					"fontFamily": "Courier",
+					"fontSize": 46,
+					"fontWeight": "bold",
+					"text": "NOT RELEASED!"
+				},
+				"seqCheck Box23": {
+					"type": "checkbox",
+					"top": 155,
+					"left": 233,
+					"width": 118,
+					"height": 16,
+					"dataSource": "Lvalue32",
+					"text": "Dylux Checked",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField28": {
+					"type": "input",
+					"top": 157,
+					"left": 356,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]DateDyluxChecked:75",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqCheck Box24": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 24,
+					"width": 107,
+					"height": 16,
+					"dataSource": "Lvalue33",
+					"text": "Pre Sheeted",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"seqField29": {
+					"type": "input",
+					"top": 155,
+					"left": 157,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[ProductionSchedules:110]PreSheetedStock:81",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

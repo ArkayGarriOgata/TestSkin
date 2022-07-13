@@ -1,0 +1,433 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line7": {
+					"type": "line",
+					"top": 94,
+					"left": 19,
+					"width": 585,
+					"sizingX": "grow"
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 460,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 532,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 394,
+					"left": 62,
+					"width": 44,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "pk_id : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 144,
+					"left": 340,
+					"width": 86,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Commodity: "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 145,
+					"left": 23,
+					"width": 86,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "PartNumber : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 189,
+					"left": 31,
+					"width": 133,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Vendor Part Number : "
+				},
+				"Bin": {
+					"type": "input",
+					"top": 144,
+					"left": 428,
+					"width": 160,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.Commodity_Key",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PartNumber": {
+					"type": "input",
+					"top": 145,
+					"left": 111,
+					"width": 220,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.Raw_Matl_Code",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Quantity": {
+					"type": "input",
+					"top": 189,
+					"left": 173,
+					"width": 116,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.VendorPartNum",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"pk_id": {
+					"type": "input",
+					"top": 394,
+					"left": 111,
+					"width": 290,
+					"height": 17,
+					"dataSource": "Form:C1466.ent.pk_id",
+					"stroke": "#000000",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 476,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 546,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"desc": {
+					"type": "input",
+					"top": 226,
+					"left": 111,
+					"width": 288,
+					"height": 121,
+					"dataSource": "Form:C1466.ent.Description",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 226,
+					"left": 485,
+					"width": 70,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.UsedBy",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 226,
+					"left": 419,
+					"width": 60,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Used By:"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 276,
+					"left": 485,
+					"width": 70,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.PreferedBin",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 276,
+					"left": 419,
+					"width": 60,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Put away:"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 302,
+					"left": 485,
+					"width": 33,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.ReorderPoint",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 302,
+					"left": 419,
+					"width": 67,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Reorder pt:"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 328,
+					"left": 485,
+					"width": 30,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.ReorderMin",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 328,
+					"left": 419,
+					"width": 60,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Order qty:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 226,
+					"left": 23,
+					"width": 86,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Description : "
+				},
+				"Field5": {
+					"type": "input",
+					"top": 251,
+					"left": 485,
+					"width": 70,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.PartType",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 251,
+					"left": 419,
+					"width": 60,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Type:"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line7"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bCancellabel",
+					"bValidatelabel",
+					"bCancel1",
+					"bValidate1"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

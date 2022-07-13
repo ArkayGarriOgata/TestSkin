@@ -1,0 +1,100 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperWidth": "458pt",
+		"paperHeight": "593pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "dropdown",
+					"top": 11,
+					"left": 13,
+					"width": 173,
+					"height": 20,
+					"dataSource": "hlHelp",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/HelpChoices"
+					},
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 10,
+					"left": 209,
+					"width": 41,
+					"height": 16,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 13,
+					"left": 208,
+					"width": 153,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"text": "Prepress Workflow"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 36,
+					"left": 10,
+					"width": 704,
+					"height": 484,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26633.png"
+				}
+			}
+		}
+	]
+}

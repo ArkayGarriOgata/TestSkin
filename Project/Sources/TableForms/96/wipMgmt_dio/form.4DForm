@@ -1,0 +1,166 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "WIP Transit Control Center",
+	"rightMargin": 3,
+	"bottomMargin": 3,
+	"menuBar": "empty",
+	"markerBody": 130,
+	"markerBreak": 130,
+	"markerFooter": 140,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button1": {
+					"type": "button",
+					"top": 10,
+					"left": 10,
+					"width": 176,
+					"height": 25,
+					"dataSource": "Button1",
+					"text": "Container Labels",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 47,
+					"left": 10,
+					"width": 176,
+					"height": 25,
+					"dataSource": "Button1",
+					"text": "Make Packing Slip",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 84,
+					"left": 10,
+					"width": 176,
+					"height": 25,
+					"dataSource": "Button1",
+					"text": "Shipment Received",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 121,
+					"left": 10,
+					"width": 176,
+					"height": 25,
+					"dataSource": "Button1",
+					"text": "Record Good Counts",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 193,
+					"width": 322,
+					"height": 26,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Make a Serialized Shipping Container Code for each Gaylord and print a label with product information and counts."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 47,
+					"left": 193,
+					"width": 322,
+					"height": 26,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Specify each SSCC that will be transported under the same Shippers Nº, print and email ASN."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 84,
+					"left": 193,
+					"width": 322,
+					"height": 26,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Record acknowledgement of each container received by Outside Service Vendor."
+				},
+				"Text5": {
+					"type": "text",
+					"top": 121,
+					"left": 193,
+					"width": 328,
+					"height": 39,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Record quantity that was certified as Finished Goods or will be returned for additional processing."
+				}
+			},
+			"entryOrder": [
+				"Button1",
+				"Button2",
+				"Button3",
+				"Button4"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

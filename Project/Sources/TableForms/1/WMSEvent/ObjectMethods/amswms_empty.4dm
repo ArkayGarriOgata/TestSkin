@@ -1,0 +1,1 @@
+wms_api_get_empty_bins

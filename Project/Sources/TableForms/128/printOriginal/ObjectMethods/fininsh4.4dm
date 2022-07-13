@@ -1,0 +1,1 @@
+CSM_setField(->[Finished_Goods_Color_SpecMaster:128]finishProcess:12; ->cb12; "Spot")

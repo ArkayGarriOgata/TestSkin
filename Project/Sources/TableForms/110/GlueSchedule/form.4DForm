@@ -1,0 +1,1478 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 200,
+	"windowMaxWidth": 1800,
+	"windowMinHeight": 100,
+	"windowMaxHeight": 2000,
+	"width": 1473,
+	"height": 684,
+	"menuBar": "empty",
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onActivate",
+		"onMenuSelect",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 29,
+					"left": 1255,
+					"width": 211,
+					"height": 33,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "BaseInformation"
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 31,
+					"left": 1428,
+					"width": 29,
+					"height": 25,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/MagnifyGlass.png"
+				},
+				"bGearIcon": {
+					"type": "picture",
+					"top": 32,
+					"left": 1223,
+					"width": 25,
+					"height": 24,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26845.png"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 29,
+					"left": 19,
+					"width": 1196,
+					"height": 33,
+					"stroke": "#000000",
+					"class": "BaseInformation"
+				},
+				"Group Box7": {
+					"type": "groupBox",
+					"top": 67,
+					"left": 19,
+					"width": 1448,
+					"height": 592,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#EE0000",
+					"class": "BaseLabel",
+					"fontWeight": "bold"
+				},
+				"selectedAskme": {
+					"type": "button",
+					"top": 35,
+					"left": 33,
+					"width": 190,
+					"height": 17,
+					"dataSource": "bAskMe",
+					"text": "Ask Me",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/selectedAskme.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Print": {
+					"type": "button",
+					"top": 35,
+					"left": 1022,
+					"width": 52,
+					"height": 17,
+					"dataSource": "bPrint",
+					"text": "Print",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Print.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"selectedJob": {
+					"type": "button",
+					"top": 35,
+					"left": 229,
+					"width": 140,
+					"height": 17,
+					"dataSource": "b4Edit",
+					"text": "Job Bag",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/selectedJob.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"selectedJML": {
+					"type": "button",
+					"top": 35,
+					"left": 435,
+					"width": 88,
+					"height": 17,
+					"dataSource": "bJobMstr",
+					"text": "Job Master",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/selectedJML.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"selectedPSched": {
+					"type": "button",
+					"top": 35,
+					"left": 529,
+					"width": 77,
+					"height": 17,
+					"dataSource": "bGantt",
+					"text": "Schedule",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/selectedPSched.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"selectedSnS": {
+					"type": "button",
+					"top": 35,
+					"left": 611,
+					"width": 100,
+					"height": 17,
+					"dataSource": "bSizeNStyle",
+					"text": "Size & Style",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/selectedSnS.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 36,
+					"left": 1268,
+					"width": 144,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "tText",
+					"class": "BaseLabel",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bFind": {
+					"type": "button",
+					"top": 30,
+					"left": 1428,
+					"width": 28,
+					"height": 25,
+					"sizingX": "move",
+					"dataSource": "bFind",
+					"display": false,
+					"method": "ObjectMethods/bFind.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"aGlueListBox": {
+					"type": "listbox",
+					"top": 72,
+					"left": 31,
+					"width": 1426,
+					"height": 548,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "aGlueListBox",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"rowControlSource": "abHidden",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#EEEEEE",
+					"verticalLineStroke": "#EEEEEE",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#DFFFFF",
+					"rowStrokeSource": "axlRowColor",
+					"rowFillSource": "axlRowBkgd",
+					"rowStyleSource": "aRowStyle",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/aGlueListBox.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort"
+					],
+					"columns": [
+						{
+							"name": "Edit_aGluer",
+							"dataSource": "aGluer",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/Gluers"
+							},
+							"width": 48,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"requiredList": {
+								"$ref": "/SOURCES/lists.json#/Gluers"
+							},
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Gluer",
+								"dataSource": "Header13",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"dataSource": "numRecs",
+								"dataSourceTypeHint": "number",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "#FFFFFF",
+								"fill": "#7F93FF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Edit_aPrior",
+							"dataSource": "aPrior",
+							"dataSourceTypeHint": "number",
+							"width": 48,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textFormat": "#####;LIFTED;NotSch",
+							"numberFormat": "####;LIFTED;N/S",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Priority",
+								"dataSource": "Header14",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aCustLine",
+							"dataSource": "aCustLine",
+							"width": 82,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Customer",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aCPN",
+							"dataSource": "aCPN",
+							"width": 112,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Product Code",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aCasesOrdered",
+							"dataSource": "aCasesOrdered",
+							"dataSourceTypeHint": "boolean",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header22",
+								"text": "Launch",
+								"dataSource": "Header21",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer23",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aJobit",
+							"dataSource": "aJobit",
+							"width": 82,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Jobit",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aQtyPlnd",
+							"dataSource": "aQtyPlnd",
+							"dataSourceTypeHint": "number",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Qty Want",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer6",
+								"dataSource": "iQtyWant",
+								"dataSourceTypeHint": "number",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "#FFFFFF",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "aQtyReleased",
+							"dataSource": "aQtyReleased",
+							"dataSourceTypeHint": "number",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Qty Rel",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aReleased",
+							"dataSource": "aReleased",
+							"dataSourceTypeHint": "date",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/aReleased.4dm",
+							"header": {
+								"name": "Header6",
+								"text": "Released",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "aCashFlow",
+							"dataSourceTypeHint": "number",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 70,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header23",
+								"text": "CF",
+								"dataSource": "Header23",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer24",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aHRD",
+							"dataSource": "aHRD",
+							"dataSourceTypeHint": "date",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "HRD",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aDuration",
+							"dataSource": "aDurationHrs",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###0.00",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header20",
+								"text": "Rate",
+								"dataSource": "Header20",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer21",
+								"dataSourceTypeHint": "number",
+								"stroke": "#FFFFFF",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aStyle",
+							"dataSource": "aStyle",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/GlueTypes"
+							},
+							"width": 99,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Style",
+								"dataSource": "Header8",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aOutline",
+							"dataSource": "aOutline",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Outline",
+								"dataSource": "Header9",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aSeparate",
+							"dataSource": "aSeparate",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/Yes~1Done"
+							},
+							"width": 45,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Separate",
+								"dataSource": "Header10",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aProgressStatus",
+							"dataSource": "aProgressStatus",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "Status",
+								"dataSource": "Header16",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer18",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aPrintedPic",
+							"dataSource": "apPrinted",
+							"dataSourceTypeHint": "picture",
+							"width": 29,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Prnt",
+								"dataSource": "Header11",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aPrinted1",
+							"dataSource": "aPrinted",
+							"width": 62,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "Printedtxt",
+								"dataSource": "Header19",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer20",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aDieCutPic",
+							"dataSource": "apDieCut",
+							"dataSourceTypeHint": "picture",
+							"width": 29,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "D/C",
+								"dataSource": "Header12",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aDieCut1",
+							"dataSource": "aDieCut",
+							"width": 43,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "DieCutTxt",
+								"dataSource": "Header18",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer19",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aCasesMade",
+							"dataSource": "aCasesMade",
+							"dataSourceTypeHint": "boolean",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header21",
+								"text": "Made",
+								"dataSource": "Header21",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer22",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Edit_aComment",
+							"dataSource": "aComment",
+							"width": 80,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "Comment",
+								"dataSource": "Header17",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "#000000",
+								"fill": "#A0AFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aRecNum",
+							"dataSource": "aRecNum",
+							"dataSourceTypeHint": "number",
+							"width": 27,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "DieCut",
+								"text": "Record Number",
+								"dataSource": "Header15",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "aCustID",
+							"dataSource": "aCustID",
+							"width": 227,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Cust ID",
+								"dataSource": "Header13",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer17",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"bGear": {
+					"type": "button",
+					"top": 31,
+					"left": 1223,
+					"width": 25,
+					"height": 25,
+					"visibility": "hidden",
+					"dataSource": "bGear",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Gear Btn on Glu"
+					},
+					"display": false,
+					"method": "ObjectMethods/bGear.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 663,
+					"left": 31,
+					"width": 1065,
+					"height": 16,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#000099",
+					"text": "<tSortOrder>   <tTimingText>"
+				},
+				"selectedHistory": {
+					"type": "button",
+					"top": 35,
+					"left": 883,
+					"width": 67,
+					"height": 17,
+					"dataSource": "bHistory",
+					"text": "History",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/selectedHistory.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Reload": {
+					"type": "button",
+					"top": 662,
+					"left": 1323,
+					"width": 69,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bReload",
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"text": "Reload",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Reload.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SelectedEdit": {
+					"type": "button",
+					"top": 35,
+					"left": 960,
+					"width": 52,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "bEdit",
+					"text": "Edit",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SelectedEdit.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 663,
+					"left": 1031,
+					"width": 214,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#000099",
+					"textAlign": "right",
+					"text": "Last Update <lastServerUpdate>"
+				},
+				"selectedPakSpec": {
+					"type": "button",
+					"top": 35,
+					"left": 776,
+					"width": 101,
+					"height": 17,
+					"dataSource": "bPakSpec",
+					"text": "Packing Spec",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/selectedPakSpec.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 35,
+					"left": 1085,
+					"width": 56,
+					"height": 17,
+					"dataSource": "b2",
+					"text": "Excel",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help": {
+					"type": "button",
+					"top": 662,
+					"left": 1397,
+					"width": 69,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bHelp",
+					"action": "nextPage",
+					"text": "Help",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 7,
+					"left": 31,
+					"width": 1425,
+					"height": 16,
+					"stroke": "#000099",
+					"text": "<tGluerOrder>"
+				},
+				"Extend": {
+					"type": "button",
+					"top": 662,
+					"left": 1249,
+					"width": 69,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bExtend",
+					"text": "Extend",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Extend.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"selectedEbag": {
+					"type": "button",
+					"top": 35,
+					"left": 375,
+					"width": 54,
+					"height": 17,
+					"dataSource": "bEbag",
+					"text": "eBag",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/selectedEbag.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 723,
+					"left": 10,
+					"width": 342,
+					"height": 33,
+					"text": "If you change the column order make sure to update the method PSG_LocalArray and PSG_Sort"
+				},
+				"RunRates": {
+					"type": "button",
+					"top": 35,
+					"left": 1152,
+					"width": 56,
+					"height": 17,
+					"dataSource": "bRunRates",
+					"text": "Rate",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/RunRates.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"selected3D": {
+					"type": "button",
+					"top": 35,
+					"left": 716,
+					"width": 54,
+					"height": 17,
+					"dataSource": "b3D",
+					"text": "3D",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/selected3D.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"selectedAskme",
+				"Print",
+				"selectedJob",
+				"selectedJML",
+				"selectedPSched",
+				"selectedSnS",
+				"Variable",
+				"aGlueListBox",
+				"selectedHistory",
+				"Reload",
+				"SelectedEdit",
+				"selectedPakSpec",
+				"Button1",
+				"Help",
+				"Extend",
+				"selectedEbag",
+				"RunRates",
+				"selected3D"
+			]
+		},
+		{
+			"objects": {
+				"Help1": {
+					"type": "button",
+					"top": 9,
+					"left": 22,
+					"width": 69,
+					"height": 17,
+					"dataSource": "bReturn",
+					"action": "previousPage",
+					"text": "Return",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 63,
+					"left": 71,
+					"width": 676,
+					"height": 552,
+					"text": "* Click on the the column titles to sort by that column, some such as the Release column sorts by multiple columns. The current sort order is displayed under the list as the name or column numbers.\r\r* Selecting a row enables the buttons above the list which link you to more detailed information.\r\r* If you are in the Glue Scheduling group, you may edit the Gluer, Priority, HRD, Style, Separate, and comments columns. To make the same change to multiple rows, highlight them by Command+click, then click the Edit button. It will as which column you want to write too, so for instance if you entere \"Comment\" and click ok, in the next prompt what you enter will be applied to the comment column for each row you have selected.\r\r* Additionally, clicking on a release date adds a reminder to the comments to \"Fix Rel\". A second click will remove that commnet. Doubleclicking a date takes you to the actual release where the date can be updated (and will be reflected on the next loading of the GlueSchedule).\r\r* The History button will look at machine tickets to find the last Gluer used for the Product Code or A#. If one is found, it will offer to apply that Gluer to each occurance of that A# that isn't already assigned to a Gluer.\r\r* The Gear button permits you to filter by job progress (printed, diecut), by Gluer assignment, and by timing (3day or all).\r\r* The Print button takes a screenshot and opens it in Preview, it can then be scaled and printed.\r\r* The Excel button exports the list to text and opens it in Excel.\r\r* Find box will let you seach the list for jobform (or jobits) and Product Codes. When you have a press schedule window open in addition to the GlueSchedule, if you doubleclick a jobsequence on the D/C (for instance) then click on the GlueSchedule window to bring it to the foreground, that jobform will be entered into the \"Find\" box for you, clicking the Magnifying glass will then sort by jobit and scroll to the first occurance.\r\r* The EXTEND button will enable when only one gluer is being displayed\r\r"
+				}
+			},
+			"entryOrder": [
+				"Help1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

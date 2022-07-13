@@ -1,0 +1,148 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 155,
+	"markerBreak": 155,
+	"markerFooter": 165,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 106,
+					"left": 421,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 106,
+					"left": 24,
+					"width": 382,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "z___Kill_User_Processes"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 90,
+					"left": 16,
+					"width": 507,
+					"sizingX": "grow"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 139,
+					"left": 164,
+					"width": 99,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "_STOP_NOW_ : "
+				},
+				"_STOP_NOW_": {
+					"type": "checkbox",
+					"top": 139,
+					"left": 268,
+					"width": 62,
+					"height": 16,
+					"dataSource": "[z___Kill_User_Processes:50]_STOP_NOW_:2",
+					"text": "Yes",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text4",
+					"Line5"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

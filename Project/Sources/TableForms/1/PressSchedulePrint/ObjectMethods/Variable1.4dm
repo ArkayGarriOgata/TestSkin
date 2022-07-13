@@ -1,0 +1,28 @@
+//OM: sCriterion1() -> 
+//@author mlb - 12/4/01  14:00
+
+If (Not:C34(<>modification4D_13_02_19))  // BEGIN 4D Professional Services : January 2019 Query Selection (2) Pt. 3 + Sets (3) query 
+	QUERY:C277([Cost_Centers:27]; [Cost_Centers:27]ID:1=sCriterion1)
+	If (Records in selection:C76([Cost_Centers:27])>0)
+		QUERY:C277([ProductionSchedules:110]; [ProductionSchedules:110]CostCenter:1=sCriterion1)
+		ORDER BY:C49([ProductionSchedules:110]; [ProductionSchedules:110]Priority:3; >; [ProductionSchedules:110]StartDate:4; >)
+		
+	Else 
+		BEEP:C151
+		ALERT:C41(sCriterion1+" was not found.")
+		sCriterion1:=""
+	End if 
+Else 
+	QUERY:C277([ProductionSchedules:110]; [Cost_Centers:27]ID:1=sCriterion1)
+	If (Records in selection:C76([ProductionSchedules:110])>0)
+		
+		ORDER BY:C49([ProductionSchedules:110]; [ProductionSchedules:110]Priority:3; >; [ProductionSchedules:110]StartDate:4; >)
+		
+	Else 
+		BEEP:C151
+		ALERT:C41(sCriterion1+" was not found.")
+		sCriterion1:=""
+	End if 
+End if   // END 4D Professional Services : January 2019 
+
+//

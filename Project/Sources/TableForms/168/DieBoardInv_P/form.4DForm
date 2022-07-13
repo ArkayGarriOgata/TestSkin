@@ -1,0 +1,488 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 58,
+	"markerBody": 77,
+	"markerBreak": 77,
+	"markerFooter": 95,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 0,
+					"width": 66,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 65,
+					"width": 149,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 213,
+					"width": 130,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 342,
+					"width": 91,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 432,
+					"width": 43,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 474,
+					"width": 50,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 523,
+					"width": 78,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 600,
+					"width": 87,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 686,
+					"width": 83,
+					"height": 35,
+					"fill": "#C0C0C0",
+					"strokeWidth": 0.1
+				},
+				"Text": {
+					"type": "text",
+					"top": 33,
+					"left": 2,
+					"width": 61,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"text": "Location"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 33,
+					"left": 67,
+					"width": 143,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"text": "Customer"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 33,
+					"left": 215,
+					"width": 124,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"text": "Job#"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 33,
+					"left": 344,
+					"width": 86,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"text": "A #"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 33,
+					"left": 434,
+					"width": 38,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"textAlign": "center",
+					"text": "Up #"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 33,
+					"left": 476,
+					"width": 45,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"textAlign": "center",
+					"text": "B/S"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 33,
+					"left": 525,
+					"width": 73,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"textAlign": "center",
+					"text": "Date"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 25,
+					"left": 602,
+					"width": 82,
+					"height": 32,
+					"class": "Shell_ReportHeader",
+					"textAlign": "center",
+					"text": "Last\rUsed"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 25,
+					"left": 688,
+					"width": 78,
+					"height": 32,
+					"class": "Shell_ReportHeader",
+					"textAlign": "center",
+					"text": "Impressions"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 5,
+					"left": 1,
+					"width": 766,
+					"height": 18,
+					"class": "Shell_ReportHeader",
+					"textAlign": "center",
+					"text": "Dieboard Inventory"
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 0,
+					"width": 66,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 65,
+					"width": 149,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 213,
+					"width": 130,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle12": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 342,
+					"width": 91,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 432,
+					"width": 43,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle14": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 474,
+					"width": 50,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle15": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 523,
+					"width": 78,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle16": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 600,
+					"width": 87,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Rectangle17": {
+					"type": "rectangle",
+					"top": 57,
+					"left": 686,
+					"width": 83,
+					"height": 20,
+					"fill": "transparent",
+					"strokeWidth": 0.1
+				},
+				"Field": {
+					"type": "input",
+					"top": 60,
+					"left": 2,
+					"width": 61,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]CatelogID:10",
+					"class": "Shell_SmallField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 60,
+					"left": 67,
+					"width": 145,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]Customer:2",
+					"class": "Shell_SmallField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 60,
+					"left": 215,
+					"width": 125,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]DieNumber:3",
+					"class": "Shell_SmallField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 60,
+					"left": 344,
+					"width": 86,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]OutlineNumber:4",
+					"class": "Shell_SmallField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 60,
+					"left": 434,
+					"width": 39,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]UpNumber:5",
+					"dataSourceTypeHint": "integer",
+					"class": "Shell_SmallField",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 60,
+					"left": 476,
+					"width": 46,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]Type:7",
+					"class": "Shell_SmallField",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 60,
+					"left": 525,
+					"width": 73,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]DateEntered:6",
+					"dataSourceTypeHint": "date",
+					"class": "Shell_SmallField",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 60,
+					"left": 602,
+					"width": 83,
+					"height": 14,
+					"dataSource": "[Job_DieBoard_Inv:168]DateLastUsed:13",
+					"dataSourceTypeHint": "date",
+					"class": "Shell_SmallField",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 60,
+					"left": 688,
+					"width": 78,
+					"height": 15,
+					"dataSource": "[Job_DieBoard_Inv:168]Impressions:14",
+					"dataSourceTypeHint": "integer",
+					"class": "Shell_SmallField",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 79,
+					"left": 1,
+					"width": 766,
+					"height": 14,
+					"class": "Shell_SmallField",
+					"textAlign": "right",
+					"text": "<ttPrinted>"
+				}
+			}
+		}
+	]
+}

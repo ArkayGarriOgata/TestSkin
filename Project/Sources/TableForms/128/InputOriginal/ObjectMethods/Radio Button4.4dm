@@ -1,0 +1,1 @@
+CSM_setField(->[Finished_Goods_Color_SpecMaster:128]finishLaminationRMcode:15; ->drb2; "Yes, enter R/M code"; True:C214)

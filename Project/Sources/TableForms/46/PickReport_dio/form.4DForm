@@ -1,0 +1,402 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 310,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 4,
+					"left": 6,
+					"width": 213,
+					"height": 228,
+					"class": "BaseRadioButton",
+					"text": "Pick Sheet Report Style"
+				},
+				"Variable1": {
+					"type": "radio",
+					"top": 24,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byOrder",
+					"text": "by Customer Order",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 46,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byDate",
+					"text": "by Release Date",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 68,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byCPN",
+					"text": "by Customer Product Code",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 91,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byShipTo",
+					"text": "by Ship To Id",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 114,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byCustID",
+					"text": "by Customer Id",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "radio",
+					"top": 137,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byOpenRel",
+					"text": "Open Release Report",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "radio",
+					"top": 161,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byOpenRel2",
+					"text": "Open Releases, Extended",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "radio",
+					"top": 184,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byNone",
+					"text": "Don't Print Releases",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "radio",
+					"top": 207,
+					"left": 13,
+					"width": 203,
+					"height": 18,
+					"dataSource": "byShipToCPN",
+					"text": "Pick by CPN",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "checkbox",
+					"top": 237,
+					"left": 24,
+					"width": 182,
+					"height": 18,
+					"dataSource": "bPickSheet",
+					"text": "Print F/G Pick List Forms",
+					"class": "BaseCheckBox",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "checkbox",
+					"top": 260,
+					"left": 24,
+					"width": 122,
+					"height": 18,
+					"dataSource": "bSendToWMS",
+					"text": "Send To WMS",
+					"class": "BaseCheckBox",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button": {
+					"type": "radio",
+					"top": 288,
+					"left": 13,
+					"width": 141,
+					"height": 20,
+					"dataSource": "sortShip",
+					"text": "Sort ShipTo",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group3",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 311,
+					"left": 13,
+					"width": 141,
+					"height": 20,
+					"dataSource": "sortRel",
+					"text": "Sort Release#",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group3",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 349,
+					"left": 22,
+					"width": 80,
+					"height": 25,
+					"dataSource": "bCANCEL",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 349,
+					"left": 121,
+					"width": 80,
+					"height": 25,
+					"dataSource": "bSearch",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Print",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 358,
+					"left": 206,
+					"width": 13,
+					"height": 16,
+					"dataSource": "bSearch",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Variable7",
+				"Variable8",
+				"Variable9"
+			],
+			"Group3": [
+				"Radio Button",
+				"Radio Button1"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

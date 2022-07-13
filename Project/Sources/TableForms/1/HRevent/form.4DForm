@@ -1,0 +1,182 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Human Resources",
+	"rightMargin": 24,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 14,
+					"left": 19,
+					"width": 187,
+					"height": 244,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "EMPLOYEES:"
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 65,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibNew",
+					"text": "Add",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 124,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRpt",
+					"text": "Report Access",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 36,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "Button2",
+					"text": "How To?",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 94,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibMod",
+					"text": "Update...",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 154,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRev",
+					"text": "Approve Status Change",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 186,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibDel",
+					"text": "Pending Approval",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 218,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRpt",
+					"text": "Approved",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 31,
+					"left": 224,
+					"width": 156,
+					"height": 210,
+					"class": "BaseLabel",
+					"text": "New aMs Users need to have unique initials, please verify that will be the case before using Add. If necessary append a number to there initials.\r\rClick Update... and uncheck aMs Account to prevent login by that user."
+				}
+			},
+			"entryOrder": [
+				"Variable9",
+				"Variable14",
+				"Button5",
+				"Variable11",
+				"Variable1",
+				"Variable2",
+				"Variable3"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

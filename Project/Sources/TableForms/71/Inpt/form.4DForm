@@ -1,0 +1,104 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"formSizeAnchor": "RecordRow",
+	"rightMargin": 42,
+	"bottomMargin": 42,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Arcv_tInpt_Name": {
+					"type": "input",
+					"top": 100,
+					"left": 31,
+					"width": 571,
+					"height": 17,
+					"dataSource": "Arcv_tInpt_Name",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Arcv_nInpt_OnLoad": {
+					"type": "button",
+					"top": 585,
+					"left": 31,
+					"width": 70,
+					"height": 24,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Arcv_nInpt_OnLoad",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/Arcv_nInpt_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"RecordRow": {
+					"type": "input",
+					"top": 122,
+					"left": 31,
+					"width": 561,
+					"height": 417,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Archive:71]RecordRow:3",
+					"dataSourceTypeHint": "object",
+					"focusable": false,
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

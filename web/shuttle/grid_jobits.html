@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+</head>
+
+<body>
+    <h1 class="m-4">Glue Schedule</h1>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <input type="text" placeholder="Search Gluer..." id="queryBox" onchange="queryGrid();"><br><br>
+            <div id="myGrid" style="height: 500px;width:100%;" class="ag-theme-balham"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="gridDetail"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" charset="utf-8">
+
+
+    // specify the columns
+    var columnDefs = [
+        { headerName: "Gluer", field: "Gluer", sortable: true, filter: true, width: 140  },
+        { headerName: "Priority", field: "Priority", sortable: true, filter: true, width: 120 },
+        { headerName: "Jobit", field: "Jobit", sortable: false, filter: true, width: 110 },
+        { headerName: "ProductCode", field: "ProductCode", sortable: true, filter: true, width: 80 },
+        { headerName: "OutlineNumber", field: "OutlineNumber", sortable: true, filter: true, width: 150 },
+        { headerName: "Qty_Want", field: "Qty_Want", sortable: true, filter: true, width: 110 },
+    ];
+
+    // let the grid know which columns and what data to use
+    var gridOptions = {
+        columnDefs: columnDefs,
+        rowSelection: 'multiple',
+        rowData: [],
+        onSelectionChanged: onSelectionChanged
+    };
+
+    fillGrid("");
+
+    function onSelectionChanged() {
+        var selectedNodes = gridOptions.api.getSelectedNodes();
+        var selectedData = selectedNodes.map(function (node) { return node.data });
+        var selectedDataStringPresentation = selectedData.map(function (node) { return fillRecordTemplate(node) }).join('<br>');
+        document.getElementById("gridDetail").innerHTML = selectedDataStringPresentation;
+    }
+
+    function fillRecordTemplate(record) {
+        recordHtml = "<div><h2 class=\"mt-5\">Mach#:  " + record.Gluer + ",   Priority:  " + record.Priority + "</h2>";
+        // recordHtml += '<img src="/4DACTION/getCustomerPhoto?id=' + record.Customer_ID + '&thumbnail=1" /><br>';
+
+        recordHtml += "<b>Jobit: </b>" + record.Jobit + "<br>";
+        recordHtml += "<b>ProductCode: </b>" + record.ProductCode + "<br>";
+        recordHtml += "<b>OutlineNumber: </b>" + record.OutlineNumber + "<br>";
+        recordHtml += "<b>ControlNumber: </b>" + record.ControlNumber + "<br>";
+        recordHtml += "<b>Qty_Want: </b>" + record.Qty_Want + "<br>";
+        recordHtml += "<b>HRD: </b>" + record.MAD + "<br>";
+        recordHtml += "<b>Comment: </b>" + record.GluerComment + "<br>";
+        recordHtml += "<b>Style: </b>" + record.GlueStyle + "<br>";
+
+        return recordHtml;
+    }
+
+    function queryGrid() {
+
+        queryValue = document.getElementById("queryBox").value;
+        fillGrid(queryValue);
+
+    }
+
+    function fillGrid(queryValue) {
+
+
+        // lookup the container we want the Grid to use
+        document.getElementById('myGrid').innerHTML = ''; // Force refreshing of grid
+        var eGridDiv = document.querySelector('#myGrid');
+
+        // create the grid passing in the div to use together with the columns & data we want to use
+        new agGrid.Grid(eGridDiv, gridOptions);
+
+        //Call to the API
+
+        if (queryValue !== "") {
+            url = "/api/Job_Forms_Items?q=(Gluer='" + queryValue + "')";
+
+        } else {
+            url = "/api/Job_Forms_Items";
+
+        }
+
+
+        fetch(url).then(function (response) {
+            return response.json();
+        }).then(function (resp) {
+            gridOptions.api.setRowData(resp.data);
+        });
+
+    }
+
+</script>

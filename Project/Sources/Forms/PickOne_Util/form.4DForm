@@ -1,0 +1,178 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"SearchPicker": {
+					"type": "subform",
+					"top": 48,
+					"left": 72,
+					"width": 198,
+					"height": 30,
+					"dataSource": "vSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 87,
+					"left": 21,
+					"width": 300,
+					"height": 336,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"lockedColumnCount": 1,
+					"dataSource": "Form:C1466.data",
+					"currentItemSource": "Form:C1466.choice_o",
+					"currentItemPositionSource": "Form:C1466.choicePosition",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470[Form:C1466.displayedField]",
+							"width": 300,
+							"minWidth": 300,
+							"maxWidth": 400,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						}
+					]
+				},
+				"cancelButton1": {
+					"type": "button",
+					"top": 450,
+					"left": 36,
+					"width": 115,
+					"height": 44,
+					"sizingY": "move",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"okButton": {
+					"type": "button",
+					"top": 450,
+					"left": 192,
+					"width": 115,
+					"height": 44,
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Pick",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 14,
+					"left": 21,
+					"width": 300,
+					"height": 38,
+					"dataSource": "Form:C1466.message",
+					"class": "BaseFormTitle",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

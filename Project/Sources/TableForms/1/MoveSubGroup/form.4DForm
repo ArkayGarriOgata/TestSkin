@@ -1,0 +1,456 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Peek",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture4": {
+					"type": "picture",
+					"top": 62,
+					"left": 261,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 61,
+					"left": 407,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 62,
+					"left": 261,
+					"width": 18,
+					"height": 15,
+					"dataSource": "aCommCode",
+					"display": false,
+					"textAlign": "center",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 5,
+					"left": 2,
+					"width": 439,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"text": "Mass reclassify R/M associated records to a new Subgroup"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 34,
+					"left": 49,
+					"width": 143,
+					"height": 15,
+					"dataSource": "xTitle",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 63,
+					"left": 244,
+					"width": 15,
+					"height": 15,
+					"dataSource": "i4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 62,
+					"left": 299,
+					"width": 106,
+					"height": 15,
+					"dataSource": "tSubgroup",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 321,
+					"left": 241,
+					"width": 76,
+					"height": 20,
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 321,
+					"left": 332,
+					"width": 76,
+					"height": 20,
+					"dataSource": "baOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 34,
+					"left": 241,
+					"width": 183,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"text": "To Commodity-Subgroup"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 61,
+					"left": 283,
+					"width": 13,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "-"
+				},
+				"Variable7": {
+					"type": "dropdown",
+					"top": 61,
+					"left": 407,
+					"width": 18,
+					"height": 14,
+					"dataSource": "axText",
+					"display": false,
+					"textAlign": "center",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 93,
+					"left": 247,
+					"width": 161,
+					"height": 208,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Choose a \"From\" commodity using the popup. Then click on the Subgroups in the list on the left that you wish to reclassify to the Commodity/Subgroup that you have choosen above. \r\rWhen you click OK, all of the RawMaterials and their PO, Bins, Transactions, Budgets, PSpecs, and Estimates belonging to the selected subgroups will be reclassified."
+				},
+				"Picture10": {
+					"type": "picture",
+					"top": 32,
+					"left": 195,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Variable33": {
+					"type": "dropdown",
+					"top": 32,
+					"left": 195,
+					"width": 18,
+					"height": 15,
+					"dataSource": "aCommCode2",
+					"display": false,
+					"textAlign": "center",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable33.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 34,
+					"left": 10,
+					"width": 34,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"text": "From:"
+				},
+				"Variable54": {
+					"type": "button",
+					"top": 322,
+					"left": 418,
+					"width": 18,
+					"height": 21,
+					"dataSource": "baOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"display": false,
+					"method": "ObjectMethods/Variable54.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fromListBox": {
+					"type": "listbox",
+					"top": 56,
+					"left": 9,
+					"width": 204,
+					"height": 285,
+					"resizingMode": "legacy",
+					"movableRows": false,
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"method": "ObjectMethods/fromListBox.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "aBullet",
+							"width": 20,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "√",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "aText",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Description",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

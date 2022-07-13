@@ -1,0 +1,1 @@
+[Finished_Goods:26]Height_Dec:12:=fInches2Dec(Self:C308->)

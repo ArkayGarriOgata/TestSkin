@@ -1,0 +1,997 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 90
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 92,
+					"left": 1,
+					"width": 748,
+					"height": 457,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#E2FFDF",
+					"stroke": "transparent"
+				},
+				"Field45": {
+					"type": "input",
+					"top": 2,
+					"left": 603,
+					"width": 26,
+					"height": 13,
+					"dataSource": "[Estimates_Materials:29]ModWho:21",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field46": {
+					"type": "input",
+					"top": 2,
+					"left": 632,
+					"width": 54,
+					"height": 13,
+					"dataSource": "[Estimates_Materials:29]ModDate:22",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text60": {
+					"type": "text",
+					"top": 35,
+					"left": 553,
+					"width": 57,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"text": "Form ID:"
+				},
+				"DisplayOnly1": {
+					"type": "input",
+					"top": 52,
+					"left": 632,
+					"width": 32,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Sequence:12",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field47": {
+					"type": "input",
+					"top": 36,
+					"left": 611,
+					"width": 120,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]DiffFormID:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DisplayOnly2": {
+					"type": "input",
+					"top": 46,
+					"left": 551,
+					"width": 42,
+					"height": 43,
+					"dataSource": "[Estimates_DifferentialsForms:47]FormNumber:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DisplayOnly3": {
+					"type": "input",
+					"top": 52,
+					"left": 701,
+					"width": 30,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]CostCtrID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DisplayOnly4": {
+					"type": "input",
+					"top": 68,
+					"left": 664,
+					"width": 73,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Effectivity:27",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 51,
+					"left": 603,
+					"width": 26,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"text": "Seq:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 51,
+					"left": 670,
+					"width": 27,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"text": "C/C:"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 67,
+					"left": 603,
+					"width": 57,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"text": "Stds Eff:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 238,
+					"left": 49,
+					"width": 353,
+					"height": 162,
+					"class": "BaseGroupBox",
+					"text": "Additional Information"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 244,
+					"left": 435,
+					"width": 68,
+					"height": 81,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Comments:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 117,
+					"left": 48,
+					"width": 103,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Commodity Key:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 433,
+					"left": 49,
+					"width": 36,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Qty:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 433,
+					"left": 177,
+					"width": 68,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Total Cost:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 117,
+					"left": 327,
+					"width": 34,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "UOM:"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 147,
+					"left": 48,
+					"width": 116,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Raw Material Code:"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 267,
+					"left": 78,
+					"width": 132,
+					"height": 16,
+					"dataSource": "sMatLabel1",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 289,
+					"left": 78,
+					"width": 132,
+					"height": 16,
+					"dataSource": "sMatLabel2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 311,
+					"left": 78,
+					"width": 132,
+					"height": 16,
+					"dataSource": "sMatLabel3",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 333,
+					"left": 78,
+					"width": 132,
+					"height": 16,
+					"dataSource": "sMatLabel4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 355,
+					"left": 78,
+					"width": 132,
+					"height": 16,
+					"dataSource": "sMatLabel5",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 377,
+					"left": 78,
+					"width": 132,
+					"height": 16,
+					"dataSource": "sMatLabel6",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 433,
+					"left": 77,
+					"width": 83,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Qty:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 433,
+					"left": 248,
+					"width": 93,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Cost:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;($###,##0.00)",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 461,
+					"left": 126,
+					"width": 597,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]CalcDetails:24",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 486,
+					"left": 126,
+					"width": 597,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]WorkDetails:25",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CommodityKey": {
+					"type": "input",
+					"top": 118,
+					"left": 164,
+					"width": 150,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Commodity_Key:6",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/CommodityKey.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 114,
+					"left": 426,
+					"width": 228,
+					"height": 20,
+					"dataSource": "bChange",
+					"text": "Change Material's Unit of Measure",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 147,
+					"left": 164,
+					"width": 150,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Raw_Matl_Code:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 145,
+					"left": 328,
+					"width": 162,
+					"height": 20,
+					"dataSource": "bGetRM",
+					"text": "Pick Raw Material Code",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 178,
+					"left": 164,
+					"width": 72,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]UseStdDated:28",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 210,
+					"left": 164,
+					"width": 53,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]CostCtrID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 211,
+					"left": 302,
+					"width": 35,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Sequence:12",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "checkbox",
+					"top": 210,
+					"left": 364,
+					"width": 72,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]FixedQty:30",
+					"text": "FixedQty",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 267,
+					"left": 216,
+					"width": 162,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Real1:14",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 289,
+					"left": 216,
+					"width": 162,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Real2:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 311,
+					"left": 216,
+					"width": 162,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Real3:16",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 333,
+					"left": 216,
+					"width": 162,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]Real4:17",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 355,
+					"left": 216,
+					"width": 162,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]alpha20_2:18",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 377,
+					"left": 216,
+					"width": 162,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]alpha20_3:19",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field18": {
+					"type": "input",
+					"top": 245,
+					"left": 508,
+					"width": 214,
+					"height": 81,
+					"dataSource": "[Estimates_Materials:29]Comments:13",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 359,
+					"left": 508,
+					"width": 214,
+					"height": 46,
+					"dataSource": "[Estimates_Materials:29]SplAllocate:29",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 117,
+					"left": 369,
+					"width": 43,
+					"height": 15,
+					"dataSource": "[Estimates_Materials:29]UOM:8",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UOMs"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 178,
+					"left": 48,
+					"width": 106,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Use Std. Dated†:"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 172,
+					"left": 242,
+					"width": 325,
+					"height": 26,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "† If this field is  00/00/00, the latest standard will be used; otherwise, the standard for the date entered will be used. "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 358,
+					"left": 437,
+					"width": 65,
+					"height": 46,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Special\rAllocations\r(eg 02,03)"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 460,
+					"left": 49,
+					"width": 76,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "CalcDetails:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 486,
+					"left": 49,
+					"width": 76,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "WorkDetails:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 209,
+					"left": 48,
+					"width": 96,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Cost Center Id:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 209,
+					"left": 238,
+					"width": 66,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Sequence:"
+				}
+			},
+			"entryOrder": [
+				"Variable12",
+				"Variable13",
+				"Variable14",
+				"Variable15",
+				"Variable16",
+				"Variable17",
+				"Field2",
+				"Field3",
+				"Field4",
+				"Field5",
+				"CommodityKey",
+				"Variable19",
+				"Field10",
+				"Variable18",
+				"Field19",
+				"Field1",
+				"Field6",
+				"Field7",
+				"Field12",
+				"Field13",
+				"Field14",
+				"Field15",
+				"Field16",
+				"Field17",
+				"Field18",
+				"Field21",
+				"Field11"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text60"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

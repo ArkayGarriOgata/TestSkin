@@ -1,0 +1,673 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 276,
+	"markerBreak": 276,
+	"markerFooter": 286,
+	"events": [
+		"onLoad",
+		"onValidate"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 217,
+					"left": 17,
+					"width": 208,
+					"height": 52,
+					"borderRadius": 5
+				},
+				"Text2": {
+					"type": "text",
+					"top": 220,
+					"left": 27,
+					"width": 38,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "Skids"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 246,
+					"left": 25,
+					"width": 34
+				},
+				"Text3": {
+					"type": "text",
+					"top": 36,
+					"left": 545,
+					"width": 79,
+					"height": 15,
+					"stroke": "#008788",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Shipper's Nº:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 250,
+					"left": 22,
+					"width": 48,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "Dock Appt"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 261,
+					"left": 74,
+					"width": 142,
+					"height": 1
+				},
+				"Text5": {
+					"type": "text",
+					"top": 108,
+					"left": 38,
+					"width": 17,
+					"height": 66,
+					"stroke": "#008788",
+					"textAlign": "center",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "\rS\rH\rI\rP"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 108,
+					"left": 350,
+					"width": 17,
+					"height": 66,
+					"stroke": "#008788",
+					"textAlign": "center",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "\rB\rI\rL\rL"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 212,
+					"left": 309,
+					"width": 66,
+					"height": 12,
+					"stroke": "#008788",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Ship Date:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 227,
+					"left": 309,
+					"width": 66,
+					"height": 12,
+					"stroke": "#008788",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Carrier:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 242,
+					"left": 309,
+					"width": 66,
+					"height": 12,
+					"stroke": "#008788",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "Vehicle ID:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 257,
+					"left": 309,
+					"width": 66,
+					"height": 12,
+					"stroke": "#008788",
+					"textAlign": "right",
+					"fontTheme": "additional",
+					"text": "F.O.B.:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 220,
+					"left": 75,
+					"width": 38,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "Cases"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 220,
+					"left": 128,
+					"width": 38,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "Weight"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 220,
+					"left": 178,
+					"width": 38,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "Pages"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 71,
+					"left": 558,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]QualityAssur:22",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 53,
+					"left": 550,
+					"width": 67,
+					"height": 16,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShippersNo:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 110,
+					"left": 59,
+					"width": 197,
+					"height": 68,
+					"dataSource": "tText10",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 110,
+					"left": 372,
+					"width": 197,
+					"height": 68,
+					"dataSource": "tText12",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 234,
+					"left": 73,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]Total_Cases:14",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 234,
+					"left": 125,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]Total_Wgt:18",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 234,
+					"left": 177,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]Num_of_Pages:19",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 104,
+					"left": 10,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShipTo:3",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 104,
+					"left": 322,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]BillTo:4",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "checkbox",
+					"top": 194,
+					"left": 44,
+					"width": 117,
+					"height": 16,
+					"dataSource": "[Customers_Bills_of_Lading:49]International:10",
+					"text": "International",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 234,
+					"left": 23,
+					"width": 37,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]Total_Skids:17",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 249,
+					"left": 73,
+					"width": 145,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]DockAppointment:21",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 212,
+					"left": 377,
+					"width": 87,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShipDate:20",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 227,
+					"left": 377,
+					"width": 87,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]Carrier:9",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Carriers"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 242,
+					"left": 377,
+					"width": 87,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]VehicleID:13",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 257,
+					"left": 377,
+					"width": 87,
+					"height": 12,
+					"dataSource": "[Customers_Bills_of_Lading:49]FOB:15",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WindowPositions"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 278,
+					"left": 10,
+					"width": 585,
+					"height": 236,
+					"dataSourceTypeHint": "text",
+					"table": 181,
+					"listForm": "BOL_INCLD",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"printFrame": "fixed"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

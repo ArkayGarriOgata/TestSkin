@@ -1,0 +1,1 @@
+real2:=-1*Subtotal:C97([Raw_Materials_Transactions:23]ActExtCost:10)

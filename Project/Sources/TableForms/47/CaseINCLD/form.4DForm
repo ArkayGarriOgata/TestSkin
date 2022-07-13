@@ -1,0 +1,435 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 16,
+	"markerBody": 32,
+	"markerBreak": 33,
+	"markerFooter": 33,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 1,
+					"width": 471,
+					"height": 16,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 1,
+					"width": 61,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": " Form ID#"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 63,
+					"width": 72,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": " # of Sheets"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 136,
+					"width": 42,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Width"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 179,
+					"width": 40,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Length"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 220,
+					"width": 53,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": " # Items"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 274,
+					"width": 63,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "$ Labor"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 338,
+					"width": 63,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "$ Overhd"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 0,
+					"left": 402,
+					"width": 69,
+					"height": 14,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "$ Material"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 18,
+					"left": 12,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]FormNumber:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 18,
+					"left": 224,
+					"width": 41,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]NumItems:8",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 18,
+					"left": 278,
+					"width": 51,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]CostTtlLabor:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 18,
+					"left": 342,
+					"width": 51,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]CostTtlOH:16",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 18,
+					"left": 406,
+					"width": 58,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]CostTtlMatl:17",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 18,
+					"left": 59,
+					"width": 62,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]NumberSheets:4",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 18,
+					"left": 133,
+					"width": 34,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]Width:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 18,
+					"left": 179,
+					"width": 32,
+					"height": 13,
+					"dataSource": "[Estimates_DifferentialsForms:47]Lenth:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 15,
+					"left": 0,
+					"width": 472,
+					"stroke": "#AAAAAA"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 32,
+					"left": 0,
+					"width": 472,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

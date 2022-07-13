@@ -1,0 +1,276 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Build Skid",
+	"windowMinWidth": 100,
+	"windowMaxWidth": 760,
+	"windowMinHeight": 400,
+	"windowMaxHeight": 1280,
+	"width": 750,
+	"height": 560,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 5,
+					"left": 5,
+					"width": 733,
+					"height": 72,
+					"dataSource": "rft_prompt",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 72,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 81,
+					"left": 5,
+					"width": 733,
+					"height": 24,
+					"dataSource": "rft_Response",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 114,
+					"left": 5,
+					"width": 389,
+					"height": 144,
+					"dataSource": "rft_log",
+					"fontFamily": "Monaco",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 278,
+					"left": 5,
+					"width": 733,
+					"height": 266,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "36px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"alternateFill": "#E2FFDF",
+					"fontFamily": "Monaco",
+					"fontSize": 18,
+					"borderStyle": "sunken",
+					"columns": [
+						{
+							"name": "Scans",
+							"dataSource": "rft_scanNumber",
+							"width": 89,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Scan #",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "rft_caseNumber",
+							"dataSourceTypeHint": "number",
+							"width": 113,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Case #",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "rft_scansSoFar",
+							"width": 517,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Barcode Value",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 114,
+					"left": 407,
+					"width": 331,
+					"height": 144,
+					"dataSource": "rft_error_log",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"fill": "#FFFF00",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

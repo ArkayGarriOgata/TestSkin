@@ -1,0 +1,1 @@
+[Customers_Bills_of_Lading_Manif:181]Count_PerCase:8:=[Customers_Bills_of_Lading_Manif:181]Total_Amt:9/[Customers_Bills_of_Lading_Manif:181]NumCases:6

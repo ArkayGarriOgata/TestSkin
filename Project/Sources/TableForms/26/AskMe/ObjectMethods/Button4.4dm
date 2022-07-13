@@ -1,0 +1,1 @@
+$rowCount:=wms_api_get_bin_detail

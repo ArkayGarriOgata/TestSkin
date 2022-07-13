@@ -1,0 +1,135 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_BackgroudButton",
+	"formSizeAnchor": "Core_nWindow_Resize",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 467,
+	"markerBreak": 467,
+	"markerFooter": 467,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Core_abViewArray": {
+					"type": "listbox",
+					"top": 53,
+					"left": 13,
+					"width": 387,
+					"height": 276,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Core_abViewArray",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "17px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#CCCCCC",
+					"alternateFill": "#AAAAAA",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Core_abViewArray.4dm",
+					"columns": []
+				},
+				"Core_nViewArray_OnLoad": {
+					"type": "button",
+					"top": 399,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "Core_nViewArray_OnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Core_nViewArray_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Core_nWindow_Resize": {
+					"type": "pictureButton",
+					"top": 329,
+					"left": 398,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Core_nWindow_Resize",
+					"picture": "/RESOURCES/Skin/Master/ResizeWindow.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Core_nWindow_Resize.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					]
+				},
+				"CoreOK": {
+					"type": "pictureButton",
+					"top": 5,
+					"left": 372,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "CorenOK",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRound.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Core_tViewArray_Title": {
+					"type": "input",
+					"top": 9,
+					"left": 13,
+					"width": 355,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "Core_tViewArray_Title",
+					"stroke": "#FFFFFF",
+					"class": "Form_Title",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Core_Window_Drag": {
+					"type": "button",
+					"top": 2,
+					"left": 0,
+					"width": 358,
+					"height": 38,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Core_nWindow_Drag",
+					"display": false,
+					"method": "ObjectMethods/Core_Window_Drag.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter"
+					]
+				}
+			}
+		}
+	]
+}

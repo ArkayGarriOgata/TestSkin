@@ -1,0 +1,1 @@
+real3t:=Round:C94(Subtotal:C97([Finished_Goods_Transactions:33]CoGSExtended:8); 0)

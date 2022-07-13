@@ -1,0 +1,1 @@
+  `Method:  Core_Macro_Test    `Description:  This method can be used to test macros    `  it is already defined in the macros document.

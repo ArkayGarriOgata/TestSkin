@@ -1,0 +1,1 @@
+  `Method:  Core_Window_Resize(nHorizontalPixels;nVerticalPixels)    `Description:  This will resize the frontmost window by nPixels  

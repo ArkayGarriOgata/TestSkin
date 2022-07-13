@@ -1,0 +1,688 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "SalesRep Control Center",
+	"memorizeGeometry": true,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 22,
+					"left": 25,
+					"width": 396,
+					"height": 556,
+					"sizingY": "grow",
+					"class": "BaseFormTitle",
+					"text": "SalesReps"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 22,
+					"left": 441,
+					"width": 600,
+					"height": 556,
+					"sizingY": "grow",
+					"class": "BaseFormTitle",
+					"text": "Customers"
+				},
+				"ActiveRepsBtn": {
+					"type": "button",
+					"top": 51,
+					"left": 53,
+					"width": 94,
+					"height": 24,
+					"text": "Active",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/ActiveRepsBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AllRepsBtn": {
+					"type": "button",
+					"top": 51,
+					"left": 167,
+					"width": 94,
+					"height": 24,
+					"text": "All",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/AllRepsBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NewRepBtn": {
+					"type": "button",
+					"top": 51,
+					"left": 281,
+					"width": 94,
+					"height": 24,
+					"text": "New",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/NewRepBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SearchPicker2": {
+					"type": "subform",
+					"top": 48,
+					"left": 460,
+					"width": 198,
+					"height": 30,
+					"dataSource": "vSearch2",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker2.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"ActiveCustomersBtn": {
+					"type": "button",
+					"top": 51,
+					"left": 702,
+					"width": 94,
+					"height": 24,
+					"text": "Active",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/ActiveCustomersBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AllCustomersBtn": {
+					"type": "button",
+					"top": 51,
+					"left": 812,
+					"width": 94,
+					"height": 24,
+					"text": "All",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/AllCustomersBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NoRepCustomersBtn": {
+					"type": "button",
+					"top": 51,
+					"left": 923,
+					"width": 94,
+					"height": 24,
+					"text": "No Rep",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/NoRepCustomersBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBoxReps": {
+					"type": "listbox",
+					"top": 93,
+					"left": 51,
+					"width": 350,
+					"height": 445,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dropping": "custom",
+					"dataSource": "Form:C1466.reps",
+					"currentItemSource": "Form:C1466.clickedRep",
+					"currentItemPositionSource": "Form:C1466.clickedRepPosition",
+					"selectedItemsSource": "Form:C1466.selectedRepSubset",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Monaco",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxReps.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.FirstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 130,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "FirstName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.LastName",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onLoad",
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "LastName",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.ID",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 75,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"ListBoxCustomers": {
+					"type": "listbox",
+					"top": 93,
+					"left": 469,
+					"width": 550,
+					"height": 445,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dragging": "custom",
+					"dataSource": "Form:C1466.customers",
+					"currentItemSource": "Form:C1466.clickedCustomer",
+					"currentItemPositionSource": "Form:C1466.clickedCustomerPosition",
+					"selectedItemsSource": "Form:C1466.selectedCustomerSubset",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Monaco",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBoxCustomers.4dm",
+					"events": [
+						"onLoad",
+						"onAfterEdit",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.Name",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 500,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.ID",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.CommissionPercent",
+							"dataSourceTypeHint": "number",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 120,
+							"numberFormat": "### ##0.00%",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Commission",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "This:C1470.SalesmanID",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 75,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Rep",
+								"stroke": "automatic",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 560,
+					"left": 807,
+					"width": 210,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "UTIL_Num_Entities(->[Customers:16]; Form:C1466.customers)",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 560,
+					"left": 180,
+					"width": 221,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "UTIL_Num_Entities(->[Salesmen:32]; Form:C1466.reps)",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 586,
+					"left": 25,
+					"width": 396,
+					"height": 93,
+					"sizingY": "move",
+					"class": "BaseFormTitle",
+					"text": "Notes"
+				},
+				"Text": {
+					"type": "text",
+					"top": 610,
+					"left": 43,
+					"width": 353,
+					"height": 59,
+					"sizingY": "move",
+					"class": "BaseField",
+					"text": "• Select a SalesRep to list their assigned customers.\r• Drag a Customer name over a SalesRep to reassign.\r• Click New to set up an existing User as a SalesRep.\r• Find specific Customers by entering their name or id.\r"
+				},
+				"repSelection": {
+					"type": "input",
+					"top": 558,
+					"left": 51,
+					"width": 92,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "repSelection",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"customerSelection": {
+					"type": "input",
+					"top": 560,
+					"left": 469,
+					"width": 92,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "customerSelection",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 586,
+					"left": 441,
+					"width": 600,
+					"height": 93,
+					"sizingY": "grow",
+					"class": "BaseFormTitle",
+					"text": "Actions"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 610,
+					"left": 469,
+					"width": 353,
+					"height": 19,
+					"sizingY": "move",
+					"class": "BaseField",
+					"text": "Set Commission Percentage on displayed customer to:\r"
+				},
+				"applyPct": {
+					"type": "input",
+					"top": 611,
+					"left": 811,
+					"width": 40,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"contextMenu": "none",
+					"placeholder": "%",
+					"numberFormat": "#0.00%",
+					"entryFilter": "&\"0-9;.\"",
+					"min": 0,
+					"max": 15,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"apply": {
+					"type": "button",
+					"top": 609,
+					"left": 858,
+					"width": 70,
+					"height": 21,
+					"text": "Apply",
+					"class": "BaseField",
+					"focusable": false,
+					"method": "ObjectMethods/apply.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"ActiveRepsBtn",
+				"AllRepsBtn",
+				"NewRepBtn",
+				"SearchPicker2",
+				"ActiveCustomersBtn",
+				"AllCustomersBtn",
+				"NoRepCustomersBtn",
+				"ListBoxReps",
+				"ListBoxCustomers",
+				"apply"
+			]
+		}
+	]
+}

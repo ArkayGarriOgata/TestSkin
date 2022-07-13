@@ -1,0 +1,205 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 185,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 6,
+					"left": 21,
+					"width": 188,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"text": "Why are you Closing short?"
+				},
+				"CsOL_abRnCl_Short": {
+					"type": "listbox",
+					"top": 24,
+					"left": 20,
+					"width": 196,
+					"height": 114,
+					"resizingMode": "legacy",
+					"dataSource": "CsOL_abRnCl_Short",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"headerHeight": "0em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "aText",
+							"dataSource": "aText",
+							"width": 181,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 151,
+					"left": 20,
+					"width": 96,
+					"height": 20,
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Don't Close",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 151,
+					"left": 126,
+					"width": 86,
+					"height": 20,
+					"dataSource": "baOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Close",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 146,
+					"left": 202,
+					"width": 7,
+					"height": 13,
+					"dataSource": "baOK",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Close",
+					"display": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"CsOL_abRnCl_Short",
+				"Variable2",
+				"Variable3"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

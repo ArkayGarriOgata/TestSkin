@@ -1,0 +1,534 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 683,
+	"markerBreak": 828,
+	"markerFooter": 833,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 86,
+					"left": 233,
+					"width": 258,
+					"height": 72,
+					"dataSource": "[Raw_Material_Labels:171]Label_id_encoded:12",
+					"textAlign": "center",
+					"fontFamily": "IDAutomation Uni M",
+					"fontSize": 24,
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 163,
+					"left": 233,
+					"width": 258,
+					"height": 19,
+					"dataSource": "[Raw_Material_Labels:171]Label_id:2",
+					"textAlign": "center",
+					"fontFamily": "Monaco",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 201,
+					"left": 145,
+					"width": 77,
+					"height": 21,
+					"dataSource": "[Raw_Material_Labels:171]Qty:8",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 249,
+					"left": 88,
+					"width": 211,
+					"height": 26,
+					"dataSource": "[Raw_Material_Labels:171]POItemKey:3",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 249,
+					"left": 309,
+					"width": 200,
+					"height": 26,
+					"dataSource": "[Raw_Material_Labels:171]Raw_Matl_Code:4",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 392,
+					"left": 233,
+					"width": 258,
+					"height": 72,
+					"dataSource": "[Raw_Material_Labels:171]Label_id_encoded:12",
+					"textAlign": "center",
+					"fontFamily": "IDAutomation Uni M",
+					"fontSize": 24,
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 469,
+					"left": 233,
+					"width": 258,
+					"height": 19,
+					"dataSource": "[Raw_Material_Labels:171]Label_id:2",
+					"textAlign": "center",
+					"fontFamily": "Monaco",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 187,
+					"left": 81,
+					"width": 421
+				},
+				"Line1": {
+					"type": "line",
+					"top": 230,
+					"left": 81,
+					"width": 421
+				},
+				"Line2": {
+					"type": "line",
+					"top": 276,
+					"left": 81,
+					"width": 421,
+					"strokeWidth": 2
+				},
+				"Line3": {
+					"type": "line",
+					"top": 364,
+					"left": 81,
+					"width": 421,
+					"strokeWidth": 2
+				},
+				"Text": {
+					"type": "text",
+					"top": 191,
+					"left": 100,
+					"width": 55,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "QTY :"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 233,
+					"left": 86,
+					"width": 31,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "PO:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 233,
+					"left": 307,
+					"width": 60,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "RM Code:"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 231,
+					"left": 305,
+					"height": 45
+				},
+				"Line5": {
+					"type": "line",
+					"top": 493,
+					"left": 81,
+					"width": 421
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 201,
+					"left": 312,
+					"width": 77,
+					"height": 21,
+					"dataSource": "[Raw_Material_Labels:171]UOM:9",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UOMs"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 191,
+					"left": 267,
+					"width": 55,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "UOM :"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 508,
+					"left": 150,
+					"width": 77,
+					"height": 21,
+					"dataSource": "[Raw_Material_Labels:171]Qty:8",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 553,
+					"left": 93,
+					"width": 211,
+					"height": 26,
+					"dataSource": "[Raw_Material_Labels:171]POItemKey:3",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 553,
+					"left": 315,
+					"width": 200,
+					"height": 26,
+					"dataSource": "[Raw_Material_Labels:171]Raw_Matl_Code:4",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line6": {
+					"type": "line",
+					"top": 535,
+					"left": 81,
+					"width": 421
+				},
+				"Line7": {
+					"type": "line",
+					"top": 581,
+					"left": 81,
+					"width": 421,
+					"strokeWidth": 2
+				},
+				"Line8": {
+					"type": "line",
+					"top": 668,
+					"left": 81,
+					"width": 421,
+					"strokeWidth": 2
+				},
+				"Text4": {
+					"type": "text",
+					"top": 496,
+					"left": 105,
+					"width": 55,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "QTY :"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 538,
+					"left": 91,
+					"width": 31,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "PO:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 538,
+					"left": 312,
+					"width": 60,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "RM Code:"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 536,
+					"left": 310,
+					"height": 45
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 508,
+					"left": 317,
+					"width": 77,
+					"height": 21,
+					"dataSource": "[Raw_Material_Labels:171]UOM:9",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UOMs"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 496,
+					"left": 272,
+					"width": 55,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "UOM :"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 318,
+					"left": 88,
+					"width": 401,
+					"height": 44,
+					"dataSource": "[Raw_Materials:21]Description:4",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 622,
+					"left": 88,
+					"width": 401,
+					"height": 44,
+					"dataSource": "[Raw_Materials:21]Description:4",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 286,
+					"left": 86,
+					"width": 403,
+					"height": 26,
+					"dataSource": "[Raw_Materials:21]Commodity_Key:2",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 590,
+					"left": 86,
+					"width": 403,
+					"height": 26,
+					"dataSource": "[Raw_Materials:21]Commodity_Key:2",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 392,
+					"left": 90,
+					"width": 140,
+					"height": 37,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Arkay Packaging Logo.png"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 86,
+					"left": 90,
+					"width": 140,
+					"height": 37,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Arkay Packaging Logo.png"
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 200,
+					"left": 395,
+					"width": 96,
+					"height": 18,
+					"dataSource": "[Raw_Material_Labels:171]When_inserted:5",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 508,
+					"left": 395,
+					"width": 96,
+					"height": 18,
+					"dataSource": "[Raw_Material_Labels:171]When_inserted:5",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

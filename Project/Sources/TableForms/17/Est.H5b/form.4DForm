@@ -1,0 +1,100 @@
+{
+	"destination": "detailPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 50,
+	"markerBody": 80,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 66,
+					"left": 4,
+					"width": 27,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Seq"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 66,
+					"left": 36,
+					"width": 49,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Material"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 66,
+					"left": 202,
+					"width": 95,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Qty - UOM"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 78,
+					"left": 0,
+					"width": 731,
+					"strokeWidth": 0.1
+				},
+				"Text4": {
+					"type": "text",
+					"top": 66,
+					"left": 306,
+					"width": 132,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Description"
+				}
+			}
+		}
+	]
+}

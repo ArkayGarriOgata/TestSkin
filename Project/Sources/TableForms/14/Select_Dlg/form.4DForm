@@ -1,0 +1,324 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable6",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 395,
+	"markerBreak": 395,
+	"markerFooter": 395,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 24,
+					"left": 12,
+					"width": 330,
+					"height": 183,
+					"fill": "transparent"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 78,
+					"width": 264,
+					"height": 12,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Title"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 194,
+					"left": 13,
+					"width": 232,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 9,
+					"text": "Click on an item to  select. Click again to de-select."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 13,
+					"left": 12,
+					"width": 66,
+					"height": 12,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "ID"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 193,
+					"left": 12,
+					"width": 330
+				},
+				"Text4": {
+					"type": "text",
+					"top": 194,
+					"left": 257,
+					"width": 53,
+					"height": 12,
+					"fill": "#000000",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Selected:"
+				},
+				"POCl_abSelect_Title": {
+					"type": "listbox",
+					"top": 24,
+					"left": 13,
+					"width": 328,
+					"height": 169,
+					"resizingMode": "legacy",
+					"dataSource": "POCl_abSelect_Title",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"headerHeight": "0em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/POCl_abSelect_Title.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "alClausChk",
+							"dataSource": "<>alClausChk",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header5",
+								"text": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "asClausID",
+							"dataSource": "<>asClausID",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header4",
+								"text": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "<>asClausTitl",
+							"width": 233,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 194,
+					"left": 313,
+					"width": 28,
+					"height": 12,
+					"dataSource": "<>lClausNum",
+					"stroke": "#000000",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 215,
+					"left": 175,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 215,
+					"left": 261,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Save",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

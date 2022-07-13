@@ -1,0 +1,214 @@
+{
+	"destination": "detailScreen",
+	"width": 290,
+	"height": 230,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 5,
+					"left": 80,
+					"width": 193,
+					"height": 106,
+					"class": "BaseGroupBox",
+					"text": "Print allocation report for:"
+				},
+				"Picture29902761": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 79,
+					"height": 70,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture29902761.png"
+				},
+				"rbBoard": {
+					"type": "radio",
+					"top": 28,
+					"left": 105,
+					"width": 88,
+					"height": 25,
+					"dataSource": "rbBoard",
+					"text": "Board",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group14418135",
+					"events": [
+						"onClick"
+					]
+				},
+				"rbSensors": {
+					"type": "radio",
+					"top": 56,
+					"left": 105,
+					"width": 88,
+					"height": 25,
+					"dataSource": "rbSensors",
+					"text": "Sensors",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group14418135",
+					"events": [
+						"onClick"
+					]
+				},
+				"rbColdFoil": {
+					"type": "radio",
+					"top": 85,
+					"left": 105,
+					"width": 88,
+					"height": 25,
+					"dataSource": "rbColdFoil",
+					"text": "Cold Foil",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group14418135",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb1": {
+					"type": "checkbox",
+					"top": 117,
+					"left": 55,
+					"width": 221,
+					"height": 19,
+					"dataSource": "cb1",
+					"text": "Show Open PO Items on Report",
+					"class": "BaseRadioButton",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb2": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 55,
+					"width": 221,
+					"height": 19,
+					"dataSource": "cb2",
+					"text": "Convert LF to SHT as needed",
+					"class": "BaseRadioButton",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 182,
+					"left": 103,
+					"width": 78,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 182,
+					"left": 195,
+					"width": 78,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Group14418135",
+				"rbBoard",
+				"rbSensors",
+				"rbColdFoil",
+				"cb1",
+				"cb2",
+				"bCancel",
+				"bOK"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group14418135": [
+				"rbBoard",
+				"rbSensors",
+				"rbColdFoil"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

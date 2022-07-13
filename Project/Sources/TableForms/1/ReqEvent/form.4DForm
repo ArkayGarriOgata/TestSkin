@@ -1,0 +1,560 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 501,
+					"height": 172,
+					"fill": "#000000"
+				}
+			}
+		},
+		{
+			"objects": {
+				"approveRoanReqs": {
+					"type": "button",
+					"top": 74,
+					"left": 8,
+					"width": 170,
+					"height": 23,
+					"dataSource": "rb4",
+					"text": "Roan Reqs Needing Approval",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/approveRoanReqs.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"approveReqsOnHold": {
+					"type": "button",
+					"top": 75,
+					"left": 214,
+					"width": 120,
+					"height": 23,
+					"dataSource": "rb2",
+					"text": "Reqs On Hold",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/approveReqsOnHold.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"approveHaupReqs": {
+					"type": "button",
+					"top": 103,
+					"left": 8,
+					"width": 170,
+					"height": 23,
+					"dataSource": "bApproveReq",
+					"text": "Haup Reqs Needing Approval",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/approveHaupReqs.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ReqsShowMine": {
+					"type": "button",
+					"top": 126,
+					"left": 214,
+					"width": 120,
+					"height": 23,
+					"dataSource": "rb1",
+					"text": "Show My Reqs",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ReqsShowMine.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"approveReqsWaitingPO": {
+					"type": "button",
+					"top": 132,
+					"left": 8,
+					"width": 170,
+					"height": 23,
+					"dataSource": "rb3",
+					"text": "Reqs waiting PO",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/approveReqsWaitingPO.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 6,
+					"left": 366,
+					"width": 53,
+					"height": 49
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 4,
+					"left": 7,
+					"width": 40,
+					"height": 51,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26728.png"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 49,
+					"left": 6,
+					"width": 65,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Requistions"
+				},
+				"Picture10": {
+					"type": "picture",
+					"top": 3,
+					"left": 50,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Question Balloon.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 1,
+					"left": 4,
+					"width": 66,
+					"height": 60,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture28": {
+					"type": "picture",
+					"top": 9,
+					"left": 373,
+					"width": 40,
+					"height": 39,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/pencil grid.png"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 45,
+					"left": 370,
+					"width": 48,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "COPY"
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 5,
+					"left": 365,
+					"width": 55,
+					"height": 51,
+					"dataSource": "ibCopy",
+					"display": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 3,
+					"left": 76,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibNew",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 3,
+					"left": 146,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibMod",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 2,
+					"left": 216,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibRev",
+					"focusable": false,
+					"text": "Review",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable51": {
+					"type": "button",
+					"top": 3,
+					"left": 441,
+					"width": 55,
+					"height": 60,
+					"dataSource": "<>ibrm_rpts",
+					"focusable": false,
+					"text": "Report",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable51.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bHelp": {
+					"type": "button",
+					"top": 8,
+					"left": 15,
+					"width": 86,
+					"height": 17,
+					"dataSource": "bHelp",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bHelp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibNew": {
+					"type": "button",
+					"top": 8,
+					"left": 111,
+					"width": 86,
+					"height": 17,
+					"dataSource": "ibNew",
+					"text": "New",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ibNew.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bModify": {
+					"type": "button",
+					"top": 8,
+					"left": 207,
+					"width": 86,
+					"height": 17,
+					"dataSource": "bModify",
+					"text": "Modify",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bModify.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bReview": {
+					"type": "button",
+					"top": 8,
+					"left": 304,
+					"width": 86,
+					"height": 17,
+					"dataSource": "bReview",
+					"text": "Review",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bReview.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCopy": {
+					"type": "button",
+					"top": 8,
+					"left": 401,
+					"width": 86,
+					"height": 17,
+					"dataSource": "bCopy",
+					"text": "Copy",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bCopy.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 36,
+					"left": 15,
+					"width": 206,
+					"height": 17,
+					"dataSource": "rb4",
+					"text": "Roan Reqs Needing Approval",
+					"class": "Palette_Buttons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Highlight Button2": {
+					"type": "button",
+					"top": 36,
+					"left": 231,
+					"width": 120,
+					"height": 17,
+					"dataSource": "rb2",
+					"text": "Reqs On Hold",
+					"class": "Palette_Buttons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Highlight Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"<>ib_delvr_schd": {
+					"type": "button",
+					"top": 36,
+					"left": 401,
+					"width": 86,
+					"height": 17,
+					"dataSource": "<>ib_delvr_schd",
+					"text": "Reports",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/%3C%3Eib_delvr_schd.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 65,
+					"left": 15,
+					"width": 206,
+					"height": 17,
+					"dataSource": "bApproveReq",
+					"text": "Haup Reqs Needing Approval",
+					"class": "Palette_Buttons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 65,
+					"left": 231,
+					"width": 120,
+					"height": 17,
+					"dataSource": "rb1",
+					"text": "Show My Reqs",
+					"class": "Palette_Buttons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Highlight Button3": {
+					"type": "button",
+					"top": 65,
+					"left": 361,
+					"width": 126,
+					"height": 17,
+					"dataSource": "rb3",
+					"text": "Reqs waiting PO",
+					"class": "Palette_Buttons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Highlight Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

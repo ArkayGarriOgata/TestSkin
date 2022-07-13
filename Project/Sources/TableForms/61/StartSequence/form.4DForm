@@ -1,0 +1,724 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Start Sequence",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text17": {
+					"type": "text",
+					"top": 42,
+					"left": 542,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "JobForm : "
+				},
+				"JobForm": {
+					"type": "input",
+					"top": 42,
+					"left": 619,
+					"width": 90,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]JobForm:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 2,
+					"left": 607,
+					"width": 142,
+					"height": 15,
+					"dataSource": "t1",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 19,
+					"left": 553,
+					"width": 100,
+					"height": 13,
+					"dataSource": "vRecNum",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"eDateEntered": {
+					"type": "input",
+					"top": 107,
+					"left": 142,
+					"width": 88,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]DateEntered:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"eShift": {
+					"type": "input",
+					"top": 107,
+					"left": 297,
+					"width": 10,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Shift:18",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 4,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"eShift1": {
+					"type": "input",
+					"top": 108,
+					"left": 453,
+					"width": 50,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Operator:27",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/eShift1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"eSequence": {
+					"type": "input",
+					"top": 140,
+					"left": 313,
+					"width": 26,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Sequence:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9",
+					"min": 0,
+					"max": 999,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"eCostCenterID": {
+					"type": "input",
+					"top": 139,
+					"left": 429,
+					"width": 43,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]CostCenterID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/eCostCenterID.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"eGlueMachItemNo": {
+					"type": "input",
+					"top": 179,
+					"left": 142,
+					"width": 21,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Subform:26",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9",
+					"min": 0,
+					"max": 99,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"eGlueMachItemNo1": {
+					"type": "input",
+					"top": 179,
+					"left": 281,
+					"width": 21,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]GlueMachItemNo:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "&9",
+					"min": 0,
+					"max": 99,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 66,
+					"left": 542,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "ReferID : "
+				},
+				"JobForm1": {
+					"type": "input",
+					"top": 66,
+					"left": 619,
+					"width": 123,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Reference_id:22",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 106,
+					"left": 10,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Date:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 140,
+					"left": 10,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Job Number:"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 140,
+					"left": 241,
+					"width": 66,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Sequence:"
+				},
+				"itemText14": {
+					"type": "text",
+					"top": 179,
+					"left": 10,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Subform"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 140,
+					"left": 341,
+					"width": 82,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Cost Center:"
+				},
+				"Text97": {
+					"type": "text",
+					"top": 108,
+					"left": 225,
+					"width": 66,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Shift Nº:"
+				},
+				"JobForm2": {
+					"type": "input",
+					"top": 140,
+					"left": 142,
+					"width": 90,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]JobForm:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"itemText1": {
+					"type": "text",
+					"top": 179,
+					"left": 176,
+					"width": 100,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "or Item Number:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 108,
+					"left": 311,
+					"width": 135,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": " or operator's initials:"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 210,
+					"left": 26,
+					"width": 696
+				},
+				"Invisible Button2": {
+					"type": "button",
+					"top": 106,
+					"left": 648,
+					"width": 23,
+					"height": 16,
+					"dataSource": "Invisible Button",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line4": {
+					"type": "line",
+					"top": 90,
+					"left": 1,
+					"width": 748,
+					"sizingX": "grow"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Dotted Vert Sep.png"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 2,
+					"left": 553,
+					"width": 56,
+					"height": 13,
+					"class": "BaseInformation",
+					"text": "Last Chg: "
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 1,
+					"left": 531,
+					"width": 2,
+					"height": 86,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Dotted Vert Sep.png"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 2,
+					"left": 0,
+					"width": 25,
+					"height": 25,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/emblem.png"
+				},
+				"Picture Button1": {
+					"type": "button",
+					"top": 2,
+					"left": 0,
+					"width": 25,
+					"height": 25,
+					"dataSource": "Picture Button1",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 16,
+					"left": 470,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Save",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Validate.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 3,
+					"left": 324,
+					"width": 2,
+					"height": 86,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Dotted Vert Sep.png"
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 16,
+					"left": 46,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "First",
+					"icon": "/RESOURCES/Images/Buttons/Glass/FirstRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 16,
+					"left": 109,
+					"width": 51,
+					"height": 66,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "[left arrow]",
+					"shortcutAlt": true,
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Previous",
+					"icon": "/RESOURCES/Images/Buttons/Glass/PreviousRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 16,
+					"left": 175,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAlt": true,
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Next",
+					"icon": "/RESOURCES/Images/Buttons/Glass/NextRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 16,
+					"left": 238,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Last",
+					"icon": "/RESOURCES/Images/Buttons/Glass/LastRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 16,
+					"left": 344,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "cancel",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/Buttons/Glass/DeleteRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 407,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Line4"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"Picture1",
+					"bValidate",
+					"Picture3",
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bDelete",
+					"bCancel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

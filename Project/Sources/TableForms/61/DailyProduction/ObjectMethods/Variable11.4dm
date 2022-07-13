@@ -1,0 +1,1 @@
+rReal3:=Subtotal:C97([Job_Forms_Machine_Tickets:61]DownHrs:11)

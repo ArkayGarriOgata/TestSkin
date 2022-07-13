@@ -1,0 +1,2 @@
+[Customers_Order_Lines:41]defaultShipTo:17:=[Customers_Order_Lines:41]edi_shipto:63
+APPLY TO SELECTION:C70([Customers_ReleaseSchedules:46]; [Customers_ReleaseSchedules:46]Shipto:10:=[Customers_Order_Lines:41]defaultShipTo:17)

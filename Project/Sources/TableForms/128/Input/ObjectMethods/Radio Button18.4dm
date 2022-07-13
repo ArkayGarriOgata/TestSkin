@@ -1,0 +1,1 @@
+CSM_setField(->[Finished_Goods_Color_SpecMaster:128]stockPrecoat:8; ->cb2; "F/S")

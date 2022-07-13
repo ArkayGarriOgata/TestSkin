@@ -1,0 +1,325 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 170,
+					"left": 18,
+					"width": 138,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"class": "BaseLabel",
+					"text": "Tray:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 143,
+					"left": 18,
+					"width": 138,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Which Printer:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 16,
+					"left": 132,
+					"width": 105,
+					"height": 15,
+					"dataSource": "sCriterion3",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 33,
+					"left": 112,
+					"width": 214,
+					"height": 17,
+					"dataSource": "tText",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 62,
+					"left": 132,
+					"width": 25,
+					"height": 15,
+					"dataSource": "sCriterion4",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"receiptqty": {
+					"type": "input",
+					"top": 62,
+					"left": 246,
+					"width": 85,
+					"height": 15,
+					"dataSource": "receiptQty",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"min": 1,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/receiptqty.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 85,
+					"left": 137,
+					"width": 49,
+					"height": 15,
+					"dataSource": "iQty",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"min": 1,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 116,
+					"left": 280,
+					"width": 25,
+					"height": 15,
+					"dataSource": "sCriterion5",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 8,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 115,
+					"left": 40,
+					"width": 65,
+					"height": 18,
+					"dataSource": "rb1",
+					"text": "1 Up",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 115,
+					"left": 111,
+					"width": 65,
+					"height": 18,
+					"dataSource": "rb2",
+					"text": "2 Up",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Drop down List": {
+					"type": "dropdown",
+					"top": 142,
+					"left": 102,
+					"width": 226,
+					"height": 17,
+					"dataSource": "aAvailablePrinters",
+					"class": "BaseField",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 16,
+					"left": 13,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "PO Item:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 62,
+					"left": 13,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Number of Units:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 116,
+					"left": 176,
+					"width": 98,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Labels per Unit:"
+				},
+				"Print": {
+					"type": "button",
+					"top": 200,
+					"left": 248,
+					"width": 79,
+					"height": 33,
+					"dataSource": "Button",
+					"action": "accept",
+					"text": "Print",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 200,
+					"left": 156,
+					"width": 79,
+					"height": 33,
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 85,
+					"left": 21,
+					"width": 109,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Quantity per Unit:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 62,
+					"left": 161,
+					"width": 83,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Total LF Rc'd:"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Radio Button1",
+				"Radio Button2"
+			]
+		}
+	}
+}

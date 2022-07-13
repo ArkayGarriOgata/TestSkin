@@ -1,0 +1,242 @@
+{
+	"destination": "detailPrinter",
+	"width": 280,
+	"height": 160,
+	"markerBody": 156,
+	"markerBreak": 156,
+	"markerFooter": 166,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 42,
+					"left": 4,
+					"width": 67,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Customer : "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 82,
+					"left": 6,
+					"width": 39,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Desc : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 102,
+					"left": 4,
+					"width": 39,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Code : "
+				},
+				"ControlNumber": {
+					"type": "input",
+					"top": 42,
+					"left": 77,
+					"width": 198,
+					"height": 15,
+					"dataSource": "[Customers:16]Name:2",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"OutLine_Num": {
+					"type": "input",
+					"top": 102,
+					"left": 46,
+					"width": 123,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Specifications:98]ProductCode:3",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FG_Key1": {
+					"type": "input",
+					"top": 62,
+					"left": 77,
+					"width": 195,
+					"height": 15,
+					"dataSource": "[Finished_Goods:26]Line_Brand:15",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FG_Key2": {
+					"type": "input",
+					"top": 82,
+					"left": 46,
+					"width": 230,
+					"height": 15,
+					"dataSource": "[Finished_Goods:26]CartonDesc:3",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 134,
+					"left": 4,
+					"width": 262,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Approved By : _____________________________"
+				},
+				"OutLine_Num1": {
+					"type": "input",
+					"top": 102,
+					"left": 166,
+					"width": 91,
+					"height": 18,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 3,
+					"left": 52,
+					"width": 174,
+					"height": 24,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/ArkayLogo II.png"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 62,
+					"left": 37,
+					"width": 34,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Line : "
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

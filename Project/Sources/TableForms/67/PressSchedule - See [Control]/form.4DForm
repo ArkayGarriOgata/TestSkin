@@ -1,0 +1,510 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Set Press Schedule",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "Scheduling",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "605pt",
+		"paperHeight": "367pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"canSched0": {
+					"type": "groupBox",
+					"top": 373,
+					"left": 255,
+					"width": 356,
+					"height": 61,
+					"sizingY": "move",
+					"class": "Default",
+					"text": "Calculate Schedule"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 619,
+					"height": 40,
+					"sizingX": "grow",
+					"fill": "#AAAAAA"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 610,
+					"height": 18,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "PressSchedule"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 9,
+					"left": 18,
+					"width": 45,
+					"height": 17,
+					"dataSource": "sCriterion1",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PressNumbers"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 48,
+					"left": 2,
+					"width": 601,
+					"height": 321,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 110,
+					"detailForm": "Input",
+					"listForm": "Include",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"canSched1": {
+					"type": "button",
+					"top": 389,
+					"left": 11,
+					"width": 65,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Load",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched2": {
+					"type": "button",
+					"top": 411,
+					"left": 11,
+					"width": 65,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBlock",
+					"text": "Block",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched3": {
+					"type": "button",
+					"top": 389,
+					"left": 84,
+					"width": 65,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bMove",
+					"text": "Move",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched4": {
+					"type": "button",
+					"top": 411,
+					"left": 84,
+					"width": 71,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bDel",
+					"text": "Completed",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched7": {
+					"type": "button",
+					"top": 389,
+					"left": 329,
+					"width": 85,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bExtend",
+					"text": "Extend Dates",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSee11": {
+					"type": "checkbox",
+					"top": 390,
+					"left": 533,
+					"width": 64,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "cb1",
+					"text": "Saturdays",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSee12": {
+					"type": "checkbox",
+					"top": 412,
+					"left": 533,
+					"width": 59,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "cb2",
+					"text": "Sundays",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSee10": {
+					"type": "input",
+					"top": 414,
+					"left": 485,
+					"width": 22,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "rReal1",
+					"dataSourceTypeHint": "number",
+					"class": "Default",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "##0",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"canSched8": {
+					"type": "button",
+					"top": 411,
+					"left": 329,
+					"width": 85,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Update JML",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched6": {
+					"type": "button",
+					"top": 411,
+					"left": 263,
+					"width": 50,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Recall",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched5": {
+					"type": "button",
+					"top": 389,
+					"left": 263,
+					"width": 50,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Save",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 9,
+					"left": 71,
+					"width": 294,
+					"height": 22,
+					"dataSource": "[Cost_Centers:27]Description:3",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button4": {
+					"type": "button",
+					"top": 434,
+					"left": 593,
+					"width": 34,
+					"height": 10,
+					"sizingY": "move",
+					"dataSource": "bDone",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 392,
+					"left": 432,
+					"width": 50,
+					"height": 11,
+					"sizingY": "move",
+					"class": "Default",
+					"text": "Work day:"
+				},
+				"canSee9": {
+					"type": "input",
+					"top": 392,
+					"left": 485,
+					"width": 15,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "i",
+					"class": "Default",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 414,
+					"left": 430,
+					"width": 50,
+					"height": 11,
+					"sizingY": "move",
+					"class": "Default",
+					"text": "Effi'ency%:"
+				},
+				"Button10": {
+					"type": "button",
+					"top": 389,
+					"left": 160,
+					"width": 69,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bPrint",
+					"text": "Print",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "button",
+					"top": 411,
+					"left": 160,
+					"width": 69,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bGantt",
+					"text": "Gantt",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 23,
+					"left": 547,
+					"width": 62,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "pressBackLog",
+					"dataSourceTypeHint": "number",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0 Hrs",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PressNumbers"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 24,
+					"left": 483,
+					"width": 63,
+					"height": 15,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Backlog:"
+				},
+				"canSee14": {
+					"type": "button",
+					"top": 433,
+					"left": 160,
+					"width": 72,
+					"height": 20,
+					"dataSource": "bAdvise",
+					"text": "Set a Date",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSee14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched13": {
+					"type": "button",
+					"top": 435,
+					"left": 12,
+					"width": 65,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bNew",
+					"text": "New",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/canSched13.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Subform1",
+				"canSched1",
+				"canSched2",
+				"canSched3",
+				"canSched4",
+				"canSched7",
+				"canSee11",
+				"canSee12",
+				"canSee10",
+				"canSched8",
+				"canSched6",
+				"canSched5",
+				"canSee9",
+				"Button10",
+				"Button11",
+				"Variable2",
+				"canSee14",
+				"canSched13"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

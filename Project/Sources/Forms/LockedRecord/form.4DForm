@@ -1,0 +1,239 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 20,
+	"windowMaxWidth": 670,
+	"windowMinHeight": 20,
+	"windowMaxHeight": 250,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"LockPic": {
+					"type": "pictureButton",
+					"top": 0,
+					"left": 0,
+					"width": 300,
+					"height": 200,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"picture": "/RESOURCES/Images/locked-door.png",
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": -40,
+					"left": 300,
+					"width": 348,
+					"height": 240,
+					"fill": "#FF6347",
+					"stroke": "#B1C4DD"
+				},
+				"Round Rectangle2": {
+					"type": "rectangle",
+					"top": 111,
+					"left": 219,
+					"width": 87,
+					"height": 20,
+					"fill": "#FF6347",
+					"stroke": "#FF6347",
+					"borderRadius": 5
+				},
+				"Round Rectangle3": {
+					"type": "rectangle",
+					"top": 81,
+					"left": 219,
+					"width": 87,
+					"height": 20,
+					"fill": "#FF6347",
+					"stroke": "#FF6347",
+					"borderRadius": 5
+				},
+				"Round Rectangle4": {
+					"type": "rectangle",
+					"top": 51,
+					"left": 219,
+					"width": 87,
+					"height": 20,
+					"fill": "#FF6347",
+					"stroke": "#FF6347",
+					"borderRadius": 5
+				},
+				"Text1": {
+					"type": "text",
+					"top": 51,
+					"left": 235,
+					"width": 65,
+					"height": 20,
+					"stroke": "#191970",
+					"class": "BigButtons",
+					"textAlign": "right",
+					"text": "User:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 81,
+					"left": 235,
+					"width": 65,
+					"height": 20,
+					"stroke": "#191970",
+					"class": "BigButtons",
+					"textAlign": "right",
+					"text": "Process:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 111,
+					"left": 230,
+					"width": 70,
+					"height": 20,
+					"stroke": "#191970",
+					"class": "BigButtons",
+					"textAlign": "right",
+					"text": "Machine:"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 51,
+					"left": 308,
+					"width": 326,
+					"height": 20,
+					"dataSource": "Form:C1466.user_name",
+					"stroke": "#FFFFFF",
+					"class": "BigButtons",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 81,
+					"left": 308,
+					"width": 326,
+					"height": 20,
+					"dataSource": "Form:C1466.task_name",
+					"stroke": "#FFFFFF",
+					"class": "BigButtons",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 111,
+					"left": 308,
+					"width": 326,
+					"height": 20,
+					"dataSource": "Form:C1466.host_name",
+					"stroke": "#FFFFFF",
+					"class": "BigButtons",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 8,
+					"left": 308,
+					"width": 335,
+					"height": 38,
+					"dataSource": "Form:C1466.message",
+					"stroke": "#FFFFFF",
+					"class": "BigButtons",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 179,
+					"left": 225,
+					"width": 209,
+					"height": 14,
+					"visibility": "hidden",
+					"stroke": "#FFFACD",
+					"class": "BaseInformation",
+					"text": "called by: util_EntitySelectionLockTest"
+				},
+				"cancelBtn": {
+					"type": "button",
+					"top": 157,
+					"left": 480,
+					"width": 150,
+					"height": 28,
+					"action": "cancel",
+					"display": false
+				},
+				"buttonText": {
+					"type": "text",
+					"top": 161,
+					"left": 480,
+					"width": 150,
+					"height": 20,
+					"stroke": "#FFFFFF",
+					"class": "BigButtons",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Cancel"
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 155,
+					"left": 477,
+					"width": 156,
+					"height": 32,
+					"fill": "transparent",
+					"stroke": "#FFFFFF",
+					"borderRadius": 5
+				}
+			}
+		}
+	]
+}

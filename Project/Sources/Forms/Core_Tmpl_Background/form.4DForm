@@ -1,0 +1,48 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"CorenBody": {
+					"type": "pictureButton",
+					"top": 1,
+					"left": 0,
+					"width": 1260,
+					"height": 800,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CorenBody",
+					"picture": "/RESOURCES/Skin/Master/Body.png",
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true
+				},
+				"Text2": {
+					"type": "text",
+					"top": 814,
+					"left": 9,
+					"width": 70,
+					"height": 16,
+					"visibility": "hidden",
+					"class": "Form_Label",
+					"text": "1260x800"
+				}
+			}
+		},
+		null
+	]
+}

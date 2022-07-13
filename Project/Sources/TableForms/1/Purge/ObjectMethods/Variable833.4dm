@@ -1,0 +1,1 @@
+QryPurgeEsts(->rSuper; ->rSuperDays; ->rSuperCount; "Super")

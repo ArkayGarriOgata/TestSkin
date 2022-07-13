@@ -1,0 +1,273 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 4,
+					"left": 13,
+					"width": 412,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Create Differentials"
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 55,
+					"left": 13,
+					"width": 407,
+					"height": 317,
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "aSelected",
+							"width": 15,
+							"minWidth": 15,
+							"maxWidth": 15,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "√",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "asDiff",
+							"width": 377,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Possible Differentials",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 433,
+					"left": 81,
+					"width": 288,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "cb1",
+					"text": "Put all Worksheet Cartons on 1 form",
+					"class": "BaseCheckBox",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 462,
+					"left": 233,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNoPick",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 462,
+					"left": 328,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bPick",
+					"shortcutKey": "[Return]",
+					"text": "Create",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 19,
+					"left": 13,
+					"width": 417,
+					"height": 39,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Below is the complete list of Differentials, qty-process specification combos, that you may create. Click on those you want now, then click Create."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 385,
+					"left": 50,
+					"width": 325,
+					"height": 42,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "For most efficient results, only use this function for the very first differential.  Use \"Clone PSpec\" or \"Clone Differential\" buttons after this first one has been fleshed out."
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 462,
+					"left": 412,
+					"width": 8,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bPick",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+tText10:=ADDR_getCity([Customers_Bills_of_Lading:49]ShipTo:3)

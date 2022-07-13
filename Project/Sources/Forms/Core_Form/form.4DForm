@@ -1,0 +1,66 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 13,
+					"left": 11,
+					"width": 323,
+					"height": 29,
+					"text": "Form.Button is not allowed in variable or Expression",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"On Load": {
+					"type": "button",
+					"top": 114,
+					"left": 11,
+					"width": 70,
+					"height": 24,
+					"dataSource": "Core_nForm_OnLoad",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/On Load.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 57,
+					"left": 11,
+					"width": 128,
+					"height": 17,
+					"text": "Hello <Form.World>"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 58,
+					"left": 159,
+					"width": 175,
+					"height": 17,
+					"text": "Hello <Core_tForm_World>"
+				}
+			}
+		}
+	]
+}

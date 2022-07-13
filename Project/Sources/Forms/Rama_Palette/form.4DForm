@@ -1,0 +1,209 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Rama Palette",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button6": {
+					"type": "button",
+					"top": 23,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "bAdjust",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Begining B"
+					},
+					"text": "(1) Adjust",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 51,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "rb6",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Forecast"
+					},
+					"text": "(2) Forecast",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 79,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "rb5",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Gaylord"
+					},
+					"text": "(3) Gaylord Schedule",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 107,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "rb4",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama In-transit"
+					},
+					"text": "(4) In Transit",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 135,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "rb1",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Inventory"
+					},
+					"text": "(5) XC or Kill",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 163,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "rb2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Glue Sched"
+					},
+					"text": "(6) Glue Schedule",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 192,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "rb3",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Delievery"
+					},
+					"text": "(7) Delivery Schedule",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FGXVariable6": {
+					"type": "button",
+					"top": 221,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "ibIss",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Ship"
+					},
+					"text": "(8) Ship",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/FGXVariable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FGXVariable1": {
+					"type": "button",
+					"top": 250,
+					"left": 24,
+					"width": 157,
+					"height": 22,
+					"dataSource": "ibIss",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Ship"
+					},
+					"text": "(9) Accounts/Payable",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/FGXVariable1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Button6",
+				"Button4",
+				"Button3",
+				"Button2",
+				"Button",
+				"Button1",
+				"Button5",
+				"FGXVariable6",
+				"FGXVariable1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

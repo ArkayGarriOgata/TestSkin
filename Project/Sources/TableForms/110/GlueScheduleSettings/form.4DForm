@@ -1,0 +1,403 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 16,
+					"left": 17,
+					"width": 112,
+					"height": 403,
+					"class": "BaseInformation",
+					"text": "Assignments"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 160,
+					"left": 149,
+					"width": 121,
+					"height": 80,
+					"class": "BaseInformation",
+					"text": "Timing"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 16,
+					"left": 149,
+					"width": 121,
+					"height": 138,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Progress"
+				},
+				"f1": {
+					"type": "radio",
+					"top": 182,
+					"left": 163,
+					"width": 101,
+					"height": 20,
+					"dataSource": "f1",
+					"text": "3 Day Rush",
+					"class": "BaseRadioButton",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick"
+					]
+				},
+				"f2": {
+					"type": "radio",
+					"top": 210,
+					"left": 163,
+					"width": 101,
+					"height": 20,
+					"dataSource": "f2",
+					"text": "All Releases",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb1": {
+					"type": "radio",
+					"top": 36,
+					"left": 163,
+					"width": 81,
+					"height": 20,
+					"dataSource": "rb1",
+					"text": "Anything",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb2": {
+					"type": "radio",
+					"top": 88,
+					"left": 163,
+					"width": 68,
+					"height": 20,
+					"dataSource": "rb3",
+					"text": "Printed",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb3": {
+					"type": "radio",
+					"top": 62,
+					"left": 163,
+					"width": 111,
+					"height": 20,
+					"dataSource": "rb2",
+					"text": "WIP not D/C",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb4": {
+					"type": "radio",
+					"top": 114,
+					"left": 163,
+					"width": 54,
+					"height": 20,
+					"dataSource": "rb4",
+					"text": "D/C",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 250,
+					"left": 149,
+					"width": 170,
+					"height": 161,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Utilities"
+				},
+				"bSort": {
+					"type": "button",
+					"top": 271,
+					"left": 159,
+					"width": 100,
+					"height": 17,
+					"dataSource": "bSort",
+					"text": "Custom Sort",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bSort.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bWIP": {
+					"type": "button",
+					"top": 298,
+					"left": 159,
+					"width": 151,
+					"height": 17,
+					"dataSource": "bWIP",
+					"text": "WIP (D/C) Remaining",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bWIP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bTrans": {
+					"type": "button",
+					"top": 325,
+					"left": 159,
+					"width": 151,
+					"height": 17,
+					"dataSource": "bTrans",
+					"text": "Completed Yesterday",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bTrans.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 429,
+					"left": 159,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 429,
+					"left": 236,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPriority": {
+					"type": "button",
+					"top": 352,
+					"left": 159,
+					"width": 103,
+					"height": 17,
+					"dataSource": "bPriority",
+					"text": "Gluer Priority",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bPriority.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 32,
+					"left": 30,
+					"width": 89,
+					"height": 417,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"movableRows": false,
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#EFFAF5",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "abOK",
+							"dataSourceTypeHint": "boolean",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#EFFAF5",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column1.4dm",
+							"header": {
+								"name": "Header1",
+								"text": "√",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "aCCname",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#EFFAF5",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Gluer",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"FinishingRpt": {
+					"type": "button",
+					"top": 380,
+					"left": 159,
+					"width": 151,
+					"height": 17,
+					"text": "Finishing Dept Rpt",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/FinishingRpt.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Group2",
+				"f1",
+				"f2",
+				"Group1",
+				"rb1",
+				"rb2",
+				"rb3",
+				"rb4",
+				"bSort",
+				"bWIP",
+				"bTrans",
+				"Button10",
+				"Button1",
+				"bPriority",
+				"List Box",
+				"FinishingRpt"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"f1",
+				"f2"
+			],
+			"Group1": [
+				"rb1",
+				"rb2",
+				"rb3",
+				"rb4"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

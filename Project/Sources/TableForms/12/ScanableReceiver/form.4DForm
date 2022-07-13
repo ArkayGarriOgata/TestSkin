@@ -1,0 +1,213 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 21,
+	"markerBody": 150,
+	"markerBreak": 225,
+	"markerFooter": 228,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Field": {
+					"type": "input",
+					"top": 29,
+					"left": 30,
+					"width": 111,
+					"height": 18,
+					"dataSource": "[Purchase_Orders_Items:12]POItemKey:1",
+					"class": "BaseFormTitle",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 29,
+					"left": 265,
+					"width": 254,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Items:12]Raw_Matl_Code:15",
+					"class": "LaserPrintField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 51,
+					"left": 265,
+					"width": 254,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Items:12]VendPartNo:6",
+					"class": "LaserPrintField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"barcode": {
+					"type": "input",
+					"top": 65,
+					"left": 30,
+					"width": 166,
+					"height": 57,
+					"dataSource": "sPOI",
+					"class": "BarcodeC39L",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/barcode.4dm",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 72,
+					"left": 265,
+					"width": 90,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Items:12]Qty_Shipping:4",
+					"dataSourceTypeHint": "number",
+					"class": "LaserPrintField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 72,
+					"left": 357,
+					"width": 67,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Items:12]UM_Ship:5",
+					"class": "LaserPrintField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 98,
+					"left": 265,
+					"width": 703,
+					"height": 46,
+					"dataSource": "[Purchase_Orders_Items:12]RM_Description:7",
+					"class": "LaserPrintField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 26,
+					"left": 28,
+					"width": 958
+				},
+				"Line1": {
+					"type": "line",
+					"top": 27,
+					"left": 28,
+					"width": 110,
+					"strokeWidth": 3
+				},
+				"Text": {
+					"type": "text",
+					"top": 29,
+					"left": 222,
+					"width": 38,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "RMC:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 51,
+					"left": 222,
+					"width": 38,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "VPN:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 72,
+					"left": 222,
+					"width": 38,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "QTY:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 98,
+					"left": 222,
+					"width": 38,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "DESC:"
+				}
+			}
+		}
+	]
+}

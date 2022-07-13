@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1" />
+
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="./jquery.mobile-1.4.5/jquery.js"></script>
+<script src="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="/js_4D/FourDWebRequest.js"></script>
+<script src="./wms.js"></script>
+
+
+
+
+<style>
+#mainContent {
+    margin: auto;
+    width: 100%;
+	padding-top: 20px;
+   
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+</style>
+</head>
+
+
+<body>
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+    
+	<div role="main" class="ui-content"  id="mainBody">
+             	<a href="#" onClick="navGotoURL('/index.shtml')" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline">Menu</a>
+
+	<div class="ui-bar ui-bar-a">
+	<h3 id="RS_ID">DIE BOARD MENU</h3>
+	</div>
+
+        <button class="ui-btn" onclick="navGotoURL('/DiaBoardLookup.shtml')">Lookup</button>
+        <button class="ui-btn" onclick="navGotoURL('/DiaBoardAdd.shtml')">Add</button>
+
+
+
+
+	</div><!-- /Main button bar content -->
+
+
+</div><!-- /page one -->
+
+
+
+
+ <div id="popupContent"></div>
+
+
+<script>
+	$("#popupContent").load("popupAlert.shtml"); 
+	$("#mainBody").hide();
+	$("#loginBody").hide();
+	checkLogin();
+</script>
+</body>
+</html>

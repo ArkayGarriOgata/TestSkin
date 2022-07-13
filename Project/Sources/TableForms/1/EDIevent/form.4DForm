@@ -1,0 +1,340 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 14,
+					"left": 19,
+					"width": 187,
+					"height": 219,
+					"stroke": "#000000",
+					"class": "BaseGroupBox"
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 42,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibNew",
+					"text": "Connect",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 135,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRpt",
+					"text": "Outbox",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 73,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibMod",
+					"text": "Inbox",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 166,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRev",
+					"action": "nextPage",
+					"text": "DELFOR",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 197,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRpt",
+					"text": "Preferences",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 104,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibOrders",
+					"text": "Prep Response",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable9",
+				"Variable14",
+				"Variable11",
+				"Variable1",
+				"Variable3",
+				"Variable6"
+			]
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 14,
+					"left": 19,
+					"width": 187,
+					"height": 219,
+					"stroke": "#000000",
+					"class": "BaseGroupBox",
+					"text": "DELFOR:"
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 196,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRpt",
+					"action": "firstPage",
+					"text": "Return to EDI",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 73,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibNew",
+					"text": "Compare...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 42,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "Button2",
+					"text": "View Forecast...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 104,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibMod",
+					"text": "Find Liabilities...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 135,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibMod",
+					"text": "Find Discrepancies",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 165,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibMod",
+					"text": "Find Obsoletes",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable2",
+				"Variable7",
+				"Button2",
+				"Variable8",
+				"Variable12",
+				"Variable13"
+			]
+		},
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 14,
+					"left": 19,
+					"width": 187,
+					"height": 219,
+					"stroke": "#000000",
+					"class": "BaseGroupBox",
+					"text": "Preferences:"
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 196,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibRpt",
+					"action": "firstPage",
+					"text": "Return to EDI",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 73,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibNew",
+					"text": "Accounts...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 42,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "Button2",
+					"text": "Connection...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 104,
+					"left": 39,
+					"width": 150,
+					"height": 25,
+					"dataSource": "ibNew",
+					"text": "ShipTo/BillTo",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable4",
+				"Variable5",
+				"Button1",
+				"Variable10"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

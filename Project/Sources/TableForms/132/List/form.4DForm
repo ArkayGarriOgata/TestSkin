@@ -1,0 +1,731 @@
+{
+	"destination": "listScreen",
+	"windowTitle": "Size & Style Listing",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"menuBar": "AdHoc",
+	"markerHeader": 95,
+	"markerBody": 122,
+	"markerBreak": 122,
+	"markerFooter": 190,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable193": {
+					"type": "tab",
+					"top": 125,
+					"left": 1,
+					"width": 734,
+					"height": 62,
+					"dataSource": "iJMLtabs",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/RFC_tabs"
+					},
+					"class": "BaseGroupBox",
+					"method": "ObjectMethods/Variable193.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"S1_Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 79,
+					"width": 63,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Customer"
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 245,
+					"width": 110,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Project"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 5,
+					"width": 36,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "File#"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 493,
+					"width": 51,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Wanted"
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 362,
+					"width": 86,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Submitted"
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 628,
+					"width": 69,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Available"
+				},
+				"S8_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 691,
+					"width": 74,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Done"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 103,
+					"left": 5,
+					"width": 62,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]FileOutlineNum:1",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/S1_Field.4dm",
+					"events": [
+						"onLoad",
+						"onDisplayDetail"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 103,
+					"left": 480,
+					"width": 61,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]DateWanted:42",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ID_Field": {
+					"type": "input",
+					"top": 103,
+					"left": 369,
+					"width": 66,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]DateSubmitted:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Field": {
+					"type": "input",
+					"top": 103,
+					"left": 625,
+					"width": 66,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]DateAvailable:63",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Field": {
+					"type": "input",
+					"top": 103,
+					"left": 696,
+					"width": 66,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]DateDone:6",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable126": {
+					"type": "radio",
+					"top": 162,
+					"left": 79,
+					"width": 71,
+					"height": 18,
+					"dataSource": "b4",
+					"text": "Wanted",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable126.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 162,
+					"left": 158,
+					"width": 91,
+					"height": 18,
+					"dataSource": "b5",
+					"text": "Submitted",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 162,
+					"left": 257,
+					"width": 96,
+					"height": 18,
+					"dataSource": "b6",
+					"text": "File Number",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 162,
+					"left": 357,
+					"width": 75,
+					"height": 18,
+					"dataSource": "b7",
+					"text": "Priority",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 162,
+					"left": 440,
+					"width": 87,
+					"height": 18,
+					"dataSource": "cbShowMine",
+					"text": "Show Mine",
+					"class": "BaseLabel",
+					"method": "ObjectMethods/Check Box.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ID_Field1": {
+					"type": "input",
+					"top": 103,
+					"left": 269,
+					"width": 94,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Customers_Projects:9]Name:2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ID_Field2": {
+					"type": "input",
+					"top": 103,
+					"left": 79,
+					"width": 96,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Customers_Projects:9]CustomerName:4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 585,
+					"width": 49,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Priority"
+				},
+				"S4_Field1": {
+					"type": "input",
+					"top": 103,
+					"left": 597,
+					"width": 21,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]Priority:47",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#EE0000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,##0",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 165,
+					"left": 7,
+					"width": 58,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Order By:"
+				},
+				"S1_Field3": {
+					"type": "input",
+					"top": 103,
+					"left": 63,
+					"width": 15,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]AdditionalRequest:54",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "-##; ; ",
+					"events": [
+						"onLoad",
+						"onDisplayDetail"
+					]
+				},
+				"ID_Field4": {
+					"type": "input",
+					"top": 103,
+					"left": 186,
+					"width": 78,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]CustomerCodeNumber:45",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S1_Text3": {
+					"type": "text",
+					"top": 78,
+					"left": 186,
+					"width": 63,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "CPN"
+				},
+				"plnrWantqty_samples": {
+					"type": "input",
+					"top": 103,
+					"left": 555,
+					"width": 25,
+					"height": 15,
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]qty_samples:35",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S4_Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 543,
+					"width": 44,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "#Smpls"
+				},
+				"S1_Field5": {
+					"type": "input",
+					"top": 103,
+					"left": 917,
+					"width": 42,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]CustID:52",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onDisplayDetail"
+					]
+				},
+				"S6_Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 772,
+					"width": 69,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Approved"
+				},
+				"S6_Field1": {
+					"type": "input",
+					"top": 103,
+					"left": 767,
+					"width": 66,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]DateApproved:8",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 836,
+					"width": 69,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Created"
+				},
+				"S6_Field2": {
+					"type": "input",
+					"top": 103,
+					"left": 835,
+					"width": 66,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]DateCreated:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S1_Text4": {
+					"type": "text",
+					"top": 78,
+					"left": 440,
+					"width": 36,
+					"height": 15,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Hold"
+				},
+				"ID_Field3": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 451,
+					"width": 17,
+					"height": 17,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_SizeAndStyles:132]Hold:59",
+					"text": "Hold",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 157,
+					"left": 654,
+					"width": 62,
+					"height": 18,
+					"text": "3D",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"S1_Field",
+				"S4_Field",
+				"ID_Field",
+				"S6_Field",
+				"S8_Field",
+				"Group1",
+				"Variable126",
+				"Radio Button2",
+				"Radio Button1",
+				"Radio Button3",
+				"Check Box",
+				"ID_Field1",
+				"ID_Field2",
+				"S4_Field1",
+				"S1_Field3",
+				"ID_Field4",
+				"plnrWantqty_samples",
+				"S1_Field5",
+				"S6_Field1",
+				"S6_Field2",
+				"ID_Field3",
+				"Button"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Variable126",
+				"Radio Button2",
+				"Radio Button1",
+				"Radio Button3",
+				"Check Box"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"geometryStamp": 58,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

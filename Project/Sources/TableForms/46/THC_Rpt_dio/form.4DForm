@@ -1,0 +1,418 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "THC Report's Query",
+	"rightMargin": 19,
+	"bottomMargin": 3,
+	"menuBar": "empty",
+	"markerBody": 130,
+	"markerBreak": 130,
+	"markerFooter": 140,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line4": {
+					"type": "line",
+					"top": 63,
+					"left": 19,
+					"width": 343,
+					"sizingX": "grow",
+					"sizingY": "move"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 376,
+					"left": 241,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 424,
+					"left": 229,
+					"width": 72,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 376,
+					"left": 302,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bValidate",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 424,
+					"left": 290,
+					"width": 72,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Run"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 16,
+					"left": 47,
+					"width": 55,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "CustID : "
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 16,
+					"left": 115,
+					"width": 61,
+					"height": 16,
+					"dataSource": "sCustId",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 39,
+					"left": 116,
+					"width": 229,
+					"height": 16,
+					"dataSource": "docName",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb6",
+					"text": "Show Forecasted Releases",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb0",
+					"text": "Show Met with Finished Goods [0]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 138,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb1",
+					"text": "Show Met with F/G, EX, & CC [1]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 166,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb2",
+					"text": "Show Met with Inventory & Production [2]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box5": {
+					"type": "checkbox",
+					"top": 194,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb3",
+					"text": "Show Met with Production [3]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box6": {
+					"type": "checkbox",
+					"top": 222,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb4",
+					"text": "Show Short with Inventory & Production [4]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box7": {
+					"type": "checkbox",
+					"top": 250,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb5",
+					"text": "Show Short with Production [5]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box8": {
+					"type": "checkbox",
+					"top": 278,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb7",
+					"text": "Show Short Inventory, no Production [7]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box9": {
+					"type": "checkbox",
+					"top": 306,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb8",
+					"text": "Show No Production or Inventory [8]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box10": {
+					"type": "checkbox",
+					"top": 334,
+					"left": 43,
+					"width": 309,
+					"height": 22,
+					"dataSource": "cb9",
+					"text": "Show Not analized [9]",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 39,
+					"left": 48,
+					"width": 65,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Save As : "
+				},
+				"Text2": {
+					"type": "text",
+					"top": 18,
+					"left": 183,
+					"width": 158,
+					"height": 11,
+					"class": "Default",
+					"text": "(Enter Cust's Id number or ALL)"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 393,
+					"left": 46,
+					"width": 125,
+					"height": 22,
+					"dataSource": "Button2",
+					"text": "What is THC?",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box11": {
+					"type": "checkbox",
+					"top": 362,
+					"left": 43,
+					"width": 195,
+					"height": 22,
+					"dataSource": "cb10",
+					"text": "Show Price and Totals",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Variable2",
+				"Check Box1",
+				"Check Box2",
+				"Check Box3",
+				"Check Box4",
+				"Check Box5",
+				"Check Box6",
+				"Check Box7",
+				"Check Box8",
+				"Check Box9",
+				"Check Box10",
+				"Button3",
+				"Check Box11"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

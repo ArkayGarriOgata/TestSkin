@@ -1,0 +1,1 @@
+t3:=fBarCodeSym(39; String:C10([WMS_SerializedShippingLabels:96]Quantity:4))

@@ -1,0 +1,1 @@
+PiSetFgBins("*")

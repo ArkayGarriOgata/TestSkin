@@ -1,0 +1,1 @@
+[Finished_Goods_SizeAndStyles:132]EngDrawing:30:=([Finished_Goods_SizeAndStyles:132]qty_EngDrawing:37>0)

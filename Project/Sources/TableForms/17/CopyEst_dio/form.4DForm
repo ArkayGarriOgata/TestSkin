@@ -1,0 +1,290 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 127,
+					"left": 25,
+					"width": 167,
+					"height": 73,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Copy the:"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 44,
+					"left": 25,
+					"width": 271,
+					"height": 69,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Treat new copy as:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 15,
+					"left": 38,
+					"width": 177,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Estimate Number to copy:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 14,
+					"left": 217,
+					"width": 75,
+					"height": 16,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 32,
+					"left": 24,
+					"width": 271,
+					"height": 11,
+					"dataSource": "xText",
+					"stroke": "#EE0000",
+					"class": "Default",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 65,
+					"left": 34,
+					"width": 250,
+					"height": 22,
+					"dataSource": "rb1",
+					"text": "an Estimate Revision (Keep Job Nº)",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 85,
+					"left": 34,
+					"width": 255,
+					"height": 24,
+					"dataSource": "rb2",
+					"text": "a New Estimate (New Job Nº)",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 136,
+					"left": 210,
+					"width": 80,
+					"height": 24,
+					"dataSource": "bCANCEL",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 147,
+					"left": 34,
+					"width": 150,
+					"height": 22,
+					"dataSource": "sb1",
+					"text": "RFQ only",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "radio",
+					"top": 170,
+					"left": 34,
+					"width": 155,
+					"height": 24,
+					"dataSource": "sb2",
+					"text": "Entire Estimate",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 171,
+					"left": 211,
+					"width": 80,
+					"height": 24,
+					"dataSource": "bSearch",
+					"shortcutKey": "[Return]",
+					"text": "Copy",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 193,
+					"left": 304,
+					"width": 15,
+					"height": 18,
+					"dataSource": "bSearch",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Variable2",
+				"Variable3"
+			],
+			"Group2": [
+				"Variable5",
+				"Variable6"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

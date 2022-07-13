@@ -1,0 +1,1 @@
+  `Method:  Core_Macro_CompilerDeclarationT(sMethodName;tParameterDeclaration)=>tCompilerDeclaration    `Description:  This method   

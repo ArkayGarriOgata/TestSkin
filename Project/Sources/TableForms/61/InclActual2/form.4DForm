@@ -1,0 +1,493 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 17,
+	"markerBody": 40,
+	"markerBreak": 40,
+	"markerFooter": 40,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 18,
+					"left": 0,
+					"width": 678,
+					"height": 22,
+					"stroke": "#FFFFFF"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 373,
+					"width": 59,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "MR"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 433,
+					"width": 64,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Run"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 32,
+					"width": 192,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "  Cost Center"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 498,
+					"width": 87,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Good"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 586,
+					"width": 65,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Waste"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 0,
+					"left": 264,
+					"width": 75,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Date"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 0,
+					"left": 1,
+					"width": 30,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Seq"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 0,
+					"left": 652,
+					"width": 26,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "P/C"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 22,
+					"left": 32,
+					"width": 6,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]TimeStampEntered:17",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "!; ; ",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 22,
+					"left": 79,
+					"width": 145,
+					"height": 15,
+					"dataSource": "aMachDesc",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 22,
+					"left": 6,
+					"width": 25,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Sequence:3",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Field3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 22,
+					"left": 44,
+					"width": 28,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]CostCenterID:2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field25": {
+					"type": "input",
+					"top": 22,
+					"left": 229,
+					"width": 31,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]GlueMachItemNo:4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00;-0;-",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/HrsFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 22,
+					"left": 268,
+					"width": 70,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]DateEntered:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 22,
+					"left": 345,
+					"width": 27,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Shift:18",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 22,
+					"left": 374,
+					"width": 46,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]MR_Act:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/HrsFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 22,
+					"left": 434,
+					"width": 51,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Run_Act:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/HrsFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 22,
+					"left": 498,
+					"width": 73,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Good_Units:8",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"entryFilter": "&\"0-9;-\"",
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 22,
+					"left": 585,
+					"width": 53,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]Waste_Units:9",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"entryFilter": "&\"0-9;-\"",
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 22,
+					"left": 653,
+					"width": 18,
+					"height": 15,
+					"dataSource": "[Job_Forms_Machine_Tickets:61]P_C:10",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Part_Compl"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 0,
+					"left": 225,
+					"width": 38,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Item"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 0,
+					"left": 340,
+					"width": 32,
+					"height": 15,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Shift"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 16,
+					"left": 0,
+					"width": 678,
+					"stroke": "#AEAF00"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

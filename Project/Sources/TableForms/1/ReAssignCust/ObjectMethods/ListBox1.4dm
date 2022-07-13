@@ -1,0 +1,1 @@
+sGetCustInfo(ListBox1)

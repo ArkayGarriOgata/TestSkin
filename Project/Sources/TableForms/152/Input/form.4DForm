@@ -1,0 +1,711 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"width": 750,
+	"height": 550,
+	"markerBody": 736,
+	"markerBreak": 736,
+	"markerFooter": 746,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 170,
+					"left": 57,
+					"width": 163,
+					"height": 138,
+					"class": "BaseGroupBox",
+					"text": "Storage"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 170,
+					"left": 260,
+					"width": 324,
+					"height": 362,
+					"class": "BaseGroupBox",
+					"text": "Order"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 388,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Job_DieBoards"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 41,
+					"left": 493,
+					"width": 145,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "JobformId : "
+				},
+				"Text45": {
+					"type": "text",
+					"top": 115,
+					"left": 39,
+					"width": 145,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "DateDieOH : "
+				},
+				"Text46": {
+					"type": "text",
+					"top": 115,
+					"left": 173,
+					"width": 145,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "DateBlankerOH : "
+				},
+				"Text47": {
+					"type": "text",
+					"top": 115,
+					"left": 304,
+					"width": 145,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "DateCounterOH : "
+				},
+				"Text48": {
+					"type": "text",
+					"top": 115,
+					"left": 417,
+					"width": 145,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "DateFSB_OH : "
+				},
+				"Field40": {
+					"type": "input",
+					"top": 207,
+					"left": 119,
+					"width": 82,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]Bin:4",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field42": {
+					"type": "input",
+					"top": 314,
+					"left": 138,
+					"width": 82,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]UsingDie:6",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field43": {
+					"type": "input",
+					"top": 342,
+					"left": 138,
+					"width": 82,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]Inches:23",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReOrder": {
+					"type": "checkbox",
+					"top": 368,
+					"left": 138,
+					"width": 81,
+					"height": 18,
+					"dataSource": "[Job_DieBoards:152]ReOrder:8",
+					"text": "ReOrder",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Original": {
+					"type": "input",
+					"top": 399,
+					"left": 138,
+					"width": 59,
+					"height": 15,
+					"dataSource": "[Job_DieBoards:152]Original:7",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field38": {
+					"type": "input",
+					"top": 198,
+					"left": 317,
+					"width": 82,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]PO:16",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field37": {
+					"type": "input",
+					"top": 198,
+					"left": 469,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]DateRequired:17",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field39": {
+					"type": "input",
+					"top": 198,
+					"left": 541,
+					"width": 32,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]Contact:18",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field27": {
+					"type": "checkbox",
+					"top": 227,
+					"left": 269,
+					"width": 111,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]OrderBlanker:9",
+					"text": "Order Blanker",
+					"class": "BaseField",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field28": {
+					"type": "checkbox",
+					"top": 227,
+					"left": 392,
+					"width": 87,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]OrderFSB:10",
+					"text": "Order FSB",
+					"class": "BaseField",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field29": {
+					"type": "checkbox",
+					"top": 227,
+					"left": 491,
+					"width": 87,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]OrderDie:11",
+					"text": "Order Die",
+					"class": "BaseField",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"HowTrans": {
+					"type": "input",
+					"top": 256,
+					"left": 361,
+					"width": 180,
+					"height": 15,
+					"dataSource": "[Job_DieBoards:152]HowTrans:12",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Knifed": {
+					"type": "input",
+					"top": 282,
+					"left": 361,
+					"width": 180,
+					"height": 15,
+					"dataSource": "[Job_DieBoards:152]Knifed:13",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Counters": {
+					"type": "input",
+					"top": 308,
+					"left": 361,
+					"width": 180,
+					"height": 15,
+					"dataSource": "[Job_DieBoards:152]Counters:14",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field30": {
+					"type": "input",
+					"top": 356,
+					"left": 276,
+					"width": 284,
+					"height": 58,
+					"dataSource": "[Job_DieBoards:152]SpecialRequirements:15",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"textFormat": "Order Blanker",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"JobformId": {
+					"type": "input",
+					"top": 41,
+					"left": 643,
+					"width": 72,
+					"height": 15,
+					"dataSource": "[Job_DieBoards:152]JobformId:1",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Mod_Who": {
+					"type": "input",
+					"top": 3,
+					"left": 611,
+					"width": 36,
+					"height": 13,
+					"dataSource": "[Job_DieBoards:152]Mod_Who:2",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Mod_Date": {
+					"type": "input",
+					"top": 3,
+					"left": 656,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[Job_DieBoards:152]Mod_Date:3",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 337,
+					"left": 265,
+					"width": 138,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Special Requirements:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 282,
+					"left": 267,
+					"width": 87,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Die is to be : "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 306,
+					"left": 272,
+					"width": 82,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Counters : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 258,
+					"left": 268,
+					"width": 87,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "How Trans : "
+				},
+				"Field31": {
+					"type": "input",
+					"top": 133,
+					"left": 103,
+					"width": 75,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]DateDieOH:19",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field32": {
+					"type": "input",
+					"top": 133,
+					"left": 217,
+					"width": 75,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]DateBlankerOH:20",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field35": {
+					"type": "input",
+					"top": 133,
+					"left": 347,
+					"width": 75,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]DateCounterOH:21",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field36": {
+					"type": "input",
+					"top": 133,
+					"left": 480,
+					"width": 75,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]DateFSB_OH:22",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 198,
+					"left": 271,
+					"width": 47,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "PO Nº: "
+				},
+				"Text29": {
+					"type": "text",
+					"top": 199,
+					"left": 406,
+					"width": 63,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Required: "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 207,
+					"left": 66,
+					"width": 51,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Bin : "
+				},
+				"Field41": {
+					"type": "input",
+					"top": 225,
+					"left": 118,
+					"width": 75,
+					"height": 17,
+					"dataSource": "[Job_DieBoards:152]DateBinOut:5",
+					"dataSourceTypeHint": "date",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 225,
+					"left": 66,
+					"width": 51,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Out : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 314,
+					"left": 64,
+					"width": 71,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Using Die : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 342,
+					"left": 64,
+					"width": 71,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Inches : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 399,
+					"left": 64,
+					"width": 71,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Original : "
+				},
+				"Field1": {
+					"type": "input",
+					"top": 434,
+					"left": 277,
+					"width": 284,
+					"height": 91,
+					"dataSource": "[Job_DieBoards:152]PriorPOs:26",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"textFormat": "Order Blanker",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text25"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

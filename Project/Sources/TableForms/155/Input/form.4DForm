@@ -1,0 +1,353 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 446,
+	"markerBreak": 446,
+	"markerFooter": 456,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text12": {
+					"type": "text",
+					"top": 33,
+					"left": 553,
+					"width": 85,
+					"height": 15,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "edi_Outbox"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 50,
+					"left": 553,
+					"width": 28,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "ID : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 109,
+					"left": 17,
+					"width": 139,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Path : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 134,
+					"left": 17,
+					"width": 139,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "SentTimeStamp : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 160,
+					"left": 17,
+					"width": 139,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Subject : "
+				},
+				"Text18": {
+					"type": "text",
+					"top": 211,
+					"left": 397,
+					"width": 107,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "CrossReference : "
+				},
+				"Text19": {
+					"type": "text",
+					"top": 185,
+					"left": 17,
+					"width": 139,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Com_AccountName : "
+				},
+				"Text20": {
+					"type": "text",
+					"top": 211,
+					"left": 17,
+					"width": 139,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "PO_Number : "
+				},
+				"Text21": {
+					"type": "text",
+					"top": 185,
+					"left": 440,
+					"width": 64,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "OrderID : "
+				},
+				"Text22": {
+					"type": "text",
+					"top": 241,
+					"left": 18,
+					"width": 86,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "ContentText : "
+				},
+				"ID": {
+					"type": "input",
+					"top": 50,
+					"left": 582,
+					"width": 64,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]ID:1",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Path": {
+					"type": "input",
+					"top": 109,
+					"left": 161,
+					"width": 351,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]Path:2",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Subject": {
+					"type": "input",
+					"top": 160,
+					"left": 161,
+					"width": 334,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]Subject:5",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"CrossReference": {
+					"type": "input",
+					"top": 211,
+					"left": 505,
+					"width": 240,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]CrossReference:6",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Com_AccountName": {
+					"type": "input",
+					"top": 185,
+					"left": 161,
+					"width": 274,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]Com_AccountName:7",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PO_Number": {
+					"type": "input",
+					"top": 211,
+					"left": 161,
+					"width": 270,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]PO_Number:8",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"OrderID": {
+					"type": "input",
+					"top": 185,
+					"left": 508,
+					"width": 180,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]OrderID:9",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ContentText": {
+					"type": "input",
+					"top": 261,
+					"left": 17,
+					"width": 722,
+					"height": 286,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[edi_Outbox:155]ContentText:10",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"SentTimeStamp": {
+					"type": "input",
+					"top": 134,
+					"left": 161,
+					"width": 79,
+					"height": 15,
+					"dataSource": "[edi_Outbox:155]SentTimeStamp:4",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SentTimeStamp.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 134,
+					"left": 250,
+					"width": 237,
+					"height": 15,
+					"dataSource": "t1",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 236,
+					"left": 112,
+					"width": 93,
+					"height": 20,
+					"dataSource": "Button1",
+					"text": "Save Edits",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text12"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

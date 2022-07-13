@@ -1,0 +1,252 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 501,
+					"height": 152,
+					"fill": "#00B4FF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 54,
+					"left": 3,
+					"width": 65,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "PO Clauses"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 3,
+					"left": 50,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26760.png"
+				},
+				"Picture9": {
+					"type": "picture",
+					"top": 9,
+					"left": 9,
+					"width": 39,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26751.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 2,
+					"left": 2,
+					"width": 66,
+					"height": 65,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 126,
+					"left": 365,
+					"width": 47,
+					"height": 12,
+					"dataSource": "bEnter",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 127,
+					"left": 426,
+					"width": 47,
+					"height": 12,
+					"dataSource": "bCmdPrd",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 7,
+					"left": 93,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibNew",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 7,
+					"left": 163,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibMod",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 6,
+					"left": 233,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibRev",
+					"focusable": false,
+					"text": "Review",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 6,
+					"left": 304,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibDel",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 7,
+					"left": 441,
+					"width": 55,
+					"height": 60,
+					"dataSource": "<>ibrm_rpts",
+					"focusable": false,
+					"text": "Report",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+tText12:=fGetAddressText([Customers_Bills_of_Lading:49]BillTo:4; "*")

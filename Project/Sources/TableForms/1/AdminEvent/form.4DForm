@@ -1,0 +1,3824 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 750,
+	"height": 550,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 438,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable144": {
+					"type": "tab",
+					"top": 45,
+					"left": 4,
+					"width": 737,
+					"height": 490,
+					"dataSource": "iTabControl",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/AdminTab"
+					},
+					"class": "BaseGroupBox",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 748,
+					"height": 31,
+					"fill": "#555555",
+					"stroke": "#FFFFFF",
+					"class": "BaseFormTitle",
+					"fontWeight": "bold",
+					"text": "          Administration"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 37,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26762.png"
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 7,
+					"left": 733,
+					"width": 8,
+					"height": 21,
+					"dataSource": "bExit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Show_All"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"text": "Return",
+					"display": false,
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 9,
+					"left": 701,
+					"width": 12,
+					"height": 18,
+					"dataSource": "bCmdPrd",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 7,
+					"left": 721,
+					"width": 9,
+					"height": 20,
+					"dataSource": "bExit",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Show_All"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"text": "Return",
+					"display": false,
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 130,
+					"left": 71,
+					"width": 187,
+					"height": 305,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Users"
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 130,
+					"left": 305,
+					"width": 187,
+					"height": 145,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Batch"
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 238,
+					"left": 91,
+					"width": 150,
+					"height": 20,
+					"dataSource": "ibNew",
+					"text": "HR Palette",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable123": {
+					"type": "button",
+					"top": 182,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bBatch",
+					"action": "cancel",
+					"text": "Batch Runner",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable123.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable143": {
+					"type": "button",
+					"top": 211,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "ibMod4",
+					"text": "Batch Distribution",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable143.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 269,
+					"left": 91,
+					"width": 150,
+					"height": 20,
+					"dataSource": "i1",
+					"text": "Edit Access...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 333,
+					"left": 91,
+					"width": 150,
+					"height": 20,
+					"dataSource": "ibRpt",
+					"text": "Report Access",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "button",
+					"top": 342,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bFlush",
+					"text": "Flush Buffers",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1045": {
+					"type": "button",
+					"top": 240,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "ibMod4",
+					"text": "Month End Suite",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1045.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field35": {
+					"type": "checkbox",
+					"top": 455,
+					"left": 71,
+					"width": 307,
+					"height": 29,
+					"dataSource": "[z_administrators:2]TestMode:30",
+					"text": "TestModeWarningAlert",
+					"fontFamily": "Geneva",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Field35.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 365,
+					"left": 91,
+					"width": 150,
+					"height": 20,
+					"dataSource": "i1",
+					"text": "UserDumpOut...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 397,
+					"left": 91,
+					"width": 150,
+					"height": 20,
+					"dataSource": "i1",
+					"text": "User Email",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 152,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Button2",
+					"text": "How To?",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 301,
+					"left": 91,
+					"width": 150,
+					"height": 20,
+					"dataSource": "iMod",
+					"text": "Valid User, not Term",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 374,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bGetSerial",
+					"text": "Get Serial Info",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 405,
+					"left": 321,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bKillUsers",
+					"text": "Logout Users",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 150,
+					"left": 89,
+					"width": 164,
+					"height": 78,
+					"class": "BaseInformation",
+					"text": "Use the HR Palette to make changes to the Users records. Use the Edit Access button to make direct changes to the Password system (must be logged in as Administrator)"
+				},
+				"Field47": {
+					"type": "checkbox",
+					"top": 506,
+					"left": 523,
+					"width": 158,
+					"height": 17,
+					"dataSource": "[zz_control:1]Log_User_Actions:9",
+					"text": "Log_User_Actions",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"method": "ObjectMethods/Field47.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field22": {
+					"type": "checkbox",
+					"top": 565,
+					"left": 18,
+					"width": 158,
+					"height": 17,
+					"dataSource": "[zz_control:1]Use_SAP_ink_price:57",
+					"text": "Use SAP Ink Price",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"method": "ObjectMethods/Field22.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button13": {
+					"type": "button",
+					"top": 342,
+					"left": 540,
+					"width": 150,
+					"height": 20,
+					"dataSource": "av_6",
+					"text": "Register Client",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button14": {
+					"type": "button",
+					"top": 367,
+					"left": 540,
+					"width": 150,
+					"height": 20,
+					"dataSource": "av_6",
+					"text": "UnRegister Client",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button19": {
+					"type": "button",
+					"top": 286,
+					"left": 522,
+					"width": 150,
+					"height": 20,
+					"dataSource": "av_6",
+					"text": "4D Info Component",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button19.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"shuttle_launcher": {
+					"type": "button",
+					"top": 150,
+					"left": 522,
+					"width": 150,
+					"height": 20,
+					"action": "cancel",
+					"text": "Shuttle Launcher",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/shuttle_launcher.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pf_listener_queue": {
+					"type": "button",
+					"top": 182,
+					"left": 522,
+					"width": 150,
+					"height": 20,
+					"action": "cancel",
+					"text": "PrintFlow Queue",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/pf_listener_queue.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"turnOnLogs": {
+					"type": "button",
+					"top": 213,
+					"left": 522,
+					"width": 150,
+					"height": 20,
+					"action": "cancel",
+					"text": "Turn On Logging",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/turnOnLogs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"internalBOLupdate": {
+					"type": "button",
+					"top": 246,
+					"left": 522,
+					"width": 150,
+					"height": 20,
+					"action": "cancel",
+					"text": "Update Internal BOLs",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/internalBOLupdate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"S20_Field": {
+					"type": "checkbox",
+					"top": 565,
+					"left": 557,
+					"width": 79,
+					"height": 17,
+					"dataSource": "[zz_control:1]_ShowBOLwPrintBillBtn:2",
+					"text": "4D_PS_6",
+					"stroke": "#000000",
+					"class": "BaseCheckBox",
+					"focusable": false,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S20_Field1": {
+					"type": "checkbox",
+					"top": 565,
+					"left": 184,
+					"width": 79,
+					"height": 17,
+					"dataSource": "[zz_control:1]_4DProfessionalServices_Step_2:3",
+					"text": "4D_PS_2",
+					"stroke": "#000000",
+					"class": "BaseCheckBox",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S20_Field2": {
+					"type": "checkbox",
+					"top": 565,
+					"left": 277,
+					"width": 79,
+					"height": 17,
+					"dataSource": "[zz_control:1]_4DProfessionalServices_Step_3:4",
+					"text": "4D_PS_3",
+					"stroke": "#000000",
+					"class": "BaseCheckBox",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S20_Field3": {
+					"type": "checkbox",
+					"top": 565,
+					"left": 371,
+					"width": 79,
+					"height": 17,
+					"dataSource": "[zz_control:1]_4DProfessionalServices_Step_4:5",
+					"text": "4D_PS_4",
+					"stroke": "#000000",
+					"class": "BaseCheckBox",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S20_Field4": {
+					"type": "checkbox",
+					"top": 565,
+					"left": 465,
+					"width": 79,
+					"height": 17,
+					"dataSource": "[zz_control:1]_4DProfessionalServices_Step_5:6",
+					"text": "4D_PS_5",
+					"stroke": "#000000",
+					"class": "BaseCheckBox",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lockedRecBtn": {
+					"type": "button",
+					"top": 499,
+					"left": 71,
+					"width": 198,
+					"height": 31,
+					"action": "cancel",
+					"text": "Locked Record Browser",
+					"focusable": false,
+					"method": "ObjectMethods/lockedRecBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UrWk_Dcmt_WorkStation": {
+					"type": "button",
+					"top": 499,
+					"left": 297,
+					"width": 198,
+					"height": 31,
+					"action": "cancel",
+					"text": "Save User Platform Data",
+					"focusable": false,
+					"method": "ObjectMethods/UrWk_Dcmt_WorkStation.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable9",
+				"Variable123",
+				"Variable143",
+				"Variable12",
+				"Variable14",
+				"Variable15",
+				"Variable1045",
+				"Field35",
+				"Button3",
+				"Button4",
+				"Button6",
+				"Variable3",
+				"Variable4",
+				"Variable25",
+				"Field47",
+				"Field22",
+				"Button13",
+				"Button14",
+				"Button19",
+				"shuttle_launcher",
+				"pf_listener_queue",
+				"turnOnLogs",
+				"internalBOLupdate",
+				"S20_Field",
+				"S20_Field1",
+				"S20_Field2",
+				"S20_Field3",
+				"S20_Field4",
+				"lockedRecBtn",
+				"UrWk_Dcmt_WorkStation"
+			]
+		},
+		{
+			"objects": {
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 376,
+					"left": 33,
+					"width": 687,
+					"height": 92,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Accounting Interface"
+				},
+				"Group Box12": {
+					"type": "groupBox",
+					"top": 157,
+					"left": 33,
+					"width": 687,
+					"height": 49,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "aMs Training Videos:"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 207,
+					"left": 33,
+					"width": 687,
+					"height": 167,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Network Volumes:"
+				},
+				"Picture87": {
+					"type": "picture",
+					"top": 476,
+					"left": 665,
+					"width": 52,
+					"height": 56,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26763.png"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 472,
+					"left": 33,
+					"width": 617,
+					"height": 60,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "E-Mail"
+				},
+				"Field51": {
+					"type": "input",
+					"top": 452,
+					"left": 344,
+					"width": 124,
+					"height": 14,
+					"dataSource": "[zz_control:1]API_TCPaddress:32",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;:\"",
+					"method": "ObjectMethods/Field51.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field": {
+					"type": "input",
+					"top": 180,
+					"left": 207,
+					"width": 418,
+					"height": 13,
+					"dataSource": "[zz_control:1]aMsTrainingVidsPath:61",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field45": {
+					"type": "input",
+					"top": 232,
+					"left": 247,
+					"width": 299,
+					"height": 13,
+					"visibility": "hidden",
+					"dataSource": "[zz_control:1]wms_connection_mysql:58",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field45.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field46": {
+					"type": "input",
+					"top": 304,
+					"left": 249,
+					"width": 233,
+					"height": 13,
+					"dataSource": "[zz_control:1]wms_alternateLabel:59",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field46.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field40": {
+					"type": "input",
+					"top": 329,
+					"left": 220,
+					"width": 387,
+					"height": 14,
+					"dataSource": "[zz_control:1]TrelloBoardEmailAddress:55",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "button",
+					"top": 329,
+					"left": 616,
+					"width": 81,
+					"height": 15,
+					"visibility": "hidden",
+					"dataSource": "bSelect",
+					"text": "Select Folder",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable23.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field34": {
+					"type": "input",
+					"top": 355,
+					"left": 220,
+					"width": 387,
+					"height": 14,
+					"visibility": "hidden",
+					"dataSource": "[zz_control:1]ShopfloorPathOutbox:54",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "button",
+					"top": 355,
+					"left": 616,
+					"width": 81,
+					"height": 15,
+					"visibility": "hidden",
+					"dataSource": "bSelect",
+					"text": "Select Folder",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 452,
+					"left": 287,
+					"width": 50,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"text": " IP:PORT"
+				},
+				"Field181": {
+					"type": "input",
+					"top": 399,
+					"left": 145,
+					"width": 387,
+					"height": 14,
+					"dataSource": "[zz_control:1]DynamicsPath:45",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable556": {
+					"type": "button",
+					"top": 399,
+					"left": 544,
+					"width": 81,
+					"height": 15,
+					"dataSource": "bSelect",
+					"text": "Select Folder",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable556.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field182": {
+					"type": "input",
+					"top": 424,
+					"left": 488,
+					"width": 54,
+					"height": 14,
+					"dataSource": "[zz_control:1]DynamicsCustFname:46",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field183": {
+					"type": "input",
+					"top": 450,
+					"left": 162,
+					"width": 27,
+					"height": 14,
+					"dataSource": "[zz_control:1]DynamicsInvoHdrFname:47",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field184": {
+					"type": "input",
+					"top": 424,
+					"left": 652,
+					"width": 50,
+					"height": 14,
+					"dataSource": "[zz_control:1]DynamicsInvoDtlFname:48",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field38": {
+					"type": "input",
+					"top": 451,
+					"left": 264,
+					"width": 15,
+					"height": 14,
+					"dataSource": "[zz_control:1]AcctVantageVersion:53",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text157": {
+					"type": "text",
+					"top": 399,
+					"left": 46,
+					"width": 96,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Path to Inbox:"
+				},
+				"Text158": {
+					"type": "text",
+					"top": 424,
+					"left": 404,
+					"width": 80,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Cust Filename:"
+				},
+				"Text159": {
+					"type": "text",
+					"top": 450,
+					"left": 56,
+					"width": 105,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "AV Filename Prefix:"
+				},
+				"Field10": {
+					"type": "input",
+					"top": 493,
+					"left": 118,
+					"width": 84,
+					"height": 12,
+					"dataSource": "[z_administrators:2]SMTP_HOST:23",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 493,
+					"left": 241,
+					"width": 134,
+					"height": 12,
+					"dataSource": "[z_administrators:2]MAIL_FROM:24",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 493,
+					"left": 454,
+					"width": 140,
+					"height": 12,
+					"dataSource": "[z_administrators:2]MAIL_REPLYTO:25",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field29": {
+					"type": "input",
+					"top": 513,
+					"left": 118,
+					"width": 94,
+					"height": 12,
+					"dataSource": "[z_administrators:2]POP3_HOST:26",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field29.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field30": {
+					"type": "input",
+					"top": 513,
+					"left": 311,
+					"width": 101,
+					"height": 12,
+					"dataSource": "[z_administrators:2]POP3_USERNAME:27",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field30.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field31": {
+					"type": "input",
+					"top": 513,
+					"left": 514,
+					"width": 80,
+					"height": 12,
+					"dataSource": "[z_administrators:2]POP3_PASSWORD:28",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field31.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text160": {
+					"type": "text",
+					"top": 424,
+					"left": 546,
+					"width": 105,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Flexware Filename:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 492,
+					"left": 40,
+					"width": 76,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "STMP Host:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 492,
+					"left": 207,
+					"width": 31,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "From:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 492,
+					"left": 381,
+					"width": 69,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "Reply-To:"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 512,
+					"left": 40,
+					"width": 76,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "POP3 Host:"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 512,
+					"left": 217,
+					"width": 91,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "POP Username:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 512,
+					"left": 411,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "POP3 Password:"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 476,
+					"left": 665,
+					"width": 52,
+					"height": 56,
+					"dataSource": "bDel",
+					"display": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text36": {
+					"type": "text",
+					"top": 450,
+					"left": 197,
+					"width": 65,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "AV Version:"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 354,
+					"left": 40,
+					"width": 176,
+					"height": 13,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "Shopfloor Interface (flex_inbox):"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 328,
+					"left": 40,
+					"width": 176,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "Trello Board Email:"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 232,
+					"left": 53,
+					"width": 95,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "left",
+					"text": "WMS Connection:"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 230,
+					"left": 554,
+					"width": 165,
+					"height": 14,
+					"stroke": "#AAAAAA",
+					"class": "Shell_SmallLabel",
+					"textAlign": "left",
+					"text": "user:password@hostname:port/dbname"
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 252,
+					"left": 52,
+					"width": 96,
+					"height": 15,
+					"dataSource": "bTest",
+					"text": "Test Connection",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text33": {
+					"type": "text",
+					"top": 304,
+					"left": 112,
+					"width": 130,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "left",
+					"text": "CustIds using alt labels:"
+				},
+				"Button15": {
+					"type": "button",
+					"top": 134,
+					"left": 406,
+					"width": 150,
+					"height": 20,
+					"dataSource": "bOpenPNGAAdmin",
+					"text": "Open PNGA Admin",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 78,
+					"left": 406,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "wip_1",
+					"text": "Connect to Flex",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"top": 105,
+					"left": 406,
+					"width": 150,
+					"height": 20,
+					"dataSource": "wip_2",
+					"text": "Connect to WMS",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box8": {
+					"type": "groupBox",
+					"top": 60,
+					"left": 33,
+					"width": 176,
+					"height": 77,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "WMS API"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 86,
+					"left": 52,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "wms_1",
+					"text": "Get aMs_Exports",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 449,
+					"left": 481,
+					"width": 131,
+					"height": 20,
+					"dataSource": "av_4",
+					"text": "Test AV connection",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button9": {
+					"type": "button",
+					"top": 134,
+					"left": 236,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "wms_2",
+					"text": "Remote WMS Updates",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "button",
+					"top": 105,
+					"left": 236,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "wms_2",
+					"text": "Remote WMS Move",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button18": {
+					"type": "button",
+					"top": 77,
+					"left": 236,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "wms_3",
+					"text": "P&G Inventory",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button18.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 180,
+					"left": 42,
+					"width": 159,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "right",
+					"text": "Path to aMs Training Videos:"
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 177,
+					"left": 632,
+					"width": 81,
+					"height": 15,
+					"dataSource": "bSelect",
+					"text": "Select Folder",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button21": {
+					"type": "button",
+					"top": 77,
+					"left": 567,
+					"width": 162,
+					"height": 21,
+					"dataSource": "bShowUserModeWindow",
+					"text": "Show User Mode Window",
+					"class": "BaseInformation",
+					"focusable": false,
+					"method": "ObjectMethods/Button21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 255,
+					"left": 247,
+					"width": 299,
+					"height": 13,
+					"dataSource": "[zz_control:1]wms_connection_4D:65",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 253,
+					"left": 554,
+					"width": 165,
+					"height": 34,
+					"stroke": "#AAAAAA",
+					"class": "Shell_SmallLabel",
+					"textAlign": "left",
+					"text": "user:password@hostname:port/dbname"
+				},
+				"ar1": {
+					"type": "radio",
+					"top": 232,
+					"left": 162,
+					"width": 80,
+					"height": 13,
+					"visibility": "hidden",
+					"dataSource": "ar1",
+					"text": "Use MySQL",
+					"class": "Shell_SmallControl",
+					"method": "ObjectMethods/ar1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ar2": {
+					"type": "radio",
+					"top": 255,
+					"left": 162,
+					"width": 80,
+					"height": 13,
+					"dataSource": "ar2",
+					"text": "Use 4D",
+					"class": "Shell_SmallControl",
+					"method": "ObjectMethods/ar2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Field26": {
+					"type": "input",
+					"top": 279,
+					"left": 247,
+					"width": 299,
+					"height": 13,
+					"dataSource": "[zz_control:1]wms_4D_url:67",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field26.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 279,
+					"left": 147,
+					"width": 95,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "Shell_SmallControl",
+					"textAlign": "left",
+					"text": "WMS 4D Website:"
+				},
+				"Field53": {
+					"type": "input",
+					"top": 424,
+					"left": 185,
+					"width": 44,
+					"height": 14,
+					"dataSource": "[zz_control:1]OpenAcctsCompany:69",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;:-\"",
+					"method": "ObjectMethods/Field53.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 585,
+					"left": 81,
+					"width": 50,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"text": " OpenAccounts Company:"
+				},
+				"Text47": {
+					"type": "text",
+					"top": 582,
+					"left": 91,
+					"width": 0,
+					"height": 0,
+					"text": "Sample Text:"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 423,
+					"left": 58,
+					"width": 120,
+					"height": 14,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"text": "OpenAccts Company:"
+				}
+			},
+			"entryOrder": [
+				"Field51",
+				"Field",
+				"Field45",
+				"Field46",
+				"Field40",
+				"Variable23",
+				"Field34",
+				"Variable20",
+				"Field181",
+				"Variable556",
+				"Field182",
+				"Field183",
+				"Field184",
+				"Field38",
+				"Field10",
+				"Field11",
+				"Field12",
+				"Field29",
+				"Field30",
+				"Field31",
+				"Variable11",
+				"Button15",
+				"Button10",
+				"Button8",
+				"Button1",
+				"Button5",
+				"Button9",
+				"Button11",
+				"Button18",
+				"Variable26",
+				"Button21",
+				"Field15",
+				"ar1",
+				"ar2",
+				"Field26",
+				"Field53"
+			]
+		},
+		{
+			"objects": {
+				"Group Box9": {
+					"type": "groupBox",
+					"top": 256,
+					"left": 506,
+					"width": 187,
+					"height": 122,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "WMS API"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 106,
+					"left": 44,
+					"width": 517,
+					"height": 140,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "PI Control"
+				},
+				"Variable68": {
+					"type": "button",
+					"top": 147,
+					"left": 73,
+					"width": 120,
+					"height": 20,
+					"dataSource": "<>ibNewPhyInv",
+					"text": "Start Inventory",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable68.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 151,
+					"left": 211,
+					"width": 76,
+					"height": 15,
+					"dataSource": "[zz_control:1]InvDate:25",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 151,
+					"left": 297,
+					"width": 76,
+					"height": 15,
+					"dataSource": "[zz_control:1]InvTime:35",
+					"dataSourceTypeHint": "time",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##:##"
+				},
+				"Field27": {
+					"type": "input",
+					"top": 197,
+					"left": 277,
+					"width": 96,
+					"height": 15,
+					"dataSource": "[zz_control:1]PhyInvTagLowNumber:49",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Field28": {
+					"type": "input",
+					"top": 216,
+					"left": 277,
+					"width": 96,
+					"height": 15,
+					"dataSource": "[zz_control:1]PhyInvTagHighNumber:50",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Variable69": {
+					"type": "button",
+					"top": 146,
+					"left": 386,
+					"width": 120,
+					"height": 20,
+					"dataSource": "<>ibEndPhyInv",
+					"text": "End Inventory",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable69.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "checkbox",
+					"top": 172,
+					"left": 211,
+					"width": 162,
+					"height": 17,
+					"dataSource": "[zz_control:1]InvInProgress:24",
+					"text": "Inventory In Progress",
+					"stroke": "#000000",
+					"class": "BaseField"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 197,
+					"left": 203,
+					"width": 67,
+					"height": 16,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Low Tag #:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 217,
+					"left": 203,
+					"width": 67,
+					"height": 16,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "High Tag #:"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 172,
+					"left": 52,
+					"width": 146,
+					"height": 65,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Set LastPhyCount=OnhandQty, LastPhyDate=today, PiDoNotDetete=true & zero out RM bins."
+				},
+				"Text17": {
+					"type": "text",
+					"top": 175,
+					"left": 389,
+					"width": 152,
+					"height": 65,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Set\rLastPhyCount=OnhandQty, LastPhyDate=today, PiDoNotDelete=false, Delete zero qty bins. "
+				},
+				"compareBtn": {
+					"type": "button",
+					"top": 285,
+					"left": 526,
+					"width": 150,
+					"height": 20,
+					"text": "aMs v WMS",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/compareBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"overlayBtn": {
+					"type": "button",
+					"top": 315,
+					"left": 526,
+					"width": 150,
+					"height": 20,
+					"text": "Overlay Bins",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/overlayBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button20": {
+					"type": "button",
+					"top": 386,
+					"left": 526,
+					"width": 150,
+					"height": 20,
+					"visibility": "hidden",
+					"text": "Rama Phys Inv",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box11": {
+					"type": "groupBox",
+					"top": 256,
+					"left": 44,
+					"width": 433,
+					"height": 122,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Bins"
+				},
+				"Variable21": {
+					"type": "button",
+					"top": 306,
+					"left": 73,
+					"width": 120,
+					"height": 20,
+					"dataSource": "ibFixPIFGs",
+					"text": "Set Fg Bins",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable22": {
+					"type": "button",
+					"top": 335,
+					"left": 73,
+					"width": 120,
+					"height": 20,
+					"dataSource": "ibFixPIRm",
+					"text": "Set Rm Bins",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable22.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text34": {
+					"type": "text",
+					"top": 304,
+					"left": 199,
+					"width": 247,
+					"height": 26,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "You may also execute the routine 'PiSetFgBins' from the user environment.\u0003"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 333,
+					"left": 199,
+					"width": 228,
+					"height": 39,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "You may also execute the routine 'PiSetRMBins' from the user environment.\u0003"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 278,
+					"left": 52,
+					"width": 415,
+					"height": 13,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Use these buttons to set a bin quantity and create and adjusting transaction."
+				},
+				"overlayBtn1": {
+					"type": "button",
+					"top": 346,
+					"left": 525,
+					"width": 150,
+					"height": 20,
+					"text": "Overlay One Area",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/overlayBtn1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable68",
+				"Field1",
+				"Field8",
+				"Field27",
+				"Field28",
+				"Variable69",
+				"Field6",
+				"compareBtn",
+				"overlayBtn",
+				"Button20",
+				"Variable21",
+				"Variable22",
+				"overlayBtn1"
+			]
+		},
+		{
+			"objects": {
+				"Group Box13": {
+					"type": "groupBox",
+					"top": 108,
+					"left": 75,
+					"width": 226,
+					"height": 315,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Imports"
+				},
+				"Group Box14": {
+					"type": "groupBox",
+					"top": 107,
+					"left": 347,
+					"width": 187,
+					"height": 189,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Exports"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 335,
+					"left": 367,
+					"width": 62,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/zodiac killer.png"
+				},
+				"Variable92": {
+					"type": "button",
+					"top": 132,
+					"left": 373,
+					"width": 128,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "ibExport",
+					"text": "Export Data",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable92.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable86": {
+					"type": "button",
+					"top": 136,
+					"left": 97,
+					"width": 126,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "ibImport1",
+					"text": "Import Estimate",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable86.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable89": {
+					"type": "button",
+					"top": 167,
+					"left": 97,
+					"width": 126,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "ibImport2",
+					"text": "Import Order",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable89.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable83": {
+					"type": "button",
+					"top": 195,
+					"left": 373,
+					"width": 114,
+					"height": 20,
+					"dataSource": "bGenExport",
+					"text": "General Export",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable83.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable91": {
+					"type": "button",
+					"top": 199,
+					"left": 97,
+					"width": 126,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "ibImport3",
+					"text": "Import Job",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable91.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable79": {
+					"type": "button",
+					"top": 227,
+					"left": 373,
+					"width": 134,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bList",
+					"text": "Export ALL Lists",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable79.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable81": {
+					"type": "button",
+					"top": 259,
+					"left": 373,
+					"width": 134,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bList2",
+					"text": "Choice List > Text",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable81.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable85": {
+					"type": "button",
+					"top": 327,
+					"left": 97,
+					"width": 114,
+					"height": 20,
+					"dataSource": "bGenImport",
+					"text": "General Import",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable85.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable80": {
+					"type": "button",
+					"top": 359,
+					"left": 97,
+					"width": 134,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bList2",
+					"text": "Import ALL Lists",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable80.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable82": {
+					"type": "button",
+					"top": 391,
+					"left": 97,
+					"width": 134,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bList4",
+					"text": "Text > Choice List",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable82.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable84": {
+					"type": "button",
+					"top": 335,
+					"left": 367,
+					"width": 62,
+					"height": 64,
+					"dataSource": "bExecute",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Prev_Page"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable84.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box15": {
+					"type": "groupBox",
+					"top": 294,
+					"left": 29,
+					"width": 202,
+					"height": 71,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Sequences"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 116,
+					"left": 132,
+					"width": 97,
+					"height": 12,
+					"dataSource": "[z_administrators:2]Administrator:1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field16": {
+					"type": "checkbox",
+					"top": 145,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"dataSource": "[z_administrators:2]USE_NEW_FEATURE:17",
+					"text": "Use New Feature",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Field16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field17": {
+					"type": "checkbox",
+					"top": 163,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"dataSource": "[z_administrators:2]SerialPrinting:19",
+					"text": "Serial Printing of BOL",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field18": {
+					"type": "checkbox",
+					"top": 181,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"visibility": "hidden",
+					"dataSource": "[z_administrators:2]UseActualCost:20",
+					"text": "Use Actual Costs for FG Valuations",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field19": {
+					"type": "checkbox",
+					"top": 199,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"visibility": "hidden",
+					"dataSource": "[z_administrators:2]FixVarAllocatio:21",
+					"text": "Fixed/Varible Allocations",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field20": {
+					"type": "checkbox",
+					"top": 218,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"visibility": "hidden",
+					"dataSource": "[z_administrators:2]SubformCalcs:16",
+					"text": "Allow Subform Calculation in Estimating",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field32": {
+					"type": "checkbox",
+					"top": 237,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"dataSource": "[z_administrators:2]MachTickFromRcvScan:36",
+					"text": "Mach Ticket from Receipt Scan",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Field32.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field21": {
+					"type": "checkbox",
+					"top": 256,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"dataSource": "[z_administrators:2]AllocateGoodQty:29",
+					"text": "Allocate Good Qty on Contract Items",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Field21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable51": {
+					"type": "button",
+					"top": 315,
+					"left": 45,
+					"width": 120,
+					"height": 20,
+					"dataSource": "ibMod3",
+					"text": "Set ID Numbers",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable51.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 343,
+					"left": 177,
+					"width": 24,
+					"height": 15,
+					"dataSource": "[z_administrators:2]ServerDesignation:31",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 81,
+					"left": 22,
+					"width": 43,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Version:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 101,
+					"left": 47,
+					"width": 51,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Name:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 83,
+					"left": 119,
+					"width": 71,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Last Update:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 84,
+					"left": 67,
+					"width": 54,
+					"height": 12,
+					"dataSource": "<>sVERSION",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 85,
+					"left": 194,
+					"width": 65,
+					"height": 12,
+					"dataSource": "<>dLASTUPDATE",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field54": {
+					"type": "input",
+					"top": 103,
+					"left": 99,
+					"width": 249,
+					"height": 12,
+					"dataSource": "[zz_control:1]ApplicationName:1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 116,
+					"left": 37,
+					"width": 91,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Administrator:"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 130,
+					"left": 192,
+					"width": 24,
+					"height": 12,
+					"dataSource": "[zz_control:1]FiscalYearStart:34",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "00",
+					"entryFilter": "!0&9##",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text20": {
+					"type": "text",
+					"top": 129,
+					"left": 39,
+					"width": 152,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"text": "Fiscal Year Start (month #):"
+				},
+				"Group Box7": {
+					"type": "groupBox",
+					"top": 377,
+					"left": 29,
+					"width": 202,
+					"height": 127,
+					"visibility": "hidden",
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Genroe Sync"
+				},
+				"Field39": {
+					"type": "checkbox",
+					"top": 399,
+					"left": 53,
+					"width": 150,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "[z_administrators:2]SyncronizeServers:33",
+					"text": "Syncronized Servers",
+					"stroke": "#000000",
+					"class": "BaseCheckBox",
+					"method": "ObjectMethods/Field39.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field43": {
+					"type": "checkbox",
+					"top": 277,
+					"left": 43,
+					"width": 190,
+					"height": 12,
+					"dataSource": "[z_administrators:2]IgnorObsoleteAndOld:34",
+					"text": "Ignor Value of Obsolete or >9Mths",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Field43.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "button",
+					"top": 340,
+					"left": 45,
+					"width": 120,
+					"height": 20,
+					"dataSource": "ibMod3",
+					"text": "Set Server Id",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable24.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box41": {
+					"type": "groupBox",
+					"top": 369,
+					"left": 516,
+					"width": 200,
+					"height": 113,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Lists"
+				},
+				"Group Box40": {
+					"type": "groupBox",
+					"top": 369,
+					"left": 334,
+					"width": 171,
+					"height": 122,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Ink"
+				},
+				"Group Box16": {
+					"type": "groupBox",
+					"top": 94,
+					"left": 358,
+					"width": 358,
+					"height": 210,
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Purchasing"
+				},
+				"Field33": {
+					"type": "input",
+					"top": 117,
+					"left": 452,
+					"width": 230,
+					"height": 12,
+					"dataSource": "[z_administrators:2]CompanyName:2",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 132,
+					"left": 452,
+					"width": 230,
+					"height": 12,
+					"dataSource": "[z_administrators:2]DefaultShipTo1:5",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BasicFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field36": {
+					"type": "input",
+					"top": 147,
+					"left": 452,
+					"width": 230,
+					"height": 12,
+					"dataSource": "[z_administrators:2]DefaultShipTo2:6",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BasicFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 162,
+					"left": 452,
+					"width": 230,
+					"height": 12,
+					"dataSource": "[z_administrators:2]DefaultShipTo3:7",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BasicFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field37": {
+					"type": "input",
+					"top": 177,
+					"left": 452,
+					"width": 230,
+					"height": 12,
+					"dataSource": "[z_administrators:2]DefaultShipTo4:8",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BasicFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 193,
+					"left": 452,
+					"width": 230,
+					"height": 12,
+					"dataSource": "[z_administrators:2]DefaultShipTo5:9",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/BasicFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 251,
+					"left": 366,
+					"width": 145,
+					"height": 20,
+					"dataSource": "ibNew",
+					"text": "Print Authorization",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 251,
+					"left": 516,
+					"width": 145,
+					"height": 20,
+					"dataSource": "ibNew",
+					"text": "View Authorization",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field42": {
+					"type": "input",
+					"top": 283,
+					"left": 564,
+					"width": 74,
+					"height": 12,
+					"dataSource": "[zz_control:1]MaxPO:36",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/DollarFormat"
+					},
+					"entryFilter": "&9",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field23": {
+					"type": "input",
+					"top": 392,
+					"left": 432,
+					"width": 64,
+					"height": 12,
+					"dataSource": "[zz_control:1]InkVendorID:39",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field23.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 409,
+					"left": 432,
+					"width": 64,
+					"height": 12,
+					"dataSource": "[zz_control:1]InkVendor:40",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field25": {
+					"type": "input",
+					"top": 427,
+					"left": 432,
+					"width": 64,
+					"height": 12,
+					"dataSource": "[zz_control:1]Auto_Ink_Percent:41",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field25.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 449,
+					"left": 432,
+					"width": 64,
+					"height": 12,
+					"dataSource": "[zz_control:1]Auto_Coating_Percent:63",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field48": {
+					"type": "input",
+					"top": 389,
+					"left": 646,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[zz_control:1]CommodityDate:43",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field49": {
+					"type": "input",
+					"top": 406,
+					"left": 646,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[zz_control:1]DepartmentDate:37",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 424,
+					"left": 646,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[zz_control:1]ExpenseDate:44",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field50": {
+					"type": "input",
+					"top": 441,
+					"left": 646,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[zz_control:1]FGClassDate:38",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field41": {
+					"type": "input",
+					"top": 460,
+					"left": 646,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[zz_control:1]DownTimeDate:56",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 392,
+					"left": 350,
+					"width": 76,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Vendor ID:"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 409,
+					"left": 343,
+					"width": 83,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Vendor Name:"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 427,
+					"left": 339,
+					"width": 87,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "AutoInkPercent:"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 389,
+					"left": 528,
+					"width": 108,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Commodity Code:"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 406,
+					"left": 528,
+					"width": 108,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Departments:"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 441,
+					"left": 528,
+					"width": 108,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "FG Class:"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 424,
+					"left": 528,
+					"width": 108,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Expense Code:"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 117,
+					"left": 360,
+					"width": 89,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Company Name:"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 132,
+					"left": 369,
+					"width": 79,
+					"height": 55,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Default Ship To:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 283,
+					"left": 367,
+					"width": 197,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"text": "Max Po $ before Manager Approval:"
+				},
+				"Variable1592": {
+					"type": "button",
+					"top": 318,
+					"left": 446,
+					"width": 167,
+					"height": 20,
+					"dataSource": "ibMod",
+					"text": "Modify Allowed Locations...",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1592.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1593": {
+					"type": "button",
+					"top": 317,
+					"left": 296,
+					"width": 139,
+					"height": 20,
+					"dataSource": "ibMod",
+					"text": "New AllowedLocation",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1593.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text42": {
+					"type": "text",
+					"top": 460,
+					"left": 528,
+					"width": 108,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Downtime:"
+				},
+				"Field44": {
+					"type": "input",
+					"top": 348,
+					"left": 457,
+					"width": 157,
+					"height": 11,
+					"dataSource": "[z_administrators:2]ChainOfCustodyNumber:35",
+					"stroke": "#000000",
+					"class": "Default",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field44.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text43": {
+					"type": "text",
+					"top": 349,
+					"left": 323,
+					"width": 129,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Chain of Custody#:"
+				},
+				"Button12": {
+					"type": "button",
+					"top": 78,
+					"left": 566,
+					"width": 150,
+					"height": 20,
+					"dataSource": "av_5",
+					"action": "cancel",
+					"text": "Customer Portal",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable28": {
+					"type": "button",
+					"top": 492,
+					"left": 536,
+					"width": 155,
+					"height": 20,
+					"dataSource": "ibjob",
+					"text": "New R&D job holder",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable28.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 449,
+					"left": 339,
+					"width": 87,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "AutoCoatingPercent:"
+				},
+				"Field52": {
+					"type": "input",
+					"top": 469,
+					"left": 432,
+					"width": 64,
+					"height": 12,
+					"dataSource": "[zz_control:1]Auto_Corrugate_Percent:68",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field52.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 469,
+					"left": 339,
+					"width": 87,
+					"height": 11,
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "right",
+					"text": "AutoCorrugatePercent:"
+				}
+			},
+			"entryOrder": [
+				"Field4",
+				"Field16",
+				"Field17",
+				"Field18",
+				"Field19",
+				"Field20",
+				"Field32",
+				"Field21",
+				"Variable51",
+				"Variable1",
+				"Variable2",
+				"Field54",
+				"Field2",
+				"Field39",
+				"Field43",
+				"Variable24",
+				"Field33",
+				"Field5",
+				"Field36",
+				"Field7",
+				"Field37",
+				"Field9",
+				"Variable10",
+				"Variable13",
+				"Field42",
+				"Field23",
+				"Field24",
+				"Field25",
+				"Field14",
+				"Field48",
+				"Field49",
+				"Field3",
+				"Field50",
+				"Field41",
+				"Variable1592",
+				"Variable1593",
+				"Field44",
+				"Button12",
+				"Variable28",
+				"Field52"
+			]
+		},
+		{
+			"objects": {
+				"Variable124": {
+					"type": "button",
+					"top": 130,
+					"left": 306,
+					"width": 134,
+					"height": 20,
+					"dataSource": "bxPatch",
+					"text": "Run Patch Code",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable124.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable94": {
+					"type": "button",
+					"top": 131,
+					"left": 489,
+					"width": 114,
+					"height": 20,
+					"dataSource": "ibPurgeEst",
+					"text": "Purge",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable94.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable127": {
+					"type": "button",
+					"top": 162,
+					"left": 307,
+					"width": 134,
+					"height": 20,
+					"dataSource": "bNAN",
+					"text": "Find/Remove NANs",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable127.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable128": {
+					"type": "button",
+					"top": 192,
+					"left": 38,
+					"width": 134,
+					"height": 20,
+					"dataSource": "ibRefreshLi",
+					"text": "Refresh CC & RM",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable128.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable129": {
+					"type": "button",
+					"top": 219,
+					"left": 38,
+					"width": 134,
+					"height": 20,
+					"dataSource": "bRenameFG",
+					"text": "Rename R/M",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable129.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable131": {
+					"type": "button",
+					"top": 225,
+					"left": 248,
+					"width": 125,
+					"height": 20,
+					"dataSource": "ibFixEsts",
+					"text": "Move Estimate",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable131.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable132": {
+					"type": "button",
+					"top": 226,
+					"left": 394,
+					"width": 196,
+					"height": 20,
+					"dataSource": "bExlusion",
+					"text": "Customer Name Exclusions",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable132.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable134": {
+					"type": "button",
+					"top": 252,
+					"left": 248,
+					"width": 125,
+					"height": 20,
+					"dataSource": "bChgCoord",
+					"text": "Reassign Coord",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable134.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable135": {
+					"type": "button",
+					"top": 252,
+					"left": 394,
+					"width": 196,
+					"height": 20,
+					"dataSource": "bChgRep",
+					"text": "Assign Customer to Rep",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable135.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable130": {
+					"type": "button",
+					"top": 277,
+					"left": 38,
+					"width": 140,
+					"height": 20,
+					"dataSource": "bRMCleanUp",
+					"text": "CleanUp RM Bins",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable130.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable136": {
+					"type": "button",
+					"top": 280,
+					"left": 394,
+					"width": 196,
+					"height": 20,
+					"dataSource": "bChgRep",
+					"text": "Rename Customer",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable136.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable138": {
+					"type": "button",
+					"top": 279,
+					"left": 248,
+					"width": 125,
+					"height": 20,
+					"dataSource": "bChgCoord",
+					"text": "Reassign Contact",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable138.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable133": {
+					"type": "button",
+					"top": 310,
+					"left": 38,
+					"width": 140,
+					"height": 20,
+					"dataSource": "bFGCleanUp",
+					"text": "CleanUp FG Bins",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable133.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable137": {
+					"type": "button",
+					"top": 341,
+					"left": 38,
+					"width": 180,
+					"height": 20,
+					"dataSource": "bFGCleanUp",
+					"text": "Chk FG Inventory Balance",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable137.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 112,
+					"left": 40,
+					"width": 62,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/zodiac killer.png"
+				},
+				"Variable27": {
+					"type": "button",
+					"top": 111,
+					"left": 41,
+					"width": 62,
+					"height": 64,
+					"dataSource": "bExecute",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Prev_Page"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable27.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 129,
+					"left": 141,
+					"width": 134,
+					"height": 20,
+					"dataSource": "bxSQL",
+					"text": "SQL EXECUTE",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 249,
+					"left": 591,
+					"width": 122,
+					"height": 26,
+					"class": "BaseInformation",
+					"text": "Cust, Est, JML, Contacts, not Orders"
+				},
+				"modsql": {
+					"type": "button",
+					"top": 341,
+					"left": 394,
+					"width": 94,
+					"height": 20,
+					"text": "Mod Script...",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/modsql.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"newSQL": {
+					"type": "button",
+					"top": 367,
+					"left": 394,
+					"width": 93,
+					"height": 20,
+					"text": "New Script",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/newSQL.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable124",
+				"Variable94",
+				"Variable127",
+				"Variable128",
+				"Variable129",
+				"Variable131",
+				"Variable132",
+				"Variable134",
+				"Variable135",
+				"Variable130",
+				"Variable136",
+				"Variable138",
+				"Variable133",
+				"Variable137",
+				"Variable7",
+				"modsql",
+				"newSQL"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

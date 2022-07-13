@@ -1,0 +1,86 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Modl_tFormName_Find": {
+					"type": "subform",
+					"top": 7,
+					"left": 14,
+					"width": 205,
+					"height": 30,
+					"dataSource": "Modl_tFormName_Find",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Modl_tFormName_Find.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture Button": {
+					"type": "pictureButton",
+					"top": 43,
+					"left": 9,
+					"width": 215,
+					"height": 30,
+					"dataSource": "Modl_nFormName_Find",
+					"picture": "/RESOURCES/Skin/Master/FindBox.png",
+					"useLastFrameAsDisabled": true
+				},
+				"Modl_tFormName_Find1": {
+					"type": "input",
+					"top": 51,
+					"left": 49,
+					"width": 159,
+					"height": 16,
+					"dataSource": "Modl_tFormName_Find",
+					"class": "Form_Value",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Modl_tFormName_Find1.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				}
+			}
+		}
+	]
+}

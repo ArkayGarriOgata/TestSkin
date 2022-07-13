@@ -1,0 +1,396 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Make Order for Prep",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"order23": {
+					"type": "picture",
+					"top": 76,
+					"left": 327,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"order13": {
+					"type": "picture",
+					"top": 56,
+					"left": 266,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 7,
+					"left": 17,
+					"width": 212,
+					"height": 19,
+					"dataSource": "i0",
+					"text": "Tag Control Nº with Order Nº:",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"order3": {
+					"type": "input",
+					"top": 9,
+					"left": 233,
+					"width": 50,
+					"height": 16,
+					"dataSource": "vOrd",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 29,
+					"left": 17,
+					"width": 138,
+					"height": 21,
+					"dataSource": "i1",
+					"text": "Make New Order",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 53,
+					"left": 17,
+					"width": 190,
+					"height": 19,
+					"dataSource": "i2",
+					"text": "Append Existing Order Nº:",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"order1": {
+					"type": "input",
+					"top": 55,
+					"left": 212,
+					"width": 50,
+					"height": 16,
+					"dataSource": "vOrd",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/order1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"order12": {
+					"type": "dropdown",
+					"top": 55,
+					"left": 264,
+					"width": 20,
+					"height": 17,
+					"dataSource": "aPickList",
+					"display": false,
+					"class": "Default",
+					"method": "ObjectMethods/order12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button5": {
+					"type": "radio",
+					"top": 74,
+					"left": 17,
+					"width": 248,
+					"height": 19,
+					"dataSource": "i3",
+					"text": "Apply Charges to Existing Order Nº:",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Radio Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"order2": {
+					"type": "input",
+					"top": 75,
+					"left": 273,
+					"width": 50,
+					"height": 16,
+					"dataSource": "vOrd",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/order2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"order21": {
+					"type": "dropdown",
+					"top": 75,
+					"left": 326,
+					"width": 20,
+					"height": 17,
+					"dataSource": "aPickList",
+					"display": false,
+					"class": "Default",
+					"method": "ObjectMethods/order21.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"creating Button3": {
+					"type": "radio",
+					"top": 116,
+					"left": 17,
+					"width": 277,
+					"height": 16,
+					"dataSource": "b1",
+					"text": "Separate Line Item for each charge",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					]
+				},
+				"creating Button4": {
+					"type": "radio",
+					"top": 138,
+					"left": 17,
+					"width": 277,
+					"height": 18,
+					"dataSource": "b2",
+					"text": "One Line Item with detailed Comment",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					]
+				},
+				"creating Button6": {
+					"type": "radio",
+					"top": 175,
+					"left": 16,
+					"width": 147,
+					"height": 16,
+					"dataSource": "cb2",
+					"text": "Use Actual Price",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					]
+				},
+				"creating Button7": {
+					"type": "radio",
+					"top": 196,
+					"left": 16,
+					"width": 147,
+					"height": 18,
+					"dataSource": "cb1",
+					"text": "Use Original Quote",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					]
+				},
+				"creating Button8": {
+					"type": "radio",
+					"top": 219,
+					"left": 16,
+					"width": 147,
+					"height": 18,
+					"dataSource": "cb3",
+					"text": "Use Revised Quote",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 248,
+					"left": 182,
+					"width": 74,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 248,
+					"left": 270,
+					"width": 74,
+					"height": 22,
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Ok",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"creatingLine1": {
+					"type": "line",
+					"top": 103,
+					"left": 17,
+					"width": 334,
+					"height": 1
+				},
+				"creatingLine2": {
+					"type": "line",
+					"top": 167,
+					"left": 18,
+					"width": 334,
+					"height": 1
+				},
+				"creatingVariable1": {
+					"type": "input",
+					"top": 175,
+					"left": 168,
+					"width": 60,
+					"height": 16,
+					"dataSource": "r2",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					]
+				},
+				"creatingVariable2": {
+					"type": "input",
+					"top": 197,
+					"left": 168,
+					"width": 60,
+					"height": 16,
+					"dataSource": "r1",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					]
+				},
+				"creatingVariable3": {
+					"type": "input",
+					"top": 220,
+					"left": 168,
+					"width": 60,
+					"height": 16,
+					"dataSource": "r3",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Radio Button3",
+				"order3",
+				"Radio Button1",
+				"Radio Button2",
+				"order1",
+				"order12",
+				"Radio Button5",
+				"order2",
+				"order21",
+				"creating Button3",
+				"creating Button4",
+				"creating Button6",
+				"creating Button7",
+				"creating Button8",
+				"Button2",
+				"Button1",
+				"creatingVariable1",
+				"creatingVariable2",
+				"creatingVariable3"
+			]
+		}
+	]
+}

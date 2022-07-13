@@ -1,0 +1,432 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 19,
+	"markerBody": 33,
+	"markerBreak": 36,
+	"markerFooter": 67,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 506,
+					"height": 35
+				},
+				"Line1": {
+					"type": "line",
+					"top": 18,
+					"left": 0,
+					"width": 505,
+					"height": 1,
+					"startPoint": "bottomLeft"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 2,
+					"width": 132,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Customer"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 137,
+					"width": 107,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "CPN"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 37,
+					"left": 8,
+					"width": 198,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"text": "Double-click on any record to review..."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 2,
+					"left": 345,
+					"width": 83,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Job Number"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 343,
+					"height": 34
+				},
+				"Text5": {
+					"type": "text",
+					"top": 2,
+					"left": 247,
+					"width": 95,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "PO Number"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 245,
+					"height": 34
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 135,
+					"height": 34
+				},
+				"Text6": {
+					"type": "text",
+					"top": 2,
+					"left": 431,
+					"width": 73,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Last Printed"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 429,
+					"height": 34
+				},
+				"Field1": {
+					"type": "input",
+					"top": 20,
+					"left": 2,
+					"width": 132,
+					"height": 13,
+					"dataSource": "[WMS_Label_Tracking:75]CustName:1",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 20,
+					"left": 137,
+					"width": 107,
+					"height": 13,
+					"dataSource": "[WMS_Label_Tracking:75]CPN:3",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 20,
+					"left": 247,
+					"width": 95,
+					"height": 13,
+					"dataSource": "[WMS_Label_Tracking:75]PONo:6",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 20,
+					"left": 345,
+					"width": 83,
+					"height": 13,
+					"dataSource": "[WMS_Label_Tracking:75]Jobit:7",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 20,
+					"left": 431,
+					"width": 73,
+					"height": 13,
+					"dataSource": "[WMS_Label_Tracking:75]LabelDate:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 41,
+					"left": 213,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bInclude",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Include Button"
+					},
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Include",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 41,
+					"left": 303,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bExclude",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Exclude Button"
+					},
+					"shortcutKey": "e",
+					"shortcutAccel": true,
+					"text": "Exclude",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 41,
+					"left": 397,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bDone",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Done",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 72,
+					"left": 398,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 100,
+					"left": 402,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done (Default)"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"text": "Cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

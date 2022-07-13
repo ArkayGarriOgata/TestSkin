@@ -1,0 +1,1 @@
+xText:=Pjt_getName([JTB_Job_Transfer_Bags:112]PjtNumber:2)

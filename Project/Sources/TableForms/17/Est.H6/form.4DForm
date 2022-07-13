@@ -1,0 +1,173 @@
+{
+	"destination": "detailPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 50,
+	"markerBody": 81,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 54,
+					"left": 1,
+					"width": 49,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Form #:"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 51,
+					"left": 0,
+					"width": 732,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Line2": {
+					"type": "line",
+					"top": 51,
+					"left": 0,
+					"width": 100,
+					"height": 2,
+					"strokeWidth": 2
+				},
+				"Text2": {
+					"type": "text",
+					"top": 29,
+					"left": 229,
+					"width": 34,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"text": "est.h6"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 68,
+					"left": 1,
+					"width": 121,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Cartons on this form:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 54,
+					"left": 51,
+					"width": 23,
+					"height": 13,
+					"dataSource": "t7",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 54,
+					"left": 77,
+					"width": 22,
+					"height": 13,
+					"dataSource": "tt30",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 54,
+					"left": 109,
+					"width": 620,
+					"height": 11,
+					"dataSource": "t20",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

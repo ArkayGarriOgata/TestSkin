@@ -1,0 +1,309 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 742,
+	"markerBreak": 742,
+	"markerFooter": 742,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Matrix1": {
+					"type": "picture",
+					"top": 17,
+					"left": 7,
+					"width": 564,
+					"height": 432,
+					"pictureFormat": "scaled",
+					"picture": "Images/Matrix1.svg"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 17,
+					"left": 381,
+					"height": 73,
+					"strokeWidth": 0.1
+				},
+				"Text1": {
+					"type": "text",
+					"top": 95,
+					"left": 11,
+					"width": 42,
+					"height": 23,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "DESC: "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 165,
+					"left": 11,
+					"width": 105,
+					"height": 12,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "LOT#:"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 161,
+					"left": 381,
+					"height": 145,
+					"strokeWidth": 0.1
+				},
+				"Text5": {
+					"type": "text",
+					"top": 165,
+					"left": 390,
+					"width": 70,
+					"height": 12,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "QUANTITY:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 237,
+					"left": 11,
+					"width": 105,
+					"height": 12,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "ITEM:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 237,
+					"left": 390,
+					"width": 90,
+					"height": 12,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "# CASES:"
+				},
+				"ShippingUnitSerialNumber": {
+					"type": "input",
+					"top": 468,
+					"left": 9,
+					"width": 562,
+					"height": 41,
+					"dataSource": "[WMS_SerializedShippingLabels:96]ShippingUnitSerialNumber:1",
+					"stroke": "#000000",
+					"class": "Barcode128XL",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 658,
+					"left": 4,
+					"width": 567,
+					"height": 39,
+					"dataSource": "[WMS_SerializedShippingLabels:96]HumanReadable:5",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/SSCC-18"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 309,
+					"left": 11,
+					"width": 105,
+					"height": 12,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "LINE:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 381,
+					"left": 11,
+					"width": 105,
+					"height": 12,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "CUST:"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 191,
+					"left": 13,
+					"width": 340,
+					"height": 36,
+					"dataSource": "[WMS_SerializedShippingLabels:96]Jobit:3",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 334,
+					"left": 13,
+					"width": 543,
+					"height": 36,
+					"dataSource": "[WMS_SerializedShippingLabels:96]Line:25",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 407,
+					"left": 14,
+					"width": 543,
+					"height": 36,
+					"dataSource": "[WMS_SerializedShippingLabels:96]Customer:24",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 20,
+					"left": 19,
+					"width": 349,
+					"height": 68,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Sharp Arkay Logo.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

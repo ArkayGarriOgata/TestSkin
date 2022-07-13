@@ -1,0 +1,1 @@
+ams_trigger_sync_record("trigger_x_linked_documents")

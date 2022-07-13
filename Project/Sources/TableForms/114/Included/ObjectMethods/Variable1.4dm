@@ -1,0 +1,1 @@
+tText:=TS2String([JTB_Logs:114]tsTimeStamp:2)

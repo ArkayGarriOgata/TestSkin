@@ -1,0 +1,995 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 200,
+	"windowMaxWidth": 2000,
+	"windowMinHeight": 200,
+	"windowMaxHeight": 1800,
+	"width": 1075,
+	"height": 520,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 12,
+					"left": 344,
+					"width": 38,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "SHIFT:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 12,
+					"left": 593,
+					"width": 27,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "C/C:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 11,
+					"left": 74,
+					"width": 69,
+					"height": 16,
+					"dataSource": "dDateBegin",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/##",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 11,
+					"left": 223,
+					"width": 69,
+					"height": 16,
+					"dataSource": "dDateEnd",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 7,
+					"left": 386,
+					"width": 34,
+					"height": 25,
+					"dataSource": "cb1",
+					"text": "1",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 7,
+					"left": 422,
+					"width": 33,
+					"height": 25,
+					"dataSource": "cb2",
+					"text": "2",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 7,
+					"left": 458,
+					"width": 34,
+					"height": 25,
+					"dataSource": "cb3",
+					"text": "3",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 12,
+					"left": 546,
+					"width": 30,
+					"height": 15,
+					"dataSource": "sOperator",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 12,
+					"left": 625,
+					"width": 30,
+					"height": 15,
+					"dataSource": "cost_center",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button4": {
+					"type": "radio",
+					"top": 8,
+					"left": 673,
+					"width": 65,
+					"height": 22,
+					"dataSource": "rb0",
+					"text": "Sheeter",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"radioGroup": "Group33",
+					"method": "ObjectMethods/Radio Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button": {
+					"type": "radio",
+					"top": 8,
+					"left": 744,
+					"width": 55,
+					"height": 22,
+					"dataSource": "rb1",
+					"text": "Press",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"radioGroup": "Group33",
+					"method": "ObjectMethods/Radio Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 8,
+					"left": 801,
+					"width": 59,
+					"height": 22,
+					"dataSource": "rb2",
+					"text": "Stamp",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"radioGroup": "Group33",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 8,
+					"left": 860,
+					"width": 53,
+					"height": 22,
+					"dataSource": "rb3",
+					"text": "Blank",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"radioGroup": "Group33",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 8,
+					"left": 919,
+					"width": 48,
+					"height": 22,
+					"dataSource": "rb4",
+					"text": "Glue",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"radioGroup": "Group33",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 6,
+					"left": 992,
+					"width": 49,
+					"height": 27,
+					"dataSource": "bFind",
+					"text": "Find",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bless": {
+					"type": "button",
+					"top": 37,
+					"left": 23,
+					"width": 129,
+					"height": 27,
+					"text": "Approve Selected",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Bless.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 37,
+					"left": 172,
+					"width": 91,
+					"height": 27,
+					"dataSource": "bPrint",
+					"text": "Print Screen",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 73,
+					"left": 23,
+					"width": 1030,
+					"height": 431,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "List Box",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showFooters": true,
+					"table": 61,
+					"highlightSet": "$ListboxSet0",
+					"alternateFill": "#E2FFDF",
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]DateEntered:5",
+							"dataSourceTypeHint": "date",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"dateFormat": "short",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Date",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]JobFormSeq:16",
+							"width": 93,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "JobSequence",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]CostCenterID:2",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "C/C",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Shift:18",
+							"dataSourceTypeHint": "integer",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Shift",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column17",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Operator:27",
+							"width": 33,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "Op",
+								"dataSource": "Header17",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer17",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column16",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Subform:26",
+							"dataSourceTypeHint": "integer",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "SF",
+								"dataSource": "Header16",
+								"stroke": "automatic",
+								"textAlign": "center",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]GlueMachItemNo:4",
+							"width": 38,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "00;err; ",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Item",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]MR_Act:6",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###,##0.00;err; ",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "MR",
+								"dataSource": "Header6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "###,##0.00;err; ",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Run_Act:7",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###,##0.00;err; ",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "RUN",
+								"dataSource": "Header7",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "###,##0.00;err; ",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]DownHrs:11",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###,##0.00;err; ",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "DT",
+								"dataSource": "Header8",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "###,##0.00;err; ",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]DownHrsCat:12",
+							"choiceList": {
+								"$ref": "/SOURCES/lists.json#/Downtime"
+							},
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "REASON",
+								"dataSource": "Header9",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Good_Units:8",
+							"dataSourceTypeHint": "integer",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "GOOD",
+								"dataSource": "Header10",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer10",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Waste_Units:9",
+							"dataSourceTypeHint": "integer",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "WASTE",
+								"dataSource": "Header11",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer11",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]P_C:10",
+							"width": 24,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "C?",
+								"dataSource": "Header12",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "TS2String([Job_Forms_Machine_Tickets:61]TimeStampEntered:17)",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "TIMESTAMP",
+								"dataSource": "Header13",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]TimeStampEntered:17",
+							"dataSourceTypeHint": "integer",
+							"width": 38,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "SORT",
+								"dataSource": "Header14",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column15",
+							"dataSource": "[Job_Forms_Machine_Tickets:61]Comment:25",
+							"width": 171,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "COMMENT",
+								"dataSource": "Header15",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 12,
+					"left": 13,
+					"width": 55,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Starting:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 12,
+					"left": 169,
+					"width": 48,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Ending:"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 11,
+					"left": 147,
+					"width": 19,
+					"height": 17,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 11,
+					"left": 296,
+					"width": 19,
+					"height": 17,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"b_dummy": {
+					"type": "button",
+					"top": 11,
+					"left": 148,
+					"width": 17,
+					"height": 16,
+					"dataSource": "b_dummy",
+					"text": "Button",
+					"display": false,
+					"method": "ObjectMethods/b_dummy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 11,
+					"left": 296,
+					"width": 18,
+					"height": 16,
+					"dataSource": "b_dummy",
+					"text": "Button",
+					"display": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 11,
+					"left": 515,
+					"width": 24,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "OP:"
+				}
+			},
+			"entryOrder": [
+				"Variable3",
+				"Variable2",
+				"Check Box",
+				"Check Box1",
+				"Check Box2",
+				"Variable4",
+				"Variable1",
+				"Group33",
+				"Radio Button4",
+				"Radio Button",
+				"Radio Button1",
+				"Radio Button2",
+				"Radio Button3",
+				"Button",
+				"Bless",
+				"Button1",
+				"List Box"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group33": [
+				"Radio Button4",
+				"Radio Button",
+				"Radio Button1",
+				"Radio Button2",
+				"Radio Button3"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

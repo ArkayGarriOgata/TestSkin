@@ -1,0 +1,379 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 183,
+	"markerBreak": 183,
+	"markerFooter": 193,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 106,
+					"left": 421,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 106,
+					"left": 24,
+					"width": 382,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "JobItemSkidCounter"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 90,
+					"left": 16,
+					"width": 507,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 9,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 93,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 81,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 165,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 153,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 237,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 225,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Last"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 3,
+					"left": 304,
+					"width": 2,
+					"height": 86,
+					"pictureFormat": "tiled",
+					"picture": "/RESOURCES/Images/library/Dotted Vert Sep.png"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 326,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 314,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Delete"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 398,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 386,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 470,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 458,
+					"width": 72,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Validate"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 139,
+					"left": 145,
+					"width": 118,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "jobit : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 165,
+					"left": 145,
+					"width": 118,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "LastSkidCounter : "
+				},
+				"jobit": {
+					"type": "input",
+					"top": 139,
+					"left": 268,
+					"width": 117,
+					"height": 16,
+					"dataSource": "[Job_Forms_Items_Skid_Counters:137]jobit:1",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LastSkidCounter": {
+					"type": "input",
+					"top": 165,
+					"left": 268,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[Job_Forms_Items_Skid_Counters:137]LastSkidCounter:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

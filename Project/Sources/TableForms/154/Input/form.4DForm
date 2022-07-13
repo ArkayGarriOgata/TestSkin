@@ -1,0 +1,555 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control1": {
+					"type": "tab",
+					"top": 98,
+					"left": 10,
+					"width": 735,
+					"height": 444,
+					"sizingY": "grow",
+					"dataSource": "Tab Control1",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Message",
+						"Mapping",
+						"Response"
+					],
+					"class": "BaseGroupBox",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text9": {
+					"type": "text",
+					"top": 49,
+					"left": 550,
+					"width": 59,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"text": "InBox"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 145,
+					"left": 25,
+					"width": 88,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "id : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 201,
+					"left": 279,
+					"width": 44,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "path : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 202,
+					"left": 17,
+					"width": 96,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "InterChgCntrl : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 225,
+					"left": 25,
+					"width": 88,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Received : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 225,
+					"left": 291,
+					"width": 60,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Mapped : "
+				},
+				"id": {
+					"type": "input",
+					"top": 145,
+					"left": 114,
+					"width": 76,
+					"height": 15,
+					"dataSource": "[edi_Inbox:154]ID:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"path": {
+					"type": "input",
+					"top": 201,
+					"left": 322,
+					"width": 394,
+					"height": 15,
+					"dataSource": "[edi_Inbox:154]Path:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"InterChgCntrl": {
+					"type": "input",
+					"top": 202,
+					"left": 118,
+					"width": 160,
+					"height": 15,
+					"dataSource": "[edi_Inbox:154]ICN:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Mapped": {
+					"type": "input",
+					"top": 225,
+					"left": 355,
+					"width": 60,
+					"height": 14,
+					"dataSource": "[edi_Inbox:154]Mapped:6",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"wasRead": {
+					"type": "checkbox",
+					"top": 171,
+					"left": 93,
+					"width": 88,
+					"height": 16,
+					"dataSource": "[edi_Inbox:154]WasRead:7",
+					"text": "Was Read",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 326,
+					"left": 35,
+					"width": 665,
+					"height": 209,
+					"sizingY": "grow",
+					"dataSource": "[edi_Inbox:154]Content_Text:10",
+					"stroke": "#000000",
+					"fontFamily": "Courier",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 294,
+					"left": 17,
+					"width": 89,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Raw Message : "
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 287,
+					"left": 304,
+					"width": 120,
+					"height": 20,
+					"dataSource": "i1",
+					"text": "Map Message",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 313,
+					"left": 35,
+					"width": 681,
+					"height": 10,
+					"stroke": "#0000FF",
+					"fontFamily": "Courier",
+					"fontSize": 10,
+					"text": "123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789   "
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 287,
+					"left": 439,
+					"width": 120,
+					"height": 20,
+					"dataSource": "i2",
+					"text": "Save To Disk",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 171,
+					"left": 152,
+					"width": 88,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Error : "
+				},
+				"InterChgCntrl1": {
+					"type": "input",
+					"top": 171,
+					"left": 245,
+					"width": 262,
+					"height": 16,
+					"dataSource": "[edi_Inbox:154]Error:8",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Received1": {
+					"type": "input",
+					"top": 225,
+					"left": 118,
+					"width": 111,
+					"height": 15,
+					"dataSource": "[edi_Inbox:154]Date_Received:9",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"path1": {
+					"type": "input",
+					"top": 145,
+					"left": 246,
+					"width": 230,
+					"height": 19,
+					"sizingX": "grow",
+					"dataSource": "[edi_Inbox:154]PO_Numbers:11",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 145,
+					"left": 204,
+					"width": 35,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "PO's : "
+				},
+				"Button": {
+					"type": "button",
+					"top": 287,
+					"left": 131,
+					"width": 158,
+					"height": 18,
+					"dataSource": "i3",
+					"text": "Show with line breaks",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Subform": {
+					"type": "subform",
+					"top": 141,
+					"left": 590,
+					"width": 110,
+					"height": 165,
+					"dataSource": "Subform",
+					"dataSourceTypeHint": "text",
+					"table": 182,
+					"listForm": "include",
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				}
+			},
+			"entryOrder": [
+				"id",
+				"path",
+				"Mapped",
+				"wasRead",
+				"Variable1",
+				"Variable8",
+				"Variable2",
+				"Received1",
+				"path1",
+				"Button",
+				"Subform"
+			]
+		},
+		{
+			"objects": {
+				"Subform1": {
+					"type": "subform",
+					"top": 140,
+					"left": 26,
+					"width": 684,
+					"height": 382,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 40,
+					"listForm": "edi_include",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"Subform2": {
+					"type": "subform",
+					"top": 140,
+					"left": 26,
+					"width": 684,
+					"height": 382,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 145,
+					"listForm": "include",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subform3": {
+					"type": "subform",
+					"top": 140,
+					"left": 26,
+					"width": 684,
+					"height": 382,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 155,
+					"listForm": "include",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text9"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

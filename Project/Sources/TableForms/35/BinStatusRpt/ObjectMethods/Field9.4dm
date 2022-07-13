@@ -1,0 +1,1 @@
+dDateBegin:=REL_getNextRelease([Finished_Goods_Locations:35]ProductCode:1)

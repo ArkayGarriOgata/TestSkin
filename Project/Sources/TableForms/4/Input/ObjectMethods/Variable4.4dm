@@ -1,0 +1,1 @@
+app_IncludedRecordDelete(->[y_accounting_departments:4]DepartmentID:1; ->[y_accounting_dept_commodities:89]CommDesc:3; "ListboxSet1")

@@ -1,0 +1,1 @@
+i2:=Subtotal:C97([Finished_Goods_Locations:35]zCount:18)

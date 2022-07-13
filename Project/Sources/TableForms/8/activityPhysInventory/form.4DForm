@@ -1,0 +1,70 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperWidth": "593pt",
+		"paperHeight": "458pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 24,
+					"left": 0,
+					"width": 721,
+					"height": 510,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26632.png"
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 4,
+					"left": 10,
+					"width": 173,
+					"height": 20,
+					"dataSource": "hlHelp",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/HelpChoices"
+					},
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

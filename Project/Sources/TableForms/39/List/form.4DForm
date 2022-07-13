@@ -1,0 +1,202 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 124,
+	"markerFooter": 127,
+	"events": [
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 79,
+					"left": 5,
+					"width": 49,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Cust ID"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 79,
+					"left": 57,
+					"width": 198,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Customer"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 79,
+					"left": 258,
+					"width": 152,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Line Name or Brand"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 100,
+					"left": 5,
+					"width": 49,
+					"height": 15,
+					"dataSource": "[Customers_Brand_Lines:39]CustID:1",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 57,
+					"width": 198,
+					"height": 15,
+					"dataSource": "[Customers:16]Name:2",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 100,
+					"left": 258,
+					"width": 152,
+					"height": 15,
+					"dataSource": "[Customers_Brand_Lines:39]LineNameOrBrand:2",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 100,
+					"left": 421,
+					"width": 86,
+					"height": 15,
+					"dataSource": "[Customers_Brand_Lines:39]ProjectNumber:14",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 100,
+					"left": 522,
+					"width": 206,
+					"height": 18,
+					"dataSource": "[Customers_Projects:9]Name:2",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 79,
+					"left": 421,
+					"width": 152,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Project Number"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

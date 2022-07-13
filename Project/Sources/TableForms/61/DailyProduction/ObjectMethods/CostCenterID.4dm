@@ -1,0 +1,1 @@
+QUERY:C277([Cost_Centers:27]; [Cost_Centers:27]ID:1=[Job_Forms_Machine_Tickets:61]CostCenterID:2)

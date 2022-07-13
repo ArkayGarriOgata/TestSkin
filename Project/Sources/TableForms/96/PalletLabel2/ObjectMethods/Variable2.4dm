@@ -1,0 +1,1 @@
+t2:=fBarCodeSym(39; [WMS_SerializedShippingLabels:96]LotNumber:6)

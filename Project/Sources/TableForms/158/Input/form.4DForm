@@ -1,0 +1,247 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Customer Portal Extracts",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"width": 750,
+	"height": 550,
+	"markerBody": 551,
+	"markerBreak": 551,
+	"markerFooter": 551,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text5": {
+					"type": "text",
+					"top": 39,
+					"left": 539,
+					"width": 176,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Customer_Portal_Extracts"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 190,
+					"left": 9,
+					"width": 98,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Extract's Name:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 216,
+					"left": 9,
+					"width": 98,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "pk_id:"
+				},
+				"S2_Field3": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 29,
+					"width": 70,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Extracts:158]Active:5",
+					"text": "Active",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field1": {
+					"type": "checkbox",
+					"top": 126,
+					"left": 29,
+					"width": 150,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Extracts:158]Hide_All_Excess:3",
+					"text": "Hide All Excess",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field2": {
+					"type": "checkbox",
+					"top": 153,
+					"left": 29,
+					"width": 150,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Extracts:158]Hide_Promo_Excess:4",
+					"text": "Hide Promo Excess",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CustId": {
+					"type": "input",
+					"top": 190,
+					"left": 112,
+					"width": 277,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Name:10",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field": {
+					"type": "input",
+					"top": 123,
+					"left": 434,
+					"width": 239,
+					"height": 401,
+					"dataSource": "[Customer_Portal_Extracts:158]Customers:9",
+					"dataSourceTypeHint": "object",
+					"placeholder": "CustomerCollection",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Access_Filter": {
+					"type": "input",
+					"top": 216,
+					"left": 112,
+					"width": 277,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]pk_id:6",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 101,
+					"left": 434,
+					"width": 98,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Customer List:"
+				}
+			},
+			"entryOrder": [
+				"S2_Field3",
+				"S2_Field1",
+				"S2_Field2",
+				"CustId",
+				"Field"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text5"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

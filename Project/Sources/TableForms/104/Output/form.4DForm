@@ -1,0 +1,579 @@
+{
+	"destination": "listScreen",
+	"windowMinWidth": 800,
+	"windowMinHeight": 600,
+	"width": 800,
+	"height": 124,
+	"markerHeader": 104,
+	"markerBody": 124,
+	"markerBreak": 126,
+	"markerFooter": 129,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bAddlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 8,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Add"
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 80,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Delete"
+				},
+				"bShowAlllabel": {
+					"type": "text",
+					"top": 56,
+					"left": 152,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Show all"
+				},
+				"bShowSubsetlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 224,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Show subset"
+				},
+				"bQuerylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 296,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Query"
+				},
+				"bOrderBylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 368,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Order by"
+				},
+				"bReportlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 440,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Quick report"
+				},
+				"bPrintlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 512,
+					"width": 72,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Print"
+				},
+				"bDonelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 704,
+					"width": 72,
+					"height": 14,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Finish"
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 0,
+					"width": 784,
+					"height": 48,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 82,
+					"left": 2,
+					"width": 780,
+					"height": 22,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Other Beige.png"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 104,
+					"left": 2,
+					"width": 780,
+					"height": 22,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 15,
+					"width": 170,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "Deletion_DateTime : "
+				},
+				"S2_Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 197,
+					"width": 54,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "Table_ID : "
+				},
+				"S3_Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 263,
+					"width": 140,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "Table_Name : "
+				},
+				"S4_Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 416,
+					"width": 82,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "Record_ID : "
+				},
+				"S5_Text3": {
+					"type": "text",
+					"top": 87,
+					"left": 649,
+					"width": 52,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "Done"
+				},
+				"S1_Field1": {
+					"type": "input",
+					"top": 108,
+					"left": 15,
+					"width": 170,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Creation_DateTime:1",
+					"dataSourceTypeHint": "number",
+					"class": "Shell_LargeField",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "0000-00-00 . 00:00:00",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field1": {
+					"type": "input",
+					"top": 108,
+					"left": 197,
+					"width": 54,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Table_ID:2",
+					"class": "Shell_LargeControl",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field1": {
+					"type": "input",
+					"top": 108,
+					"left": 263,
+					"width": 140,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Table_Name:5",
+					"class": "Shell_LargeControl",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field1": {
+					"type": "input",
+					"top": 108,
+					"left": 416,
+					"width": 82,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Record_ID:3",
+					"dataSourceTypeHint": "integer",
+					"class": "Shell_LargeControl",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Field3": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 649,
+					"width": 52,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Is_Action_Done:4",
+					"text": "Yes",
+					"class": "Shell_LargeControl",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 81,
+					"left": 504,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter7": {
+					"type": "button",
+					"top": 81,
+					"left": 503,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line4": {
+					"type": "line",
+					"top": 81,
+					"left": 410,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter8": {
+					"type": "button",
+					"top": 81,
+					"left": 409,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 81,
+					"left": 257,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter9": {
+					"type": "button",
+					"top": 81,
+					"left": 256,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line6": {
+					"type": "line",
+					"top": 81,
+					"left": 191,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter10": {
+					"type": "button",
+					"top": 81,
+					"left": 190,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S5_Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 510,
+					"width": 52,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "To Del."
+				},
+				"S5_Field1": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 510,
+					"width": 52,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Is_To_Delete_On_Host:6",
+					"text": "Yes",
+					"class": "Shell_LargeControl",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 81,
+					"left": 574,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": 81,
+					"left": 573,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S5_Text2": {
+					"type": "text",
+					"top": 87,
+					"left": 580,
+					"width": 52,
+					"height": 15,
+					"sizingX": "grow",
+					"class": "Shell_ListItem",
+					"text": "To Upd."
+				},
+				"S5_Field2": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 580,
+					"width": 52,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[PNGA_SQL_Tasks:104]Is_To_Update_To_Host:7",
+					"text": "Yes",
+					"class": "Shell_LargeControl",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 81,
+					"left": 640,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter6": {
+					"type": "button",
+					"top": 81,
+					"left": 639,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bAddlabel",
+					"bDeletelabel",
+					"bShowAlllabel",
+					"bShowSubsetlabel",
+					"bQuerylabel",
+					"bOrderBylabel",
+					"bReportlabel",
+					"bPrintlabel",
+					"bDonelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

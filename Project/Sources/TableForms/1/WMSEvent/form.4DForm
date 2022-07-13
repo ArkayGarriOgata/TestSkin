@@ -1,0 +1,302 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 200,
+	"windowMaxWidth": 1000,
+	"windowMinHeight": 400,
+	"windowMaxHeight": 900,
+	"width": 640,
+	"height": 650,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 14,
+					"left": 20,
+					"width": 187,
+					"height": 345,
+					"stroke": "#000000",
+					"class": "BaseGroupBox"
+				},
+				"amswms_build": {
+					"type": "button",
+					"top": 87,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/BuildSkid"
+					},
+					"text": "Build",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/amswms_build.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"amswms_empty": {
+					"type": "button",
+					"top": 265,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/EmptyBins"
+					},
+					"text": "Empty Bins",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/amswms_empty.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"exports": {
+					"type": "button",
+					"top": 310,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/WMSexports"
+					},
+					"text": "WMS Exports",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/exports.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture227": {
+					"type": "picture",
+					"top": 23,
+					"left": 84,
+					"width": 60,
+					"height": 53,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26734.png"
+				},
+				"amswms_check": {
+					"type": "button",
+					"top": 175,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/BinCheck"
+					},
+					"text": "Lookup",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/amswms_check.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"amswms_add": {
+					"type": "button",
+					"top": 220,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AddCase"
+					},
+					"text": "Add",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/amswms_add.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"amswms_move": {
+					"type": "button",
+					"top": 131,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/MoveSkid"
+					},
+					"text": "Move",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/amswms_move.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WebArea": {
+					"type": "webArea",
+					"top": 58,
+					"left": 220,
+					"width": 406,
+					"height": 568,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WebArea",
+					"urlSource": "WebArea_url",
+					"progressSource": "WebArea_progress",
+					"webEngine": "embedded",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/WebArea.4dm",
+					"events": [
+						"onLoad",
+						"onURLFiltering"
+					]
+				},
+				"wms_url": {
+					"type": "radio",
+					"top": 18,
+					"left": 260,
+					"width": 132,
+					"height": 33,
+					"dataSource": "rb1",
+					"text": "WMS Webpage",
+					"class": "BaseFormTitle",
+					"radioGroup": "Group171",
+					"method": "ObjectMethods/wms_url.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"iui_url": {
+					"type": "radio",
+					"top": 18,
+					"left": 430,
+					"width": 132,
+					"height": 33,
+					"dataSource": "rb2",
+					"text": "iUi Webpage",
+					"class": "BaseFormTitle",
+					"radioGroup": "Group171",
+					"method": "ObjectMethods/iui_url.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 551,
+					"left": 38,
+					"width": 161,
+					"height": 82,
+					"class": "BaseLabel",
+					"text": "The area to the right can be used to log into the warehouse management and affords the view as seen on the scanners. \r\r"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 217,
+					"left": 741,
+					"width": 1,
+					"height": 17,
+					"dataSource": "Variable",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"kills2scrap": {
+					"type": "button",
+					"top": 370,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Kills to Scrap"
+					},
+					"text": "Kills To Scrap",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/kills2scrap.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"compareBtn": {
+					"type": "button",
+					"top": 420,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"text": "aMs v WMS",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/compareBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"InternalBOL": {
+					"type": "button",
+					"top": 475,
+					"left": 38,
+					"width": 150,
+					"height": 35,
+					"text": "Internal BOL",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/InternalBOL.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"amswms_build",
+				"amswms_empty",
+				"exports",
+				"amswms_check",
+				"amswms_add",
+				"amswms_move",
+				"WebArea",
+				"Group171",
+				"wms_url",
+				"iui_url",
+				"Variable",
+				"kills2scrap",
+				"compareBtn",
+				"InternalBOL"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group171": [
+				"wms_url",
+				"iui_url"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerBody": 124,
+	"markerBreak": 124,
+	"markerFooter": 124,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture2": {
+					"type": "picture",
+					"top": 3,
+					"left": 2,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Questions McGee.png"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 11,
+					"left": 54,
+					"width": 313,
+					"height": 80,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "MyText",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 98,
+					"left": 115,
+					"width": 116,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "No",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 98,
+					"left": 245,
+					"width": 116,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "baOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Yes",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 100,
+					"left": 366,
+					"width": 6,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bYes",
+					"action": "accept",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

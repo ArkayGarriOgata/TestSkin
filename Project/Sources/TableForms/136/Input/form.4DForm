@@ -1,0 +1,2096 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Block Time For Issues",
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 453,
+					"left": 26,
+					"width": 405,
+					"height": 120,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Options"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 346,
+					"left": 26,
+					"width": 405,
+					"height": 101,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Frequency"
+				},
+				"pjtData1": {
+					"type": "input",
+					"top": 43,
+					"left": 125,
+					"width": 297,
+					"height": 18,
+					"dataSource": "[Customers_Projects:9]Name:2",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"pjtData2": {
+					"type": "input",
+					"top": 62,
+					"left": 125,
+					"width": 297,
+					"height": 18,
+					"dataSource": "[Customers_Projects:9]CustomerName:4",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 43,
+					"left": 10,
+					"width": 111,
+					"height": 18,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Project's Name"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 62,
+					"left": 10,
+					"width": 109,
+					"height": 18,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "CustomerName"
+				},
+				"pjtData6": {
+					"type": "input",
+					"top": 23,
+					"left": 125,
+					"width": 68,
+					"height": 18,
+					"dataSource": "[ProductionSchedules_BlockTimes:136]ProjectNumber:2",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 23,
+					"left": 10,
+					"width": 80,
+					"height": 18,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Project Nº"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 140,
+					"left": 26,
+					"width": 405,
+					"height": 204,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Operation             C/C      RunRate       Hrs      LagHrs"
+				},
+				"Variable37": {
+					"type": "input",
+					"top": 90,
+					"left": 159,
+					"width": 69,
+					"height": 13,
+					"dataSource": "iSheets",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable37.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable38": {
+					"type": "input",
+					"top": 89,
+					"left": 273,
+					"width": 26,
+					"height": 15,
+					"dataSource": "iUp",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable38.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable50": {
+					"type": "input",
+					"top": 90,
+					"left": 393,
+					"width": 26,
+					"height": 15,
+					"dataSource": "iNumJobs",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable50.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button7": {
+					"type": "radio",
+					"top": 111,
+					"left": 161,
+					"width": 86,
+					"height": 22,
+					"dataSource": "b1",
+					"text": "Roanoke",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button8": {
+					"type": "radio",
+					"top": 111,
+					"left": 258,
+					"width": 103,
+					"height": 22,
+					"dataSource": "b2",
+					"text": "Hauppauge",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 164,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb1",
+					"text": "Sheeting",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 167,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 167,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r11",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 167,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r21",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable28": {
+					"type": "input",
+					"top": 167,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r31",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 185,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb2",
+					"text": "Printing B/S",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 186,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r2",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 186,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r12",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 186,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r22",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 186,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r32",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 204,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb3",
+					"text": "Printing",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 205,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r3",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 205,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r13",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 205,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r23",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 205,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r33",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 223,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb4",
+					"text": "Stamping",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 224,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r4",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 224,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r14",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 224,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r24",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 224,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r34",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box5": {
+					"type": "checkbox",
+					"top": 242,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb5",
+					"text": "Embossing",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 243,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r5",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 243,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r15",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 243,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r25",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable32": {
+					"type": "input",
+					"top": 243,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r35",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box6": {
+					"type": "checkbox",
+					"top": 260,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb6",
+					"text": "Laminiating",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 262,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r6",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 262,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r16",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 262,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r26",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable33": {
+					"type": "input",
+					"top": 262,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r36",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box7": {
+					"type": "checkbox",
+					"top": 279,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb7",
+					"text": "Die Cutting",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 281,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r7",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 281,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r17",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 281,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r27",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable34": {
+					"type": "input",
+					"top": 281,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r37",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box8": {
+					"type": "checkbox",
+					"top": 299,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb8",
+					"text": "Stripping",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 300,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r8",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 300,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r18",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 300,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r28",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable35": {
+					"type": "input",
+					"top": 300,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r38",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Check Box9": {
+					"type": "checkbox",
+					"top": 318,
+					"left": 39,
+					"width": 108,
+					"height": 17,
+					"dataSource": "cb9",
+					"text": "Gluing",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Check Box9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 319,
+					"left": 158,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r9",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 319,
+					"left": 219,
+					"width": 53,
+					"height": 13,
+					"dataSource": "r19",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "input",
+					"top": 319,
+					"left": 293,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r29",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable36": {
+					"type": "input",
+					"top": 319,
+					"left": 355,
+					"width": 39,
+					"height": 13,
+					"dataSource": "r39",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 372,
+					"left": 39,
+					"width": 103,
+					"height": 22,
+					"dataSource": "rb1",
+					"text": "One-Time",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 372,
+					"left": 173,
+					"width": 103,
+					"height": 22,
+					"dataSource": "rb2",
+					"text": "Weekly",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button5": {
+					"type": "radio",
+					"top": 372,
+					"left": 303,
+					"width": 113,
+					"height": 22,
+					"dataSource": "rb3",
+					"text": "Monthly",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 395,
+					"left": 39,
+					"width": 103,
+					"height": 22,
+					"dataSource": "rb4",
+					"text": "Quarterly",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button4": {
+					"type": "radio",
+					"top": 395,
+					"left": 173,
+					"width": 103,
+					"height": 22,
+					"dataSource": "rb5",
+					"text": "Bi-weekly",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button6": {
+					"type": "radio",
+					"top": 395,
+					"left": 303,
+					"width": 113,
+					"height": 22,
+					"dataSource": "rb6",
+					"text": "Bi-monthly",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Radio Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable42": {
+					"type": "input",
+					"top": 423,
+					"left": 103,
+					"width": 66,
+					"height": 13,
+					"dataSource": "dDateBegin",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable43": {
+					"type": "input",
+					"top": 423,
+					"left": 286,
+					"width": 26,
+					"height": 16,
+					"dataSource": "[ProductionSchedules_BlockTimes:136]NumberOfTimes:6",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable40": {
+					"type": "input",
+					"top": 481,
+					"left": 117,
+					"width": 109,
+					"height": 17,
+					"dataSource": "[ProductionSchedules_BlockTimes:136]LineSpecificationID:4",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable44": {
+					"type": "input",
+					"top": 481,
+					"left": 374,
+					"width": 26,
+					"height": 14,
+					"dataSource": "iDays",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable39": {
+					"type": "input",
+					"top": 504,
+					"left": 117,
+					"width": 109,
+					"height": 13,
+					"dataSource": "sRMcode",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable51": {
+					"type": "input",
+					"top": 504,
+					"left": 374,
+					"width": 26,
+					"height": 14,
+					"dataSource": "iHRDweeks",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable41": {
+					"type": "input",
+					"top": 527,
+					"left": 117,
+					"width": 109,
+					"height": 13,
+					"dataSource": "sOutline",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable46": {
+					"type": "input",
+					"top": 526,
+					"left": 310,
+					"width": 101,
+					"height": 13,
+					"dataSource": "sComment",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable45": {
+					"type": "input",
+					"top": 551,
+					"left": 153,
+					"width": 39,
+					"height": 13,
+					"dataSource": "xText",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable48": {
+					"type": "button",
+					"top": 550,
+					"left": 196,
+					"width": 50,
+					"height": 15,
+					"dataSource": "bFgNotes",
+					"text": "Show",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable48.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable47": {
+					"type": "input",
+					"top": 548,
+					"left": 311,
+					"width": 100,
+					"height": 13,
+					"dataSource": "sDieNumber",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 582,
+					"left": 26,
+					"width": 87,
+					"height": 27,
+					"dataSource": "bDelete",
+					"text": "Remove",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 582,
+					"left": 124,
+					"width": 87,
+					"height": 27,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 582,
+					"left": 221,
+					"width": 87,
+					"height": 27,
+					"dataSource": "bSave",
+					"action": "accept",
+					"text": "Save",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 582,
+					"left": 319,
+					"width": 112,
+					"height": 27,
+					"dataSource": "bSaveBlock",
+					"action": "accept",
+					"text": "Save & Block",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 105,
+					"width": 52,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Sheets:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 421,
+					"left": 41,
+					"width": 63,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Starting:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 421,
+					"left": 196,
+					"width": 87,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Nº of Times:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 502,
+					"left": 36,
+					"width": 97,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Stock R/M:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 479,
+					"left": 36,
+					"width": 97,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Line Spec:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 525,
+					"left": 36,
+					"width": 97,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Outline Nº:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 479,
+					"left": 233,
+					"width": 139,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Closing Dead(days):"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 523,
+					"left": 233,
+					"width": 74,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Comment:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 547,
+					"left": 256,
+					"width": 49,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Die ID:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 549,
+					"left": 36,
+					"width": 112,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "F/G Candidates:"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 87,
+					"left": 240,
+					"width": 28,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Up:"
+				},
+				"Library Picture6": {
+					"type": "picture",
+					"top": 424,
+					"left": 174,
+					"width": 18,
+					"height": 13,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Invisible Button5": {
+					"type": "button",
+					"top": 424,
+					"left": 173,
+					"width": 18,
+					"height": 12,
+					"dataSource": "b_dummy",
+					"text": "Button",
+					"display": false,
+					"method": "ObjectMethods/Invisible Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 614,
+					"left": 437,
+					"width": 15,
+					"height": 12,
+					"dataSource": "Button1",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable49": {
+					"type": "input",
+					"top": 4,
+					"left": 125,
+					"width": 109,
+					"height": 20,
+					"dataSource": "[ProductionSchedules_BlockTimes:136]BlockId:1",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 4,
+					"left": 11,
+					"width": 80,
+					"height": 18,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Block ID:"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 114,
+					"left": 64,
+					"width": 92,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Finishing at:"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 82,
+					"left": 10,
+					"width": 430
+				},
+				"Text15": {
+					"type": "text",
+					"top": 88,
+					"left": 312,
+					"width": 76,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Jobs(MR's):"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 87,
+					"left": 11,
+					"width": 83,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "Number Of:"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 502,
+					"left": 233,
+					"width": 139,
+					"height": 17,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"text": "HRD (weeks):"
+				}
+			},
+			"entryOrder": [
+				"pjtData6",
+				"Variable37",
+				"Variable38",
+				"Variable50",
+				"Radio Button7",
+				"Radio Button8",
+				"Check Box1",
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable28",
+				"Check Box2",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Variable29",
+				"Check Box3",
+				"Variable7",
+				"Variable8",
+				"Variable9",
+				"Variable30",
+				"Check Box4",
+				"Variable10",
+				"Variable11",
+				"Variable12",
+				"Variable31",
+				"Check Box5",
+				"Variable13",
+				"Variable14",
+				"Variable15",
+				"Variable32",
+				"Check Box6",
+				"Variable16",
+				"Variable17",
+				"Variable18",
+				"Variable33",
+				"Check Box7",
+				"Variable19",
+				"Variable20",
+				"Variable21",
+				"Variable34",
+				"Check Box8",
+				"Variable22",
+				"Variable23",
+				"Variable24",
+				"Variable35",
+				"Check Box9",
+				"Variable25",
+				"Variable26",
+				"Variable27",
+				"Variable36",
+				"Radio Button1",
+				"Radio Button3",
+				"Radio Button5",
+				"Radio Button2",
+				"Radio Button4",
+				"Radio Button6",
+				"Variable42",
+				"Variable43",
+				"Variable40",
+				"Variable44",
+				"Variable39",
+				"Variable51",
+				"Variable41",
+				"Variable46",
+				"Variable45",
+				"Variable48",
+				"Variable47",
+				"Button5",
+				"Button2",
+				"Button4",
+				"Button1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

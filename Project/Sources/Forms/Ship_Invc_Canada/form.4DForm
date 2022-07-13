@@ -1,0 +1,637 @@
+{
+	"destination": "detailPrinter",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 771,
+	"markerBreak": 771,
+	"markerFooter": 771,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture8": {
+					"type": "picture",
+					"top": -10,
+					"left": -18,
+					"width": 628,
+					"height": 796,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture8.svg"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Ship_nInvc_Canada": {
+					"type": "button",
+					"top": 3,
+					"left": 491,
+					"width": 92,
+					"height": 19,
+					"dataSource": "Ship_nInvc_Canada",
+					"text": "Form Events",
+					"method": "ObjectMethods/Ship_nInvc_Canada.4dm",
+					"events": [
+						"onLoad",
+						"onPrintingDetail"
+					]
+				},
+				"Page": {
+					"type": "input",
+					"top": 29,
+					"left": 532,
+					"width": 14,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Page",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PageCount": {
+					"type": "input",
+					"top": 29,
+					"left": 557,
+					"width": 14,
+					"height": 14,
+					"dataSource": "Ship_tInvc_PageCount",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Vendor": {
+					"type": "input",
+					"top": 58,
+					"left": 18,
+					"width": 269,
+					"height": 38,
+					"dataSource": "Ship_tInvc_Vendor",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ShipDate": {
+					"type": "input",
+					"top": 58,
+					"left": 324,
+					"width": 254,
+					"height": 14,
+					"dataSource": "Ship_tInvc_ShipDate",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Reference": {
+					"type": "input",
+					"top": 94,
+					"left": 324,
+					"width": 254,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Reference",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Consignee": {
+					"type": "input",
+					"top": 125,
+					"left": 18,
+					"width": 269,
+					"height": 98,
+					"dataSource": "Ship_tInvc_Consignee",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Purchase": {
+					"type": "input",
+					"top": 127,
+					"left": 324,
+					"width": 261,
+					"height": 50,
+					"dataSource": "Ship_tInvc_Purchase",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Country": {
+					"type": "input",
+					"top": 188,
+					"left": 324,
+					"width": 254,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Country",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CountryOrigin": {
+					"type": "input",
+					"top": 216,
+					"left": 324,
+					"width": 112,
+					"height": 13,
+					"dataSource": "Ship_tInvc_CountryOrigin",
+					"fontFamily": "Cambria",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Transportation": {
+					"type": "input",
+					"top": 245,
+					"left": 18,
+					"width": 286,
+					"height": 50,
+					"dataSource": "Ship_tInvc_Transportation",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Sale": {
+					"type": "input",
+					"top": 259,
+					"left": 324,
+					"width": 254,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Sale",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Currency": {
+					"type": "input",
+					"top": 284,
+					"left": 324,
+					"width": 254,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Currency",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PackageCount": {
+					"type": "input",
+					"top": 340,
+					"left": 6,
+					"width": 28,
+					"height": 124,
+					"dataSource": "Ship_tInvc_PackageCount",
+					"fontFamily": "Cambria",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Commodity": {
+					"type": "input",
+					"top": 340,
+					"left": 54,
+					"width": 288,
+					"height": 135,
+					"dataSource": "Ship_tInvc_Commodity",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onPrintingDetail"
+					]
+				},
+				"Quantity": {
+					"type": "input",
+					"top": 340,
+					"left": 358,
+					"width": 65,
+					"height": 135,
+					"dataSource": "Ship_tInvc_Quantity",
+					"class": "InvoiceBold",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Price": {
+					"type": "input",
+					"top": 340,
+					"left": 434,
+					"width": 54,
+					"height": 134,
+					"dataSource": "Ship_tInvc_Price",
+					"class": "InvoiceBold",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Total": {
+					"type": "input",
+					"top": 340,
+					"left": 508,
+					"width": 70,
+					"height": 135,
+					"dataSource": "Ship_tInvc_Total",
+					"class": "InvoiceBold",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CheckCommercial": {
+					"type": "input",
+					"top": 489,
+					"left": 330,
+					"width": 12,
+					"height": 14,
+					"dataSource": "Ship_tInvc_CheckCommercial",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CommercialInvoice": {
+					"type": "input",
+					"top": 504,
+					"left": 185,
+					"width": 159,
+					"height": 14,
+					"dataSource": "Ship_tInvc_CommercialInvoice",
+					"class": "InvoiceBold",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WeightNet": {
+					"type": "input",
+					"top": 504,
+					"left": 359,
+					"width": 63,
+					"height": 14,
+					"dataSource": "Ship_tInvc_WeightNet",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WeightGross": {
+					"type": "input",
+					"top": 504,
+					"left": 434,
+					"width": 63,
+					"height": 14,
+					"dataSource": "Ship_tInvc_WeightGross",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"InvoiceTotal": {
+					"type": "input",
+					"top": 504,
+					"left": 508,
+					"width": 70,
+					"height": 14,
+					"dataSource": "Ship_tInvc_InvoiceTotal",
+					"class": "InvoiceBold",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Exporter": {
+					"type": "input",
+					"top": 535,
+					"left": 18,
+					"width": 286,
+					"height": 38,
+					"dataSource": "Ship_tInvc_Exporter",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Originator": {
+					"type": "input",
+					"top": 533,
+					"left": 324,
+					"width": 254,
+					"height": 38,
+					"dataSource": "Ship_tInvc_Originator",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Agency": {
+					"type": "input",
+					"top": 587,
+					"left": 18,
+					"width": 286,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Agency",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CheckNotApplicable": {
+					"type": "input",
+					"top": 584,
+					"left": 517,
+					"width": 12,
+					"height": 14,
+					"dataSource": "Ship_tInvc_CheckNotApplicable",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Expenses": {
+					"type": "input",
+					"top": 647,
+					"left": 39,
+					"width": 166,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Expenses",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ExpensesCost": {
+					"type": "input",
+					"top": 647,
+					"left": 246,
+					"width": 131,
+					"height": 14,
+					"dataSource": "Ship_tInvc_ExpensesCost",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CheckRoyalty": {
+					"type": "input",
+					"top": 653,
+					"left": 476,
+					"width": 12,
+					"height": 14,
+					"dataSource": "Ship_tInvc_CheckRoyalty",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Assembly": {
+					"type": "input",
+					"top": 692,
+					"left": 39,
+					"width": 166,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Assembly",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"AssemblyCost": {
+					"type": "input",
+					"top": 695,
+					"left": 251,
+					"width": 132,
+					"height": 14,
+					"dataSource": "Ship_tInvc_AssemblyCost",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CheckPurchaser": {
+					"type": "input",
+					"top": 719,
+					"left": 475,
+					"width": 12,
+					"height": 14,
+					"dataSource": "Ship_tInvc_CheckPurchaser",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Export": {
+					"type": "input",
+					"top": 728,
+					"left": 39,
+					"width": 166,
+					"height": 14,
+					"dataSource": "Ship_tInvc_Export",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ExportCost": {
+					"type": "input",
+					"top": 730,
+					"left": 251,
+					"width": 132,
+					"height": 14,
+					"dataSource": "Ship_tInvc_ExportCost",
+					"class": "InvoiceBold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

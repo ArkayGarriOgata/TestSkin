@@ -1,0 +1,1 @@
+[Estimates_Carton_Specs:19]ObsoleteCPN:63:=fStripSpace("B"; [Estimates_Carton_Specs:19]ObsoleteCPN:63)

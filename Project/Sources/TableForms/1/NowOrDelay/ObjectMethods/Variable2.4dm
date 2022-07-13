@@ -1,0 +1,1 @@
+GOTO OBJECT:C206(lValue1)  //(S) [CONTROL]NowOrDelay'rb2 (Delay)

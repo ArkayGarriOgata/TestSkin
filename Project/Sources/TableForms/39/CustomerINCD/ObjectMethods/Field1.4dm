@@ -1,0 +1,1 @@
+txt_CapNstrip(Self:C308)

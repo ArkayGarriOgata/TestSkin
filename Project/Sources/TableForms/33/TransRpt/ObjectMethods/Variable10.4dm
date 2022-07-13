@@ -1,0 +1,1 @@
+real6t:=Round:C94(Subtotal:C97([Finished_Goods_Transactions:33]ExtendedPrice:20); 0)

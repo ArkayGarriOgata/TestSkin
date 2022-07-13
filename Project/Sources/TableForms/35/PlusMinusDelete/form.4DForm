@@ -1,0 +1,388 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"width": 730,
+	"height": 500,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 17,
+					"left": 17,
+					"width": 352,
+					"height": 15,
+					"class": "BaseField",
+					"textAlign": "left",
+					"text": "Check the locations you would like to delete:"
+				},
+				"abJobIts": {
+					"type": "listbox",
+					"top": 43,
+					"left": 17,
+					"width": 698,
+					"height": 397,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "abJobIts",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#DFFFFF",
+					"alternateFill": "#C0FFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/abJobIts.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "abDelete",
+							"dataSource": "abDelete",
+							"dataSourceTypeHint": "boolean",
+							"width": 22,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atJobIt1",
+							"dataSource": "atJobIt",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header2",
+								"text": "JobIt Number",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atProdCode",
+							"dataSource": "atProdCode",
+							"width": 145,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header3",
+								"text": "Product Code",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atLocation",
+							"dataSource": "atLocation",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header4",
+								"text": "Location",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atSkidNum",
+							"dataSource": "atSkidNum",
+							"width": 182,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header5",
+								"text": "Skid #",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "axlQuantity",
+							"dataSource": "axlQuantity",
+							"dataSourceTypeHint": "number",
+							"width": 73,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header6",
+								"text": "Quantity",
+								"dataSource": "Header6",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "axlRecNum",
+							"dataSource": "axlRecNum",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#DFFFFF",
+							"alternateFill": "#C0FFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Record Number",
+								"dataSource": "Header7",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "#000000",
+								"fill": "#DFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"AskMe": {
+					"type": "button",
+					"top": 460,
+					"left": 446,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bAskMe",
+					"text": "Ask Me",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/AskMe.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 460,
+					"left": 540,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"selectedOk": {
+					"type": "button",
+					"top": 460,
+					"left": 635,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Delete",
+					"class": "BaseButtons",
+					"stroke": "#EE0000",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"abJobIts",
+				"AskMe",
+				"bCancel",
+				"selectedOk"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

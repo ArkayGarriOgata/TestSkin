@@ -1,0 +1,715 @@
+{
+	"destination": "listScreen",
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 102,
+	"markerBody": 127,
+	"markerBreak": 129,
+	"markerFooter": 130,
+	"events": [
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bShowAll": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 24,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show All"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/ShowAll.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bShowAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowAlllabel": {
+					"type": "text",
+					"top": 56,
+					"left": 12,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Show all"
+				},
+				"bShowSubSet": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 96,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Show Subset"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bShowSubSet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowSubSetlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 84,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Show subset"
+				},
+				"bQuery": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 168,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Query.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bQuery.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bQuerylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 156,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Query"
+				},
+				"bOrderBy": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 240,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/OrderBy.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bOrderBy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBylabel": {
+					"type": "text",
+					"top": 56,
+					"left": 228,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Order by"
+				},
+				"bReport": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 312,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Report"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Report.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bReport.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bReportlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 300,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Quick reports"
+				},
+				"bLabels": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 384,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Labels"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Label.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bLabels.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLabelslabel": {
+					"type": "text",
+					"top": 56,
+					"left": 372,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Print labels"
+				},
+				"bPrint": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 456,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Selection"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrint.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrintlabel": {
+					"type": "text",
+					"top": 56,
+					"left": 444,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Print"
+				},
+				"bDone": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 528,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Done.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDonelabel": {
+					"type": "text",
+					"top": 56,
+					"left": 516,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Finish"
+				},
+				"Picture7": {
+					"type": "picture",
+					"top": 78,
+					"left": 0,
+					"width": 1012,
+					"height": 24,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture7.png"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 83,
+					"left": 4,
+					"width": 62,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "pk_id : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 83,
+					"left": 92,
+					"width": 174,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "Customer_Portal_Extract_ID : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 83,
+					"left": 298,
+					"width": 120,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "Username : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 83,
+					"left": 450,
+					"width": 120,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "Password : "
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 83,
+					"left": 602,
+					"width": 120,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "Name : "
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 83,
+					"left": 754,
+					"width": 42,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "Active : "
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 0,
+					"width": 1012,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 106,
+					"left": 4,
+					"width": 62,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]pk_id:1",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 106,
+					"left": 92,
+					"width": 174,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]Customer_Portal_Extract_ID:2",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 106,
+					"left": 298,
+					"width": 120,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]Username:3",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 106,
+					"left": 450,
+					"width": 120,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]Password:4",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 106,
+					"left": 602,
+					"width": 120,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]Name:5",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Field": {
+					"type": "checkbox",
+					"top": 106,
+					"left": 754,
+					"width": 52,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]Active:6",
+					"text": "Yes",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 78,
+					"left": 0,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 78,
+					"left": 738,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 78,
+					"left": 737,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": 78,
+					"left": 586,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 78,
+					"left": 585,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line13": {
+					"type": "line",
+					"top": 78,
+					"left": 434,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": 78,
+					"left": 433,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line14": {
+					"type": "line",
+					"top": 78,
+					"left": 282,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter5": {
+					"type": "button",
+					"top": 78,
+					"left": 281,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line15": {
+					"type": "line",
+					"top": 78,
+					"left": 76,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter6": {
+					"type": "button",
+					"top": 78,
+					"left": 75,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S6_Text1": {
+					"type": "text",
+					"top": 83,
+					"left": 871,
+					"width": 82,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "BaseLabel",
+					"text": "Extract f_key"
+				},
+				"S6_Field1": {
+					"type": "input",
+					"top": 106,
+					"left": 871,
+					"width": 122,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Logins:147]Customer_Portal_Extract_ID:2",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 78,
+					"left": 818,
+					"height": 49,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": 78,
+					"left": 817,
+					"width": 3,
+					"height": 49,
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S6_Field2": {
+					"type": "input",
+					"top": 106,
+					"left": 827,
+					"width": 35,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Customer_Portal_Extracts:158]Name:10",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bShowAll",
+					"bShowAlllabel",
+					"bShowSubSet",
+					"bShowSubSetlabel",
+					"bQuery",
+					"bQuerylabel",
+					"bOrderBy",
+					"bOrderBylabel",
+					"bReport",
+					"bReportlabel",
+					"bLabels",
+					"bLabelslabel",
+					"bPrint",
+					"bPrintlabel",
+					"bDone",
+					"bDonelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

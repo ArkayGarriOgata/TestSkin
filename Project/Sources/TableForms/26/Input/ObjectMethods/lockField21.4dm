@@ -1,0 +1,1 @@
+[Finished_Goods:26]Width_Dec:10:=fInches2Dec(Self:C308->)

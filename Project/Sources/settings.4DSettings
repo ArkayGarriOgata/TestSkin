@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4369">
+	<com.4d>
+		<database>
+			<cache adaptative="false" flush_buffer_delay="20s" keep_in_physical_memory="true" size_fixed="6144"/>
+			<misc automatic_transactions="false" standard_xpath="false"/>
+			<cpu_priority/>
+			<data_storage allow_data_read_only="true"/>
+		</database>
+		<interface>
+			<misc/>
+			<shortcuts>
+				<add_subform command="false" key_code="0" shift="false"/>
+				<cancel_input_form command="true" key_code="46"/>
+			</shortcuts>
+			<developper allow_read_only_structure="false" design_acces="-15075" display_toolbar="false"/>
+			<user flush_window="true" formula_editor_with_full_lists="true" print_progress="false" splash_screen="false"/>
+		</interface>
+		<general execute_host_database_event="true" startup_environnement="0">
+			<mover always_display_dialog="2" filters="5" forms="5" lists="5" menu_bars="5" pictures="5" style_sheets="5" tables="5" tips="5"/>
+		</general>
+		<server>
+			<misc open_admin_window_at_startup="true"/>
+			<network>
+				<client_server connections_timeout="240" use_encryption="false"/>
+				<options publication_name="aMs" use_legacy_network_layer="true"/>
+			</network>
+			<ip_config>
+				<allow_deny_table>
+					<allow_deny address="*" allow="true"/>
+					<allow_deny address="*" allow="true"/>
+				</allow_deny_table>
+			</ip_config>
+		</server>
+		<compiler>
+			<options error_file="true" initialize_local_variables="1" symbol_file="true" target="all"/>
+			<typage default_for_numeric="1"/>
+			<method_suffix variables="Variables"/>
+		</compiler>
+		<web>
+			<standalone_server>
+				<misc use_4dvar_comments="false"/>
+				<options>
+					<web_processes max_concurrent="32000" timeout_for_inactives="5"/>
+					<text_conversion standard_set="ISO-8859-1"/>
+					<cache cache_max_size="5120" use_4d_web_cache="false"/>
+					<web_passwords kind="1" with_4d_passwords="true"/>
+					<filters allow_4dsync_urls="true"/>
+					<keep_alive requests_number="100"/>
+				</options>
+				<configuration automatic_session_management="true" port_number="8080" publish_at_startup="true" session_mode="2">
+					<hosts>
+						<host home_page="index.shtml" html_root="./web/" id="0" name="default"/>
+					</hosts>
+				</configuration>
+				<log format="3" tokens="BYTES-SENT;C-DNS;C-IP;CS(COOKIE);CS(HOST);CS(REFERER);CS(USER-AGENT);USER;METHOD;CS-SIP;STATUS;CS-URI;CS-URI-QUERY;CS-URI-STEM;DATE;TIME;TRANSFER_TIME">
+					<backup daily="" hourly="" monthly="" size="0" weekly=""/>
+				</log>
+				<webservices>
+					<server allow_requests="false" name="A_WebService"/>
+				</webservices>
+				<rest launch_at_startup="true"/>
+			</standalone_server>
+			<remote>
+				<misc use_4dvar_comments="true" use_js_for_entry_control="false"/>
+				<options>
+					<cache cache_max_size="5120" use_4d_web_cache="false"/>
+					<web_processes timeout_for_inactives="5"/>
+					<filters allow_4dsync_urls="true"/>
+				</options>
+				<log tokens="">
+					<backup daily="" hourly="" mode="0" monthly="" size="0" weekly=""/>
+				</log>
+				<configuration automatic_session_management="true" session_mode="2"/>
+			</remote>
+		</web>
+		<deployment>
+			<options/>
+		</deployment>
+		<sql>
+			<publication launch_at_startup="true" port_number="19812"/>
+		</sql>
+		<php ip_address="127.0.0.1"/>
+	</com.4d>
+</preferences>

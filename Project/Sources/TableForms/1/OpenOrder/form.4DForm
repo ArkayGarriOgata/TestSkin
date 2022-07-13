@@ -1,0 +1,579 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 83,
+					"left": 357,
+					"width": 149,
+					"height": 176,
+					"sizingX": "move",
+					"fill": "#DDDDDD"
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 266,
+					"left": 15,
+					"width": 125,
+					"height": 50,
+					"sizingY": "move",
+					"stroke": "#000099",
+					"borderRadius": 5
+				},
+				"Text1": {
+					"type": "text",
+					"top": 18,
+					"left": 8,
+					"width": 468,
+					"height": 56,
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"text": "                           1. Enter the desired Estimate number and press TAB.\r                           2. Choose the Differential to be used.\r                           3. Check off any additional options.\r                           4. Press the Enter Order button.\r"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 8,
+					"width": 466,
+					"height": 17,
+					"stroke": "#000099",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Enter Order"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 87,
+					"left": 361,
+					"width": 106,
+					"height": 26,
+					"sizingX": "move",
+					"fill": "#DDDDDD",
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"text": "Special Billing Order Line items"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 77,
+					"left": 8,
+					"width": 143,
+					"height": 14,
+					"fill": "#DDDDDD",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Enter Estimate Number:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 93,
+					"left": 8,
+					"width": 339,
+					"height": 14,
+					"fill": "#DDDDDD",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Select desired Differential"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 77,
+					"left": 155,
+					"width": 112,
+					"height": 15,
+					"dataSource": "sPONum",
+					"stroke": "#000099",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "####################",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-;*\"",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 108,
+					"left": 9,
+					"width": 338,
+					"height": 150,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "aSelected",
+							"width": 19,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Geneva",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Geneva",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "AsCaseID",
+							"width": 29,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Diff",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Geneva",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "AsDiff",
+							"width": 275,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Differential Tag",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Geneva",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Variable5": {
+					"type": "checkbox",
+					"top": 122,
+					"left": 371,
+					"width": 111,
+					"height": 21,
+					"sizingX": "move",
+					"dataSource": "rInclDies",
+					"text": "Dies",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 148,
+					"left": 371,
+					"width": 110,
+					"height": 21,
+					"sizingX": "move",
+					"dataSource": "rInclPlates",
+					"text": "Plates",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "checkbox",
+					"top": 174,
+					"left": 371,
+					"width": 112,
+					"height": 21,
+					"sizingX": "move",
+					"dataSource": "rInclPnD",
+					"text": "Plates & Dies",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 371,
+					"width": 121,
+					"height": 21,
+					"sizingX": "move",
+					"dataSource": "rinclDups",
+					"text": "Dupes",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "checkbox",
+					"top": 227,
+					"left": 371,
+					"width": 121,
+					"height": 21,
+					"sizingX": "move",
+					"dataSource": "rInclPrep",
+					"text": "Prep Charges",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "radio",
+					"top": 269,
+					"left": 18,
+					"width": 125,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "rb1",
+					"text": "Use Want Qty",
+					"class": "BaseRadioButton",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "radio",
+					"top": 294,
+					"left": 18,
+					"width": 123,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "rb2",
+					"text": "Use Yield Qty",
+					"class": "BaseRadioButton",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 295,
+					"left": 175,
+					"width": 70,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNoPick",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 295,
+					"left": 260,
+					"width": 136,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bSplBill",
+					"action": "accept",
+					"text": "Special Billing Only",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 295,
+					"left": 411,
+					"width": 93,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bPick",
+					"shortcutKey": "[Enter]",
+					"text": "Enter Order",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 285,
+					"left": 481,
+					"width": 18,
+					"height": 7,
+					"sizingY": "move",
+					"dataSource": "bPick",
+					"shortcutKey": "[Return]",
+					"text": "Enter Order",
+					"display": false,
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable4",
+				"List Box1",
+				"Variable5",
+				"Variable6",
+				"Variable7",
+				"Variable1",
+				"Variable15",
+				"Group2",
+				"Variable8",
+				"Variable12",
+				"Variable9",
+				"Variable10",
+				"Variable11"
+			]
+		},
+		{
+			"objects": {
+				"Variable16": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 264,
+					"width": 112,
+					"height": 17,
+					"dataSource": "rInclFrate",
+					"text": "Special Freight",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 264,
+					"width": 112,
+					"height": 15,
+					"dataSource": "rInclPrep",
+					"text": "Preparatory",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "checkbox",
+					"top": 170,
+					"left": 264,
+					"width": 112,
+					"height": 17,
+					"dataSource": "rInclCull",
+					"text": "Culling",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "checkbox",
+					"top": 206,
+					"left": 264,
+					"width": 102,
+					"height": 17,
+					"dataSource": "rInclOther",
+					"text": "Other",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Variable8",
+				"Variable12"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

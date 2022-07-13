@@ -1,0 +1,40 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 3,
+	"bottomMargin": 3,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Core_nPeek_Who": {
+					"type": "button",
+					"top": 3,
+					"left": 3,
+					"width": 24,
+					"height": 24,
+					"visibility": "hidden",
+					"dataSource": "Core_nPeek_Who",
+					"display": false,
+					"method": "ObjectMethods/Core_nPeek_Who.4dm",
+					"events": [
+						"onLoad",
+						"onUnload"
+					]
+				}
+			}
+		},
+		null
+	]
+}

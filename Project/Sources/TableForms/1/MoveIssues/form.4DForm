@@ -1,0 +1,367 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Peek",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 361,
+					"height": 302,
+					"fill": "#CCCCCC",
+					"stroke": "#CCCCCC"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 358,
+					"height": 18,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"text": "Move Issues between JobForms"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 34,
+					"left": 63,
+					"width": 86,
+					"height": 15,
+					"dataSource": "tSubgroup",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 34,
+					"left": 223,
+					"width": 94,
+					"height": 15,
+					"dataSource": "sJobForm",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 66,
+					"left": 21,
+					"width": 111,
+					"height": 14,
+					"dataSource": "bSort",
+					"text": "Material",
+					"class": "LittleButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 66,
+					"left": 272,
+					"width": 54,
+					"height": 14,
+					"dataSource": "bSort",
+					"text": "Date",
+					"class": "LittleButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 265,
+					"left": 9,
+					"width": 76,
+					"height": 20,
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 265,
+					"left": 131,
+					"width": 76,
+					"height": 20,
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": "d",
+					"shortcutAccel": true,
+					"text": "Done",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 265,
+					"left": 268,
+					"width": 76,
+					"height": 20,
+					"dataSource": "baOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK (accept)"
+					},
+					"shortcutKey": "[Enter]",
+					"text": "Move",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 33,
+					"left": 200,
+					"width": 18,
+					"height": 16,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "To"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 34,
+					"left": 21,
+					"width": 38,
+					"height": 16,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "From"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 240,
+					"left": 9,
+					"width": 328,
+					"height": 13,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontStyle": "italic",
+					"text": "(You may use the arrow keys to move up or down this list)"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 67,
+					"left": 133,
+					"width": 70,
+					"height": 13,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Quantity"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 67,
+					"left": 208,
+					"width": 64,
+					"height": 13,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"text": "Ref No"
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 40,
+					"left": 327,
+					"width": 10,
+					"height": 20,
+					"dataSource": "bup",
+					"shortcutKey": "[up arrow]",
+					"text": "up",
+					"display": false,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 8,
+					"left": 327,
+					"width": 10,
+					"height": 20,
+					"dataSource": "bdown",
+					"shortcutKey": "[down arrow]",
+					"text": "down",
+					"display": false,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 136,
+					"left": 0,
+					"width": 365,
+					"height": 41,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Text": {
+					"type": "text",
+					"top": 92,
+					"left": 35,
+					"width": 335,
+					"height": 17,
+					"text": "grouped array deleted 8/13/21"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

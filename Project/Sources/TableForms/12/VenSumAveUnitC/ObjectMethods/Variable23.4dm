@@ -1,0 +1,1 @@
+real6t:=real5t/Subtotal:C97(real6)

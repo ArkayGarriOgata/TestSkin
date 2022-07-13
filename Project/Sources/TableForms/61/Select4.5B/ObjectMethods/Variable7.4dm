@@ -1,0 +1,3 @@
+//(S) bSearch
+gSrchCC
+//EOS

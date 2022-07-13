@@ -1,0 +1,281 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "PO Release",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"width": 750,
+	"height": 550,
+	"menuBar": "Default",
+	"markerBody": 153,
+	"markerBreak": 153,
+	"markerFooter": 163,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text11": {
+					"type": "text",
+					"top": 109,
+					"left": 101,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "POitemKey"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 147,
+					"left": 101,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "RelNumber"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 185,
+					"left": 101,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "Schd_Date"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 223,
+					"left": 101,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "Schd_Qty"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 261,
+					"left": 101,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "Actual_Date"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 300,
+					"left": 101,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fontWeight": "bold",
+					"text": "Actual_Qty"
+				},
+				"POitemKey": {
+					"type": "input",
+					"top": 110,
+					"left": 200,
+					"width": 100,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Releases:79]POitemKey:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/POitemKey.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"RelNumber": {
+					"type": "input",
+					"top": 147,
+					"left": 201,
+					"width": 40,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Releases:79]RelNumber:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schd_Date": {
+					"type": "input",
+					"top": 185,
+					"left": 200,
+					"width": 100,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Releases:79]Schd_Date:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schd_Qty": {
+					"type": "input",
+					"top": 223,
+					"left": 201,
+					"width": 100,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Releases:79]Schd_Qty:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Actual_Date": {
+					"type": "input",
+					"top": 261,
+					"left": 200,
+					"width": 100,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Releases:79]Actual_Date:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Actual_Qty": {
+					"type": "input",
+					"top": 300,
+					"left": 200,
+					"width": 100,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Releases:79]Actual_Qty:6",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"POitemKey1": {
+					"type": "input",
+					"top": 110,
+					"left": 322,
+					"width": 136,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Items:12]Raw_Matl_Code:15",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"POitemKey2": {
+					"type": "input",
+					"top": 110,
+					"left": 475,
+					"width": 246,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Items:12]RM_Description:7",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 300,
+					"left": 309,
+					"width": 361,
+					"height": 39,
+					"class": "BaseInformation",
+					"text": "Entering an Act_Qty will remove it from the Allocations report."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

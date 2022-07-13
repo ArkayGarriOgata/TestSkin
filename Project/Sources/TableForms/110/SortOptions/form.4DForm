@@ -1,0 +1,276 @@
+{
+	"destination": "detailScreen",
+	"width": 323,
+	"height": 200,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 79,
+					"height": 70,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 22,
+					"left": 80,
+					"width": 227,
+					"height": 99,
+					"class": "GlueLineReportBold",
+					"text": "Which Sort Option would you like?"
+				}
+			}
+		},
+		{
+			"objects": {
+				"rOption1": {
+					"type": "radio",
+					"top": 44,
+					"left": 95,
+					"width": 151,
+					"height": 19,
+					"dataSource": "rOption1",
+					"text": "Gluer | Priority | Jobit",
+					"class": "GlueLineReportBody",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"rOption2": {
+					"type": "radio",
+					"top": 66,
+					"left": 95,
+					"width": 192,
+					"height": 19,
+					"dataSource": "rOption2",
+					"text": "Customer | Release | Priority",
+					"class": "GlueLineReportBody",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"rOption3": {
+					"type": "radio",
+					"top": 88,
+					"left": 95,
+					"width": 82,
+					"height": 19,
+					"dataSource": "rOption3",
+					"text": "Columns:",
+					"class": "GlueLineReportBody",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"xl1": {
+					"type": "input",
+					"top": 93,
+					"left": 170,
+					"width": 22,
+					"height": 12,
+					"dataSource": "xl1",
+					"dataSourceTypeHint": "number",
+					"class": "GlueLineReportBody",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"xl2": {
+					"type": "input",
+					"top": 93,
+					"left": 206,
+					"width": 22,
+					"height": 12,
+					"dataSource": "xl2",
+					"dataSourceTypeHint": "number",
+					"class": "GlueLineReportBody",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"xl3": {
+					"type": "input",
+					"top": 93,
+					"left": 242,
+					"width": 22,
+					"height": 12,
+					"dataSource": "xl3",
+					"dataSourceTypeHint": "number",
+					"class": "GlueLineReportBody",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 170,
+					"left": 160,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 170,
+					"left": 241,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 92,
+					"left": 197,
+					"width": 6,
+					"height": 16,
+					"class": "GlueLineReportBody",
+					"text": "|"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 92,
+					"left": 232,
+					"width": 6,
+					"height": 16,
+					"class": "GlueLineReportBody",
+					"text": "|"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 132,
+					"left": 23,
+					"width": 284,
+					"height": 24,
+					"class": "GlueLineReportBody",
+					"text": "Remember, you can click on any header to sort by that column. Click again to change the sort direction."
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"rOption1",
+				"rOption2",
+				"rOption3"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

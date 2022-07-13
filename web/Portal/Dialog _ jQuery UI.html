@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://jqueryui.com/dialog/#modal-form -->
+<html class="js multiplebgs boxshadow cssgradients wf-klavikaweb-n7-active wf-sourcecodepro-n7-active wf-klavikaweb-i7-active wf-sourcecodepro-n4-active wf-active" lang="en-US"><!--<![endif]--><head data-live-domain="jqueryui.com"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Dialog | jQuery UI</title>
+
+	<meta name="author" content="JS Foundation - js.foundation">
+	<meta name="description" content="jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you&#39;re building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="https://jqueryui.com/jquery-wp-content/themes/jqueryui.com/i/favicon.ico">
+
+	<link rel="stylesheet" href="./Dialog _ jQuery UI_files/base.css">
+	<link rel="stylesheet" href="./Dialog _ jQuery UI_files/style.css">
+
+	<script type="text/javascript" async="" src="./Dialog _ jQuery UI_files/ga.js"></script><script src="./Dialog _ jQuery UI_files/modernizr.custom.2.8.3.min.js"></script>
+
+	<script src="./Dialog _ jQuery UI_files/jquery-1.11.3.js"></script>
+
+	<script src="./Dialog _ jQuery UI_files/plugins.js"></script>
+	<script src="./Dialog _ jQuery UI_files/main.js"></script>
+
+	<script src="./Dialog _ jQuery UI_files/wde1aof.js"></script>
+	<style type="text/css">.tk-klavika-web{font-family:"klavika-web",sans-serif;}.tk-source-code-pro{font-family:"source-code-pro",sans-serif;}</style><style type="text/css">@font-face{font-family:klavika-web;src:url(https://use.typekit.net/af/f3ac97/00000000000000003b9acdf9/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f3ac97/00000000000000003b9acdf9/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f3ac97/00000000000000003b9acdf9/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:klavika-web;src:url(https://use.typekit.net/af/af9173/00000000000000003b9acdfa/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/af9173/00000000000000003b9acdfa/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/af9173/00000000000000003b9acdfa/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:source-code-pro;src:url(https://use.typekit.net/af/756772/0000000000000000000179d5/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/756772/0000000000000000000179d5/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/756772/0000000000000000000179d5/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:source-code-pro;src:url(https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style><script>try{Typekit.load();}catch(e){}</script>
+	<!-- at the end of the HEAD -->
+	<link rel="stylesheet" href="./Dialog _ jQuery UI_files/docsearch.min.css">
+	<link rel="stylesheet" href="./Dialog _ jQuery UI_files/docsearch.css">
+
+<link rel="https://api.w.org/" href="https://jqueryui.com/wp-json/">
+<meta name="generator" content="WordPress 4.5.2">
+<link rel="alternate" type="application/json+oembed" href="https://jqueryui.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjqueryui.com%2Fdialog%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://jqueryui.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjqueryui.com%2Fdialog%2F&amp;format=xml">
+
+</head>
+<body class="jquery-ui page page-id-23 page-template-default page-slug-dialog single-author singular">
+
+<header>
+	<section id="global-nav">
+		<nav>
+			<div class="constrain">
+				<ul class="projects">
+					<li class="project jquery"><a href="https://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="https://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="https://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="https://qunitjs.com/" title="QUnit">QUnit</a></li>
+				</ul>
+				<ul class="links l_tinynav1">
+					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
+					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
+						<ul>
+							<li><a href="https://js.foundation/CLA">CLA</a></li>
+							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
+							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
+							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
+							<li><a href="https://contribute.jquery.org/documentation/">Documentation</a></li>
+							<li><a href="https://contribute.jquery.org/web-sites/">Web Sites</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://js.foundation/events">Events</a>
+						<ul class="wide">
+																		</ul>
+					</li>
+					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
+						<ul>
+							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="https://irc.jquery.org/">IRC/Chat</a></li>
+							<li><a href="https://forum.jquery.com/">Forums</a></li>
+							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="https://js.foundation/">JS Foundation</a>
+						<ul>
+							<li><a href="https://js.foundation/about/join">Join</a></li>
+							<li><a href="https://js.foundation/about/members">Members</a></li>
+							<li><a href="https://js.foundation/about/leadership">Leadership</a></li>
+							<li><a href="https://js.foundation/community/code-of-conduct">Conduct</a></li>
+							<li><a href="https://js.foundation/about/donate">Donate</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+<div id="container">
+	<div id="logo-events" class="constrain clearfix">
+		<h2 class="logo"><a href="https://jqueryui.com/" title="jQuery UI">jQuery UI</a></h2>
+
+		<aside>
+			<div id="broadcast">
+				<a href="https://js.foundation/about/donate" title="Support the JS Foundation"><img src="./Dialog _ jQuery UI_files/donate.png" title="Support the JS Foundation" alt="Support the JS Foundation" border="0" width="400" height="100"></a>
+			</div>
+		</aside>
+	</div>
+
+	<nav id="main" class="constrain clearfix">
+		<div class="menu-top-container">
+	<ul id="menu-top" class="menu l_tinynav2">
+<li class="menu-item"><a href="https://jqueryui.com/demos/">Demos</a></li>
+<li class="menu-item"><a href="https://jqueryui.com/download/">Download</a></li>
+<li class="menu-item"><a href="https://api.jqueryui.com/">API Documentation</a></li>
+<li class="menu-item"><a href="https://jqueryui.com/themeroller/">Themes</a></li>
+<li class="menu-item"><a href="https://jqueryui.com/development/">Development</a></li>
+<li class="menu-item"><a href="https://jqueryui.com/support/">Support</a></li>
+<li class="menu-item"><a href="https://blog.jqueryui.com/">Blog</a></li>
+<li class="menu-item"><a href="https://jqueryui.com/about/">About</a></li>
+	</ul><select id="tinynav2" class="tinynav tinynav2"><option>Navigate...</option><option value="https://jqueryui.com/demos/">Demos</option><option value="https://jqueryui.com/download/">Download</option><option value="https://api.jqueryui.com/">API Documentation</option><option value="https://jqueryui.com/themeroller/">Themes</option><option value="https://jqueryui.com/development/">Development</option><option value="https://jqueryui.com/support/">Support</option><option value="https://blog.jqueryui.com/">Blog</option><option value="https://jqueryui.com/about/">About</option></select>
+</div>
+
+		<form method="get" class="searchform" action="https://jqueryui.com/">
+	<button type="submit" class="icon-search"><span class="visuallyhidden">search</span></button>
+	<label>
+		<span class="visuallyhidden">Search jQuery UI</span>
+		<input type="text" name="s" value="" placeholder="Search">
+	</label>
+</form>
+	</nav>
+
+	<div id="content-wrapper" class="clearfix row">
+
+
+<div class="content-right twelve columns">
+	<div id="content">
+				<h1 class="entry-title">Dialog</h1>
+		<hr>
+		
+		
+<p class="desc">Open content in an interactive overlay.</p>
+
+<div class="demo-list"><h2>Examples</h2><ul><li class=""><a href="https://jqueryui.com/resources/demos/dialog/default.html">Default functionality</a></li><li class=""><a href="https://jqueryui.com/resources/demos/dialog/animated.html">Animation</a></li><li class=""><a href="https://jqueryui.com/resources/demos/dialog/modal-confirmation.html">Modal confirmation</a></li><li class="active"><a href="https://jqueryui.com/resources/demos/dialog/modal-form.html">Modal form</a></li><li class=""><a href="https://jqueryui.com/resources/demos/dialog/modal-message.html">Modal message</a></li></ul></div><iframe src="./Dialog _ jQuery UI_files/modal-form.html" class="demo-frame"></iframe><div class="demo-description">
+<p>Use a modal dialog to require that the user enter data during a multi-step process.  Embed form markup in the content area, set the <code>modal</code> option to true, and specify primary and secondary user actions with the <code>buttons</code> option.</p>
+</div><div class="view-source"><a tabindex="0"><i class="icon-eye-open"></i> view source</a><div style="display: block;"><div class="syntaxhighlighter xml">
+	<table>
+		<tbody>
+			<tr>
+				
+				<td class="gutter">
+					
+						<div class="line n1">1</div>
+					
+						<div class="line n2">2</div>
+					
+						<div class="line n3">3</div>
+					
+						<div class="line n4">4</div>
+					
+						<div class="line n5">5</div>
+					
+						<div class="line n6">6</div>
+					
+						<div class="line n7">7</div>
+					
+						<div class="line n8">8</div>
+					
+						<div class="line n9">9</div>
+					
+						<div class="line n10">10</div>
+					
+						<div class="line n11">11</div>
+					
+						<div class="line n12">12</div>
+					
+						<div class="line n13">13</div>
+					
+						<div class="line n14">14</div>
+					
+						<div class="line n15">15</div>
+					
+						<div class="line n16">16</div>
+					
+						<div class="line n17">17</div>
+					
+						<div class="line n18">18</div>
+					
+						<div class="line n19">19</div>
+					
+						<div class="line n20">20</div>
+					
+						<div class="line n21">21</div>
+					
+						<div class="line n22">22</div>
+					
+						<div class="line n23">23</div>
+					
+						<div class="line n24">24</div>
+					
+						<div class="line n25">25</div>
+					
+						<div class="line n26">26</div>
+					
+						<div class="line n27">27</div>
+					
+						<div class="line n28">28</div>
+					
+						<div class="line n29">29</div>
+					
+						<div class="line n30">30</div>
+					
+						<div class="line n31">31</div>
+					
+						<div class="line n32">32</div>
+					
+						<div class="line n33">33</div>
+					
+						<div class="line n34">34</div>
+					
+						<div class="line n35">35</div>
+					
+						<div class="line n36">36</div>
+					
+						<div class="line n37">37</div>
+					
+						<div class="line n38">38</div>
+					
+						<div class="line n39">39</div>
+					
+						<div class="line n40">40</div>
+					
+						<div class="line n41">41</div>
+					
+						<div class="line n42">42</div>
+					
+						<div class="line n43">43</div>
+					
+						<div class="line n44">44</div>
+					
+						<div class="line n45">45</div>
+					
+						<div class="line n46">46</div>
+					
+						<div class="line n47">47</div>
+					
+						<div class="line n48">48</div>
+					
+						<div class="line n49">49</div>
+					
+						<div class="line n50">50</div>
+					
+						<div class="line n51">51</div>
+					
+						<div class="line n52">52</div>
+					
+						<div class="line n53">53</div>
+					
+						<div class="line n54">54</div>
+					
+						<div class="line n55">55</div>
+					
+						<div class="line n56">56</div>
+					
+						<div class="line n57">57</div>
+					
+						<div class="line n58">58</div>
+					
+						<div class="line n59">59</div>
+					
+						<div class="line n60">60</div>
+					
+						<div class="line n61">61</div>
+					
+						<div class="line n62">62</div>
+					
+						<div class="line n63">63</div>
+					
+						<div class="line n64">64</div>
+					
+						<div class="line n65">65</div>
+					
+						<div class="line n66">66</div>
+					
+						<div class="line n67">67</div>
+					
+						<div class="line n68">68</div>
+					
+						<div class="line n69">69</div>
+					
+						<div class="line n70">70</div>
+					
+						<div class="line n71">71</div>
+					
+						<div class="line n72">72</div>
+					
+						<div class="line n73">73</div>
+					
+						<div class="line n74">74</div>
+					
+						<div class="line n75">75</div>
+					
+						<div class="line n76">76</div>
+					
+						<div class="line n77">77</div>
+					
+						<div class="line n78">78</div>
+					
+						<div class="line n79">79</div>
+					
+						<div class="line n80">80</div>
+					
+						<div class="line n81">81</div>
+					
+						<div class="line n82">82</div>
+					
+						<div class="line n83">83</div>
+					
+						<div class="line n84">84</div>
+					
+						<div class="line n85">85</div>
+					
+						<div class="line n86">86</div>
+					
+						<div class="line n87">87</div>
+					
+						<div class="line n88">88</div>
+					
+						<div class="line n89">89</div>
+					
+						<div class="line n90">90</div>
+					
+						<div class="line n91">91</div>
+					
+						<div class="line n92">92</div>
+					
+						<div class="line n93">93</div>
+					
+						<div class="line n94">94</div>
+					
+						<div class="line n95">95</div>
+					
+						<div class="line n96">96</div>
+					
+						<div class="line n97">97</div>
+					
+						<div class="line n98">98</div>
+					
+						<div class="line n99">99</div>
+					
+						<div class="line n100">100</div>
+					
+						<div class="line n101">101</div>
+					
+						<div class="line n102">102</div>
+					
+						<div class="line n103">103</div>
+					
+						<div class="line n104">104</div>
+					
+						<div class="line n105">105</div>
+					
+						<div class="line n106">106</div>
+					
+						<div class="line n107">107</div>
+					
+						<div class="line n108">108</div>
+					
+						<div class="line n109">109</div>
+					
+						<div class="line n110">110</div>
+					
+						<div class="line n111">111</div>
+					
+						<div class="line n112">112</div>
+					
+						<div class="line n113">113</div>
+					
+						<div class="line n114">114</div>
+					
+						<div class="line n115">115</div>
+					
+						<div class="line n116">116</div>
+					
+						<div class="line n117">117</div>
+					
+						<div class="line n118">118</div>
+					
+						<div class="line n119">119</div>
+					
+						<div class="line n120">120</div>
+					
+						<div class="line n121">121</div>
+					
+						<div class="line n122">122</div>
+					
+						<div class="line n123">123</div>
+					
+						<div class="line n124">124</div>
+					
+						<div class="line n125">125</div>
+					
+						<div class="line n126">126</div>
+					
+						<div class="line n127">127</div>
+					
+						<div class="line n128">128</div>
+					
+						<div class="line n129">129</div>
+					
+						<div class="line n130">130</div>
+					
+						<div class="line n131">131</div>
+					
+						<div class="line n132">132</div>
+					
+						<div class="line n133">133</div>
+					
+						<div class="line n134">134</div>
+					
+						<div class="line n135">135</div>
+					
+						<div class="line n136">136</div>
+					
+						<div class="line n137">137</div>
+					
+						<div class="line n138">138</div>
+					
+						<div class="line n139">139</div>
+					
+						<div class="line n140">140</div>
+					
+						<div class="line n141">141</div>
+					
+						<div class="line n142">142</div>
+					
+						<div class="line n143">143</div>
+					
+						<div class="line n144">144</div>
+					
+						<div class="line n145">145</div>
+					
+						<div class="line n146">146</div>
+					
+						<div class="line n147">147</div>
+					
+						<div class="line n148">148</div>
+					
+						<div class="line n149">149</div>
+					
+						<div class="line n150">150</div>
+					
+						<div class="line n151">151</div>
+					
+						<div class="line n152">152</div>
+					
+						<div class="line n153">153</div>
+					
+						<div class="line n154">154</div>
+					
+						<div class="line n155">155</div>
+					
+						<div class="line n156">156</div>
+					
+						<div class="line n157">157</div>
+					
+						<div class="line n158">158</div>
+					
+						<div class="line n159">159</div>
+					
+				</td>
+				
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"viewport"</span> <span class="attribute">content</span>=<span class="value">"width=device-width, initial-scale=1"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>jQuery UI Dialog - Modal form<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"/resources/demos/style.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">label</span>, <span class="tag">input</span> <span class="rules">{ <span class="rule"><span class="attribute">display</span>:<span class="value">block;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">input</span><span class="class">.text</span> <span class="rules">{ <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"><span class="number">12</span>px;</span></span> <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">95</span>%;</span></span> <span class="rule"><span class="attribute">padding</span>:<span class="value"> .<span class="number">4</span>em;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">fieldset</span> <span class="rules">{ <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span>;</span></span> <span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">0</span>;</span></span> <span class="rule"><span class="attribute">margin-top</span>:<span class="value"><span class="number">25</span>px;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">h1</span> <span class="rules">{ <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.2</span>em;</span></span> <span class="rule"><span class="attribute">margin</span>:<span class="value"> .<span class="number">6</span>em <span class="number">0</span>;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">div</span><span class="id">#users-contain</span> <span class="rules">{ <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">350</span>px;</span></span> <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">20</span>px <span class="number">0</span>;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">div</span><span class="id">#users-contain</span> <span class="tag">table</span> <span class="rules">{ <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">1</span>em <span class="number">0</span>;</span></span> <span class="rule"><span class="attribute">border-collapse</span>:<span class="value"> collapse;</span></span> <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>%;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">div</span><span class="id">#users-contain</span> <span class="tag">table</span> <span class="tag">td</span>, <span class="tag">div</span><span class="id">#users-contain</span> <span class="tag">table</span> <span class="tag">th</span> <span class="rules">{ <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid <span class="hexcolor">#eee</span>;</span></span> <span class="rule"><span class="attribute">padding</span>:<span class="value"> .<span class="number">6</span>em <span class="number">10</span>px;</span></span> <span class="rule"><span class="attribute">text-align</span>:<span class="value"> left;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="class">.ui-dialog</span> <span class="class">.ui-state-error</span> <span class="rules">{ <span class="rule"><span class="attribute">padding</span>:<span class="value"> .<span class="number">3</span>em;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="class">.validateTips</span> <span class="rules">{ <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1</span>px solid transparent;</span></span> <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0.3</span>em;</span></span> <span class="rule">}</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://code.jquery.com/jquery-1.12.4.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://code.jquery.com/ui/1.12.1/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>  $( <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    <span class="keyword">var</span> dialog, form,</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      <span class="comment">// From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29</span></code></div></div><div class="container"><div class="line"><code>      emailRegex = <span class="regexp">/^[a-zA-Z0-9.!#$%&amp;'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/</span>,</code></div></div><div class="container"><div class="line"><code>      name = $( <span class="string">"#name"</span> ),</code></div></div><div class="container"><div class="line"><code>      email = $( <span class="string">"#email"</span> ),</code></div></div><div class="container"><div class="line"><code>      password = $( <span class="string">"#password"</span> ),</code></div></div><div class="container"><div class="line"><code>      allFields = $( [] ).add( name ).add( email ).add( password ),</code></div></div><div class="container"><div class="line"><code>      tips = $( <span class="string">".validateTips"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    <span class="function"><span class="keyword">function</span> <span class="title">updateTips</span><span class="params">( t )</span> {</span></code></div></div><div class="container"><div class="line"><code>      tips</code></div></div><div class="container"><div class="line"><code>        .text( t )</code></div></div><div class="container"><div class="line"><code>        .addClass( <span class="string">"ui-state-highlight"</span> );</code></div></div><div class="container"><div class="line"><code>      setTimeout(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>        tips.removeClass( <span class="string">"ui-state-highlight"</span>, <span class="number">1500</span> );</code></div></div><div class="container"><div class="line"><code>      }, <span class="number">500</span> );</code></div></div><div class="container"><div class="line"><code>    }</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    <span class="function"><span class="keyword">function</span> <span class="title">checkLength</span><span class="params">( o, n, min, max )</span> {</span></code></div></div><div class="container"><div class="line"><code>      <span class="keyword">if</span> ( o.val().length &gt; max || o.val().length &lt; min ) {</code></div></div><div class="container"><div class="line"><code>        o.addClass( <span class="string">"ui-state-error"</span> );</code></div></div><div class="container"><div class="line"><code>        updateTips( <span class="string">"Length of "</span> + n + <span class="string">" must be between "</span> +</code></div></div><div class="container"><div class="line"><code>          min + <span class="string">" and "</span> + max + <span class="string">"."</span> );</code></div></div><div class="container"><div class="line"><code>        <span class="keyword">return</span> <span class="literal">false</span>;</code></div></div><div class="container"><div class="line"><code>      } <span class="keyword">else</span> {</code></div></div><div class="container"><div class="line"><code>        <span class="keyword">return</span> <span class="literal">true</span>;</code></div></div><div class="container"><div class="line"><code>      }</code></div></div><div class="container"><div class="line"><code>    }</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    <span class="function"><span class="keyword">function</span> <span class="title">checkRegexp</span><span class="params">( o, regexp, n )</span> {</span></code></div></div><div class="container"><div class="line"><code>      <span class="keyword">if</span> ( !( regexp.test( o.val() ) ) ) {</code></div></div><div class="container"><div class="line"><code>        o.addClass( <span class="string">"ui-state-error"</span> );</code></div></div><div class="container"><div class="line"><code>        updateTips( n );</code></div></div><div class="container"><div class="line"><code>        <span class="keyword">return</span> <span class="literal">false</span>;</code></div></div><div class="container"><div class="line"><code>      } <span class="keyword">else</span> {</code></div></div><div class="container"><div class="line"><code>        <span class="keyword">return</span> <span class="literal">true</span>;</code></div></div><div class="container"><div class="line"><code>      }</code></div></div><div class="container"><div class="line"><code>    }</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    <span class="function"><span class="keyword">function</span> <span class="title">addUser</span><span class="params">()</span> {</span></code></div></div><div class="container"><div class="line"><code>      <span class="keyword">var</span> valid = <span class="literal">true</span>;</code></div></div><div class="container"><div class="line"><code>      allFields.removeClass( <span class="string">"ui-state-error"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      valid = valid &amp;&amp; checkLength( name, <span class="string">"username"</span>, <span class="number">3</span>, <span class="number">16</span> );</code></div></div><div class="container"><div class="line"><code>      valid = valid &amp;&amp; checkLength( email, <span class="string">"email"</span>, <span class="number">6</span>, <span class="number">80</span> );</code></div></div><div class="container"><div class="line"><code>      valid = valid &amp;&amp; checkLength( password, <span class="string">"password"</span>, <span class="number">5</span>, <span class="number">16</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      valid = valid &amp;&amp; checkRegexp( name, <span class="regexp">/^[a-z]([0-9a-z_\s])+$/i</span>, <span class="string">"Username may consist of a-z, 0-9, underscores, spaces and must begin with a letter."</span> );</code></div></div><div class="container"><div class="line"><code>      valid = valid &amp;&amp; checkRegexp( email, emailRegex, <span class="string">"eg. ui@jquery.com"</span> );</code></div></div><div class="container"><div class="line"><code>      valid = valid &amp;&amp; checkRegexp( password, <span class="regexp">/^([0-9a-zA-Z])+$/</span>, <span class="string">"Password field only allow : a-z 0-9"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      <span class="keyword">if</span> ( valid ) {</code></div></div><div class="container"><div class="line"><code>        $( <span class="string">"#users tbody"</span> ).append( <span class="string">"&lt;tr&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>          <span class="string">"&lt;td&gt;"</span> + name.val() + <span class="string">"&lt;/td&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>          <span class="string">"&lt;td&gt;"</span> + email.val() + <span class="string">"&lt;/td&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>          <span class="string">"&lt;td&gt;"</span> + password.val() + <span class="string">"&lt;/td&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>        <span class="string">"&lt;/tr&gt;"</span> );</code></div></div><div class="container"><div class="line"><code>        dialog.dialog( <span class="string">"close"</span> );</code></div></div><div class="container"><div class="line"><code>      }</code></div></div><div class="container"><div class="line"><code>      <span class="keyword">return</span> valid;</code></div></div><div class="container"><div class="line"><code>    }</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    dialog = $( <span class="string">"#dialog-form"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>      autoOpen: <span class="literal">false</span>,</code></div></div><div class="container"><div class="line"><code>      height: <span class="number">400</span>,</code></div></div><div class="container"><div class="line"><code>      width: <span class="number">350</span>,</code></div></div><div class="container"><div class="line"><code>      modal: <span class="literal">true</span>,</code></div></div><div class="container"><div class="line"><code>      buttons: {</code></div></div><div class="container"><div class="line"><code>        <span class="string">"Create an account"</span>: addUser,</code></div></div><div class="container"><div class="line"><code>        Cancel: <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>          dialog.dialog( <span class="string">"close"</span> );</code></div></div><div class="container"><div class="line"><code>        }</code></div></div><div class="container"><div class="line"><code>      },</code></div></div><div class="container"><div class="line"><code>      close: <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>        form[ <span class="number">0</span> ].reset();</code></div></div><div class="container"><div class="line"><code>        allFields.removeClass( <span class="string">"ui-state-error"</span> );</code></div></div><div class="container"><div class="line"><code>      }</code></div></div><div class="container"><div class="line"><code>    });</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    form = dialog.find( <span class="string">"form"</span> ).on( <span class="string">"submit"</span>, <span class="keyword">function</span>( event ) {</code></div></div><div class="container"><div class="line"><code>      event.preventDefault();</code></div></div><div class="container"><div class="line"><code>      addUser();</code></div></div><div class="container"><div class="line"><code>    });</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>    $( <span class="string">"#create-user"</span> ).button().on( <span class="string">"click"</span>, <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>      dialog.dialog( <span class="string">"open"</span> );</code></div></div><div class="container"><div class="line"><code>    });</code></div></div><div class="container"><div class="line"><code>  } );</code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"dialog-form"</span> <span class="attribute">title</span>=<span class="value">"Create new user"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"validateTips"</span>&gt;</span>All form fields are required.<span class="tag">&lt;/<span class="title">p</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">form</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">fieldset</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"name"</span>&gt;</span>Name<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"name"</span> <span class="attribute">id</span>=<span class="value">"name"</span> <span class="attribute">value</span>=<span class="value">"Jane Smith"</span> <span class="attribute">class</span>=<span class="value">"text ui-widget-content ui-corner-all"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"email"</span>&gt;</span>Email<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">name</span>=<span class="value">"email"</span> <span class="attribute">id</span>=<span class="value">"email"</span> <span class="attribute">value</span>=<span class="value">"jane@smith.com"</span> <span class="attribute">class</span>=<span class="value">"text ui-widget-content ui-corner-all"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"password"</span>&gt;</span>Password<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"password"</span> <span class="attribute">name</span>=<span class="value">"password"</span> <span class="attribute">id</span>=<span class="value">"password"</span> <span class="attribute">value</span>=<span class="value">"xxxxxxx"</span> <span class="attribute">class</span>=<span class="value">"text ui-widget-content ui-corner-all"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      <span class="comment">&lt;!-- Allow form submission with keyboard without duplicating the dialog button --&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">tabindex</span>=<span class="value">"-1"</span> <span class="attribute">style</span>=<span class="value">"position:absolute; top:-1000px"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;/<span class="title">fieldset</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">form</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"users-contain"</span> <span class="attribute">class</span>=<span class="value">"ui-widget"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Existing Users:<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">table</span> <span class="attribute">id</span>=<span class="value">"users"</span> <span class="attribute">class</span>=<span class="value">"ui-widget ui-widget-content"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">thead</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">tr</span> <span class="attribute">class</span>=<span class="value">"ui-widget-header "</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>        <span class="tag">&lt;<span class="title">th</span>&gt;</span>Name<span class="tag">&lt;/<span class="title">th</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>        <span class="tag">&lt;<span class="title">th</span>&gt;</span>Email<span class="tag">&lt;/<span class="title">th</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>        <span class="tag">&lt;<span class="title">th</span>&gt;</span>Password<span class="tag">&lt;/<span class="title">th</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;/<span class="title">tr</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;/<span class="title">thead</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">tbody</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">tr</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>        <span class="tag">&lt;<span class="title">td</span>&gt;</span>John Doe<span class="tag">&lt;/<span class="title">td</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>        <span class="tag">&lt;<span class="title">td</span>&gt;</span>john.doe@example.com<span class="tag">&lt;/<span class="title">td</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>        <span class="tag">&lt;<span class="title">td</span>&gt;</span>johndoe1<span class="tag">&lt;/<span class="title">td</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;/<span class="title">tr</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;/<span class="title">tbody</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">button</span> <span class="attribute">id</span>=<span class="value">"create-user"</span>&gt;</span>Create new user<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</div></div>
+
+<p>Want to learn more about the dialog widget? Check out the
+<a href="http://api.jqueryui.com/dialog/">API documentation</a>.</p>	</div>
+	<div id="sidebar" class="widget-area" role="complementary">
+	<aside class="widget">
+		<h3 class="widget-title">Interactions</h3>
+		<ul>
+			<li><a href="https://jqueryui.com/draggable/">Draggable</a></li><li><a href="https://jqueryui.com/droppable/">Droppable</a></li><li><a href="https://jqueryui.com/resizable/">Resizable</a></li><li><a href="https://jqueryui.com/selectable/">Selectable</a></li><li><a href="https://jqueryui.com/sortable/">Sortable</a></li>		</ul>
+	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Widgets</h3>
+		<ul>
+			<li><a href="https://jqueryui.com/accordion/">Accordion</a></li><li><a href="https://jqueryui.com/autocomplete/">Autocomplete</a></li><li><a href="https://jqueryui.com/button/">Button</a></li><li><a href="https://jqueryui.com/checkboxradio/">Checkboxradio</a></li><li><a href="https://jqueryui.com/controlgroup/">Controlgroup</a></li><li><a href="https://jqueryui.com/datepicker/">Datepicker</a></li><li><a href="https://jqueryui.com/dialog/">Dialog</a></li><li><a href="https://jqueryui.com/menu/">Menu</a></li><li><a href="https://jqueryui.com/progressbar/">Progressbar</a></li><li><a href="https://jqueryui.com/selectmenu/">Selectmenu</a></li><li><a href="https://jqueryui.com/slider/">Slider</a></li><li><a href="https://jqueryui.com/spinner/">Spinner</a></li><li><a href="https://jqueryui.com/tabs/">Tabs</a></li><li><a href="https://jqueryui.com/tooltip/">Tooltip</a></li>		</ul>
+	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Effects</h3>
+		<ul>
+			<li><a href="https://jqueryui.com/addClass/">Add Class</a></li><li><a href="https://jqueryui.com/animate/">Color Animation</a></li><li><a href="https://jqueryui.com/easing/">Easing</a></li><li><a href="https://jqueryui.com/effect/">Effect</a></li><li><a href="https://jqueryui.com/hide/">Hide</a></li><li><a href="https://jqueryui.com/removeClass/">Remove Class</a></li><li><a href="https://jqueryui.com/show/">Show</a></li><li><a href="https://jqueryui.com/switchClass/">Switch Class</a></li><li><a href="https://jqueryui.com/toggle/">Toggle</a></li><li><a href="https://jqueryui.com/toggleClass/">Toggle Class</a></li>		</ul>
+	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Utilities</h3>
+		<ul>
+			<li><a href="https://jqueryui.com/position/">Position</a></li><li><a href="https://jqueryui.com/widget/">Widget Factory</a></li>		</ul>
+	</aside>
+</div>
+</div>
+
+	</div>
+</div>
+<footer class="clearfix simple">
+	<div class="constrain">
+		<div class="row">
+			<div class="six columns offset-by-three">
+				<h3><span>Books</span></h3>
+				<ul class="books">
+					<li>
+						<a href="https://www.manning.com/books/jquery-ui-in-action">
+							<span><img src="./Dialog _ jQuery UI_files/jquery-ui-in-action.jpg" alt="jQuery UI in Action by TJ VanToll" width="92" height="114"></span>
+							<strong>jQuery UI in Action</strong><br>
+							<cite>TJ VanToll</cite>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.packtpub.com/web-development/jquery-ui-themes-beginners-guide">
+							<img src="./Dialog _ jQuery UI_files/jquery-ui-themes.jpg" alt="jQuery UI Themes by Adam Boduch" width="92" height="114">
+							<span class="book-title">jQuery UI Themes</span>
+							<cite>Adam Boduch</cite>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.packtpub.com/web-development/jquery-ui-cookbook">
+							<img src="./Dialog _ jQuery UI_files/jquery-ui-cookbook.jpg" alt="jQuery UI Cookbook by Adam Boduch" width="92" height="114">
+							<span class="book-title">jQuery UI Cookbook</span>
+							<cite>Adam Boduch</cite>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+<div id="legal">
+	<ul class="footer-site-links">
+			<li><a class="icon-pencil" href="https://learn.jquery.com/">Learning Center</a></li>
+			<li><a class="icon-group" href="https://forum.jquery.com/using-jquery-ui/">Forum</a></li>
+			<li><a class="icon-wrench" href="https://api.jqueryui.com/">API</a></li>
+			<li><a class="icon-twitter" href="https://twitter.com/jqueryui">Twitter</a></li>
+			<li><a class="icon-comments" href="https://irc.jquery.org/">IRC</a></li>
+			<li><a class="icon-github" href="https://github.com/jquery">GitHub</a></li>
+	</ul>
+	<p class="copyright">
+		Copyright 2020 <a href="https://jquery.org/team/">The jQuery Foundation</a>.
+		<a href="https://jquery.org/license/">jQuery License</a>
+		<span class="sponsor-line"><a href="https://www.digitalocean.com/" class="do-link">Web hosting by Digital Ocean</a> | <a href="https://www.stackpath.com/" class="sp-link">CDN by StackPath</a></span>
+	</p>
+</div>
+
+	</div>
+</footer>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1076265-1']);
+    _gaq.push(['_setDomainName', 'jqueryui.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script type="text/javascript" src="./Dialog _ jQuery UI_files/comment-reply.min.js"></script>
+<script type="text/javascript" src="./Dialog _ jQuery UI_files/wp-embed.min.js"></script>
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>

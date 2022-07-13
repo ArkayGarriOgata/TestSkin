@@ -1,0 +1,153 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 67,
+	"markerBreak": 67,
+	"markerFooter": 67,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperWidth": "80pt",
+		"paperHeight": "189pt",
+		"scale": 48
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Field3": {
+					"type": "input",
+					"top": 1,
+					"left": 0,
+					"width": 167,
+					"height": 16,
+					"dataSource": "[Customers:16]Name:2",
+					"stroke": "#000000",
+					"fontFamily": "New York",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ProductCode": {
+					"type": "input",
+					"top": 35,
+					"left": 0,
+					"width": 107,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]ProductCode:3",
+					"stroke": "#000000",
+					"fontFamily": "New York",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ControlNumber": {
+					"type": "input",
+					"top": 35,
+					"left": 108,
+					"width": 58,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]ControlNumber:2",
+					"stroke": "#000000",
+					"fontFamily": "New York",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 0,
+					"width": 165,
+					"height": 14,
+					"dataSource": "[Finished_Goods:26]CartonDesc:3",
+					"stroke": "#000000",
+					"fontFamily": "New York",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"imagingDateQAdone": {
+					"type": "input",
+					"top": 51,
+					"left": 0,
+					"width": 90,
+					"height": 14,
+					"dataSource": "[Finished_Goods_Specifications:98]DateProofRead:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "New York",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

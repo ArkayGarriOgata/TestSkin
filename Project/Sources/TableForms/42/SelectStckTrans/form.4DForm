@@ -1,0 +1,260 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 6,
+					"width": 228,
+					"height": 13,
+					"stroke": "#EE0000",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Select Job Nos. for Stock Transfer....."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 21,
+					"left": 20,
+					"width": 98,
+					"height": 13,
+					"fill": "#EE0000",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "From Job No:"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 120,
+					"width": 65,
+					"height": 15,
+					"fill": "transparent",
+					"stroke": "#EE0000"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 41,
+					"left": 20,
+					"width": 98,
+					"height": 13,
+					"fill": "#EE0000",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "To Job No:"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 120,
+					"width": 65,
+					"height": 15,
+					"fill": "transparent",
+					"stroke": "#EE0000"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 61,
+					"left": 20,
+					"width": 98,
+					"height": 13,
+					"fill": "#EE0000",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Qty Transferred:"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 60,
+					"left": 120,
+					"width": 65,
+					"height": 15,
+					"fill": "transparent",
+					"stroke": "#EE0000"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 21,
+					"left": 121,
+					"width": 63,
+					"height": 13,
+					"dataSource": "sJobNoF",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 41,
+					"left": 121,
+					"width": 63,
+					"height": 13,
+					"dataSource": "sJobNoT",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 61,
+					"left": 121,
+					"width": 63,
+					"height": 13,
+					"dataSource": "rQtyTrans",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 89,
+					"left": 14,
+					"width": 74,
+					"height": 20,
+					"dataSource": "bCANCEL",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "CANCEL",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 89,
+					"left": 111,
+					"width": 74,
+					"height": 20,
+					"dataSource": "bSEARCH",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "SEARCH",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

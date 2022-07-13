@@ -1,0 +1,1 @@
+IBOL_IntraPlanTransfer("get_skid_list"; [WMS_InternalBOLs:163]bol_number:2)  //"BNRFG")

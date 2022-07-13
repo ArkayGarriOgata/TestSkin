@@ -1,0 +1,515 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 32,
+	"markerBreak": 33,
+	"markerFooter": 33,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 1,
+					"width": 581,
+					"height": 15,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 28,
+					"width": 93,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Product Code"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 122,
+					"width": 58,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Want Qty"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 1,
+					"width": 26,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"text": "Item"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 238,
+					"width": 55,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Price W"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 468,
+					"width": 57,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Allocat W"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 294,
+					"width": 58,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Yld Qty"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 181,
+					"width": 56,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Cost W"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 16,
+					"left": 28,
+					"width": 90,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]ProductCode:5",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 16,
+					"left": 179,
+					"width": 51,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]CostWant_Per_M:25",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 16,
+					"left": 2,
+					"width": 19,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]Item:1",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 0,
+					"left": 410,
+					"width": 57,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Price Yld"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 0,
+					"left": 353,
+					"width": 56,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Cost Yld"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 16,
+					"left": 354,
+					"width": 52,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]CostYield_Per_M:26",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 13,
+					"left": 121,
+					"height": 20,
+					"stroke": "#7F93FF"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 16,
+					"left": 123,
+					"width": 53,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]Quantity_Want:27",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 16,
+					"left": 236,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]PriceWant_Per_M:28",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 16,
+					"left": 296,
+					"width": 53,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]Quantity_Yield:29",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 16,
+					"left": 411,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]PriceYield_PerM:30",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 16,
+					"left": 469,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]AllocationPercent:58",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "0.0000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 16,
+					"left": 527,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Estimates_Carton_Specs:19]AllocationPrctYield:59",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "0.0000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 0,
+					"left": 526,
+					"width": 58,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Allocat Y"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 582,
+					"stroke": "#AAAAAA"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 32,
+					"left": 0,
+					"width": 582,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+OBJECT SET VISIBLE:C603(*; "spec@"; True:C214)
+tTitle:="DELFOR DATE\r(MMDDYY)"
+tText:=""
+GOTO OBJECT:C206(tText)

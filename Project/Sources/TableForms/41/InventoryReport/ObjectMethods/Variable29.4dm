@@ -1,0 +1,1 @@
+tStockDolT:=Subtotal:C97(tStockDol)

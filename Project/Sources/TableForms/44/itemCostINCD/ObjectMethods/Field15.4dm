@@ -1,0 +1,1 @@
+[Job_Forms_Items:44]PldCostTotal:21:=[Job_Forms_Items:44]PldCostMatl:17+[Job_Forms_Items:44]PldCostLab:18+[Job_Forms_Items:44]PldCostOvhd:19+[Job_Forms_Items:44]PldCostS_E:20

@@ -1,0 +1,555 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 427,
+	"markerBreak": 427,
+	"markerFooter": 437,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line10": {
+					"type": "line",
+					"top": 94,
+					"left": 5,
+					"width": 548,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 68,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 56,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 140,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 128,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 212,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 200,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 284,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 272,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Last"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 356,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 344,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 428,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 416,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 500,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 488,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 110,
+					"left": 37,
+					"width": 80,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Report_Key : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 137,
+					"left": 68,
+					"width": 49,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Group : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 162,
+					"left": 307,
+					"width": 47,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Name : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 189,
+					"left": 18,
+					"width": 99,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "ReportMethod : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 189,
+					"left": 302,
+					"width": 52,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Option : "
+				},
+				"Report_Key": {
+					"type": "input",
+					"top": 110,
+					"left": 121,
+					"width": 180,
+					"height": 17,
+					"dataSource": "[Report:66]Report_Key:1",
+					"stroke": "#000000",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Group": {
+					"type": "input",
+					"top": 137,
+					"left": 121,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Report:66]Group:2",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"User": {
+					"type": "input",
+					"top": 137,
+					"left": 358,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Report:66]CreatedFor:6",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Group1": {
+					"type": "input",
+					"top": 162,
+					"left": 121,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Report:66]Category:7",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Name": {
+					"type": "input",
+					"top": 162,
+					"left": 358,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Report:66]Name:3",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ReportMethod": {
+					"type": "input",
+					"top": 189,
+					"left": 121,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Report:66]Method:4",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Option": {
+					"type": "input",
+					"top": 189,
+					"left": 358,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Report:66]SampleRaw:5",
+					"dataSourceTypeHint": "object",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"multiline": "yes",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 137,
+					"left": 314,
+					"width": 40,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "User : "
+				},
+				"Text1": {
+					"type": "text",
+					"top": 162,
+					"left": 56,
+					"width": 61,
+					"height": 17,
+					"stroke": "#000000",
+					"text": "Category:"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line10"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bFirstlabel",
+					"bPrevious",
+					"bPreviouslabel",
+					"bNext",
+					"bNextlabel",
+					"bLast",
+					"bLastlabel",
+					"bDelete",
+					"bDeletelabel",
+					"bCancel",
+					"bCancellabel",
+					"bValidate",
+					"bValidatelabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+extendedCost:=[Raw_Materials_Locations:25]QtyOH:9*[Raw_Materials_Locations:25]ActCost:18

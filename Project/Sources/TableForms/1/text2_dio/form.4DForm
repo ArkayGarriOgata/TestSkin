@@ -1,0 +1,141 @@
+{
+	"windowTitle": "Log",
+	"width": 725,
+	"height": 480,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 22,
+					"left": 13,
+					"width": 685,
+					"height": 406,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "t1",
+					"stroke": "#000000",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_First_Rec"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 444,
+					"left": 511,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"text": "Save As...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 444,
+					"left": 606,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bFin",
+					"action": "cancel",
+					"text": "OK",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 436,
+					"left": 13,
+					"width": 299,
+					"height": 28,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Use Edit.Copy & Edit.Paste to move this text into your word processor or \"Save As...\" to make a text file."
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

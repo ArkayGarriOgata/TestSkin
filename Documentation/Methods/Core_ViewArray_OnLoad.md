@@ -1,0 +1,1 @@
+  `Method:  Core_ViewArray_OnLoad    `Description: This method sets up the Display array that can be used for various     `   HList and entry type forms.  

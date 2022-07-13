@@ -1,0 +1,252 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Arcv_abView_ FieldValue",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Arcv_abView_Table": {
+					"type": "listbox",
+					"top": 49,
+					"left": 13,
+					"width": 535,
+					"height": 329,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Arcv_abView_Table",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#B1C4DD",
+					"method": "ObjectMethods/Arcv_abView_Table.4dm",
+					"events": [
+						"onClick",
+						"onScroll"
+					],
+					"columns": []
+				},
+				"Arcv_atView_TableName": {
+					"type": "dropdown",
+					"top": 18,
+					"left": 222,
+					"width": 21,
+					"height": 17,
+					"dataSource": "Arcv_atView_TableName",
+					"focusable": false,
+					"method": "ObjectMethods/Arcv_atView_TableName.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arcv_nView_OnLoad": {
+					"type": "button",
+					"top": 421,
+					"left": 7,
+					"width": 70,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "Arcv_nView_OnLoad",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/Arcv_nView_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Form.tTableName": {
+					"type": "input",
+					"top": 19,
+					"left": 248,
+					"width": 203,
+					"height": 16,
+					"dataSource": "Form:C1466.tTableName",
+					"class": "Form_Value",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Arcv_abView_ FieldValue": {
+					"type": "listbox",
+					"top": 49,
+					"left": 568,
+					"width": 535,
+					"height": 329,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Arcv_abView_ FieldValue",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#B1C4DD",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Arcv_atView_Field",
+							"dataSource": "Arcv_atView_Field",
+							"width": 153,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Form.nTitle_Field",
+								"text": "Field",
+								"dataSource": "Form:C1466.nTitle_Field",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Arcv_atView_Value",
+							"dataSource": "Arcv_atView_Value",
+							"width": 367,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Form.nTitle_Value",
+								"text": "Value",
+								"dataSource": "Form:C1466.nTitle_Value",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Arcv_nView_Splitter": {
+					"type": "splitter",
+					"top": 49,
+					"left": 556,
+					"width": 10,
+					"height": 329,
+					"sizingY": "grow",
+					"dataSource": "Arcv_nView_Splitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreOK": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 1075,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "CorenOK",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRight.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Arcv_nView_Import": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 1019,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "Arcv_nView_Import",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/ImportLeft.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arcv_nView_Import.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Arcv_tView_Find": {
+					"type": "subform",
+					"top": 12,
+					"left": 13,
+					"width": 205,
+					"height": 30,
+					"dataSource": "Arcv_tView_Find",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Arcv_tView_Find.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Arcv_nView_Excel": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 1047,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "Arcv_nView_Excel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/XcelMiddle.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Arcv_nView_Excel.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

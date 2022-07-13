@@ -1,0 +1,1 @@
+  `Method:  Core_ViewArray_Initialize(sStatus{;$pDisplayArray}{;sMessage})    `Description:  This method will inititlaize the values for the    `  form HListEntry

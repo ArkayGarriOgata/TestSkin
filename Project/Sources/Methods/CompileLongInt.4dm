@@ -1,0 +1,55 @@
+//%attributes = {"publishedWeb":true}
+//(P) 0CompileLongInt
+//general/Skeleton
+
+CompileButtons  //v0.1.0-JJG (05/04/16) - added 
+
+//C_LONGINT(c1;c2;c3;c4;c5;c6;c7;c8;c9;c10;c11;c12;c13;c14;c15)  `  Report writers
+C_LONGINT:C283(iFooter1; iFooter2; iFooter3; iFooter4; iFooter5; iFooter6; iFooter7; iFooter8; iFooter9; iFooter10)
+C_LONGINT:C283(iaFooter1; iaFooter2; iaFooter3; iaFooter4; iaFooter5; iaFooter6; iaFooter7; iaFooter8; iaFooter9; iaFooter10)
+C_LONGINT:C283(bCancel; bChoiceSlct; bClear; bNextPage1S)
+C_LONGINT:C283(bDelete; bDelItem; bDone; bDownArrow; bDummy; bExclude; bFrstHelp; bInclude)
+C_LONGINT:C283(bLastHelp; bMore; bNextHelp)
+C_LONGINT:C283(bNew; bNoAction; bOK; bPrevHelp)
+C_LONGINT:C283(bSearch; bSelect; bUpArrow; CalArea; cb1)
+C_LONGINT:C283(haItem; haRec)
+C_LONGINT:C283(hcItem; hcRec)
+C_LONGINT:C283(hdItem; hdRec)
+C_LONGINT:C283(hfItem; hfRec)
+C_LONGINT:C283(hlItem; hlRec)
+C_LONGINT:C283(hnItem; hnRec)
+C_LONGINT:C283(hpItem; hpRec)
+C_LONGINT:C283(hv; hvRec)
+C_LONGINT:C283(hx; hxRec)
+C_LONGINT:C283(hzDelRec)
+C_LONGINT:C283(lEditProcNo; lMBar; lPage; lPagePix; lPixLeft; lValue1; lValue2)
+C_LONGINT:C283(lValue3; lValue4; lValue5; lValue6; rbSearchEd; rb1; rb2; rb3; rb4; rb5; rb6; rbAll; rbCurrSel)
+C_LONGINT:C283(sAsc; sDes; sNoSort; sSortEd)
+C_LONGINT:C283(zSelectNum)
+//Arkay specific
+C_LONGINT:C283(aBackRp; ArrayNum; bAccept; bAcceptRec; bAcceptRec1; bAcceptRec3; bAdd; bAdd2PO; bAdd2Text; bAddCpn2For; bAddIncl; bAddl; bAddShip; bAll; bAllAddS; bApply)
+C_LONGINT:C283(bBDel; bBillS; bCancelRec; bCancelRec1; bCancelRec2; bCancelRec3; bCons; bCopy; bCreate; bCustS; bDel; bDeleteRec; bDelIncl; bDelL; bDelShip; bDLine; bDont; bDown)
+C_LONGINT:C283(bDupBOM; bDupC; bDupI; bDuplicate; bExecute; bExit; bFin; bFirstRec; bFirstRec1; bFirstRec3; bFRPOItem; bLastRec; bLastRec1; bLastRec3; bLookVend; bLRPOItem)
+C_LONGINT:C283(bMod; bNewPick; bNext; bNextPage; bNextPage1; bNextPage2; bNextPage3; bNextPage4; bNextRec; bNextRec1; bNextRec3; bNLine; bNo; bNoPick; bNotesWind)
+C_LONGINT:C283(bNPPOItem; bNRPOItem; bOpen; BottomRP; bPick; bPictWindow; bPlanIt; bPost; bPPPOItem; bPrevPage; bPrevPage1; bPrevPage2; bPrevPage3; bPrevPage4; bPrevRec)
+C_LONGINT:C283(bPrevRec1; bPrevRec3; bPrint; bPRPOItem; bRemove; bRenameFG; bRev; bSave; bShipS; bSort; bSort1; bSort2; bSort3; bSortAddS; bTotal; bTotShip; bTrash; bTrash3)
+C_LONGINT:C283(bTrashCarto; bUp; bUpdate; bUseIt; bYAdhoc; bYes; bYItem; bZoomBill; bZoomCode; bZoomCust; bZoomEst; bZoomMatl; bZoomORD; bZoomPSPCE; bZoomSpec; FileNum)
+C_LONGINT:C283(FrontRP; HelpCode; lTotQty)
+C_LONGINT:C283(haCAdd; haCusC; haCusO; haCusR; haFGBN; haFGIS; haFGRC; haPOC; haPOL; haRMBN; haRMIS; haVenC; haVenP; hbMoveFG; hcCAdd; hcCusC; hcCusO; hcCusR; hcFGBN)
+C_LONGINT:C283(hcFGIS; hcFGRC; hcPOC; hcPOL; hcRMBN; hcVenC; hcVenP; hdCusC; hdCusO; hdCusR; hdFGBN; hdFGIS; hdFGRC; hdPOC; hdPOL; hdRMBN; hdVenC; hdVenP)
+C_LONGINT:C283(hfCAdd; hfCusC; hfCusO; hfCusR; hfFGBN; hfFGIS; hfFGRC; hfPOC; hfPOL; hfRMBN; hfVenC; hfVenP; hlCAdd; hlCusC; hlCusO; hlCusR; hlFGBN; hlFGIS; hlFGRC; hlPOC; hlPOL)
+C_LONGINT:C283(hlRMBN; hlVenC; hlVenP; hnCAdd; hnCusC; hnCusO; hnCusR; hnFGBN; hnFGIS; hnFGRC; hnPOC; hnPOL; hnRMBN; hnVenC; hnVenP; hpCAdd; hpCusC; hpCusO; hpCusR)
+C_LONGINT:C283(hpFGBN; hpFGIS; hpFGRC; hpPOC; hpPOL; hpRMBN; hpVenC; hpVenP; hvCAdd; hvCusC; hvCusO; hvCusR; hvFGBN; hvFGIS; hvFGRC; hvPOC; hvPOL; hvRMBN; hvRMIS)
+C_LONGINT:C283(hvVenC; hvVenP; hxCAdd; hxCusC; hxCusO; hxCusR; hxFGBN; hxFGIS; hxFGRC; hxPOC; hxPOL; hxRMBN; hxRMIS; hxVenC; hxVenP; i1; i2; i3; i4; iAddRType; ibAdhoc)
+C_LONGINT:C283(ibAdmin; ibCC; ibCCGP; ibCID; ibCopEst; ibCopy; ibCust; ibDel; ibDelEst; ibFG; ibGraph; ibISS; ibLabel; ibMod; ibModEst; ibMove; ibNew; ibNewEst; ibOther; ibPick; ibPO)
+C_LONGINT:C283(ibRec; ibReport; ibReq; ibRev; ibRevEst; ibRM; ibRMGP; ibRPT; ibSale; ibSearch; ibToDo; ibVendor; iCaddBill; iCaddcon; iCaddCust; iCaddShip; iCaddTot; iCases; iTotal)
+C_LONGINT:C283(iTotal2; iMode; int1; int2; int3; iOnPage; iPage; iQty; iSkids; items; iUp; iWant; iWght; iYield; LeftRP; lPOCORec; lReqCORec; lSeqNumber)
+C_LONGINT:C283(MaxPixels; mbLock1; mbLock2; NumRecs1; N1; O1; O2; Pixels; PO1; PO2; topRP; W1; W2; XW1; XW2)  //R1;R2
+C_LONGINT:C283(vInit; lFYECurr; lFYELast; lCID; lProdID)
+//---------- used by api procedures ---------
+C_LONGINT:C283(iCurAPICmd; iCur4DMacro)
+C_LONGINT:C283(iBindID; iFileID; iRecordID; iRecords; iContextID; lCAMID)
+C_LONGINT:C283(iitotal1; iitotal2; iitotal3; iitotal4; totalSupply; totalDemand; totalStatus; totalStatOR)
+C_LONGINT:C283(cbOnce)
+C_LONGINT:C283(cb1; cb2; cb3; cb4; cb5; cb6; cb7; cb8; cb9; cb10; cb11; cb12; cb13; cb14; cb15)
+C_LONGINT:C283(iRow; iColumn)

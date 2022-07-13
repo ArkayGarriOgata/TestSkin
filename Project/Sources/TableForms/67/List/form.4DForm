@@ -1,0 +1,1562 @@
+{
+	"destination": "listScreen",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"menuBar": "JML",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 122,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDisplayDetail",
+		"onCloseBox",
+		"onUnload",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable193": {
+					"type": "tab",
+					"top": 127,
+					"left": 6,
+					"width": 1030,
+					"height": 98,
+					"dataSource": "iJMLtabs",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/JMLtabs"
+					},
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable193.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture9": {
+					"type": "picture",
+					"top": 74,
+					"left": 1035,
+					"width": 245,
+					"height": 22,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/List Header Bar.png"
+				},
+				"BackRect": {
+					"type": "rectangle",
+					"top": 96,
+					"left": 0,
+					"width": 1280,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 76,
+					"left": 507,
+					"width": 37,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "HRD"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 76,
+					"left": 450,
+					"width": 57,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Press"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 76,
+					"left": 357,
+					"width": 87,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Closing"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 76,
+					"left": 600,
+					"width": 45,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Launch"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 151,
+					"left": 225,
+					"width": 222,
+					"height": 46,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Horizon (Press Date)"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 151,
+					"left": 459,
+					"width": 197,
+					"height": 73,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Sort by"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 76,
+					"left": 21,
+					"width": 127,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Customer"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 76,
+					"left": 238,
+					"width": 59,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Job Form\r"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 76,
+					"left": 304,
+					"width": 33,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Type"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 49,
+					"width": 82,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]Customer:2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 100,
+					"left": 237,
+					"width": 58,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]JobForm:4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field198": {
+					"type": "input",
+					"top": 100,
+					"left": 460,
+					"width": 37,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]PressDate:25",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field10": {
+					"type": "input",
+					"top": 100,
+					"left": 305,
+					"width": 44,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]JobType:31",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field12": {
+					"type": "input",
+					"top": 100,
+					"left": 655,
+					"width": 411,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]Comment:22",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field13": {
+					"type": "input",
+					"top": 100,
+					"left": 143,
+					"width": 86,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]Line:5",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"Field16": {
+					"type": "input",
+					"top": 100,
+					"left": 508,
+					"width": 37,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]MAD:21",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field11": {
+					"type": "input",
+					"top": 100,
+					"left": 355,
+					"width": 37,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]GateWayDeadLine:42",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Variable123": {
+					"type": "radio",
+					"top": 171,
+					"left": 549,
+					"width": 46,
+					"height": 17,
+					"dataSource": "b1",
+					"text": "HRD",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable123.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable124": {
+					"type": "radio",
+					"top": 200,
+					"left": 537,
+					"width": 41,
+					"height": 17,
+					"dataSource": "b2",
+					"text": "Job",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable124.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable125": {
+					"type": "radio",
+					"top": 171,
+					"left": 603,
+					"width": 47,
+					"height": 17,
+					"dataSource": "b3",
+					"text": "Line",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable125.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable126": {
+					"type": "radio",
+					"top": 171,
+					"left": 466,
+					"width": 66,
+					"height": 17,
+					"dataSource": "b4",
+					"text": "OnPress",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable126.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable246": {
+					"type": "radio",
+					"top": 200,
+					"left": 466,
+					"width": 63,
+					"height": 17,
+					"dataSource": "b5",
+					"text": "Closing",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable246.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable7": {
+					"type": "radio",
+					"top": 200,
+					"left": 586,
+					"width": 41,
+					"height": 17,
+					"dataSource": "b11",
+					"text": "Rel",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable122": {
+					"type": "radio",
+					"top": 171,
+					"left": 297,
+					"width": 63,
+					"height": 17,
+					"dataSource": "cb1",
+					"text": "5 Days",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable122.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable127": {
+					"type": "radio",
+					"top": 171,
+					"left": 244,
+					"width": 37,
+					"height": 17,
+					"dataSource": "cb2",
+					"text": "All",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable127.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 171,
+					"left": 366,
+					"width": 73,
+					"height": 17,
+					"dataSource": "cb3",
+					"text": "2 Weeks",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 171,
+					"left": 862,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "OldPrint",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 149,
+					"left": 1295,
+					"width": 15,
+					"height": 10,
+					"dataSource": "bDone",
+					"action": "accept",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 166,
+					"left": 1287,
+					"width": 15,
+					"height": 10,
+					"dataSource": "bDone",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 322,
+					"left": 491,
+					"width": 50,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]ThroughPut:86",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					}
+				},
+				"Field25": {
+					"type": "input",
+					"top": 322,
+					"left": 560,
+					"width": 50,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]Investment:87",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#0000FF",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					}
+				},
+				"Field26": {
+					"type": "input",
+					"top": 322,
+					"left": 634,
+					"width": 29,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DurationPrinting:37",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 297,
+					"left": 631,
+					"width": 34,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "PRT"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 297,
+					"left": 463,
+					"width": 83,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " ThroughPut$"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 297,
+					"left": 554,
+					"width": 73,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Investment$"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 322,
+					"left": 796,
+					"width": 53,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]CashFlow:34",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					}
+				},
+				"Field8": {
+					"type": "input",
+					"top": 101,
+					"left": 1172,
+					"width": 58,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]SalesValue:35",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					}
+				},
+				"Text3": {
+					"type": "text",
+					"top": 297,
+					"left": 787,
+					"width": 63,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " CashFlow"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 76,
+					"left": 1169,
+					"width": 64,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "SalesValue"
+				},
+				"Field9": {
+					"type": "input",
+					"top": 322,
+					"left": 670,
+					"width": 28,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]M1:82",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 297,
+					"left": 663,
+					"width": 41,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "M1"
+				},
+				"Field15": {
+					"type": "input",
+					"top": 322,
+					"left": 704,
+					"width": 28,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]M2:83",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 297,
+					"left": 695,
+					"width": 41,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "M2"
+				},
+				"Field17": {
+					"type": "input",
+					"top": 322,
+					"left": 741,
+					"width": 30,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]TotalProcessHours:84",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 297,
+					"left": 739,
+					"width": 33,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "TPH"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 277,
+					"left": 790,
+					"width": 63,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "2mthFirm"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 261,
+					"left": 858,
+					"width": 51,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Pegged Booking"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 263,
+					"left": 473,
+					"width": 76,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "CashFlow less Varible"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 262,
+					"left": 557,
+					"width": 76,
+					"height": 31,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Varible to Stock"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 278,
+					"left": 643,
+					"width": 136,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "------- Hrs -------"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 297,
+					"left": 768,
+					"width": 22,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "JR"
+				},
+				"Field18": {
+					"type": "input",
+					"top": 322,
+					"left": 773,
+					"width": 14,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]JohnsonRank:85",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 195,
+					"left": 676,
+					"width": 92,
+					"height": 20,
+					"dataSource": "bAdvise",
+					"text": "Set a Date",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 195,
+					"left": 862,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bHelp",
+					"text": "Help",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 76,
+					"left": 653,
+					"width": 111,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Comment"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 76,
+					"left": 142,
+					"width": 84,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Line"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 100,
+					"left": 400,
+					"width": 37,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]DateClosingMet:23",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 100,
+					"left": 441,
+					"width": 14,
+					"height": 15,
+					"dataSource": "[Job_Forms_Master_Schedule:67]PressChgCount:44",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#AAAAAA",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "##;-##; ",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 171,
+					"left": 676,
+					"width": 92,
+					"height": 20,
+					"dataSource": "bAdvise",
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"text": "Job's ToDo's",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 171,
+					"left": 948,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bBackLog",
+					"text": "BackLog",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 100,
+					"left": 600,
+					"width": 43,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]Launch:64",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none"
+				},
+				"bGantt1": {
+					"type": "button",
+					"top": 195,
+					"left": 778,
+					"width": 73,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bGantt",
+					"text": "Schedule",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bGantt1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 171,
+					"left": 778,
+					"width": 73,
+					"height": 20,
+					"dataSource": "bShow",
+					"text": "Layout",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "checkbox",
+					"top": 171,
+					"left": 20,
+					"width": 42,
+					"height": 17,
+					"dataSource": "i2",
+					"text": "VA",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "checkbox",
+					"top": 171,
+					"left": 84,
+					"width": 121,
+					"height": 17,
+					"dataSource": "i1",
+					"text": "Outside Service",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 156,
+					"width": 54,
+					"height": 17,
+					"dataSource": "i3",
+					"text": "Mine",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 84,
+					"width": 60,
+					"height": 17,
+					"dataSource": "i4",
+					"text": "Repeat",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Check Box2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 302,
+					"left": 1155,
+					"width": 78,
+					"height": 20,
+					"dataSource": "Button1",
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"text": "Hilite...",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 100,
+					"left": 132,
+					"width": 58,
+					"height": 16,
+					"dataSource": "tHold",
+					"stroke": "#EE0000",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 121,
+					"left": 246,
+					"width": 735,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 98,
+					"left": 0,
+					"width": 44,
+					"height": 11,
+					"dataSource": "[Job_Forms_Master_Schedule:67]LocationOfMfg:30",
+					"stroke": "#404040",
+					"class": "LittleButtons",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Locations"
+					}
+				},
+				"Next2Checkbox": {
+					"type": "checkbox",
+					"top": 318,
+					"left": 84,
+					"width": 325,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Show Only Jobs in Next Two Weeks & Not Released",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Next2Checkbox.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 100,
+					"left": 555,
+					"width": 37,
+					"height": 16,
+					"dataSource": "[Job_Forms_Master_Schedule:67]FirstReleaseDat:13",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/##"
+				},
+				"FilterWIP": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 20,
+					"width": 46,
+					"height": 17,
+					"dataSource": "i6",
+					"text": "WIP",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/FilterWIP.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 305,
+					"left": 970,
+					"width": 77,
+					"height": 17,
+					"dataSource": "b6",
+					"text": "Thru'Put",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group3",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 276,
+					"left": 993,
+					"width": 39,
+					"height": 17,
+					"dataSource": "b7",
+					"text": "M1",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group3",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 276,
+					"left": 1040,
+					"width": 38,
+					"height": 17,
+					"dataSource": "b8",
+					"text": "M2",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group3",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 305,
+					"left": 1056,
+					"width": 74,
+					"height": 17,
+					"dataSource": "b9",
+					"text": "Investm't",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group3",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Variable6": {
+					"type": "radio",
+					"top": 276,
+					"left": 1086,
+					"width": 40,
+					"height": 17,
+					"dataSource": "b10",
+					"text": "Jhn",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"radioGroup": "Group3",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 101,
+					"left": 1247,
+					"width": 23,
+					"height": 14,
+					"dataSource": "[Job_Forms_Master_Schedule:67]WeekNumber:38",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					}
+				},
+				"Text24": {
+					"type": "text",
+					"top": 76,
+					"left": 554,
+					"width": 37,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "1stRel"
+				},
+				"SumThruput": {
+					"type": "button",
+					"top": 197,
+					"left": 1178,
+					"width": 94,
+					"height": 20,
+					"sizingY": "move",
+					"text": "∑ Thru-put",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SumThruput.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SumTotalHrs": {
+					"type": "button",
+					"top": 174,
+					"left": 1178,
+					"width": 94,
+					"height": 20,
+					"sizingY": "move",
+					"text": "∑ Total Hrs",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SumTotalHrs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SumPressHrs": {
+					"type": "button",
+					"top": 151,
+					"left": 1178,
+					"width": 94,
+					"height": 20,
+					"sizingY": "move",
+					"text": "∑ Press Hrs",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SumPressHrs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 76,
+					"left": 1236,
+					"width": 44,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Week#"
+				},
+				"PrintFlowExport": {
+					"type": "button",
+					"top": 279,
+					"left": 171,
+					"width": 124,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"text": "PrintFlow Export",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PrintFlowExport.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"testSelection": {
+					"type": "button",
+					"top": 279,
+					"left": 319,
+					"width": 124,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"text": "Test Selection",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/testSelection.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 271,
+					"left": 79,
+					"width": 60,
+					"height": 17,
+					"dataSource": "iPF1",
+					"text": "Sent PF",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Check Box3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 291,
+					"left": 79,
+					"width": 60,
+					"height": 17,
+					"dataSource": "iPF2",
+					"text": "Not PF",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Check Box4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SearchPicker": {
+					"type": "subform",
+					"top": 5,
+					"left": 651,
+					"width": 198,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "vSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"SearchResults": {
+					"type": "input",
+					"top": 38,
+					"left": 655,
+					"width": 174,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "UTIL_Num_Records(->[Job_Forms_Master_Schedule:67])",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 151,
+					"left": 6,
+					"width": 198,
+					"height": 46,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Where Mfg'd"
+				},
+				"printBtnHeader": {
+					"type": "button",
+					"top": 4,
+					"left": 491,
+					"width": 53,
+					"height": 72,
+					"display": false,
+					"method": "ObjectMethods/printBtnHeader.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 100,
+					"left": 1072,
+					"width": 92,
+					"height": 16,
+					"dataSource": "whereIsBag",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text27": {
+					"type": "text",
+					"top": 76,
+					"left": 1069,
+					"width": 87,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Where Is Bag?"
+				}
+			},
+			"entryOrder": [
+				"Field2",
+				"Field3",
+				"Field198",
+				"Field10",
+				"Field12",
+				"Field13",
+				"Field16",
+				"Field11",
+				"Group2",
+				"Variable123",
+				"Variable124",
+				"Variable125",
+				"Variable126",
+				"Variable246",
+				"Variable7",
+				"Group1",
+				"Variable122",
+				"Variable127",
+				"Radio Button3",
+				"Variable1",
+				"Button2",
+				"Button3",
+				"Field14",
+				"Button4",
+				"Button5",
+				"Field6",
+				"bGantt1",
+				"Button7",
+				"Radio Button1",
+				"Radio Button2",
+				"Check Box1",
+				"Check Box2",
+				"Button6",
+				"Variable19",
+				"Field5",
+				"Next2Checkbox",
+				"Field19",
+				"FilterWIP",
+				"Group3",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"SumThruput",
+				"SumTotalHrs",
+				"SumPressHrs",
+				"PrintFlowExport",
+				"testSelection",
+				"Check Box3",
+				"Check Box4",
+				"SearchPicker",
+				"Variable"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Variable123",
+				"Variable124",
+				"Variable125",
+				"Variable126",
+				"Variable246",
+				"Variable7"
+			],
+			"Group1": [
+				"Variable122",
+				"Variable127",
+				"Radio Button3"
+			],
+			"Group3": [
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

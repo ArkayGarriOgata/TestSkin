@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--#4DBASE inc/-->
+	<!--#4DINCLUDE head.html-->
+
+	<!-- ag-grid stuff -->
+	<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+</head>
+<body>
+	<div id="wrapper">
+		<!--#4DINCLUDE top.html-->
+		<!--#4DINCLUDE sidebar.html-->
+		<div class="main">
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">Production Schedule</h3>
+					<div class="panel panel-headline">
+						<div class="panel-body">
+							<!-- Enter here the page content -->
+							
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <input type="text" placeholder="Search Mach#..." id="queryBox" onchange="querySchedule();"><br><br>
+            <div id="myGrid" style="height: 500px;width:100%;" class="ag-theme-balham"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="gridDetail"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!--#4DINCLUDE footer.html-->
+	</div>
+	<!--#4DINCLUDE scripts.html-->
+
+	 <script type='text/javascript' charset='utf-8'>
+        $(document).ready(function () {
+
+            $("#navSchedule").addClass("active");
+
+
+        
+        });
+    </script>
+
+<script type="text/javascript" charset="utf-8">
+
+
+    // specify the columns
+    var columnDefs = [
+        { headerName: "Mach#", field: "CostCenter", sortable: true, filter: true, width: 90  },
+        { headerName: "Priority", field: "Priority", sortable: true, filter: true, width: 90 },
+        { headerName: "Done", field: "Completed", sortable: false, filter: true, width: 90 },
+        { headerName: "Job Sequence", field: "JobSequence", sortable: true, filter: true, width: 120 },
+        { headerName: "Line", field: "Line", sortable: true, filter: true, width: 150 },
+        { headerName: "Start Date", field: "StartDate", sortable: true, filter: true, width: 110 },
+    ];
+
+    // let the grid know which columns and what data to use
+    var gridOptions = {
+        columnDefs: columnDefs,
+        rowSelection: 'multiple',
+        rowData: [],
+        onSelectionChanged: onSelectionChanged
+    };
+
+    fillGrid("");
+
+    function onSelectionChanged() {
+        var selectedNodes = gridOptions.api.getSelectedNodes();
+        var selectedData = selectedNodes.map(function (node) { return node.data });
+        var selectedDataStringPresentation = selectedData.map(function (node) { return fillRecordTemplate(node) }).join('<br>');
+        document.getElementById("gridDetail").innerHTML = selectedDataStringPresentation;
+    }
+
+    function fillRecordTemplate(record) {
+        recordHtml = "<div><h2 class=\"mt-5\">Mach#:  " + record.CostCenter + ",   Priority:  " + record.Priority + "</h2>";
+        // recordHtml += '<img src="/4DACTION/getCustomerPhoto?id=' + record.Customer_ID + '&thumbnail=1" /><br>';
+
+        recordHtml += "<b>Customer: </b>" + record.Customer + "<br>";
+        recordHtml += "<b>JobInfo: </b>" + record.JobInfo + "<br>";
+        recordHtml += "<b>InkReady: </b>" + record.InkReady + "<br>";
+        recordHtml += "<b>PlatesReady: </b>" + record.PlatesReady + "<br>";
+
+        return recordHtml;
+    }
+
+    function querySchedule() {
+
+        queryValue = document.getElementById("queryBox").value;
+        fillGrid(queryValue);
+
+    }
+
+    function fillGrid(queryValue) {
+
+
+        // lookup the container we want the Grid to use
+        document.getElementById('myGrid').innerHTML = ''; // Force refreshing of grid
+        var eGridDiv = document.querySelector('#myGrid');
+
+        // create the grid passing in the div to use together with the columns & data we want to use
+        new agGrid.Grid(eGridDiv, gridOptions);
+
+        //Call to the API
+
+        if (queryValue !== "") {
+            url = "/api/ProductionSchedules?q=(CostCenter='" + queryValue + "')";
+
+        } else {
+            url = "/api/ProductionSchedules";
+
+        }
+
+
+        fetch(url).then(function (response) {
+            return response.json();
+        }).then(function (resp) {
+            gridOptions.api.setRowData(resp.data);
+        });
+
+    }
+
+</script>
+
+</body>
+</html>

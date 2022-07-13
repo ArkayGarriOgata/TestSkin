@@ -1,0 +1,224 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 14,
+	"markerBody": 575,
+	"markerBreak": 769,
+	"markerFooter": 788,
+	"events": [
+		"onPrintingDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 62,
+					"left": 9,
+					"width": 737,
+					"height": 220,
+					"dataSource": "[Raw_Material_Labels:171]Label_id_encoded:12",
+					"textAlign": "center",
+					"fontFamily": "IDAutomation Uni XL",
+					"fontSize": 48,
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 305,
+					"left": 9,
+					"width": 289,
+					"height": 46,
+					"dataSource": "[Raw_Material_Labels:171]Label_id:2",
+					"textAlign": "center",
+					"fontFamily": "Monaco",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 300,
+					"left": 498,
+					"width": 248,
+					"height": 69,
+					"dataSource": "[Raw_Material_Labels:171]Qty:8",
+					"dataSourceTypeHint": "integer",
+					"class": "RM_Label_Big_as_Hell",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"POItem": {
+					"type": "input",
+					"top": 383,
+					"left": 9,
+					"width": 596,
+					"height": 81,
+					"dataSource": "iPOitem",
+					"class": "RM_Label_Big_as_Hell",
+					"textAlign": "left",
+					"borderStyle": "none",
+					"textFormat": "000 0000 00",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 488,
+					"left": 9,
+					"width": 756,
+					"height": 69,
+					"dataSource": "[Raw_Material_Labels:171]Raw_Matl_Code:4",
+					"class": "RM_Label_Big_as_Hell",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 285,
+					"left": 590,
+					"width": 50,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "QTY :"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 363,
+					"left": 9,
+					"width": 46,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "PO:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 468,
+					"left": 9,
+					"width": 255,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "RM Code:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 381,
+					"left": 601,
+					"width": 142,
+					"height": 50,
+					"dataSource": "[Raw_Material_Labels:171]UOM:9",
+					"class": "Fixed_Large_Mono",
+					"textAlign": "left",
+					"borderStyle": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UOMs"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 18,
+					"left": 11,
+					"width": 155,
+					"height": 37,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Arkay Packaging Logo.png"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 316,
+					"left": 296,
+					"width": 200,
+					"height": 27,
+					"dataSource": "[Raw_Material_Labels:171]Label_id_encoded:12",
+					"textAlign": "center",
+					"fontFamily": "IDAutomation Uni S",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 285,
+					"left": 9,
+					"width": 50,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "ID :"
+				},
+				"Line": {
+					"type": "line",
+					"top": 468,
+					"left": 10,
+					"width": 754,
+					"height": 1,
+					"startPoint": "bottomLeft"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 12,
+					"left": 497,
+					"width": 246,
+					"height": 49,
+					"dataSource": "[Raw_Material_Labels:171]When_inserted:5",
+					"class": "RM_Label_SoSo",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

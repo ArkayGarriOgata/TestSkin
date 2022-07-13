@@ -1,0 +1,1 @@
+wms_start_from_menu

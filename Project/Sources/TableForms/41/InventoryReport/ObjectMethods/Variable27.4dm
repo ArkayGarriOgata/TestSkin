@@ -1,0 +1,1 @@
+tStockTot:=Subtotal:C97(tStock)

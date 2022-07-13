@@ -1,0 +1,194 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"desc": {
+					"type": "input",
+					"top": 6,
+					"left": 8,
+					"width": 482,
+					"height": 66,
+					"dataSource": "Form:C1466.rm.ent.Description",
+					"class": "Fixed_Monaca_16",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 80,
+					"left": 113,
+					"width": 150,
+					"height": 24,
+					"dataSource": "Form:C1466.rm.ent.UsedBy",
+					"class": "Fixed_Monaca_16",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 80,
+					"left": 9,
+					"width": 100,
+					"height": 24,
+					"class": "Fixed_Monaca_16",
+					"textAlign": "right",
+					"text": "Used By:"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 116,
+					"left": 113,
+					"width": 150,
+					"height": 24,
+					"dataSource": "Form:C1466.rm.ent.PreferedBin",
+					"class": "Fixed_Monaca_16",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 116,
+					"left": 9,
+					"width": 100,
+					"height": 24,
+					"class": "Fixed_Monaca_16",
+					"textAlign": "right",
+					"text": "Put away:"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 80,
+					"left": 394,
+					"width": 110,
+					"height": 24,
+					"dataSource": "Form:C1466.rm.ent.ReorderPoint",
+					"class": "Fixed_Monaca_16",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 80,
+					"left": 283,
+					"width": 107,
+					"height": 24,
+					"class": "Fixed_Monaca_16",
+					"textAlign": "right",
+					"text": "Reorder pt:"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 98,
+					"left": 394,
+					"width": 110,
+					"height": 24,
+					"dataSource": "Form:C1466.rm.ent.ReorderMin",
+					"class": "Fixed_Monaca_16",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 98,
+					"left": 290,
+					"width": 100,
+					"height": 24,
+					"class": "Fixed_Monaca_16",
+					"textAlign": "right",
+					"text": "Order qty:"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 98,
+					"left": 113,
+					"width": 150,
+					"height": 24,
+					"dataSource": "Form:C1466.rm.ent.PartType",
+					"class": "Fixed_Monaca_16",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 98,
+					"left": 9,
+					"width": 100,
+					"height": 24,
+					"class": "Fixed_Monaca_16",
+					"textAlign": "right",
+					"text": "Type:"
+				}
+			}
+		}
+	]
+}

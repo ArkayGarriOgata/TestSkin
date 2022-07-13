@@ -1,0 +1,1151 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Machine Ticket Entry",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 425,
+	"width": 740,
+	"height": 425,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 829,
+					"height": 425,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#DFE4FF"
+				},
+				"Variable61": {
+					"type": "input",
+					"top": 8,
+					"left": 35,
+					"width": 759,
+					"height": 25,
+					"dataSource": "sCustName",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable13": {
+					"type": "input",
+					"top": 53,
+					"left": 144,
+					"width": 84,
+					"height": 16,
+					"dataSource": "dMADate",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 76,
+					"left": 144,
+					"width": 84,
+					"height": 16,
+					"dataSource": "sMAJob",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 99,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "iMASeq",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 122,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "sMACC",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"itemVariable17": {
+					"type": "input",
+					"top": 145,
+					"left": 144,
+					"width": 84,
+					"height": 16,
+					"dataSource": "iMAItemNo",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/itemVariable17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable124": {
+					"type": "input",
+					"top": 168,
+					"left": 144,
+					"width": 24,
+					"height": 16,
+					"dataSource": "iShift",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 191,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "rMAMRHours",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_5_2"
+					},
+					"entryFilter": "&\"0-9;.;-\"",
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 215,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "rMARHours",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/HrsFormat"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/HrsFilter"
+					},
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 238,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "rMADTHours",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/HrsFormat"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/HrsFilter"
+					},
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"dtVariable21": {
+					"type": "input",
+					"top": 261,
+					"left": 144,
+					"width": 44,
+					"height": 15,
+					"dataSource": "sMADTCat",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 284,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "lMAGood",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.##",
+					"entryFilter": "&\"0-9;-\"",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 307,
+					"left": 144,
+					"width": 44,
+					"height": 16,
+					"dataSource": "lMAWaste",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0.##",
+					"entryFilter": "&\"0-9;-\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 330,
+					"left": 144,
+					"width": 15,
+					"height": 16,
+					"dataSource": "sP_C",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"c;p;C;P\"#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 386,
+					"left": 24,
+					"width": 81,
+					"height": 20,
+					"dataSource": "bClear",
+					"text": "Clear",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 386,
+					"left": 120,
+					"width": 99,
+					"height": 20,
+					"dataSource": "bMove",
+					"shortcutKey": "[Tab]",
+					"shortcutAlt": true,
+					"text": "Move >>>",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 386,
+					"left": 297,
+					"width": 81,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "b1",
+					"text": "Save...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable27": {
+					"type": "button",
+					"top": 386,
+					"left": 393,
+					"width": 81,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "b2",
+					"text": "Load...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable27.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 386,
+					"left": 550,
+					"width": 81,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"text": "Cancel",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOKStay": {
+					"type": "button",
+					"top": 386,
+					"left": 641,
+					"width": 82,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOKStay",
+					"shortcutKey": "[Enter]",
+					"text": "Post",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/bOKStay.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 28,
+					"left": 662,
+					"width": 61,
+					"height": 14,
+					"dataSource": "bDelete",
+					"text": "Delete",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"abMachTickLB": {
+					"type": "listbox",
+					"top": 51,
+					"left": 265,
+					"width": 454,
+					"height": 320,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "abMachTickLB",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFC0",
+					"alternateFill": "#FFFFDF",
+					"borderStyle": "double",
+					"method": "ObjectMethods/abMachTickLB.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "adMADate",
+							"dataSource": "adMADate",
+							"width": 72,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/adMADate.4dm",
+							"header": {
+								"name": "Header12",
+								"text": "Date",
+								"dataSource": "Header12",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "asMAJob",
+							"dataSource": "asMAJob",
+							"width": 58,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/asMAJob.4dm",
+							"header": {
+								"name": "Header13",
+								"text": "Jobform",
+								"dataSource": "Header13",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aiMASeq",
+							"dataSource": "aiMASeq",
+							"dataSourceTypeHint": "number",
+							"width": 33,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "000",
+							"numberFormat": "000",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/aiMASeq.4dm",
+							"header": {
+								"name": "Header14",
+								"text": "Seq",
+								"dataSource": "Header14",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "asMACC",
+							"dataSource": "asMACC",
+							"width": 27,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/asMACC.4dm",
+							"header": {
+								"name": "Header15",
+								"text": "CC",
+								"dataSource": "Header15",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aiMAItemNo",
+							"dataSource": "aiMAItemNo",
+							"dataSourceTypeHint": "number",
+							"width": 27,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "00",
+							"numberFormat": "00",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/aiMAItemNo.4dm",
+							"header": {
+								"name": "Header16",
+								"text": "Item",
+								"dataSource": "Header16",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "aiShift",
+							"dataSource": "aiShift",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/aiShift.4dm",
+							"header": {
+								"name": "Header17",
+								"text": "Shft",
+								"dataSource": "Header17",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer17",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "arMAMRHours",
+							"dataSource": "arMAMRHours",
+							"dataSourceTypeHint": "number",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "##0.00",
+							"numberFormat": "##0.00",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/arMAMRHours.4dm",
+							"header": {
+								"name": "Header18",
+								"text": "MR",
+								"dataSource": "Header18",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer18",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "arMARHours",
+							"dataSource": "arMARHours",
+							"dataSourceTypeHint": "number",
+							"width": 41,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "##0.00",
+							"numberFormat": "##0.00",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/arMARHours.4dm",
+							"header": {
+								"name": "Header19",
+								"text": "Run",
+								"dataSource": "Header19",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer19",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "arMADTHours",
+							"dataSource": "arMADTHours",
+							"dataSourceTypeHint": "number",
+							"width": 39,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "##0.00",
+							"numberFormat": "##0.00",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/arMADTHours.4dm",
+							"header": {
+								"name": "Header20",
+								"text": "DT",
+								"dataSource": "Header20",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer20",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "alMAGood",
+							"dataSource": "alMAGood",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "|Int_no_zero",
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/alMAGood.4dm",
+							"header": {
+								"name": "Header21",
+								"text": "Good",
+								"dataSource": "Header21",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer21",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "alMAWaste",
+							"dataSource": "alMAWaste",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "|Int_no_zero",
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "#FFFFC0",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/alMAWaste.4dm",
+							"header": {
+								"name": "Header22",
+								"text": "Waste",
+								"dataSource": "Header22",
+								"stroke": "#000099",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Footer22",
+								"stroke": "automatic",
+								"fill": "#FFFFC0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 53,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Date:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 76,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Job Number:"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 99,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Sequence:"
+				},
+				"itemText14": {
+					"type": "text",
+					"top": 145,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Item Number:"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 191,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Make Ready Hours:"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 215,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Run Hours:"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 284,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Good Sheets/Crtns:"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 307,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Waste Sheets/Crtns:"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 330,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Partial/Complete:"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 238,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Down Time:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 122,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Cost Center:"
+				},
+				"dtText22": {
+					"type": "text",
+					"top": 261,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Category:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 407,
+					"left": 146,
+					"width": 51,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "option+Tab"
+				},
+				"Text97": {
+					"type": "text",
+					"top": 168,
+					"left": 9,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Shift Nº:"
+				},
+				"bOK": {
+					"type": "button",
+					"top": 465,
+					"left": 626,
+					"width": 97,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"text": "Post & Close",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bOK.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable13",
+				"Variable14",
+				"Variable15",
+				"Variable16",
+				"itemVariable17",
+				"Variable124",
+				"Variable18",
+				"Variable19",
+				"Variable20",
+				"dtVariable21",
+				"Variable22",
+				"Variable23",
+				"Variable24",
+				"Variable11",
+				"Variable25",
+				"Variable26",
+				"Variable27",
+				"bCancel",
+				"bOKStay",
+				"bDelete",
+				"abMachTickLB",
+				"bOK"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

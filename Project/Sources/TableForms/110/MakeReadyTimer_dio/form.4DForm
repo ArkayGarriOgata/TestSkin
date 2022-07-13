@@ -1,0 +1,185 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Make Ready Timer",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "Scheduling",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onCloseBox",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": -20,
+					"left": 0,
+					"width": 893,
+					"height": 196,
+					"dataSource": "tTime",
+					"dataSourceTypeHint": "time",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 200,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 202,
+					"left": 562,
+					"width": 8,
+					"height": 6,
+					"dataSource": "bOk",
+					"shortcutKey": "[Enter]",
+					"display": false
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 200,
+					"left": 3,
+					"width": 548,
+					"height": 13,
+					"dataSource": "xtext",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 218,
+					"left": 10,
+					"width": 175,
+					"height": 42,
+					"dataSource": "bSet",
+					"text": "Set",
+					"fontFamily": "Helvetica",
+					"fontSize": 30,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 218,
+					"left": 193,
+					"width": 175,
+					"height": 42,
+					"dataSource": "bStart",
+					"text": "Start",
+					"fontFamily": "Helvetica",
+					"fontSize": 30,
+					"fontWeight": "bold",
+					"stroke": "#009900",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 219,
+					"left": 375,
+					"width": 175,
+					"height": 42,
+					"dataSource": "bStop",
+					"text": "Stop",
+					"fontFamily": "Helvetica",
+					"fontSize": 30,
+					"fontWeight": "bold",
+					"stroke": "#EE0000",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 216,
+					"left": 558,
+					"width": 331,
+					"height": 45,
+					"dataSource": "sJobSeq",
+					"fontFamily": "Helvetica",
+					"fontSize": 50,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

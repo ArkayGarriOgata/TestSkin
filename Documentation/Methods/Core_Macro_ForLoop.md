@@ -1,0 +1,1 @@
+  `ForLoop:  Core_Macro_ForLoop({*}{!}Array/Field)=>tForLoopCode    `Description:  This method will help create code for a For Loop    `   * means include termination condition    `   !  add thermometer.

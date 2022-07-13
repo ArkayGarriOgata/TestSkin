@@ -1,0 +1,202 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 17,
+	"markerBody": 37,
+	"markerBreak": 40,
+	"markerFooter": 40,
+	"events": [
+		"onLoad",
+		"onDisplayDetail",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 0,
+					"width": 320,
+					"height": 19,
+					"stroke": "transparent"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 16,
+					"left": 0,
+					"width": 320,
+					"height": 1,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 77,
+					"height": 15,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Job No.Form"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 159,
+					"width": 80,
+					"height": 15,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "DateNeeded"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 78,
+					"width": 80,
+					"height": 15,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Qty Required"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 240,
+					"width": 80,
+					"height": 15,
+					"fill": "#AAAAAA",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "POItemKey"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 20,
+					"left": 3,
+					"width": 71,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Job_forms:59]JobFormID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 20,
+					"left": 80,
+					"width": 65,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Job_forms:59]QtyRequired:4",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 20,
+					"left": 162,
+					"width": 65,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Job_forms:59]NeedDate:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 20,
+					"left": 242,
+					"width": 71,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Job_forms:59]POItemKey:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 36,
+					"left": 0,
+					"width": 320,
+					"height": 1,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

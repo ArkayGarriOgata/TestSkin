@@ -1,0 +1,1 @@
+real7t:=Round:C94(Subtotal:C97(real7); 0)

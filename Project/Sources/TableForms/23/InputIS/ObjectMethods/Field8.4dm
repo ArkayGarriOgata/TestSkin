@@ -1,0 +1,3 @@
+//(S) Type
+gFindIssueType
+//EOS

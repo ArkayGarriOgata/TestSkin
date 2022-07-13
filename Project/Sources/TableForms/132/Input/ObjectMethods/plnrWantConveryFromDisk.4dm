@@ -1,0 +1,1 @@
+rfc_setQtytoOneIfTrue(->[Finished_Goods_SizeAndStyles:132]ConveryFromDisk:32; ->[Finished_Goods_SizeAndStyles:132]qty_ConvertDisk:39; ->task6)

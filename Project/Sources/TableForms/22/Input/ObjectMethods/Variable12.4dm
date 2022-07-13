@@ -1,0 +1,1 @@
+[Raw_Materials_Groups:22]ReceiptType:13:=2

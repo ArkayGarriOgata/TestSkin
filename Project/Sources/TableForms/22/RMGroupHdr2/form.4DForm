@@ -1,0 +1,282 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 26,
+	"markerBody": 88,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 36,
+					"left": 2,
+					"width": 32,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Group"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 36,
+					"left": 44,
+					"width": 103,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Name / Description"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 47,
+					"left": 0,
+					"width": 702,
+					"height": 3,
+					"strokeWidth": 3,
+					"startPoint": "bottomLeft"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 72,
+					"left": 30,
+					"width": 51,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "RM Code"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 72,
+					"left": 136,
+					"width": 35,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Name\rNA"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 72,
+					"left": 512,
+					"width": 46,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "On Hand"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 71,
+					"left": 296,
+					"width": 53,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Beginning"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 72,
+					"left": 378,
+					"width": 45,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Physical"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 72,
+					"left": 452,
+					"width": 33,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Cycle"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 72,
+					"left": 593,
+					"width": 52,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Committed"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 72,
+					"left": 673,
+					"width": 50,
+					"height": 11,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Available"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 84,
+					"left": 30,
+					"width": 697,
+					"height": 2,
+					"strokeWidth": 2
+				},
+				"Text11": {
+					"type": "text",
+					"top": 56,
+					"left": 466,
+					"width": 86,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Times",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "(Quantities)"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 56,
+					"left": 4,
+					"width": 38,
+					"height": 12,
+					"dataSource": "[Raw_Materials_Groups:22]Commodity_Code:1",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/RMGroup"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 56,
+					"left": 45,
+					"width": 255,
+					"height": 12,
+					"dataSource": "[Raw_Materials_Groups:22]Description:2",
+					"stroke": "#000000",
+					"fontFamily": "Times",
+					"fontSize": 10,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Show_All"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

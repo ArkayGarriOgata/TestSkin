@@ -1,0 +1,111 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Pick a Project",
+	"inheritedForm": "Core_Peek",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperWidth": "475pt",
+		"paperHeight": "367pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 9,
+					"width": 171,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Select a Project from this list:"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 261,
+					"left": 107,
+					"width": 73,
+					"height": 20,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 261,
+					"left": 19,
+					"width": 73,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 253,
+					"left": 161,
+					"width": 9,
+					"height": 7,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 52,
+					"left": 24,
+					"width": 128,
+					"height": 90,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

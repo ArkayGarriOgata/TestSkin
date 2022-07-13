@@ -1,0 +1,96 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 40,
+					"left": 0,
+					"width": 543,
+					"height": 613,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26639.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 39,
+					"left": 15,
+					"width": 41,
+					"height": 16,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 41,
+					"left": 10,
+					"width": 192,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"text": "Job Life Cycle"
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 11,
+					"left": 13,
+					"width": 173,
+					"height": 20,
+					"dataSource": "hlHelp",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/HelpChoices"
+					},
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

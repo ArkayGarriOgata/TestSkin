@@ -1,0 +1,232 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"_explo_fieldBkgd_fonctions2": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 205,
+					"width": 762,
+					"height": 357,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#00E0FF",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"_explo_fieldBkgd_fonctions1": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 0,
+					"width": 202,
+					"height": 357,
+					"sizingY": "grow",
+					"fill": "#00E0FF",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"_explo_fieldBox_fonctions1": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 209,
+					"width": 745,
+					"height": 357,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				},
+				"_explo_fieldBkgd_3": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 5,
+					"width": 190,
+					"height": 27,
+					"fill": "#80FFFF",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"_explo_fieldBkgd_4": {
+					"type": "rectangle",
+					"top": 76,
+					"left": 5,
+					"width": 190,
+					"height": 27,
+					"fill": "#80FFFF",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"_explo_fieldBkgd_6": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 5,
+					"width": 190,
+					"height": 27,
+					"fill": "#80FFFF",
+					"stroke": "transparent",
+					"borderRadius": 8
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 83,
+					"width": 102,
+					"height": 27
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 83,
+					"width": 102,
+					"height": 27
+				},
+				"Tx_Date_begin2": {
+					"type": "text",
+					"top": 51,
+					"left": 15,
+					"width": 66,
+					"height": 16,
+					"stroke": "#007CFF",
+					"class": "BaseLabel",
+					"text": "Date Begin"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 76,
+					"left": 83,
+					"width": 102,
+					"height": 27
+				},
+				"Tx_Date_End2": {
+					"type": "text",
+					"top": 81,
+					"left": 15,
+					"width": 62,
+					"height": 16,
+					"stroke": "#007CFF",
+					"class": "BaseLabel",
+					"text": "Date end"
+				},
+				"_explo_fieldLabel_2": {
+					"type": "text",
+					"top": 21,
+					"left": 15,
+					"width": 72,
+					"height": 16,
+					"stroke": "#007CFF",
+					"class": "BaseLabel",
+					"text": "Show"
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_Shipements": {
+					"type": "listbox",
+					"top": 10,
+					"left": 211,
+					"width": 740,
+					"height": 347,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fill": "transparent",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": []
+				},
+				"Show": {
+					"type": "checkbox",
+					"top": 18,
+					"left": 87,
+					"width": 91,
+					"height": 25,
+					"text": "Show Rep",
+					"class": "BaseField",
+					"focusable": false,
+					"method": "ObjectMethods/Show.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Date_begin": {
+					"type": "input",
+					"top": 52,
+					"left": 87,
+					"width": 96,
+					"height": 16,
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"min": "2010-01-01",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Date_end": {
+					"type": "input",
+					"top": 83,
+					"left": 87,
+					"width": 96,
+					"height": 16,
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"min": "2010-01-01",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bFind": {
+					"type": "button",
+					"top": 110,
+					"left": 87,
+					"width": 106,
+					"height": 25,
+					"text": "Find",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bFind.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

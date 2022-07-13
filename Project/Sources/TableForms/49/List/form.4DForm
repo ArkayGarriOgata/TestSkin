@@ -1,0 +1,649 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 124,
+	"markerFooter": 188,
+	"events": [
+		"onHeader",
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 220,
+					"width": 47,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " CustID"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 77,
+					"left": 5,
+					"width": 73,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": "Shippers Nº"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 77,
+					"left": 531,
+					"width": 74,
+					"height": 17,
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "DockAppt"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 77,
+					"left": 453,
+					"width": 70,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " Carrier"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 77,
+					"left": 608,
+					"width": 88,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " ShipDate"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 77,
+					"left": 269,
+					"width": 47,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": "Ship To"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 77,
+					"left": 700,
+					"width": 39,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " Cases"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 77,
+					"left": 753,
+					"width": 62,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " Wgt"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 100,
+					"left": 5,
+					"width": 65,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShippersNo:1",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 75,
+					"width": 19,
+					"height": 17,
+					"dataSource": "[Customers_Bills_of_Lading:49]WasBilled:29",
+					"text": " ",
+					"class": "BaseLabel",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 99,
+					"width": 19,
+					"height": 17,
+					"dataSource": "[Customers_Bills_of_Lading:49]WasPrinted:8",
+					"text": " ",
+					"class": "BaseLabel",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 100,
+					"left": 124,
+					"width": 52,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]Status:32",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 100,
+					"left": 179,
+					"width": 39,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShippedFrom:5",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ShipFrom"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 222,
+					"width": 39,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]CustID:2",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 100,
+					"left": 269,
+					"width": 42,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShipTo:3",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 100,
+					"left": 318,
+					"width": 134,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]Mode:36",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ShippingMode"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 100,
+					"left": 453,
+					"width": 73,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]Carrier:9",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Carriers"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 100,
+					"left": 531,
+					"width": 70,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]DockAppointment:21",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 100,
+					"left": 608,
+					"width": 83,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]ShipDate:20",
+					"dataSourceTypeHint": "date",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 100,
+					"left": 710,
+					"width": 34,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]Total_Cases:14",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 100,
+					"left": 757,
+					"width": 51,
+					"height": 15,
+					"dataSource": "[Customers_Bills_of_Lading:49]Total_Wgt:18",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 142,
+					"left": 234,
+					"width": 111,
+					"height": 20,
+					"dataSource": "Button1",
+					"text": "Print Listing...",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 142,
+					"left": 356,
+					"width": 111,
+					"height": 20,
+					"dataSource": "b12",
+					"text": "Clear Pending",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button9": {
+					"type": "button",
+					"top": 142,
+					"left": 476,
+					"width": 152,
+					"height": 20,
+					"dataSource": "wms_2",
+					"text": "Remote WMS Updates",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button11": {
+					"type": "button",
+					"top": 142,
+					"left": 646,
+					"width": 150,
+					"height": 20,
+					"dataSource": "wms_3",
+					"text": "Remote WMS Move",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 77,
+					"left": 98,
+					"width": 27,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": "Prn?"
+				},
+				"bAdd": {
+					"type": "pictureButton",
+					"top": 127,
+					"left": 39,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAdd",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Add Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAddlabel": {
+					"type": "text",
+					"top": 173,
+					"left": 12,
+					"width": 102,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "New Bill of Lading"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 135,
+					"left": 154,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Magnifier.png"
+				},
+				"bAddlabel1": {
+					"type": "text",
+					"top": 173,
+					"left": 119,
+					"width": 102,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Find (cmd+F)"
+				},
+				"Highlight Button1": {
+					"type": "button",
+					"top": 130,
+					"left": 134,
+					"width": 72,
+					"height": 56,
+					"dataSource": "Highlight Button1",
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Highlight Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 77,
+					"left": 128,
+					"width": 38,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": "Status"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 77,
+					"left": 76,
+					"width": 24,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": "Bill?"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 77,
+					"left": 177,
+					"width": 47,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " From"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 77,
+					"left": 318,
+					"width": 117,
+					"height": 17,
+					"class": "BaseLabel",
+					"text": " Mode"
+				}
+			},
+			"entryOrder": [
+				"Field1",
+				"Field6",
+				"Field11",
+				"Field4",
+				"Field12",
+				"Field2",
+				"Field3",
+				"Field13",
+				"Field5",
+				"Field7",
+				"Field8",
+				"Field9",
+				"Field10",
+				"Button1",
+				"Button2",
+				"Button9",
+				"Button11"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bAdd",
+					"bAddlabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

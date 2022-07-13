@@ -1,0 +1,1 @@
+t2:="INVENTORY "+String:C10(rReal1)+" MONTHS & UP"

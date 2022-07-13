@@ -1,0 +1,284 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 452,
+					"left": 333,
+					"width": 20,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26769.png"
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 467,
+					"left": 11,
+					"width": 705,
+					"height": 224,
+					"resizingMode": "legacy",
+					"dataSource": "List Box1",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column6",
+							"dataSource": "sttMachine",
+							"width": 174,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Machine",
+								"dataSource": "Header6",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "sttSchDateTime",
+							"width": 159,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Can Start on",
+								"dataSource": "Header7",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "siGraph",
+							"dataSourceTypeHint": "picture",
+							"width": 357,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 701,
+					"left": 619,
+					"width": 97,
+					"height": 21,
+					"dataSource": "bOK",
+					"action": "cancel",
+					"text": "OK",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 3,
+					"left": 12,
+					"width": 378,
+					"height": 16,
+					"text": "<ttText>"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 24,
+					"left": 14,
+					"width": 685,
+					"height": 406,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "t1",
+					"stroke": "#000000",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_First_Rec"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 702,
+					"left": 511,
+					"width": 100,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"text": "Save As...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 694,
+					"left": 13,
+					"width": 299,
+					"height": 28,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Use Edit.Copy & Edit.Paste to move this text into your word processor or \"Save As...\" to make a text file."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 441,
+					"left": 336,
+					"width": 178,
+					"height": 16,
+					"textAlign": "left",
+					"text": "<dStart> @ <hStart>"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 441,
+					"left": 529,
+					"width": 178,
+					"height": 16,
+					"textAlign": "right",
+					"text": "<dLast> @ <hLast>"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 452,
+					"left": 690,
+					"width": 20,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26770.png"
+				}
+			}
+		}
+	]
+}

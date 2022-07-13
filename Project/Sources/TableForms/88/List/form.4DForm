@@ -1,0 +1,736 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 125,
+	"markerFooter": 201,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable75": {
+					"type": "tab",
+					"top": 134,
+					"left": 2,
+					"width": 756,
+					"height": 63,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "iInvoiceTabs",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/InvoiceTabs"
+					},
+					"class": "BaseLabel",
+					"method": "ObjectMethods/Variable75.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"SearchPicker": {
+					"type": "subform",
+					"top": 9,
+					"left": 651,
+					"width": 198,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "vSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"InvoiceNumber": {
+					"type": "input",
+					"top": 100,
+					"left": 4,
+					"width": 59,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]InvoiceNumber:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Invoice_Date": {
+					"type": "input",
+					"top": 100,
+					"left": 66,
+					"width": 75,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]Invoice_Date:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Status": {
+					"type": "input",
+					"top": 100,
+					"left": 151,
+					"width": 59,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]Status:22",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CustomerLine": {
+					"type": "input",
+					"top": 100,
+					"left": 219,
+					"width": 111,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]CustomerLine:20",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GL_CODE": {
+					"type": "input",
+					"top": 100,
+					"left": 336,
+					"width": 131,
+					"height": 15,
+					"dataSource": "[Addresses:30]Name:2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field37": {
+					"type": "input",
+					"top": 100,
+					"left": 466,
+					"width": 59,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]Quantity:15",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ExtendedPrice": {
+					"type": "input",
+					"top": 100,
+					"left": 537,
+					"width": 84,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]ExtendedPrice:19",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00  ;###,##0.00CR",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cpn": {
+					"type": "input",
+					"top": 100,
+					"left": 635,
+					"width": 108,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]ProductCode:14",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"OrderLine": {
+					"type": "input",
+					"top": 100,
+					"left": 755,
+					"width": 61,
+					"height": 16,
+					"dataSource": "[Customers_Invoices:88]OrderLine:4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CustomersPO": {
+					"type": "input",
+					"top": 100,
+					"left": 830,
+					"width": 159,
+					"height": 16,
+					"dataSource": "[Customers_Invoices:88]CustomersPO:11",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cpn1": {
+					"type": "input",
+					"top": 100,
+					"left": 1001,
+					"width": 28,
+					"height": 15,
+					"dataSource": "[Customers_Invoices:88]EDI_Prep:33",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable76": {
+					"type": "radio",
+					"top": 168,
+					"left": 15,
+					"width": 102,
+					"height": 19,
+					"dataSource": "b1",
+					"text": "by Invoice Nº",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable76.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable78": {
+					"type": "radio",
+					"top": 168,
+					"left": 120,
+					"width": 80,
+					"height": 19,
+					"dataSource": "b2",
+					"text": "by Bill To",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable78.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable80": {
+					"type": "radio",
+					"top": 168,
+					"left": 224,
+					"width": 78,
+					"height": 19,
+					"dataSource": "cb1",
+					"text": "Any Date",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable80.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable81": {
+					"type": "radio",
+					"top": 168,
+					"left": 307,
+					"width": 98,
+					"height": 19,
+					"dataSource": "cb2",
+					"text": "Last 30 days",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Variable81.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 168,
+					"left": 425,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bApprove",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/InvoiceApprove"
+					},
+					"text": "Approve",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable35": {
+					"type": "button",
+					"top": 168,
+					"left": 507,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintInvoice"
+					},
+					"text": "Print",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable35.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 168,
+					"left": 589,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bPost",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PostInvoice"
+					},
+					"text": "Post",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Tgsn_nPrGb_SendPipedInvoice": {
+					"type": "button",
+					"top": 167,
+					"left": 669,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Tgsn_nPrGb_SendPipedInvoice",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintInvoice"
+					},
+					"text": "Tungsten",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Tgsn_nPrGb_SendPipedInvoice.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"edi1": {
+					"type": "button",
+					"top": 167,
+					"left": 761,
+					"width": 74,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintInvoice"
+					},
+					"text": "EDI",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/edi1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 168,
+					"left": 863,
+					"width": 75,
+					"height": 20,
+					"visibility": "hidden",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/PrintInvoice"
+					},
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Get A/R",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 4,
+					"width": 64,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Invoice"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 66,
+					"width": 50,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Date"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 78,
+					"left": 151,
+					"width": 59,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Status"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 78,
+					"left": 219,
+					"width": 108,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CustomerLine"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 78,
+					"left": 336,
+					"width": 158,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Cust BillTo Name"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 78,
+					"left": 530,
+					"width": 92,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "ExtendedPrice"
+				},
+				"Text43": {
+					"type": "text",
+					"top": 78,
+					"left": 456,
+					"width": 69,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Quantity"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 78,
+					"left": 635,
+					"width": 108,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "ProductCode"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 78,
+					"left": 973,
+					"width": 63,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "EDI(msg#)"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 78,
+					"left": 825,
+					"width": 96,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Purchase Order"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 78,
+					"left": 745,
+					"width": 76,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Arkay Order"
+				},
+				"SearchResults": {
+					"type": "input",
+					"top": 42,
+					"left": 661,
+					"width": 174,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "UTIL_Num_Records(->[Customers_Invoices:88])",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 11,
+					"left": 890,
+					"width": 120,
+					"height": 28,
+					"class": "BaseInformation",
+					"text": "Right click on listing to open in Excel"
+				}
+			},
+			"entryOrder": [
+				"SearchPicker",
+				"InvoiceNumber",
+				"Invoice_Date",
+				"Status",
+				"CustomerLine",
+				"GL_CODE",
+				"Field37",
+				"ExtendedPrice",
+				"cpn",
+				"OrderLine",
+				"CustomersPO",
+				"cpn1",
+				"Group1",
+				"Variable76",
+				"Variable78",
+				"Group2",
+				"Variable80",
+				"Variable81",
+				"Variable8",
+				"Variable35",
+				"Variable25",
+				"Tgsn_nPrGb_SendPipedInvoice",
+				"edi1",
+				"Variable1"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Variable76",
+				"Variable78"
+			],
+			"Group2": [
+				"Variable80",
+				"Variable81"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

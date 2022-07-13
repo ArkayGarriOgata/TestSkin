@@ -1,0 +1,1 @@
+t3:=fBarCodeSym(128; [WMS_SerializedShippingLabels:96]Jobit:3)

@@ -1,0 +1,139 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 30,
+	"bottomMargin": 12,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture-536870911": {
+					"type": "picture",
+					"top": 5,
+					"left": 5,
+					"width": 79,
+					"height": 70,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture-536870911.png"
+				},
+				"Text": {
+					"type": "text",
+					"top": 23,
+					"left": 86,
+					"width": 519,
+					"height": 31,
+					"class": "Shell_LargeLabel",
+					"text": "Enter your comments below. They will be added to the top of the <tField> field along with the date, time and your initials."
+				},
+				"tText": {
+					"type": "input",
+					"top": 86,
+					"left": 30,
+					"width": 561,
+					"height": 304,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "tText",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 402,
+					"left": 522,
+					"width": 86,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"text": "OK",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bOK.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 402,
+					"left": 424,
+					"width": 86,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

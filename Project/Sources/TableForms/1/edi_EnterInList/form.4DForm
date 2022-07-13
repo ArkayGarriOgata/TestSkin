@@ -1,0 +1,211 @@
+{
+	"destination": "detailScreen",
+	"windowMaxWidth": 900,
+	"windowMaxHeight": 1000,
+	"width": 900,
+	"height": 550,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Subform1": {
+					"type": "subform",
+					"top": 0,
+					"left": 1,
+					"width": 876,
+					"height": 507,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 41,
+					"detailForm": "edi_Input",
+					"listForm": "edi_compare",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "system"
+				},
+				"Done": {
+					"type": "button",
+					"top": 516,
+					"left": 645,
+					"width": 95,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "bDone",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"text": "Finished",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done1": {
+					"type": "button",
+					"top": 516,
+					"left": 346,
+					"width": 55,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb4",
+					"text": "Sent",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done2": {
+					"type": "button",
+					"top": 516,
+					"left": 187,
+					"width": 80,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb3",
+					"text": "Reviewed",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done3": {
+					"type": "button",
+					"top": 516,
+					"left": 98,
+					"width": 80,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb2",
+					"text": "New/Chg",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done4": {
+					"type": "button",
+					"top": 516,
+					"left": 9,
+					"width": 80,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb1",
+					"text": "Not Sent",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done5": {
+					"type": "button",
+					"top": 516,
+					"left": 410,
+					"width": 55,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb5",
+					"text": "Query",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done6": {
+					"type": "button",
+					"top": 516,
+					"left": 474,
+					"width": 55,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb6",
+					"text": "Sort",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done7": {
+					"type": "button",
+					"top": 516,
+					"left": 543,
+					"width": 95,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb7",
+					"text": "Respond",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Done8": {
+					"type": "button",
+					"top": 516,
+					"left": 284,
+					"width": 55,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "rb3",
+					"text": "Print...",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Done8.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Subform1",
+				"Done",
+				"Done1",
+				"Done2",
+				"Done3",
+				"Done4",
+				"Done5",
+				"Done6",
+				"Done7",
+				"Done8"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,265 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 230,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable4": {
+					"type": "input",
+					"top": 8,
+					"left": 136,
+					"width": 91,
+					"height": 13,
+					"dataSource": "sPONum",
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "####################",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"listBox1": {
+					"type": "listbox",
+					"top": 31,
+					"left": 17,
+					"width": 211,
+					"height": 114,
+					"resizingMode": "legacy",
+					"lockedColumnCount": 1,
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/listBox1.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "asBull",
+							"width": 20,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "√",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "asCaseID",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Dif",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "asDiff",
+							"width": 146,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Description",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 198,
+					"left": 52,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bNoPick",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#EE0000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 198,
+					"left": 148,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPick",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Enter Job",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 8,
+					"left": 19,
+					"width": 110,
+					"height": 13,
+					"fill": "#CF0000",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"borderStyle": "raised",
+					"text": "Estimate Number:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 155,
+					"left": 19,
+					"width": 211,
+					"height": 36,
+					"fill": "automatic",
+					"stroke": "#0000FF",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 9,
+					"text": "1. Enter the budget Estimate Nº & press TAB.\r2. Choose the Differential to be used.\r3. Click the <Enter Job> button.\r"
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 202,
+					"left": 245,
+					"width": 9,
+					"height": 19,
+					"dataSource": "bPick",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Enter Job",
+					"display": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,218 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 124,
+	"markerFooter": 161,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 9,
+					"width": 190,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "ValidLocation"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 100,
+					"left": 9,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[WMS_AllowedLocations:73]ValidLocation:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 100,
+					"left": 196,
+					"width": 160,
+					"height": 16,
+					"dataSource": "[WMS_AllowedLocations:73]BarcodedID:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 361,
+					"width": 118,
+					"height": 15,
+					"dataSource": "[WMS_AllowedLocations:73]ReasonRequired:3",
+					"text": "ReasonRequired",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Show_Sub"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 101,
+					"left": 484,
+					"width": 246,
+					"height": 15,
+					"dataSource": "[WMS_AllowedLocations:73]Description:6",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Shell_Show_Sub"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 136,
+					"left": 9,
+					"width": 145,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Include Button"
+					},
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Print Barcode Labels",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 78,
+					"left": 196,
+					"width": 140,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Barcode ID"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

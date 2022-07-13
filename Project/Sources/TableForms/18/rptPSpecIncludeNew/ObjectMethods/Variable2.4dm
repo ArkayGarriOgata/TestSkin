@@ -1,0 +1,1 @@
+sIntro:=PSpec_DescriptionInText

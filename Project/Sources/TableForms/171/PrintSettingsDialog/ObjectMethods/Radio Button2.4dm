@@ -1,0 +1,1 @@
+sCriterion5:="1"

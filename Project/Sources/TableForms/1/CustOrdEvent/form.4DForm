@@ -1,0 +1,298 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 561,
+					"height": 152,
+					"fill": "#00B4FF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture10": {
+					"type": "picture",
+					"top": 4,
+					"left": 9,
+					"width": 63,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26687.png"
+				},
+				"Picture11": {
+					"type": "picture",
+					"top": 3,
+					"left": 54,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26777.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 4,
+					"left": 7,
+					"width": 66,
+					"height": 65,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 81,
+					"left": 3,
+					"width": 109,
+					"height": 30,
+					"dataSource": "bships",
+					"text": "Shipment Recap",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 81,
+					"left": 117,
+					"width": 135,
+					"height": 30,
+					"dataSource": "bPost",
+					"text": "Invoicing",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 81,
+					"left": 258,
+					"width": 135,
+					"height": 30,
+					"dataSource": "ibRevOL",
+					"text": "Review Order Lines",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 81,
+					"left": 399,
+					"width": 95,
+					"height": 30,
+					"dataSource": "ibOther",
+					"text": "Chg Orders",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 114,
+					"left": 117,
+					"width": 135,
+					"height": 30,
+					"dataSource": "bPost",
+					"text": "Export Billing Data",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 114,
+					"left": 258,
+					"width": 135,
+					"height": 30,
+					"dataSource": "bExport",
+					"text": "Export Booking Data",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 7,
+					"left": 93,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibNew",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 7,
+					"left": 163,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibMod",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 6,
+					"left": 233,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibRev",
+					"focusable": false,
+					"text": "Review",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 6,
+					"left": 304,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibDel",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 7,
+					"left": 441,
+					"width": 55,
+					"height": 60,
+					"dataSource": "<>ibrm_rpts",
+					"focusable": false,
+					"text": "Report",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable16",
+				"Variable18",
+				"Variable13",
+				"Variable11",
+				"Variable2",
+				"Variable17"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

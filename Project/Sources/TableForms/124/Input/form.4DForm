@@ -1,0 +1,200 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 346,
+	"markerBreak": 346,
+	"markerFooter": 356,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperWidth": "458pt",
+		"paperHeight": "593pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 118,
+					"left": 143,
+					"width": 266,
+					"height": 36,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Rectangle13": {
+					"type": "rectangle",
+					"top": 153,
+					"left": 144,
+					"width": 35,
+					"height": 2,
+					"fill": "automatic",
+					"stroke": "transparent"
+				},
+				"Picture14": {
+					"type": "picture",
+					"top": 119,
+					"left": 145,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/interface.png"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 141,
+					"left": 299,
+					"width": 100,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 119,
+					"left": 190,
+					"width": 209,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "WMS_Composition"
+				},
+				"Rectangle16": {
+					"type": "rectangle",
+					"top": 164,
+					"left": 190,
+					"width": 219,
+					"height": 283,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 174,
+					"left": 200,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Container"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 196,
+					"left": 200,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Content"
+				},
+				"Container": {
+					"type": "input",
+					"top": 174,
+					"left": 257,
+					"width": 140,
+					"height": 12,
+					"dataSource": "[WMS_Compositions:124]Container:1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Content": {
+					"type": "input",
+					"top": 196,
+					"left": 257,
+					"width": 140,
+					"height": 12,
+					"dataSource": "[WMS_Compositions:124]Content:2",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

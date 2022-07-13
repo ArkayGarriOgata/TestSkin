@@ -1,0 +1,414 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Reverse Issue",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 3,
+	"menuBar": "empty",
+	"markerBody": 156,
+	"markerBreak": 156,
+	"markerFooter": 166,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 167,
+					"left": 0,
+					"width": 340,
+					"height": 51,
+					"fill": "#DFFFFF",
+					"stroke": "#DFFFFF"
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 167,
+					"left": 215,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 167,
+					"left": 278,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bValidate",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 340,
+					"height": 75,
+					"fill": "#00D6D8",
+					"stroke": "#00D6D8"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 340,
+					"height": 52,
+					"fill": "#00FDFF",
+					"stroke": "#00FDFF"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 1,
+					"width": 340,
+					"height": 22,
+					"fill": "#5FFEFF",
+					"stroke": "#5FFEFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 104,
+					"left": 17,
+					"width": 70,
+					"height": 16,
+					"fill": "#00FDFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Quantity:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 34,
+					"left": 3,
+					"width": 71,
+					"height": 16,
+					"fill": "#00D6D8",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "PO Item Nº:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 80,
+					"left": 13,
+					"width": 74,
+					"height": 15,
+					"fill": "#00F3FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Location:"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 145,
+					"left": 1,
+					"width": 340,
+					"height": 22,
+					"fill": "#C0FFFF",
+					"stroke": "#C0FFFF"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 148,
+					"left": 37,
+					"width": 50,
+					"height": 16,
+					"fill": "#C0FFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Date:"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 7,
+					"left": 62,
+					"width": 71,
+					"height": 16,
+					"dataSource": "sJobform",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 80,
+					"left": 92,
+					"width": 116,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 104,
+					"left": 92,
+					"width": 116,
+					"height": 16,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 125,
+					"left": 204,
+					"width": 126,
+					"height": 18,
+					"dataSource": "rb1",
+					"text": "Leave Cost in Job",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 125,
+					"left": 39,
+					"width": 162,
+					"height": 18,
+					"dataSource": "rb2",
+					"text": "Move Cost to Inventory",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 148,
+					"left": 92,
+					"width": 116,
+					"height": 16,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 55,
+					"left": 7,
+					"width": 328,
+					"height": 12,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#00D6D8",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 7,
+					"left": 3,
+					"width": 54,
+					"height": 16,
+					"fill": "#00D6D8",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Jobform:"
+				},
+				"Combo Box1": {
+					"type": "combo",
+					"top": 32,
+					"left": 74,
+					"width": 261,
+					"height": 19,
+					"dataSource": "aText",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Combo Box1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 7,
+					"left": 140,
+					"width": 195,
+					"height": 16,
+					"dataSource": "tText",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable7",
+				"Variable3",
+				"Variable4",
+				"Group1",
+				"Radio Button1",
+				"Radio Button2",
+				"Variable6",
+				"Variable2",
+				"Combo Box1",
+				"Variable5"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Radio Button1",
+				"Radio Button2"
+			]
+		}
+	}
+}

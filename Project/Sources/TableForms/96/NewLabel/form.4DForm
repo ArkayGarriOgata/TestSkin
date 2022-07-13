@@ -1,0 +1,690 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Create SSCC Labels",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 750,
+	"height": 550,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDataChange",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 394,
+					"left": 32,
+					"width": 686,
+					"height": 140,
+					"class": "BaseInformation",
+					"text": "Notes:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 13,
+					"left": 163,
+					"width": 105,
+					"height": 15,
+					"dataSource": "sCriterion1",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 44,
+					"left": 163,
+					"width": 55,
+					"height": 15,
+					"dataSource": "sCriterion2",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 75,
+					"left": 163,
+					"width": 105,
+					"height": 15,
+					"dataSource": "sCriterion3",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 106,
+					"left": 163,
+					"width": 25,
+					"height": 15,
+					"dataSource": "sCriterion4",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 138,
+					"left": 163,
+					"width": 25,
+					"height": 15,
+					"dataSource": "sCriterion5",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 8,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 173,
+					"left": 59,
+					"width": 53,
+					"height": 18,
+					"dataSource": "rb1",
+					"text": "P&G",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 173,
+					"left": 173,
+					"width": 45,
+					"height": 18,
+					"dataSource": "rb2",
+					"text": "FG",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 173,
+					"left": 288,
+					"width": 50,
+					"height": 18,
+					"dataSource": "rb3",
+					"text": "WIP",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button4": {
+					"type": "radio",
+					"top": 203,
+					"left": 173,
+					"width": 50,
+					"height": 18,
+					"dataSource": "rb4",
+					"text": "O/S",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button5": {
+					"type": "radio",
+					"top": 203,
+					"left": 288,
+					"width": 65,
+					"height": 18,
+					"dataSource": "rb5",
+					"text": "Return",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button6": {
+					"type": "radio",
+					"top": 203,
+					"left": 404,
+					"width": 74,
+					"height": 18,
+					"dataSource": "rb6",
+					"text": "Existing",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button7": {
+					"type": "radio",
+					"top": 203,
+					"left": 59,
+					"width": 60,
+					"height": 18,
+					"dataSource": "rb7",
+					"text": "PFS",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/Radio Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 161,
+					"left": 525,
+					"width": 93,
+					"height": 15,
+					"dataSource": "sArkayUCCid",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"selectSupercase": {
+					"type": "checkbox",
+					"top": 246,
+					"left": 60,
+					"width": 179,
+					"height": 22,
+					"dataSource": "cbSuperCase",
+					"text": "Send SuperCase to WMS",
+					"class": "BaseCheckBox",
+					"method": "ObjectMethods/selectSupercase.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"supercaseVariable7": {
+					"type": "input",
+					"top": 250,
+					"left": 352,
+					"width": 245,
+					"height": 15,
+					"dataSource": "wms_bin_id",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/supercaseVariable7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"selectSupercase1": {
+					"type": "checkbox",
+					"top": 277,
+					"left": 60,
+					"width": 354,
+					"height": 22,
+					"dataSource": "cbReceiveAMS",
+					"text": "Enter Receipt transaction from WIP to CC in aMs",
+					"class": "BaseCheckBox",
+					"method": "ObjectMethods/selectSupercase1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 350,
+					"left": 573,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bValidate",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 350,
+					"left": 488,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 13,
+					"left": 44,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Jobit:"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 44,
+					"left": 44,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Quantity:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 75,
+					"left": 44,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "PO Number:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 106,
+					"left": 44,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Number of Pallets:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 138,
+					"left": 44,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Labels per Pallet:"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 357,
+					"left": 663,
+					"width": 15,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bValidate",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"supercaseText2": {
+					"type": "text",
+					"top": 250,
+					"left": 270,
+					"width": 73,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "WMS Bin Id:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 415,
+					"left": 52,
+					"width": 666,
+					"height": 119,
+					"class": "BaseField",
+					"text": "• P&G and FG options are for labels that will have each of there cases scanned in normal fashion. \r• WIP is primarily for Gaylords. Turn on Enter Recipt checkbox! Then scan QAMoved to FG\r• O/S is for Outside Gluing. Turn OFF Enter Recipt checkbox if already received! Turn on Move checkbox\r    if inventory shows at vendor location. Then scan QAMoved to FG. \r• Return is for customer RGAs that will be Returned in aMs manually and QAMoved from XC to FG or SC. \r• MIXED JOBS does not need Jobit, use when wanting to move multiple cases with one scan. See \r    WMS palette \"Move Skid or Case\" to load the mixed pallet."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 44,
+					"left": 225,
+					"width": 113,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "per pallet"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 161,
+					"left": 478,
+					"width": 41,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Prefix:"
+				},
+				"bCancel1": {
+					"type": "button",
+					"top": 350,
+					"left": 374,
+					"width": 94,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bMix",
+					"action": "cancel",
+					"text": "MIXED JOBS",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bCancel1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"selectSupercase2": {
+					"type": "checkbox",
+					"top": 308,
+					"left": 60,
+					"width": 535,
+					"height": 22,
+					"dataSource": "cbMoveOS",
+					"text": "Move 0 cartons from FG:OS to Roanoke",
+					"class": "BaseCheckBox",
+					"method": "ObjectMethods/selectSupercase2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 13,
+					"left": 366,
+					"width": 225,
+					"height": 15,
+					"dataSource": "sCPN",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 64,
+					"left": 386,
+					"width": 225,
+					"height": 15,
+					"dataSource": "sCustName",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 95,
+					"left": 386,
+					"width": 225,
+					"height": 15,
+					"dataSource": "sLine",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 126,
+					"left": 386,
+					"width": 225,
+					"height": 15,
+					"dataSource": "sDesc",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 13,
+					"left": 281,
+					"width": 77,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "CPN:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 64,
+					"left": 301,
+					"width": 77,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Customer:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 95,
+					"left": 301,
+					"width": 77,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Line:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 126,
+					"left": 301,
+					"width": 77,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Description:"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 46,
+					"left": 301,
+					"width": 331,
+					"height": 108,
+					"text": "Will only change on the SSCC record and printout:"
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Group2",
+				"Radio Button1",
+				"Radio Button2",
+				"Radio Button3",
+				"Radio Button4",
+				"Radio Button5",
+				"Radio Button6",
+				"Radio Button7",
+				"Variable7",
+				"selectSupercase",
+				"supercaseVariable7",
+				"selectSupercase1",
+				"bValidate",
+				"bCancel",
+				"bCancel1",
+				"selectSupercase2",
+				"Variable9",
+				"Variable10",
+				"Variable11"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Radio Button1",
+				"Radio Button2",
+				"Radio Button3",
+				"Radio Button4",
+				"Radio Button5",
+				"Radio Button6",
+				"Radio Button7"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

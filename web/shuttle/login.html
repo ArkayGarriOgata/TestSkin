@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="fullscreen-bg">
+<head>
+  <!--#4DBASE inc/-->
+  <!--#4DINCLUDE head.html-->
+</head>
+<body>
+  <div id="wrapper">
+    <div class="vertical-align-wrap"><div class="vertical-align-middle"><div class="auth-box ">
+          <div class="left">
+            <div class="content">
+              <div class="header">
+                <div class="logo text-center"><img src="/images/logo.png" alt="Klorofil Logo"></div>
+                <p class="lead">Login to your account</p>
+              </div>
+              <form class="form-auth-small" action="/login" method="POST">
+                <div class="form-group">
+                  <label for="signin-email" class="control-label sr-only">Email</label>
+                  <input type="email" class="form-control" id="signin-email" value="" placeholder="Email" name="Email">
+                </div>
+                <div class="form-group">
+                  <label for="signin-password" class="control-label sr-only">Password</label>
+                  <input type="password" class="form-control" id="signin-password" value="" placeholder="Password" name="Password">
+                  <div class="text-danger">
+                    <!--4DTEXT errTxt-->
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
+              </form>
+            </div>
+          </div>
+          <div class="right">
+            <div class="overlay"></div>
+            <div class="content text">
+              <h1 class="heading">The site where you need to be</h1>
+              <p>by The Develovers</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div></div></div>
+  </div>
+  </body>
+</html>

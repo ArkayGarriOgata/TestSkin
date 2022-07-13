@@ -1,0 +1,159 @@
+{
+	"destination": "detailPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 429,
+	"markerBreak": 429,
+	"markerFooter": 429,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "4 x 6",
+		"paperWidth": "288pt",
+		"paperHeight": "432pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 8,
+					"left": 5,
+					"width": 276,
+					"height": 421,
+					"fill": "transparent"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 10,
+					"left": 8,
+					"width": 29,
+					"height": 27,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/emblem.png"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 61,
+					"left": 7,
+					"width": 270,
+					"height": 57,
+					"dataSource": "T2",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 20,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 122,
+					"left": 7,
+					"width": 268,
+					"height": 19,
+					"dataSource": "t1",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/SSCC-18"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 38,
+					"left": 5,
+					"width": 275,
+					"height": 1
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 165,
+					"left": 11,
+					"width": 260,
+					"height": 259,
+					"dataSource": "t3",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 146,
+					"left": 10,
+					"width": 266,
+					"height": 14,
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "PALLET MANIFEST:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 41,
+					"width": 221,
+					"height": 24,
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "ARKAY PACKAGING CORPORATION\rROANOKE VA USA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 142,
+					"left": 5,
+					"width": 275,
+					"height": 1
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1701 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Corrective Action Request",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"width": 900,
+	"height": 800,
+	"menuBar": "Default",
+	"markerBody": 558,
+	"markerBreak": 558,
+	"markerFooter": 568,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text26": {
+					"type": "text",
+					"top": 11,
+					"left": 689,
+					"width": 37,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"text": "CAR#"
+				},
+				"RequestNumber": {
+					"type": "input",
+					"top": 31,
+					"left": 671,
+					"width": 65,
+					"height": 17,
+					"dataSource": "[QA_Corrective_Actions:105]RequestNumber:1",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"rb1_CARType": {
+					"type": "radio",
+					"top": 54,
+					"left": 537,
+					"width": 189,
+					"height": 14,
+					"dataSource": "rb1_CARType",
+					"text": "Customer Reply Required",
+					"class": "BaseRadioButton",
+					"method": "ObjectMethods/rb1_CARType.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb2_CARType": {
+					"type": "radio",
+					"top": 34,
+					"left": 537,
+					"width": 79,
+					"height": 14,
+					"dataSource": "rb2_CARType",
+					"text": "Internal",
+					"class": "BaseRadioButton",
+					"method": "ObjectMethods/rb2_CARType.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb3_CARType": {
+					"type": "radio",
+					"top": 73,
+					"left": 537,
+					"width": 214,
+					"height": 14,
+					"dataSource": "rb3_CARType",
+					"text": "Customer Informational ONLY",
+					"class": "BaseRadioButton",
+					"method": "ObjectMethods/rb3_CARType.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable7716": {
+					"type": "dropdown",
+					"top": 338,
+					"left": 682,
+					"width": 16,
+					"height": 12,
+					"dataSource": "hlCategoryTypes",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable7716.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 338,
+					"left": 681,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 747,
+					"left": 7,
+					"width": 691,
+					"height": 48,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"class": "Default",
+					"text": "Approvals"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 314,
+					"left": 7,
+					"width": 709,
+					"height": 73,
+					"stroke": "#0000FF",
+					"class": "Default",
+					"text": "To be completed by QA"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 363,
+					"left": 680,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 93,
+					"left": 15,
+					"width": 57,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Author"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 93,
+					"left": 64,
+					"width": 66,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Created"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 93,
+					"left": 143,
+					"width": 48,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Jobit"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 161,
+					"left": 157,
+					"width": 89,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Complaint Qty"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 93,
+					"left": 453,
+					"width": 44,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Custid"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 93,
+					"left": 265,
+					"width": 111,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "ProductCode"
+				},
+				"Text33": {
+					"type": "text",
+					"top": 338,
+					"left": 15,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "RGA"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 391,
+					"left": 19,
+					"width": 75,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Root Cause ^"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 338,
+					"left": 330,
+					"width": 47,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Reason"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 565,
+					"left": 19,
+					"width": 156,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Corrective Action Taken ^"
+				},
+				"Text37": {
+					"type": "text",
+					"top": 161,
+					"left": 15,
+					"width": 91,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CustomerRefer"
+				},
+				"Text38": {
+					"type": "text",
+					"top": 161,
+					"left": 247,
+					"width": 75,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CustomerPO"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 145,
+					"left": 450,
+					"width": 50,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Location"
+				},
+				"Text40": {
+					"type": "text",
+					"top": 363,
+					"left": 205,
+					"width": 32,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Plant"
+				},
+				"Text41": {
+					"type": "text",
+					"top": 363,
+					"left": 306,
+					"width": 71,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Cost Center"
+				},
+				"Text42": {
+					"type": "text",
+					"top": 471,
+					"left": 604,
+					"width": 56,
+					"height": 15,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Effective"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 770,
+					"left": 15,
+					"width": 110,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Completion Date"
+				},
+				"qaVariable26": {
+					"type": "dropdown",
+					"top": 363,
+					"left": 681,
+					"width": 17,
+					"height": 14,
+					"dataSource": "aCostCtrDes",
+					"display": false,
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/qaVariable26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 109,
+					"left": 493,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 108,
+					"left": 493,
+					"width": 16,
+					"height": 16,
+					"dataSource": "Button1",
+					"display": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 201,
+					"left": 13,
+					"width": 86,
+					"height": 61,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Customer Reason \rGiven ^"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 129,
+					"left": 266,
+					"width": 254,
+					"height": 14,
+					"dataSource": "[Finished_Goods:26]CartonDesc:3",
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 109,
+					"left": 518,
+					"width": 254,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]CustomerName:31",
+					"stroke": "#0000FF",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 338,
+					"left": 241,
+					"width": 27,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Qty"
+				},
+				"Library Picture1": {
+					"type": "picture",
+					"top": 163,
+					"left": 602,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 421,
+					"left": 604,
+					"width": 56,
+					"height": 15,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Cr Act on"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 396,
+					"left": 606,
+					"width": 56,
+					"height": 15,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Cr Act by"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 292,
+					"left": 172,
+					"width": 71,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Who Called"
+				},
+				"Library Picture2": {
+					"type": "picture",
+					"top": 179,
+					"left": 359,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Pop-up/Drop-down List1": {
+					"type": "dropdown",
+					"top": 179,
+					"left": 360,
+					"width": 17,
+					"height": 14,
+					"dataSource": "aPO",
+					"display": false,
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Pop-up%2FDrop-down List1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 292,
+					"left": 391,
+					"width": 40,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Phone"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 446,
+					"left": 606,
+					"width": 56,
+					"height": 15,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Reported"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 292,
+					"left": 12,
+					"width": 83,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Cost Estimate"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 363,
+					"left": 88,
+					"width": 83,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]QtyReturned:28",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Author": {
+					"type": "input",
+					"top": 110,
+					"left": 15,
+					"width": 38,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Author:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateCreated": {
+					"type": "input",
+					"top": 110,
+					"left": 64,
+					"width": 64,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]DateCreated:2",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Jobit": {
+					"type": "input",
+					"top": 110,
+					"left": 143,
+					"width": 79,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Jobit:9",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Jobit.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ProductCode": {
+					"type": "input",
+					"top": 110,
+					"left": 267,
+					"width": 154,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]ProductCode:7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;/;.;-\"",
+					"method": "ObjectMethods/ProductCode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Custid": {
+					"type": "input",
+					"top": 110,
+					"left": 446,
+					"width": 45,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Custid:5",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Custid.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CustomerRefer": {
+					"type": "input",
+					"top": 179,
+					"left": 15,
+					"width": 140,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]CustomerRefer:11",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QtyComplaint": {
+					"type": "input",
+					"top": 179,
+					"left": 166,
+					"width": 58,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]QtyComplaint:23",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CustomerPO": {
+					"type": "input",
+					"top": 179,
+					"left": 247,
+					"width": 110,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]CustomerPO:12",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Location": {
+					"type": "input",
+					"top": 163,
+					"left": 448,
+					"width": 151,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Location:6",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Location.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Pop-up/Drop-down List2": {
+					"type": "dropdown",
+					"top": 163,
+					"left": 602,
+					"width": 18,
+					"height": 14,
+					"dataSource": "<>aCAR_Locations",
+					"display": false,
+					"class": "Default",
+					"method": "ObjectMethods/Pop-up%2FDrop-down List2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ReasonCustomer": {
+					"type": "input",
+					"top": 203,
+					"left": 97,
+					"width": 305,
+					"height": 71,
+					"dataSource": "[QA_Corrective_Actions:105]ReasonCustomer:24",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 292,
+					"left": 248,
+					"width": 114,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]WhoCalled:33",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 292,
+					"left": 439,
+					"width": 114,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]WhoCalledPhone:34",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 292,
+					"left": 97,
+					"width": 70,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]CostEstimate:27",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Highlight Button1": {
+					"type": "button",
+					"top": 245,
+					"left": 621,
+					"width": 66,
+					"height": 20,
+					"dataSource": "bPick",
+					"text": "New",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Highlight Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 245,
+					"left": 698,
+					"width": 66,
+					"height": 20,
+					"dataSource": "bPick",
+					"text": "Update",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mgmtApprv1": {
+					"type": "checkbox",
+					"top": 336,
+					"left": 111,
+					"width": 70,
+					"height": 18,
+					"dataSource": "[QA_Corrective_Actions:105]RGAapproval:29",
+					"text": "Apprv?",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"qaRGA": {
+					"type": "input",
+					"top": 338,
+					"left": 46,
+					"width": 45,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]RGA:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"qaQty": {
+					"type": "input",
+					"top": 338,
+					"left": 271,
+					"width": 48,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Qty:10",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"qaReason": {
+					"type": "input",
+					"top": 338,
+					"left": 383,
+					"width": 296,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Reason:16",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/qaReason.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"qaRGAbtn": {
+					"type": "button",
+					"top": 362,
+					"left": 16,
+					"width": 47,
+					"height": 16,
+					"dataSource": "bRGA",
+					"text": "Next",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/qaRGAbtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"qaPlant": {
+					"type": "input",
+					"top": 363,
+					"left": 245,
+					"width": 51,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]Plant:13",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Job_Run_Locations"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"qaArea": {
+					"type": "input",
+					"top": 363,
+					"left": 383,
+					"width": 296,
+					"height": 15,
+					"dataSource": "[QA_Corrective_Actions:105]CostCenter:14",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RootCause": {
+					"type": "input",
+					"top": 405,
+					"left": 19,
+					"width": 537,
+					"height": 156,
+					"sizingX": "grow",
+					"dataSource": "[QA_Corrective_Actions:105]RootCause:17",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/RootCause.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 396,
+					"left": 666,
+					"width": 84,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "[QA_Corrective_Actions:105]CAwho:25",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 421,
+					"left": 666,
+					"width": 84,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "[QA_Corrective_Actions:105]CAwhen:26",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"qaActionTaken": {
+					"type": "input",
+					"top": 580,
+					"left": 19,
+					"width": 537,
+					"height": 156,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[QA_Corrective_Actions:105]ActionTaken:18",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/qaActionTaken.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"qaDateEffective": {
+					"type": "input",
+					"top": 471,
+					"left": 666,
+					"width": 94,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "[QA_Corrective_Actions:105]DateEffective:19",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bInternalNotesAndToDos": {
+					"type": "button",
+					"top": 496,
+					"left": 604,
+					"width": 242,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bInternalNotesAndToDos",
+					"text": "Internal Notes \\& ToDo",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bInternalNotesAndToDos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 521,
+					"left": 762,
+					"width": 84,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bEmail",
+					"text": "Email TXT",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bReportedToCustomer": {
+					"type": "button",
+					"top": 521,
+					"left": 604,
+					"width": 155,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bReportedToCustomer",
+					"text": "Reported to Customer",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bReportedToCustomer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"qaDateReported": {
+					"type": "input",
+					"top": 446,
+					"left": 666,
+					"width": 100,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "[QA_Corrective_Actions:105]DateReported:22",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"qaApprovalQAMgr": {
+					"type": "input",
+					"top": 770,
+					"left": 131,
+					"width": 86,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[QA_Corrective_Actions:105]ApprovalQAMgr:21",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/qaApprovalQAMgr.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 9,
+					"left": 794,
+					"width": 66,
+					"height": 20,
+					"dataSource": "bHelp",
+					"action": "nextPage",
+					"text": "Help",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 48,
+					"left": 794,
+					"width": 66,
+					"height": 20,
+					"dataSource": "bPrint",
+					"text": "Print",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 203,
+					"left": 450,
+					"width": 149,
+					"height": 15,
+					"dataSource": "[QA_Corrective_ActionsLocations:107]Contact1:2",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 203,
+					"left": 611,
+					"width": 149,
+					"height": 15,
+					"dataSource": "[QA_Corrective_ActionsLocations:107]Contact1Email:3",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 224,
+					"left": 450,
+					"width": 149,
+					"height": 15,
+					"dataSource": "[QA_Corrective_ActionsLocations:107]Contact2:4",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 224,
+					"left": 611,
+					"width": 149,
+					"height": 15,
+					"dataSource": "[QA_Corrective_ActionsLocations:107]Contact2Email:5",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 129,
+					"left": 54,
+					"width": 58,
+					"height": 13,
+					"dataSource": "[Job_Forms_Items:44]Glued:33",
+					"dataSourceTypeHint": "date",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QAQC_nInput_QtyActual": {
+					"type": "input",
+					"top": 129,
+					"left": 180,
+					"width": 58,
+					"height": 14,
+					"dataSource": "QAQC_nInput_QtyActual",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/QAQC_nInput_QtyActual.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 183,
+					"left": 450,
+					"width": 90,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Contacts"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 129,
+					"left": 15,
+					"width": 34,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "DOM:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 128,
+					"left": 115,
+					"width": 61,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Qty Act:"
+				},
+				"Field16": {
+					"type": "input",
+					"top": 129,
+					"left": 518,
+					"width": 254,
+					"height": 14,
+					"dataSource": "[Finished_Goods:26]Line_Brand:15",
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 97,
+					"left": 19,
+					"width": 707,
+					"height": 676,
+					"class": "BaseField",
+					"text": "CAR# auto assigned, sequence may be changed by administrator\rAuthor enter by Login initials; Created set to date record was created\r\rEnter a Jobit in the form of 12345.12.12; if valid, product code and customer will fill in automagically\r\rProduct Code may be entered if jobit is unknown; if valid, customer will fill in\r\rCustid may be entered or click its button to pick from list of names\r\rCustomerPO may be entered or click its button to pick from shipped orderline for the specified product code\r\rCust's Location may be entered or click its button to select from a list of locations that you maintain. If you \r     choose type in the location, it will attempt to link to an existing location. If you type in an @ sign, all \r     locations will be listed like clicking its button. If you type in a non-unique string like \"Whitman\" it will list \r     all the location begining with Whitman, like Whitman II and Whitman IV. If only Whitman II exists, it will \r     complete the typing for you. If your entry does not match any existing Locations, you will be given a chance \r     create the new location and its contact info.\r\rReason may be typed in the form of \"Category-Reason\", if it doesn't all ready exist, it will confirm that \r     you want to have it created. Otherwise, you may pick from the hierachical popup which list reasons \r     by category\rCostCenter may be typed or click its button to select from a list of Costcenters which have entered\r     MachineTickets against the specified Job\r\rPlant will fill in when the CostCenter is picked from the list, otherwise, select from the popup choice list\r\rRoot Cause when entered will record the users initials and current date in the Cr Act by/on fields\r\rCorrective Action (aka Disposition) when entered will record the users initials and current date in the \r     Cr Act by/on fields\r\rThe Print button will create a one record report using the currently displayed form; it also saves the record\r\rThe Email button will build an email body based on the forms entry, then launch your default email client and \r    create a new email message based on the compiled body and address it to the locations email contact. This\r    works with OutlookExpress, QuickMailPro lacks this ability as well as other important features.\rThe No Rpt button will set the Reported date to 12/25/25.\r\r\r\r\r\r\r\r\r\r"
+				},
+				"bBack2": {
+					"type": "button",
+					"top": 97,
+					"left": 765,
+					"width": 123,
+					"height": 20,
+					"dataSource": "bBack",
+					"action": "previousPage",
+					"text": "Back to 1st Page",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bBack2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bBack1": {
+					"type": "button",
+					"top": 97,
+					"left": 765,
+					"width": 123,
+					"height": 20,
+					"dataSource": "bBack",
+					"action": "previousPage",
+					"text": "Back to 1st Page",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bBack1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCreateNewNote": {
+					"type": "button",
+					"top": 225,
+					"left": 38,
+					"width": 163,
+					"height": 20,
+					"dataSource": "bCreateNewNote",
+					"text": "Create New Note",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bCreateNewNote.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 252,
+					"left": 19,
+					"width": 800,
+					"height": 514,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[QA_Corrective_Actions_Notes:143]Note:5",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bModifyNote": {
+					"type": "button",
+					"top": 225,
+					"left": 218,
+					"width": 163,
+					"height": 20,
+					"dataSource": "bModifyNote",
+					"text": "Modify Notes",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bModifyNote.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Subform3": {
+					"type": "subform",
+					"top": 105,
+					"left": 128,
+					"width": 436,
+					"height": 103,
+					"dataSourceTypeHint": "text",
+					"table": 100,
+					"detailForm": "Input",
+					"listForm": "includeEBag",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "solid"
+				},
+				"Button7": {
+					"type": "button",
+					"top": 105,
+					"left": 21,
+					"width": 90,
+					"height": 20,
+					"dataSource": "Button4",
+					"text": "New To Do",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"bBack1",
+				"bCreateNewNote",
+				"bModifyNote",
+				"Subform3",
+				"Button7"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group3": [
+				"Variable7716",
+				"Picture3"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

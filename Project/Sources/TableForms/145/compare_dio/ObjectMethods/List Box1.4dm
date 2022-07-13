@@ -1,0 +1,10 @@
+If (Count in array:C907(ListBox1; True:C214)=1)
+	OBJECT SET ENABLED:C1123(b1Edit; True:C214)
+	OBJECT SET ENABLED:C1123(b3Edit; True:C214)
+	OL_findOpenMatch
+	
+Else 
+	OBJECT SET ENABLED:C1123(b1Edit; False:C215)
+	OBJECT SET ENABLED:C1123(b3Edit; False:C215)
+	OBJECT SET ENABLED:C1123(bMatch; False:C215)
+End if 

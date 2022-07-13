@@ -1,0 +1,1 @@
+skidLableText:="TO BE KILLED"

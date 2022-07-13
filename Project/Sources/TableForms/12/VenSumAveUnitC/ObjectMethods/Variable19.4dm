@@ -1,0 +1,1 @@
+real2t:=real1t/Subtotal:C97(real2)

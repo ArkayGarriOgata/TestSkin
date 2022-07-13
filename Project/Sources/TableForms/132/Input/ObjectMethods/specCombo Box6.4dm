@@ -1,0 +1,1 @@
+rfc_ComboBox(->aBottom; ->[Finished_Goods_SizeAndStyles:132]Bottom:16)

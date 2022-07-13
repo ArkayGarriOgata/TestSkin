@@ -1,0 +1,517 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 18,
+	"markerBody": 37,
+	"markerBreak": 37,
+	"markerFooter": 37,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 19,
+					"left": 1,
+					"width": 529,
+					"height": 18,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 461,
+					"width": 70,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": " Open Qty"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 1,
+					"left": 31,
+					"width": 106,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Product Code"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 1,
+					"left": 331,
+					"width": 70,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": " Order Qty"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 1,
+					"left": 261,
+					"width": 69,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": " Price/M"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 1,
+					"left": 138,
+					"width": 37,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Status"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 29,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Item"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 1,
+					"left": 402,
+					"width": 58,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": " Ship Qty"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 1,
+					"left": 197,
+					"width": 63,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": " PO Nº"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 1,
+					"left": 176,
+					"width": 20,
+					"height": 15,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "CD"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 21,
+					"left": 3,
+					"width": 25,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]LineItem:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 21,
+					"left": 33,
+					"width": 102,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]ProductCode:5",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 21,
+					"left": 139,
+					"width": 34,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Status:9",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 21,
+					"left": 177,
+					"width": 17,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Classification:29",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ProductClassType"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 21,
+					"left": 199,
+					"width": 57,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]PONumber:21",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 21,
+					"left": 273,
+					"width": 58,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Price_Per_M:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0.00;(###,##0.00)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "checkbox",
+					"top": 21,
+					"left": 261,
+					"width": 12,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]chgd_price:27",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 21,
+					"left": 343,
+					"width": 56,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Quantity:6",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "checkbox",
+					"top": 21,
+					"left": 332,
+					"width": 12,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]chgd_qty:28",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 21,
+					"left": 405,
+					"width": 55,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Qty_Shipped:10",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 21,
+					"left": 459,
+					"width": 60,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Qty_Open:11",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 17,
+					"left": 1,
+					"width": 529,
+					"stroke": "#0000FF"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

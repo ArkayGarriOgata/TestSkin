@@ -1,0 +1,208 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 209,
+	"markerBreak": 209,
+	"markerFooter": 219,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 380,
+					"height": 12,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Default",
+					"text": "JPSI_Logs"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 126,
+					"left": 196,
+					"width": 66,
+					"height": 12,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "JPSIid : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 148,
+					"left": 196,
+					"width": 66,
+					"height": 12,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "TimeStamp : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 170,
+					"left": 196,
+					"width": 66,
+					"height": 12,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Description : "
+				},
+				"JPSIid": {
+					"type": "input",
+					"top": 126,
+					"left": 267,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[JPSI_Logs:115]JPSIid:1",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TimeStamp": {
+					"type": "input",
+					"top": 148,
+					"left": 267,
+					"width": 48,
+					"height": 12,
+					"dataSource": "[JPSI_Logs:115]tsTimeStamp:2",
+					"dataSourceTypeHint": "integer",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Description": {
+					"type": "input",
+					"top": 170,
+					"left": 267,
+					"width": 206,
+					"height": 39,
+					"dataSource": "[JPSI_Logs:115]Description:3",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 149,
+					"left": 336,
+					"width": 174,
+					"height": 15,
+					"dataSource": "tText",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onDisplayDetail",
+						"onSelectionChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text6"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

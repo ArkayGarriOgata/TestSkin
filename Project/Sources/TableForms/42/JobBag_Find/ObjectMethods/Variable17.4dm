@@ -1,0 +1,1 @@
+SetObjectProperties("crit@"; -><>NULL; False:C215)

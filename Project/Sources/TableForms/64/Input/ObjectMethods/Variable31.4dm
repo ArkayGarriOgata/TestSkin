@@ -1,0 +1,1 @@
+Self:C308->:=TS2String([Finished_Goods_Inv_Summaries:64]FrozenAt:13)

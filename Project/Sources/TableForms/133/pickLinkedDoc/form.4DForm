@@ -1,0 +1,183 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Pick a Linked Document",
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Button1": {
+					"type": "button",
+					"top": 185,
+					"left": 42,
+					"width": 101,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "bNone",
+					"text": "New",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 185,
+					"left": 370,
+					"width": 101,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Done",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"selected1": {
+					"type": "button",
+					"top": 185,
+					"left": 488,
+					"width": 101,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"shortcutKey": "[Enter]",
+					"text": "Open",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/selected1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"selected2": {
+					"type": "button",
+					"top": 198,
+					"left": 593,
+					"width": 9,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/selected2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"selected3": {
+					"type": "button",
+					"top": 185,
+					"left": 155,
+					"width": 101,
+					"height": 34,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"text": "Unlink",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/selected3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"XLDc_abPkDc_Path": {
+					"type": "listbox",
+					"top": 11,
+					"left": 18,
+					"width": 588,
+					"height": 160,
+					"resizingMode": "legacy",
+					"dataSource": "XLDc_abPkDc_Path",
+					"sortable": false,
+					"movableRows": false,
+					"showHeaders": false,
+					"headerHeight": "0em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/XLDc_abPkDc_Path.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "aPath",
+							"dataSource": "aPath",
+							"width": 573,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			},
+			"entryOrder": [
+				"Button1",
+				"Button2",
+				"selected1",
+				"selected3",
+				"XLDc_abPkDc_Path"
+			]
+		}
+	]
+}

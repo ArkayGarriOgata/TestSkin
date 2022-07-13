@@ -1,0 +1,127 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_Background",
+	"formSizeAnchor": "Quik_nList_Excel",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"CorenHList1": {
+					"type": "list",
+					"top": 13,
+					"left": 13,
+					"width": 234,
+					"height": 336,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CorenHList1",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"method": "ObjectMethods/CorenHList1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Quik_nList_Excel": {
+					"type": "pictureButton",
+					"top": 364,
+					"left": 220,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Quik_nList_Excel",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/ExportRight.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Quik_nList_Excel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreCancel": {
+					"type": "pictureButton",
+					"top": 364,
+					"left": 193,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "CorenCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Quik_nList_OnLoad": {
+					"type": "button",
+					"top": 427,
+					"left": 13,
+					"width": 70,
+					"height": 24,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Quik_nList_OnLoad",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/Quik_nList_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Plugin Area": {
+					"type": "plugin",
+					"top": 242,
+					"left": 588,
+					"width": 1,
+					"height": 1,
+					"events": [
+						"onPluginArea"
+					]
+				},
+				"Quik_nList_Entry": {
+					"type": "pictureButton",
+					"top": 364,
+					"left": 13,
+					"width": 28,
+					"height": 28,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Quik_nList_Entry",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/NewRound.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Quik_nList_Entry.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,522 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onCloseBox",
+		"onTimer",
+		"onResize",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bAskMe": {
+					"type": "button",
+					"top": 581,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibaskme",
+					"text": "Ask Me",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bAskMe.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bProjects": {
+					"type": "button",
+					"top": 581,
+					"left": 141,
+					"width": 116,
+					"height": 16,
+					"dataSource": "bPjt",
+					"text": "Projects",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bProjects.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bJobMaster": {
+					"type": "button",
+					"top": 581,
+					"left": 267,
+					"width": 116,
+					"height": 16,
+					"dataSource": "bsAEC",
+					"text": "Job Master",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bJobMaster.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSchedule": {
+					"type": "button",
+					"top": 581,
+					"left": 393,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibSchedule",
+					"text": "Schedule",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bSchedule.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCustomers": {
+					"type": "button",
+					"top": 606,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibCust",
+					"text": "Customers",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bCustomers.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bEstimates": {
+					"type": "button",
+					"top": 606,
+					"left": 141,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibEst",
+					"text": "Estimates",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bEstimates.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bOrders": {
+					"type": "button",
+					"top": 606,
+					"left": 267,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibOrd",
+					"text": "Orders",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bOrders.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bJobs": {
+					"type": "button",
+					"top": 606,
+					"left": 393,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibJob",
+					"text": "Jobs",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bJobs.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bAddresses": {
+					"type": "button",
+					"top": 631,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibAddr",
+					"text": "Addresses",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bAddresses.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bStandards": {
+					"type": "button",
+					"top": 631,
+					"left": 141,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibCC",
+					"text": "Standards",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bStandards.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bQuaiity": {
+					"type": "button",
+					"top": 631,
+					"left": 267,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibQA",
+					"text": "Quality",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bQuaiity.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "button",
+					"top": 631,
+					"left": 393,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibFG",
+					"text": "Finished Goods",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSalesmen": {
+					"type": "button",
+					"top": 656,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibSale",
+					"text": "Salesmen",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bSalesmen.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bRequisitions": {
+					"type": "button",
+					"top": 656,
+					"left": 141,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibReq",
+					"text": "Requisitions",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bRequisitions.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bPurchasing": {
+					"type": "button",
+					"top": 656,
+					"left": 267,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibPO",
+					"text": "Purchasing",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bPurchasing.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bRawMaterials": {
+					"type": "button",
+					"top": 656,
+					"left": 393,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibRM",
+					"text": "Raw Materials",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bRawMaterials.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDBA": {
+					"type": "button",
+					"top": 681,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibAdmin",
+					"text": "DBA",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bDBA.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bEDI": {
+					"type": "button",
+					"top": 681,
+					"left": 141,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibedi",
+					"text": "EDI",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bEDI.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"beBag": {
+					"type": "button",
+					"top": 681,
+					"left": 267,
+					"width": 116,
+					"height": 16,
+					"dataSource": "<>ibeBag",
+					"text": "eBag",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/beBag.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bHelp": {
+					"type": "button",
+					"top": 681,
+					"left": 393,
+					"width": 116,
+					"height": 16,
+					"dataSource": "bHelp",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bHelp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bFAQ": {
+					"type": "button",
+					"top": 705,
+					"left": 15,
+					"width": 116,
+					"height": 16,
+					"dataSource": "bFAQ",
+					"text": "FAQ",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bFAQ.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bConfig": {
+					"type": "button",
+					"top": 705,
+					"left": 141,
+					"width": 116,
+					"height": 16,
+					"dataSource": "bConfig",
+					"text": "Configure",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bConfig.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Test": {
+					"type": "text",
+					"top": 742,
+					"left": 141,
+					"width": 227,
+					"height": 105,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 30,
+					"text": "Test Database!\r\rTest Database!"
+				},
+				"Text": {
+					"type": "text",
+					"top": 539,
+					"left": 71,
+					"width": 365,
+					"height": 30,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"text": "Leave the items on this form where they are. The method that uses this form will move them where they need to go."
+				},
+				"Text1": {
+					"type": "text",
+					"top": 33,
+					"left": 164,
+					"width": 162,
+					"height": 28,
+					"visibility": "hidden",
+					"fill": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 24,
+					"text": "Look Down!"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

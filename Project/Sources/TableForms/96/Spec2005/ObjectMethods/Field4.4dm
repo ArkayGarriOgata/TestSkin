@@ -1,0 +1,1 @@
+t3:="(91) "+Substring:C12([WMS_SerializedShippingLabels:96]CPN:2; 1; 8)+"   (37) "+String:C10([WMS_SerializedShippingLabels:96]Quantity:4)  //

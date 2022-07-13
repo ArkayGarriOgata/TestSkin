@@ -1,0 +1,462 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 375,
+	"height": 240,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 8,
+					"left": 10,
+					"width": 354,
+					"height": 85,
+					"class": "BaseGroupBox",
+					"text": "Item:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 132,
+					"left": 30,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Set Quantity to:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 108,
+					"left": 32,
+					"width": 90,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Location:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 154,
+					"left": 12,
+					"width": 110,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Tag# or Reason:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 176,
+					"left": 32,
+					"width": 90,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Date:"
+				},
+				"sJobit": {
+					"type": "input",
+					"top": 41,
+					"left": 47,
+					"width": 93,
+					"height": 14,
+					"dataSource": "sJobit",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/sJobit.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"tSkidNumber": {
+					"type": "input",
+					"top": 41,
+					"left": 195,
+					"width": 161,
+					"height": 14,
+					"dataSource": "tSkidNumber",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/tSkidNumber.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 66,
+					"left": 34,
+					"width": 309,
+					"height": 12,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Location": {
+					"type": "input",
+					"top": 108,
+					"left": 125,
+					"width": 161,
+					"height": 14,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"method": "ObjectMethods/Location.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 132,
+					"left": 125,
+					"width": 111,
+					"height": 14,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;-\"",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 154,
+					"left": 125,
+					"width": 111,
+					"height": 14,
+					"dataSource": "sCriterion4",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/InvAdjustFields"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 176,
+					"left": 125,
+					"width": 111,
+					"height": 14,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 203,
+					"left": 15,
+					"width": 128,
+					"height": 17,
+					"dataSource": "bView",
+					"shortcutKey": "o",
+					"shortcutAccel": true,
+					"text": "View Other Adj",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 203,
+					"left": 148,
+					"width": 78,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPost": {
+					"type": "button",
+					"top": 203,
+					"left": 232,
+					"width": 128,
+					"height": 17,
+					"dataSource": "bPost",
+					"shortcutKey": "[Enter]",
+					"text": "Post Adjustment",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bPost.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 8,
+					"left": 75,
+					"width": 91,
+					"height": 14,
+					"dataSource": "sCriterion9",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 245,
+					"left": 63,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 245,
+					"left": 92,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "button",
+					"top": 245,
+					"left": 124,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Enter]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 245,
+					"left": 156,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Return]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 39,
+					"left": 14,
+					"width": 33,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "JobIt"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 39,
+					"left": 147,
+					"width": 44,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "or Skid"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

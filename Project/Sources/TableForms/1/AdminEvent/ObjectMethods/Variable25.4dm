@@ -1,0 +1,1 @@
+util_ForceQuitUsers("Kill")

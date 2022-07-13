@@ -1,0 +1,351 @@
+{
+	"destination": "listScreen",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 97,
+	"markerBody": 121,
+	"markerBreak": 123,
+	"markerFooter": 191,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 24,
+					"width": 126,
+					"height": 16,
+					"sizingX": "grow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Bin : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 182,
+					"width": 270,
+					"height": 16,
+					"sizingX": "grow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Contents : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 484,
+					"width": 270,
+					"height": 16,
+					"sizingX": "grow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Tags : "
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 24,
+					"width": 126,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[Tool_Drawers:151]Bin:1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 98,
+					"left": 182,
+					"width": 270,
+					"height": 22,
+					"sizingX": "grow",
+					"dataSource": "[Tool_Drawers:151]Contents:2",
+					"class": "Fixed_12_Courier",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 98,
+					"left": 484,
+					"width": 250,
+					"height": 22,
+					"sizingX": "grow",
+					"dataSource": "[Tool_Drawers:151]Tags:3",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 74,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 74,
+					"left": 468,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 74,
+					"left": 467,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": 74,
+					"left": 166,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 74,
+					"left": 165,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bAdd": {
+					"type": "pictureButton",
+					"top": 127,
+					"left": 39,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAdd",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX Add Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAddlabel": {
+					"type": "text",
+					"top": 173,
+					"left": 17,
+					"width": 82,
+					"height": 13,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "New Drawer"
+				},
+				"Highlight Button1": {
+					"type": "button",
+					"top": 220,
+					"left": 311,
+					"width": 72,
+					"height": 56,
+					"dataSource": "Highlight Button1",
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Highlight Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 130,
+					"left": 126,
+					"width": 120,
+					"height": 23,
+					"dataSource": "bBtn1",
+					"text": "Show All",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 163,
+					"left": 406,
+					"width": 120,
+					"height": 23,
+					"dataSource": "bBtn2",
+					"text": "Empty Drawers",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 130,
+					"left": 406,
+					"width": 120,
+					"height": 23,
+					"dataSource": "bBtn3",
+					"text": "Find Job",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 163,
+					"left": 126,
+					"width": 120,
+					"height": 23,
+					"dataSource": "bBtn1",
+					"text": "Find Drawer",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 130,
+					"left": 266,
+					"width": 120,
+					"height": 23,
+					"dataSource": "bBtn1",
+					"text": "Find Code",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 163,
+					"left": 266,
+					"width": 120,
+					"height": 23,
+					"dataSource": "bBtn1",
+					"text": "Find Tag",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bAdd",
+					"bAddlabel"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,224 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 115,
+	"markerBreak": 115,
+	"markerFooter": 115,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 3,
+					"left": 2,
+					"width": 260,
+					"height": 35,
+					"dataSource": "sPOIcode39",
+					"class": "BarcodeC39M",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 42,
+					"left": 2,
+					"width": 260,
+					"height": 18,
+					"dataSource": "sPOI",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 64,
+					"left": 2,
+					"width": 215,
+					"height": 18,
+					"dataSource": "sRMcode",
+					"class": "BaseFormTitle",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 64,
+					"left": 222,
+					"width": 40,
+					"height": 18,
+					"dataSource": "sUOM",
+					"class": "BaseFormTitle",
+					"textAlign": "right",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 86,
+					"left": 2,
+					"width": 174,
+					"height": 18,
+					"dataSource": "sVendor",
+					"class": "BaseFormTitle",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 3,
+					"left": 282,
+					"width": 260,
+					"height": 35,
+					"dataSource": "sPOIcode39",
+					"class": "BarcodeC39M",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 42,
+					"left": 282,
+					"width": 260,
+					"height": 18,
+					"dataSource": "sPOI",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 64,
+					"left": 282,
+					"width": 215,
+					"height": 18,
+					"dataSource": "sRMcode",
+					"class": "BaseFormTitle",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 64,
+					"left": 502,
+					"width": 40,
+					"height": 18,
+					"dataSource": "sUOM",
+					"class": "BaseFormTitle",
+					"textAlign": "right",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 86,
+					"left": 282,
+					"width": 174,
+					"height": 18,
+					"dataSource": "sVendor",
+					"class": "BaseFormTitle",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 85,
+					"left": 209,
+					"width": 54,
+					"height": 21
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 84,
+					"left": 489,
+					"width": 54,
+					"height": 21
+				},
+				"Text": {
+					"type": "text",
+					"top": 90,
+					"left": 178,
+					"width": 29,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "QTY:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 90,
+					"left": 460,
+					"width": 29,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "QTY:"
+				}
+			}
+		}
+	]
+}

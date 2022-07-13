@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <title>Arkay Portal</title>
+    <head>
+         <title>Job Forms</title>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+         <!-- VENDOR CSS -->
+         <link rel="stylesheet" href="/shuttle/assets/vendor/bootstrap/css/bootstrap.min.css">
+         <link rel="stylesheet" href="/shuttle/assets/vendor/font-awesome/css/font-awesome.min.css">
+         <link rel="stylesheet" href="/shuttle/assets/vendor/linearicons/style.css">
+
+         <link rel="stylesheet" href="./jquery-ui/jquery-ui.css">
+         
+         <!-- MAIN CSS -->
+         <link rel="stylesheet" href="/shuttle/assets/css/main.css">
+         <!-- GOOGLE FONTS -->
+         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+         <!-- ICONS -->
+         <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.png">
+         <!-- ag-grid stuff -->
+         <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+         <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+         <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+         <!-- assets -->
+         <script src="/shuttle/assets/vendor/jquery/jquery.min.js"></script>
+         <script src="./jquery-ui/jquery-ui.js"></script>
+
+         <script src="/shuttle/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+         <script src="/shuttle/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+         <script src="/shuttle/assets/scripts/klorofil-common.js"></script>
+         <!-- page specific -->
+         <script src="../js_4d/FourDWebRequest.js"></script> 
+         <script src="./js/portal.js"></script>
+         <script src="./js/productCode.js"></script>
+
+
+
+         <style>
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto;
+             /* background-color: #2196F3;*/
+              padding: 10px;
+            }
+
+            .grid-item-label {
+              background-color: rgba(0, 0, 255, 0.1);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 10px;
+              font-size: 16px;
+              text-align: center;
+              font-weight: bold;
+            }
+
+            .grid-item {
+              background-color: rgba(255, 255, 255, 0.8);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 10px;
+              font-size: 16px;
+              text-align: center;
+            }
+            </style>
+
+
+
+   </head>
+   <body>
+
+
+
+
+
+
+
+      <div id="wrapper">
+         <div id="navbar"></div>
+         <div id="sidebar"></div>
+         <div class="main" style="min-height: 1141px;">
+            <div class="main-content">
+               <div class="container-fluid">
+                  <h3 class="page-title" id="searchTitle">Production Schedule</h3>
+                  <div class="panel panel-headline">
+                     <div class="panel-body">
+
+
+                        <!-- Enter here the page content -->
+                        <div class="row">
+                           <div class="col-md-8">
+                              <input type="text" placeholder="Search..." id="queryBox" onchange="queryGrid();"><br><br>
+                              <div id="myGrid" style="height: 500px;width:100%;" class="ag-theme-balham">
+                                
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div id="gridDetail">
+                                  
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script> 
+         $("#wrapper").hide(); // Hide entire screen initially until we know if we are logged in
+         $(document).ready(function () {
+         
+         
+         });
+      </script> 
+
+
+
+
+
+<div id="dialog-form" title="Contact Arkay Packaging">
+    <p class="validateTips">All form fields are required.</p>
+    <p>The email message will be cc'd to your email address.</p>
+    <form>
+        <fieldset>
+            <legend>Email Message:</legend>
+            <input type="hidden" name="prefix" value="[ACP00000]">
+            <p>
+                <label for="subject" class="entry-label">Subject: </label>
+                <input type="text" name="subject" value="" id="subject" maxlength="60" size="40" class="entry-field">		  
+            </p>
+            <p>
+                <label for="body" class="entry-label">Message: </label>    
+            </p>
+            <p>
+                <textarea name="body" cols="80" rows="8" id="body" class="entry-field"></textarea>		
+            </p>
+            
+        </fieldset>
+</form>
+  </div>
+
+
+
+   </body>
+</html>

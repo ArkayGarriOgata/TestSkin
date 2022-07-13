@@ -1,0 +1,281 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 10,
+					"left": 20,
+					"width": 342,
+					"height": 181,
+					"class": "BaseNonEnter",
+					"fontWeight": "bold",
+					"text": "Connection Options"
+				},
+				"Variable3": {
+					"type": "checkbox",
+					"top": 43,
+					"left": 39,
+					"width": 107,
+					"height": 15,
+					"dataSource": "cb1",
+					"shortcutKey": "¡",
+					"shortcutAlt": true,
+					"text": "Get Messages",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"advancedDelay": {
+					"type": "input",
+					"top": 82,
+					"left": 248,
+					"width": 23,
+					"height": 15,
+					"dataSource": "com_delay",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "checkbox",
+					"top": 65,
+					"left": 39,
+					"width": 127,
+					"height": 15,
+					"dataSource": "cb2",
+					"shortcutKey": "™",
+					"shortcutAlt": true,
+					"text": "Send Messages",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 150,
+					"left": 135,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "dropdown",
+					"top": 100,
+					"left": 45,
+					"width": 158,
+					"height": 18,
+					"dataSource": "aPopUp",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDone": {
+					"type": "button",
+					"top": 149,
+					"left": 245,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bDone",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Connect",
+					"class": "BaseButtons",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"advancedGetReports": {
+					"type": "checkbox",
+					"top": 205,
+					"left": 270,
+					"width": 92,
+					"height": 15,
+					"dataSource": "cb3",
+					"shortcutKey": "£",
+					"shortcutAlt": true,
+					"text": "Get Reports",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"threeState": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"advancedShowTranscript": {
+					"type": "checkbox",
+					"top": 205,
+					"left": 144,
+					"width": 127,
+					"height": 15,
+					"dataSource": "cb4",
+					"shortcutKey": "£",
+					"shortcutAlt": true,
+					"text": "Show Transcript",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"threeState": true,
+					"method": "ObjectMethods/advancedShowTranscript.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"advancedPassiveMode": {
+					"type": "checkbox",
+					"top": 205,
+					"left": 31,
+					"width": 107,
+					"height": 15,
+					"dataSource": "cb5",
+					"shortcutKey": "£",
+					"shortcutAlt": true,
+					"text": "Passive Mode",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"threeState": true,
+					"method": "ObjectMethods/advancedPassiveMode.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 150,
+					"left": 343,
+					"width": 11,
+					"height": 17,
+					"dataSource": "bDone",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"advancedDelayLabel": {
+					"type": "text",
+					"top": 82,
+					"left": 275,
+					"width": 37,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"text": "Delay"
+				},
+				"advancedButton": {
+					"type": "button",
+					"top": 31,
+					"left": 247,
+					"width": 107,
+					"height": 14,
+					"dataSource": "Button",
+					"text": "Clear VAN outbox",
+					"class": "LittleButtons",
+					"method": "ObjectMethods/advancedButton.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable3",
+				"advancedDelay",
+				"Variable4",
+				"Variable1",
+				"Variable8",
+				"bDone",
+				"advancedGetReports",
+				"advancedShowTranscript",
+				"advancedPassiveMode",
+				"advancedButton"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

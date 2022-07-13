@@ -1,0 +1,444 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 201,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Select Date Range to Print"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 108,
+					"left": 65,
+					"width": 40,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "as of:"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 107,
+					"left": 109,
+					"width": 72,
+					"height": 18,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 82,
+					"left": 120,
+					"width": 24,
+					"height": 18,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 83,
+					"left": 146,
+					"width": 94,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Months & Up"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 11,
+					"width": 234,
+					"height": 18,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 123,
+					"left": 8,
+					"width": 75,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Subtitle:"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 162,
+					"left": 112,
+					"width": 133,
+					"height": 18,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 163,
+					"left": 10,
+					"width": 102,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Only customer:"
+				},
+				"Variable1": {
+					"type": "radio",
+					"top": 23,
+					"left": 21,
+					"width": 211,
+					"height": 18,
+					"dataSource": "rb9Month",
+					"text": "Inventory - 9 Months & Up",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 42,
+					"left": 21,
+					"width": 211,
+					"height": 18,
+					"dataSource": "rb12Month",
+					"text": "Inventory - 12 Months & Up",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 61,
+					"left": 21,
+					"width": 211,
+					"height": 18,
+					"dataSource": "rb15Month",
+					"text": "Inventory - 15 Months & Up",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 80,
+					"left": 21,
+					"width": 98,
+					"height": 22,
+					"dataSource": "rbOthMonth",
+					"text": "Inventory -",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 83,
+					"left": 122,
+					"width": 20,
+					"height": 16,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 108,
+					"left": 112,
+					"width": 68,
+					"height": 16,
+					"dataSource": "dDateEnd",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Page"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 141,
+					"left": 14,
+					"width": 230,
+					"height": 16,
+					"dataSource": "t2",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Begining B"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 163,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"dataSource": "tCust",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Rama Begining B"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 189,
+					"left": 66,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel ",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 189,
+					"left": 162,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bAccept",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 224,
+					"left": 161,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bAccept",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 109,
+					"left": 185,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 109,
+					"left": 184,
+					"width": 18,
+					"height": 14,
+					"dataSource": "b_dummy",
+					"text": "Button",
+					"display": false,
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"Variable4"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

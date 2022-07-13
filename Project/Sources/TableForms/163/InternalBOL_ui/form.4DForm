@@ -1,0 +1,1130 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ListBox1": {
+					"type": "listbox",
+					"top": 64,
+					"left": 17,
+					"width": 241,
+					"height": 317,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"table": 163,
+					"highlightSet": "$ListboxSet",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#FFFACD",
+					"method": "ObjectMethods/ListBox1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[WMS_InternalBOLs:163]bol_number:2",
+							"width": 109,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFFACD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "BOL",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[WMS_InternalBOLs:163]number_of_skids:3",
+							"dataSourceTypeHint": "integer",
+							"width": 56,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFFACD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "#Skids",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "[WMS_InternalBOLs:163]number_of_cases:4",
+							"dataSourceTypeHint": "integer",
+							"width": 61,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFFACD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "ttl#Cases",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"ListBox2": {
+					"type": "listbox",
+					"top": 64,
+					"left": 308,
+					"width": 276,
+					"height": 317,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "iListBox2",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#E5E7B5",
+					"method": "ObjectMethods/ListBox2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column6",
+							"dataSource": "aSkidNumbers",
+							"width": 117,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E5E7B5",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Skids",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "aNumCases",
+							"dataSourceTypeHint": "number",
+							"width": 61,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E5E7B5",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "#Cases",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "aSkidQty",
+							"dataSourceTypeHint": "number",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E5E7B5",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "SkidQty",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"NewBOL": {
+					"type": "button",
+					"top": 14,
+					"left": 17,
+					"width": 84,
+					"height": 30,
+					"text": "New BOL",
+					"class": "BaseButtons",
+					"focusable": false,
+					"method": "ObjectMethods/NewBOL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PrintBOL": {
+					"type": "button",
+					"top": 14,
+					"left": 137,
+					"width": 84,
+					"height": 30,
+					"text": "Print BOL(s)",
+					"class": "BaseButtons",
+					"focusable": false,
+					"method": "ObjectMethods/PrintBOL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 401,
+					"left": 68,
+					"width": 83,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "bol_number : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 519,
+					"left": 84,
+					"width": 67,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "modWho : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 546,
+					"left": 50,
+					"width": 101,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "when_touched : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 422,
+					"left": 34,
+					"width": 117,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "number_of_cases : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 445,
+					"left": 38,
+					"width": 113,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "number_of_skids : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 471,
+					"left": 98,
+					"width": 53,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "loaded : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 495,
+					"left": 81,
+					"width": 70,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "canPurge : "
+				},
+				"bol_number": {
+					"type": "input",
+					"top": 401,
+					"left": 155,
+					"width": 72,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]bol_number:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"modWho": {
+					"type": "input",
+					"top": 519,
+					"left": 155,
+					"width": 52,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]modWho:6",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"when_touched": {
+					"type": "input",
+					"top": 546,
+					"left": 155,
+					"width": 160,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]when_touched:7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"number_of_cases": {
+					"type": "input",
+					"top": 422,
+					"left": 155,
+					"width": 64,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]number_of_cases:4",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"number_of_skids": {
+					"type": "input",
+					"top": 445,
+					"left": 155,
+					"width": 64,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]number_of_skids:3",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"loaded": {
+					"type": "checkbox",
+					"top": 471,
+					"left": 155,
+					"width": 61,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]loaded:9",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false
+				},
+				"canPurge": {
+					"type": "checkbox",
+					"top": 495,
+					"left": 155,
+					"width": 61,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]canPurge:10",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"method": "ObjectMethods/canPurge.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"dest": {
+					"type": "input",
+					"top": 607,
+					"left": 93,
+					"width": 160,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]Destination:11",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/dest.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"carrier": {
+					"type": "input",
+					"top": 643,
+					"left": 71,
+					"width": 100,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]Carrier:12",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/carrier.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vehicle": {
+					"type": "input",
+					"top": 643,
+					"left": 246,
+					"width": 100,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]VehicleID:13",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vehicle.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ShowSkid": {
+					"type": "button",
+					"top": 14,
+					"left": 258,
+					"width": 84,
+					"height": 30,
+					"text": "Show Skids",
+					"class": "BaseButtons",
+					"focusable": false,
+					"method": "ObjectMethods/ShowSkid.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bol_number1": {
+					"type": "input",
+					"top": 554,
+					"left": 400,
+					"width": 112,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]bol_encoded:8",
+					"stroke": "#000000",
+					"class": "Barcode128small",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AllBOL": {
+					"type": "button",
+					"top": 14,
+					"left": 379,
+					"width": 84,
+					"height": 30,
+					"text": "All BOL's",
+					"class": "BaseButtons",
+					"focusable": false,
+					"method": "ObjectMethods/AllBOL.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"JobitLotNumber": {
+					"type": "input",
+					"top": 495,
+					"left": 400,
+					"width": 184,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[WMS_SerializedShippingLabels:96]Jobit:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CPN": {
+					"type": "input",
+					"top": 445,
+					"left": 400,
+					"width": 183,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[WMS_SerializedShippingLabels:96]CPN:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 471,
+					"left": 400,
+					"width": 186,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[WMS_SerializedShippingLabels:96]CartonDesc:7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 519,
+					"left": 400,
+					"width": 114,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[WMS_SerializedShippingLabels:96]CreateDate:9",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 495,
+					"left": 310,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Jobit :"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 445,
+					"left": 310,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "CPN :"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 471,
+					"left": 310,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "CartonDesc :"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 519,
+					"left": 310,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "CreateDate :"
+				},
+				"Field16": {
+					"type": "input",
+					"top": 401,
+					"left": 400,
+					"width": 184,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[WMS_SerializedShippingLabels:96]Customer:24",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CPN1": {
+					"type": "input",
+					"top": 422,
+					"left": 400,
+					"width": 183,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[WMS_SerializedShippingLabels:96]Line:25",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text23": {
+					"type": "text",
+					"top": 422,
+					"left": 310,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Line :"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 401,
+					"left": 310,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Customer :"
+				},
+				"help": {
+					"type": "button",
+					"top": 14,
+					"left": 500,
+					"width": 84,
+					"height": 30,
+					"action": "nextPage",
+					"text": "Help",
+					"class": "BaseButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 607,
+					"left": 10,
+					"width": 81,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Destination : "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 643,
+					"left": 17,
+					"width": 51,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Carrier : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 643,
+					"left": 179,
+					"width": 65,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "VehicleID : "
+				},
+				"wgt": {
+					"type": "input",
+					"top": 643,
+					"left": 409,
+					"width": 80,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]Weight:14",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/wgt.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 643,
+					"left": 352,
+					"width": 50,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Weight : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 573,
+					"left": 50,
+					"width": 101,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "when_inserted : "
+				},
+				"when_touched1": {
+					"type": "input",
+					"top": 573,
+					"left": 155,
+					"width": 160,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "[WMS_InternalBOLs:163]when_inserted:5",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 446,
+					"left": 289,
+					"width": 57,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "bAskMe",
+					"text": "Ask Me",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"ListBox1",
+				"ListBox2",
+				"NewBOL",
+				"PrintBOL",
+				"loaded",
+				"canPurge",
+				"dest",
+				"carrier",
+				"vehicle",
+				"ShowSkid",
+				"AllBOL",
+				"help",
+				"wgt",
+				"Variable26"
+			]
+		},
+		{
+			"objects": {
+				"help1": {
+					"type": "button",
+					"top": 14,
+					"left": 231,
+					"width": 84,
+					"height": 30,
+					"action": "previousPage",
+					"text": "Return",
+					"class": "BaseButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 53,
+					"left": 70,
+					"width": 463,
+					"height": 494,
+					"class": "BaseFormTitle",
+					"text": "Click the \"New BOL\" button to create and print a new packing slip with a scannable barcode. aMs will first suggest any existing unused slips. \r\rTreat the BOL# on the printout like a bin location and use the Move button on the WMS scanners to assign a skid to that BOL. As the load is \"put-away\" at the warehouse using the Move button on the scanner, the skids will be removed from the packing slip, and when empty it will be purged by the housekeeping operation. \r\rClick the All BOL's to get back to the full listing of slips currently available.\r\rSelect a BOL in the list on the left, then click the \"Show Skids\" button to see what has been assigned to this slip. Selecting a Skid in the list on the right will show details of the SSCC.\r\rSelect a BOL in the list on the left, then click the \"Print BOL\" button to make a hardcopy which will list the contents if any skids have been assigned.\r\rWhen you Print a BOL or Show Skids, the number of cases and skids will be updated. When the skid count is greater than zero the \"loaded\" checkbox will get ticked. When a \"loaded\" bol's skid count drops to zero, the \"canPurge\" checkbox will get ticked and that BOL will be removed during the next housekeeping sweep.\r\r\r\r\r"
+				}
+			}
+		}
+	]
+}

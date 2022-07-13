@@ -1,0 +1,1 @@
+QryPurgeEsts(->r11; ->r31; ->r51; "Hold")

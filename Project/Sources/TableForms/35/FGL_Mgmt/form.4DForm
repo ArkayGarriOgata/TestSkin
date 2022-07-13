@@ -1,0 +1,684 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"SearchPicker2": {
+					"type": "subform",
+					"top": 68,
+					"left": 35,
+					"width": 198,
+					"height": 30,
+					"dataSource": "vSearch2",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker2.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"ListBox1": {
+					"type": "listbox",
+					"top": 113,
+					"left": 38,
+					"width": 714,
+					"height": 305,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.listBoxEntities",
+					"currentItemSource": "Form:C1466.clicked",
+					"currentItemPositionSource": "Form:C1466.position",
+					"selectedItemsSource": "Form:C1466.selected",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Monaco",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBox1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.ProductCode",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "ProductCode",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.Jobit",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Jobit",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.Location",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 250,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Location",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.skid_number",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 350,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Skid",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "This:C1470.QtyOH",
+							"dataSourceTypeHint": "number",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"enterable": false,
+							"numberFormat": "|Int_no_zero",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Quantity",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Title1": {
+					"type": "input",
+					"top": 146,
+					"left": 863,
+					"width": 163,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.editEntity.ProductCode",
+					"class": "BaseNonEnter",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"placeholder": "CPN",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"categoryName1": {
+					"type": "input",
+					"top": 181,
+					"left": 863,
+					"width": 174,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.editEntity.Jobit",
+					"class": "BaseNonEnter",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"memberEditVariable1": {
+					"type": "input",
+					"top": 217,
+					"left": 863,
+					"width": 314,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.editEntity.Location",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"memberEditVariable2": {
+					"type": "input",
+					"top": 253,
+					"left": 863,
+					"width": 314,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.editEntity.skid_number",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"memberEditQuantity": {
+					"type": "input",
+					"top": 289,
+					"left": 863,
+					"width": 154,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.editEntity.QtyOH",
+					"dataSourceTypeHint": "number",
+					"class": "BaseNonEnter",
+					"textAlign": "left",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0 ;-###,###,##0",
+					"entryFilter": "&\"0-9;-\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FGLc_atAdjust_Reason": {
+					"type": "dropdown",
+					"top": 321,
+					"left": 863,
+					"width": 188,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "FGLc_atMgmt_Reason",
+					"focusable": false,
+					"class": "Form_Value",
+					"method": "ObjectMethods/FGLc_atAdjust_Reason.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"OpenMulti": {
+					"type": "checkbox",
+					"top": 370,
+					"left": 772,
+					"width": 120,
+					"height": 21,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Open Multiple",
+					"class": "BaseInformation",
+					"stroke": "#C0C0C0",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ShowInactive": {
+					"type": "checkbox",
+					"top": 397,
+					"left": 772,
+					"width": 120,
+					"height": 21,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Show Inactive",
+					"class": "BaseInformation",
+					"stroke": "#C0C0C0",
+					"focusable": false,
+					"method": "ObjectMethods/ShowInactive.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1198,
+					"height": 60,
+					"sizingX": "grow",
+					"fill": "#6E7F97",
+					"stroke": "#6E7F97"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 20,
+					"left": 1026,
+					"width": 162,
+					"height": 20,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"class": "Form_Title",
+					"text": "FG Location Mgmt"
+				},
+				"LastName1": {
+					"type": "input",
+					"top": 113,
+					"left": 863,
+					"width": 318,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.editEntity.pk_id",
+					"class": "BaseNonEnter",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"placeholder": "primary key",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 146,
+					"left": 763,
+					"width": 93,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "ProductCode"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 181,
+					"left": 783,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "Jobit"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 217,
+					"left": 783,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "Location"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 253,
+					"left": 783,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "Skid"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 289,
+					"left": 783,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "Quantity"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 238,
+					"left": 858,
+					"width": 327,
+					"sizingX": "move",
+					"stroke": "#DDDDDD"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 275,
+					"left": 858,
+					"width": 327,
+					"sizingX": "move",
+					"stroke": "#DDDDDD"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 311,
+					"left": 858,
+					"width": 167,
+					"sizingX": "move",
+					"stroke": "#DDDDDD"
+				},
+				"memberBtnCancelLabel": {
+					"type": "text",
+					"top": 404,
+					"left": 1043,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#DC143C",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"memberBtnSaveLabel": {
+					"type": "text",
+					"top": 404,
+					"left": 1115,
+					"width": 72,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#008000",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"memberBtnCancel": {
+					"type": "pictureButton",
+					"top": 366,
+					"left": 1059,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Page"
+					},
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/memberBtnCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"memberBtnValidate": {
+					"type": "pictureButton",
+					"top": 366,
+					"left": 1129,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "[Return]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/memberBtnValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 70,
+					"left": 248,
+					"width": 504,
+					"height": 28,
+					"stroke": "#8494B2",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"text": "Find the FG Location by Jobit, Skid, ProductCode or Bin (partial entry ok), Click on the row, make your edits then tab, then click Save (or return). Click column label to sort."
+				},
+				"Reason": {
+					"type": "text",
+					"top": 321,
+					"left": 783,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "Reason"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"memberBtnCancelLabel",
+					"memberBtnSaveLabel",
+					"memberBtnCancel",
+					"memberBtnValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

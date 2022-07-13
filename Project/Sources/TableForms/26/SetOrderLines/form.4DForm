@@ -1,0 +1,201 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 14,
+					"left": 22,
+					"width": 316,
+					"height": 155,
+					"class": "BaseGroupBox",
+					"text": "Pick one value to apply to every job item:"
+				},
+				"rbFillIn": {
+					"type": "radio",
+					"top": 91,
+					"left": 37,
+					"width": 195,
+					"height": 19,
+					"dataSource": "rbFillIn",
+					"text": "Fill-In (replaces at ship)",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"method": "ObjectMethods/rbFillIn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rbRerun": {
+					"type": "radio",
+					"top": 114,
+					"left": 37,
+					"width": 195,
+					"height": 19,
+					"dataSource": "rbRerun",
+					"text": "Rerun (no sales value)",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"method": "ObjectMethods/rbRerun.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rbForecast": {
+					"type": "radio",
+					"top": 137,
+					"left": 37,
+					"width": 205,
+					"height": 19,
+					"dataSource": "rbForecast",
+					"text": "FORECAST  (replaces at ship)",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"method": "ObjectMethods/rbForecast.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rbDFmmddyy": {
+					"type": "radio",
+					"top": 40,
+					"left": 37,
+					"width": 147,
+					"height": 19,
+					"dataSource": "rbDFmmddyy",
+					"text": "DFmmddyy (DELFOR)",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"method": "ObjectMethods/rbDFmmddyy.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 189,
+					"left": 159,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCANCEL",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 189,
+					"left": 258,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"rbComponent": {
+					"type": "radio",
+					"top": 65,
+					"left": 37,
+					"width": 166,
+					"height": 19,
+					"dataSource": "rbComponent",
+					"text": "JC12345.12 (Component)",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"method": "ObjectMethods/rbComponent.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"specify2": {
+					"type": "input",
+					"top": 87,
+					"left": 206,
+					"width": 103,
+					"height": 16,
+					"dataSource": "tText",
+					"class": "BaseField",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"specify1": {
+					"type": "input",
+					"top": 43,
+					"left": 206,
+					"width": 129,
+					"height": 31,
+					"dataSource": "tTitle",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

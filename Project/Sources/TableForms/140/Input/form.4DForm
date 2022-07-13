@@ -1,0 +1,255 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 187,
+	"markerBreak": 187,
+	"markerFooter": 197,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 108,
+					"left": 641,
+					"width": 100,
+					"height": 13,
+					"dataSource": "vRecNum",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"groupID": {
+					"type": "input",
+					"top": 139,
+					"left": 114,
+					"width": 64,
+					"height": 18,
+					"dataSource": "[ug_Groups:140]groupID:1",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"name": {
+					"type": "input",
+					"top": 139,
+					"left": 243,
+					"width": 270,
+					"height": 18,
+					"dataSource": "[ug_Groups:140]name:2",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"owner": {
+					"type": "input",
+					"top": 139,
+					"left": 582,
+					"width": 64,
+					"height": 18,
+					"dataSource": "[ug_Groups:140]owner:3",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"numUsers": {
+					"type": "input",
+					"top": 167,
+					"left": 126,
+					"width": 64,
+					"height": 18,
+					"dataSource": "[ug_Groups:140]numUsers:4",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 192,
+					"left": 50,
+					"width": 474,
+					"height": 242,
+					"dataSourceTypeHint": "text",
+					"table": 142,
+					"detailForm": "(Input)",
+					"listForm": "Included",
+					"scrollbarHorizontal": "visible",
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "system"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 90,
+					"left": 19,
+					"width": 731,
+					"sizingX": "grow"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 139,
+					"left": 47,
+					"width": 62,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "groupID : "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 139,
+					"left": 193,
+					"width": 45,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "name : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 139,
+					"left": 528,
+					"width": 49,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "owner : "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 167,
+					"left": 47,
+					"width": 74,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "numUsers : "
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Line1"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

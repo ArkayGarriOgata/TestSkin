@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--#4DBASE inc/-->
+    <!--#4DINCLUDE head.html-->
+    <link rel="stylesheet" href="/bs/assets/vendor/chartist/css/chartist-custom.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!--#4DINCLUDE top.html-->
+        <!--#4DINCLUDE sidebar.html-->
+        <div class="main">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <h3 class="page-title">Dashboard</h3>
+                    <div class="panel panel-headline">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="metric">
+                                        <span class="icon"><i class="fa fa-users"></i></span>
+                                        <p>
+                                            <span class="number">
+                                                <!--#4DTEXT numCustomers--></span>
+                                            <span class="title">Jobs</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="metric">
+                                        <span class="icon"><i class="fa fa-book"></i></span>
+                                        <p>
+                                            <span class="number">
+                                                <!--#4DTEXT numProducts--></span>
+                                            <span class="title">Impression</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="metric">
+                                        <span class="icon"><i class="fa fa-book"></i></span>
+                                        <p>
+                                            <span class="number">
+                                               8,800</span>
+                                            <span class="title">Impressions Per Hour</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="metric">
+                                        <span class="icon"><i class="fa fa-bar-chart"></i></span>
+                                        <p>
+                                            <span class="number">
+                                                289,000</span>
+                                            <span class="title">Impressions last 30 days</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9">Impressions by Date<div id="sales-chart" class="ct-chart"></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="weekly-summary text-right">
+                                        <span class="number">
+                                            1,000,000</span> <span class="percentage">
+                                            <span class="info-label">Monthly Impression</span>
+                                    </div>
+                                    <div class="weekly-summary text-right">
+                                        <span class="number">
+                                            a lot</span> <span class="percentage">
+                                            <span class="info-label">Yearly Impression</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!--#4DINCLUDE footer.html-->
+    </div>
+    <!--#4DINCLUDE scripts.html-->
+    <script src="/shuttle/assets/vendor/chartist/js/chartist.min.js"></script>
+    <script type='text/javascript' charset='utf-8'>
+        $(document).ready(function () {
+
+            $("#navIni").addClass("active");
+
+
+            $.getJSON("/4DACTION/chartSales", function (sales) {
+                var data, options;
+                
+                data = {
+                    labels: sales.months,
+                    series: sales.values
+                };
+
+                options = {
+                    height: 300,
+                    showArea: true,
+                    showLine: false,
+                    showPoint: false,
+                    fullWidth: true,
+                    axisX: {
+                        showGrid: false
+                    },
+                    lineSmooth: false,
+                };
+
+                new Chartist.Bar('#sales-chart', data, options);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

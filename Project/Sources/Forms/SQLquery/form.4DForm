@@ -1,0 +1,368 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "SQL Query",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 48,
+					"left": 11,
+					"width": 525,
+					"height": 111,
+					"sizingX": "grow",
+					"dataSource": "tText",
+					"class": "BaseField",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 19,
+					"left": 11,
+					"width": 154,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "SQL \"SELECT\" Statement:"
+				},
+				"Run": {
+					"type": "button",
+					"top": 178,
+					"left": 10,
+					"width": 74,
+					"height": 28,
+					"dataSource": "b1",
+					"text": "Run",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Run.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Save": {
+					"type": "button",
+					"top": 178,
+					"left": 104,
+					"width": 74,
+					"height": 28,
+					"dataSource": "b2",
+					"text": "Save...",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Save.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PickTables": {
+					"type": "listbox",
+					"top": 31,
+					"left": 580,
+					"width": 171,
+					"height": 200,
+					"sizingX": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Box4",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#E2FFDF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/PickTables.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column31",
+							"dataSource": "axFiles",
+							"width": 158,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header31",
+								"text": "Header31",
+								"dataSource": "Header31",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer31",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column32",
+							"dataSource": "<>axFileNums",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header32",
+								"text": "Header32",
+								"dataSource": "Header32",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer32",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"PickFields": {
+					"type": "listbox",
+					"top": 264,
+					"left": 580,
+					"width": 171,
+					"height": 220,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "box3",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/PickFields.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Column33",
+							"dataSource": "aFieldNames",
+							"width": 156,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header33",
+								"text": "Header33",
+								"dataSource": "Header33",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer33",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 14,
+					"left": 580,
+					"width": 81,
+					"height": 13,
+					"class": "BaseInformation",
+					"text": "Table Names"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 247,
+					"left": 580,
+					"width": 81,
+					"height": 13,
+					"class": "BaseInformation",
+					"text": "Field Names"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 174,
+					"left": 199,
+					"width": 344,
+					"height": 33,
+					"class": "Default",
+					"text": "Clicking on a Table name will display Field names. Either can be dragged or double clicked to add to SQL statement. Remember to cast non-text fields as VARCHAR [example: CAST(f.inventorynow AS VARCHAR)]"
+				},
+				"Results": {
+					"type": "listbox",
+					"top": 227,
+					"left": 12,
+					"width": 539,
+					"height": 267,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Box1",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showFooters": true,
+					"alternateFill": "#FFFFDF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"columns": []
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 11,
+					"left": 563,
+					"width": 4,
+					"height": 501,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "Splitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"Load": {
+					"type": "button",
+					"top": 14,
+					"left": 175,
+					"width": 74,
+					"height": 28,
+					"dataSource": "rb1",
+					"text": "Load",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Load.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Remember": {
+					"type": "button",
+					"top": 14,
+					"left": 269,
+					"width": 79,
+					"height": 28,
+					"dataSource": "rb2",
+					"text": "Remember",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Remember.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

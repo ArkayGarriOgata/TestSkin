@@ -1,0 +1,348 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 16,
+	"markerBody": 36,
+	"markerBreak": 37,
+	"markerFooter": 38,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 18,
+					"left": 1,
+					"width": 488,
+					"height": 18,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 1,
+					"left": 72,
+					"width": 135,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": " Product Code"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 26,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Item"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 1,
+					"left": 326,
+					"width": 42,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": " # Up"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 1,
+					"left": 369,
+					"width": 58,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": " Yld Qty"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 1,
+					"left": 208,
+					"width": 67,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": " Want Qty"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 72,
+					"width": 128,
+					"height": 14,
+					"dataSource": "[Estimates_Carton_Specs:19]ProductCode:5",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 365,
+					"width": 58,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]MakesQty:5",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 1,
+					"left": 428,
+					"width": 60,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Cost/M"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 19,
+					"left": 429,
+					"width": 49,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]ItemCost_Per_M:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_5_2"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 1,
+					"left": 276,
+					"width": 49,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "NetSheet"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 1,
+					"left": 28,
+					"width": 43,
+					"height": 13,
+					"fill": "#A0AFFF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "SubFrm"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 19,
+					"left": 4,
+					"width": 21,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]ItemNumber:3",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 19,
+					"left": 35,
+					"width": 26,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]SubFormNumber:10",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": "###;-##;*",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 19,
+					"left": 208,
+					"width": 61,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]FormWantQty:9",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 19,
+					"left": 274,
+					"width": 48,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]NetSheets:7",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 19,
+					"left": 330,
+					"width": 27,
+					"height": 14,
+					"dataSource": "[Estimates_FormCartons:48]NumberUp:4",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 15,
+					"left": 0,
+					"width": 488,
+					"stroke": "#C0CAFF"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

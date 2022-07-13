@@ -1,0 +1,1 @@
+rOnConsign:=Subtotal:C97([Raw_Materials_Locations:25]ConsignmentQty:26)

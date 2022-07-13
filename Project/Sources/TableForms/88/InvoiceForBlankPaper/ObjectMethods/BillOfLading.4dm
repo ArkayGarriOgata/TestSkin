@@ -1,0 +1,1 @@
+RELATE ONE:C42([Customers_Invoices:88]BillOfLadingNumber:3)

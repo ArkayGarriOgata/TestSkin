@@ -1,0 +1,292 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 294,
+	"markerBreak": 294,
+	"markerFooter": 304,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 109,
+					"left": 539,
+					"width": 100,
+					"height": 11,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"class": "Default",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 106,
+					"left": 24,
+					"width": 500,
+					"height": 11,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "Default",
+					"text": "WindowSetNames"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 90,
+					"left": 19,
+					"width": 629,
+					"sizingX": "grow"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 139,
+					"left": 262,
+					"width": 60,
+					"height": 11,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "UUID : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 161,
+					"left": 262,
+					"width": 60,
+					"height": 11,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "UserName : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 210,
+					"left": 262,
+					"width": 60,
+					"height": 11,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "SetName : "
+				},
+				"Text13": {
+					"type": "text",
+					"top": 259,
+					"left": 262,
+					"width": 60,
+					"height": 11,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "ID : "
+				},
+				"Text14": {
+					"type": "text",
+					"top": 281,
+					"left": 262,
+					"width": 60,
+					"height": 11,
+					"class": "Default",
+					"textAlign": "right",
+					"text": "Default : "
+				},
+				"UUID": {
+					"type": "input",
+					"top": 139,
+					"left": 327,
+					"width": 250,
+					"height": 11,
+					"dataSource": "[WindowSetTitles:186]pk_id:1",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UserName": {
+					"type": "input",
+					"top": 161,
+					"left": 327,
+					"width": 234,
+					"height": 39,
+					"dataSource": "[WindowSetTitles:186]UserName:2",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SetName": {
+					"type": "input",
+					"top": 210,
+					"left": 327,
+					"width": 234,
+					"height": 39,
+					"dataSource": "[WindowSetTitles:186]SetName:3",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ID": {
+					"type": "input",
+					"top": 259,
+					"left": 327,
+					"width": 297,
+					"height": 11,
+					"dataSource": "[WindowSetTitles:186]ID:4",
+					"class": "Default",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Default": {
+					"type": "checkbox",
+					"top": 281,
+					"left": 327,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[WindowSetTitles:186]useDefault:5",
+					"text": "Yes",
+					"stroke": "#000000",
+					"class": "Default",
+					"textAlign": "left",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text8",
+					"Line9"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

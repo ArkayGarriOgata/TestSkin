@@ -1,0 +1,191 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 33,
+	"markerBreak": 33,
+	"markerFooter": 33,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "367pt",
+		"paperHeight": "475pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 0,
+					"width": 171,
+					"height": 15,
+					"stroke": "#FFFFFF"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 100,
+					"height": 14,
+					"fill": "#FFC0FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "  Service Item"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 101,
+					"width": 26,
+					"height": 14,
+					"fill": "#FFC0FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Qty"
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 128,
+					"width": 37,
+					"height": 14,
+					"fill": "#FFC0FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Quote"
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 19,
+					"left": 103,
+					"width": 18,
+					"height": 13,
+					"dataSource": "[Prep_Charges:103]QuantityQuoted:2",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/S2_Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 19,
+					"left": 132,
+					"width": 30,
+					"height": 13,
+					"dataSource": "[Prep_Charges:103]PriceQuoted:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 3,
+					"width": 92,
+					"height": 13,
+					"dataSource": "[Prep_CatalogItems:102]Description:2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 125,
+					"width": 6,
+					"height": 13,
+					"dataSource": "[Prep_Charges:103]InvoiceNumber:7",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$; ; ",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

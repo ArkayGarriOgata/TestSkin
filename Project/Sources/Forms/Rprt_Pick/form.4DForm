@@ -1,0 +1,311 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "ViewProArea",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onCloseBox"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"ViewProArea": {
+					"type": "view",
+					"top": 13,
+					"left": 295,
+					"width": 733,
+					"height": 559,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "ViewProArea",
+					"dataSourceTypeHint": "object",
+					"userInterface": "ribbon",
+					"withFormulaBar": true
+				},
+				"CorenHList1": {
+					"type": "list",
+					"top": 13,
+					"left": 13,
+					"width": 267,
+					"height": 285,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CorenHList1",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"class": "FormField",
+					"method": "ObjectMethods/CorenHList1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onGettingFocus"
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 8,
+					"left": 287,
+					"width": 1,
+					"height": 569,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rprt_Pick_atComparator0": {
+					"type": "dropdown",
+					"top": 375,
+					"left": 141,
+					"width": 98,
+					"height": 23,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Rprt_Pick_atComparator0",
+					"focusable": false,
+					"class": "Form_Value",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rprt_Pick_dStart": {
+					"type": "subform",
+					"top": 307,
+					"left": 141,
+					"width": 138,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Rprt_Pick_dStart",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateEntry",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Rprt_Pick_dEnd": {
+					"type": "subform",
+					"top": 340,
+					"left": 141,
+					"width": 138,
+					"height": 25,
+					"sizingY": "move",
+					"dataSource": "Rprt_Pick_dEnd",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateEntry",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Rprt_Pick_StartDate": {
+					"type": "text",
+					"top": 312,
+					"left": 13,
+					"width": 65,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Form_Label",
+					"text": "Start Date"
+				},
+				"Rprt_tPick_DropDownTitle2": {
+					"type": "text",
+					"top": 350,
+					"left": 34,
+					"width": 90,
+					"height": 16,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"class": "Form_Label"
+				},
+				"Rprt_Pick_EndDate": {
+					"type": "text",
+					"top": 344,
+					"left": 13,
+					"width": 65,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Form_Label",
+					"text": "End Date"
+				},
+				"Rprt_Pick_atValue0": {
+					"type": "dropdown",
+					"top": 375,
+					"left": 141,
+					"width": 138,
+					"height": 23,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Rprt_Pick_atValue0",
+					"focusable": false,
+					"class": "Form_Value",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rprt_Pick_Title0": {
+					"type": "text",
+					"top": 375,
+					"left": 13,
+					"width": 126,
+					"height": 16,
+					"sizingY": "move",
+					"class": "Form_Label",
+					"text": "Rprt_Pick_Title0"
+				},
+				"Rprt_Pick_tValue0": {
+					"type": "input",
+					"top": 377,
+					"left": 142,
+					"width": 138,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.tValue0",
+					"class": "Form_Value",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rprt_Pick_nOnLoad": {
+					"type": "button",
+					"top": 620,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Rprt_Pick_nOnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Rprt_Pick_nOnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Rprt_Pick_nEntry": {
+					"type": "pictureButton",
+					"top": 544,
+					"left": 13,
+					"width": 28,
+					"height": 28,
+					"sizingY": "move",
+					"dataSource": "Rprt_Pick_nEntry",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/NewRound.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Rprt_Pick_nEntry.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rprt_Pick_tDescription": {
+					"type": "input",
+					"top": 424,
+					"left": 13,
+					"width": 249,
+					"height": 81,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.tDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rprt_Pick_tLastRun": {
+					"type": "input",
+					"top": 516,
+					"left": 13,
+					"width": 262,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.tLastRun",
+					"stroke": "#000000",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rprt_Pick_nViewPro": {
+					"type": "pictureButton",
+					"top": 544,
+					"left": 247,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.nViewPro",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/exportround.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Rprt_Pick_nViewPro.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "OneField",
+		"defaultView": "OneField",
+		"views": {
+			"OneField": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {
+				"objects": [
+					"Rprt_Pick_dStart"
+				]
+			},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,600 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 15,
+					"width": 430,
+					"height": 154,
+					"stroke": "#000099",
+					"class": "BaseGroupBox",
+					"text": "Transaction:"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 252,
+					"left": 15,
+					"width": 430,
+					"height": 112,
+					"stroke": "#000099",
+					"class": "BaseGroupBox",
+					"text": "Options:"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 12,
+					"left": 15,
+					"width": 430,
+					"height": 71,
+					"stroke": "#000099",
+					"class": "BaseGroupBox",
+					"text": "Item:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 116,
+					"left": 34,
+					"width": 144,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Customer Product Nº:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 116,
+					"left": 198,
+					"width": 90,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Customer Nº:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 157,
+					"left": 336,
+					"width": 64,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Quantity:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 157,
+					"left": 35,
+					"width": 98,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "From Location:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 157,
+					"left": 166,
+					"width": 82,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "To Location:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 279,
+					"left": 33,
+					"width": 54,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Reason:"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 319,
+					"left": 33,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Action Taken:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 278,
+					"left": 141,
+					"width": 130,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Reason Comments:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 200,
+					"left": 33,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Skid Ticket #:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 199,
+					"left": 322,
+					"width": 85,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "User Initials:"
+				},
+				"tJobItNum": {
+					"type": "input",
+					"top": 55,
+					"left": 153,
+					"width": 93,
+					"height": 16,
+					"dataSource": "tJobItNum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 55,
+					"left": 313,
+					"width": 69,
+					"height": 16,
+					"dataSource": "sCriterion6",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "~\"0-9;.\"",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 133,
+					"left": 36,
+					"width": 159,
+					"height": 16,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 175,
+					"left": 40,
+					"width": 108,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"RGA_number": {
+					"type": "input",
+					"top": 55,
+					"left": 26,
+					"width": 69,
+					"height": 16,
+					"dataSource": "sCriter12",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"entryFilter": "~\"0-9;R\"",
+					"method": "ObjectMethods/RGA_number.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"asMove": {
+					"type": "dropdown",
+					"top": 174,
+					"left": 166,
+					"width": 30,
+					"height": 19,
+					"dataSource": "asMove",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/directPopup"
+					},
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/asMove.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 175,
+					"left": 203,
+					"width": 128,
+					"height": 16,
+					"dataSource": "sCriterion4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 175,
+					"left": 338,
+					"width": 79,
+					"height": 16,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&\"0-9;.;-\"",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 218,
+					"left": 35,
+					"width": 267,
+					"height": 16,
+					"dataSource": "sCriter10",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 218,
+					"left": 322,
+					"width": 34,
+					"height": 16,
+					"dataSource": "sCriter11",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 296,
+					"left": 34,
+					"width": 104,
+					"height": 16,
+					"dataSource": "sCriterion9",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ReturnReject"
+					},
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/ReturnReject"
+					},
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 296,
+					"left": 145,
+					"width": 186,
+					"height": 16,
+					"dataSource": "sCriterion7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 336,
+					"left": 35,
+					"width": 296,
+					"height": 16,
+					"dataSource": "sCriterion8",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 372,
+					"left": 102,
+					"width": 119,
+					"height": 18,
+					"dataSource": "Button2",
+					"text": "Help Returning?",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 372,
+					"left": 242,
+					"width": 78,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 372,
+					"left": 341,
+					"width": 103,
+					"height": 18,
+					"dataSource": "bPost",
+					"shortcutKey": "[Enter]",
+					"text": "Post <enter>",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 39,
+					"left": 153,
+					"width": 79,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "JobIt Nº:"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 39,
+					"left": 313,
+					"width": 89,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "Order Nº.Item:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 133,
+					"left": 203,
+					"width": 159,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Untitled"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text20": {
+					"type": "text",
+					"top": 39,
+					"left": 26,
+					"width": 88,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"text": "RGA#:"
+				}
+			},
+			"entryOrder": [
+				"RGA_number",
+				"asMove",
+				"Variable14",
+				"Variable15",
+				"Variable16",
+				"Variable4",
+				"Variable17",
+				"Variable18",
+				"Variable19",
+				"Button3",
+				"bCancel",
+				"Variable5"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

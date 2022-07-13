@@ -1,0 +1,294 @@
+{
+	"destination": "detailScreen",
+	"width": 1360,
+	"height": 630,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"waViewer": {
+					"type": "webArea",
+					"top": 47,
+					"left": 515,
+					"width": 823,
+					"height": 535,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "waViewer",
+					"urlSource": "waViewer_url",
+					"progressSource": "waViewer_progress",
+					"contextMenu": "none",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/waViewer.4dm",
+					"events": [
+						"onEndURLLoading"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 595,
+					"left": 1234,
+					"width": 104,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"abVideoLB": {
+					"type": "listbox",
+					"top": 46,
+					"left": 24,
+					"width": 471,
+					"height": 536,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "abVideoLB",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "atName3",
+							"dataSource": [
+								"atName3",
+								"atChapter"
+							],
+							"width": 189,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atName3.4dm",
+							"header": {
+								"text": "Name",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atDesc",
+							"dataSource": "atDesc",
+							"width": 268,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atDesc.4dm",
+							"header": {
+								"name": "atName",
+								"text": "Description",
+								"dataSource": "atName",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "atPath",
+							"dataSource": "atPath",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 10,
+					"left": 515,
+					"width": 823,
+					"height": 28,
+					"sizingX": "grow",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"text": "aMs Training Videos"
+				},
+				"bExpand": {
+					"type": "button",
+					"top": 595,
+					"left": 172,
+					"width": 77,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bExpand",
+					"text": "Expand",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bExpand.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSearch": {
+					"type": "button",
+					"top": 595,
+					"left": 269,
+					"width": 77,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSearch",
+					"text": "Search",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/bSearch.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

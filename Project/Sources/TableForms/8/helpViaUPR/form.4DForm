@@ -1,0 +1,102 @@
+{
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "dropdown",
+					"top": 11,
+					"left": 13,
+					"width": 173,
+					"height": 20,
+					"dataSource": "hlHelp",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/HelpChoices"
+					},
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 47,
+					"left": 36,
+					"width": 244,
+					"height": 143,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "tCalculationLog",
+					"stroke": "#000000",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 191,
+					"left": 299,
+					"width": 18,
+					"height": 15,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

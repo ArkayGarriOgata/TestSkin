@@ -1,0 +1,1 @@
+$To:=UtilGetDate(dDateBegin; "ThisMonth"; ->dDateEnd)  //!00/00/00!

@@ -1,0 +1,3 @@
+APPEND TO ARRAY:C911(aText; Self:C308->)
+Self:C308->:=""
+GOTO OBJECT:C206(Self:C308->)

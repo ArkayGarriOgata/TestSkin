@@ -1,0 +1,104 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "CAR Notes",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 309,
+	"markerBreak": 309,
+	"markerFooter": 319,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"tNote": {
+					"type": "input",
+					"top": 17,
+					"left": 17,
+					"width": 386,
+					"height": 266,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "tNote",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 299,
+					"left": 200,
+					"width": 103,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSave": {
+					"type": "button",
+					"top": 299,
+					"left": 317,
+					"width": 103,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bSave",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Save",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/bSave.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"tNote",
+				"bCancel",
+				"bSave"
+			]
+		}
+	]
+}

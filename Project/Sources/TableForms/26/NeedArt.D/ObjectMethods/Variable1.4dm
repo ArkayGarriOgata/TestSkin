@@ -1,0 +1,2 @@
+//(s) sCpn [finished goods]needart.d 
+Self:C308->:=aCpn{I}  //"I" is loop counter in printing routine

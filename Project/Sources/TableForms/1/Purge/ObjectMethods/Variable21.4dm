@@ -1,0 +1,1 @@
+QryPurgeEsts(->r6; ->r26; ->r46; "Ordered")

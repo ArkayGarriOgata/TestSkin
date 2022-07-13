@@ -1,0 +1,353 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Create WIP Records",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 5,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "sJobit",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 31,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "sJobform",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 56,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "sHead1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 83,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "iQty",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 109,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "numRecs1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 135,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "sPOnum2",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 161,
+					"left": 164,
+					"width": 164,
+					"height": 17,
+					"dataSource": "sIssType",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ContainerType"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 285,
+					"left": 234,
+					"width": 101,
+					"height": 26,
+					"dataSource": "bOK",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 285,
+					"left": 353,
+					"width": 101,
+					"height": 26,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Continue",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 5,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Job Item:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 31,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Job Form:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 161,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Container Type:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 83,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Quantity Per Container:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 109,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Number of Containers:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 135,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "PO:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 57,
+					"left": 10,
+					"width": 149,
+					"height": 16,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Lot#:"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 83,
+					"left": 334,
+					"width": 84,
+					"height": 17,
+					"dataSource": "ibomUOM",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ContainerType"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 195,
+					"left": 7,
+					"width": 427,
+					"height": 77,
+					"dataSource": "xText",
+					"fontFamily": "Courier",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 5,
+					"left": 336,
+					"width": 84,
+					"height": 17,
+					"dataSource": "iUp",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 103,
+					"left": 335,
+					"width": 85,
+					"height": 24,
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "(set to SHEETS to calc by number up)"
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Variable2",
+				"Variable7",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Variable3",
+				"Button1",
+				"Button2",
+				"Variable9",
+				"Variable10"
+			]
+		}
+	]
+}

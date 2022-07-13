@@ -1,0 +1,715 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 1,
+					"width": 696,
+					"height": 687,
+					"fill": "#F5DEB3",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"submit": {
+					"type": "button",
+					"top": 618,
+					"left": 536,
+					"width": 124,
+					"height": 56,
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Submit",
+					"class": "Form_Title",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button": {
+					"type": "radio",
+					"top": 116,
+					"left": 21,
+					"width": 150,
+					"height": 69,
+					"dataSource": "crb01",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Silver",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group8",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button1": {
+					"type": "radio",
+					"top": 116,
+					"left": 184,
+					"width": 150,
+					"height": 69,
+					"dataSource": "crb02",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Gold",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group8",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button2": {
+					"type": "radio",
+					"top": 116,
+					"left": 347,
+					"width": 150,
+					"height": 69,
+					"dataSource": "crb03",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Rainbow",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group8",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button3": {
+					"type": "radio",
+					"top": 116,
+					"left": 510,
+					"width": 150,
+					"height": 69,
+					"dataSource": "crb04",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Pillars N-S",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group8",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button4": {
+					"type": "radio",
+					"top": 22,
+					"left": 570,
+					"width": 90,
+					"height": 69,
+					"dataSource": "srb10",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "14\"",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group15",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button5": {
+					"type": "radio",
+					"top": 22,
+					"left": 350,
+					"width": 90,
+					"height": 69,
+					"dataSource": "srb12",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "20\"",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group15",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button6": {
+					"type": "radio",
+					"top": 22,
+					"left": 240,
+					"width": 90,
+					"height": 69,
+					"dataSource": "srb13",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "26\"",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group15",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button7": {
+					"type": "radio",
+					"top": 22,
+					"left": 130,
+					"width": 90,
+					"height": 69,
+					"dataSource": "srb14",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "28\"",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group15",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button8": {
+					"type": "radio",
+					"top": 22,
+					"left": 21,
+					"width": 90,
+					"height": 69,
+					"dataSource": "srb15",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "40\"",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group15",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button12": {
+					"type": "radio",
+					"top": 22,
+					"left": 460,
+					"width": 90,
+					"height": 69,
+					"dataSource": "srb11",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "16\"",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group15",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button9": {
+					"type": "radio",
+					"top": 210,
+					"left": 21,
+					"width": 150,
+					"height": 69,
+					"dataSource": "vrb31",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "ITW",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group9",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button10": {
+					"type": "radio",
+					"top": 210,
+					"left": 200,
+					"width": 150,
+					"height": 69,
+					"dataSource": "vrb32",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Kurz",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group9",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button11": {
+					"type": "radio",
+					"top": 210,
+					"left": 380,
+					"width": 150,
+					"height": 69,
+					"dataSource": "vrb33",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "Univacco",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group9",
+					"events": [
+						"onClick"
+					]
+				},
+				"cancel": {
+					"type": "button",
+					"top": 618,
+					"left": 390,
+					"width": 124,
+					"height": 56,
+					"sizingY": "move",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Form_Title",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button13": {
+					"type": "radio",
+					"top": 305,
+					"left": 510,
+					"width": 150,
+					"height": 69,
+					"dataSource": "qrb41",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Partial (½)",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group13",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button14": {
+					"type": "radio",
+					"top": 305,
+					"left": 21,
+					"width": 150,
+					"height": 69,
+					"dataSource": "qrb42",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "1 Roll",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group13",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button15": {
+					"type": "radio",
+					"top": 305,
+					"left": 184,
+					"width": 150,
+					"height": 69,
+					"dataSource": "qrb43",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "2 Rolls",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group13",
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button16": {
+					"type": "radio",
+					"top": 305,
+					"left": 347,
+					"width": 150,
+					"height": 69,
+					"dataSource": "qrb44",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"focusable": false,
+					"text": "3 Rolls",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"radioGroup": "Group13",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 394,
+					"left": 21,
+					"width": 640,
+					"height": 18,
+					"dataSource": "Form:C1466.usageDesc",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"inventoryLB": {
+					"type": "listbox",
+					"top": 433,
+					"left": 21,
+					"width": 639,
+					"height": 159,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "Form:C1466.matchingInventory_es",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#FFFFFF",
+					"alternateFill": "#FFFACD",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Raw_Matl_Code",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 120,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFACD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "RM_Code",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.POItemKey",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"textFormat": "0000000 00",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFACD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "PO_ITEM",
+								"stroke": "automatic",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.QtyOH",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"numberFormat": "#,##0.0",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFACD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "QTY_OH",
+								"stroke": "automatic",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.PO_ITEM.VENDOR.Name",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 180,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFACD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "VENDOR",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.RAW_MATERIAL.Flex2",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFACD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Width",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.RAW_MATERIAL.Flex4",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#FFFACD",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Color",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group8": [
+				"3D Radio Button",
+				"3D Radio Button1",
+				"3D Radio Button2",
+				"3D Radio Button3"
+			],
+			"Group15": [
+				"3D Radio Button4",
+				"3D Radio Button5",
+				"3D Radio Button6",
+				"3D Radio Button7",
+				"3D Radio Button8",
+				"3D Radio Button12"
+			],
+			"Group9": [
+				"3D Radio Button9",
+				"3D Radio Button10",
+				"3D Radio Button11"
+			],
+			"Group13": [
+				"3D Radio Button13",
+				"3D Radio Button14",
+				"3D Radio Button15",
+				"3D Radio Button16"
+			]
+		}
+	}
+}

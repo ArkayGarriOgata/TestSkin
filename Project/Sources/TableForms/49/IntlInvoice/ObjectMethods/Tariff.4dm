@@ -1,0 +1,1 @@
+OBJECT Get pointer:C1124->:=BOL_getTariffHeading([Customers_Bills_of_Lading:49]ShipTo:3)

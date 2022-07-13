@@ -1,0 +1,2 @@
+QUERY:C277([Finished_Goods_Color_Submission:78]; [Finished_Goods_Color_Submission:78]dateOut:4=!00-00-00!; *)
+QUERY:C277([Finished_Goods_Color_Submission:78];  & ; [Finished_Goods_Color_Submission:78]Returned:5=!00-00-00!)

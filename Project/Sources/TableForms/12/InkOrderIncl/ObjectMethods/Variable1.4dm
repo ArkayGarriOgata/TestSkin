@@ -1,0 +1,1 @@
+xText:=[Purchase_Orders_Items:12]Flex5:35+"; "+[Purchase_Orders_Items:12]RM_Description:7

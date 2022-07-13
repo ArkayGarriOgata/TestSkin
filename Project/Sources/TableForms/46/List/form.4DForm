@@ -1,0 +1,458 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 122,
+	"markerFooter": 125,
+	"events": [
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 232,
+					"width": 55,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Orderline"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 315,
+					"width": 36,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Cust"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 78,
+					"left": 365,
+					"width": 52,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Sch Date"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 78,
+					"left": 424,
+					"width": 60,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Sched Qty"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 78,
+					"left": 497,
+					"width": 55,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Act Date"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 78,
+					"left": 557,
+					"width": 70,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Actual Qty"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 78,
+					"left": 4,
+					"width": 83,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CPN"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 78,
+					"left": 104,
+					"width": 78,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Cust Refer"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 78,
+					"left": 644,
+					"width": 39,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Brand"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 101,
+					"left": 4,
+					"width": 99,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]ProductCode:11",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 101,
+					"left": 110,
+					"width": 118,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]CustomerRefer:3",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 101,
+					"left": 236,
+					"width": 62,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]OrderLine:4",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 101,
+					"left": 306,
+					"width": 43,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]CustID:12",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 101,
+					"left": 355,
+					"width": 62,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Sched_Date:5",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "systemShort blankIfNull",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 101,
+					"left": 428,
+					"width": 51,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Sched_Qty:6",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 101,
+					"left": 492,
+					"width": 60,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Actual_Date:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 101,
+					"left": 564,
+					"width": 58,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Actual_Qty:8",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 101,
+					"left": 644,
+					"width": 95,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]CustomerLine:28",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 101,
+					"left": 746,
+					"width": 31,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]THC_State:39",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 101,
+					"left": 780,
+					"width": 31,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]ModWho:19",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 101,
+					"left": 814,
+					"width": 57,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]ModDate:18",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 101,
+					"left": 877,
+					"width": 70,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]ReleaseNumber:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 101,
+					"left": 958,
+					"width": 70,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]NumberOfCases:30",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 78,
+					"left": 877,
+					"width": 75,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "ReleaseNum"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 78,
+					"left": 958,
+					"width": 75,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "NumCases"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 78,
+					"left": 754,
+					"width": 28,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "THC"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 78,
+					"left": 783,
+					"width": 26,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Who"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 78,
+					"left": 826,
+					"width": 39,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "When"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

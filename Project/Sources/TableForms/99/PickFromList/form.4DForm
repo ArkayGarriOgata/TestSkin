@@ -1,0 +1,132 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Peek",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 265,
+					"left": 2,
+					"width": 161,
+					"height": 44,
+					"stroke": "#555555",
+					"class": "Default",
+					"text": "Click on the approvals that you would like added to this jobform. Turn off ² by clicking again."
+				},
+				"Button1": {
+					"type": "button",
+					"top": 280,
+					"left": 239,
+					"width": 85,
+					"height": 23,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 280,
+					"left": 346,
+					"width": 85,
+					"height": 23,
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Use ²'d",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 280,
+					"left": 453,
+					"width": 85,
+					"height": 23,
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 10,
+					"width": 429,
+					"height": 11,
+					"class": "Default",
+					"borderStyle": "raised",
+					"text": "²'d Category                            Standard Task"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 98,
+					"left": 10,
+					"width": 412,
+					"height": 43,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				},
+				"Text": {
+					"type": "text",
+					"top": 56,
+					"left": 37,
+					"width": 321,
+					"height": 17,
+					"text": "deleted this grouped array 8/13/21"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,401 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box1": {
+					"type": "listbox",
+					"top": 62,
+					"left": 9,
+					"width": 492,
+					"height": 391,
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "aSelected",
+							"width": 15,
+							"minWidth": 15,
+							"maxWidth": 15,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "√",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "aCPN",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 300,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Product Code",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "1",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "aJobit",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 120,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Job Item",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "2",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "aSubform",
+							"dataSourceTypeHint": "number",
+							"width": 20,
+							"minWidth": 20,
+							"maxWidth": 20,
+							"resizable": false,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"numberFormat": "00;-00;*",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "SF",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "3",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "aDate",
+							"dataSourceTypeHint": "date",
+							"width": 100,
+							"minWidth": 90,
+							"maxWidth": 120,
+							"entryFilter": "!0&9##/##/##",
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#E2FFDF",
+							"alternateFill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column5.4dm",
+							"header": {
+								"name": "Header5",
+								"text": "HaveReadyDate",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "4",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "aLi",
+							"dataSourceTypeHint": "number",
+							"width": 102,
+							"minWidth": 10,
+							"maxWidth": 102,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Geneva",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "recordnumber",
+								"dataSource": "Header6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Geneva",
+								"fontSize": 9
+							},
+							"footer": {
+								"name": "5",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 476,
+					"left": 296,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNoPick",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 476,
+					"left": 388,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"shortcutKey": "[Enter]",
+					"text": "Set HRD's",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 480,
+					"left": 470,
+					"width": 7,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"shortcutKey": "[Return]",
+					"text": "Select",
+					"display": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 1,
+					"left": 9,
+					"width": 494,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Set Jobitem Have Ready Dates"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 21,
+					"left": 13,
+					"width": 485,
+					"height": 39,
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Apply the new HRD, <newHRD>. to Jobitems by clicking on them to set an 'X' in the first column. You may also enter a date later than the job's HRD. Only items with an 'X'  will be changed.\r\r"
+				}
+			},
+			"entryOrder": [
+				"List Box1",
+				"Variable4",
+				"Variable6"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

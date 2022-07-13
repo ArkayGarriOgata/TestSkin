@@ -1,0 +1,1 @@
+ORDER BY:C49([Finished_Goods_Transactions:33]; [Finished_Goods_Transactions:33]XactionDate:3; <; [Finished_Goods_Transactions:33]XactionTime:13; <)

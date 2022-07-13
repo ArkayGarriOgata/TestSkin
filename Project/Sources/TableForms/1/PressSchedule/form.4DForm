@@ -1,0 +1,1063 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Press Schedule",
+	"windowMinWidth": 60,
+	"windowMaxWidth": 1400,
+	"windowMinHeight": 40,
+	"windowMaxHeight": 2000,
+	"width": 1050,
+	"height": 550,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onMenuSelect",
+		"onCloseBox",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 428,
+					"left": 2,
+					"width": 74,
+					"height": 90,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseGroupBox",
+					"text": "Sort by"
+				},
+				"Timer": {
+					"type": "button",
+					"top": 440,
+					"left": 742,
+					"width": 98,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bStart",
+					"text": "MR-Timer",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Timer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"stop": {
+					"type": "button",
+					"top": 468,
+					"left": 742,
+					"width": 98,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bStop",
+					"text": "MR-End",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/stop.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched20": {
+					"type": "button",
+					"top": 494,
+					"left": 646,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNotify",
+					"text": "Is locked?",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ThruPutView": {
+					"type": "button",
+					"top": 494,
+					"left": 742,
+					"width": 98,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Sort Thruput",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ThruPutView.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SumField": {
+					"type": "button",
+					"top": 494,
+					"left": 848,
+					"width": 94,
+					"height": 20,
+					"sizingY": "move",
+					"text": "∑ Thru-put",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SumField.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SheetGoal": {
+					"type": "button",
+					"top": 468,
+					"left": 848,
+					"width": 94,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Sheet Goal",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SheetGoal.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 440,
+					"left": 646,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bAdvise",
+					"shortcutKey": "t",
+					"shortcutAccel": true,
+					"text": "ToDo",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FindJob": {
+					"type": "button",
+					"top": 468,
+					"left": 646,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"text": "Find Job...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/FindJob.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 428,
+					"left": 743,
+					"width": 8,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "bDone",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bGantt1": {
+					"type": "button",
+					"top": 439,
+					"left": 361,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bGantt",
+					"text": "Schedule",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bGantt1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"eBagBtn": {
+					"type": "button",
+					"top": 439,
+					"left": 456,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bEBag",
+					"text": "eBag",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/eBagBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"headRect": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1044,
+					"height": 64,
+					"sizingX": "grow",
+					"fill": "#DDDDDD"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 3,
+					"left": 12,
+					"width": 407,
+					"height": 18,
+					"dataSource": "otpct",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 1,
+					"left": 530,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict1",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 1,
+					"left": 541,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict2",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 1,
+					"left": 552,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict3",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 1,
+					"left": 563,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict4",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 1,
+					"left": 574,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict5",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 1,
+					"left": 585,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict6",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 1,
+					"left": 596,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict7",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 1,
+					"left": 607,
+					"width": 10,
+					"height": 62,
+					"dataSource": "pict8",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"borderStyle": "none",
+					"enterable": false,
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 23,
+					"left": 29,
+					"width": 45,
+					"height": 18,
+					"dataSource": "sCriterion1",
+					"class": "BaseFormTitle",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PressNumbers"
+					},
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 47,
+					"left": 112,
+					"width": 61,
+					"height": 17,
+					"dataSource": "pressBackLog",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0 Hrs",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/PressNumbers"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 66,
+					"left": 2,
+					"width": 1026,
+					"height": 341,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 110,
+					"detailForm": "Input",
+					"listForm": "Include",
+					"focusable": false,
+					"scrollbarHorizontal": "visible",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"canSee1": {
+					"type": "button",
+					"top": 440,
+					"left": 79,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bDel",
+					"text": "Completed",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSee1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSee2": {
+					"type": "button",
+					"top": 440,
+					"left": 173,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bLift",
+					"text": "Lift",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSee2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"setAdate": {
+					"type": "button",
+					"top": 440,
+					"left": 267,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bAdvise",
+					"text": "Set a Date",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/setAdate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPRint1": {
+					"type": "button",
+					"top": 440,
+					"left": 551,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bPrint",
+					"text": "Print",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bPRint1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"sort1": {
+					"type": "radio",
+					"top": 450,
+					"left": 5,
+					"width": 66,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "b4",
+					"text": "Priority",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/sort1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"sort2": {
+					"type": "radio",
+					"top": 466,
+					"left": 5,
+					"width": 66,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "b8",
+					"text": "Start",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/sort2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"sort3": {
+					"type": "radio",
+					"top": 483,
+					"left": 5,
+					"width": 66,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "b7",
+					"text": "Job",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/sort3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"sort4": {
+					"type": "radio",
+					"top": 500,
+					"left": 5,
+					"width": 66,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "b6",
+					"text": "Line",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/sort4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NeedPlated": {
+					"type": "checkbox",
+					"top": 516,
+					"left": 3,
+					"width": 244,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNeedPlated",
+					"text": "Need Plates and has been Preflighted",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/NeedPlated.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbFilter": {
+					"type": "checkbox",
+					"top": 516,
+					"left": 265,
+					"width": 333,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "cbFilter",
+					"text": "Show Only Jobs for the Next 3 Weeks & Not Released",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/cbFilter.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 23,
+					"left": 82,
+					"width": 294,
+					"height": 21,
+					"dataSource": "[Cost_Centers:27]Description:3",
+					"class": "BaseFormTitle",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 48,
+					"left": 48,
+					"width": 63,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Backlog:"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 2,
+					"left": 982,
+					"width": 25,
+					"height": 25,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/emblem.png"
+				},
+				"showCompleted": {
+					"type": "checkbox",
+					"top": 516,
+					"left": 618,
+					"width": 133,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bShowCompleted",
+					"text": "Show Completed",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/showCompleted.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PlateUse": {
+					"type": "button",
+					"top": 439,
+					"left": 848,
+					"width": 94,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Plate Use",
+					"class": "BaseInformation",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PlateUse.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSeeStart": {
+					"type": "button",
+					"top": 467,
+					"left": 79,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Start Task",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSeeStart.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Timer",
+				"stop",
+				"canSched20",
+				"ThruPutView",
+				"SumField",
+				"SheetGoal",
+				"Button5",
+				"FindJob",
+				"bGantt1",
+				"eBagBtn",
+				"Variable10",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Variable7",
+				"Variable8",
+				"Variable9",
+				"Variable11",
+				"Variable1",
+				"Variable2",
+				"Subform1",
+				"canSee1",
+				"canSee2",
+				"setAdate",
+				"bPRint1",
+				"Group1",
+				"sort1",
+				"sort2",
+				"sort3",
+				"sort4",
+				"NeedPlated",
+				"cbFilter",
+				"showCompleted",
+				"PlateUse",
+				"canSeeStart"
+			]
+		},
+		{
+			"objects": {
+				"canSched13": {
+					"type": "button",
+					"top": 494,
+					"left": 79,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNew",
+					"text": "New",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched5": {
+					"type": "button",
+					"top": 467,
+					"left": 169,
+					"width": 45,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bSave",
+					"text": "Save",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched6": {
+					"type": "button",
+					"top": 467,
+					"left": 214,
+					"width": 49,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Recall",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched7": {
+					"type": "button",
+					"top": 467,
+					"left": 267,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bExtend",
+					"text": "Extend",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched8": {
+					"type": "button",
+					"top": 467,
+					"left": 361,
+					"width": 90,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Update JML",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched14": {
+					"type": "button",
+					"top": 467,
+					"left": 456,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bShopCal",
+					"text": "Shop Cal",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched3": {
+					"type": "button",
+					"top": 494,
+					"left": 173,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bMove",
+					"text": "Move",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched2": {
+					"type": "button",
+					"top": 494,
+					"left": 267,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bBlock",
+					"text": "Block",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched9": {
+					"type": "button",
+					"top": 494,
+					"left": 361,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bNotify",
+					"text": "Notify",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NOT_TO_BE_USED_canSched1": {
+					"type": "button",
+					"top": 494,
+					"left": 456,
+					"width": 89,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "bLoad",
+					"text": "Load",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/NOT_TO_BE_USED_canSched1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSchedClear": {
+					"type": "button",
+					"top": 494,
+					"left": 551,
+					"width": 89,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bClear",
+					"text": "Remove",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSchedClear.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched4": {
+					"type": "input",
+					"top": 470,
+					"left": 611,
+					"width": 22,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "rReal1",
+					"dataSourceTypeHint": "number",
+					"class": "BaseInformation",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "##0",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/canSched4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"canSched12": {
+					"type": "text",
+					"top": 467,
+					"left": 551,
+					"width": 56,
+					"height": 21,
+					"sizingY": "move",
+					"class": "BaseInformation",
+					"borderStyle": "dotted",
+					"text": "Efficiency:"
+				},
+				"bQuery1": {
+					"type": "button",
+					"top": 0,
+					"left": 360,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bQuery",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Query"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Find",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Query.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bQuery1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOrderBy1": {
+					"type": "button",
+					"top": 0,
+					"left": 423,
+					"width": 48,
+					"height": 66,
+					"dataSource": "bOrderBy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Order By"
+					},
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Sort",
+					"icon": "/RESOURCES/Images/Buttons/Glass/OrderBy.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/bOrderBy1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"canSched111": {
+					"type": "button",
+					"top": 494,
+					"left": 947,
+					"width": 95,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "New Extend",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/canSched111.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"canSched13",
+				"canSched5",
+				"canSched6",
+				"canSched7",
+				"canSched8",
+				"canSched14",
+				"canSched3",
+				"canSched2",
+				"canSched9",
+				"NOT_TO_BE_USED_canSched1",
+				"canSchedClear",
+				"canSched4",
+				"canSched111"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"sort1",
+				"sort2",
+				"sort3",
+				"sort4"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"bQuery1",
+					"bOrderBy1"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

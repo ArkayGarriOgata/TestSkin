@@ -1,0 +1,156 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "RMLc_nPick_OK",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"RMLc_Pick_nColdFoil": {
+					"type": "checkbox",
+					"top": 41,
+					"left": 13,
+					"width": 84,
+					"height": 23,
+					"dataSource": "Form:C1466.nColdFoil",
+					"text": "Cold Foil",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/RMLc_Pick_nColdFoil.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RMLc_Pick_nRollStock": {
+					"type": "checkbox",
+					"top": 65,
+					"left": 13,
+					"width": 84,
+					"height": 20,
+					"dataSource": "Form:C1466.nRollStock",
+					"text": "Roll Stock",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/RMLc_Pick_nRollStock.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RMLc_Pick_nSheeted": {
+					"type": "checkbox",
+					"top": 86,
+					"left": 13,
+					"width": 84,
+					"height": 20,
+					"dataSource": "Form:C1466.nSheeted",
+					"text": "Sheeted",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/RMLc_Pick_nSheeted.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RMLc_Pick_nPlastic": {
+					"type": "checkbox",
+					"top": 107,
+					"left": 13,
+					"width": 84,
+					"height": 20,
+					"dataSource": "Form:C1466.nPlastic",
+					"text": "Plastic",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/RMLc_Pick_nPlastic.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CycleCount": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 186,
+					"height": 20,
+					"class": "Form_Title",
+					"text": "Cycle Count"
+				},
+				"RMLc_Pick_nAll": {
+					"type": "radio",
+					"top": 41,
+					"left": 128,
+					"width": 45,
+					"height": 20,
+					"dataSource": "Form:C1466.nAll",
+					"text": "All",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/RMLc_Pick_nAll.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RMLc_nPick_OK": {
+					"type": "button",
+					"top": 135,
+					"left": 96,
+					"width": 70,
+					"height": 24,
+					"action": "accept",
+					"text": "OK",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"RMLc_nPick_Cancel": {
+					"type": "button",
+					"top": 135,
+					"left": 13,
+					"width": 70,
+					"height": 24,
+					"action": "cancel",
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 36,
+					"left": 13,
+					"width": 153
+				},
+				"RMLc_nPick_OnLoad": {
+					"type": "button",
+					"top": 198,
+					"left": 5,
+					"width": 70,
+					"height": 24,
+					"action": "cancel",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/RMLc_nPick_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				}
+			}
+		}
+	]
+}

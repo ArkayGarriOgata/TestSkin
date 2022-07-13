@@ -1,0 +1,1 @@
+[Raw_Materials:21]VendorPartNum:3:=fStripSpace("B"; [Raw_Materials:21]VendorPartNum:3)  //• mlb - 6/18/02  16:25

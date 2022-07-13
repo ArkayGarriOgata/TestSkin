@@ -1,0 +1,1291 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Grid1": {
+					"type": "picture",
+					"top": 134,
+					"left": 32,
+					"width": 618,
+					"height": 57,
+					"pictureFormat": "scaled",
+					"picture": "Images/Grid1.svg"
+				},
+				"Grid2": {
+					"type": "picture",
+					"top": 197,
+					"left": 32,
+					"width": 618,
+					"height": 301,
+					"pictureFormat": "scaled",
+					"picture": "Images/Grid2.svg"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 467,
+					"left": 544,
+					"width": 80,
+					"height": 27,
+					"stroke": "#AAAAAA"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 116,
+					"left": 31,
+					"width": 490,
+					"height": 12,
+					"dataSource": "t10",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#DDDDDD",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 95,
+					"left": 41,
+					"width": 87,
+					"height": 16,
+					"dataSource": "sAction",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "#555555",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 135,
+					"left": 34,
+					"width": 49,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "UPR Nº"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 163,
+					"left": 34,
+					"width": 59,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Subsystem"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 135,
+					"left": 90,
+					"width": 49,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Status"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 135,
+					"left": 256,
+					"width": 44,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Priority"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 135,
+					"left": 303,
+					"width": 40,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Time Est"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 135,
+					"left": 348,
+					"width": 49,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Created"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 135,
+					"left": 442,
+					"width": 49,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Submitted"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 135,
+					"left": 533,
+					"width": 49,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Returned"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 135,
+					"left": 594,
+					"width": 42,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Prog/QA"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 135,
+					"left": 405,
+					"width": 34,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Author"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 135,
+					"left": 500,
+					"width": 29,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Rev'r"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 134,
+					"left": 345,
+					"height": 28
+				},
+				"Line2": {
+					"type": "line",
+					"top": 134,
+					"left": 403,
+					"width": 1,
+					"height": 28,
+					"startPoint": "bottomLeft"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 134,
+					"left": 438,
+					"height": 28
+				},
+				"Line4": {
+					"type": "line",
+					"top": 134,
+					"left": 496,
+					"width": 1,
+					"height": 28
+				},
+				"Line5": {
+					"type": "line",
+					"top": 134,
+					"left": 529,
+					"height": 29
+				},
+				"Line6": {
+					"type": "line",
+					"top": 134,
+					"left": 585,
+					"height": 28
+				},
+				"Line7": {
+					"type": "line",
+					"top": 148,
+					"left": 617,
+					"height": 14
+				},
+				"Line8": {
+					"type": "line",
+					"top": 134,
+					"left": 252,
+					"height": 28
+				},
+				"Line9": {
+					"type": "line",
+					"top": 148,
+					"left": 276,
+					"height": 14
+				},
+				"Text13": {
+					"type": "text",
+					"top": 135,
+					"left": 212,
+					"width": 39,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "aMs Ver"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 134,
+					"left": 206,
+					"width": 1,
+					"height": 28,
+					"startPoint": "bottomLeft"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 134,
+					"left": 84,
+					"width": 1,
+					"height": 28,
+					"startPoint": "bottomLeft"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 163,
+					"left": 270,
+					"width": 1,
+					"height": 27
+				},
+				"Line13": {
+					"type": "line",
+					"top": 162,
+					"left": 116,
+					"width": 1,
+					"height": 28
+				},
+				"Text14": {
+					"type": "text",
+					"top": 163,
+					"left": 120,
+					"width": 59,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Module"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 163,
+					"left": 271,
+					"width": 59,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Subject"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 202,
+					"left": 435,
+					"width": 8,
+					"height": 92,
+					"fill": "#DDDDDD",
+					"stroke": "#005F60",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "E\rX\rA\rM\rP\rL\rE\rS"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 335,
+					"left": 45,
+					"width": 230,
+					"height": 158,
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 335,
+					"left": 305,
+					"width": 199,
+					"height": 158,
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 334,
+					"left": 534,
+					"width": 99,
+					"height": 129,
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 202,
+					"left": 44,
+					"width": 372,
+					"height": 122,
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 202,
+					"left": 444,
+					"width": 189,
+					"height": 122,
+					"stroke": "#AAAAAA"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 203,
+					"left": 34,
+					"width": 9,
+					"height": 119,
+					"fill": "#DDDDDD",
+					"stroke": "#005F60",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "DESCRIPTION"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 336,
+					"left": 34,
+					"width": 9,
+					"height": 113,
+					"fill": "#DDDDDD",
+					"stroke": "#005F60",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "NEW \r\rDESIGN"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 337,
+					"left": 296,
+					"width": 9,
+					"height": 112,
+					"fill": "#DDDDDD",
+					"stroke": "#005F60",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "USAGE\r\rINFO"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 335,
+					"left": 525,
+					"width": 9,
+					"height": 78,
+					"fill": "#DDDDDD",
+					"stroke": "#005F60",
+					"fontFamily": "Monaco",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "CHANGES"
+				},
+				"Line14": {
+					"type": "line",
+					"top": 328,
+					"left": 32,
+					"width": 617,
+					"height": 2,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 2,
+					"startPoint": "bottomLeft"
+				},
+				"Line15": {
+					"type": "line",
+					"top": 329,
+					"left": 32,
+					"width": 618,
+					"height": 1,
+					"stroke": "#FFFFFF"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 468,
+					"left": 546,
+					"width": 75,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#005F60",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"text": "Version Release"
+				},
+				"Line16": {
+					"type": "line",
+					"top": 135,
+					"left": 301,
+					"height": 28
+				},
+				"Field1": {
+					"type": "input",
+					"top": 149,
+					"left": 42,
+					"width": 40,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Id:1",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 149,
+					"left": 88,
+					"width": 115,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Status:20",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UPRstatus"
+					},
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 149,
+					"left": 210,
+					"width": 40,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]AMSversion:5",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 149,
+					"left": 257,
+					"width": 18,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]PriorityClass:18",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 149,
+					"left": 279,
+					"width": 18,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]PriorityNumber:19",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 149,
+					"left": 312,
+					"width": 21,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]TimeRequired:21",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 149,
+					"left": 349,
+					"width": 51,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Created:2",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 149,
+					"left": 406,
+					"width": 26,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Author:6",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 149,
+					"left": 443,
+					"width": 51,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Submitted:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 149,
+					"left": 500,
+					"width": 26,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Reviewer:7",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 149,
+					"left": 533,
+					"width": 51,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Returned:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 149,
+					"left": 589,
+					"width": 26,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Analyst:8",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"method": "ObjectMethods/Field12.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 149,
+					"left": 620,
+					"width": 26,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]QAer:9",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 176,
+					"left": 35,
+					"width": 78,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Subsystem:10",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UPRsubsys"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 176,
+					"left": 121,
+					"width": 147,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Module:11",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/UPRmodule"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 176,
+					"left": 272,
+					"width": 375,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]Subject:12",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field17": {
+					"type": "input",
+					"top": 203,
+					"left": 47,
+					"width": 370,
+					"height": 120,
+					"dataSource": "[Usage_Problem_Reports:84]Description:13",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field17.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field18": {
+					"type": "input",
+					"top": 203,
+					"left": 447,
+					"width": 186,
+					"height": 120,
+					"dataSource": "[Usage_Problem_Reports:84]Example:14",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field18.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 336,
+					"left": 48,
+					"width": 227,
+					"height": 156,
+					"dataSource": "[Usage_Problem_Reports:84]NewDesign:15",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field19.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field20": {
+					"type": "input",
+					"top": 336,
+					"left": 308,
+					"width": 196,
+					"height": 156,
+					"dataSource": "[Usage_Problem_Reports:84]UsageInfo:16",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field20.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field21": {
+					"type": "input",
+					"top": 335,
+					"left": 537,
+					"width": 96,
+					"height": 127,
+					"dataSource": "[Usage_Problem_Reports:84]Changes:17",
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Field21.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field22": {
+					"type": "input",
+					"top": 480,
+					"left": 547,
+					"width": 74,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]VersionRelease:24",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field23": {
+					"type": "input",
+					"top": 97,
+					"left": 141,
+					"width": 28,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]ModWho:22",
+					"stroke": "#FFFFFF",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#555555",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 97,
+					"left": 176,
+					"width": 57,
+					"height": 12,
+					"dataSource": "[Usage_Problem_Reports:84]ModDate:23",
+					"dataSourceTypeHint": "date",
+					"stroke": "#FFFFFF",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"fill": "#555555",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 24,
+					"left": 631,
+					"width": 52,
+					"height": 18,
+					"dataSource": "bPrint",
+					"text": "Print",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 51,
+					"left": 631,
+					"width": 59,
+					"height": 18,
+					"dataSource": "bPrint",
+					"action": "accept",
+					"text": "HTML",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable11",
+				"Variable12",
+				"Field1",
+				"Field2",
+				"Field3",
+				"Field4",
+				"Field5",
+				"Field6",
+				"Field7",
+				"Field8",
+				"Field9",
+				"Field10",
+				"Field11",
+				"Field12",
+				"Field13",
+				"Field14",
+				"Field15",
+				"Field16",
+				"Field17",
+				"Field18",
+				"Field19",
+				"Field20",
+				"Field21",
+				"Field22",
+				"Field23",
+				"Field24",
+				"Variable14",
+				"Variable16"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

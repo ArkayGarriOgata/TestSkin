@@ -1,0 +1,176 @@
+{
+	"destination": "listScreen",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowMinWidth": 800,
+	"windowMinHeight": 600,
+	"width": 800,
+	"height": 124,
+	"menuBar": "empty",
+	"markerHeader": 96,
+	"markerBody": 124,
+	"markerBreak": 126,
+	"markerFooter": 129,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 15,
+					"width": 140,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "Shell_LargeLabel",
+					"text": "MySQL ODBC Source"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 78,
+					"left": 167,
+					"width": 180,
+					"height": 15,
+					"sizingX": "grow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "MySQL Database"
+				},
+				"S1_Field": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 15,
+					"width": 140,
+					"height": 6,
+					"sizingX": "grow",
+					"dataSource": "[ZZ_PNGA_Users:172]Is_Do_Not_Run_Trigger:13",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 167,
+					"width": 180,
+					"height": 6,
+					"sizingX": "grow",
+					"dataSource": "[ZZ_PNGA_Users:172]CreatedBy:5",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line14": {
+					"type": "line",
+					"top": 82,
+					"left": 161,
+					"height": 44,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter5": {
+					"type": "button",
+					"top": 80,
+					"left": 160,
+					"width": 3,
+					"height": 48,
+					"dataSource": "Splitter5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 82,
+					"left": 351,
+					"height": 44,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": 80,
+					"left": 350,
+					"width": 3,
+					"height": 48,
+					"dataSource": "Splitter5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

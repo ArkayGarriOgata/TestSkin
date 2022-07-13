@@ -1,0 +1,108 @@
+{
+	"destination": "detailPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 10,
+	"markerBody": 180,
+	"markerBreak": 180,
+	"markerFooter": 180,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 14,
+					"left": 139,
+					"width": 338,
+					"height": 46,
+					"dataSource": "t2",
+					"fontFamily": "IDAutomationHC39M",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 62,
+					"left": 137,
+					"width": 338,
+					"height": 31,
+					"dataSource": "t3",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 98,
+					"left": 137,
+					"width": 340,
+					"height": 35,
+					"dataSource": "t3",
+					"fontFamily": "Snell Roundhand Bold",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

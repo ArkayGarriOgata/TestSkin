@@ -1,0 +1,125 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Procedure Browser",
+	"inheritedForm": "Core_Peek",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 7,
+					"left": 14,
+					"width": 123,
+					"height": 12,
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Table of Contents"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 7,
+					"left": 295,
+					"width": 123,
+					"height": 12,
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Sections"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 153,
+					"left": 15,
+					"width": 536,
+					"height": 266,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xText",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 441,
+					"left": 482,
+					"width": 71,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bDone",
+					"action": "cancel",
+					"text": "Done",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 441,
+					"left": 401,
+					"width": 71,
+					"height": 24,
+					"sizingY": "move",
+					"dataSource": "bPrint",
+					"shortcutKey": "[Enter]",
+					"text": "Print",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 65,
+					"left": 63,
+					"width": 277,
+					"height": 33,
+					"text": "Browser function delete 8/13/21, not Project Mode compatible and apparently not used"
+				}
+			}
+		}
+	]
+}

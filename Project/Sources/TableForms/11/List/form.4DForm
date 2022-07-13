@@ -1,0 +1,593 @@
+{
+	"destination": "listScreen",
+	"windowTitle": "Purchase Orders",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 123,
+	"markerFooter": 164,
+	"events": [
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 27,
+					"width": 40,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "PONo : "
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 88,
+					"width": 55,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "PODate : "
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 156,
+					"width": 63,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Required : "
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 227,
+					"width": 54,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "ReqNo : "
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 295,
+					"width": 25,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "By: "
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 438,
+					"width": 101,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "VendorName : "
+				},
+				"S7_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 558,
+					"width": 53,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Status : "
+				},
+				"S8_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 620,
+					"width": 20,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "%: "
+				},
+				"S10_Text": {
+					"type": "text",
+					"top": 77,
+					"left": 331,
+					"width": 35,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Dept : "
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 23,
+					"width": 57,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]PONo:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 87,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]PODate:4",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 155,
+					"width": 62,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]Required:27",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 225,
+					"width": 60,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]ReqNo:5",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 293,
+					"width": 27,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]ReqBy:6",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S6_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 436,
+					"width": 110,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]VendorName:42",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S7_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 556,
+					"width": 61,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[Purchase_Orders:11]Status:15",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Statuses"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S8_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 620,
+					"width": 21,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]PercentComplete:52",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S10_Field": {
+					"type": "input",
+					"top": 101,
+					"left": 331,
+					"width": 32,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]Dept:7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line17": {
+					"type": "line",
+					"top": 71,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Splitter6": {
+					"type": "button",
+					"top": 73,
+					"left": 548,
+					"width": 3,
+					"height": 47,
+					"dataSource": "Splitter6",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line27": {
+					"type": "line",
+					"top": 75,
+					"left": 151,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line28": {
+					"type": "line",
+					"top": 75,
+					"left": 82,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 136,
+					"left": 12,
+					"width": 123,
+					"height": 20,
+					"dataSource": "bCombine",
+					"action": "accept",
+					"text": "Combine Reqs",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 75,
+					"left": 221,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 75,
+					"left": 324,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 75,
+					"left": 288,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 75,
+					"left": 549,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 75,
+					"left": 431,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"S5_Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 379,
+					"width": 49,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Amount: "
+				},
+				"S5_Field1": {
+					"type": "input",
+					"top": 101,
+					"left": 371,
+					"width": 51,
+					"height": 15,
+					"dataSource": "[Purchase_Orders:11]ChgdOrderAmt:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line7": {
+					"type": "line",
+					"top": 75,
+					"left": 643,
+					"height": 47,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 75,
+					"left": 366,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"S11_Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 649,
+					"width": 75,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "History : "
+				},
+				"S11_Field1": {
+					"type": "input",
+					"top": 101,
+					"left": 649,
+					"width": 80,
+					"height": 15,
+					"sizingY": "move",
+					"dataSource": "[Purchase_Orders:11]StatusTrack:51",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 136,
+					"left": 150,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bApprove",
+					"text": "Approve",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 136,
+					"left": 245,
+					"width": 138,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"text": "Find Need Printed",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 136,
+					"left": 399,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"text": "Print",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 136,
+					"left": 495,
+					"width": 90,
+					"height": 20,
+					"dataSource": "Button1",
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"text": "Highlight...",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 103,
+					"left": 2,
+					"width": 14,
+					"height": 12,
+					"dataSource": "Li1",
+					"stroke": "#009900",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 83,
+					"left": 0,
+					"width": 18,
+					"height": 12,
+					"stroke": "#009900",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Row"
+				}
+			},
+			"entryOrder": [
+				"S1_Field",
+				"S2_Field",
+				"S3_Field",
+				"S4_Field",
+				"S5_Field",
+				"S6_Field",
+				"S7_Field",
+				"S8_Field",
+				"S10_Field",
+				"Variable2",
+				"S5_Field1",
+				"S11_Field1",
+				"Variable1",
+				"Variable9",
+				"Variable4",
+				"Button1",
+				"Variable8"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

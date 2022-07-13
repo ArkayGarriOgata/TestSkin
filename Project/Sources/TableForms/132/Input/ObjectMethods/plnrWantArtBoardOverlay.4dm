@@ -1,0 +1,1 @@
+rfc_setQtytoOneIfTrue(->[Finished_Goods_SizeAndStyles:132]ArtBoardOverlay:31; ->[Finished_Goods_SizeAndStyles:132]qty_ArtBoard:38; ->task5)

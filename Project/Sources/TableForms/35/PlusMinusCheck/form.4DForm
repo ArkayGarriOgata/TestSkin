@@ -1,0 +1,372 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"width": 730,
+	"height": 500,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 17,
+					"left": 17,
+					"width": 475,
+					"height": 16,
+					"class": "BaseField",
+					"textAlign": "left",
+					"text": "Select a negative bin and click OK to find possible pairs to that jobit:"
+				},
+				"tJobIt": {
+					"type": "input",
+					"top": 464,
+					"left": 304,
+					"width": 93,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "tJobIt",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"selectedAskMe": {
+					"type": "button",
+					"top": 460,
+					"left": 446,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bAskMe",
+					"text": "Ask Me",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/selectedAskMe.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"abJobIts": {
+					"type": "listbox",
+					"top": 43,
+					"left": 17,
+					"width": 698,
+					"height": 397,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "abJobIts",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFDF",
+					"alternateFill": "#FFFFC0",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/abJobIts.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "atJobIt",
+							"dataSource": "atJobIt",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "JobIt Number",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "atProdCode",
+							"dataSource": "atProdCode",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Product Code",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "#000000",
+								"fill": "#FFFFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "atLocation",
+							"dataSource": "atLocation",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Location",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#FFFFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "atSkidNum",
+							"dataSource": "atSkidNum",
+							"width": 182,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Skid #",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#000000",
+								"fill": "#FFFFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "axlQuantity",
+							"dataSource": "axlQuantity",
+							"dataSourceTypeHint": "number",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFDF",
+							"alternateFill": "#FFFFC0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Quantity",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"textAlign": "right",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "#000000",
+								"fill": "#FFFFDF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 460,
+					"left": 540,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"selectedOk": {
+					"type": "button",
+					"top": 460,
+					"left": 635,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"selectedAskMe",
+				"abJobIts",
+				"bCancel",
+				"selectedOk"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

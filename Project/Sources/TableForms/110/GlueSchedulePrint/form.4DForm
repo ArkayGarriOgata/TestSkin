@@ -1,0 +1,1005 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 58,
+	"markerBody": 97,
+	"markerBreak": [
+		117,
+		137
+	],
+	"markerFooter": 157,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 6,
+					"width": 721,
+					"height": 20,
+					"fill": "#0099FF",
+					"stroke": "#0099FF"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 6,
+					"width": 722,
+					"height": 154,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Text1": {
+					"type": "text",
+					"top": 25,
+					"left": 11,
+					"width": 34,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Gluer"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 25,
+					"left": 55,
+					"width": 44,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Priority"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 25,
+					"left": 107,
+					"width": 100,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Customer"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 25,
+					"left": 215,
+					"width": 150,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Product Code"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 25,
+					"left": 371,
+					"width": 60,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Jobit"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 25,
+					"left": 439,
+					"width": 71,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Qty Planned"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 6,
+					"left": 16,
+					"width": 707,
+					"height": 14,
+					"dataSource": "tPrintTitle",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 62,
+					"left": 10,
+					"width": 34,
+					"height": 12,
+					"dataSource": "tGluer",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 62,
+					"left": 54,
+					"width": 48,
+					"height": 12,
+					"dataSource": "tPriority",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 62,
+					"left": 106,
+					"width": 100,
+					"height": 12,
+					"dataSource": "tCustomer",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 62,
+					"left": 214,
+					"width": 150,
+					"height": 12,
+					"dataSource": "tProductCode",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 62,
+					"left": 370,
+					"width": 60,
+					"height": 12,
+					"dataSource": "tJobit",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 62,
+					"left": 440,
+					"width": 71,
+					"height": 12,
+					"dataSource": "xlQtyPlanned",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0;(###,##0)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 101,
+					"left": 450,
+					"width": 60,
+					"height": 12,
+					"dataSource": "xlTotalPlanned",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 142,
+					"left": 103,
+					"width": 43,
+					"height": 11,
+					"dataSource": "dDatePrinted",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "systemShort blankIfNull",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 142,
+					"left": 147,
+					"width": 43,
+					"height": 11,
+					"dataSource": "hTimePrinted",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_am blankIfNull",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 142,
+					"left": 709,
+					"width": 15,
+					"height": 11,
+					"dataSource": "xlPageNum",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 142,
+					"left": 15,
+					"width": 86,
+					"height": 11,
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Date & Time Printed:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 142,
+					"left": 648,
+					"width": 61,
+					"height": 11,
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Page Number:"
+				},
+				"Text": {
+					"type": "text",
+					"top": 101,
+					"left": 408,
+					"width": 32,
+					"height": 12,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "Totals:"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 39,
+					"left": 7,
+					"width": 720,
+					"strokeDashArray": "2 6"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 56,
+					"left": 7,
+					"width": 720
+				},
+				"Line8": {
+					"type": "line",
+					"top": 75,
+					"left": 7,
+					"width": 720,
+					"strokeDashArray": "2 6"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 115,
+					"left": 7,
+					"width": 720
+				},
+				"Line10": {
+					"type": "line",
+					"top": 21,
+					"left": 7,
+					"width": 720
+				},
+				"Line": {
+					"type": "line",
+					"top": 22,
+					"left": 50,
+					"height": 17
+				},
+				"Line1": {
+					"type": "line",
+					"top": 21,
+					"left": 103,
+					"height": 18
+				},
+				"Line2": {
+					"type": "line",
+					"top": 22,
+					"left": 211,
+					"height": 17
+				},
+				"Line3": {
+					"type": "line",
+					"top": 22,
+					"left": 367,
+					"height": 17
+				},
+				"Line4": {
+					"type": "line",
+					"top": 22,
+					"left": 435,
+					"height": 17
+				},
+				"Text7": {
+					"type": "text",
+					"top": 25,
+					"left": 518,
+					"width": 77,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Qty Released"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 62,
+					"left": 519,
+					"width": 77,
+					"height": 12,
+					"dataSource": "xlQtyReleased",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0;(###,##0)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 22,
+					"left": 514,
+					"height": 17
+				},
+				"Text8": {
+					"type": "text",
+					"top": 25,
+					"left": 604,
+					"width": 53,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Released"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 62,
+					"left": 604,
+					"width": 53,
+					"height": 12,
+					"dataSource": "dReleased",
+					"dataSourceTypeHint": "date",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line11": {
+					"type": "line",
+					"top": 22,
+					"left": 600,
+					"height": 17
+				},
+				"Text9": {
+					"type": "text",
+					"top": 25,
+					"left": 665,
+					"width": 53,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "HRD"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 62,
+					"left": 669,
+					"width": 53,
+					"height": 12,
+					"dataSource": "dHRD",
+					"dataSourceTypeHint": "date",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line12": {
+					"type": "line",
+					"top": 22,
+					"left": 661,
+					"height": 17
+				},
+				"Text10": {
+					"type": "text",
+					"top": 43,
+					"left": 20,
+					"width": 34,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Style"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 39,
+					"left": 90,
+					"height": 17
+				},
+				"Text13": {
+					"type": "text",
+					"top": 43,
+					"left": 93,
+					"width": 45,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Outline"
+				},
+				"Line14": {
+					"type": "line",
+					"top": 39,
+					"left": 140,
+					"height": 17
+				},
+				"Text14": {
+					"type": "text",
+					"top": 43,
+					"left": 145,
+					"width": 51,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Separate"
+				},
+				"Line15": {
+					"type": "line",
+					"top": 39,
+					"left": 198,
+					"height": 17
+				},
+				"Text15": {
+					"type": "text",
+					"top": 43,
+					"left": 201,
+					"width": 51,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Printed"
+				},
+				"Line16": {
+					"type": "line",
+					"top": 39,
+					"left": 254,
+					"height": 17
+				},
+				"Text16": {
+					"type": "text",
+					"top": 43,
+					"left": 257,
+					"width": 51,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Die Cut"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 39,
+					"left": 310,
+					"height": 17
+				},
+				"Text17": {
+					"type": "text",
+					"top": 43,
+					"left": 313,
+					"width": 62,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Comment"
+				},
+				"Line18": {
+					"type": "line",
+					"top": 76,
+					"left": 90,
+					"height": 18
+				},
+				"Line19": {
+					"type": "line",
+					"top": 76,
+					"left": 140,
+					"height": 18
+				},
+				"Line20": {
+					"type": "line",
+					"top": 76,
+					"left": 198,
+					"height": 18
+				},
+				"Line21": {
+					"type": "line",
+					"top": 76,
+					"left": 254,
+					"height": 18
+				},
+				"Line22": {
+					"type": "line",
+					"top": 76,
+					"left": 310,
+					"height": 18
+				},
+				"Line23": {
+					"type": "line",
+					"top": 94,
+					"left": 7,
+					"width": 720
+				},
+				"Line24": {
+					"type": "line",
+					"top": 59,
+					"left": 50,
+					"height": 17
+				},
+				"Line25": {
+					"type": "line",
+					"top": 58,
+					"left": 103,
+					"height": 18
+				},
+				"Line26": {
+					"type": "line",
+					"top": 59,
+					"left": 211,
+					"height": 17
+				},
+				"Line27": {
+					"type": "line",
+					"top": 59,
+					"left": 367,
+					"height": 17
+				},
+				"Line28": {
+					"type": "line",
+					"top": 59,
+					"left": 435,
+					"height": 17
+				},
+				"Line29": {
+					"type": "line",
+					"top": 59,
+					"left": 514,
+					"height": 17
+				},
+				"Line30": {
+					"type": "line",
+					"top": 59,
+					"left": 600,
+					"height": 17
+				},
+				"Line31": {
+					"type": "line",
+					"top": 59,
+					"left": 661,
+					"height": 17
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 81,
+					"left": 20,
+					"width": 67,
+					"height": 12,
+					"dataSource": "tStyle",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 81,
+					"left": 93,
+					"width": 45,
+					"height": 12,
+					"dataSource": "tOutline",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 81,
+					"left": 143,
+					"width": 54,
+					"height": 12,
+					"dataSource": "tSeperate",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 81,
+					"left": 202,
+					"width": 51,
+					"height": 12,
+					"dataSource": "tPrinted",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 81,
+					"left": 257,
+					"width": 51,
+					"height": 12,
+					"dataSource": "tDieCut",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 81,
+					"left": 313,
+					"width": 411,
+					"height": 12,
+					"dataSource": "tComments",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 101,
+					"left": 535,
+					"width": 60,
+					"height": 12,
+					"dataSource": "xlTotalReleased",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Rectangle1",
+					"Rectangle"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

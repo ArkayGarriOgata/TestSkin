@@ -1,0 +1,617 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"menuBar": "AdHoc",
+	"markerHeader": 37,
+	"markerBody": 54,
+	"markerBreak": 91,
+	"markerFooter": 91,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bDone": {
+					"type": "button",
+					"top": 64,
+					"left": 519,
+					"width": 61,
+					"height": 23,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"text": "Done",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 36,
+					"left": 1,
+					"width": 741,
+					"height": 23,
+					"fill": "#FFFFDF",
+					"stroke": "#FFFFDF"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 91,
+					"width": 30,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]Sample:2",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 147,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]Caliper:3",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 207,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]CaliperSecondScore:4",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 267,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]CaliperFourthScore:5",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 327,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]CaliperDifference:6",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S6_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 387,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]ScoreBendRatio:7",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S7_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 447,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]GlueFlapSkew:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S8_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 507,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]OpeningForceCarton:9",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 40,
+					"left": 569,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]OpeningForceSleeve:11",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S9_Field": {
+					"type": "input",
+					"top": 40,
+					"left": 628,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]CoeffOfFrictionUV:10",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 40,
+					"left": 687,
+					"width": 47,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]CoeffOfFrictionWB:12",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 82,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "\rSample"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 142,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Board\rCaliper\rx .0001"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 202,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Second\rScore\rCaliper"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 262,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Fourth\rScore\rCaliper"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 322,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Difference\rBtw 2nd &\r4th Score"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 382,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Score\rBend\rRatio"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 442,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Glue Flap\rSkew\rx .005"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 0,
+					"left": 502,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "O/F\rCarton\rx 1 gr"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 0,
+					"left": 562,
+					"width": 58,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#0099FF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "O/F\rSleeve\rx .01"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 35,
+					"left": 2,
+					"width": 747,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#FFE0E0"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 139,
+					"height": 67,
+					"stroke": "#FFC0C0"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 1,
+					"left": 141,
+					"height": 67,
+					"stroke": "#FFC0C0"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 201,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 261,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 0,
+					"left": 321,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 0,
+					"left": 381,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 0,
+					"left": 441,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 0,
+					"left": 501,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 0,
+					"left": 561,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 0,
+					"left": 621,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 53,
+					"left": 2,
+					"width": 748,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#DFE4FF",
+					"startPoint": "bottomLeft"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 0,
+					"left": 622,
+					"width": 59,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "C.O.F.\rUV\rx 1 gr"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 0,
+					"left": 683,
+					"width": 58,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#0099FF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "C.O.F.\rWB\rx .01"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 0,
+					"left": 682,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 0,
+					"left": 742,
+					"height": 57,
+					"stroke": "#FFC0C0"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 40,
+					"left": 4,
+					"width": 82,
+					"height": 12,
+					"dataSource": "[Job_Forms_Items_CertOfAnal:117]Jobit:1",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 81,
+					"height": 36,
+					"fill": "#FFFFDF",
+					"stroke": "#000099",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "\rJobitem"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 17,
+	"bottomMargin": 17,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 17,
+					"left": 17,
+					"width": 222,
+					"height": 17,
+					"text": "A Custom dialog would go here\r"
+				},
+				"Rprt_Pick_nViewPro": {
+					"type": "pictureButton",
+					"top": 11,
+					"left": 232,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.nViewPro",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRound.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Rprt_Pick_nViewPro.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,308 @@
+{
+	"windowTitle": "Configure Batch Settings",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 220,
+	"markerBreak": 220,
+	"markerFooter": 410,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 9,
+					"left": 21,
+					"width": 234,
+					"height": 36,
+					"stroke": "#000000",
+					"class": "BaseGroupBox"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 53,
+					"left": 84,
+					"width": 70,
+					"height": 16,
+					"dataSource": "delayUntilDate",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/##",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 53,
+					"left": 179,
+					"width": 70,
+					"height": 16,
+					"dataSource": "delayUntilTime",
+					"dataSourceTypeHint": "time",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_am",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable44": {
+					"type": "checkbox",
+					"top": 17,
+					"left": 28,
+					"width": 62,
+					"height": 20,
+					"dataSource": "i1",
+					"text": "Daily",
+					"class": "BaseCheckBox",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable44.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable45": {
+					"type": "checkbox",
+					"top": 17,
+					"left": 95,
+					"width": 69,
+					"height": 20,
+					"dataSource": "i2",
+					"text": "Weekly",
+					"class": "BaseCheckBox",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable45.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable46": {
+					"type": "checkbox",
+					"top": 17,
+					"left": 170,
+					"width": 76,
+					"height": 20,
+					"dataSource": "i3",
+					"text": "Monthly",
+					"class": "BaseCheckBox",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable46.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 187,
+					"left": 71,
+					"width": 74,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 187,
+					"left": 162,
+					"width": 77,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "baOK",
+					"shortcutKey": "[Enter]",
+					"text": "Run Now",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 209,
+					"left": 256,
+					"width": 16,
+					"height": 9,
+					"sizingY": "move",
+					"dataSource": "baOK",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"display": false,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 53,
+					"left": 22,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Next Run:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 53,
+					"left": 160,
+					"width": 13,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "at"
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 77,
+					"left": 6,
+					"width": 259,
+					"height": 97,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#FFFFDF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "asBull",
+							"width": 35,
+							"minWidth": 10,
+							"maxWidth": 35,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header3",
+								"text": "Run",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "aCustName",
+							"width": 209,
+							"minWidth": 60,
+							"maxWidth": 300,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFFFDF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header4",
+								"text": "Batch Name",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable7",
+				"Variable6",
+				"Variable44",
+				"Variable45",
+				"Variable46",
+				"Variable4",
+				"Variable5",
+				"List Box"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

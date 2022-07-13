@@ -1,0 +1,170 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Choose Color",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "791pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 8,
+					"left": 6,
+					"width": 171,
+					"height": 171,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/colorPalette.png"
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 18,
+					"left": 192,
+					"width": 179,
+					"height": 19,
+					"dataSource": "rb1",
+					"text": "Select Text Color",
+					"class": "BaseRadioButton",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 45,
+					"left": 192,
+					"width": 190,
+					"height": 24,
+					"dataSource": "rb2",
+					"text": "Select Background Color",
+					"class": "BaseRadioButton",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 88,
+					"left": 216,
+					"width": 91,
+					"height": 16,
+					"dataSource": "xText",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Button Grid1": {
+					"type": "buttonGrid",
+					"top": 11,
+					"left": 11,
+					"width": 161,
+					"height": 163,
+					"dataSource": "gridBtn",
+					"columnCount": 16,
+					"rowCount": 16,
+					"method": "ObjectMethods/Button Grid1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 152,
+					"left": 203,
+					"width": 74,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 152,
+					"left": 290,
+					"width": 74,
+					"height": 20,
+					"dataSource": "bAccept",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

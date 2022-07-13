@@ -1,0 +1,310 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 11,
+					"width": 210,
+					"height": 14,
+					"strokeWidth": 0.1
+				},
+				"Text1": {
+					"type": "text",
+					"top": 81,
+					"left": 12,
+					"width": 88,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Quantity:"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 11,
+					"width": 108,
+					"height": 14,
+					"strokeWidth": 0.1
+				},
+				"Text2": {
+					"type": "text",
+					"top": 47,
+					"left": 12,
+					"width": 87,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Item Number:"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 63,
+					"left": 11,
+					"width": 210,
+					"height": 14,
+					"strokeWidth": 0.1
+				},
+				"Text3": {
+					"type": "text",
+					"top": 64,
+					"left": 12,
+					"width": 88,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Billing Desc.:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 34,
+					"width": 234,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Enter Data for Special Billings:"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 97,
+					"left": 11,
+					"width": 210,
+					"height": 14,
+					"strokeWidth": 0.1
+				},
+				"Text5": {
+					"type": "text",
+					"top": 98,
+					"left": 12,
+					"width": 88,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Cost:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 22,
+					"left": 49,
+					"width": 205,
+					"height": 16,
+					"dataSource": "sComType",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 47,
+					"left": 103,
+					"width": 15,
+					"height": 12,
+					"dataSource": "lReceipt",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,##0",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 64,
+					"left": 103,
+					"width": 116,
+					"height": 12,
+					"dataSource": "sDesc",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 81,
+					"left": 103,
+					"width": 116,
+					"height": 12,
+					"dataSource": "sChargeCode",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 98,
+					"left": 103,
+					"width": 115,
+					"height": 12,
+					"dataSource": "sPOLocation",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 139,
+					"left": 81,
+					"width": 96,
+					"height": 20,
+					"dataSource": "bcCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 138,
+					"left": 193,
+					"width": 96,
+					"height": 20,
+					"dataSource": "bOK",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

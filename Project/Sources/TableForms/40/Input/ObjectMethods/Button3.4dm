@@ -1,0 +1,7 @@
+$msg:="ICN: "+[Customers_Orders:40]edi_ICN:56+Char:C90(13)
+$msg:=$msg+"SENDER: "+[Customers_Orders:40]edi_sender_id:57+Char:C90(13)
+$msg:=$msg+"STATUS: "+[Customers_Orders:40]edi_status:58+Char:C90(13)
+$msg:=$msg+"RESP CODE: "+String:C10([Customers_Orders:40]edi_response_code:59)+Char:C90(13)+Char:C90(13)
+$msg:=$msg+"BILL TO: "+Char:C90(13)+[Customers_Orders:40]edi_BillTo_text:60+Char:C90(13)+Char:C90(13)
+$msg:=$msg+"SHIP TO: "+Char:C90(13)+[Customers_Orders:40]edi_ShipTo_text:61+Char:C90(13)
+util_FloatingAlert($msg)

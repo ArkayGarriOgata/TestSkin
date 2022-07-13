@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="../jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+
+<link rel="stylesheet" href="./css/listview-grid.css">
+<link rel="stylesheet" href="./css/pos.css">
+
+<script src="/jquery.mobile-1.4.5/jquery.js"></script>
+<script src="/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="/js_4D/FourDWebRequest.js"></script>
+
+<script src="/js/pos.js"></script>
+<script src="/wms.js"></script>
+<script src="/js_4D/fourD_Purchase_Orders.js"></script>
+<script src="/js_4D/fourD_Purchase_Orders_Items.js"></script>
+<script src="/js_4D/fourD_Raw_Materials_Tappi_Roll_id.js"></script>
+
+
+
+<preference name="KeyboardDisplayRequiresUserAction" value="false" />
+
+<META name="viewport" content="initial-scale=1.0, maximum-scale=1.0, height=device-height, width=device-width, user-scalable=no">
+
+
+</head>
+
+
+<body id="mainBody">
+<!-- Start of Vendor Listing page: #one -->
+<div data-role="page" id="one">
+	
+
+	<div role="main" class="ui-content">
+
+		<div class="content-primary">
+		
+
+
+		<form>
+        		<h2>
+             	<a href="#" onClick="navGotoURL('/index.shtml')" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline">Delete</a>
+               Purchase Orders
+               </h2>
+                
+                
+                
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Find PO#</h3>
+  </div>
+  <div class="ui-body ui-body-a">
+    <p>
+    
+    
+<input type="search" name="search-2" id="POSearchField" value="">    
+<div data-role="controlgroup" data-type="horizontal">
+    <button id="POSearchButton">Search</button>
+    <button id="POSearchClear">Reset</button>
+</div>                
+    
+    </p>
+  </div>
+</div>
+
+
+                
+
+			<ul id="order_list" data-role="listview" data-filter="true" data-inset="true">
+				
+			</ul>
+
+
+
+        </form>
+        				
+	
+		</div><!--/content-primary -->		
+
+	
+
+	</div><!-- /content -->
+
+
+
+</div><!-- /page one -->
+
+
+
+
+
+<!-- Start of PO Listing page: #two -->
+<div data-role="page" id="POList" data-theme="a">
+
+
+   
+	<div role="main" class="ui-content">
+
+    <div data-role="header" data-position="fixed">
+        <a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+        <h1>
+        	All open POs for<br><span id="POListVendor"></span>
+        </h1>
+    </div><!-- /header -->
+   
+
+		<div class="content-primary">
+		<form>
+			<ul id="POList_list" data-role="listview" data-filter="false" data-inset="true">
+				
+			</ul>
+            
+        </form>
+        				
+	
+		</div><!--/content-primary -->		
+
+
+
+	</div><!-- /content -->
+
+
+
+</div><!-- /page two -->
+
+
+
+
+
+
+<!-- Start of PO Entry (List of PO Items for the PO): #Three -->
+<div data-role="page" id="POItemList" data-theme="a">
+
+
+   
+	<div role="main" class="ui-content">
+
+    <div data-role="header" data-position="fixed">
+        <a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+        <h1>
+            Vendor: <span id="currentPOVendor" ></span><br>
+        	PO #: <span id="currentPONum" ></span>
+		</h1>
+    </div><!-- /header -->
+   
+
+		<div class="content-primary">
+		<form>
+			<ul id="POItemList_list" data-role="listview" data-filter="false" data-inset="true">
+				
+			</ul>
+
+        </form>
+        				
+	
+		</div><!--/content-primary -->		
+
+
+
+	</div><!-- /content -->
+
+
+
+</div><!-- /page two -->
+
+
+<!-- Start of PO Item Entry: #Four -->
+<div data-role="page" id="POItemEntry" data-theme="a">
+
+
+   
+   
+   
+	<div role="main" class="ui-content">
+
+        <div data-role="header" data-position="fixed">
+            <a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+             <a href="#one" class="ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-inline">Vendor List</a>
+           <h1>
+        	PO #: <span id="currentItemPONum" ></span><BR>
+        	Item: <span id="currentItemNumber" ></span>
+           </h1>
+        </div><!-- /header -->
+   
+   
+<div>
+<a href="#" id="startScannerButton" data-role="button" data-theme="b">Tap to Begin Scanning</a>
+</div>
+
+		<div class="content-primary">
+		<form>
+            
+            <span id="currentPOItemKey" hidden="hidden" ></span><BR>
+
+
+            <div class="ui-field-contain">
+              <label for="RollLinearFeet" style="width:100px;">Linear Feet:</label>
+              <input type="text" name="RollLinearFeet" id="RollLinearFeet" value="">
+            </div>
+
+            <div class="ui-field-contain" id="RollScanFieldGroup">
+              <label for="RollScanField" style="width:100px;">Scan Roll ID:</label>
+              <input autofocus type="text" name="RollScanField" id="RollScanField" value="">
+            </div>
+
+            
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Roll Stock IDs</h3>
+  </div>
+  <div class="ui-body ui-body-a">
+    
+
+
+            
+            
+                
+        <ul id="RollID_list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete" data-split-theme="d">
+
+
+		</ul>
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+
+
+
+        </form>
+        				
+		</div><!--/content-primary -->		
+
+	</div><!-- /content -->
+
+
+
+</div><!-- /page three -->
+
+
+
+
+
+
+
+<div id="popupContent"></div>
+
+
+<script>
+      $("#popupContent").load("popupAlert.shtml"); 
+	loadVendorsForPOs('Approved');
+	checkLogin();
+</script>
+
+</body>
+</html>

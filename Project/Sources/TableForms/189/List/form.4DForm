@@ -1,0 +1,266 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 18,
+	"markerBody": 35,
+	"markerBreak": 36,
+	"markerFooter": 36,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "408pt",
+		"paperHeight": "528pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 552,
+					"height": 65,
+					"fill": "#FFFFDF",
+					"stroke": "#FFFFC0"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 177,
+					"width": 30,
+					"height": 10,
+					"fill": "#FFFFDF",
+					"stroke": "#FFC0C0"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 551,
+					"height": 17,
+					"fill": "#FFFFC0",
+					"stroke": "#FFFFC0"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 33,
+					"left": 0,
+					"width": 498,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#DFE4FF",
+					"startPoint": "bottomLeft"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 16,
+					"left": 0,
+					"width": 497,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#FFE0E0"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 20,
+					"height": 37,
+					"stroke": "#FFC0C0"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 22,
+					"height": 37,
+					"stroke": "#FFC0C0"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 497,
+					"height": 1,
+					"sizingX": "grow",
+					"stroke": "#FFE0E0"
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 25,
+					"width": 148,
+					"height": 12,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Item"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 381,
+					"width": 62,
+					"height": 12,
+					"stroke": "#000099",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "DateSent"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 250,
+					"width": 127,
+					"height": 12,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Sent to PlantLocation"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 3,
+					"left": 176,
+					"width": 70,
+					"height": 12,
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Filed in JobBag"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 20,
+					"left": 25,
+					"width": 148,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Spec_QA_Records:189]Item:1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 20,
+					"left": 178,
+					"width": 63,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Spec_QA_Records:189]JobBagNumber:4",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 249,
+					"width": 30,
+					"height": 10,
+					"fill": "#FFFFDF",
+					"stroke": "#FFC0C0"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 23,
+					"left": 383,
+					"width": 30,
+					"height": 10,
+					"fill": "#FFFFDF",
+					"stroke": "#FFC0C0"
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 20,
+					"left": 250,
+					"width": 127,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Spec_QA_Records:189]PlantLocation:3",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Job_Run_Locations"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/S3_Field.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 20,
+					"left": 384,
+					"width": 59,
+					"height": 12,
+					"dataSource": "[Finished_Goods_Spec_QA_Records:189]DateSent:2",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFDF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

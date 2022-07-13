@@ -1,0 +1,380 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 44,
+					"left": 0,
+					"width": 391,
+					"height": 27,
+					"fill": "#FFA0FF",
+					"stroke": "#FFA0FF"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 93,
+					"left": 1,
+					"width": 390,
+					"height": 22,
+					"fill": "#FFDFFF",
+					"stroke": "#FFDFFF"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 390,
+					"height": 22,
+					"fill": "#FFC0FF",
+					"stroke": "#FFC0FF"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 391,
+					"height": 44,
+					"fill": "#FF7FFF",
+					"stroke": "#FF7FFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 11,
+					"left": 9,
+					"width": 89,
+					"height": 16,
+					"fill": "#FF7FFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "R/M Code:"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 102,
+					"width": 178,
+					"height": 18
+				},
+				"Text2": {
+					"type": "text",
+					"top": 48,
+					"left": 8,
+					"width": 90,
+					"height": 16,
+					"fill": "#FFA0FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Job Form:"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 47,
+					"left": 102,
+					"width": 69,
+					"height": 18
+				},
+				"Text3": {
+					"type": "text",
+					"top": 94,
+					"left": 8,
+					"width": 90,
+					"height": 16,
+					"fill": "#FFDFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Date Needed:"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 93,
+					"left": 102,
+					"width": 71,
+					"height": 18
+				},
+				"Text4": {
+					"type": "text",
+					"top": 72,
+					"left": 8,
+					"width": 90,
+					"height": 16,
+					"fill": "#FFC0FF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Quantity:"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 102,
+					"width": 95,
+					"height": 18
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 11,
+					"left": 105,
+					"width": 174,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 31,
+					"left": 4,
+					"width": 379,
+					"height": 12,
+					"dataSource": "sCriterion1",
+					"stroke": "#600060",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FF7FFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 48,
+					"left": 105,
+					"width": 65,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 45,
+					"left": 174,
+					"width": 209,
+					"height": 24,
+					"dataSource": "t3",
+					"stroke": "#600060",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFA0FF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 73,
+					"left": 105,
+					"width": 91,
+					"height": 16,
+					"dataSource": "rReal1",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 94,
+					"left": 105,
+					"width": 67,
+					"height": 16,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 124,
+					"left": 246,
+					"width": 128,
+					"height": 20,
+					"dataSource": "bPost",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Allocate",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#740074",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 149,
+					"left": 259,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 149,
+					"left": 288,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 149,
+					"left": 320,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Enter]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 149,
+					"left": 352,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Return]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

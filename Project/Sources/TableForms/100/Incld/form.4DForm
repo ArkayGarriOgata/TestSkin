@@ -1,0 +1,298 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 18,
+	"markerBody": 40,
+	"markerBreak": 40,
+	"markerFooter": 40,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 18,
+					"left": 0,
+					"width": 744,
+					"height": 21,
+					"stroke": "#FFFFFF"
+				},
+				"S1_Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 659,
+					"width": 85,
+					"height": 15,
+					"fill": "#C5FFC0",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Jobform"
+				},
+				"S2_Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 100,
+					"height": 15,
+					"fill": "#C5FFC0",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Completed"
+				},
+				"S3_Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 101,
+					"width": 96,
+					"height": 15,
+					"fill": "#C5FFC0",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Category"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 0,
+					"left": 198,
+					"width": 226,
+					"height": 15,
+					"fill": "#C5FFC0",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Task"
+				},
+				"S6_Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 487,
+					"width": 171,
+					"height": 15,
+					"fill": "#C5FFC0",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "AssignedTo"
+				},
+				"S6_Field2": {
+					"type": "checkbox",
+					"top": 21,
+					"left": 2,
+					"width": 20,
+					"height": 17,
+					"dataSource": "[To_Do_Tasks:100]Done:4",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"method": "ObjectMethods/S6_Field2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"S3_Field1": {
+					"type": "input",
+					"top": 22,
+					"left": 101,
+					"width": 92,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]Category:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 198,
+					"width": 218,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]Task:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 22,
+					"left": 430,
+					"width": 40,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]DateDue:10",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 22,
+					"left": 487,
+					"width": 91,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]AssignedTo:9",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "checkbox",
+					"top": 22,
+					"left": 583,
+					"width": 70,
+					"height": 17,
+					"dataSource": "[To_Do_Tasks:100]Critical:11",
+					"text": "Critical",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"S1_Field1": {
+					"type": "input",
+					"top": 22,
+					"left": 655,
+					"width": 87,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]Jobform:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S6_Field1": {
+					"type": "input",
+					"top": 22,
+					"left": 22,
+					"width": 40,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]DateDone:6",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"S7_Field": {
+					"type": "input",
+					"top": 22,
+					"left": 65,
+					"width": 33,
+					"height": 15,
+					"dataSource": "[To_Do_Tasks:100]DoneBy:7",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 425,
+					"width": 61,
+					"height": 15,
+					"fill": "#C5FFC0",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Due Date"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 17,
+					"left": 0,
+					"width": 744,
+					"height": 1,
+					"stroke": "#009900"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

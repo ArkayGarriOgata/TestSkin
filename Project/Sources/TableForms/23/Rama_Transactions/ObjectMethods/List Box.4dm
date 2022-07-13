@@ -1,0 +1,1 @@
+//Rama_Event_Notifier ("list_box_click";Current process;aCPN{InvListBox})

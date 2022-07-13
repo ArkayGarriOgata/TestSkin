@@ -1,0 +1,62 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Web Area": {
+					"type": "webArea",
+					"top": 0,
+					"left": 0,
+					"width": 814,
+					"height": 683,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "eaCal",
+					"urlSource": "Web Area_url",
+					"progressSource": "Web Area_progress",
+					"webEngine": "embedded",
+					"methodsAccessibility": "all",
+					"contextMenu": "none",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Web Area.4dm",
+					"events": [
+						"onEndURLLoading"
+					]
+				}
+			}
+		}
+	]
+}

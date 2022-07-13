@@ -1,0 +1,1 @@
+[Customers_Bills_of_Lading_Manif:181]Total_Wt:11:=[Customers_Bills_of_Lading_Manif:181]Wt_PerCase:7*[Customers_Bills_of_Lading_Manif:181]NumCases:6

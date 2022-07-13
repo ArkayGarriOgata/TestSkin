@@ -1,0 +1,490 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"menuBar": "AdHoc",
+	"markerHeader": 68,
+	"markerBody": 85,
+	"markerBreak": 87,
+	"markerFooter": 127,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 911,
+					"height": 40,
+					"sizingX": "grow",
+					"fill": "#AAAAAA"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 12,
+					"left": 2,
+					"width": 907,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "JobProductionHistory"
+				},
+				"Rectangle9": {
+					"type": "rectangle",
+					"top": 51,
+					"left": 1,
+					"width": 909,
+					"height": 16,
+					"fill": "#AAAAAA",
+					"stroke": "transparent"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 67,
+					"left": 0,
+					"width": 911
+				},
+				"Rectangle11": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 0,
+					"width": 911,
+					"height": 35,
+					"fill": "transparent"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 51,
+					"left": 229,
+					"height": 34
+				},
+				"Line13": {
+					"type": "line",
+					"top": 51,
+					"left": 346,
+					"height": 34
+				},
+				"Line14": {
+					"type": "line",
+					"top": 51,
+					"left": 453,
+					"height": 34
+				},
+				"Line15": {
+					"type": "line",
+					"top": 51,
+					"left": 516,
+					"height": 34
+				},
+				"Line16": {
+					"type": "line",
+					"top": 51,
+					"left": 665,
+					"height": 34
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 53,
+					"left": 3,
+					"width": 224,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "CustomerName"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 53,
+					"left": 232,
+					"width": 112,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "CustomerLine"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 53,
+					"left": 349,
+					"width": 102,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Department"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 53,
+					"left": 456,
+					"width": 58,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "jobform"
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 53,
+					"left": 519,
+					"width": 144,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "ProcessSpecKey"
+				},
+				"S6_Text": {
+					"type": "text",
+					"top": 53,
+					"left": 668,
+					"width": 240,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Note"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 70,
+					"left": 3,
+					"width": 224,
+					"height": 12,
+					"dataSource": "[Job_Forms_Production_Histories:121]CustomerName:8",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 70,
+					"left": 232,
+					"width": 112,
+					"height": 12,
+					"dataSource": "[Job_Forms_Production_Histories:121]CustomerLine:9",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 70,
+					"left": 349,
+					"width": 102,
+					"height": 12,
+					"dataSource": "[Job_Forms_Production_Histories:121]Department:7",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 70,
+					"left": 456,
+					"width": 58,
+					"height": 12,
+					"dataSource": "[Job_Forms_Production_Histories:121]jobform:6",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 70,
+					"left": 519,
+					"width": 144,
+					"height": 12,
+					"dataSource": "[Job_Forms_Production_Histories:121]ProcessSpecKey:1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Field": {
+					"type": "input",
+					"top": 70,
+					"left": 668,
+					"width": 240,
+					"height": 12,
+					"dataSource": "[Job_Forms_Production_Histories:121]Note:5",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 96,
+					"left": 303,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bInclude",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Include Button"
+					},
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Include",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 96,
+					"left": 393,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bExclude",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Exclude Button"
+					},
+					"shortcutKey": "e",
+					"shortcutAccel": true,
+					"text": "Exclude",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 96,
+					"left": 487,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bDone",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Done (Default)"
+					},
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"text": "Done",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "checkbox",
+					"top": 71,
+					"left": 911,
+					"width": 89,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "[Job_Forms_Production_Histories:121]ShowOnJobBag:11",
+					"text": "ShowOnJobBag",
+					"class": "Default",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

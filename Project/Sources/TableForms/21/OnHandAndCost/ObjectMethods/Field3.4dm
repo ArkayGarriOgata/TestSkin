@@ -1,0 +1,1 @@
+sRMflexFields([Raw_Materials:21]CommodityCode:26)

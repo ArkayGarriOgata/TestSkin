@@ -1,0 +1,1 @@
+rOnHandt:=Subtotal:C97(rOnHand)

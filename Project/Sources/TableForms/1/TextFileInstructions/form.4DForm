@@ -1,0 +1,187 @@
+{
+	"destination": "detailScreen",
+	"width": 475,
+	"height": 770,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 12,
+					"left": 11,
+					"width": 456,
+					"height": 45,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "Instructions for converting HTML file to Tab Delimited:\r\r1. Select the HTML file and right click on it to bring up the contextual menu.\r"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 65,
+					"left": 11,
+					"width": 228,
+					"height": 153,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture2.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 227,
+					"left": 12,
+					"width": 437,
+					"height": 75,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "2. Select Excel.\r3. Click \"OK\" in the warning dialog.\r4. In Excel select \"Save As\" from the \"File\" menu.\r5. Click \"Continue\" in the warning dialog.\r6. Choose \"Tab-Delimited Text (.txt) from the \"Format\" popup menu."
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 313,
+					"left": 12,
+					"width": 365,
+					"height": 123,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture3.png"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 433,
+					"left": 11,
+					"width": 414,
+					"height": 60,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "7. Open the new file with Word.\r8. Click on the \"Show All Non Printing Characters\" button.\r9. You'll see the following:"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 438,
+					"left": 358,
+					"width": 34,
+					"height": 33,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture4.png"
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 484,
+					"left": 28,
+					"width": 245,
+					"height": 85,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture5.png"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 577,
+					"left": 15,
+					"width": 444,
+					"height": 153,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "10. Select one of the ~ characters and copy it to the clipboard. It's a nonbreaking space. Use what you've got on the clipboard and do a \"Find & Replace\". Replace it with a normal space character.\r11. Make sure the first column header is either \"Deliv.date\"or \"Deliv. date\", Note the space after the period.\r12. Make sure there is not a blank row after the headers.\r13. Make sure the \"IB\" column is there. Add it if not after column \"Notified Qty\".\r14. Save this document as a Tab-Delimited text file.\r15. This is the file you'll use to continue with this process."
+				},
+				"bYes": {
+					"type": "button",
+					"top": 743,
+					"left": 392,
+					"width": 67,
+					"height": 16,
+					"dataSource": "bYes",
+					"action": "accept",
+					"text": "Yes",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bNo": {
+					"type": "button",
+					"top": 743,
+					"left": 314,
+					"width": 67,
+					"height": 16,
+					"dataSource": "bNo",
+					"action": "cancel",
+					"text": "No",
+					"class": "BaseButtons",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 745,
+					"left": 145,
+					"width": 162,
+					"height": 15,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Are you ready to continue?"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

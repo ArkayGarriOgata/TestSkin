@@ -1,0 +1,331 @@
+{
+	"destination": "listPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": [
+		48,
+		48
+	],
+	"markerBody": 48,
+	"markerBreak": [
+		66,
+		86
+	],
+	"markerFooter": 108,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 1,
+					"width": 549,
+					"height": 18,
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Arkay Finished Goods Bin Summary"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 33,
+					"left": 101,
+					"width": 150,
+					"height": 14,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "FG_Location"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 33,
+					"left": 280,
+					"width": 67,
+					"height": 14,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Quantity"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 185,
+					"left": 36,
+					"width": 147,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]Location:2",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 47,
+					"left": 101,
+					"width": 344,
+					"height": 1
+				},
+				"Field2": {
+					"type": "input",
+					"top": 184,
+					"left": 215,
+					"width": 84,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]QtyOH:9",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 50,
+					"left": 103,
+					"width": 164,
+					"height": 14,
+					"dataSource": "[Finished_Goods_Locations:35]Location:2",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onPrintingBreak"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 50,
+					"left": 270,
+					"width": 63,
+					"height": 15,
+					"dataSource": "i1",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onPrintingBreak"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 68,
+					"left": 253,
+					"width": 80,
+					"height": 15,
+					"dataSource": "i1",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onPrintingBreak"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 183,
+					"left": 323,
+					"width": 84,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]zCount:18",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 33,
+					"left": 358,
+					"width": 89,
+					"height": 14,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "# of Jobitems"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 50,
+					"left": 373,
+					"width": 55,
+					"height": 15,
+					"dataSource": "i2",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onPrintingBreak"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 68,
+					"left": 373,
+					"width": 55,
+					"height": 15,
+					"dataSource": "i2",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onPrintingBreak"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 68,
+					"left": 201,
+					"width": 67,
+					"height": 14,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Totals:"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 92,
+					"left": 7,
+					"width": 404,
+					"height": 12,
+					"dataSource": "t1",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 93,
+					"left": 514,
+					"width": 17,
+					"height": 11,
+					"dataSource": "iPage",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onPrintingFooter"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 93,
+					"left": 482,
+					"width": 31,
+					"height": 11,
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Page:"
+				}
+			}
+		}
+	]
+}

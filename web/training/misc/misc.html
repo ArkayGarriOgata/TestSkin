@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+<title>aMs Training Videos - Miscellaneous</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" rev="" href="../css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="icon" type="image/png" href="images/favicon.png"> -->
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+</head>
+
+<body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 10%">
+
+<button onclick="location.href = '../'">Home</button>
+
+<h1 id="miscellaneous">Miscellaneous</h1>
+
+<p>This is other stuff that has required training.</p>
+
+<h2 id="vlookup">Adding Last Glue Date to an Excel report</h2>
+<p>Demonstrates using Excel's <a href="https://support.office.com/en-us/article/video-vlookup-when-and-how-to-use-it-9a86157a-5542-4148-a536-724823014785">VLOOKUP</a> function to merge product codes' last glue date from a lookup table created from aMs's Shortcuts>SQL... menu command. This same technique can be used any time you wish to merge data from two reports into one, provided they share a common column, in this example ProductCode is used. Video below is a bit fuzzy when seen in fullscreen mode, the high resolusion video can be down loaded from <a href="last-glue-date.mov">here</a>.</p>
+
+<video controls>
+   <source src="last-glue-date.webm" type="video/webm">
+   <source src="last-glue-date.mp4" type="video/mp4">
+</video>
+
+<p>Notes: The Excel formula used in the video is repeated below:<br>
+  <code>=IF($C2&lt;&gt;"",VLOOKUP($C2,LastGlueDateLookup!$A$8:$B$158,2,FALSE),"") </code> and then fill down, change the $C to the column that has your productcode and the LastGlueDateLookup!$A$8:$B$158 to the range in the worksheet that you've added, excluding the column titles. The =IF( ) can be omitted if there are no blank rows in your data.</p>
+
+<p>Updated 02/27/19</p>
+
+
+
+<h2 id="pivot">Using a Pivot Table in Excel</h2>
+<p>Demonstrates using Excel's <a href="https://support.office.com/en-us/article/video-create-a-pivottable-and-analyze-your-data-7810597d-0837-41f7-9699-5911aa282760">Pivot Table</a> menu command to analyze monthly shipping trends. This same technique can be used any time you wish to see column data in a cross-tab format which often can convey a better sense of pattern than the raw data. The Query, Report and resulting file used in the screencast can be downloaded from <a href="pivot-example.zip">here</a>. Video below is a bit fuzzy when seen in fullscreen mode, the high resolusion video can be down loaded from <a href="lpivot-table.mov">here</a>.</p>
+
+<video controls>
+   <source src="pivot-table.webm" type="video/webm">
+   <source src="pivot-table.mp4" type="video/mp4">
+</video>
+
+<p>Updated 02/28/19</p>
+
+
+
+<h2 id="ship">Creating a Bill of Lading</h2>
+<p>Demonstrates the basic clicks needed to ship against a Customer Release creating a Bill of Lading. When you print the BOL, an invoice will be generated, the inventory will be relieved, a FG ship transaction will be created, the release will have its actual date and quantity set and the order line's shipped quantity will be updated.</p>
+
+<video controls>
+   <source src="shipping.webm" type="video/webm">
+   <source src="shipping.mp4" type="video/mp4">
+</video>
+
+<p>Updated 07/10/19</p>
+
+
+
+<h2 id="commission">Setting Commission Percentages</h2>
+<p>Demonstrates the SalesRep's Control Center to assign Customers to Reps and to set the commission rate.</p>
+
+<video controls>
+   <source src="salesCommission.webm" type="video/webm">
+   <source src="salesCommission.mp4" type="video/mp4">
+</video>
+
+<p>Updated 12/11/19</p>
+
+	      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

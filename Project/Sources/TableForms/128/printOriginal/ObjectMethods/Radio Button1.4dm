@@ -1,0 +1,1 @@
+CSM_setField(->[Finished_Goods_Color_SpecMaster:128]finishStamps:14; ->arb1; "None"; True:C214)

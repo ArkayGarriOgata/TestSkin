@@ -1,0 +1,783 @@
+{
+	"destination": "listScreen",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 124,
+	"markerFooter": 193,
+	"events": [
+		"onLoad",
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Variable193": {
+					"type": "tab",
+					"top": 127,
+					"left": 0,
+					"width": 846,
+					"height": 62,
+					"dataSource": "iJMLtabs",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/PrepServices"
+					},
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable193.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"S1_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 7,
+					"width": 135,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Custid : Product Number"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 79,
+					"left": 145,
+					"width": 59,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "ControlN°"
+				},
+				"ID_fk": {
+					"type": "input",
+					"top": 102,
+					"left": 4,
+					"width": 138,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specifications:98]FG_Key:1",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"right": 142
+				},
+				"ID_pk": {
+					"type": "input",
+					"top": 102,
+					"left": 147,
+					"width": 60,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specifications:98]ControlNumber:2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"nc6": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 463,
+					"width": 13,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_Specifications:98]ProcessColors:81",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"bottom": 117
+				},
+				"Field4": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 782,
+					"width": 13,
+					"height": 15,
+					"sizingX": "fixed",
+					"dataSource": "[Finished_Goods_Specifications:98]Cedar:84",
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"right": 795,
+					"bottom": 117
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 146,
+					"left": 136,
+					"width": 110,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "LittleButtons",
+					"text": "Horizon (Press Date)"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 147,
+					"left": 247,
+					"width": 343,
+					"height": 41,
+					"stroke": "#000000",
+					"class": "LittleButtons",
+					"text": "Sort by"
+				},
+				"Radio Button1": {
+					"type": "checkbox",
+					"top": 158,
+					"left": 15,
+					"width": 58,
+					"height": 27,
+					"dataSource": "Li1",
+					"text": "Press Sched",
+					"class": "LittleButtons",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 158,
+					"left": 78,
+					"width": 42,
+					"height": 27,
+					"dataSource": "i3",
+					"text": "Mine",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable122": {
+					"type": "radio",
+					"top": 162,
+					"left": 142,
+					"width": 54,
+					"height": 20,
+					"dataSource": "cb1",
+					"text": "5 Days",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable122.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable127": {
+					"type": "radio",
+					"top": 162,
+					"left": 201,
+					"width": 35,
+					"height": 20,
+					"dataSource": "cb2",
+					"text": "All",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable127.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable126": {
+					"type": "radio",
+					"top": 161,
+					"left": 252,
+					"width": 46,
+					"height": 25,
+					"dataSource": "b4",
+					"text": "Press Date",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable126.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 161,
+					"left": 303,
+					"width": 46,
+					"height": 25,
+					"dataSource": "b6",
+					"text": "Art Rec'd",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable246": {
+					"type": "radio",
+					"top": 161,
+					"left": 354,
+					"width": 55,
+					"height": 25,
+					"dataSource": "b5",
+					"text": "Priority",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable246.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable123": {
+					"type": "radio",
+					"top": 161,
+					"left": 414,
+					"width": 54,
+					"height": 26,
+					"dataSource": "b1",
+					"text": "Service Req'd",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable123.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable124": {
+					"type": "radio",
+					"top": 161,
+					"left": 474,
+					"width": 57,
+					"height": 25,
+					"dataSource": "b2",
+					"text": "Control Number",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable124.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable125": {
+					"type": "radio",
+					"top": 161,
+					"left": 537,
+					"width": 47,
+					"height": 25,
+					"dataSource": "b3",
+					"text": "CPN",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable125.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 161,
+					"left": 593,
+					"width": 63,
+					"height": 20,
+					"dataSource": "Button1",
+					"shortcutKey": "f",
+					"shortcutAccel": true,
+					"text": "Find...",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 161,
+					"left": 661,
+					"width": 65,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Print...",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 145,
+					"left": 4,
+					"width": 129,
+					"height": 42,
+					"stroke": "#000000",
+					"class": "LittleButtons",
+					"text": "Filters"
+				},
+				"S3_Text1": {
+					"type": "text",
+					"top": 79,
+					"left": 206,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Art Rec'd",
+					"right": 259
+				},
+				"S3_Text3": {
+					"type": "text",
+					"top": 79,
+					"left": 325,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Size&Style",
+					"right": 378
+				},
+				"S3_Text4": {
+					"type": "text",
+					"top": 79,
+					"left": 383,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Colors",
+					"right": 436
+				},
+				"S3_Text5": {
+					"type": "text",
+					"top": 79,
+					"left": 441,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Process",
+					"right": 494
+				},
+				"S3_Text6": {
+					"type": "text",
+					"top": 79,
+					"left": 499,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Match Print",
+					"right": 552
+				},
+				"S3_Text7": {
+					"type": "text",
+					"top": 79,
+					"left": 557,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Hi Res File",
+					"right": 610
+				},
+				"S3_Text8": {
+					"type": "text",
+					"top": 79,
+					"left": 614,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Preflight",
+					"right": 667
+				},
+				"S3_Text9": {
+					"type": "text",
+					"top": 79,
+					"left": 673,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "PrepDone",
+					"right": 726
+				},
+				"S3_Text10": {
+					"type": "text",
+					"top": 79,
+					"left": 728,
+					"width": 19,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Priority",
+					"right": 747
+				},
+				"S3_Text11": {
+					"type": "text",
+					"top": 79,
+					"left": 753,
+					"width": 47,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Assign CG",
+					"right": 800
+				},
+				"S3_Text12": {
+					"type": "text",
+					"top": 79,
+					"left": 804,
+					"width": 54,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Proof Read",
+					"right": 858
+				},
+				"S3_Text13": {
+					"type": "text",
+					"top": 79,
+					"left": 863,
+					"width": 54,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "ToCustomer",
+					"right": 917
+				},
+				"S3_Text14": {
+					"type": "text",
+					"top": 79,
+					"left": 922,
+					"width": 54,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Returned",
+					"right": 976
+				},
+				"S3_Text15": {
+					"type": "text",
+					"top": 79,
+					"left": 982,
+					"width": 48,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Press Date",
+					"right": 1030
+				},
+				"c1": {
+					"type": "input",
+					"left": 207,
+					"top": 102,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DateArtReceived:63",
+					"dataSourceTypeHint": "date"
+				},
+				"c2": {
+					"type": "input",
+					"left": 266,
+					"top": 102,
+					"width": 54,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DateSubmitted:5",
+					"dataSourceTypeHint": "date"
+				},
+				"nc4": {
+					"type": "input",
+					"left": 323,
+					"top": 102,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]Size_n_style:79",
+					"dataSourceTypeHint": "date"
+				},
+				"nc5": {
+					"type": "input",
+					"left": 381,
+					"top": 102,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]Colors:80",
+					"dataSourceTypeHint": "date"
+				},
+				"nc7": {
+					"type": "input",
+					"left": 498,
+					"top": 102,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]MatchPrint:82",
+					"dataSourceTypeHint": "date",
+					"sizingX": "fixed"
+				},
+				"nc8": {
+					"type": "input",
+					"left": 556,
+					"top": 102,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]HiRez:83",
+					"dataSourceTypeHint": "date",
+					"sizingX": "fixed"
+				},
+				"Field3": {
+					"type": "input",
+					"left": 614,
+					"top": 102,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DatePreflighted:85",
+					"dataSourceTypeHint": "date",
+					"sizingX": "fixed"
+				},
+				"c3": {
+					"type": "input",
+					"left": 671,
+					"top": 102,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DatePrepDone:6",
+					"dataSourceTypeHint": "date",
+					"sizingX": "fixed"
+				},
+				"c9": {
+					"type": "input",
+					"left": 804,
+					"top": 102,
+					"width": 54,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DateProofRead:7",
+					"dataSourceTypeHint": "date"
+				},
+				"c10": {
+					"type": "input",
+					"left": 861,
+					"top": 102,
+					"width": 60,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DateSentToCustomer:8",
+					"dataSourceTypeHint": "date"
+				},
+				"c11": {
+					"type": "input",
+					"left": 922,
+					"top": 102,
+					"width": 52,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]DateReturned:9",
+					"dataSourceTypeHint": "date",
+					"bottom": 115
+				},
+				"Field2": {
+					"type": "input",
+					"left": 982,
+					"top": 102,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[Finished_Goods:26]PressDate:64",
+					"dataSourceTypeHint": "date",
+					"right": 1030,
+					"bottom": 119
+				},
+				"Input": {
+					"type": "input",
+					"left": 728,
+					"top": 102,
+					"width": 20,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Specifications:98]Priority:50"
+				},
+				"S3_Text16": {
+					"type": "text",
+					"top": 79,
+					"left": 262,
+					"width": 53,
+					"height": 13,
+					"sizingX": "fixed",
+					"stroke": "#000099",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Submitted"
+				}
+			},
+			"entryOrder": [
+				"ID_fk",
+				"ID_pk",
+				"nc6",
+				"Field4",
+				"Radio Button1",
+				"Check Box1",
+				"Variable122",
+				"Variable127",
+				"Variable126",
+				"Radio Button2",
+				"Variable246",
+				"Variable123",
+				"Variable124",
+				"Variable125",
+				"Button6",
+				"Variable1",
+				"c1",
+				"c2",
+				"nc4",
+				"nc5",
+				"nc7",
+				"nc8",
+				"Field3",
+				"c3",
+				"c9",
+				"c10",
+				"c11",
+				"Field2",
+				"Input"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"geometryStamp": 970,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

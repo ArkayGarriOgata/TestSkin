@@ -1,0 +1,330 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 19,
+	"markerBody": 37,
+	"markerBreak": 37,
+	"markerFooter": 37,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 471,
+					"height": 38
+				},
+				"Line1": {
+					"type": "line",
+					"top": 18,
+					"left": 0,
+					"width": 471,
+					"strokeWidth": 2
+				},
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 2,
+					"width": 105,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Code"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 108,
+					"height": 38
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 137,
+					"width": 166,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Description"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 0,
+					"left": 304,
+					"height": 38
+				},
+				"Text3": {
+					"type": "text",
+					"top": 2,
+					"left": 306,
+					"width": 80,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Budget"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 387,
+					"height": 38
+				},
+				"Text4": {
+					"type": "text",
+					"top": 2,
+					"left": 389,
+					"width": 80,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Standard"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 135,
+					"height": 38
+				},
+				"Text5": {
+					"type": "text",
+					"top": 2,
+					"left": 110,
+					"width": 24,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Gp"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 22,
+					"left": 111,
+					"width": 22,
+					"height": 13,
+					"dataSource": "aGroup",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 22,
+					"left": 137,
+					"width": 86,
+					"height": 13,
+					"dataSource": "aMatlDesc",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 22,
+					"left": 2,
+					"width": 105,
+					"height": 13,
+					"dataSource": "aCode",
+					"stroke": "#0000FF",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/NewChargeFormat"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NewChargeFilter"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/MATL_DESC"
+					},
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 22,
+					"left": 307,
+					"width": 73,
+					"height": 13,
+					"dataSource": "[Job_Forms_Materials:55]Planned_Cost:8",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/DollarFilter"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 22,
+					"left": 383,
+					"width": 3,
+					"height": 13,
+					"dataSource": "aDummy",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 22,
+					"left": 227,
+					"width": 73,
+					"height": 13,
+					"dataSource": "[Job_Forms_Materials:55]Raw_Matl_Code:7",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

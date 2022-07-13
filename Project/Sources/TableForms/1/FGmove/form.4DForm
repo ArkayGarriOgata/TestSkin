@@ -1,0 +1,412 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Move F/G Skid",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 5,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 0,
+					"width": 298,
+					"height": 176,
+					"fill": "#AAAAAA",
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 298,
+					"height": 60,
+					"fill": "#DDDDDD",
+					"stroke": "#DDDDDD"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 156,
+					"left": 1,
+					"width": 104,
+					"height": 17,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "Product Code:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 75,
+					"left": 41,
+					"width": 64,
+					"height": 18,
+					"stroke": "#000099",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "Quantity:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 103,
+					"left": 3,
+					"width": 102,
+					"height": 18,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "From Location:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 37,
+					"left": 19,
+					"width": 86,
+					"height": 18,
+					"stroke": "#000099",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "To Location:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 130,
+					"left": 18,
+					"width": 87,
+					"height": 18,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "Jobit  (lot):"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 261,
+					"left": 254,
+					"width": 29,
+					"height": 8,
+					"dataSource": "bOK",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 262,
+					"left": 109,
+					"width": 24,
+					"height": 7,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 11,
+					"left": -7,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000099",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Skid Ticket #:"
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 11,
+					"left": 89,
+					"width": 198,
+					"height": 18,
+					"dataSource": "sCriter10",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo Box1": {
+					"type": "combo",
+					"top": 35,
+					"left": 107,
+					"width": 180,
+					"height": 20,
+					"dataSource": "asMove",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Combo Box1.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 75,
+					"left": 109,
+					"width": 98,
+					"height": 18,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"entryFilter": "&\"0-9;.;-\"",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo Box2": {
+					"type": "combo",
+					"top": 101,
+					"left": 107,
+					"width": 180,
+					"height": 20,
+					"dataSource": "asFrom",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/LocationFG_filter"
+					},
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"method": "ObjectMethods/Combo Box2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 129,
+					"left": 109,
+					"width": 118,
+					"height": 18,
+					"dataSource": "sJobit",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.\"",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 156,
+					"left": 109,
+					"width": 175,
+					"height": 18,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 236,
+					"left": 17,
+					"width": 124,
+					"height": 23,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "button",
+					"top": 236,
+					"left": 155,
+					"width": 124,
+					"height": 23,
+					"dataSource": "bPost",
+					"shortcutKey": "[Enter]",
+					"text": "MOVE <enter>",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 60,
+					"left": 0,
+					"width": 60,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "Corrections:"
+				},
+				"ReasonVariable16": {
+					"type": "input",
+					"top": 181,
+					"left": 109,
+					"width": 160,
+					"height": 18,
+					"dataSource": "sCriterion9",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ReturnReject"
+					},
+					"method": "ObjectMethods/ReasonVariable16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReasonVariable17": {
+					"type": "input",
+					"top": 205,
+					"left": 109,
+					"width": 160,
+					"height": 18,
+					"dataSource": "sCriterion7",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ReasonText2": {
+					"type": "text",
+					"top": 182,
+					"left": 1,
+					"width": 104,
+					"height": 17,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "Reason:"
+				},
+				"ReasonText8": {
+					"type": "text",
+					"top": 206,
+					"left": 1,
+					"width": 104,
+					"height": 17,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"text": "Explanation:"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,316 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 16,
+	"markerBody": 35,
+	"markerBreak": 35,
+	"markerFooter": 35,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 0,
+					"width": 437,
+					"height": 18,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 78,
+					"width": 90,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Location"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 169,
+					"width": 68,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Qty OH"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 77,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "JobFormIT"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 325,
+					"width": 63,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Total"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 18,
+					"left": 77,
+					"width": 88,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Locations:35]Location:2",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 18,
+					"left": 3,
+					"width": 69,
+					"height": 13,
+					"dataSource": "[Finished_Goods_Locations:35]Jobit:33",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 18,
+					"left": 168,
+					"width": 65,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]QtyOH:9",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 238,
+					"width": 37,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Cases"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 276,
+					"width": 48,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Pack"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 389,
+					"width": 47,
+					"height": 16,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Wt/Cs"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 18,
+					"left": 244,
+					"width": 26,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]Cases:24",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 18,
+					"left": 281,
+					"width": 41,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]Pack_TEMP:25",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 18,
+					"left": 327,
+					"width": 57,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]Qty_TEMP:23",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 18,
+					"left": 397,
+					"width": 33,
+					"height": 15,
+					"dataSource": "[Finished_Goods_Locations:35]Wgt_TEMP:26",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

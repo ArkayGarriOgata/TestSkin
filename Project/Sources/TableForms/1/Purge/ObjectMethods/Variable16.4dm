@@ -1,0 +1,1 @@
+QryPurgeEsts(->r4; ->r24; ->r44; "Priced")

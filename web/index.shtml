@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1" />
+
+<title>Web-RK-inner</title>
+
+<link rel="stylesheet" href="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="./jquery.mobile-1.4.5/jquery.js"></script>
+<script src="./jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="/js_4D/FourDWebRequest.js"></script>
+<script src="./wms.js"></script>
+
+
+
+
+<style>
+#mainContent {
+    margin: auto;
+    width: 100%;
+  padding-top: 20px;
+   
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+  <!--4DIF (WebTag_IsValidReferrer)-->
+
+  
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+
+  <div role="main" class="ui-content"  id="loginBody">
+         <div class="center">
+            <form>
+               <label for="rm_username">Username</label>
+               <div>
+                  <input type="text" name="rm_username" id="rm_username" value="">
+               </div>
+            
+               <label for="rm_password">Password</label>
+               <div>
+                 <input type="text" name="rm_password" id="rm_password" value="">
+               </div>
+               
+               <a href="#" class="ui-btn ui-btn-inline" onclick="login()">Login</a>
+               
+               
+        
+            </form>
+         </div>
+  </div><!-- /Login content -->
+    
+    
+    
+  <div role="main" class="ui-content"  id="mainBody">
+
+
+        <button class="ui-btn" onclick="navGotoURL('/RollStockMenu.shtml')">Roll Stock</button>
+        <button class="ui-btn" onclick="navGotoURL('/DieBoardLookup.shtml')">Die Boards</button>
+        <button class="ui-btn" onclick="navGotoURL('http://192.168.3.98:8080/login.shtml')">WMS</button>
+        <button class="ui-btn" onclick="navGotoURL('/api/dashboard')">Shuttle</button>
+        <button class="ui-btn" onclick="logout()">Logout</button>
+
+
+  </div><!-- /Main button bar content -->
+
+
+</div><!-- /page one -->
+
+
+
+
+ <div id="popupContent"></div>
+
+
+ <script>
+  var ttHost = location.hostname;
+
+  if(ttHost.toLowerCase().indexOf("arkayportal.com") >= 0){
+    location.href = "/portal/menu.html";
+
+  } else if(ttHost.toLowerCase().indexOf("arkayportal.arkay.com") >= 0){
+    location.href = "/portal/menu.html";
+
+  }else{
+    $("#popupContent").load("popupAlert.shtml"); 
+    $("#mainBody").hide();
+    $("#loginBody").hide();
+    isLoggedIn();
+    
+  }
+</script>
+
+<!--4DELSE-->
+<script>
+    location.href = "/error.html";
+</script>
+
+<!--4DENDIF-->
+
+
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,1 @@
+dDate:=Invoice_GetDateDue([Customers_Invoices:88]Terms:18; [Customers_Invoices:88]Invoice_Date:7)

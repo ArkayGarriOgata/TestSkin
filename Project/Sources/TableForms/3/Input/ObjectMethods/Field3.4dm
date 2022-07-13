@@ -1,0 +1,1 @@
+uConfirm("The new offset will take effect next time users log in."; "OK"; "Help")

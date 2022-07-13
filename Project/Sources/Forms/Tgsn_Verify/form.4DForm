@@ -1,0 +1,282 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_BackgroudButton",
+	"windowMinWidth": 220,
+	"formSizeAnchor": "Core_nWindow_Resize",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Core_nWindow_Resize": {
+					"type": "pictureButton",
+					"top": 210,
+					"left": 219,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Core_nWindow_Resize",
+					"picture": "/RESOURCES/Skin/Master/ResizeWindow.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Core_nWindow_Resize.4dm",
+					"events": [
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					]
+				},
+				"Tgsn_abVerify1": {
+					"type": "listbox",
+					"top": 53,
+					"left": 13,
+					"width": 207,
+					"height": 159,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "Tgsn_abVerify",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"rowControlSource": "Tgsn_anVerify_RowControl",
+					"headerHeight": "17px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#FFFFFF",
+					"fill": "#808080",
+					"alternateFill": "#C0C0C0",
+					"rowFillSource": "Tgsn_anVerify_RowBackground",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Tgsn_abVerify1.4dm",
+					"events": [
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Tgsn_abVerify_Send",
+							"dataSource": "Tgsn_abVerify_Send",
+							"dataSourceTypeHint": "boolean",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "#FFFFFF",
+							"fill": "#808080",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Tgsn_nVerify_Verified",
+								"text": "Send",
+								"dataSource": "Tgsn_nVerify_Verified",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#FFFFFF",
+								"fill": "#808080",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Tgsn_abVerify_Fix",
+							"dataSource": "Tgsn_abVerify_Fix",
+							"dataSourceTypeHint": "boolean",
+							"width": 35,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "#FFFFFF",
+							"fill": "#808080",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Tgsn_nVerify_Fix",
+								"text": "Fix",
+								"dataSource": "Tgsn_nVerify_Fix",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#FFFFFF",
+								"fill": "#808080",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Tgsn_anVerify_InvoiceNumber",
+							"dataSource": "Tgsn_anVerify_InvoiceNumber",
+							"width": 117,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#FFFFFF",
+							"fill": "#808080",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Tgsn_nVerify_InvoiceNumber",
+								"text": "Invoice Number",
+								"dataSource": "Tgsn_nVerify_InvoiceNumber",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "#FFFFFF",
+								"fill": "#808080",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Tgsn_nVerify_OnLoad": {
+					"type": "button",
+					"top": 270,
+					"left": 20,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "Tgsn_nVerify_OnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Tgsn_nVerify_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Tgsn_nVerify_Send": {
+					"type": "pictureButton",
+					"top": 5,
+					"left": 192,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "Tgsn_nVerify_Send",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRight.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Tgsn_nVerify_Send.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreCancel": {
+					"type": "pictureButton",
+					"top": 5,
+					"left": 164,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "CorenCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Tgsn_nVerify_Tungsten": {
+					"type": "radio",
+					"top": 7,
+					"left": 6,
+					"width": 80,
+					"height": 24,
+					"dataSource": "Tgsn_nVerify_Tungsten",
+					"text": "Tungsten",
+					"class": "Form_Label",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Tgsn_nVerify_EDI": {
+					"type": "radio",
+					"top": 7,
+					"left": 93,
+					"width": 45,
+					"height": 24,
+					"dataSource": "Tgsn_nVerify_EDI",
+					"text": "EDI",
+					"class": "Form_Label",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,331 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 150,
+	"markerBreak": 150,
+	"markerFooter": 160,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line6": {
+					"type": "line",
+					"top": 37,
+					"left": 18,
+					"width": 480,
+					"sizingX": "grow"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 185,
+					"left": 494,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"dataSource": "bValidate",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/OSX OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 233,
+					"left": 482,
+					"width": 72,
+					"height": 13,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Save"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 16,
+					"left": 23,
+					"width": 109,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "ControlNumber : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 16,
+					"left": 215,
+					"width": 92,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "ProductCode : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 48,
+					"left": 271,
+					"width": 107,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "DateArtEntered : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 49,
+					"left": 38,
+					"width": 115,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "DateArtReceived : "
+				},
+				"ControlNumber": {
+					"type": "input",
+					"top": 16,
+					"left": 137,
+					"width": 63,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]ControlNumber:2",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ProductCode": {
+					"type": "input",
+					"top": 16,
+					"left": 312,
+					"width": 180,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]ProductCode:3",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateArtEntered": {
+					"type": "input",
+					"top": 48,
+					"left": 383,
+					"width": 88,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]DateArtEntered:71",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateArtReceived": {
+					"type": "input",
+					"top": 49,
+					"left": 158,
+					"width": 88,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]DateArtReceived:63",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 76,
+					"left": 13,
+					"width": 650,
+					"height": 22,
+					"dataSource": "Radio Button1",
+					"text": "Epson Proof with film overlays or stamp emboss",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 99,
+					"left": 13,
+					"width": 650,
+					"height": 25,
+					"dataSource": "Radio Button1",
+					"text": "Kodak Proof on materials the job is being printed on with overlas, emboss, and stamping.",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 125,
+					"left": 13,
+					"width": 650,
+					"height": 22,
+					"dataSource": "Radio Button1",
+					"text": "Press proof diecust with emboss, stamp complete.",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Radio Button4": {
+					"type": "radio",
+					"top": 148,
+					"left": 13,
+					"width": 650,
+					"height": 23,
+					"dataSource": "Radio Button1",
+					"text": "Pilot run with minimum of 10,00 sheets to check print, emboss, stamp, diecut, strip and glue capabilities.",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 190,
+					"left": 31,
+					"width": 348,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Approved for billing __________________ Date _____"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 218,
+					"left": 32,
+					"width": 300,
+					"height": 16,
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"text": "Salesman __________________ Date ________"
+				}
+			}
+		}
+	]
+}

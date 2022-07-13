@@ -1,0 +1,1 @@
+sVendorName:=[Purchase_Orders:11]VendorName:42

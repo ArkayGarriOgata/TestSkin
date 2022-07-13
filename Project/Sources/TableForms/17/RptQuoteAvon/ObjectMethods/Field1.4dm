@@ -1,0 +1,17 @@
+//EstimateNo
+//SEARCH([ESTIMATE];[ESTIMATE]EstimateNo=[CustomerOrder]EstimateNo)
+//SEARCH([CARTON_SPEC];[CARTON_SPEC]Estimate_No=[ESTIMATE]EstimateNo)
+//SEARCH([FormCartons];[FormCartons]Carton=[CARTON_SPEC]CartonSpecKey)
+//SEARCH([Machine_Est];[Machine_Est]CaseFormID=[FormCartons]Form)
+//SEARCH([PROCESS_SPEC];[PROCESS_SPEC]ID=[CARTON_SPEC]ProcessSpec)
+rPrice25M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/25)
+rPrice50M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/50)
+rPrice75M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/75)
+rPrice100M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/100)
+rPrice150M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/150)
+rPrice250M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/250)
+rPrice500M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/500)
+rPrice750M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/750)
+rPrice1000M:=[Estimates_Carton_Specs:19]PriceWant_Per_M:28+([Estimates_DifferentialsForms:47]CostTtlOH:16/1000)
+//SEARCH([CaseForm];[CaseForm]CaseFormId=[FormCartons]Form)
+//EOS

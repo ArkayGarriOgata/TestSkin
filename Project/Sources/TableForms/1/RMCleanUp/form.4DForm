@@ -1,0 +1,380 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 501,
+					"height": 152,
+					"fill": "#005F60",
+					"stroke": "#005F60"
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 46,
+					"left": 154,
+					"width": 18,
+					"height": 13,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Variable27": {
+					"type": "button",
+					"top": 11,
+					"left": 12,
+					"width": 161,
+					"height": 19,
+					"dataSource": "bPrint",
+					"text": "Commodity Drilldown",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable27.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 11,
+					"left": 187,
+					"width": 125,
+					"height": 19,
+					"dataSource": "bSubgroups",
+					"text": "Print Subgroups",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 11,
+					"left": 328,
+					"width": 146,
+					"height": 19,
+					"dataSource": "bRawMateria",
+					"text": "Print Raw Materials",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 43,
+					"left": 187,
+					"width": 125,
+					"height": 19,
+					"dataSource": "bMoveSubgro",
+					"text": "Move Subgroup",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 43,
+					"left": 328,
+					"width": 146,
+					"height": 19,
+					"dataSource": "bMoveRM",
+					"text": "Move RM",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 76,
+					"left": 12,
+					"width": 161,
+					"height": 19,
+					"dataSource": "bPrint",
+					"text": "Zero POI Qty Open",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 77,
+					"left": 330,
+					"width": 146,
+					"height": 19,
+					"dataSource": "bRename",
+					"text": "Rename RM",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 112,
+					"left": 187,
+					"width": 125,
+					"height": 19,
+					"dataSource": "bFixGroups",
+					"text": "Fix Commkeys",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 111,
+					"left": 330,
+					"width": 146,
+					"height": 19,
+					"dataSource": "bMSDS",
+					"text": "Enter M.S.D.S",
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 210,
+					"left": 67,
+					"width": 117,
+					"height": 19,
+					"dataSource": "bRmvSubGrou",
+					"display": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 47,
+					"left": 49,
+					"width": 103,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"text": "Raw Mat'l Groups"
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 48,
+					"left": 151,
+					"width": 21,
+					"height": 11,
+					"dataSource": "<>aPopEst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/directPopup"
+					},
+					"display": false,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 115,
+					"left": 51,
+					"width": 103,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"text": "Expense Codes"
+				},
+				"Picture9": {
+					"type": "picture",
+					"top": 114,
+					"left": 155,
+					"width": 18,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Variable72": {
+					"type": "dropdown",
+					"top": 113,
+					"left": 155,
+					"width": 18,
+					"height": 15,
+					"dataSource": "<>aPopEst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/directPopup"
+					},
+					"display": false,
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable72.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable27",
+				"Variable2",
+				"Variable3",
+				"Variable4",
+				"Variable5",
+				"Button1",
+				"Variable7",
+				"Variable8",
+				"Variable9",
+				"Variable1",
+				"Variable72"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

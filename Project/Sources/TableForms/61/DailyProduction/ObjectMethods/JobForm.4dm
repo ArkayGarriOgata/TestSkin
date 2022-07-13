@@ -1,0 +1,1 @@
+QUERY:C277([Jobs:15]; [Jobs:15]JobNo:1=(Num:C11(Substring:C12([Job_Forms_Machine_Tickets:61]JobForm:1; 1; 5))))

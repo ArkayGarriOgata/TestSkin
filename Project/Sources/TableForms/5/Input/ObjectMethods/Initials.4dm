@@ -1,0 +1,1 @@
+[Users:5]Initials:1:=HR_setUsersInitials([Users:5]Initials:1)

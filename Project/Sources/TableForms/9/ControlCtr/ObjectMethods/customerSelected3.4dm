@@ -1,0 +1,1 @@
+REL_OntimeReport((4D_Current_date-31); (4D_Current_date-1); pjtCustid; 1)

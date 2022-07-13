@@ -1,0 +1,1 @@
+skidLableText:="PARTIAL SKID"

@@ -1,0 +1,10 @@
+textAddress:="Att: "+[Purchase_Orders:11]AttentionOf:28+Char:C90(13)
+textAddress:=textAddress+[Vendors:7]Name:2+Char:C90(13)
+textAddress:=textAddress+[Vendors:7]Address1:4+Char:C90(13)
+textAddress:=textAddress+[Vendors:7]Address2:5+Char:C90(13)
+textAddress:=textAddress+[Vendors:7]City:7+", "+[Vendors:7]State:8+"  "
+textAddress:=textAddress+[Vendors:7]Zip:9+"  "+(Num:C11([Vendors:7]Country:10#"USA")*[Vendors:7]Country:10)
+textAddress:=Replace string:C233(textAddress; (Char:C90(13)+Char:C90(13)); Char:C90(13))
+textAddress:=Replace string:C233(textAddress; (Char:C90(13)+Char:C90(13)); Char:C90(13))
+textAddress:=Replace string:C233(textAddress; (Char:C90(13)+Char:C90(13)); Char:C90(13))
+textAddress:=Replace string:C233(textAddress; (Char:C90(13)+Char:C90(13)); Char:C90(13))

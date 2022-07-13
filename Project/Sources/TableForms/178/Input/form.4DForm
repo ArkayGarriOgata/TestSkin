@@ -1,0 +1,285 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 242,
+	"markerBreak": 242,
+	"markerFooter": 252,
+	"events": [
+		"onLoad",
+		"onValidate"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 64,
+					"left": 540,
+					"width": 220,
+					"height": 18,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"text": "Raw_Materials_Tappi_Roll_id"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 112,
+					"left": 66,
+					"width": 83,
+					"height": 16,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "POItemKey : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 179,
+					"left": 66,
+					"width": 83,
+					"height": 17,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Roll_id : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 206,
+					"left": 66,
+					"width": 83,
+					"height": 17,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Linear_Feet : "
+				},
+				"POItemKey": {
+					"type": "input",
+					"top": 112,
+					"left": 154,
+					"width": 160,
+					"height": 16,
+					"dataSource": "[OLDraw_materials_tappi_roll_id:178]POItemKey:3",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/POItemKey.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Roll_id": {
+					"type": "input",
+					"top": 179,
+					"left": 154,
+					"width": 160,
+					"height": 16,
+					"dataSource": "tRoll_id",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Roll_id.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Linear_Feet": {
+					"type": "input",
+					"top": 206,
+					"left": 154,
+					"width": 76,
+					"height": 17,
+					"dataSource": "[OLDraw_materials_tappi_roll_id:178]Linear_Feet:4",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Linear_Feet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pk_id": {
+					"type": "input",
+					"top": 41,
+					"left": 540,
+					"width": 255,
+					"height": 14,
+					"dataSource": "[OLDraw_materials_tappi_roll_id:178]pk_id:1",
+					"class": "BaseInformation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"POItemKey1": {
+					"type": "input",
+					"top": 143,
+					"left": 154,
+					"width": 160,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Items:12]Raw_Matl_Code:15",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"POItemKey2": {
+					"type": "input",
+					"top": 143,
+					"left": 334,
+					"width": 367,
+					"height": 16,
+					"dataSource": "[Purchase_Orders_Items:12]RM_Description:7",
+					"class": "BaseField",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 169,
+					"left": 376,
+					"width": 308,
+					"height": 149,
+					"resizingMode": "legacy",
+					"dataSource": "aListBox",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "aText",
+							"width": 293,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Roll ID's",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Field": {
+					"type": "input",
+					"top": 243,
+					"left": 77,
+					"width": 166,
+					"height": 171,
+					"dataSource": "[OLDraw_materials_tappi_roll_id:178]Roll_id:2",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text7"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

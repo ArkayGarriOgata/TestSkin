@@ -1,0 +1,284 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 794,
+	"markerBreak": 794,
+	"markerFooter": 795,
+	"events": [
+		"onPrintingDetail"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Field": {
+					"type": "input",
+					"top": 2,
+					"left": 421,
+					"width": 148,
+					"height": 32,
+					"dataSource": "[WMS_InternalBOLs:163]bol_encoded:8",
+					"class": "Barcode128small",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 34,
+					"left": 421,
+					"width": 148,
+					"height": 19,
+					"dataSource": "[WMS_InternalBOLs:163]bol_number:2",
+					"class": "LaserPrintText",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 24,
+					"left": 212,
+					"width": 168,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]when_touched:7",
+					"class": "LaserPrintLabel",
+					"textAlign": "center",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 61,
+					"left": 466,
+					"width": 44,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]number_of_skids:3",
+					"dataSourceTypeHint": "integer",
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 82,
+					"left": 466,
+					"width": 71,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]number_of_cases:4",
+					"dataSourceTypeHint": "integer",
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text": {
+					"type": "text",
+					"top": 61,
+					"left": 424,
+					"width": 37,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Skids:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 82,
+					"left": 419,
+					"width": 42,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Cases:"
+				},
+				"Manifest": {
+					"type": "input",
+					"top": 134,
+					"left": 19,
+					"width": 268,
+					"height": 931,
+					"dataSource": "tCol1",
+					"class": "Fixed_10_Courier",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 2,
+					"left": 18,
+					"width": 174,
+					"height": 24,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/ArkayLogo II.png"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 5,
+					"left": 213,
+					"width": 167,
+					"height": 19,
+					"class": "LaserPrintText",
+					"textAlign": "center",
+					"text": "Bill of Lading"
+				},
+				"Manifest1": {
+					"type": "input",
+					"top": 134,
+					"left": 298,
+					"width": 268,
+					"height": 931,
+					"dataSource": "tCol2",
+					"class": "Fixed_10_Courier",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 41,
+					"left": 19,
+					"width": 87,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "Point of Origin:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 67,
+					"left": 19,
+					"width": 87,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "Desintation:"
+				},
+				"weight": {
+					"type": "input",
+					"top": 105,
+					"left": 466,
+					"width": 71,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]Weight:14",
+					"dataSourceTypeHint": "integer",
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 105,
+					"left": 419,
+					"width": 42,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Weight:"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 81,
+					"left": 32,
+					"width": 249,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]Destination:11",
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 54,
+					"left": 32,
+					"width": 247,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "350 Eastpark Dr, Roanoke VA 24019"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 97,
+					"left": 19,
+					"width": 87,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "Carrier:"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 113,
+					"left": 32,
+					"width": 129,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]Carrier:12",
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 97,
+					"left": 171,
+					"width": 87,
+					"height": 16,
+					"class": "LaserPrintLabel",
+					"text": "VehicleID:"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 113,
+					"left": 171,
+					"width": 129,
+					"height": 16,
+					"dataSource": "[WMS_InternalBOLs:163]VehicleID:13",
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	]
+}

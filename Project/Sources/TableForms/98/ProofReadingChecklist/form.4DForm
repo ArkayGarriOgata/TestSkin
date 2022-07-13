@@ -1,0 +1,442 @@
+{
+	"destination": "detailPrinter",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 726,
+	"markerBreak": 726,
+	"markerFooter": 726,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text9": {
+					"type": "text",
+					"top": 47,
+					"left": 244,
+					"width": 46,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Item Nº"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 47,
+					"left": 407,
+					"width": 64,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Control Nº"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 47,
+					"left": 5,
+					"width": 59,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Customer"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 624,
+					"left": 264,
+					"width": 36,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Date"
+				},
+				"ProductCode": {
+					"type": "input",
+					"top": 48,
+					"left": 295,
+					"width": 109,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]ProductCode:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ControlNumber": {
+					"type": "input",
+					"top": 48,
+					"left": 471,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]ControlNumber:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"[CUSTOMER]Name": {
+					"type": "input",
+					"top": 48,
+					"left": 70,
+					"width": 172,
+					"height": 16,
+					"dataSource": "[Customers:16]Name:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DateProofRead": {
+					"type": "input",
+					"top": 624,
+					"left": 390,
+					"width": 84,
+					"height": 16,
+					"dataSource": "[Finished_Goods_Specifications:98]DateProofRead:7",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 6,
+					"left": 6,
+					"width": 166,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/ArkayLogo III.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 17,
+					"left": 262,
+					"width": 277,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "PROOFREADING (ONE UP) CHECKLIST"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 488,
+					"width": 55,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "405-121"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 703,
+					"left": 7,
+					"width": 531,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "1 of 1"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 624,
+					"left": 10,
+					"width": 36,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Sign:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 663,
+					"left": 10,
+					"width": 168,
+					"height": 48,
+					"class": "BaseLabel",
+					"text": "Imaging Manager Approval:\rPlant Manager Approval:\rRev B 1/15/12"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 567,
+					"left": 10,
+					"width": 344,
+					"height": 32,
+					"class": "BaseLabel",
+					"text": "Prints, Customer Copy, customer Spec. Sheet, Form (405-121), and Form FG_Specification are in each folder."
+				},
+				"Line1": {
+					"type": "line",
+					"top": 638,
+					"left": 43,
+					"width": 215,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Text7": {
+					"type": "text",
+					"top": 482,
+					"left": 261,
+					"width": 36,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Date"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 482,
+					"left": 10,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "1st Proofreading by:"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 494,
+					"left": 133,
+					"width": 125,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Line3": {
+					"type": "line",
+					"top": 494,
+					"left": 290,
+					"width": 75,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Text13": {
+					"type": "text",
+					"top": 519,
+					"left": 261,
+					"width": 36,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Date"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 519,
+					"left": 10,
+					"width": 126,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "2nd Proofreading by:"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 531,
+					"left": 138,
+					"width": 120,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Line5": {
+					"type": "line",
+					"top": 531,
+					"left": 290,
+					"width": 75,
+					"height": 1,
+					"strokeWidth": 0.1
+				},
+				"Text15": {
+					"type": "text",
+					"top": 72,
+					"left": 6,
+					"width": 524,
+					"height": 85,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Verify the following using a print of the 'saved' digital file:\r\r1. For the 1-Up Prep art, match the customer supplied art and Prep Order.\r\r2. Two proofreadings required for all 1-Up Prep work."
+				},
+				"Text16": {
+					"type": "text",
+					"top": 164,
+					"left": 12,
+					"width": 129,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "1st  2nd Proofread"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 181,
+					"left": 56,
+					"width": 391,
+					"height": 32,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "1. Following matches the Dylux/Copy Sample/Match print/Customer supplied art:"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 62,
+					"left": 66,
+					"width": 174,
+					"strokeWidth": 0.1
+				},
+				"Line7": {
+					"type": "line",
+					"top": 62,
+					"left": 291,
+					"width": 112,
+					"strokeWidth": 0.1
+				},
+				"Line8": {
+					"type": "line",
+					"top": 62,
+					"left": 470,
+					"width": 65,
+					"height": 1,
+					"strokeWidth": 0.1,
+					"startPoint": "bottomLeft"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 675,
+					"left": 171,
+					"width": 35,
+					"height": 1,
+					"strokeWidth": 0.1,
+					"startPoint": "bottomLeft"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 689,
+					"left": 155,
+					"width": 35,
+					"height": 1,
+					"strokeWidth": 0.1,
+					"startPoint": "bottomLeft"
+				},
+				"Subform": {
+					"type": "subform",
+					"top": 217,
+					"left": 17,
+					"width": 513,
+					"height": 257,
+					"dataSourceTypeHint": "text",
+					"table": 190,
+					"listForm": "RptIncld",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 639,
+					"left": 295,
+					"width": 75,
+					"height": 1,
+					"strokeWidth": 0.1
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

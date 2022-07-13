@@ -1,0 +1,1 @@
+FGL_StageInventory

@@ -1,0 +1,1933 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Vendors",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 979,
+					"height": 730,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"SearchPicker2": {
+					"type": "subform",
+					"top": 68,
+					"left": 35,
+					"width": 198,
+					"height": 30,
+					"dataSource": "vSearch2",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker2.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"memberNew": {
+					"type": "button",
+					"top": 69,
+					"left": 267,
+					"width": 86,
+					"height": 30,
+					"text": "New",
+					"class": "Fixed_Monaca_16",
+					"focusable": false,
+					"method": "ObjectMethods/memberNew.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBox1": {
+					"type": "listbox",
+					"top": 113,
+					"left": 38,
+					"width": 910,
+					"height": 557,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"dataSource": "Form:C1466.listBoxEntities",
+					"currentItemSource": "Form:C1466.clicked",
+					"currentItemPositionSource": "Form:C1466.position",
+					"selectedItemsSource": "Form:C1466.selected",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#B1C4DD",
+					"fontFamily": "Monaco",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/ListBox1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Active",
+							"dataSourceTypeHint": "boolean",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 40,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Act",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.Name",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"variableCalculation": "count",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.DefaultAttn",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Attention",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.Notes",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 350,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Company",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "This:C1470.Phone",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 200,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Phone",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "This:C1470.EmailAddress",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 300,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Email",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "This:C1470.City+\", \"+This:C1470.State+\", \"+This:C1470.Country",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 600,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#B1C4DD",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 16,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Address",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 16,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"OpenMulti": {
+					"type": "checkbox",
+					"top": 697,
+					"left": 36,
+					"width": 120,
+					"height": 21,
+					"sizingY": "move",
+					"text": "Open Multiple",
+					"class": "BaseInformation",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ShowInactive": {
+					"type": "checkbox",
+					"top": 697,
+					"left": 176,
+					"width": 120,
+					"height": 21,
+					"sizingY": "move",
+					"text": "Show Inactive",
+					"class": "BaseInformation",
+					"focusable": false,
+					"method": "ObjectMethods/ShowInactive.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 698,
+					"left": 748,
+					"width": 200,
+					"height": 14,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "UTIL_Num_Entities(Form:C1466.masterTable; Form:C1466.listBoxEntities)",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 978,
+					"height": 60,
+					"sizingX": "grow",
+					"fill": "#6E7F97",
+					"stroke": "#6E7F97"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 20,
+					"left": 826,
+					"width": 122,
+					"height": 20,
+					"sizingX": "move",
+					"stroke": "#FFFFFF",
+					"class": "Form_Title",
+					"text": "Vendor Mgmt"
+				},
+				"Reports1": {
+					"type": "dropdown",
+					"top": 74,
+					"left": 464,
+					"width": 23,
+					"height": 27,
+					"dataSource": "<>aVenRptPop",
+					"focusable": false,
+					"method": "ObjectMethods/Reports1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 74,
+					"left": 390,
+					"width": 75,
+					"height": 24,
+					"class": "Fixed_Monaca_16",
+					"text": "Reports:"
+				},
+				"btnVenVVariable9": {
+					"type": "button",
+					"top": 698,
+					"left": 322,
+					"width": 95,
+					"height": 18,
+					"dataSource": "ibModV",
+					"text": "old Vendor Mod",
+					"class": "LittleButtons",
+					"method": "ObjectMethods/btnVenVVariable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"memberCopy": {
+					"type": "button",
+					"top": 69,
+					"left": 863,
+					"width": 86,
+					"height": 30,
+					"action": "cancel",
+					"text": "Copy ID#",
+					"method": "ObjectMethods/memberCopy.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 558,
+					"left": 51,
+					"width": 500,
+					"height": 167,
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 370,
+					"left": 51,
+					"width": 500,
+					"height": 167,
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"Attn": {
+					"type": "input",
+					"top": 109,
+					"left": 149,
+					"width": 254,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.DefaultAttn",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "contact's name",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"categoryName": {
+					"type": "input",
+					"top": 144,
+					"left": 149,
+					"width": 394,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Name",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "Company name",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 180,
+					"left": 149,
+					"width": 394,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.EmailAddress",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "email address",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/EmailAddress"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 219,
+					"left": 149,
+					"width": 247,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Web_URL",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "web address",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WorkPhone": {
+					"type": "input",
+					"top": 256,
+					"left": 149,
+					"width": 114,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Phone",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "main",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/phoneFilterRelax"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"HomePhone": {
+					"type": "input",
+					"top": 256,
+					"left": 289,
+					"width": 114,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Fax",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "fax",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/phoneFilterRelax"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"MobilePhone": {
+					"type": "input",
+					"top": 256,
+					"left": 429,
+					"width": 114,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.NightPhone",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "other",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/phoneFilterRelax"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 292,
+					"left": 149,
+					"width": 394,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.COC_FSC_SFI",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "Chain of Custody for FSC/SFI",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 328,
+					"left": 149,
+					"width": 187,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.VendorType",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "vendor type",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/VendorTypes"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Title": {
+					"type": "input",
+					"top": 328,
+					"left": 430,
+					"width": 34,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Prefix",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"memberHUB": {
+					"type": "checkbox",
+					"top": 328,
+					"left": 493,
+					"width": 50,
+					"height": 18,
+					"dataSource": "Form:C1466.editEntity.HUB",
+					"text": "HUB",
+					"class": "BaseNonEnter",
+					"focusable": false,
+					"method": "ObjectMethods/memberHUB.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 386,
+					"left": 149,
+					"width": 374,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Address1",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "address line 1",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 420,
+					"left": 149,
+					"width": 374,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Address2",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "address line 2",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 458,
+					"left": 149,
+					"width": 143,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.City",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "city",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 458,
+					"left": 353,
+					"width": 49,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.State",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "st",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 458,
+					"left": 449,
+					"width": 74,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Zip",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "zip",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 494,
+					"left": 149,
+					"width": 374,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Country",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "country",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 574,
+					"left": 149,
+					"width": 374,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.ArkayAcctNum",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "arkay's account number with vendor",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 608,
+					"left": 149,
+					"width": 374,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.Std_Terms",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "standard terms",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Terms"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 646,
+					"left": 149,
+					"width": 383,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.ShipVia",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "carrier",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ShipVia"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 682,
+					"left": 149,
+					"width": 374,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.FOB",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "responsibility",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/FOBs"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 386,
+					"left": 622,
+					"width": 294,
+					"height": 323,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.editEntity.Notes",
+					"class": "BaseNonEnter",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "notes",
+					"scrollbarVertical": "visible",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 16,
+					"left": 573,
+					"width": 375,
+					"height": 333,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"lockedColumnCount": 1,
+					"dataSource": "Form:C1466.editEntity.PURCHASE_ORDER_ITEMS",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#E2E6EC",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column8",
+							"dataSource": "This:C1470.POItemKey",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 90,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2E6EC",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "PO Item",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.Raw_Matl_Code",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 180,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2E6EC",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "RM Code",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.Qty_Open",
+							"dataSourceTypeHint": "number",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"numberFormat": "###,###,##0",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2E6EC",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "OpenQty",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "This:C1470.ReqdDate",
+							"dataSourceTypeHint": "date",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"dateFormat": "shortCentury",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2E6EC",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Required",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "This:C1470.RecvdDate",
+							"dataSourceTypeHint": "date",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"dateFormat": "shortCentury",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E2E6EC",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Received",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 370,
+					"left": 591,
+					"width": 360,
+					"height": 353,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 94,
+					"left": 19,
+					"width": 547,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 72,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bFirst.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 60,
+					"width": 72,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "First"
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 144,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bPrevious.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 64,
+					"left": 132,
+					"width": 78,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Previous"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 216,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 204,
+					"width": 72,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Next"
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 288,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bLast.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 64,
+					"left": 276,
+					"width": 72,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Last"
+				},
+				"memberDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 360,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/memberDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 348,
+					"width": 72,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 64,
+					"left": 420,
+					"width": 72,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 64,
+					"left": 492,
+					"width": 72,
+					"height": 17,
+					"stroke": "#8494B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"bCancel1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 436,
+					"width": 48,
+					"height": 48,
+					"action": "firstPage",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bCancel1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"memberValidate1": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 506,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/memberValidate1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 110,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Attention"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 145,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Name"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 180,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Email"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 256,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Phone"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 290,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "COC#"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 325,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Type^"
+				},
+				"Line": {
+					"type": "line",
+					"top": 350,
+					"left": 425,
+					"width": 47,
+					"stroke": "#DDDDDD"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 131,
+					"left": 144,
+					"width": 267,
+					"stroke": "#DDDDDD"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 166,
+					"left": 144,
+					"width": 407,
+					"stroke": "#DDDDDD"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 201,
+					"left": 144,
+					"width": 407,
+					"stroke": "#DDDDDD"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 278,
+					"left": 144,
+					"width": 127,
+					"stroke": "#DDDDDD"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 278,
+					"left": 284,
+					"width": 127,
+					"stroke": "#DDDDDD"
+				},
+				"Line20": {
+					"type": "line",
+					"top": 278,
+					"left": 424,
+					"width": 127,
+					"stroke": "#DDDDDD"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 314,
+					"left": 144,
+					"width": 407,
+					"stroke": "#DDDDDD"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 350,
+					"left": 144,
+					"width": 200,
+					"stroke": "#DDDDDD"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 256,
+					"left": 112,
+					"width": 33,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "W"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 256,
+					"left": 252,
+					"width": 33,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "F"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 256,
+					"left": 392,
+					"width": 33,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"textAlign": "right",
+					"text": "O"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 370,
+					"left": 19,
+					"width": 33,
+					"height": 167,
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 390,
+					"left": 26,
+					"width": 18,
+					"height": 129,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textAngle": 270,
+					"text": "Address"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 387,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Street"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 459,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "City"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 459,
+					"left": 309,
+					"width": 33,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "State"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 495,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Country"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 408,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 480,
+					"left": 144,
+					"width": 147,
+					"stroke": "#DDDDDD"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 480,
+					"left": 348,
+					"width": 62,
+					"stroke": "#DDDDDD"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 516,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Line14": {
+					"type": "line",
+					"top": 480,
+					"left": 444,
+					"width": 87,
+					"stroke": "#DDDDDD"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 459,
+					"left": 418,
+					"width": 25,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Zip"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 421,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Suite"
+				},
+				"Line15": {
+					"type": "line",
+					"top": 442,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Title1": {
+					"type": "input",
+					"top": 64,
+					"left": 15,
+					"width": 39,
+					"height": 17,
+					"dataSource": "Form:C1466.editEntity.ID",
+					"stroke": "#9AA6BF",
+					"class": "BaseNonEnter",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"memberActive": {
+					"type": "checkbox",
+					"top": 5,
+					"left": 5,
+					"width": 59,
+					"height": 18,
+					"dataSource": "Form:C1466.editEntity.Active",
+					"text": "Active",
+					"class": "BaseInformation",
+					"focusable": false,
+					"method": "ObjectMethods/memberActive.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 325,
+					"left": 358,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "RM Prefix"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 558,
+					"left": 19,
+					"width": 33,
+					"height": 167,
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 578,
+					"left": 26,
+					"width": 18,
+					"height": 129,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textAngle": 270,
+					"text": "Accounting"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 575,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Acct #"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 647,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Ship Via^"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 683,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Incoterm^"
+				},
+				"Line16": {
+					"type": "line",
+					"top": 596,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Line17": {
+					"type": "line",
+					"top": 668,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Line19": {
+					"type": "line",
+					"top": 704,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 609,
+					"left": 69,
+					"width": 73,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Std Terms^"
+				},
+				"Line22": {
+					"type": "line",
+					"top": 630,
+					"left": 144,
+					"width": 387,
+					"stroke": "#DDDDDD"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 370,
+					"left": 559,
+					"width": 33,
+					"height": 353,
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 385,
+					"left": 565,
+					"width": 18,
+					"height": 129,
+					"sizingY": "move",
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"textAngle": 270,
+					"text": "Notes"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 219,
+					"left": 69,
+					"width": 81,
+					"height": 17,
+					"stroke": "#8594B2",
+					"class": "BaseNonEnter",
+					"text": "Web URL"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 241,
+					"left": 144,
+					"width": 260,
+					"stroke": "#DDDDDD"
+				}
+			}
+		}
+	],
+	"editor": {
+		"defaultView": "View 1",
+		"activeView": "View 7",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Line7"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bFirstlabel",
+					"bPrevious",
+					"bPreviouslabel",
+					"bNext",
+					"bNextlabel",
+					"bLast",
+					"bLastlabel",
+					"memberDelete",
+					"bDeletelabel",
+					"bCancellabel",
+					"bValidatelabel",
+					"bCancel1",
+					"memberValidate1"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+QryPurgeEsts(->r10; ->r30; ->r50; "Contract")

@@ -1,0 +1,1 @@
+//SET CHANNEL(10;"Label_"+sJMI+".zpl")  //sJMI done in the print button

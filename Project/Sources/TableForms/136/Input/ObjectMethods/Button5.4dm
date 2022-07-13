@@ -1,0 +1,16 @@
+CONFIRM:C162("Remove block "+[ProductionSchedules_BlockTimes:136]BlockId:1+" from ProductionSchedules and JobMasterLog?"; "Remove"; "No Change")
+If (ok=1)
+	$block:=[ProductionSchedules_BlockTimes:136]BlockId:1+"@"
+	READ WRITE:C146([Jobs:15])
+	READ WRITE:C146([Job_Forms:42])
+	READ WRITE:C146([Job_Forms_Master_Schedule:67])
+	READ WRITE:C146([ProductionSchedules:110])
+	QUERY:C277([Jobs:15]; [Jobs:15]JobNo:1=(Num:C11([ProductionSchedules_BlockTimes:136]BlockId:1)))
+	util_DeleteSelection(->[Jobs:15])
+	QUERY:C277([Job_Forms:42]; [Job_Forms:42]JobFormID:5=$block)
+	util_DeleteSelection(->[Job_Forms:42])
+	QUERY:C277([Job_Forms_Master_Schedule:67]; [Job_Forms_Master_Schedule:67]JobForm:4=$block)
+	util_DeleteSelection(->[Job_Forms_Master_Schedule:67])
+	QUERY:C277([ProductionSchedules:110]; [ProductionSchedules:110]JobSequence:8=$block)
+	util_DeleteSelection(->[ProductionSchedules:110])
+End if 

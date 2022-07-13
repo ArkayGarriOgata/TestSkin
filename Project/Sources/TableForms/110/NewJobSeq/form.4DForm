@@ -1,0 +1,407 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Add job to Schedule",
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 315,
+					"height": 21,
+					"fill": "#AAAAAA"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 54,
+					"left": 15,
+					"width": 74,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Customer:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 75,
+					"left": 15,
+					"width": 74,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Line:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 32,
+					"left": 209,
+					"width": 44,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Hours:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 127,
+					"left": 79,
+					"width": 37,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Date:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 127,
+					"left": 216,
+					"width": 35,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Time:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 54,
+					"left": 88,
+					"width": 213,
+					"height": 15,
+					"dataSource": "sCriterion2",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 75,
+					"left": 88,
+					"width": 213,
+					"height": 15,
+					"dataSource": "sCriterion3",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 32,
+					"left": 258,
+					"width": 43,
+					"height": 15,
+					"dataSource": "sCriterion4",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;:\"",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 32,
+					"left": 102,
+					"width": 103,
+					"height": 15,
+					"dataSource": "sCriterion9",
+					"class": "BaseField",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button2": {
+					"type": "radio",
+					"top": 100,
+					"left": 14,
+					"width": 62,
+					"height": 19,
+					"dataSource": "rb2",
+					"text": "Float",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button1": {
+					"type": "radio",
+					"top": 125,
+					"left": 14,
+					"width": 62,
+					"height": 19,
+					"dataSource": "rb1",
+					"text": "Fixed",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Radio Button3": {
+					"type": "radio",
+					"top": 149,
+					"left": 14,
+					"width": 131,
+					"height": 22,
+					"dataSource": "rb3",
+					"text": "Consume Block:",
+					"class": "BaseRadioButton",
+					"radioGroup": "Group1",
+					"method": "ObjectMethods/Radio Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 182,
+					"left": 149,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 182,
+					"left": 230,
+					"width": 65,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Add",
+					"class": "BaseButtons",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 152,
+					"left": 147,
+					"width": 53,
+					"height": 15,
+					"dataSource": "sCriterion6",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 127,
+					"left": 119,
+					"width": 73,
+					"height": 15,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 127,
+					"left": 254,
+					"width": 47,
+					"height": 15,
+					"dataSource": "tTime",
+					"dataSourceTypeHint": "time",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"entryFilter": "!0&9##:##",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 102,
+					"left": 137,
+					"width": 43,
+					"height": 15,
+					"dataSource": "sCriterion5",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Library Picture14": {
+					"type": "picture",
+					"top": 129,
+					"left": 196,
+					"width": 18,
+					"height": 13,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Invisible Button10": {
+					"type": "button",
+					"top": 129,
+					"left": 196,
+					"width": 18,
+					"height": 13,
+					"dataSource": "bPressPicker",
+					"text": "Button",
+					"display": false,
+					"method": "ObjectMethods/Invisible Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 102,
+					"left": 79,
+					"width": 54,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Priority:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 32,
+					"left": 15,
+					"width": 90,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "JobSequence:"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 181,
+					"left": 297,
+					"width": 5,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bOk",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 3,
+					"left": 4,
+					"width": 298,
+					"height": 15,
+					"stroke": "#FFFFFF",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "<ttText>"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Radio Button2",
+				"Radio Button1",
+				"Radio Button3"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

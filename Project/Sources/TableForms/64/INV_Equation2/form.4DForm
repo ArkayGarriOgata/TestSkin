@@ -1,0 +1,710 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": [
+		41,
+		41
+	],
+	"markerBody": 41,
+	"markerBreak": [
+		59,
+		83
+	],
+	"markerFooter": 85,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 2,
+					"width": 135,
+					"height": 14,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "FG_Inventory_Summary"
+				},
+				"vDate": {
+					"type": "input",
+					"top": 4,
+					"left": 138,
+					"width": 100,
+					"height": 11,
+					"dataSource": "vDate",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vDate.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 27,
+					"left": 3,
+					"width": 140,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "ProductCode"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 27,
+					"left": 171,
+					"width": 59,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "$Beg. Bal."
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 43,
+					"left": 168,
+					"width": 62,
+					"height": 14,
+					"dataSource": "iBB",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 43,
+					"left": 238,
+					"width": 62,
+					"height": 14,
+					"dataSource": "iIN",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 43,
+					"left": 310,
+					"width": 62,
+					"height": 14,
+					"dataSource": "iOUT",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 43,
+					"left": 433,
+					"width": 62,
+					"height": 14,
+					"dataSource": "iEB",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 43,
+					"left": 497,
+					"width": 52,
+					"height": 14,
+					"dataSource": "iERR",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 43,
+					"left": 4,
+					"width": 140,
+					"height": 14,
+					"dataSource": "[Finished_Goods_Inv_Summaries:64]ProductCode:11",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 27,
+					"left": 238,
+					"width": 59,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "$Transfers IN"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 27,
+					"left": 298,
+					"width": 76,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "$Transfers OUT"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 27,
+					"left": 436,
+					"width": 59,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "$End Bal."
+				},
+				"Text7": {
+					"type": "text",
+					"top": 27,
+					"left": 491,
+					"width": 59,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "$ERROR"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 5,
+					"left": 515,
+					"width": 30,
+					"height": 11,
+					"dataSource": "iPage",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 43,
+					"left": 377,
+					"width": 52,
+					"height": 14,
+					"dataSource": "iADJ",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text16": {
+					"type": "text",
+					"top": 27,
+					"left": 378,
+					"width": 59,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"text": "$Adjustment"
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 16,
+					"left": 177,
+					"width": 51,
+					"height": 11,
+					"dataSource": "dDateBegin",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable29.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 16,
+					"left": 442,
+					"width": 51,
+					"height": 11,
+					"dataSource": "dDateEnd",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable30.4dm",
+					"events": [
+						"onLoad",
+						"onHeader"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 64,
+					"left": 168,
+					"width": 62,
+					"height": 13,
+					"dataSource": "rb1",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable32": {
+					"type": "input",
+					"top": 64,
+					"left": 238,
+					"width": 62,
+					"height": 13,
+					"dataSource": "rb2",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable33": {
+					"type": "input",
+					"top": 64,
+					"left": 310,
+					"width": 62,
+					"height": 13,
+					"dataSource": "rB3",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable34": {
+					"type": "input",
+					"top": 64,
+					"left": 433,
+					"width": 62,
+					"height": 13,
+					"dataSource": "rb5",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable35": {
+					"type": "input",
+					"top": 64,
+					"left": 497,
+					"width": 52,
+					"height": 13,
+					"dataSource": "rb6",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable36": {
+					"type": "input",
+					"top": 64,
+					"left": 377,
+					"width": 52,
+					"height": 13,
+					"dataSource": "rb4",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text25": {
+					"type": "text",
+					"top": 65,
+					"left": 13,
+					"width": 140,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "TOTALS:"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 61,
+					"left": 100,
+					"width": 449,
+					"height": 1
+				},
+				"Text8": {
+					"type": "text",
+					"top": 3,
+					"left": 242,
+					"width": 56,
+					"height": 14,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "by Cost"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 41,
+					"left": 807,
+					"width": 56
+				},
+				"Line2": {
+					"type": "line",
+					"top": 59,
+					"left": 807,
+					"width": 56
+				},
+				"Line5": {
+					"type": "line",
+					"top": 83,
+					"left": 807,
+					"width": 56
+				},
+				"Line4": {
+					"type": "line",
+					"top": 85,
+					"left": 808,
+					"width": 56
+				},
+				"Text9": {
+					"type": "text",
+					"top": 29,
+					"left": 869,
+					"width": 37,
+					"height": 72,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"text": "H,H1,D\r\rB1\r\rB0\rF"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

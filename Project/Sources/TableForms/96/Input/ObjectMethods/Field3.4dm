@@ -1,0 +1,1 @@
+[WMS_SerializedShippingLabels:96]CartonDesc:7:=Uppercase:C13([WMS_SerializedShippingLabels:96]CartonDesc:7)

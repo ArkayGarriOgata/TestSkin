@@ -1,0 +1,2 @@
+rReal1:=12
+t2:="INVENTORY 12 MO & UP"

@@ -1,0 +1,5 @@
+Pjt_setReferId(pjtId)
+FG_PrepServiceNew(""; pjtId)
+ControlCtrManageLB("ArtFillLB")
+//FORM GOTO PAGE(ppHome)
+//SELECT LIST ITEMS BY POSITION(tc_PjtControlCtr;1)

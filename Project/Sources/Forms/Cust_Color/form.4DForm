@@ -1,0 +1,275 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "BoxBackGround",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Information": {
+					"type": "text",
+					"top": 326,
+					"left": 16,
+					"width": 236,
+					"height": 33,
+					"text": "To add/remove a color modify method Cust_Color_SetExample"
+				},
+				"BoxBackGround": {
+					"type": "rectangle",
+					"top": 54,
+					"left": 128,
+					"width": 93,
+					"height": 120,
+					"fill": "#000000",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"BoxText": {
+					"type": "rectangle",
+					"top": 54,
+					"left": 13,
+					"width": 93,
+					"height": 120,
+					"fill": "#B1C4DD",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"TitleBackGround": {
+					"type": "text",
+					"top": 38,
+					"left": 128,
+					"width": 93,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"text": "Back Ground"
+				},
+				"TitleText": {
+					"type": "text",
+					"top": 38,
+					"left": 13,
+					"width": 93,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "center",
+					"text": "Text"
+				},
+				"TextBlack": {
+					"type": "radio",
+					"top": 59,
+					"left": 16,
+					"width": 90,
+					"height": 13,
+					"text": "Black",
+					"class": "Form_Label",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/TextBlack.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TextGrey": {
+					"type": "radio",
+					"top": 81,
+					"left": 16,
+					"width": 90,
+					"height": 13,
+					"text": "Grey",
+					"class": "Form_Label",
+					"stroke": "#696969",
+					"focusable": false,
+					"method": "ObjectMethods/TextGrey.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TextRed": {
+					"type": "radio",
+					"top": 125,
+					"left": 16,
+					"width": 90,
+					"height": 13,
+					"text": "Red",
+					"class": "Form_Label",
+					"stroke": "#FF0000",
+					"focusable": false,
+					"method": "ObjectMethods/TextRed.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TextPurple": {
+					"type": "radio",
+					"top": 103,
+					"left": 16,
+					"width": 90,
+					"height": 13,
+					"text": "Purple",
+					"class": "Form_Label",
+					"stroke": "#800080",
+					"focusable": false,
+					"method": "ObjectMethods/TextPurple.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"TextBlue": {
+					"type": "radio",
+					"top": 148,
+					"left": 16,
+					"width": 90,
+					"height": 13,
+					"dataSource": "TextBlue",
+					"text": "Blue",
+					"class": "Form_Label",
+					"stroke": "#0000CD",
+					"focusable": false,
+					"method": "ObjectMethods/TextBlue.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BackWhite": {
+					"type": "radio",
+					"top": 59,
+					"left": 131,
+					"width": 90,
+					"height": 13,
+					"text": "White",
+					"class": "Form_Label",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"method": "ObjectMethods/BackWhite.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BackYellow": {
+					"type": "radio",
+					"top": 81,
+					"left": 131,
+					"width": 90,
+					"height": 13,
+					"text": "Yellow",
+					"class": "Form_Label",
+					"stroke": "#FFFF00",
+					"focusable": false,
+					"method": "ObjectMethods/BackYellow.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BackGold": {
+					"type": "radio",
+					"top": 103,
+					"left": 131,
+					"width": 90,
+					"height": 13,
+					"text": "Gold",
+					"class": "Form_Label",
+					"stroke": "#FFE026",
+					"focusable": false,
+					"method": "ObjectMethods/BackGold.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BackSteelBlue": {
+					"type": "radio",
+					"top": 125,
+					"left": 131,
+					"width": 90,
+					"height": 13,
+					"text": "Steel Blue",
+					"class": "Form_Label",
+					"stroke": "#B1C4DD",
+					"focusable": false,
+					"method": "ObjectMethods/BackSteelBlue.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BackGreen": {
+					"type": "radio",
+					"top": 148,
+					"left": 131,
+					"width": 90,
+					"height": 13,
+					"text": "Green",
+					"class": "Form_Label",
+					"stroke": "#008000",
+					"focusable": false,
+					"method": "ObjectMethods/BackGreen.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 184,
+					"left": 153,
+					"width": 68,
+					"height": 29,
+					"text": "Button",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 184,
+					"left": 76,
+					"width": 68,
+					"height": 29,
+					"text": "Button",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ExampleOfColor": {
+					"type": "text",
+					"top": 12,
+					"left": 13,
+					"width": 208,
+					"height": 20,
+					"fill": "automatic",
+					"class": "Form_Title",
+					"textAlign": "center",
+					"text": "Example of Color"
+				},
+				"Cust_Color_OnLoad": {
+					"type": "button",
+					"top": 286,
+					"left": 21,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/Cust_Color_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				}
+			}
+		}
+	]
+}

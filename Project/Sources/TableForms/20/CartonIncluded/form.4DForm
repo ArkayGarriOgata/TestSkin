@@ -1,0 +1,581 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 34,
+	"markerBreak": 34,
+	"markerFooter": 34,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 90
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 0,
+					"width": 613,
+					"height": 18,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 38,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": " Seq"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 39,
+					"width": 38,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "C/C"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 78,
+					"width": 82,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Name"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 250,
+					"width": 58,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Gross"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 161,
+					"width": 45,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "MR"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 422,
+					"width": 64,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "$ Labor"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 487,
+					"width": 71,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "$ Overhead"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 0,
+					"left": 358,
+					"width": 63,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Net"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 18,
+					"left": 80,
+					"width": 75,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]CostCtrName:2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 18,
+					"left": 248,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]Qty_Gross:22",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 18,
+					"left": 359,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]Qty_Net:24",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 18,
+					"left": 422,
+					"width": 59,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]CostLabor:13",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;-$###,##0.00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 18,
+					"left": 488,
+					"width": 62,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]CostOverhead:15",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "$###,##0.00;-$###,##0.00",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 18,
+					"left": 3,
+					"width": 29,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]Sequence:5",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 18,
+					"left": 44,
+					"width": 29,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]CostCtrID:4",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 0,
+					"left": 207,
+					"width": 42,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Run"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 18,
+					"left": 167,
+					"width": 33,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]MakeReadyHrs:30",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_5_2"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 18,
+					"left": 207,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]RunningHrs:32",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_5_2"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 0,
+					"left": 309,
+					"width": 48,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Waste"
+				},
+				"Field10": {
+					"type": "input",
+					"top": 18,
+					"left": 313,
+					"width": 39,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]Qty_Waste:23",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 18,
+					"left": 158,
+					"width": 10,
+					"height": 14,
+					"dataSource": "tName",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 18,
+					"left": 35,
+					"width": 8,
+					"height": 14,
+					"dataSource": "t2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 0,
+					"left": 559,
+					"width": 54,
+					"height": 13,
+					"fill": "#7F93FF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Out Srv"
+				},
+				"Field11": {
+					"type": "checkbox",
+					"top": 18,
+					"left": 564,
+					"width": 30,
+					"height": 13,
+					"dataSource": "[Estimates_Machines:20]OutSideService:33",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 613,
+					"stroke": "#0000FF"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

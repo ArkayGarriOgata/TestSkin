@@ -1,0 +1,1 @@
+HIDE PROCESS:C324(<>StatusBar)

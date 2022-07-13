@@ -1,0 +1,516 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 17,
+	"markerBody": 35,
+	"markerBreak": 35,
+	"markerFooter": 35,
+	"events": [
+		"onClick",
+		"onDisplayDetail",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 1,
+					"width": 531,
+					"height": 18,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 30,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"text": " Seq"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 31,
+					"width": 29,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "C/C"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 61,
+					"width": 88,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Name"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 150,
+					"width": 51,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex1"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 202,
+					"width": 51,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex2"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 0,
+					"left": 254,
+					"width": 51,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex3"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 0,
+					"left": 306,
+					"width": 51,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex4"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 0,
+					"left": 436,
+					"width": 51,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex7"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 0,
+					"left": 358,
+					"width": 39,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex5"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 0,
+					"left": 398,
+					"width": 37,
+					"height": 14,
+					"fill": "#0099FF",
+					"stroke": "#FFFFFF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"text": "Flex6"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 19,
+					"left": 2,
+					"width": 23,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Seq_Num:3",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": "000",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 20,
+					"left": 27,
+					"width": 8,
+					"height": 10,
+					"dataSource": "t2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 19,
+					"left": 37,
+					"width": 23,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]CostCenterID:4",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 19,
+					"left": 62,
+					"width": 85,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]CostCtrName:5",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 19,
+					"left": 151,
+					"width": 45,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field1:12",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 19,
+					"left": 203,
+					"width": 45,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field2:13",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 19,
+					"left": 255,
+					"width": 45,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field3:14",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 19,
+					"left": 307,
+					"width": 45,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field4:15",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "checkbox",
+					"top": 19,
+					"left": 369,
+					"width": 13,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field5:16",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field9": {
+					"type": "checkbox",
+					"top": 19,
+					"left": 409,
+					"width": 11,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field6:17",
+					"enterable": false,
+					"text": " ",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 19,
+					"left": 437,
+					"width": 45,
+					"height": 13,
+					"dataSource": "[Process_Specs_Machines:28]Flex_Field7:18",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 16,
+					"left": 1,
+					"width": 486,
+					"stroke": "#0000FF"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

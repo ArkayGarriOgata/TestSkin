@@ -1,0 +1,237 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 10,
+					"left": 10,
+					"width": 247,
+					"height": 222,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Select Options"
+				},
+				"chk7": {
+					"type": "checkbox",
+					"top": 33,
+					"left": 36,
+					"width": 203,
+					"height": 18,
+					"dataSource": "bCalc",
+					"text": "Calculate Selected Estimates",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/chk7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk": {
+					"type": "checkbox",
+					"top": 55,
+					"left": 55,
+					"width": 183,
+					"height": 18,
+					"dataSource": "bTestRates",
+					"text": "Use Test Rate Standards",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/chk.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk1": {
+					"type": "checkbox",
+					"top": 77,
+					"left": 55,
+					"width": 183,
+					"height": 18,
+					"dataSource": "bTrates",
+					"text": "Use Transient Run Rates",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/chk1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk2": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 55,
+					"width": 183,
+					"height": 18,
+					"dataSource": "bAddPlate",
+					"text": "Add Plate Making (403)",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/chk2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk6": {
+					"type": "checkbox",
+					"top": 123,
+					"left": 35,
+					"width": 203,
+					"height": 18,
+					"dataSource": "bPrice",
+					"text": "Find Last Price",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick"
+					]
+				},
+				"chk3": {
+					"type": "radio",
+					"top": 159,
+					"left": 35,
+					"width": 203,
+					"height": 18,
+					"dataSource": "rb1",
+					"text": "Print to PDF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk4": {
+					"type": "radio",
+					"top": 181,
+					"left": 35,
+					"width": 203,
+					"height": 18,
+					"dataSource": "rb2",
+					"text": "Print to Printer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk5": {
+					"type": "radio",
+					"top": 203,
+					"left": 35,
+					"width": 203,
+					"height": 18,
+					"dataSource": "rb3",
+					"text": "Don't Print",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"radioGroup": "Group1",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 246,
+					"left": 19,
+					"width": 100,
+					"height": 19,
+					"dataSource": "b",
+					"action": "cancel",
+					"text": "Cancel",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 246,
+					"left": 143,
+					"width": 100,
+					"height": 19,
+					"dataSource": "Button1",
+					"action": "accept",
+					"text": "Run",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 150,
+					"left": 41,
+					"width": 179
+				}
+			},
+			"entryOrder": [
+				"chk7",
+				"chk",
+				"chk1",
+				"chk2",
+				"chk6",
+				"Group1",
+				"chk3",
+				"chk4",
+				"chk5",
+				"Button1",
+				"Button2"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"chk3",
+				"chk4",
+				"chk5"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

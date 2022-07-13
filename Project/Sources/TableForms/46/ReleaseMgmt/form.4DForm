@@ -1,0 +1,1226 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 125,
+	"markerFooter": 167,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture8": {
+					"type": "picture",
+					"top": 10,
+					"left": 758,
+					"width": 292,
+					"height": 55,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26567.png"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 74,
+					"left": 0,
+					"height": 48,
+					"stroke": "#A8A8A8"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 142,
+					"left": 923,
+					"height": 48,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 96,
+					"left": 1036,
+					"width": 415,
+					"height": 26,
+					"stroke": "#FFFFFF"
+				},
+				"BackRect": {
+					"type": "rectangle",
+					"top": 97,
+					"left": 1036,
+					"width": 414,
+					"height": 23,
+					"stroke": "transparent"
+				},
+				"Picture9": {
+					"type": "picture",
+					"top": 74,
+					"left": 1036,
+					"width": 415,
+					"height": 22,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/List Header Bar.png"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 120,
+					"left": 1036,
+					"width": 415,
+					"stroke": "#7F93FF",
+					"strokeWidth": 0.1
+				},
+				"Line2": {
+					"type": "line",
+					"top": 121,
+					"left": 1036,
+					"width": 415,
+					"stroke": "#AAAAAA"
+				}
+			}
+		},
+		{
+			"objects": {
+				"aField1": {
+					"type": "input",
+					"top": 101,
+					"left": 2,
+					"width": 58,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]OrderLine:4",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 101,
+					"left": 61,
+					"width": 11,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]PayU:31",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "P; ; ",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"aField4": {
+					"type": "input",
+					"top": 101,
+					"left": 75,
+					"width": 66,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Sched_Date:5",
+					"dataSourceTypeHint": "date",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QField5": {
+					"type": "input",
+					"top": 101,
+					"left": 149,
+					"width": 76,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Sched_Qty:6",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 101,
+					"left": 235,
+					"width": 13,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]B_O_L_number:17",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": "•; ; ",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QField7": {
+					"type": "input",
+					"top": 101,
+					"left": 248,
+					"width": 12,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]THC_State:39",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "##; ;o",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QField15": {
+					"type": "input",
+					"top": 101,
+					"left": 263,
+					"width": 41,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Expedite:35",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Expedite"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QVariable2": {
+					"type": "input",
+					"top": 101,
+					"left": 308,
+					"width": 68,
+					"height": 16,
+					"dataSource": "r2",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 101,
+					"left": 379,
+					"width": 16,
+					"height": 16,
+					"dataSource": "sStatus",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QVariable3": {
+					"type": "input",
+					"top": 101,
+					"left": 399,
+					"width": 51,
+					"height": 16,
+					"dataSource": "r3",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LField8": {
+					"type": "input",
+					"top": 102,
+					"left": 464,
+					"width": 42,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Shipto:10",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ModeData": {
+					"type": "input",
+					"top": 101,
+					"left": 504,
+					"width": 136,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Mode:56",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/ShippingMode"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LField9": {
+					"type": "input",
+					"top": 102,
+					"left": 652,
+					"width": 97,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]ProductCode:11",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LField10": {
+					"type": "input",
+					"top": 101,
+					"left": 749,
+					"width": 71,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]CustomerName:24",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LField11": {
+					"type": "input",
+					"top": 101,
+					"left": 827,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]CustomerLine:28",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 101,
+					"left": 893,
+					"width": 38,
+					"height": 16,
+					"dataSource": "t10",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 102,
+					"left": 937,
+					"width": 96,
+					"height": 15,
+					"dataSource": "tText",
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field13": {
+					"type": "input",
+					"top": 101,
+					"left": 1040,
+					"width": 58,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Promise_Date:32",
+					"dataSourceTypeHint": "date",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury"
+				},
+				"Field14": {
+					"type": "input",
+					"top": 101,
+					"left": 1104,
+					"width": 38,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]Actual_Date:7",
+					"dataSourceTypeHint": "date",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury"
+				},
+				"LField3": {
+					"type": "input",
+					"top": 102,
+					"left": 1152,
+					"width": 71,
+					"height": 15,
+					"dataSource": "[Customers_ReleaseSchedules:46]CustomerRefer:3",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LField1": {
+					"type": "input",
+					"top": 102,
+					"left": 1230,
+					"width": 91,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]PONumber:21",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LField2": {
+					"type": "input",
+					"top": 102,
+					"left": 1333,
+					"width": 91,
+					"height": 15,
+					"dataSource": "[Customers_Order_Lines:41]Status:9",
+					"class": "BaseLabel",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 40,
+					"width": 95,
+					"height": 16,
+					"dataSource": "cbCalcInv",
+					"text": "Available FG",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 149,
+					"width": 67,
+					"height": 16,
+					"dataSource": "cbTooling",
+					"text": "Tooling",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 129,
+					"left": 263,
+					"width": 84,
+					"height": 15,
+					"dataSource": "bStdNeed",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Need Std",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 128,
+					"left": 464,
+					"width": 85,
+					"height": 15,
+					"dataSource": "bNewDate",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "New Date",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SameDestination": {
+					"type": "button",
+					"top": 128,
+					"left": 561,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bShipTos",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Same ShipTo",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/SameDestination.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 128,
+					"left": 688,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bLate",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Tag Expedite...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 133,
+					"left": 363,
+					"width": 92,
+					"height": 20,
+					"dataSource": "bPrint",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Print Pick...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 129,
+					"left": 825,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bLate",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Shipped Late...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 129,
+					"left": 946,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bLate",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Ontime Search",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "checkbox",
+					"top": 148,
+					"left": 40,
+					"width": 58,
+					"height": 16,
+					"dataSource": "cbFcst",
+					"text": "Ready",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "checkbox",
+					"top": 148,
+					"left": 149,
+					"width": 83,
+					"height": 16,
+					"dataSource": "cbOpenJobs",
+					"text": "Open Jobs",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 148,
+					"left": 263,
+					"width": 84,
+					"height": 15,
+					"dataSource": "bStdNeed",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Sent Std",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 148,
+					"left": 463,
+					"width": 85,
+					"height": 15,
+					"dataSource": "bAskMe",
+					"text": "Ask Me",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 148,
+					"left": 561,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bCOA",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Print Button"
+					},
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "COA Required",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WaitingMode": {
+					"type": "button",
+					"top": 148,
+					"left": 688,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bMode",
+					"shortcutKey": "[Enter]",
+					"text": "Waiting Mode",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/WaitingMode.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 147,
+					"left": 825,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bLate",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Sched Late...",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OddLotMultiples": {
+					"type": "button",
+					"top": 147,
+					"left": 946,
+					"width": 112,
+					"height": 15,
+					"dataSource": "bOdd",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Odd Lots",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/OddLotMultiples.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 173,
+					"left": 940,
+					"width": 55,
+					"height": 20,
+					"dataSource": "Button2",
+					"text": "Help",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 173,
+					"left": 1005,
+					"width": 61,
+					"height": 20,
+					"dataSource": "Button2",
+					"action": "accept",
+					"text": "whse",
+					"class": "BaseLabel",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 78,
+					"left": 4,
+					"width": 47,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Order"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 78,
+					"left": 79,
+					"width": 61,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Schd Date"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 78,
+					"left": 151,
+					"width": 76,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Schd Qty"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 78,
+					"left": 407,
+					"width": 50,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Non-FG"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 78,
+					"left": 646,
+					"width": 81,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "  CPN"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 78,
+					"left": 748,
+					"width": 67,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Customer"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 78,
+					"left": 458,
+					"width": 38,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Ship"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 78,
+					"left": 822,
+					"width": 32,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Line"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 78,
+					"left": 232,
+					"width": 37,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Flags"
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 158,
+					"left": 1064,
+					"width": 7,
+					"height": 6,
+					"dataSource": "bDone",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 78,
+					"left": 1038,
+					"width": 66,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": " Promise"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 78,
+					"left": 1102,
+					"width": 46,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Actual"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 78,
+					"left": 271,
+					"width": 19,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Ex"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 136,
+					"left": 3,
+					"width": 37,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Show:"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 78,
+					"left": 307,
+					"width": 87,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Available FG"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 78,
+					"left": 886,
+					"width": 47,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Tooling"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 78,
+					"left": 940,
+					"width": 87,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Rel# or Jobs"
+				},
+				"modeLabel": {
+					"type": "text",
+					"top": 78,
+					"left": 505,
+					"width": 98,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Mode"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 77,
+					"left": 1152,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CustRefer"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 78,
+					"left": 1230,
+					"width": 72,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Order PO"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 78,
+					"left": 1333,
+					"width": 82,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Order Status"
+				}
+			},
+			"entryOrder": [
+				"aField1",
+				"Field2",
+				"aField4",
+				"QField5",
+				"Field6",
+				"QField7",
+				"QField15",
+				"QVariable2",
+				"Variable1",
+				"QVariable3",
+				"LField8",
+				"ModeData",
+				"LField9",
+				"LField10",
+				"LField11",
+				"Variable16",
+				"Variable14",
+				"Field13",
+				"Field14",
+				"LField3",
+				"LField1",
+				"LField2",
+				"Variable4",
+				"Variable15",
+				"Variable6",
+				"Variable10",
+				"SameDestination",
+				"Button6",
+				"Variable5",
+				"Button1",
+				"Button2",
+				"Variable2",
+				"Variable13",
+				"Variable7",
+				"Variable26",
+				"Variable8",
+				"WaitingMode",
+				"Button3",
+				"OddLotMultiples",
+				"Button4",
+				"Button5"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"geometryStamp": 2,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

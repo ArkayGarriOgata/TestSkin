@@ -1,0 +1,322 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 75,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 501,
+					"height": 85,
+					"fill": "#00B4FF"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 3,
+					"left": 3,
+					"width": 495,
+					"height": 79
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 501,
+					"height": 85,
+					"fill": "#00B4FF"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 3,
+					"left": 3,
+					"width": 495,
+					"height": 79
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 5,
+					"left": 5,
+					"width": 65,
+					"height": 65,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26711.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 5,
+					"left": 5,
+					"width": 65,
+					"height": 65,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseMove"
+					]
+				},
+				"PIactiveEnterRM": {
+					"type": "button",
+					"top": 11,
+					"left": 88,
+					"width": 111,
+					"height": 20,
+					"text": "Enter RM Tags",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PIactiveEnterRM.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveEnterRM1": {
+					"type": "button",
+					"top": 11,
+					"left": 88,
+					"width": 111,
+					"height": 20,
+					"text": "Enter RM Tags",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PIactiveEnterRM1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveVoidRM": {
+					"type": "button",
+					"top": 11,
+					"left": 213,
+					"width": 111,
+					"height": 20,
+					"text": "VOID RM Tags",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PIactiveVoidRM.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveVoidRM1": {
+					"type": "button",
+					"top": 11,
+					"left": 213,
+					"width": 111,
+					"height": 20,
+					"text": "VOID RM Tags",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PIactiveVoidRM1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveAdjustFG": {
+					"type": "button",
+					"top": 12,
+					"left": 338,
+					"width": 82,
+					"height": 20,
+					"text": "Adjust FG",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/PIactiveAdjustFG.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveAdjustFG1": {
+					"type": "button",
+					"top": 12,
+					"left": 338,
+					"width": 82,
+					"height": 20,
+					"text": "Adjust FG",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/PIactiveAdjustFG1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveUndoRM": {
+					"type": "button",
+					"top": 45,
+					"left": 90,
+					"width": 111,
+					"height": 20,
+					"text": "Undo RM Tags",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PIactiveUndoRM.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PIactiveUndoRM1": {
+					"type": "button",
+					"top": 45,
+					"left": 90,
+					"width": 111,
+					"height": 20,
+					"text": "Undo RM Tags",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PIactiveUndoRM1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CompareWMSaMs": {
+					"type": "button",
+					"top": 45,
+					"left": 213,
+					"width": 111,
+					"height": 20,
+					"text": "aMs v WMS",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/CompareWMSaMs.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CompareWMSaMs1": {
+					"type": "button",
+					"top": 45,
+					"left": 213,
+					"width": 111,
+					"height": 20,
+					"text": "aMs v WMS",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/CompareWMSaMs1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 5,
+					"left": 5,
+					"width": 65,
+					"height": 65,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26711.png"
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 5,
+					"left": 5,
+					"width": 65,
+					"height": 65,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseMove"
+					]
+				},
+				"PIreports": {
+					"type": "button",
+					"top": 10,
+					"left": 432,
+					"width": 55,
+					"height": 60,
+					"focusable": false,
+					"text": "Report",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/PIreports.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"PIactiveEnterRM",
+				"PIactiveEnterRM1",
+				"PIactiveVoidRM",
+				"PIactiveVoidRM1",
+				"PIactiveAdjustFG",
+				"PIactiveAdjustFG1",
+				"PIactiveUndoRM",
+				"PIactiveUndoRM1",
+				"CompareWMSaMs",
+				"CompareWMSaMs1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

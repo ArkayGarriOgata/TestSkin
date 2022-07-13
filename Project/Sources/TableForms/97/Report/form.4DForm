@@ -1,0 +1,610 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 45,
+	"markerBody": 728,
+	"markerBreak": 730,
+	"markerFooter": 732,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Field1": {
+					"type": "input",
+					"top": 57,
+					"left": 484,
+					"width": 70,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]id:1",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 57,
+					"left": 141,
+					"width": 121,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]RequestedBy:5",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 57,
+					"left": 368,
+					"width": 75,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]RequestedOn:6",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 93,
+					"left": 141,
+					"width": 88,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]JobFormId:2",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 93,
+					"left": 467,
+					"width": 81,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]Department:7",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 140,
+					"left": 101,
+					"width": 425,
+					"height": 215,
+					"dataSource": "[Job_MakeVsBuy:97]Items:13",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 404,
+					"left": 161,
+					"width": 136,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]Vendor:10",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 404,
+					"left": 343,
+					"width": 75,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]DateShip:11",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 404,
+					"left": 478,
+					"width": 75,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]DateReturn:12",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 430,
+					"left": 161,
+					"width": 201,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]ReasonForOutSource:14",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/OutSourceReasons"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 456,
+					"left": 101,
+					"width": 425,
+					"height": 175,
+					"dataSource": "[Job_MakeVsBuy:97]Description:15",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 665,
+					"left": 101,
+					"width": 81,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]BudgetedCost:16",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field15": {
+					"type": "input",
+					"top": 665,
+					"left": 282,
+					"width": 81,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]VendorPrice:17",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field16": {
+					"type": "input",
+					"top": 665,
+					"left": 476,
+					"width": 81,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]Savings:18",
+					"dataSourceTypeHint": "number",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Dol.Format"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 116,
+					"left": 141,
+					"width": 40,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]CustID:8",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 116,
+					"left": 391,
+					"width": 161,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]Line:9",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 93,
+					"left": 37,
+					"width": 98,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Job Form :"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 57,
+					"left": 37,
+					"width": 98,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Requested By :"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 57,
+					"left": 267,
+					"width": 95,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Requested On :"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 93,
+					"left": 363,
+					"width": 98,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Department :"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 116,
+					"left": 37,
+					"width": 98,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Customer ID :"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 116,
+					"left": 347,
+					"width": 38,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Line :"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 404,
+					"left": 17,
+					"width": 138,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Recommended Vendor :"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 404,
+					"left": 298,
+					"width": 40,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Ship :"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 404,
+					"left": 424,
+					"width": 53,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Return :"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 140,
+					"left": 57,
+					"width": 38,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Items :"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 430,
+					"left": 17,
+					"width": 138,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Reason for Out-source :"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 456,
+					"left": 17,
+					"width": 78,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Description :"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 665,
+					"left": 2,
+					"width": 96,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Budgeted Cost :"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 665,
+					"left": 192,
+					"width": 81,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Vendor Price :"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 665,
+					"left": 372,
+					"width": 98,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Savings (Loss) :"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 57,
+					"left": 456,
+					"width": 24,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "id :"
+				},
+				"Field17": {
+					"type": "input",
+					"top": 116,
+					"left": 194,
+					"width": 146,
+					"height": 15,
+					"dataSource": "[Jobs:15]CustomerName:5",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 81,
+					"left": 21,
+					"width": 531
+				},
+				"Line2": {
+					"type": "line",
+					"top": 392,
+					"left": 21,
+					"width": 531
+				},
+				"Field18": {
+					"type": "input",
+					"top": 692,
+					"left": 141,
+					"width": 121,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]ApprovedBy:19",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field19": {
+					"type": "input",
+					"top": 692,
+					"left": 368,
+					"width": 75,
+					"height": 15,
+					"dataSource": "[Job_MakeVsBuy:97]ApprovedOn:20",
+					"dataSourceTypeHint": "date",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text17": {
+					"type": "text",
+					"top": 692,
+					"left": 37,
+					"width": 98,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Approved By :"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 692,
+					"left": 267,
+					"width": 95,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Approved On :"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 14,
+					"left": 16,
+					"width": 300,
+					"height": 17,
+					"class": "BaseFormTitle",
+					"text": "PRODUCTION MAKE VS. BUY REQUEST"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

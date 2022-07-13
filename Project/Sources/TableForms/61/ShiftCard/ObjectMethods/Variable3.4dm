@@ -1,0 +1,1 @@
+dDateEnd:=dDateBegin

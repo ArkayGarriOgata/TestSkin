@@ -1,0 +1,377 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 123,
+	"markerFooter": 164,
+	"events": [
+		"onLoad",
+		"onDisplayDetail",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 2,
+					"width": 102,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Commodity"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 77,
+					"left": 107,
+					"width": 132,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "R/M Code"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 77,
+					"left": 242,
+					"width": 159,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Description"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 75,
+					"left": 105,
+					"height": 48,
+					"stroke": "#AAAAAA"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 75,
+					"left": 240,
+					"height": 48,
+					"stroke": "#AAAAAA"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 77,
+					"left": 661,
+					"width": 70,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "left",
+					"text": "Last Pur Cost"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 74,
+					"left": 493,
+					"height": 49,
+					"stroke": "#AAAAAA"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 75,
+					"left": 657,
+					"height": 48,
+					"stroke": "#AAAAAA"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 77,
+					"left": 492,
+					"width": 63,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "On Hand"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 77,
+					"left": 624,
+					"width": 30,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "UM"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 77,
+					"left": 556,
+					"width": 66,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "On Order"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 74,
+					"left": 623,
+					"height": 49,
+					"stroke": "#AAAAAA"
+				},
+				"SearchPicker": {
+					"type": "subform",
+					"top": 6,
+					"left": 651,
+					"width": 198,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "vSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 101,
+					"left": 5,
+					"width": 99,
+					"height": 15,
+					"dataSource": "[Raw_Materials:21]Commodity_Key:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 101,
+					"left": 109,
+					"width": 130,
+					"height": 15,
+					"dataSource": "[Raw_Materials:21]Raw_Matl_Code:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 101,
+					"left": 245,
+					"width": 227,
+					"height": 15,
+					"dataSource": "[Raw_Materials:21]Description:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 102,
+					"left": 481,
+					"width": 8,
+					"height": 15,
+					"dataSource": "[Raw_Materials:21]Status:25",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 102,
+					"left": 497,
+					"width": 56,
+					"height": 16,
+					"dataSource": "rOnHand",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Qty.Format"
+					}
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 102,
+					"left": 563,
+					"width": 54,
+					"height": 16,
+					"dataSource": "rOnOrder",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Qty.Format"
+					}
+				},
+				"Field4": {
+					"type": "input",
+					"top": 101,
+					"left": 626,
+					"width": 27,
+					"height": 15,
+					"dataSource": "[Raw_Materials:21]IssueUOM:10",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 101,
+					"left": 661,
+					"width": 60,
+					"height": 15,
+					"dataSource": "[Raw_Materials:21]LastPurCost:43",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Amt.Format"
+					}
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"top": 133,
+					"left": 435,
+					"width": 120,
+					"height": 26,
+					"dataSource": "cb1",
+					"text": "Show On-hand",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Check Box.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 133,
+					"left": 575,
+					"width": 120,
+					"height": 26,
+					"dataSource": "cb2",
+					"text": "Show On-Order",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/Check Box1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SearchResults": {
+					"type": "input",
+					"top": 42,
+					"left": 661,
+					"width": 174,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "UTIL_Num_Records(->[Raw_Materials:21])",
+					"class": "BaseInformation",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"SearchPicker",
+				"Field1",
+				"Field2",
+				"Field3",
+				"Field6",
+				"Variable1",
+				"Variable2",
+				"Field4",
+				"Field5",
+				"Check Box",
+				"Check Box1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

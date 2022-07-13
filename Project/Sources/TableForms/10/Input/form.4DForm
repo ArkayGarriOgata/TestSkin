@@ -1,0 +1,354 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 750,
+	"height": 550,
+	"menuBar": "UserRuntime",
+	"markerBody": 344,
+	"markerBreak": 344,
+	"markerFooter": 354,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text17": {
+					"type": "text",
+					"top": 96,
+					"left": 69,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "BatchName"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 135,
+					"left": 75,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Description"
+				},
+				"Description": {
+					"type": "input",
+					"top": 158,
+					"left": 74,
+					"width": 368,
+					"height": 60,
+					"dataSource": "[y_batches:10]Description:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible"
+				},
+				"Field4": {
+					"type": "checkbox",
+					"top": 167,
+					"left": 469,
+					"width": 89,
+					"height": 17,
+					"dataSource": "[y_batches:10]Daily:5",
+					"text": "Daily",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "checkbox",
+					"top": 184,
+					"left": 469,
+					"width": 89,
+					"height": 17,
+					"dataSource": "[y_batches:10]Weekly:6",
+					"text": "Weekly",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1": {
+					"type": "checkbox",
+					"top": 201,
+					"left": 469,
+					"width": 89,
+					"height": 17,
+					"dataSource": "[y_batches:10]Monthly:7",
+					"text": "Monthly",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 248,
+					"left": 194,
+					"width": 70,
+					"height": 20,
+					"dataSource": "bAdd",
+					"shortcutKey": "=",
+					"shortcutAccel": true,
+					"text": "Add",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 248,
+					"left": 279,
+					"width": 70,
+					"height": 20,
+					"dataSource": "bDelete",
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"text": "Delete",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 275,
+					"left": 74,
+					"width": 384,
+					"height": 220,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "box0",
+					"movableRows": false,
+					"singleClickEdit": true,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"table": 164,
+					"highlightSet": "ListboxSet0",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#DFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column2",
+							"dataSource": "[y_batch_distributions:164]EmailAddress:2",
+							"width": 369,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#DFFFFF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Field3": {
+					"type": "checkbox",
+					"top": 275,
+					"left": 469,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[y_batches:10]BC:4",
+					"text": "BC?",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BatchName1": {
+					"type": "input",
+					"top": 114,
+					"left": 73,
+					"width": 31,
+					"height": 15,
+					"dataSource": "[y_batches:10]sort_order:3",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BatchName": {
+					"type": "input",
+					"top": 114,
+					"left": 118,
+					"width": 340,
+					"height": 15,
+					"dataSource": "[y_batches:10]BatchName:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 251,
+					"left": 74,
+					"width": 97,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Distribution List"
+				}
+			},
+			"entryOrder": [
+				"Description",
+				"Field4",
+				"Field2",
+				"Field1",
+				"Variable1",
+				"Variable5",
+				"List Box",
+				"Field3",
+				"BatchName1",
+				"BatchName"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

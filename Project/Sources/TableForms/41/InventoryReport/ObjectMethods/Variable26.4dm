@@ -1,0 +1,1 @@
+tOpenTot:=Subtotal:C97(tOpen)

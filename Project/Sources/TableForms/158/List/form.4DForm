@@ -1,0 +1,251 @@
+{
+	"destination": "listScreen",
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 96,
+	"markerBody": 121,
+	"markerBreak": 121,
+	"markerFooter": 122,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line8": {
+					"type": "line",
+					"top": 61,
+					"left": 0,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"S2_Field1": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 321,
+					"width": 99,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Hide_All_Excess:3",
+					"text": "Hide_Excess",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field2": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 425,
+					"width": 123,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Hide_Promo_Excess:4",
+					"text": "Hide_Promo_Ex",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field3": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 254,
+					"width": 62,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Active:5",
+					"text": "Active",
+					"class": "BaseField",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 74,
+					"left": 247,
+					"height": 47,
+					"stroke": "#A8A8A8"
+				},
+				"S2_Field4": {
+					"type": "input",
+					"top": 101,
+					"left": 546,
+					"width": 74,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Name:10",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field5": {
+					"type": "input",
+					"top": 101,
+					"left": 831,
+					"width": 198,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Password:8",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field6": {
+					"type": "input",
+					"top": 101,
+					"left": 629,
+					"width": 192,
+					"height": 16,
+					"dataSource": "[Customer_Portal_Extracts:158]Username:7",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field7": {
+					"type": "input",
+					"top": 101,
+					"left": 5,
+					"width": 234,
+					"height": 14,
+					"dataSource": "[Customer_Portal_Extracts:158]pk_id:6",
+					"class": "BaseInformation",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 7,
+					"width": 144,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "pk_id"
+				},
+				"S2_Text4": {
+					"type": "text",
+					"top": 78,
+					"left": 546,
+					"width": 117,
+					"height": 16,
+					"class": "BaseLabel",
+					"text": "Extract Name"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

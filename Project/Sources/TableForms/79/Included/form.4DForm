@@ -1,0 +1,224 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 16,
+	"markerBody": 34,
+	"markerBreak": 34,
+	"markerFooter": 34,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 0,
+					"left": 108,
+					"width": 64,
+					"height": 15,
+					"fill": "#444444",
+					"stroke": "#FFFFFF",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Rel Date"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 0,
+					"left": 173,
+					"width": 65,
+					"height": 15,
+					"fill": "#444444",
+					"stroke": "#FFFFFF",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Qty"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 0,
+					"left": 77,
+					"width": 30,
+					"height": 15,
+					"fill": "#444444",
+					"stroke": "#FFFFFF",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Nº"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 18,
+					"left": 77,
+					"width": 28,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Releases:79]RelNumber:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"textFormat": "000",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 18,
+					"left": 108,
+					"width": 64,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Releases:79]Schd_Date:3",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dateFormat": "shortCentury",
+					"entryFilter": "!0&9##/##/##",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 18,
+					"left": 173,
+					"width": 63,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Releases:79]Schd_Qty:2",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 0,
+					"left": 239,
+					"width": 42,
+					"height": 15,
+					"fill": "#444444",
+					"stroke": "#FFFFFF",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "Act"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 18,
+					"left": 239,
+					"width": 39,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Releases:79]Actual_Qty:6",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Int_no_zero"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 18,
+					"left": 0,
+					"width": 76,
+					"height": 15,
+					"dataSource": "[Purchase_Orders_Releases:79]POitemKey:1",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 0,
+					"left": 0,
+					"width": 76,
+					"height": 15,
+					"fill": "#444444",
+					"stroke": "#FFFFFF",
+					"class": "BaseLabel",
+					"textAlign": "center",
+					"text": "PO Item"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

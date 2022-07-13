@@ -1,0 +1,321 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 123,
+					"left": 0,
+					"width": 340,
+					"height": 52,
+					"fill": "#C0FFFF",
+					"stroke": "#C0FFFF"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 340,
+					"height": 71,
+					"fill": "#00D6D8",
+					"stroke": "#00D6D8"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 0,
+					"width": 340,
+					"height": 52,
+					"fill": "#00E9EC",
+					"stroke": "#00E9EC"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 83,
+					"left": 134,
+					"width": 85,
+					"height": 18
+				},
+				"Text1": {
+					"type": "text",
+					"top": 84,
+					"left": 10,
+					"width": 120,
+					"height": 16,
+					"fill": "#00E9EC",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Qty to Make:"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 26,
+					"left": 134,
+					"width": 115,
+					"height": 18
+				},
+				"Text2": {
+					"type": "text",
+					"top": 50,
+					"left": 40,
+					"width": 90,
+					"height": 16,
+					"fill": "#00D6D8",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Location:"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 49,
+					"left": 134,
+					"width": 115,
+					"height": 18
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 340,
+					"height": 22,
+					"fill": "#7FFEFF",
+					"stroke": "#7FFEFF"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 40,
+					"width": 90,
+					"height": 16,
+					"fill": "#7FFEFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Date:"
+				},
+				"Rectangle8": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 134,
+					"width": 115,
+					"height": 18
+				},
+				"Text4": {
+					"type": "text",
+					"top": 27,
+					"left": 2,
+					"width": 130,
+					"height": 16,
+					"fill": "#00D6D8",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"text": "Psuedo PO Number:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 3,
+					"left": 137,
+					"width": 111,
+					"height": 16,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 27,
+					"left": 137,
+					"width": 111,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 50,
+					"left": 137,
+					"width": 111,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 84,
+					"left": 137,
+					"width": 81,
+					"height": 16,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 140,
+					"left": 100,
+					"width": 78,
+					"height": 21,
+					"dataSource": "bView",
+					"action": "cancel",
+					"text": "Cancel",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 140,
+					"left": 192,
+					"width": 92,
+					"height": 21,
+					"dataSource": "bPost",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Make Batch",
+					"fontTheme": "normal",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 140,
+					"left": 338,
+					"width": 88,
+					"height": 21,
+					"dataSource": "bPost",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Make Batch",
+					"display": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

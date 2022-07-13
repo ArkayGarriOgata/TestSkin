@@ -1,0 +1,910 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_Background",
+	"formSizeAnchor": "FGLc_abAdjust_Transaction",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"FGLc_tAdjust_Change": {
+					"type": "input",
+					"top": 92,
+					"left": 698,
+					"width": 214,
+					"height": 31,
+					"dataSource": "FGLc_tAdjust_Change",
+					"stroke": "#000000",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FGLc_abAdjust_Negative": {
+					"type": "listbox",
+					"top": 13,
+					"left": 13,
+					"width": 195,
+					"height": 396,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "FGLc_abAdjust_Negative",
+					"movableRows": false,
+					"scrollbarHorizontal": "automatic",
+					"fill": "#C0C0C0",
+					"alternateFill": "#808080",
+					"method": "ObjectMethods/FGLc_abAdjust_Negative.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					],
+					"columns": [
+						{
+							"name": "FGLc_atNeg_ProductCode",
+							"dataSource": "FGLc_atNeg_ProductCode",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "FGLc_nNeg_ProductCode",
+								"text": "Product Code",
+								"dataSource": "FGLc_nNeg_ProductCode",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "#C0C0C0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_anNeg_Quantity",
+							"dataSource": "FGLc_anNeg_Quantity",
+							"dataSourceTypeHint": "number",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"enterable": false,
+							"numberFormat": "###,###,##0",
+							"stroke": "#000000",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "FGLc_nLoc_Quantity1",
+								"text": "Quantity",
+								"dataSource": "FGLc_nLoc_Quantity",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "#C0C0C0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atNeg_Pk_id",
+							"dataSource": "FGLc_atNeg_Pk_id",
+							"width": 0,
+							"maxWidth": 0,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "FGLc_nNeg_Pk_Id",
+								"text": "Pk_Id",
+								"dataSource": "FGLc_nNeg_Pk_Id",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "#C0C0C0",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"FGLc_abAdjust_Location": {
+					"type": "listbox",
+					"top": 13,
+					"left": 223,
+					"width": 400,
+					"height": 168,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "FGLc_abAdjust_Location",
+					"scrollbarHorizontal": "automatic",
+					"fill": "#E3EEFF",
+					"alternateFill": "#D3E1FF",
+					"method": "ObjectMethods/FGLc_abAdjust_Location.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "FGLc_abLoc_Delete",
+							"dataSource": "FGLc_abLoc_Delete",
+							"dataSourceTypeHint": "boolean",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"controlType": "checkbox",
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "FGLc_nLoc_Delete",
+								"text": "-",
+								"dataSource": "FGLc_nLoc_Delete",
+								"stroke": "#FF0000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atLoc_JobIT",
+							"dataSource": "FGLc_atLoc_JobIT",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 140,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "FGLc_nLoc_JobIt",
+								"text": "Job IT",
+								"dataSource": "FGLc_nLoc_JobIt",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atLoc_Location",
+							"dataSource": "FGLc_atLoc_Location",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "FGLc_nLoc_Location",
+								"text": "Location",
+								"dataSource": "FGLc_nLoc_Location",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atLoc_Skid",
+							"dataSource": "FGLc_atLoc_Skid",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 160,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "FGLc_nLoc_Skid",
+								"text": "Skid",
+								"dataSource": "FGLc_nLoc_Skid",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_anLoc_Qty2",
+							"dataSource": "FGLc_anLoc_Qty",
+							"dataSourceTypeHint": "number",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 75,
+							"numberFormat": "###,###,##0",
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "FGLc_nLoc_Quantity",
+								"text": "Quantity",
+								"dataSource": "FGLc_nLoc_Quantity",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_anLoc_OriginalQty",
+							"dataSource": "FGLc_anLoc_OriginalQty",
+							"dataSourceTypeHint": "number",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 75,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "FGLc_nLoc_OriginalQuantity",
+								"text": "Original Quantity",
+								"dataSource": "FGLc_nLoc_OriginalQuantity",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atLoc_Pk_Id",
+							"dataSource": "FGLc_atLoc_Pk_Id",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 75,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "automatic",
+							"fill": "#E3EEFF",
+							"alternateFill": "#D3E1FF",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "FGLc_nLoc_Pk_Id",
+								"text": "Pk_Id",
+								"dataSource": "FGLc_nLoc_Pk_Id",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "#E3EEFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"FGLc_atAdjust_Reason": {
+					"type": "dropdown",
+					"top": 128,
+					"left": 698,
+					"width": 188,
+					"height": 20,
+					"dataSource": "FGLc_atAdjust_Reason",
+					"focusable": false,
+					"class": "Form_Value",
+					"method": "ObjectMethods/FGLc_atAdjust_Reason.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FGLc_nAdjust_AskMe": {
+					"type": "button",
+					"top": 161,
+					"left": 639,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "FGLc_nAdjust_AskMe",
+					"text": "Ask Me",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/FGLc_nAdjust_AskMe.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"FGLc_nAdjust_ApplyChange": {
+					"type": "button",
+					"top": 161,
+					"left": 792,
+					"width": 120,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "FGLc_nAdjust_ApplyChange",
+					"text": "Apply Change",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/FGLc_nAdjust_ApplyChange.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 196,
+					"left": 223,
+					"width": 689,
+					"height": 6,
+					"sizingX": "grow",
+					"dataSource": "Splitter",
+					"events": [
+						"onClick"
+					]
+				},
+				"FGLc_abAdjust_Transaction": {
+					"type": "listbox",
+					"top": 210,
+					"left": 223,
+					"width": 689,
+					"height": 199,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "FGLc_abAdjust_Transaction",
+					"scrollbarHorizontal": "automatic",
+					"fill": "#D5D4D6",
+					"alternateFill": "#C0C0C0",
+					"columns": [
+						{
+							"name": "FGLc_atTrans_JobIT",
+							"dataSource": "FGLc_atTrans_JobIT",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 140,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header3",
+								"text": "Job IT",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atTrans_Skid",
+							"dataSource": "FGLc_atTrans_Skid",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 160,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header4",
+								"text": "Skid Number",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atTrans_From",
+							"dataSource": "FGLc_atTrans_From",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 120,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header5",
+								"text": "From",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atTrans_To",
+							"dataSource": "FGLc_atTrans_To",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 120,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header6",
+								"text": "To",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_anTrans_Qty1",
+							"dataSource": "FGLc_anTrans_Qty",
+							"dataSourceTypeHint": "number",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"enterable": false,
+							"numberFormat": "###,###,##0",
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header1",
+								"text": "Quantity",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer17",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atTrans_Type",
+							"dataSource": "FGLc_atTrans_Type",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"enterable": false,
+							"numberFormat": "###,###,##0",
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "right",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header8",
+								"text": "Type",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FGLc_atTrans_DateTime",
+							"dataSource": "FGLc_atTrans_DateTime",
+							"width": 170,
+							"minWidth": 10,
+							"maxWidth": 170,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#D5D4D6",
+							"alternateFill": "#C0C0C0",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"header": {
+								"name": "Header9",
+								"text": "Date Time",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "#D5D4D6",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"FGLc_nAdjust_OnLoad": {
+					"type": "button",
+					"top": 461,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "FGLc_nAdjust_OnLoad",
+					"text": "On Load",
+					"class": "Form_Label",
+					"focusable": false,
+					"method": "ObjectMethods/FGLc_nAdjust_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 131,
+					"left": 639,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"text": "Reason"
+				},
+				"FGLc_tAdjust_Skid": {
+					"type": "input",
+					"top": 32,
+					"left": 698,
+					"width": 209,
+					"height": 16,
+					"dataSource": "FGLc_tAdjust_Skid",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FGLc_tAdjust_JobIt": {
+					"type": "input",
+					"top": 13,
+					"left": 698,
+					"width": 209,
+					"height": 16,
+					"dataSource": "FGLc_tAdjust_JobIt",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FGLc_tAdjust_ProductCode": {
+					"type": "input",
+					"top": 52,
+					"left": 698,
+					"width": 209,
+					"height": 16,
+					"dataSource": "FGLc_tAdjust_ProductCode",
+					"class": "Form_Label",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"FGLc_tAdjust_Quantity": {
+					"type": "input",
+					"top": 72,
+					"left": 698,
+					"width": 209,
+					"height": 16,
+					"dataSource": "FGLc_tAdjust_Quantity",
+					"class": "Form_Label",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 639,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"text": "Job It"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 32,
+					"left": 639,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"text": "Skid"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 52,
+					"left": 639,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"text": "Product"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 71,
+					"left": 639,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"text": "Quantity"
+				},
+				"Change": {
+					"type": "text",
+					"top": 91,
+					"left": 639,
+					"width": 60,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"text": "Change"
+				}
+			},
+			"entryOrder": [
+				"FGLc_abAdjust_Negative",
+				"FGLc_abAdjust_Location",
+				"FGLc_atAdjust_Reason",
+				"FGLc_nAdjust_AskMe",
+				"FGLc_nAdjust_ApplyChange",
+				"Splitter",
+				"FGLc_abAdjust_Transaction",
+				"FGLc_nAdjust_OnLoad"
+			]
+		}
+	]
+}

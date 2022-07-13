@@ -1,0 +1,1 @@
+$num:=qryFinishedGood([Customers_Invoices:88]CustomerID:6; [Customers_Invoices:88]ProductCode:14)

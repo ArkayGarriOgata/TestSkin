@@ -1,0 +1,5 @@
+//(S) bMove: 
+
+gMTAccept
+OBJECT SET ENABLED:C1123(bOK; True:C214)
+OBJECT SET ENABLED:C1123(bOKStay; True:C214)

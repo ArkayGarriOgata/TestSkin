@@ -1,0 +1,681 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 42,
+	"markerBody": 57,
+	"markerBreak": [
+		77,
+		97
+	],
+	"markerFooter": 117,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"orientation": "landscape"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 6,
+					"width": 721,
+					"height": 20,
+					"fill": "#0099FF",
+					"stroke": "#0099FF"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 2,
+					"left": 6,
+					"width": 722,
+					"height": 114,
+					"fill": "transparent",
+					"strokeWidth": 2
+				},
+				"Text1": {
+					"type": "text",
+					"top": 25,
+					"left": 10,
+					"width": 35,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "BOL#"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 25,
+					"left": 51,
+					"width": 56,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "right",
+					"text": "Ship Date"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 25,
+					"left": 113,
+					"width": 41,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Printed"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 25,
+					"left": 161,
+					"width": 47,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Pay Use"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 25,
+					"left": 214,
+					"width": 53,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Executed"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 25,
+					"left": 273,
+					"width": 36,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "center",
+					"text": "Status"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 6,
+					"left": 16,
+					"width": 707,
+					"height": 14,
+					"dataSource": "tPrintTitle",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 45,
+					"left": 10,
+					"width": 35,
+					"height": 12,
+					"dataSource": "xlBOL",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 45,
+					"left": 51,
+					"width": 56,
+					"height": 12,
+					"dataSource": "dShipDate",
+					"dataSourceTypeHint": "date",
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 102,
+					"left": 103,
+					"width": 43,
+					"height": 11,
+					"dataSource": "dDatePrinted",
+					"dataSourceTypeHint": "date",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "systemShort blankIfNull",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 102,
+					"left": 147,
+					"width": 43,
+					"height": 11,
+					"dataSource": "hTimePrinted",
+					"dataSourceTypeHint": "time",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_am blankIfNull",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 102,
+					"left": 709,
+					"width": 15,
+					"height": 11,
+					"dataSource": "xlPageNum",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 102,
+					"left": 15,
+					"width": 86,
+					"height": 11,
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Date & Time Printed:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 102,
+					"left": 648,
+					"width": 61,
+					"height": 11,
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"text": "Page Number:"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 39,
+					"left": 7,
+					"width": 720
+				},
+				"Line7": {
+					"type": "line",
+					"top": 56,
+					"left": 7,
+					"width": 720
+				},
+				"Line10": {
+					"type": "line",
+					"top": 21,
+					"left": 7,
+					"width": 720
+				},
+				"Line": {
+					"type": "line",
+					"top": 21,
+					"left": 48,
+					"height": 36
+				},
+				"Line1": {
+					"type": "line",
+					"top": 22,
+					"left": 110,
+					"height": 35
+				},
+				"Line2": {
+					"type": "line",
+					"top": 21,
+					"left": 157,
+					"height": 36
+				},
+				"Line3": {
+					"type": "line",
+					"top": 21,
+					"left": 210,
+					"height": 36
+				},
+				"Line4": {
+					"type": "line",
+					"top": 21,
+					"left": 270,
+					"height": 36
+				},
+				"Line5": {
+					"type": "line",
+					"top": 21,
+					"left": 311,
+					"height": 36
+				},
+				"Text7": {
+					"type": "text",
+					"top": 25,
+					"left": 316,
+					"width": 36,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "center",
+					"text": "Cases"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 21,
+					"left": 354,
+					"height": 36
+				},
+				"Text8": {
+					"type": "text",
+					"top": 25,
+					"left": 359,
+					"width": 36,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Bill To"
+				},
+				"Line12": {
+					"type": "line",
+					"top": 21,
+					"left": 397,
+					"height": 36
+				},
+				"Text9": {
+					"type": "text",
+					"top": 25,
+					"left": 400,
+					"width": 87,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Ship To"
+				},
+				"Line13": {
+					"type": "line",
+					"top": 21,
+					"left": 528,
+					"height": 36
+				},
+				"Text10": {
+					"type": "text",
+					"top": 25,
+					"left": 531,
+					"width": 100,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Dock Appointment"
+				},
+				"Line14": {
+					"type": "line",
+					"top": 21,
+					"left": 653,
+					"height": 36
+				},
+				"Text13": {
+					"type": "text",
+					"top": 25,
+					"left": 656,
+					"width": 67,
+					"height": 12,
+					"class": "LaserPrintLabel",
+					"textAlign": "left",
+					"text": "Carrier"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 45,
+					"left": 274,
+					"width": 35,
+					"height": 12,
+					"dataSource": "tStatus",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 45,
+					"left": 313,
+					"width": 40,
+					"height": 12,
+					"dataSource": "xlCases",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 45,
+					"left": 356,
+					"width": 40,
+					"height": 12,
+					"dataSource": "tBillTo",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 45,
+					"left": 399,
+					"width": 126,
+					"height": 12,
+					"dataSource": "tShipTo",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 45,
+					"left": 530,
+					"width": 117,
+					"height": 12,
+					"dataSource": "tDocAppt",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 45,
+					"left": 655,
+					"width": 69,
+					"height": 12,
+					"dataSource": "tCarrier",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 45,
+					"left": 113,
+					"width": 42,
+					"height": 12,
+					"dataSource": "tPrinted",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 45,
+					"left": 161,
+					"width": 42,
+					"height": 12,
+					"dataSource": "tPayUse",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 45,
+					"left": 214,
+					"width": 42,
+					"height": 12,
+					"dataSource": "tExecuted",
+					"textAlign": "left",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Rectangle1",
+					"Rectangle"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

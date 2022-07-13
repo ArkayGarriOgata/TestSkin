@@ -1,0 +1,1 @@
+QryPurgeEsts(->r7; ->r27; ->r47; "Accepted")

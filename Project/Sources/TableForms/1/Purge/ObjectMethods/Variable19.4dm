@@ -1,0 +1,1 @@
+QryPurgeEsts(->r5; ->r25; ->r45; "Quoted")

@@ -1,0 +1,1059 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 698,
+	"markerBreak": 698,
+	"markerFooter": 708,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"FiscalYear": {
+					"type": "input",
+					"top": 109,
+					"left": 256,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]FiscalYear:2",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 108,
+					"left": 507,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Custid": {
+					"type": "input",
+					"top": 155,
+					"left": 90,
+					"width": 45,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Custid:1",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CustomerName": {
+					"type": "input",
+					"top": 155,
+					"left": 259,
+					"width": 323,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]CustomerName:18",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 108,
+					"left": 24,
+					"width": 551,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "Customers_Bookings"
+				},
+				"Line25": {
+					"type": "line",
+					"top": 92,
+					"left": 19,
+					"width": 680,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "First",
+					"icon": "/RESOURCES/Images/library/GLASS - First Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Previous",
+					"icon": "/RESOURCES/Images/library/GLASS - Previous Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "button",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Next",
+					"icon": "/RESOURCES/Images/library/GLASS - Next Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "button",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Last",
+					"icon": "/RESOURCES/Images/library/GLASS - Last Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bFirstPage": {
+					"type": "button",
+					"top": 16,
+					"left": 273,
+					"width": 53,
+					"height": 63,
+					"dataSource": "bFirstPage",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Page"
+					},
+					"action": "firstPage",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "First page",
+					"icon": "/RESOURCES/Images/library/GLASS - First Page.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLastPage": {
+					"type": "button",
+					"top": 16,
+					"left": 341,
+					"width": 52,
+					"height": 63,
+					"dataSource": "bLastPage",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Page"
+					},
+					"action": "lastPage",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Last page",
+					"icon": "/RESOURCES/Images/library/GLASS - Last Page.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 16,
+					"left": 408,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/library/GLASS - Delete Record.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 471,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Cancel",
+					"icon": "/RESOURCES/Images/library/GLASS - Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 16,
+					"left": 534,
+					"width": 48,
+					"height": 63,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"shortcutKey": "\u0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"text": "Validate",
+					"icon": "/RESOURCES/Images/library/GLASS - OK.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text26": {
+					"type": "text",
+					"top": 109,
+					"left": 168,
+					"width": 78,
+					"height": 16,
+					"textAlign": "right",
+					"text": "FiscalYear : "
+				},
+				"Text27": {
+					"type": "text",
+					"top": 155,
+					"left": 25,
+					"width": 60,
+					"height": 16,
+					"textAlign": "right",
+					"text": "Custid : "
+				},
+				"Text28": {
+					"type": "text",
+					"top": 155,
+					"left": 142,
+					"width": 112,
+					"height": 16,
+					"textAlign": "right",
+					"text": "CustomerName : "
+				},
+				"Text29": {
+					"type": "text",
+					"top": 182,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "BookedYTD : "
+				},
+				"Text30": {
+					"type": "text",
+					"top": 182,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "CostYTD : "
+				},
+				"Text31": {
+					"type": "text",
+					"top": 209,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "BookedChange : "
+				},
+				"Text32": {
+					"type": "text",
+					"top": 209,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "BookedYesterday : "
+				},
+				"Text33": {
+					"type": "text",
+					"top": 236,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "QuantityYTD : "
+				},
+				"Text34": {
+					"type": "text",
+					"top": 236,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "PV_YTD : "
+				},
+				"Text35": {
+					"type": "text",
+					"top": 279,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period1 : "
+				},
+				"Text36": {
+					"type": "text",
+					"top": 306,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period2 : "
+				},
+				"Text37": {
+					"type": "text",
+					"top": 333,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period3 : "
+				},
+				"Text38": {
+					"type": "text",
+					"top": 278,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period4 : "
+				},
+				"Text39": {
+					"type": "text",
+					"top": 305,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period5 : "
+				},
+				"Text40": {
+					"type": "text",
+					"top": 332,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period6 : "
+				},
+				"Text41": {
+					"type": "text",
+					"top": 385,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period7 : "
+				},
+				"Text42": {
+					"type": "text",
+					"top": 412,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period8 : "
+				},
+				"Text43": {
+					"type": "text",
+					"top": 439,
+					"left": 132,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period9 : "
+				},
+				"Text44": {
+					"type": "text",
+					"top": 385,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period10 : "
+				},
+				"Text45": {
+					"type": "text",
+					"top": 412,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period11 : "
+				},
+				"Text46": {
+					"type": "text",
+					"top": 439,
+					"left": 383,
+					"width": 122,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Period12 : "
+				},
+				"BookedYTD": {
+					"type": "input",
+					"top": 182,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]BookedYTD:3",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BookedChange": {
+					"type": "input",
+					"top": 209,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]BookedChange:5",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"QuantityYTD": {
+					"type": "input",
+					"top": 236,
+					"left": 259,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]QuantityYTD:23",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CostYTD": {
+					"type": "input",
+					"top": 182,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]CostYTD:19",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BookedYesterday": {
+					"type": "input",
+					"top": 209,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]BookedYesterday:4",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PV_YTD": {
+					"type": "input",
+					"top": 236,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]PV_YTD:20",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period1": {
+					"type": "input",
+					"top": 279,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period1:6",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period2": {
+					"type": "input",
+					"top": 306,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period2:7",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period3": {
+					"type": "input",
+					"top": 333,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period3:8",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period4": {
+					"type": "input",
+					"top": 278,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period4:9",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period5": {
+					"type": "input",
+					"top": 305,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period5:10",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period6": {
+					"type": "input",
+					"top": 332,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period6:11",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period7": {
+					"type": "input",
+					"top": 385,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period7:12",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period8": {
+					"type": "input",
+					"top": 412,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period8:13",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period9": {
+					"type": "input",
+					"top": 439,
+					"left": 259,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period9:14",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period10": {
+					"type": "input",
+					"top": 385,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period10:15",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period11": {
+					"type": "input",
+					"top": 412,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period11:16",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Period12": {
+					"type": "input",
+					"top": 439,
+					"left": 510,
+					"width": 72,
+					"height": 16,
+					"dataSource": "[Customers_Bookings:93]Period12:17",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text24",
+					"Line25"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bFirstPage",
+					"bLastPage",
+					"bDelete",
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

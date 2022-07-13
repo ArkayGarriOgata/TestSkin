@@ -1,0 +1,277 @@
+{
+	"inheritedForm": "BaseOutput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "AdHoc",
+	"markerHeader": 96,
+	"markerBody": 122,
+	"markerBreak": 123,
+	"markerFooter": 125,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 7,
+					"width": 32,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Item"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 77,
+					"left": 49,
+					"width": 66,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Estimate"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 77,
+					"left": 175,
+					"width": 138,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Process Spec"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 77,
+					"left": 347,
+					"width": 111,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Product Code "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 77,
+					"left": 478,
+					"width": 51,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "OrdType"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 77,
+					"left": 564,
+					"width": 75,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "OrdCategory"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 102,
+					"left": 2,
+					"width": 37,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]Item:1",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 102,
+					"left": 45,
+					"width": 72,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]Estimate_No:2",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field4": {
+					"type": "input",
+					"top": 102,
+					"left": 129,
+					"width": 33,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]diffNum:11",
+					"class": "BaseField",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/AskMe History"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "~a",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field3": {
+					"type": "input",
+					"top": 102,
+					"left": 170,
+					"width": 168,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]ProcessSpec:3",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field8": {
+					"type": "input",
+					"top": 102,
+					"left": 342,
+					"width": 131,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]ProductCode:5",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field5": {
+					"type": "input",
+					"top": 102,
+					"left": 478,
+					"width": 81,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]OrderType:8",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/OrderType"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 102,
+					"left": 568,
+					"width": 69,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]OriginalOrRepeat:9",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/OrderCategory"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Field7": {
+					"type": "input",
+					"top": 102,
+					"left": 655,
+					"width": 71,
+					"height": 15,
+					"dataSource": "[Estimates_Carton_Specs:19]CartonSpecKey:7",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 77,
+					"left": 646,
+					"width": 87,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CartonSpecKey"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 77,
+					"left": 133,
+					"width": 24,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Diff"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

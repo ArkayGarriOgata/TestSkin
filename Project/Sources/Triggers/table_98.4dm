@@ -1,0 +1,1 @@
+ams_trigger_sync_subrecords("trigger_FG_Specification")

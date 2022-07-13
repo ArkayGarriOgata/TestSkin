@@ -1,0 +1,886 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 513,
+	"height": 173,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 511,
+					"height": 172,
+					"fill": "#DFFFFF",
+					"stroke": "#0099FF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture7": {
+					"type": "picture",
+					"top": 7,
+					"left": 7,
+					"width": 40,
+					"height": 38,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26727.png"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 54,
+					"left": 4,
+					"width": 65,
+					"height": 12,
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Raw Mat'l"
+				},
+				"Picture13": {
+					"type": "picture",
+					"top": 3,
+					"left": 50,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26803.png"
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 5,
+					"left": 75,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibNew",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 5,
+					"left": 145,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibMod",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 4,
+					"left": 215,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibRev",
+					"focusable": false,
+					"text": "Review",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 4,
+					"left": 286,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibDel",
+					"focusable": false,
+					"text": "Delete",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 73,
+					"left": 172,
+					"width": 75,
+					"height": 20,
+					"dataSource": "ibRec",
+					"text": "Receive",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 73,
+					"left": 256,
+					"width": 75,
+					"height": 20,
+					"dataSource": "ibMove",
+					"text": "Move",
+					"class": "BaseButtons",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 73,
+					"left": 340,
+					"width": 75,
+					"height": 20,
+					"dataSource": "ibRtn",
+					"text": "Return",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "button",
+					"top": 73,
+					"left": 424,
+					"width": 75,
+					"height": 20,
+					"dataSource": "ibAdj",
+					"text": "Adjust",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable20": {
+					"type": "button",
+					"top": 107,
+					"left": 256,
+					"width": 75,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bFixIssue",
+					"text": "Move Issue",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable314": {
+					"type": "button",
+					"top": 107,
+					"left": 340,
+					"width": 75,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bPrint",
+					"text": "See Issues",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable314.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 106,
+					"left": 423,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bInk2",
+					"text": "Set VPN",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 139,
+					"left": 132,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bQuote",
+					"text": "Mill Production",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 139,
+					"left": 232,
+					"width": 112,
+					"height": 20,
+					"dataSource": "bQuote",
+					"text": "Barcode POI Labels",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 195,
+					"left": 116,
+					"width": 73,
+					"height": 11,
+					"dataSource": "bMSDS",
+					"text": "M.S.D.S",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 195,
+					"left": 205,
+					"width": 85,
+					"height": 16,
+					"dataSource": "bInk1",
+					"text": "Ink Import",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 195,
+					"left": 296,
+					"width": 87,
+					"height": 16,
+					"dataSource": "bMisngIssue",
+					"text": "Add Misng Ink",
+					"class": "LittleButtons",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable21": {
+					"type": "button",
+					"top": 195,
+					"left": 389,
+					"width": 120,
+					"height": 11,
+					"dataSource": "ibMod",
+					"text": "Ink Submissions",
+					"class": "LittleButtons",
+					"focusable": false,
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable81": {
+					"type": "button",
+					"top": 216,
+					"left": 401,
+					"width": 73,
+					"height": 11,
+					"dataSource": "ibTrade",
+					"text": "Tradein",
+					"class": "LittleButtons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable81.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable51": {
+					"type": "button",
+					"top": 5,
+					"left": 440,
+					"width": 55,
+					"height": 60,
+					"dataSource": "<>ibrm_rpts",
+					"focusable": false,
+					"text": "Report",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable51.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 280,
+					"left": 111,
+					"width": 52,
+					"height": 65
+				},
+				"RollstockInventoryMgmt": {
+					"type": "button",
+					"top": 139,
+					"left": 377,
+					"width": 121,
+					"height": 20,
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#008000",
+					"focusable": false,
+					"text": "RM Labels (RIM)",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/RollstockInventoryMgmt.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ConsignmentsBtn": {
+					"type": "button",
+					"top": 139,
+					"left": 8,
+					"width": 111,
+					"height": 20,
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#DA70D6",
+					"focusable": false,
+					"text": "Consignments",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/ConsignmentsBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PO_ReleasesBtn": {
+					"type": "button",
+					"top": 106,
+					"left": 8,
+					"width": 111,
+					"height": 20,
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#0000CD",
+					"focusable": false,
+					"text": "PO Releases",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/PO_ReleasesBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"AllocationsBtn": {
+					"type": "button",
+					"top": 75,
+					"left": 8,
+					"width": 111,
+					"height": 20,
+					"class": "BaseButtons",
+					"fontWeight": "bold",
+					"stroke": "#800000",
+					"focusable": false,
+					"text": "Allocations",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/AllocationsBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable8",
+				"Variable9",
+				"Variable13",
+				"Variable15",
+				"Variable20",
+				"Variable314",
+				"Button2",
+				"Button3",
+				"Variable18",
+				"Variable19",
+				"Button1",
+				"Variable17",
+				"Variable21",
+				"Variable81"
+			]
+		},
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 55,
+					"left": 15,
+					"width": 104,
+					"height": 68,
+					"class": "Palette_Buttons",
+					"text": "Consignments"
+				},
+				"bHelp": {
+					"type": "button",
+					"top": 8,
+					"left": 15,
+					"width": 86,
+					"height": 17,
+					"dataSource": "bHelp",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bHelp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibNew": {
+					"type": "button",
+					"top": 8,
+					"left": 114,
+					"width": 86,
+					"height": 17,
+					"dataSource": "ibNew",
+					"text": "New",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/ibNew.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibMod": {
+					"type": "button",
+					"top": 8,
+					"left": 213,
+					"width": 86,
+					"height": 17,
+					"dataSource": "ibMod",
+					"text": "Modify",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/ibMod.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibRev": {
+					"type": "button",
+					"top": 8,
+					"left": 312,
+					"width": 86,
+					"height": 17,
+					"dataSource": "ibRev",
+					"text": "Review",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/ibRev.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibDel": {
+					"type": "button",
+					"top": 8,
+					"left": 411,
+					"width": 86,
+					"height": 17,
+					"dataSource": "ibDel",
+					"text": "Delete",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/ibDel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"<>ibFG_rpts": {
+					"type": "button",
+					"top": 31,
+					"left": 15,
+					"width": 86,
+					"height": 17,
+					"dataSource": "<>ibFG_rpts",
+					"text": "Allocation",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/%3C%3EibFG_rpts.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"<>ibrm_rpts": {
+					"type": "button",
+					"top": 31,
+					"left": 114,
+					"width": 86,
+					"height": 17,
+					"dataSource": "<>ibrm_rpts",
+					"text": "Reports",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/%3C%3Eibrm_rpts.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bConver1": {
+					"type": "button",
+					"top": 76,
+					"left": 27,
+					"width": 74,
+					"height": 17,
+					"dataSource": "bConver1",
+					"text": "Setup",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bConver1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibRec": {
+					"type": "button",
+					"top": 75,
+					"left": 175,
+					"width": 90,
+					"height": 17,
+					"dataSource": "ibRec",
+					"text": "Receive",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/ibRec.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ibMove": {
+					"type": "button",
+					"top": 75,
+					"left": 269,
+					"width": 105,
+					"height": 17,
+					"dataSource": "ibMove",
+					"text": "Transfer",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/ibMove.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bConver": {
+					"type": "button",
+					"top": 96,
+					"left": 27,
+					"width": 74,
+					"height": 17,
+					"dataSource": "bConver",
+					"text": "Convert",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bConver.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 96,
+					"left": 175,
+					"width": 90,
+					"height": 17,
+					"dataSource": "bInk1",
+					"text": "Ink Import",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 96,
+					"left": 269,
+					"width": 105,
+					"height": 17,
+					"dataSource": "ibRtn",
+					"text": "Return",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "button",
+					"top": 96,
+					"left": 378,
+					"width": 119,
+					"height": 17,
+					"dataSource": "ibAdj",
+					"text": "Adjust",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable27.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 130,
+					"left": 15,
+					"width": 69,
+					"height": 17,
+					"dataSource": "bInk2",
+					"text": "Set VPN",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable28": {
+					"type": "button",
+					"top": 130,
+					"left": 87,
+					"width": 84,
+					"height": 17,
+					"dataSource": "bCorrugate",
+					"text": "Corrugate",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable28.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable29": {
+					"type": "button",
+					"top": 130,
+					"left": 175,
+					"width": 90,
+					"height": 17,
+					"dataSource": "bFixIssue",
+					"text": "Move Issue",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable29.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable30": {
+					"type": "button",
+					"top": 130,
+					"left": 269,
+					"width": 105,
+					"height": 17,
+					"dataSource": "bPrint",
+					"text": "Review Issues",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable30.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable31": {
+					"type": "button",
+					"top": 130,
+					"left": 378,
+					"width": 119,
+					"height": 17,
+					"dataSource": "bMisngIssue",
+					"text": "Add Missing Ink",
+					"class": "Palette_Buttons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable31.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			},
+			"entryOrder": [
+				"bHelp",
+				"ibNew",
+				"ibMod",
+				"ibRev",
+				"ibDel",
+				"<>ibFG_rpts",
+				"<>ibrm_rpts",
+				"bConver1",
+				"ibRec",
+				"ibMove",
+				"bConver",
+				"Button4",
+				"Variable26",
+				"Variable27",
+				"Button5",
+				"Variable28",
+				"Variable29",
+				"Variable30",
+				"Variable31"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

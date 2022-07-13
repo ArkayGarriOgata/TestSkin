@@ -1,0 +1,114 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 37,
+	"markerBreak": 37,
+	"markerFooter": 37,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 95
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 768,
+					"height": 39,
+					"stroke": "#FFFFFF"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 2,
+					"left": 278,
+					"width": 212,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Additional Terms & Conditions"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 83,
+					"left": 29,
+					"width": 466,
+					"height": 48,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "there is a box, filled whte, and with a white border\rthis box keeps the signature picture from  'Bleeding' into detail/break areas of this and other includeds. it is located behind the entire print area, and extends 1 or 2 pixels below bottom break line"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 32,
+					"left": 2,
+					"width": 765,
+					"strokeWidth": 0.1
+				},
+				"Field1": {
+					"type": "input",
+					"top": 20,
+					"left": 2,
+					"width": 764,
+					"height": 12,
+					"dataSource": "[Purchase_Orders_PO_Clauses:165]ClauseText:4",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 10,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"printFrame": "variable",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,410 @@
+{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Help_Entr_tKeyword",
+	"rightMargin": 32,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDataChange",
+		"onAfterKeystroke",
+		"onBoundVariableChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1076,
+					"height": 60,
+					"sizingX": "grow",
+					"fill": "#B1C4DD",
+					"stroke": "#B1C4DD"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Help_Entr_nOnLoad": {
+					"type": "button",
+					"top": 410,
+					"left": 216,
+					"width": 70,
+					"height": 24,
+					"display": false,
+					"method": "ObjectMethods/Help_Entr_nOnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Help_Entr_tCategory": {
+					"type": "input",
+					"top": 109,
+					"left": 292,
+					"width": 244,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.tCategory",
+					"class": "Form_Value",
+					"borderStyle": "sunken",
+					"placeholder": "Ex:  eBag, AskMe, Jobs, Scheduler ...",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"method": "ObjectMethods/Help_Entr_tCategory.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Help_Entr_tTitle": {
+					"type": "input",
+					"top": 144,
+					"left": 292,
+					"width": 244,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.tTitle",
+					"class": "Form_Value",
+					"borderStyle": "sunken",
+					"placeholder": "Page name: Main or Tab Control",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"method": "ObjectMethods/Help_Entr_tTitle.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Help_Entr_tPathName": {
+					"type": "input",
+					"top": 180,
+					"left": 292,
+					"width": 244,
+					"height": 61,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.tPathName",
+					"class": "Form_Value",
+					"borderStyle": "sunken",
+					"hideFocusRing": true,
+					"placeholder": "Enter in website URL, path to pdf, or path to movie... Ex) www.apple.com\rEx) 3D_VA:A080991:A080991 Inside.mov ",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"method": "ObjectMethods/Help_Entr_tPathName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Help_Entr_tKeyword": {
+					"type": "input",
+					"top": 254,
+					"left": 292,
+					"width": 229,
+					"height": 136,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.tKeyword",
+					"class": "Form_Value",
+					"borderStyle": "sunken",
+					"placeholder": "Object titles on form or problem form solves",
+					"scrollbarVertical": "visible",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"method": "ObjectMethods/Help_Entr_tKeyword.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CorenHList99": {
+					"type": "list",
+					"top": 75,
+					"left": 13,
+					"width": 198,
+					"height": 315,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CorenHList99",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"class": "FormField",
+					"method": "ObjectMethods/CorenHList99.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 72,
+					"left": 216,
+					"width": 10,
+					"height": 318,
+					"sizingY": "grow",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help_Key": {
+					"type": "input",
+					"top": 76,
+					"left": 292,
+					"width": 244,
+					"height": 16,
+					"dataSource": "Form:C1466.tHelp_Key",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"placeholder": "Primary key",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Category": {
+					"type": "text",
+					"top": 109,
+					"left": 228,
+					"width": 57,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "right",
+					"text": "Category"
+				},
+				"Title": {
+					"type": "text",
+					"top": 144,
+					"left": 244,
+					"width": 41,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "right",
+					"text": "Title"
+				},
+				"Pathname": {
+					"type": "text",
+					"top": 180,
+					"left": 219,
+					"width": 66,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "right",
+					"text": "Pathname"
+				},
+				"Save1": {
+					"type": "text",
+					"top": 39,
+					"left": 497,
+					"width": 35,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Help_Entr_nClear": {
+					"type": "pictureButton",
+					"top": 0,
+					"left": 444,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": "Clear",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Help_Entr_nClear.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help_Entr_nSave": {
+					"type": "pictureButton",
+					"top": 0,
+					"left": 491,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": "Save",
+					"shortcutKey": "[Return]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Help_Entr_nSave.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help_Entr_nPathName": {
+					"type": "pictureButton",
+					"top": 186,
+					"left": 248,
+					"width": 48,
+					"height": 48,
+					"tooltip": "URL",
+					"shortcutKey": "[Return]",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Help_Entr_nPathName.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Keyword": {
+					"type": "text",
+					"top": 254,
+					"left": 228,
+					"width": 57,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "right",
+					"text": "Keyword"
+				},
+				"Clear1": {
+					"type": "text",
+					"top": 39,
+					"left": 449,
+					"width": 35,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "center",
+					"text": "Clear"
+				},
+				"Key": {
+					"type": "text",
+					"top": 77,
+					"left": 233,
+					"width": 52,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "right",
+					"text": "Key"
+				},
+				"Help_Entr_tFind": {
+					"type": "subform",
+					"top": 13,
+					"left": 13,
+					"width": 198,
+					"height": 30,
+					"dataSource": "Help_Entr_tFind",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Help_Entr_tFind.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Help_Entr_nDelete": {
+					"type": "pictureButton",
+					"top": 3,
+					"left": 248,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": "Delete",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Help_Entr_nDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Delete": {
+					"type": "text",
+					"top": 42,
+					"left": 253,
+					"width": 45,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"class": "Form_Label",
+					"textAlign": "center",
+					"text": "Delete"
+				},
+				"On Load": {
+					"type": "text",
+					"top": 414,
+					"left": 219,
+					"width": 67,
+					"height": 17,
+					"visibility": "hidden",
+					"text": "On Load"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"Save1",
+					"Help_Entr_nClear",
+					"Help_Entr_nSave"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

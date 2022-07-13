@@ -1,0 +1,1257 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 45,
+					"left": 755,
+					"width": 320,
+					"height": 465,
+					"class": "BaseGroupBox",
+					"text": "RM Transaction"
+				},
+				"jobFormSearch": {
+					"type": "input",
+					"top": 19,
+					"left": 43,
+					"width": 94,
+					"height": 21,
+					"dataSource": "Form:C1466.findJobFormID",
+					"class": "BigButtons",
+					"placeholder": "job form number",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/jobFormSearch.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"clearBtn": {
+					"type": "button",
+					"top": 18,
+					"left": 138,
+					"width": 14,
+					"height": 23,
+					"class": "BaseLabel",
+					"focusable": false,
+					"method": "ObjectMethods/clearBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"BillOfMaterials": {
+					"type": "listbox",
+					"top": 61,
+					"left": 43,
+					"width": 696,
+					"height": 310,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"lockedColumnCount": 1,
+					"dataSource": "Form:C1466.billOfMaterial_es",
+					"currentItemSource": "Form:C1466.clickedMaterial",
+					"selectedItemsSource": "Form:C1466.selectedMaterial",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"method": "ObjectMethods/BillOfMaterials.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Sequence",
+							"dataSourceTypeHint": "number",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Seq",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.CostCenterID",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 80,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "C/C",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.Commodity_Key",
+							"width": 200,
+							"minWidth": 40,
+							"maxWidth": 250,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Commodity",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.Raw_Matl_Code",
+							"width": 200,
+							"minWidth": 40,
+							"maxWidth": 250,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Raw Material Code",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.Planned_Qty",
+							"width": 100,
+							"minWidth": 40,
+							"maxWidth": 120,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Plnd Qty",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "RMX_getIssues(This:C1470.JobForm; This:C1470.Raw_Matl_Code; This:C1470.Sequence)",
+							"dataSourceTypeHint": "number",
+							"width": 101,
+							"minWidth": 40,
+							"maxWidth": 120,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Act Qty",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						}
+					]
+				},
+				"Inventory": {
+					"type": "listbox",
+					"top": 392,
+					"left": 43,
+					"width": 655,
+					"height": 118,
+					"sizingY": "move",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"lockedColumnCount": 1,
+					"dataSource": "Form:C1466.inventory_es",
+					"currentItemSource": "Form:C1466.clickedInventory",
+					"selectedItemsSource": "Form:C1466.selectedInventory",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"method": "ObjectMethods/Inventory.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.Location",
+							"width": 200,
+							"minWidth": 40,
+							"maxWidth": 250,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Location",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column7",
+							"dataSource": "This:C1470.POItemKey",
+							"width": 200,
+							"minWidth": 40,
+							"maxWidth": 250,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "PO Number",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "This:C1470.QtyOH",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 40,
+							"maxWidth": 250,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Qty Onhand",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "This:C1470.ActCost",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 40,
+							"maxWidth": 250,
+							"numberFormat": "|Real_5_4",
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "UnitCost",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer10",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						}
+					]
+				},
+				"sequence": {
+					"type": "input",
+					"top": 188,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.sequence",
+					"dataSourceTypeHint": "number",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"contextMenu": "none",
+					"placeholder": "sequence",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/sequence.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"rawMatlCode": {
+					"type": "input",
+					"top": 225,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.rawMatlCode",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"placeholder": "raw matl code",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/rawMatlCode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"location": {
+					"type": "input",
+					"top": 262,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.location",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"placeholder": "location",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/location.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"purchaseOrder": {
+					"type": "input",
+					"top": 299,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.purchaseOrder",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"placeholder": "po number",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/purchaseOrder.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"reference": {
+					"type": "input",
+					"top": 333,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.unitCost",
+					"dataSourceTypeHint": "number",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"contextMenu": "none",
+					"placeholder": "unit cost",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_5_4"
+					},
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"quantity": {
+					"type": "input",
+					"top": 370,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.quantity",
+					"dataSourceTypeHint": "number",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"contextMenu": "none",
+					"placeholder": "quantity",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"reference1": {
+					"type": "input",
+					"top": 410,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.reference",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"placeholder": "reference",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"historyBtn": {
+					"type": "button",
+					"top": 451,
+					"left": 783,
+					"width": 99,
+					"height": 39,
+					"action": "lastPage",
+					"text": "History",
+					"class": "BigButtons",
+					"focusable": false,
+					"method": "ObjectMethods/historyBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PostBtn": {
+					"type": "button",
+					"top": 451,
+					"left": 963,
+					"width": 99,
+					"height": 39,
+					"shortcutKey": "[Enter]",
+					"text": "Post",
+					"class": "BigButtons",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/PostBtn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"jobDesc": {
+					"type": "input",
+					"top": 18,
+					"left": 172,
+					"width": 562,
+					"height": 21,
+					"dataSource": "Form:C1466.jobFormDescription",
+					"class": "BigButtons",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"placeholder": "job form number",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"jobFormID": {
+					"type": "input",
+					"top": 151,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.jobFormID",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"placeholder": "job form",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"xDate": {
+					"type": "input",
+					"top": 114,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.transactionDate",
+					"dataSourceTypeHint": "date",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"contextMenu": "none",
+					"placeholder": "Trans Date",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"xType": {
+					"type": "input",
+					"top": 78,
+					"left": 868,
+					"width": 194,
+					"height": 21,
+					"dataSource": "Form:C1466.transactionType",
+					"class": "BigButtons",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"placeholder": "job form number",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 79,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Type"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 115,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Date"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 152,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Jobform"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 189,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Sequence"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 226,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Raw Matl"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 263,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Location"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 300,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "PO Number"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 371,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Quantity"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 334,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Unit Cost"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 411,
+					"left": 763,
+					"width": 97,
+					"height": 20,
+					"class": "BigButtons",
+					"text": "Reference"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 56,
+					"left": 15,
+					"width": 20,
+					"height": 97,
+					"class": "BigButtons",
+					"textAngle": 270,
+					"text": "BUDGET"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 410,
+					"left": 15,
+					"width": 20,
+					"height": 97,
+					"sizingY": "move",
+					"class": "BigButtons",
+					"textAngle": 270,
+					"text": "INVENTORY"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 491,
+					"left": 998,
+					"width": 46,
+					"height": 14,
+					"class": "BaseInformation",
+					"text": "{enter}"
+				}
+			},
+			"entryOrder": [
+				"jobFormSearch",
+				"clearBtn",
+				"BillOfMaterials",
+				"Inventory",
+				"sequence",
+				"rawMatlCode",
+				"location",
+				"purchaseOrder",
+				"reference",
+				"quantity",
+				"reference1",
+				"historyBtn",
+				"PostBtn"
+			]
+		},
+		{
+			"objects": {
+				"history": {
+					"type": "listbox",
+					"top": 9,
+					"left": 25,
+					"width": 1048,
+					"height": 454,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"lockedColumnCount": 1,
+					"dataSource": "Form:C1466.transactions_es",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#E3FFE1",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 16,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column11",
+							"dataSource": "This:C1470.XferDate",
+							"dataSourceTypeHint": "date",
+							"width": 135,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Date",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer11",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "This:C1470.JobForm",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "JobForm",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer12",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "This:C1470.Sequence",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Seq",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer13",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "This:C1470.Raw_Matl_Code",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Raw Matl",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer14",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column15",
+							"dataSource": "This:C1470.viaLocation",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Location",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer15",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column16",
+							"dataSource": "This:C1470.POItemKey",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "PO",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer16",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column17",
+							"dataSource": "This:C1470.ActCost",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header17",
+								"text": "UnitCost",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer17",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column18",
+							"dataSource": "This:C1470.Qty",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "Qty",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer18",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						},
+						{
+							"name": "Column19",
+							"dataSource": "This:C1470.ReferenceNo",
+							"width": 138,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#E3FFE1",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 16,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "Refer",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							},
+							"footer": {
+								"name": "Footer19",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 16
+							}
+						}
+					]
+				},
+				"History2": {
+					"type": "button",
+					"top": 481,
+					"left": 783,
+					"width": 99,
+					"height": 39,
+					"sizingY": "move",
+					"action": "firstPage",
+					"text": "Return",
+					"class": "BigButtons",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"3D Radio Button": {
+					"type": "radio",
+					"top": 84,
+					"left": 516,
+					"width": 1,
+					"height": 1,
+					"focusable": false,
+					"text": "Radio Button 3D",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

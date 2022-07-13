@@ -1,0 +1,226 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"width": 750,
+	"height": 550,
+	"markerBody": 314,
+	"markerBreak": 314,
+	"markerFooter": 324,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture Button2": {
+					"type": "pictureButton",
+					"top": 102,
+					"left": 235,
+					"width": 276,
+					"height": 32,
+					"dataSource": "block2",
+					"picture": "/RESOURCES/Images/library/unlocked.png",
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Picture Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 388,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Tool_Drawers"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 117,
+					"left": 64,
+					"width": 65,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Bin : "
+				},
+				"Text9": {
+					"type": "text",
+					"top": 154,
+					"left": 21,
+					"width": 65,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Contents : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 339,
+					"left": 21,
+					"width": 65,
+					"height": 15,
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"text": "Tags : "
+				},
+				"entryid": {
+					"type": "input",
+					"top": 117,
+					"left": 134,
+					"width": 76,
+					"height": 15,
+					"dataSource": "[Tool_Drawers:151]Bin:1",
+					"class": "BaseField",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"entryContents": {
+					"type": "input",
+					"top": 154,
+					"left": 91,
+					"width": 510,
+					"height": 179,
+					"dataSource": "[Tool_Drawers:151]Contents:2",
+					"textAlign": "left",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"entryTags": {
+					"type": "input",
+					"top": 339,
+					"left": 91,
+					"width": 510,
+					"height": 179,
+					"dataSource": "[Tool_Drawers:151]Tags:3",
+					"textAlign": "left",
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture Button1": {
+					"type": "pictureButton",
+					"top": 106,
+					"left": 235,
+					"width": 222,
+					"height": 28,
+					"dataSource": "block",
+					"picture": "/RESOURCES/Images/library/locked.png",
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Picture Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"entryid",
+				"entryContents",
+				"entryTags"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text6"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

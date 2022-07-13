@@ -1,0 +1,93 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 19,
+	"menuBar": "empty",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ListBox": {
+					"type": "listbox",
+					"top": 12,
+					"left": 9,
+					"width": 778,
+					"height": 376,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "iListBox1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"showFooters": true,
+					"alternateFill": "#DFFFFF",
+					"fontFamily": "Monaco",
+					"fontSize": 10,
+					"method": "ObjectMethods/ListBox.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": []
+				},
+				"ListBox2": {
+					"type": "listbox",
+					"top": 407,
+					"left": 335,
+					"width": 452,
+					"height": 411,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"resizingMode": "legacy",
+					"dataSource": "iListBox2",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"rowControlSource": "aJFM_Hidden",
+					"alternateFill": "#DFFFFF",
+					"fontFamily": "Monaco",
+					"fontSize": 10,
+					"events": [
+						"onClick"
+					],
+					"columns": []
+				},
+				"ListBox3": {
+					"type": "listbox",
+					"top": 407,
+					"left": 9,
+					"width": 314,
+					"height": 411,
+					"sizingY": "move",
+					"resizingMode": "legacy",
+					"dataSource": "iListBox3",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"rowControlSource": "aJMI_Hidden",
+					"alternateFill": "#DFFFFF",
+					"fontFamily": "Monaco",
+					"fontSize": 10,
+					"events": [
+						"onClick"
+					],
+					"columns": []
+				}
+			}
+		}
+	]
+}

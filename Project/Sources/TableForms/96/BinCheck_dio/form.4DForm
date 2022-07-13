@@ -1,0 +1,351 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Default",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 5,
+					"left": 15,
+					"width": 826,
+					"height": 72,
+					"dataSource": "rft_prompt",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 72,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 81,
+					"left": 6,
+					"width": 838,
+					"height": 27,
+					"dataSource": "rft_Response",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 117,
+					"left": 5,
+					"width": 389,
+					"height": 78,
+					"dataSource": "rft_log",
+					"fontFamily": "Monaco",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 215,
+					"left": 4,
+					"width": 840,
+					"height": 374,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "36px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"alternateFill": "#E2FFDF",
+					"fontFamily": "Monaco",
+					"fontSize": 18,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Scans",
+							"dataSource": "rft_Skid",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "|SSCC-18",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Skid",
+								"dataSource": "Header1",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer1",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "rft_Case",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "|CASE-22",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Case",
+								"dataSource": "Header2",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"dataSource": "qtyListed",
+								"dataSourceTypeHint": "number",
+								"numberFormat": "|Int_no_zero",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "center",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "rft_Status",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Status",
+								"dataSource": "Header3",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "#000000",
+								"fill": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "rft_Bin",
+							"width": 156,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Monaco",
+							"fontSize": 18,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Bin",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 117,
+					"left": 407,
+					"width": 438,
+					"height": 39,
+					"dataSource": "rft_error_log",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Helvetica",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"fill": "#FFFF00",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"delete": {
+					"type": "button",
+					"top": 163,
+					"left": 540,
+					"width": 168,
+					"height": 32,
+					"dataSource": "bDelete",
+					"text": "Delete Selected",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#EE0000",
+					"method": "ObjectMethods/delete.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable1",
+				"Variable2",
+				"Variable3",
+				"List Box1",
+				"Variable4",
+				"delete"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

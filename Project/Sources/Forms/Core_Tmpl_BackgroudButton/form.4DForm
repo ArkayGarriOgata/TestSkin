@@ -1,0 +1,62 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_Background",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onClick",
+		"onMouseEnter"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"CoreToolBar": {
+					"type": "pictureButton",
+					"top": 0,
+					"left": 0,
+					"width": 1260,
+					"height": 40,
+					"sizingX": "grow",
+					"dataSource": "CorenToolBar",
+					"picture": "/RESOURCES/Skin/Master/ToolBar.png",
+					"useLastFrameAsDisabled": true
+				},
+				"Core_Window_Drag": {
+					"type": "button",
+					"top": 2,
+					"left": 0,
+					"width": 1260,
+					"height": 801,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Core_nWindow_Drag",
+					"display": false,
+					"method": "ObjectMethods/Core_Window_Drag.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 814,
+					"left": 81,
+					"width": 144,
+					"height": 16,
+					"class": "Form_Label",
+					"text": "Toolbar 40"
+				}
+			}
+		},
+		null
+	]
+}

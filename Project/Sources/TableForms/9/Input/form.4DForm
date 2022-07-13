@@ -1,0 +1,427 @@
+{
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 750,
+	"height": 550,
+	"menuBar": "UserRuntime",
+	"markerBody": 368,
+	"markerBreak": 368,
+	"markerFooter": 368,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text10": {
+					"type": "text",
+					"top": 117,
+					"left": 44,
+					"width": 101,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Contract's Name"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 140,
+					"left": 44,
+					"width": 89,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CustomerName"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 140,
+					"left": 445,
+					"width": 68,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Customerid"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 163,
+					"left": 44,
+					"width": 83,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "CustomerLine"
+				},
+				"id": {
+					"type": "input",
+					"top": 46,
+					"left": 649,
+					"width": 86,
+					"height": 17,
+					"dataSource": "[Customers_Projects:9]id:1",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field50": {
+					"type": "input",
+					"top": 63,
+					"left": 649,
+					"width": 86,
+					"height": 17,
+					"dataSource": "[Customers_Projects:9]DateOpened:11",
+					"dataSourceTypeHint": "date",
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable105": {
+					"type": "button",
+					"top": 110,
+					"left": 463,
+					"width": 121,
+					"height": 15,
+					"dataSource": "bPrint",
+					"text": "Control Center",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable105.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Name": {
+					"type": "input",
+					"top": 117,
+					"left": 148,
+					"width": 287,
+					"height": 15,
+					"dataSource": "[Customers_Projects:9]Name:2",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"CustomerName": {
+					"type": "input",
+					"top": 140,
+					"left": 148,
+					"width": 270,
+					"height": 15,
+					"dataSource": "[Customers_Projects:9]CustomerName:4",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/CustomerName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Customerid": {
+					"type": "input",
+					"top": 140,
+					"left": 522,
+					"width": 42,
+					"height": 15,
+					"dataSource": "[Customers_Projects:9]Customerid:3",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"focusable": false,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CustomerLine": {
+					"type": "input",
+					"top": 163,
+					"left": 148,
+					"width": 140,
+					"height": 15,
+					"dataSource": "[Customers_Projects:9]CustomerLine:5",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field49": {
+					"type": "input",
+					"top": 236,
+					"left": 166,
+					"width": 352,
+					"height": 60,
+					"dataSource": "[Customers_Projects:9]comments:10",
+					"stroke": "#000000",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 138,
+					"left": 420,
+					"width": 16,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 161,
+					"left": 290,
+					"width": 16,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/popupMenuIcon.png"
+				},
+				"Variable32": {
+					"type": "button",
+					"top": 138,
+					"left": 420,
+					"width": 16,
+					"height": 15,
+					"dataSource": "bZoomCust",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/zoomboxCust"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable32.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseMove"
+					]
+				},
+				"Variable33": {
+					"type": "dropdown",
+					"top": 161,
+					"left": 290,
+					"width": 16,
+					"height": 15,
+					"dataSource": "aBrand",
+					"display": false,
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable33.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text41": {
+					"type": "text",
+					"top": 220,
+					"left": 49,
+					"width": 469,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Production Activity     Date            Item No             Sample No            Status         "
+				},
+				"Text43": {
+					"type": "text",
+					"top": 240,
+					"left": 36,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Samples Provided"
+				},
+				"Text44": {
+					"type": "text",
+					"top": 264,
+					"left": 36,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Press/Proofing"
+				},
+				"Text45": {
+					"type": "text",
+					"top": 252,
+					"left": 36,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Orders received"
+				},
+				"Text46": {
+					"type": "text",
+					"top": 277,
+					"left": 36,
+					"width": 123,
+					"height": 15,
+					"stroke": "#000000",
+					"class": "BaseLabel",
+					"text": "Budgets"
+				},
+				"Text57": {
+					"type": "text",
+					"top": 63,
+					"left": 550,
+					"width": 96,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Date Opened"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 46,
+					"left": 561,
+					"width": 85,
+					"height": 17,
+					"stroke": "#000000",
+					"class": "BaseFormTitle",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Project Nº"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

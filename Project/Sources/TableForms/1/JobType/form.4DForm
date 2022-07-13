@@ -1,0 +1,304 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 4,
+					"left": 15,
+					"width": 152,
+					"height": 16,
+					"stroke": "#000099",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"text": "Select Job Type for form:"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 6,
+					"left": 180,
+					"width": 28,
+					"height": 12,
+					"dataSource": "[Job_Forms:42]FormNumber:3",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"borderStyle": "raised",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 27,
+					"left": 14,
+					"width": 103,
+					"height": 18,
+					"dataSource": "rbPrep",
+					"shortcutKey": "å",
+					"shortcutAlt": true,
+					"text": "Preparatory",
+					"class": "BaseRadioButton",
+					"stroke": "#000099",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 27,
+					"left": 122,
+					"width": 93,
+					"height": 18,
+					"dataSource": "rbDoOver",
+					"shortcutKey": "å",
+					"shortcutAlt": true,
+					"text": "Do Over",
+					"class": "BaseRadioButton",
+					"stroke": "#000099",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 50,
+					"left": 14,
+					"width": 103,
+					"height": 18,
+					"dataSource": "rbProd",
+					"shortcutKey": "å",
+					"shortcutAlt": true,
+					"text": "Production ",
+					"class": "BaseRadioButton",
+					"stroke": "#000099",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 50,
+					"left": 122,
+					"width": 89,
+					"height": 18,
+					"dataSource": "rbRD",
+					"shortcutKey": "å",
+					"shortcutAlt": true,
+					"text": "R & D",
+					"class": "BaseRadioButton",
+					"stroke": "#000099",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "radio",
+					"top": 72,
+					"left": 14,
+					"width": 99,
+					"height": 18,
+					"dataSource": "rbLT",
+					"shortcutKey": "å",
+					"shortcutAlt": true,
+					"text": "Line Trial",
+					"class": "BaseRadioButton",
+					"stroke": "#000099",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "radio",
+					"top": 72,
+					"left": 122,
+					"width": 89,
+					"height": 18,
+					"dataSource": "rbPLT",
+					"shortcutKey": "å",
+					"shortcutAlt": true,
+					"text": "Paid P/LT",
+					"class": "BaseRadioButton",
+					"stroke": "#000099",
+					"radioGroup": "Group1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "checkbox",
+					"top": 95,
+					"left": 38,
+					"width": 190,
+					"height": 18,
+					"dataSource": "cbCA",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/ASN_PrintPicks"
+					},
+					"text": "Shipping to California",
+					"class": "BaseCheckBox",
+					"stroke": "#000099",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 120,
+					"left": 138,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPick",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 120,
+					"left": 15,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPick",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Enter Job",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Variable2",
+				"Variable4",
+				"Variable3",
+				"Variable5",
+				"Variable8",
+				"Variable9"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

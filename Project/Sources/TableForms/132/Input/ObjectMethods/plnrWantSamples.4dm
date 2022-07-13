@@ -1,0 +1,1 @@
+rfc_setQtytoOneIfTrue(->[Finished_Goods_SizeAndStyles:132]Samples:28; ->[Finished_Goods_SizeAndStyles:132]qty_samples:35; ->task2)

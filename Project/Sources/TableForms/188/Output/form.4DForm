@@ -1,0 +1,393 @@
+{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 34,
+	"markerBreak": 34,
+	"markerFooter": 34,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"BackRect": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 0,
+					"width": 346,
+					"height": 19,
+					"stroke": "transparent"
+				},
+				"Splitter1": {
+					"type": "button",
+					"top": 1,
+					"left": 23,
+					"width": 1,
+					"height": 32,
+					"dataSource": "Splitter1",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter2": {
+					"type": "button",
+					"top": 1,
+					"left": 73,
+					"width": 1,
+					"height": 32,
+					"dataSource": "Splitter2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter3": {
+					"type": "button",
+					"top": 1,
+					"left": 170,
+					"width": 1,
+					"height": 32,
+					"dataSource": "Splitter3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter4": {
+					"type": "button",
+					"top": 1,
+					"left": 288,
+					"width": 1,
+					"height": 32,
+					"dataSource": "Splitter4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Line7": {
+					"type": "line",
+					"top": 14,
+					"left": 0,
+					"width": 347,
+					"sizingX": "grow",
+					"stroke": "#009900",
+					"strokeWidth": 0.1
+				},
+				"S1_Text": {
+					"type": "text",
+					"top": 1,
+					"left": 1,
+					"width": 22,
+					"height": 13,
+					"sizingX": "grow",
+					"fill": "#E2FFDF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": "Rot"
+				},
+				"S2_Text": {
+					"type": "text",
+					"top": 1,
+					"left": 24,
+					"width": 47,
+					"height": 13,
+					"sizingX": "grow",
+					"fill": "#E2FFDF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": " Side"
+				},
+				"S3_Text": {
+					"type": "text",
+					"top": 1,
+					"left": 74,
+					"width": 94,
+					"height": 13,
+					"sizingX": "grow",
+					"fill": "#E2FFDF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": " Ink Number"
+				},
+				"S4_Text": {
+					"type": "text",
+					"top": 1,
+					"left": 171,
+					"width": 115,
+					"height": 13,
+					"sizingX": "grow",
+					"fill": "#E2FFDF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": " Color"
+				},
+				"S5_Text": {
+					"type": "text",
+					"top": 1,
+					"left": 290,
+					"width": 57,
+					"height": 13,
+					"sizingX": "grow",
+					"fill": "#E2FFDF",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"text": " Operation"
+				},
+				"S1_Field": {
+					"type": "input",
+					"top": 18,
+					"left": 3,
+					"width": 16,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]Rotation:1",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Field": {
+					"type": "input",
+					"top": 18,
+					"left": 28,
+					"width": 41,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]Side:2",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/CartonSide"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Field": {
+					"type": "input",
+					"top": 18,
+					"left": 79,
+					"width": 87,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]InkNumber:3",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field": {
+					"type": "input",
+					"top": 18,
+					"left": 176,
+					"width": 108,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]Color:4",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Field": {
+					"type": "input",
+					"top": 18,
+					"left": 297,
+					"width": 47,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]Operation:5",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Operations"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field1": {
+					"type": "input",
+					"top": 18,
+					"left": 351,
+					"width": 65,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]ControlNumber:6",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Field2": {
+					"type": "input",
+					"top": 18,
+					"left": 425,
+					"width": 65,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[Finished_Goods_Specs_Inks:188]id_added_by_converter:7",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#000000",
+					"class": "BaseInformation",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

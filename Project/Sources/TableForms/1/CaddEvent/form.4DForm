@@ -1,0 +1,521 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 220,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 500,
+					"height": 90,
+					"fill": "#00B4FF",
+					"stroke": "#1E90FF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture7": {
+					"type": "picture",
+					"top": 11,
+					"left": 6,
+					"width": 63,
+					"height": 63,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26658.png"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 10,
+					"left": 59,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26773.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 11,
+					"left": 6,
+					"width": 61,
+					"height": 63,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture5": {
+					"type": "picture",
+					"top": 15,
+					"left": 414,
+					"width": 60,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/contact excited ghosts and snake.png"
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 15,
+					"left": 414,
+					"width": 61,
+					"height": 65,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 12,
+					"left": 89,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibNew",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 12,
+					"left": 159,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibMod",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 11,
+					"left": 229,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibRev",
+					"focusable": false,
+					"text": "Review",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box": {
+					"type": "groupBox",
+					"top": 11,
+					"left": 13,
+					"width": 475,
+					"height": 65,
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"text": "Addresses"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 78,
+					"left": 13,
+					"width": 475,
+					"height": 65,
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"text": "Contacts"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 145,
+					"left": 13,
+					"width": 475,
+					"height": 65,
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"text": "Vendors"
+				},
+				"bHelp": {
+					"type": "button",
+					"top": 42,
+					"left": 28,
+					"width": 71,
+					"height": 16,
+					"dataSource": "bHelp",
+					"shortcutKey": "[Enter]",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bHelp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bNewAdd": {
+					"type": "button",
+					"top": 42,
+					"left": 104,
+					"width": 101,
+					"height": 17,
+					"dataSource": "bNewAdd",
+					"shortcutKey": "[Enter]",
+					"text": "New Address",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bNewAdd.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bModAdd": {
+					"type": "button",
+					"top": 42,
+					"left": 210,
+					"width": 129,
+					"height": 16,
+					"dataSource": "bModAdd",
+					"shortcutKey": "[Enter]",
+					"text": "Modify Addresses",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bModAdd.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bRevAdd": {
+					"type": "button",
+					"top": 42,
+					"left": 344,
+					"width": 137,
+					"height": 16,
+					"dataSource": "bRevAdd",
+					"shortcutKey": "[Enter]",
+					"text": "Review Addresses",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bRevAdd.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bModifyContact": {
+					"type": "button",
+					"top": 96,
+					"left": 210,
+					"width": 129,
+					"height": 16,
+					"dataSource": "bModifyContact",
+					"shortcutKey": "[Enter]",
+					"text": "Modify Contacts",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bModifyContact.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bResetOther": {
+					"type": "button",
+					"top": 96,
+					"left": 344,
+					"width": 137,
+					"height": 16,
+					"dataSource": "bResetOther",
+					"shortcutKey": "[Enter]",
+					"text": "Reset 'Other'",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bResetOther.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bHelp1": {
+					"type": "button",
+					"top": 109,
+					"left": 28,
+					"width": 71,
+					"height": 16,
+					"dataSource": "bHelp",
+					"shortcutKey": "[Enter]",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bHelp1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bNewContact": {
+					"type": "button",
+					"top": 109,
+					"left": 104,
+					"width": 101,
+					"height": 16,
+					"dataSource": "bNewContact",
+					"shortcutKey": "[Enter]",
+					"text": "New Contact",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bNewContact.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bRevContacts": {
+					"type": "button",
+					"top": 119,
+					"left": 210,
+					"width": 129,
+					"height": 16,
+					"dataSource": "bRevContacts",
+					"shortcutKey": "[Enter]",
+					"text": "Reveiw Contacts",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bRevContacts.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bFindMyContacts": {
+					"type": "button",
+					"top": 119,
+					"left": 344,
+					"width": 137,
+					"height": 16,
+					"dataSource": "bFindMyContacts",
+					"shortcutKey": "[Enter]",
+					"text": "Find My Contacts",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bFindMyContacts.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bRevVendors": {
+					"type": "button",
+					"top": 163,
+					"left": 344,
+					"width": 137,
+					"height": 16,
+					"dataSource": "bRevVendors",
+					"shortcutKey": "[Enter]",
+					"text": "Review Vendors",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bRevVendors.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bHelp2": {
+					"type": "button",
+					"top": 176,
+					"left": 28,
+					"width": 71,
+					"height": 16,
+					"dataSource": "bHelp",
+					"shortcutKey": "[Enter]",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bHelp2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bNewVend": {
+					"type": "button",
+					"top": 176,
+					"left": 104,
+					"width": 101,
+					"height": 16,
+					"dataSource": "bNewVend",
+					"shortcutKey": "[Enter]",
+					"text": "New Vendor",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bNewVend.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bModVendors": {
+					"type": "button",
+					"top": 176,
+					"left": 210,
+					"width": 129,
+					"height": 16,
+					"dataSource": "bModVendors",
+					"shortcutKey": "[Enter]",
+					"text": "Modify Vendors",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bModVendors.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bReports": {
+					"type": "button",
+					"top": 185,
+					"left": 344,
+					"width": 137,
+					"height": 16,
+					"dataSource": "bReports",
+					"shortcutKey": "[Enter]",
+					"text": "Reports",
+					"class": "Palette_Buttons",
+					"method": "ObjectMethods/bReports.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

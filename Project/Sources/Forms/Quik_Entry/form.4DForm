@@ -1,0 +1,251 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_Background",
+	"formSizeAnchor": "Quik_nEntry_Save",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDataChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Quik_atEntry_Group": {
+					"type": "dropdown",
+					"top": 11,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"dataSource": "Quik_atEntry_Group",
+					"focusable": false,
+					"class": "Form_Label",
+					"method": "ObjectMethods/Quik_atEntry_Group.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Quik_atEntry_Category": {
+					"type": "combo",
+					"top": 38,
+					"left": 85,
+					"width": 140,
+					"height": 18,
+					"dataSource": "Quik_atEntry_Category",
+					"class": "Form_Label",
+					"method": "ObjectMethods/Quik_atEntry_Category.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Quik_tEntry_QueryMethod": {
+					"type": "input",
+					"top": 89,
+					"left": 85,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Quik_tEntry_QueryMethod",
+					"class": "Form_Value",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Quik_nEntry_ShowQuery": {
+					"type": "checkbox",
+					"top": 114,
+					"left": 11,
+					"width": 99,
+					"height": 30,
+					"dataSource": "Quik_nEntry_ShowQuery",
+					"text": "Show Query",
+					"class": "Form_Label",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Quik_nEntry_OnLoad": {
+					"type": "button",
+					"top": 427,
+					"left": 13,
+					"width": 70,
+					"height": 24,
+					"visibility": "hidden",
+					"dataSource": "Quik_nEntry_OnLoad",
+					"text": "On Load",
+					"focusable": false,
+					"method": "ObjectMethods/Quik_nEntry_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Quik_Entry_ShowQuery": {
+					"type": "text",
+					"top": 121,
+					"left": 13,
+					"width": 79,
+					"height": 16,
+					"visibility": "hidden",
+					"class": "Form_Label",
+					"text": "Show Query"
+				},
+				"Quik_nEntry_Save": {
+					"type": "pictureButton",
+					"top": 113,
+					"left": 197,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "Quik_nEntry_Save",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AcceptRight.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Quik_nEntry_Save.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CoreCancel": {
+					"type": "pictureButton",
+					"top": 113,
+					"left": 142,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "CorenCancel",
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Quik_tEntry_Name": {
+					"type": "input",
+					"top": 66,
+					"left": 85,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Quik_tEntry_Name",
+					"class": "Form_Value",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 40,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"text": "Group"
+				},
+				"Category": {
+					"type": "text",
+					"top": 40,
+					"left": 13,
+					"width": 60,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"text": "Category"
+				},
+				"Name": {
+					"type": "text",
+					"top": 67,
+					"left": 13,
+					"width": 62,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"text": "Name"
+				},
+				"Quik_nEntry_Name": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 59,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "Quik_nEntry_Name",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/ImportRound.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Quik_nEntry_Name.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Quik_nEntry_Delete": {
+					"type": "pictureButton",
+					"top": 113,
+					"left": 169,
+					"width": 28,
+					"height": 28,
+					"sizingX": "move",
+					"dataSource": "Quik_nEntry_Delete",
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/MinusMiddle.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Quik_nEntry_Delete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Quik_nEntry_Export": {
+					"type": "pictureButton",
+					"top": 62,
+					"left": 205,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "Quik_nEntry_Export",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/ExportRound.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Quik_nEntry_Export.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Query": {
+					"type": "text",
+					"top": 90,
+					"left": 13,
+					"width": 62,
+					"height": 16,
+					"class": "Form_Label",
+					"textAlign": "left",
+					"text": "Query"
+				}
+			}
+		}
+	]
+}

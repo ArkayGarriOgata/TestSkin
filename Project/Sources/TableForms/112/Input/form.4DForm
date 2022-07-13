@@ -1,0 +1,208 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "Job Transfer Bag",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 2,
+	"bottomMargin": 2,
+	"menuBar": "Default",
+	"markerBody": 131,
+	"markerBreak": 131,
+	"markerFooter": 141,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Picture7": {
+					"type": "picture",
+					"top": 151,
+					"left": 63,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/interface.png"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 159,
+					"left": 109,
+					"width": 520,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "JobTransferBag"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 192,
+					"left": 71,
+					"width": 11,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "ID"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 192,
+					"left": 172,
+					"width": 45,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Location"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 210,
+					"left": 74,
+					"width": 57,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "PjtNumber"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 210,
+					"left": 181,
+					"width": 45,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Jobform"
+				},
+				"ID": {
+					"type": "input",
+					"top": 192,
+					"left": 87,
+					"width": 65,
+					"height": 12,
+					"dataSource": "[JTB_Job_Transfer_Bags:112]ID:1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/ID.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Location": {
+					"type": "input",
+					"top": 192,
+					"left": 222,
+					"width": 197,
+					"height": 12,
+					"dataSource": "[JTB_Job_Transfer_Bags:112]Location:4",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"PjtNumber": {
+					"type": "input",
+					"top": 210,
+					"left": 136,
+					"width": 35,
+					"height": 12,
+					"dataSource": "[JTB_Job_Transfer_Bags:112]PjtNumber:2",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Jobform": {
+					"type": "input",
+					"top": 210,
+					"left": 231,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[JTB_Job_Transfer_Bags:112]Jobform:3",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/NoGremlins"
+					},
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Jobform.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform1": {
+					"type": "subform",
+					"top": 235,
+					"left": 74,
+					"width": 393,
+					"height": 148,
+					"dataSourceTypeHint": "text",
+					"table": 113,
+					"detailForm": "Input",
+					"listForm": "IncludeScreen",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				}
+			}
+		}
+	]
+}

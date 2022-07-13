@@ -1,0 +1,164 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "Core_Tmpl_Background",
+	"formSizeAnchor": "UsSp_tEntry_Email",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload",
+		"onAfterKeystroke"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"UsSp_tEntry_Issue": {
+					"type": "input",
+					"top": 43,
+					"left": 13,
+					"width": 390,
+					"height": 151,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "UsSp_tEntry_Issue",
+					"class": "Form_Value",
+					"placeholder": "Issue, Question or Request",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UsSp_tEntry_Issue.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"UsSp_tEntry_Email": {
+					"type": "input",
+					"top": 208,
+					"left": 13,
+					"width": 405,
+					"height": 17,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "UsSp_tEntry_Email",
+					"placeholder": "eMail address of person aMs User Support should contact",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UsSp_tEntry_Email.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"UsSp_atEntry_Category": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 13,
+					"width": 100,
+					"height": 20,
+					"dataSource": "UsSp_atEntry_Category",
+					"focusable": false,
+					"class": "Form_Label",
+					"method": "ObjectMethods/UsSp_atEntry_Category.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"UsSp_nEntry_OnLoad": {
+					"type": "button",
+					"top": 259,
+					"left": 13,
+					"width": 70,
+					"height": 20,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"dataSource": "UsSp_nEntry_OnLoad",
+					"focusable": false,
+					"text": "On Load",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/UsSp_nEntry_OnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"UsSp_nEntry_Cancel": {
+					"type": "pictureButton",
+					"top": 11,
+					"left": 346,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"dataSource": "UsSp_nEntry_Cancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/CancelLeft.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"UsSp_nEntry_Attachment": {
+					"type": "pictureButton",
+					"top": 11,
+					"left": 370,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"dataSource": "UsSp_nEntry_Attachment",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Attachment"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/AttachDocumentMiddle.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/UsSp_nEntry_Attachment.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UsSp_nEntry_Send": {
+					"type": "pictureButton",
+					"top": 11,
+					"left": 394,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"dataSource": "UsSp_nEntry_Send",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Email"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/emailinformationright.png",
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/UsSp_nEntry_Send.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

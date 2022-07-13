@@ -1,0 +1,525 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 474,
+	"markerBreak": 476,
+	"markerFooter": 478,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 259,
+					"left": 18,
+					"width": 251,
+					"height": 28,
+					"stroke": "#000099",
+					"borderRadius": 5
+				},
+				"Text1": {
+					"type": "text",
+					"top": 20,
+					"left": 1,
+					"width": 498,
+					"height": 44,
+					"fill": "#FFA0A0",
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"text": "                                               1. Choose the Differential to be used.\r                                               2. Check off any additional options.\r                                               3. Press the Update button.\r"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 498,
+					"height": 18,
+					"fill": "transparent"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 2,
+					"left": 2,
+					"width": 496,
+					"height": 13,
+					"fill": "#DDDDDD",
+					"stroke": "#000099",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Update Order Link to Estimate through Change Order"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 77,
+					"left": 260,
+					"width": 239,
+					"height": 176,
+					"fill": "#DDDDDD"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 77,
+					"left": 265,
+					"width": 153,
+					"height": 9,
+					"fill": "transparent"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 262,
+					"width": 164,
+					"height": 16,
+					"fill": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 72,
+					"left": 263,
+					"width": 162,
+					"height": 14,
+					"fill": "#DDDDDD",
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"fontWeight": "bold",
+					"text": "Additional Order Line items"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 71,
+					"left": 148,
+					"width": 103,
+					"height": 16,
+					"dataSource": "sPONum",
+					"stroke": "#0000FF",
+					"class": "BaseField",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "####################",
+					"entryFilter": "&\"a-z;A-Z;0-9; ;,;.;-\"",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 110,
+					"left": 6,
+					"width": 245,
+					"height": 140,
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"alternateFill": "#FFF0DF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "asBull",
+							"width": 17,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header4",
+								"dataSource": "Header4",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "asCaseID",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Header5",
+								"dataSource": "Header5",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "asDiff",
+							"width": 188,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "#FFF0DF",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Header6",
+								"dataSource": "Header6",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"accounting1": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 263,
+					"width": 122,
+					"height": 17,
+					"dataSource": "rInclFrate",
+					"text": "Special Freight",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"addonDies": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 389,
+					"width": 101,
+					"height": 17,
+					"dataSource": "rInclDies",
+					"text": "Dies",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/addonDies.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "checkbox",
+					"top": 144,
+					"left": 263,
+					"width": 102,
+					"height": 17,
+					"dataSource": "rInclPrep",
+					"text": "Preparatory",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"addonPlates": {
+					"type": "checkbox",
+					"top": 144,
+					"left": 389,
+					"width": 100,
+					"height": 17,
+					"dataSource": "rInclPlates",
+					"text": "Plates",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/addonPlates.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"addonDupes": {
+					"type": "checkbox",
+					"top": 178,
+					"left": 263,
+					"width": 103,
+					"height": 17,
+					"dataSource": "rinclDups",
+					"text": "Dupes",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"addonPandD": {
+					"type": "checkbox",
+					"top": 178,
+					"left": 389,
+					"width": 112,
+					"height": 17,
+					"dataSource": "rInclPnD",
+					"text": "Plates & Dies",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/addonPandD.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable11": {
+					"type": "checkbox",
+					"top": 210,
+					"left": 263,
+					"width": 112,
+					"height": 17,
+					"dataSource": "rinclCull",
+					"text": "Culling",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable12": {
+					"type": "checkbox",
+					"top": 210,
+					"left": 389,
+					"width": 102,
+					"height": 17,
+					"dataSource": "rInclOther",
+					"text": "Other",
+					"class": "BaseCheckBox",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable15": {
+					"type": "radio",
+					"top": 263,
+					"left": 26,
+					"width": 115,
+					"height": 19,
+					"dataSource": "rb1",
+					"text": "Use Want Qty",
+					"class": "BaseRadioButton",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "radio",
+					"top": 263,
+					"left": 146,
+					"width": 119,
+					"height": 19,
+					"dataSource": "rb2",
+					"text": "Use Yield Qty",
+					"class": "BaseRadioButton",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"radioGroup": "Group2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 262,
+					"left": 311,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bNoPick",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancel",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 263,
+					"left": 404,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPick",
+					"shortcutKey": "[Enter]",
+					"text": "Update",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 71,
+					"left": 2,
+					"width": 143,
+					"height": 16,
+					"fill": "#DDDDDD",
+					"stroke": "#0000FF",
+					"class": "BaseLabel",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": " Estimate Number:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 91,
+					"left": 2,
+					"width": 249,
+					"height": 14,
+					"fill": "#DDDDDD",
+					"stroke": "#0000FF",
+					"class": "BaseInformation",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Select desired Differential"
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 288,
+					"left": 406,
+					"width": 78,
+					"height": 7,
+					"dataSource": "bPick",
+					"shortcutKey": "[Return]",
+					"text": "Enter Order",
+					"display": false,
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"Variable15",
+				"Variable16"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

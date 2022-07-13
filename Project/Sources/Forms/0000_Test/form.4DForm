@@ -1,0 +1,75 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"MyValue": {
+					"type": "input",
+					"top": 37,
+					"left": 54,
+					"width": 256,
+					"height": 17,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/MyValue.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 34,
+					"left": 356,
+					"width": 93,
+					"height": 25,
+					"text": "Arkay",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Web Area": {
+					"type": "webArea",
+					"top": 66,
+					"left": 44,
+					"width": 1097,
+					"height": 959,
+					"contextMenu": "none"
+				}
+			}
+		}
+	]
+}

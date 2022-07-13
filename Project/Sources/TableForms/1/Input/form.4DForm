@@ -1,0 +1,233 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "empty",
+	"markerBody": 274,
+	"markerBreak": 274,
+	"markerFooter": 284,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 139,
+					"left": 47,
+					"width": 120,
+					"height": 16,
+					"class": "BaseManditoryLabel",
+					"text": "ApplicationName : "
+				},
+				"Text3": {
+					"type": "text",
+					"top": 169,
+					"left": 47,
+					"width": 104,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "InvInProgress : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 169,
+					"left": 233,
+					"width": 137,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "AcctVantageVersion : "
+				},
+				"Text5": {
+					"type": "text",
+					"top": 169,
+					"left": 454,
+					"width": 75,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "Active_API : "
+				},
+				"Text6": {
+					"type": "text",
+					"top": 197,
+					"left": 47,
+					"width": 137,
+					"height": 15,
+					"class": "BaseLabel",
+					"text": "API_ComputerName : "
+				},
+				"ApplicationName": {
+					"type": "input",
+					"top": 139,
+					"left": 172,
+					"width": 500,
+					"height": 20,
+					"dataSource": "[zz_control:1]ApplicationName:1",
+					"class": "BaseManditory",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"InvInProgress": {
+					"type": "checkbox",
+					"top": 169,
+					"left": 156,
+					"width": 62,
+					"height": 16,
+					"dataSource": "[zz_control:1]InvInProgress:24",
+					"text": "Yes",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AcctVantageVersion": {
+					"type": "input",
+					"top": 169,
+					"left": 375,
+					"width": 64,
+					"height": 18,
+					"dataSource": "[zz_control:1]AcctVantageVersion:53",
+					"dataSourceTypeHint": "integer",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Active_API": {
+					"type": "checkbox",
+					"top": 169,
+					"left": 534,
+					"width": 62,
+					"height": 16,
+					"dataSource": "[zz_control:1]Active_API:11",
+					"text": "Yes",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"API_ComputerName": {
+					"type": "input",
+					"top": 197,
+					"left": 189,
+					"width": 234,
+					"height": 75,
+					"dataSource": "[zz_control:1]API_ComputerName:23",
+					"class": "BaseField",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

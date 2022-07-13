@@ -1,0 +1,354 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 160,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 93,
+					"left": 1,
+					"width": 340,
+					"height": 22,
+					"fill": "#EEEEEE",
+					"stroke": "#EEEEEE"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 1,
+					"width": 340,
+					"height": 22,
+					"fill": "#DDDDDD",
+					"stroke": "#DDDDDD"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 340,
+					"height": 71,
+					"fill": "#CCCCCC",
+					"stroke": "#CCCCCC"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 11,
+					"left": 9,
+					"width": 130,
+					"height": 16,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "PO Number:"
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 142,
+					"width": 115,
+					"height": 18
+				},
+				"Text2": {
+					"type": "text",
+					"top": 51,
+					"left": 19,
+					"width": 120,
+					"height": 16,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Old Location:"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 50,
+					"left": 142,
+					"width": 129,
+					"height": 18
+				},
+				"Text3": {
+					"type": "text",
+					"top": 94,
+					"left": 19,
+					"width": 120,
+					"height": 16,
+					"fill": "#EEEEEE",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "New Location:"
+				},
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 93,
+					"left": 142,
+					"width": 129,
+					"height": 18
+				},
+				"Text4": {
+					"type": "text",
+					"top": 33,
+					"left": 9,
+					"width": 130,
+					"height": 12,
+					"fill": "#CCCCCC",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Raw Material Code:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 73,
+					"left": 9,
+					"width": 130,
+					"height": 16,
+					"fill": "#DDDDDD",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Quantity:"
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 72,
+					"left": 142,
+					"width": 115,
+					"height": 18
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 11,
+					"left": 145,
+					"width": 111,
+					"height": 16,
+					"dataSource": "sCriterion2",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 33,
+					"left": 145,
+					"width": 175,
+					"height": 12,
+					"dataSource": "sCriterion1",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "#CCCCCC",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 51,
+					"left": 145,
+					"width": 125,
+					"height": 16,
+					"dataSource": "sCriterion3",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 73,
+					"left": 145,
+					"width": 111,
+					"height": 16,
+					"dataSource": "rReal1",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;-\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 94,
+					"left": 145,
+					"width": 125,
+					"height": 16,
+					"dataSource": "sCriterion4",
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 126,
+					"left": 216,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPost",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"text": "Move",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 149,
+					"left": 218,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 149,
+					"left": 250,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Enter]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 149,
+					"left": 282,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Return]",
+					"text": "enter. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 150,
+					"left": 189,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Command. Trap",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

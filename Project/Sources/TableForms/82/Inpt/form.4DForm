@@ -1,0 +1,44 @@
+{
+	"destination": "detailScreen",
+	"inheritedForm": "BaseInput",
+	"inheritedFormTable": 2,
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 390,
+	"markerBreak": 390,
+	"markerFooter": 390,
+	"events": [
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Field": {
+					"type": "input",
+					"top": 112,
+					"left": 37,
+					"width": 444,
+					"height": 257,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Core_Peek:82]WhoPeeked:2",
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Field"
+			]
+		}
+	]
+}

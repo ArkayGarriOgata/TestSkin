@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <!-- desktop template 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Arkay Portal</title>
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/shuttle/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/shuttle/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/shuttle/assets/vendor/linearicons/style.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/shuttle/assets/css/main.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.png">
+    
+    <!-- ag-grid stuff -->
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+
+
+    <!-- assets -->
+    <script src="/shuttle/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/shuttle/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/shuttle/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/shuttle/assets/scripts/klorofil-common.js"></script>
+
+     <!-- page specific -->
+     <script src="../js_4d/FourDWebRequest.js"></script> 
+     <script src="./js/portal.js"></script>
+
+
+    
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./css/skeleton.css" rel="stylesheet" type="text/css">
+    <link href="./css/desktop.css "rel="stylesheet" type="text/css"> 
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– 
+    <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– 
+    <script language="JavaScript" src="https://arkayportal.com/system/application/cal/calendar_us.js"></script> 
+    <link href="https://arkayportal.com/system/application/cal/calendar.css" rel="stylesheet" type="text/css" >
+    -->
+        
+    
+
+    
+ </head>
+	
+
+ <body>
+  <!-- Toolbar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <div class="toolbar">
+     <h1 id="pageTitle">Arkay Portal</h1>
+
+     
+     
+  </div> <!-- toolbar-->
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+
+                
+<div id="login-container">
+    
+	<fieldset>
+<legend>Please log in:<br>Abra una sesi&oacute;n por favor:</legend>
+
+  <div>  
+  		 <label for="username" class="entry-label">Email:</label>
+  			  		<input type="email" name="username" value="" id="UserNameField" maxlength="60" size="22" class="entry-field"  />
+  		<label for="password" class="entry-label">Password:&nbsp;</label>
+  			  		<input type="password" name="password" value="" id="PasswordField" maxlength="60" size="22" class="entry-field"  />
+  </div>  
+  <div>  
+  <span id="loginError" style="color: crimson;"></span>
+</div>  
+
+    
+  <div id="pwd">  
+    <label><input type="checkbox" name="lang_cb" id="language" value="">&nbsp;Espa&ntilde;ol</label>
+    
+    
+    <input type="button" onclick="doLogin()" name="login_btn" value="Log in" id="login_btn" class="submit-button"  />
+    
+  </div>
+      
+
+
+   
+    <p class="version" id="version"><em>Version beta-20150514.00</em></p>
+
+
+      </fieldset>
+
+</div>
+  <script type="text/javascript">
+    $("#username").focus();
+  </script>    
+    
+
+  </div> <!-- content-->
+  
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<p style="float:left;"><img src="./images/arkay-logo-on-aliceblue.png" width="200" height="57" alt="Arkay Packaging Logo" /></p>
+    
+ </body>
+</html>

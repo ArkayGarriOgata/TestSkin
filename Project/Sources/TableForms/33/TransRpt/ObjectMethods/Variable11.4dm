@@ -1,0 +1,1 @@
+real2t:=Subtotal:C97([Finished_Goods_Transactions:33]Qty:6)

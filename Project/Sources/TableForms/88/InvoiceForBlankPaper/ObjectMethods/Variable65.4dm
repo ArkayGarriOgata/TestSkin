@@ -1,0 +1,1 @@
+tText:=Invoice_CustomerMapping([Customers_Invoices:88]CustomerID:6; [Customers_Invoices:88]BillTo:10)

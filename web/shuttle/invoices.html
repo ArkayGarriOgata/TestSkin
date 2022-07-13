@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!--#4DBASE inc/-->
+	<!--#4DINCLUDE head.html-->
+	<script src='https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js'></script>
+	<link rel='stylesheet' href='https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css'>
+	<link rel='stylesheet' href='https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css'>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!--#4DINCLUDE top.html-->
+		<!--#4DINCLUDE sidebar.html-->
+		<div class="main">
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">Invoices</h3>
+					<div class="panel panel-headline">
+						<div class="panel-body">
+							<!-- Enter here the page content -->
+							<div class='row p-3'>
+								<div class='col-md-4'>
+									<div id='myGrid' style='height: 350px;width:100%;' class='ag-theme-balham'></div>
+								</div>
+								<div class='col-md-8'>
+									<div id='invoiceDetails'></div>
+									<div id='invoiceLines' style='height: 200px;width:100%;' class='ag-theme-balham'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!--#4DINCLUDE footer.html-->
+	</div>
+	<!--#4DINCLUDE scripts.html-->
+	<script type='text/javascript' charset='utf-8'>
+		$(document).ready(function () {
+
+			$("#navInvoices").addClass("active");
+
+			$.getJSON("/checkSession", function (result) {
+				if (!result.success) {
+					document.location.href = result.loginPage;
+				}
+
+			});
+
+
+
+			// specify the columns
+			var columnDefs = [
+				{ headerName: 'Invoice', field: 'Invoice_ID', sortable: true, filter: true, width: 90 },
+				{ headerName: 'Date', field: 'Invoice_Date', sortable: true, filter: true, width: 90 },
+				{ headerName: 'Total', field: 'Total', sortable: true, filter: true, width: 80, type: 'numericColumn' }
+			];
+
+			// let the grid know which columns and what data to use
+			var gridOptions = {
+				columnDefs: columnDefs,
+				rowSelection: 'single',
+				onSelectionChanged: onSelectionChanged,
+				navigateToNextCell: myNavigation
+			};
+
+			// lookup the container we want the Grid to use
+			var eGridDiv = document.querySelector('#myGrid');
+
+			// create the grid passing in the div to use together with the columns & data we want to use
+			new agGrid.Grid(eGridDiv, gridOptions);
+
+			fetch('/api/INVOICES').then(function (response) {
+				return response.json();
+			}).then(function (resp) {
+				gridOptions.api.setRowData(resp.data);
+			})
+
+			function onSelectionChanged() {
+
+				var selectedNodes = gridOptions.api.getSelectedNodes();
+				if (selectedNodes.length > 0) {
+					fillRecordTemplate(selectedNodes[0].data);
+				}
+
+			}
+
+			function fillRecordTemplate(record) {
+				// specify the columns
+				var linesColumnDefs = [
+					{ headerName: 'Product', field: 'product.Product_Name', sortable: true, filter: true, width: 120 },
+					{ headerName: 'Unit Price', field: 'Unit_Price', sortable: true, filter: true, width: 100, type: 'numericColumn' },
+					{ headerName: 'Quantity', field: 'Quantity', sortable: true, filter: true, width: 100, type: 'numericColumn' },
+					{ headerName: 'Discount', valueGetter: '(data.Quantity*data.Unit_Price*(1-data.Discount_Rate)).toFixed(2)', sortable: true, filter: true, width: 100, type: 'numericColumn' },
+					{ headerName: 'Tax', valueGetter: '(data.Quantity*data.Unit_Price*(1-data.Discount_Rate)*(data.Tax_Rate)).toFixed(2)', sortable: true, filter: true, width: 80, type: 'numericColumn' },
+					{ headerName: 'Total', field: 'Total', sortable: true, filter: true, width: 80, align: 'right', type: 'numericColumn' }
+				];
+
+				// let the grid know which columns and what data to use
+				var linesGridOptions = {
+					columnDefs: linesColumnDefs,
+					rowData: [],
+					rowSelection: 'single'
+				};
+
+				// lookup the container we want the Grid to use
+				document.getElementById('invoiceLines').innerHTML = ''; // Force refreshing of grid
+				var linesGridDiv = document.querySelector('#invoiceLines');
+
+				// create the grid passing in the div to use together with the columns & data we want to use
+				new agGrid.Grid(linesGridDiv, linesGridOptions);
+
+				fetch('/api/INVOICES(' + record.Invoice_ID + ')?rel_1=customerDetail&rel_N=lines&rel_N_1=product.Product_Name').then(function (response) {
+					return response.json();
+				}).then(function (data) {
+					recordHtml = '<div class="row">';
+					recordHtml += '<div class="col-md-4">';
+					recordHtml += '<table><tr><th colspan="2"><h2>' + data.Invoice_ID + '</h2></th></tr>';
+					recordHtml += '<tr><th>Date: </th><td class="text-right">' + data.Invoice_Date + '</td></tr>';
+					recordHtml += '<tr><th>Subtotal: </th><td class="text-right">' + data.Sub_total + '</td></tr>';
+					recordHtml += '<tr><th>Tax: </th><td class="text-right">' + data.Tax + '<br>';
+					recordHtml += '<tr><th>Total: </th><td class="text-right">' + data.Total + '</td></tr>';
+					recordHtml += '<tr><th>Number of lines: </th><td class="text-right">' + data.lines.length + '</td></tr>';
+					recordHtml += '</table>';
+					recordHtml += '</div>';
+					recordHtml += '<div class="col-md-8">';
+					recordHtml += '<table width="100%"><tr><th colspan="2"><h2>&nbsp;</h2></th></tr>';
+					recordHtml += '<tr><th>Customer: </th><td width="70%">' + data.customerDetail.First_Name + ' ' + data.customerDetail.Last_Name + '</td></tr>';
+					recordHtml += '<tr><th>Address: </th><td>' + data.customerDetail.Address + '</td></tr>';
+					recordHtml += '<tr><th>City: </th><td>' + data.customerDetail.City + ', ' + data.customerDetail.State_Region + '</td></tr>';
+					recordHtml += '<tr><th>Zip Code: </th><td>' + data.customerDetail.Postal_Code + '</td></tr>';
+					recordHtml += '<tr><th>Country: </th><td>' + data.customerDetail.Country + '</td></tr>';
+					recordHtml += '</table>';
+					recordHtml += '</div>';
+					recordHtml += '</div>';
+					linesGridOptions.api.setRowData(data.lines);
+
+
+					document.getElementById('invoiceDetails').innerHTML = recordHtml;
+				})
+			}
+
+			function myNavigation(params) {
+
+				var previousCell = params.previousCellPosition;
+				var suggestedNextCell = params.nextCellPosition;
+
+				var KEY_UP = 38;
+				var KEY_DOWN = 40;
+				var KEY_LEFT = 37;
+				var KEY_RIGHT = 39;
+
+				switch (params.key) {
+					case KEY_DOWN:
+						previousCell = params.previousCellPosition;
+						// set selected cell on current cell + 1
+						gridOptions.api.forEachNode((node) => {
+							if (previousCell.rowIndex + 1 === node.rowIndex) {
+								node.setSelected(true);
+							}
+						});
+						return suggestedNextCell;
+					case KEY_UP:
+						previousCell = params.previousCellPosition;
+						// set selected cell on current cell - 1
+						gridOptions.api.forEachNode((node) => {
+							if (previousCell.rowIndex - 1 === node.rowIndex) {
+								node.setSelected(true);
+							}
+						});
+						return suggestedNextCell;
+					case KEY_LEFT:
+					case KEY_RIGHT:
+						return suggestedNextCell;
+					default:
+						throw "this will never happen, navigation is always one of the 4 keys above";
+				}
+			}
+		});
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "UserRuntime",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 502,
+					"height": 153,
+					"fill": "#D700FF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture2": {
+					"type": "picture",
+					"top": 7,
+					"left": 14,
+					"width": 39,
+					"height": 39,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26679.png"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 46,
+					"left": 4,
+					"width": 67,
+					"height": 20,
+					"fill": "#0000FF",
+					"stroke": "#FFFF00",
+					"textAlign": "center",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "CUSTOMERS"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 3,
+					"left": 50,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/picture 26849.png"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 2,
+					"left": 4,
+					"width": 69,
+					"height": 65,
+					"dataSource": "bDummy",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/estPalette"
+					},
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 83,
+					"left": 3,
+					"width": 206,
+					"height": 27,
+					"dataSource": "bUpdateCust",
+					"text": "Export Customer Name Lookup",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 119,
+					"left": 3,
+					"width": 206,
+					"height": 27,
+					"dataSource": "bUpdateCust",
+					"text": "Update My Available Customers",
+					"class": "BaseButtons",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 5,
+					"left": 75,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibNew",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 5,
+					"left": 145,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibMod",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 4,
+					"left": 215,
+					"width": 55,
+					"height": 60,
+					"dataSource": "ibRev",
+					"focusable": false,
+					"text": "Review",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"reportPopUp": {
+					"type": "button",
+					"top": 5,
+					"left": 440,
+					"width": 55,
+					"height": 60,
+					"dataSource": "<>ibrm_rpts",
+					"focusable": false,
+					"text": "Report",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "bevel",
+					"method": "ObjectMethods/reportPopUp.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bHelp": {
+					"type": "button",
+					"top": 6,
+					"left": 11,
+					"width": 216,
+					"height": 16,
+					"dataSource": "bHelp",
+					"text": "Help",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bHelp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bNewCust": {
+					"type": "button",
+					"top": 6,
+					"left": 234,
+					"width": 216,
+					"height": 16,
+					"dataSource": "bNewCust",
+					"text": "New Customer",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bNewCust.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bMod": {
+					"type": "button",
+					"top": 30,
+					"left": 11,
+					"width": 216,
+					"height": 16,
+					"dataSource": "bMod",
+					"text": "Modify Customers",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bMod.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bReview": {
+					"type": "button",
+					"top": 30,
+					"left": 234,
+					"width": 216,
+					"height": 16,
+					"dataSource": "bReview",
+					"text": "Review Customers",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bReview.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bReports": {
+					"type": "button",
+					"top": 54,
+					"left": 11,
+					"width": 216,
+					"height": 16,
+					"dataSource": "bReports",
+					"text": "Reports",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bReports.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bUpdate": {
+					"type": "button",
+					"top": 54,
+					"left": 234,
+					"width": 216,
+					"height": 16,
+					"dataSource": "bUpdate",
+					"text": "Update My Available Customers",
+					"class": "Palette_Buttons",
+					"focusable": false,
+					"method": "ObjectMethods/bUpdate.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

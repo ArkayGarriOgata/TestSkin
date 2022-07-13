@@ -1,0 +1,162 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onAfterKeystroke",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Help_View_nOnLoad": {
+					"type": "button",
+					"top": 662,
+					"left": 13,
+					"width": 68,
+					"height": 24,
+					"display": false,
+					"method": "ObjectMethods/Help_View_nOnLoad.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"CorenHList1": {
+					"type": "list",
+					"top": 57,
+					"left": 13,
+					"width": 202,
+					"height": 585,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "CorenHList1",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"class": "FormField",
+					"method": "ObjectMethods/CorenHList1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onGettingFocus"
+					]
+				},
+				"WebArea": {
+					"type": "webArea",
+					"top": 57,
+					"left": 226,
+					"width": 729,
+					"height": 585,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"contextMenu": "none"
+				},
+				"Help_tView_Title": {
+					"type": "input",
+					"top": 6,
+					"left": 226,
+					"width": 517,
+					"height": 20,
+					"class": "Form_Title",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Help_tView_Message": {
+					"type": "input",
+					"top": 31,
+					"left": 226,
+					"width": 517,
+					"height": 14,
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 57,
+					"left": 219,
+					"width": 5,
+					"height": 585,
+					"sizingY": "grow",
+					"events": [
+						"onClick"
+					]
+				},
+				"Help_View_tFind": {
+					"type": "subform",
+					"top": 13,
+					"left": 13,
+					"width": 198,
+					"height": 30,
+					"dataSource": "Help_View_tFind",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Help_View_tFind.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Help_Entr_nEntry": {
+					"type": "pictureButton",
+					"top": 14,
+					"left": 927,
+					"width": 28,
+					"height": 28,
+					"sizingY": "move",
+					"dataSource": "Help_Entr_nEntry",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Skin/Master/NewRound.png",
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Help_Entr_nEntry.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 1,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}
