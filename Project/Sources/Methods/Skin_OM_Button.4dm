@@ -11,14 +11,20 @@ End if   //Done initialize
 
 Case of   //Button
 		
+	: ($tButtonName="Skin_Entr_nTest")
+		
+		Skin_Entr_Test
+		
 	: ($tButtonName="Skin_Entr_nDestination")
 		
 		Skin_Entr_Destination
 		
 	: ($tButtonName="Skin_Entr_nSource")
+		
 		Skin_Entr_Source
 		
 	: ($tButtonName="Skin_Entr_nOnLoad")
+		
 		Skin_Entr_OnLoad
 		
 	: ($tButtonName="Skin_View_nOnLoad")
