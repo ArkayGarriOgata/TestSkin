@@ -11,6 +11,10 @@ End if   //Done initialize
 
 Case of   //Button
 		
+	: ($tButtonName="Skin_Entr_nTest")
+		
+		Skin_Entr_Test
+		
 	: ($tButtonName="Skin_Entr_nDestination")
 		
 		Skin_Entr_Destination
