@@ -1,10 +1,20 @@
 //%attributes = {}
-// Modified from 4d Depot by Steve Andes Jul 6 2022
+//Method: Skin_4State(gOriginal)=>g4State
+//Description:  This method will an image and create a
+//  4 state picture button with it.
+//  ?? Add reference to 4D Depot here ... ??
 
-C_PICTURE:C286($1; $0)
-
-// Original image
-$gOriginal:=$1
+If (True:C214)  //Initialize
+	
+	C_PICTURE:C286($1; $gOriginal; $0; $g4State)
+	
+	C_TEXT:C284($tGroup; $tImage; $tSvg)
+	
+	C_PICTURE:C286($gClick; $gHover; $gDisabled)
+	
+	$gOriginal:=$1
+	
+End if   //Done initialize
 
 $tSvg:=SVG_New
 $tGroup:=SVG_New_group($tSvg)
@@ -28,4 +38,6 @@ TRANSFORM PICTURE:C988($gDisabled; Fade to grey scale:K61:6)
 
 SVG_CLEAR($tSvg)
 
-$0:=$gOriginal/$gClick/$gHover/$gDisabled
+$g4State:=$gOriginal/$gClick/$gHover/$gDisabled
+
+$0:=$g4State
