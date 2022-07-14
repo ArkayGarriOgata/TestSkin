@@ -182,19 +182,6 @@
 					"switchBackWhenReleased": true,
 					"sizingX": "move"
 				},
-				"atSelected": {
-					"type": "list",
-					"left": 13,
-					"top": 111,
-					"width": 373,
-					"height": 192,
-					"events": [
-						"onSelectionChange"
-					],
-					"dataSource": "atSelected",
-					"sizingX": "grow",
-					"sizingY": "grow"
-				},
 				"Text": {
 					"type": "text",
 					"text": "Selected Files",
@@ -202,11 +189,46 @@
 					"left": 12,
 					"width": 90,
 					"height": 16
+				},
+				"Hierarchical List": {
+					"type": "list",
+					"left": 351,
+					"top": 315,
+					"width": 1,
+					"height": 16,
+					"events": [
+						"onSelectionChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 13,
+					"top": 126,
+					"width": 363,
+					"height": 177,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							}
+						}
+					]
 				}
 			}
 		}
 	],
-	"geometryStamp": 126,
+	"geometryStamp": 133,
 	"formSizeAnchor": "Skin_Entr_nOK",
 	"editor": {
 		"activeView": "View 1",
