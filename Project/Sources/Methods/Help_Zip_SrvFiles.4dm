@@ -12,14 +12,14 @@
 
 If (True:C214)
 	
-	C_OBJECT:C1216($1; $oPath)
+	C_OBJECT:C1216($1; $oSource)
 	C_OBJECT:C1216($2; $oDestination)
 	C_OBJECT:C1216($3; $oStatus)
 	
-	$oPath:=$1
+	$oSource:=$1
 	$oDestination:=$2
 	$oStatus:=$3
 	
 End if 
 
-$oStatus:=ZIP Create archive:C1640($oPath; $oDestination)
+$oStatus:=ZIP Create archive:C1640($oSource; $oDestination)

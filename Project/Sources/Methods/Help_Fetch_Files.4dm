@@ -12,12 +12,10 @@
 If (True:C214)
 	
 	//begin on client side with:
+	C_OBJECT:C1216($0; $oSource; $oDestination)
 	C_TEXT:C284($client_call_back)
-	//C_TEXT($serverDocument)
-	C_OBJECT:C1216($serverDocument)
 	C_LONGINT:C283($bizy)
 	C_TEXT:C284($1; $tFilePath)
-	C_OBJECT:C1216($tFile; $tDestination)
 	C_COLLECTION:C1488($cParsePath)
 	$cParsePath:=New collection:C1472()
 	
@@ -36,40 +34,34 @@ Repeat   //wait your turn
 Until ($bizy<1)
 
 $cParsePath:=Split string:C1554($tFilePath; CorektColon)
-
-$serverDocument:=Folder:C1567(Database folder:K5:14)
-
-$localFolder:=Get 4D folder:C485(4D Client database folder:K5:13)
+$oSource:=Folder:C1567(Current resources folder:K5:16)
+$oDestination:=Folder:C1567(4D Client database folder:K5:13)
 
 For each ($lvl; $cParsePath)
 	Case of 
 		: (Substring:C12($lvl; Length:C16($lvl)-3; Length:C16($lvl))=".txt")
-			$serverDocument:=$serverDocument.file($lvl)
+			$oSource:=$oSource.file($lvl)
 		: (Substring:C12($lvl; Length:C16($lvl)-3; Length:C16($lvl))=".pdf")
-			$serverDocument:=$serverDocument.file($lvl)
+			$oSource:=$oSource.file($lvl)
 		Else 
-			$serverDocument:=$serverDocument.folder($lvl)
+			$oSource:=$oSource.folder($lvl)
+			$oDestination:=$oDestination.folder($lvl)
 	End case 
 End for each 
+//$oTestSource:=Folder(Current resources folder).file($tFilePath)
+
+//create destination folder, determine whether this is the clients resource folder or servers resource folder
+$tFPath:=Get 4D folder:C485(Current resources folder:K5:16)+$tFilePath
+//If (Test path name($tFPath)#Is a document)
+//$vhDocRef:=Create document("Journal")
+CREATE FOLDER:C475($tFPath; *)
+//If (OK=1)
+//CLOSE DOCUMENT($vhDocRef)
+//End if 
+//End if
 
 UNREGISTER CLIENT:C649  //belt and suspenders?
 REGISTER CLIENT:C648($client_call_back)
-$id:=Execute on server:C373($serverMethodToRun; <>lMinMemPart; $tFilePath; $localFolder; $oResult)
+$id:=Execute on server:C373($serverMethodToRun; <>lMinMemPart; $methodNameOnClient; $oSource; $oDestination; $oResult)
 
-$0:=$localFolder
-
-//////////////////////////////////////////////////////////////////////////////////////////
-//$tFile:=Folder(Database folder).folder($tPath)
-//$tDestination:=Folder(fk documents folder).folder("amshelp").folder($tPath)
-
-//ZIP Create archive($tFile; $tDestination)
-
-//$archive:=ZIP Read archive($tDestination)
-
-//$folders:=archive.root.folders()
-
-//$files:=$archive.root.files()
-
-//$cFolders:=New collection($folders)
-
-//ZIP Read archive($tDestination)
+$0:=$oDestination
