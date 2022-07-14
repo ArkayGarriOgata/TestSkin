@@ -47,11 +47,11 @@ Case of   // Phase
 			
 			$oLocation:=Help_Fetch_Files($eHelp.PathName)
 			
-			$oArchive:=ZIP Read archive:C1637($oLocation)
+			//$oArchive:=ZIP Read archive($oLocation)
 			
-			$oZipFolder:=$oArchive.root()
+			//$oZipFolder:=$oArchive.root()
 			
-			$oZipFile:=$oZipFolder.files()[0]  //
+			//$oZipFile:=$oZipFolder.files()[0]  //
 			
 			WA OPEN URL:C1020(*; "WebArea"; $eHelp.PathName)
 			
