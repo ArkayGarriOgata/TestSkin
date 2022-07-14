@@ -2,6 +2,10 @@
 //Methd:  ______GarriTest
 //Description:  This method is for testing
 
+$t:=1
+
+$t:="Hello"
+
 //$tCurrent:=
 
 //For each ()  //Sum

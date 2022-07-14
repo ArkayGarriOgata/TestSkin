@@ -6,6 +6,10 @@
 
 If (True:C214)  //Initialize
 	
+	var $gOriginal : Picture
+	
+	var $tGroup; $tImage; $tSvg : Text
+	
 	C_PICTURE:C286($1; $gOriginal; $0; $g4State)
 	
 	C_TEXT:C284($tGroup; $tImage; $tSvg)
