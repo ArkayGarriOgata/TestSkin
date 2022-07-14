@@ -29,9 +29,10 @@
 					"top": 16,
 					"width": 330,
 					"height": 17,
-					"dataSource": "tSource",
+					"dataSource": "Form:C1466.tSource",
 					"enterable": false,
-					"events": []
+					"events": [],
+					"sizingX": "grow"
 				},
 				"Skin_Entr_nSource": {
 					"type": "button",
@@ -51,7 +52,8 @@
 					"top": 49,
 					"width": 330,
 					"height": 17,
-					"dataSource": "tDestination"
+					"dataSource": "Form:C1466.tDestination",
+					"sizingX": "grow"
 				},
 				"Skin_Entr_nDestination": {
 					"type": "button",
@@ -62,7 +64,8 @@
 					"height": 20,
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/Skin_Entr_nDestination.4dm"
 				},
 				"Skin_Entr_nOnLoad": {
 					"type": "button",
@@ -158,7 +161,8 @@
 					"events": [
 						"onClick"
 					],
-					"switchBackWhenReleased": true
+					"switchBackWhenReleased": true,
+					"sizingX": "move"
 				},
 				"Skin_Entr_nCancel": {
 					"type": "pictureButton",
@@ -175,7 +179,8 @@
 					"events": [
 						"onClick"
 					],
-					"switchBackWhenReleased": true
+					"switchBackWhenReleased": true,
+					"sizingX": "move"
 				},
 				"atSelected": {
 					"type": "list",
@@ -186,7 +191,9 @@
 					"events": [
 						"onSelectionChange"
 					],
-					"dataSource": "atSelected"
+					"dataSource": "atSelected",
+					"sizingX": "grow",
+					"sizingY": "grow"
 				},
 				"Text": {
 					"type": "text",
@@ -199,7 +206,7 @@
 			}
 		}
 	],
-	"geometryStamp": 120,
+	"geometryStamp": 126,
 	"formSizeAnchor": "Skin_Entr_nOK",
 	"editor": {
 		"activeView": "View 1",
