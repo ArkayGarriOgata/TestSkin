@@ -1,8 +1,6 @@
 //%attributes = {}
-// Source button: opens finder and allows selection on one or more files, or an
-// entire folder.
-// This selection will only allow the user to select picture files; however, if
-// a folder is selected, only the picture files within the folder will be recognized
+// Source button: opens finder and allows selection on one or more files
+// This selection will only allow the user to select picture files
 
 // Desitination Button: opens finder and allows the selection of a folder
 // for the destination of the processed files (those selected from the "Source" button)

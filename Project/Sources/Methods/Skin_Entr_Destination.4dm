@@ -1,5 +1,6 @@
 //%attributes = {}
-
+//  Method:  Skin_Entr_Destiniation()
+//  Description:  Prompts for a folder selection and stores it to the Form
 
 If (True:C214)  // start initialize
 	

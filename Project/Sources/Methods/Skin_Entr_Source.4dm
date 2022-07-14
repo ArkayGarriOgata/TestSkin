@@ -1,6 +1,6 @@
 //%attributes = {}
-
-
+//  Method:  Skin_Entr_Source()
+//  Description:  Prompts for file selection and stores it to the Form
 
 If (True:C214)  // start initialize
 	
