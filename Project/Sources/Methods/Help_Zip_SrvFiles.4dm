@@ -21,5 +21,10 @@ If (True:C214)
 	$oStatus:=$3
 	
 End if 
+TRACE:C157
+
+$hDocReference:=Open document:C264()
+
+CLOSE DOCUMENT:C267($hDocReference)
 
 $oStatus:=ZIP Create archive:C1640($oSource; $oDestination)
