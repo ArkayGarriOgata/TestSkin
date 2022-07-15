@@ -26,8 +26,8 @@
 			"objects": {
 				"Skin_Demo_nAcceptRound": {
 					"type": "pictureButton",
-					"top": 356,
-					"left": 348,
+					"top": 335,
+					"left": 359,
 					"width": 30,
 					"height": 28,
 					"sizingY": "move",
@@ -298,7 +298,7 @@
 					"left": 13,
 					"top": 13,
 					"width": 183,
-					"height": 308,
+					"height": 350,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -306,6 +306,7 @@
 						"onSelectionChange"
 					],
 					"listboxType": "collection",
+					"bottom": 363,
 					"columns": [
 						{
 							"header": {
@@ -475,15 +476,16 @@
 				"Skin_Demo_nDisable": {
 					"type": "checkbox",
 					"text": "Disable",
-					"top": 330,
-					"left": 13,
+					"top": 344,
+					"left": 216,
 					"width": 68,
 					"height": 24,
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.nDisable",
-					"style": "regular"
+					"dataSource": "",
+					"style": "regular",
+					"method": "ObjectMethods/Skin_Demo_nDisable.4dm"
 				},
 				"Skin_Demo_Title41": {
 					"type": "text",
@@ -566,22 +568,10 @@
 					"height": 13,
 					"fontTheme": "additional"
 				},
-				"Button": {
-					"type": "button",
-					"text": "Button",
-					"top": 362,
-					"left": 152,
-					"width": 94,
-					"height": 29,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button.4dm"
-				},
 				"Skin_Demo_nOnLoad": {
 					"type": "button",
 					"text": "On Load",
-					"top": 408,
+					"top": 399,
 					"left": 13,
 					"width": 70,
 					"height": 24,
@@ -594,12 +584,13 @@
 			}
 		}
 	],
-	"geometryStamp": 422,
+	"geometryStamp": 443,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"formSizeAnchor": "Skin_Demo_nAcceptRound"
 }
