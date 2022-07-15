@@ -10,6 +10,15 @@ If (True:C214)  //Initialize
 End if   //Done initialize
 
 Case of   //Button
+		
+	: ($tButtonName="Skin_Demo_nAcceptRound")
+		
+		Skin_Demo_AcceptRound
+		
+	: ($tButtonName="Skin_Demo_nOnLoad")
+		
+		Skin_Demo_OnLoad
+		
 	: ($tButtonName="Skin_Entr_nCancel")
 		
 		Skin_Entr_Clear
