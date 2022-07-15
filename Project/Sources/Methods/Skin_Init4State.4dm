@@ -3,6 +3,14 @@
 // Description:  This method....
 //. ??? Ref 4D source  ???
 
+//For each ($currentSource; Form.cSources)
+//$atSourcePath
+//End for each 
+
+//$tSourcePath:=Get 4D folder(Current resources folder)+"Skin"+Folder separator+"Master"+Folder separator
+//DOCUMENT LIST($tSourcePath; $atSourcePath; Ignore invisible | Absolute path)
+
+
 If (True:C214)  //Initialize
 	
 	C_LONGINT:C283($nFile; $nNumberOfFiles)
@@ -13,13 +21,14 @@ If (True:C214)  //Initialize
 	
 	ARRAY TEXT:C222($atSourcePath; 0)
 	
+	ARRAY TEXT:C222($atSourceFamily; 0)
+	
 End if   //Done initialize
 
-$tSourcePath:=Get 4D folder:C485(Current resources folder:K5:16)+"Skin"+Folder separator:K24:12+"pngsrc"+Folder separator:K24:12
+COLLECTION TO ARRAY:C1562(Form:C1466.cSources; $atSourcePath; "pathName")
+COLLECTION TO ARRAY:C1562(Form:C1466.cSources; $atSourceFamily; "FamilyName")
 
-DOCUMENT LIST:C474($tSourcePath; $atSourcePath; Ignore invisible:K24:16 | Absolute path:K24:14)
-
-$tDestinationPath:=Get 4D folder:C485(Current resources folder:K5:16)+"Skin"+Folder separator:K24:12+"TestSkin"+Folder separator:K24:12
+$tDestinationPath:=Get 4D folder:C485(Current resources folder:K5:16)+"Skin"+Folder separator:K24:12+$atSourceFamily{1}+Folder separator:K24:12
 
 CREATE FOLDER:C475($tDestinationPath; *)
 

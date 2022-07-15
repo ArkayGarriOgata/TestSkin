@@ -15,4 +15,6 @@ End if   // done initialize
 $tDestinationFolder:=Select folder:C670()
 Form:C1466.tDestination:=$tDestinationFolder
 
+Skin_Entr_Manager
+
 

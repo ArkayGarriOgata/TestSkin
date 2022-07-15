@@ -4,34 +4,8 @@
 If (True:C214)  // Initialize
 	
 	C_TEXT:C284($1; $tPhase)
-	
-	//C_BOOLEAN($bExpanded)
-	
-	//C_LONGINT($nItemReference)
-	//C_LONGINT($nNumberOfProperites; $nNumberOfValues)
-	//C_LONGINT($nProperty; $nSubListReference)
-	//C_LONGINT($nValue)
-	
-	//C_OBJECT($esHelp; $eHelp)
-	
-	//C_POINTER($patHListKey99)
-	
-	//C_TEXT($tHelp_Key)
-	//C_TEXT($tItem)
-	//C_TEXT($tTableName; $tQuery)
-	
-	//ARRAY TEXT($atProperty; 0)
-	//ARRAY LONGINT($anPropertyType; 0)
-	
-	//ARRAY TEXT($atValue; 0)
-	
 	$tPhase:=$1
 	
-	//$tTableName:=Table name(->[Help])
-	//$tQuery:=CorektBlank
-	
-	//$esHelp:=New object()
-	//$eHelp:=New object()
 	
 End if   // Done initialize 
 
@@ -41,9 +15,9 @@ Case of   // Phase
 		
 	: ($tPhase=CorektPhaseClear)
 		
-		CLEAR LIST:C377(atSelected; *)
+		Form:C1466.tSource:=CorektBlank
+		Form:C1466.cSources:=CorektBlank
 		
-		//Form.
-		
+		Skin_Entr_Manager
 		
 End case 

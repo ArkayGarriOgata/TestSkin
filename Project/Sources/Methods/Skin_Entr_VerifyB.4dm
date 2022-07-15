@@ -9,7 +9,6 @@ End if
 
 Case of 
 	: (Form:C1466.tSource=CorektBlank)
-	: (Form:C1466.tDestination=CorektBlank)
 	Else 
 		$0:=True:C214
 End case 
