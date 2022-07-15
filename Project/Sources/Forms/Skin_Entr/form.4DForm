@@ -192,7 +192,7 @@
 					"width": 90,
 					"height": 16
 				},
-				"List Box": {
+				"SelectionView": {
 					"type": "listbox",
 					"left": 13,
 					"top": 113,
@@ -206,34 +206,32 @@
 					],
 					"sizingX": "grow",
 					"sizingY": "grow",
+					"dataSource": "Form:C1466.cSources",
+					"method": "ObjectMethods/SelectionView.4dm",
+					"listboxType": "collection",
+					"currentItemSource": "tCurrentItem",
+					"currentItemPositionSource": "nCurrentItemPosition",
+					"selectedItemsSource": "cSelectedItems",
 					"columns": [
 						{
 							"header": {
 								"text": "Source",
 								"name": "Header1",
-								"dataSource": "Form:C1466.tSourceName"
+								"dataSource": "Form:C1466.sourceHeader"
 							},
 							"name": "Column1",
 							"footer": {
 								"name": "Footer1"
-							}
-						},
-						{
-							"header": {
-								"name": "Header2",
-								"text": ""
 							},
-							"name": "Column2",
-							"footer": {
-								"name": "Footer2"
-							}
+							"width": 128,
+							"dataSource": "This:C1470.pathName"
 						}
 					]
 				}
 			}
 		}
 	],
-	"geometryStamp": 133,
+	"geometryStamp": 135,
 	"formSizeAnchor": "Skin_Entr_nOK",
 	"editor": {
 		"activeView": "View 1",

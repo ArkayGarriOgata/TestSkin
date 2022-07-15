@@ -14,7 +14,10 @@ End if   // done initialize
 Select document:C905(""; ".png"; "Select Files"; Multiple files:K24:7; $atDocuments)
 Form:C1466.tSource:=Convert path POSIX to system:C1107($atDocuments{1})
 
-ARRAY TO COLLECTION:C1563($cFormPathnames; $atDocuments)
+ARRAY TO COLLECTION:C1563($cFormPathnames; $atDocuments; "pathName")
 Form:C1466.cSources:=$cFormPathnames
+
+
+Skin_Entr_ListBox
 
 

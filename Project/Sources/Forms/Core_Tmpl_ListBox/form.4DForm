@@ -294,6 +294,61 @@
 					"height": 33,
 					"stroke": "#000000",
 					"text": "\r"
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 15,
+					"top": 278,
+					"width": 389,
+					"height": 241,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.cColumnData",
+					"currentItemSource": "tCurrentSelection",
+					"currentItemPositionSource": "nCurrentPosition",
+					"selectedItemsSource": "cSelectedItems",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.CollectionPropertyName"
+						}
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"text": "ListBox with collection:",
+					"top": 291,
+					"left": 458,
+					"width": 178,
+					"height": 31
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Copy this listbox and take note of the attribute names under the Data Sources header in the properties.  These Data Sources are avaliable when a selection is made within the ListBox",
+					"top": 332,
+					"left": 460,
+					"width": 141,
+					"height": 169
+				},
+				"Text6": {
+					"type": "text",
+					"text": "The column expression This.CollectionPropertyName is attempting to access a collection set to the current Form object.  Change this expression to fit your Form object",
+					"top": 332,
+					"left": 599,
+					"width": 141,
+					"height": 169
 				}
 			}
 		}
@@ -316,5 +371,10 @@
 			"View 8": {},
 			"View 9": {}
 		}
+	},
+	"geometryStamp": 13,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }
