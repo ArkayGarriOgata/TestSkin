@@ -6,7 +6,13 @@ If (True:C214)  // Initialize
 	
 	C_TEXT:C284($1; $tPhase)
 	
+	C_LONGINT:C283($nRow; $nNumberOfRows)
+	C_LONGINT:C283($nColumn; $nNumberOfColumns)
+	
 	$tPhase:=$1
+	
+	$nNumberOfColumns:=3
+	$nNumberOfRows:=6
 	
 End if   // Done initialize 
 
@@ -23,5 +29,6 @@ Case of   // Phase
 		Skin_Demo_Manager
 		
 	: ($tPhase=CorektPhaseClear)
+		
 		
 End case   //Done phase
