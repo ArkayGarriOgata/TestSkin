@@ -3,13 +3,6 @@
 // Description:  This method....
 //. ??? Ref 4D source  ???
 
-//For each ($currentSource; Form.cSources)
-//$atSourcePath
-//End for each 
-
-//$tSourcePath:=Get 4D folder(Current resources folder)+"Skin"+Folder separator+"Master"+Folder separator
-//DOCUMENT LIST($tSourcePath; $atSourcePath; Ignore invisible | Absolute path)
-
 
 If (True:C214)  //Initialize
 	
