@@ -5,7 +5,6 @@
 If (True:C214)  // Initalize
 	
 	C_BOOLEAN:C305($0; $bVerify)
-	
 	$bVerify:=False:C215
 	
 End if   // Done initialize
