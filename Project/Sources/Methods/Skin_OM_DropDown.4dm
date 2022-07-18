@@ -7,10 +7,10 @@ Description:  This method will handle dropdowns
 
 If (True:C214)  //Initialize
 	
-	var ($1; $tDropDownName : Text)
+	($1; $tDropDownName : Text)
 	
 	
-	var ($nTable; $nField : )
+	var ($nTable; $nField : l)
 	
 	$patDropDown:=$1
 	
