@@ -1,6 +1,7 @@
 //%attributes = {}
-// Created by Steve Andes Jul 6 2022
-// 4 state button image converted to 4 seperate files named accordingly
+// Method:  Skin_Init4State
+// Description:  This meathod takes a file path to a 4-state button picture files and
+// slices it into 4 separate icon files, each with the proper button position name
 
 $filePath:=$2
 
@@ -20,13 +21,21 @@ For ($count; 0; 300; 100)
 	// determine how to name each individual file
 	Case of 
 		: ($count=0)
+			
 			$finalPath:=Insert string:C231($filePath; "-enable"; $pos)
+			
 		: ($count=100)
+			
 			$finalPath:=Insert string:C231($filePath; "-click"; $pos)
+			
 		: ($count=200)
+			
 			$finalPath:=Insert string:C231($filePath; "-hover"; $pos)
+			
 		: ($count=300)
+			
 			$finalPath:=Insert string:C231($filePath; "-disable"; $pos)
+			
 	End case 
 	
 	// write cropped image to temp path

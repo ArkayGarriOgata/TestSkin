@@ -1,7 +1,8 @@
 //%attributes = {}
 // Method:  Skin_Init4State
-// Description:  This method....
-//. ??? Ref 4D source  ???
+// Description:  This method takes the selection made by the user and determines the source and destination for the
+// converstion process from single icon to 4-state button icon
+// https://github.com/miyako/4d-component-generate-icon // reference code from 4d
 
 
 If (True:C214)  //Initialize
@@ -19,6 +20,7 @@ If (True:C214)  //Initialize
 End if   //Done initialize
 
 COLLECTION TO ARRAY:C1562(Form:C1466.cSources; $atSourcePath; "pathName")
+
 COLLECTION TO ARRAY:C1562(Form:C1466.cSources; $atSourceFamily; "FamilyName")
 
 $tDestinationPath:=Get 4D folder:C485(Current resources folder:K5:16)+"Skin"+Folder separator:K24:12+$atSourceFamily{1}+Folder separator:K24:12
