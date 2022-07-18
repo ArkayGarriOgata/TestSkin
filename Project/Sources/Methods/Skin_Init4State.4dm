@@ -3,13 +3,6 @@
 // Description:  This method....
 //. ??? Ref 4D source  ???
 
-//For each ($currentSource; Form.cSources)
-//$atSourcePath
-//End for each 
-
-//$tSourcePath:=Get 4D folder(Current resources folder)+"Skin"+Folder separator+"Master"+Folder separator
-//DOCUMENT LIST($tSourcePath; $atSourcePath; Ignore invisible | Absolute path)
-
 
 If (True:C214)  //Initialize
 	
@@ -42,11 +35,11 @@ For ($nFile; 1; $nNumberOfFiles)  //Image
 		
 		READ PICTURE FILE:C678($tSourcePath; $gImage)
 		
-		$tDestinationPath:=$tDestinationPath+Get picture file name:C1171($gImage)  // set the destination name
+		$tFinalDestinationPath:=$tDestinationPath+Get picture file name:C1171($gImage)  // set the destination name
 		
 		$g4State:=Skin_4State($gImage)
 		
-		WRITE PICTURE FILE:C680($tDestinationPath; $g4State)
+		WRITE PICTURE FILE:C680($tFinalDestinationPath; $g4State)
 		
 	End if   //Done picture
 	

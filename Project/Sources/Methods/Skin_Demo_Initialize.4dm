@@ -14,6 +14,11 @@ If (True:C214)  // Initialize
 	$nNumberOfColumns:=3
 	$nNumberOfRows:=6
 	
+	$oFamily:=New object:C1471()
+	
+	
+	Form:C1466.oFamily:=$oFamily
+	
 End if   // Done initialize 
 
 Case of   // Phase
@@ -25,6 +30,13 @@ Case of   // Phase
 	: ($tPhase=CorektPhaseInitialize)
 		
 		Skin_Demo_Initialize(CorektPhaseClear)
+		
+		//Get list of familys (folder names in skin)
+		
+		//Load the family
+		
+		Skin_Demo_LoadFamily
+		
 		
 		Skin_Demo_Manager
 		

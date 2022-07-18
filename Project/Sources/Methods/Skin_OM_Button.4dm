@@ -1,6 +1,8 @@
 //%attributes = {}
-//Method:  Skin_OM_Button(tButtonName)
-//Description: This method handles buttons in the Skin module
+/*
+Method:  Skin_OM_Button(tButtonName)
+Description: This method handles buttons in the Skin module
+*/
 
 If (True:C214)  //Initialize
 	

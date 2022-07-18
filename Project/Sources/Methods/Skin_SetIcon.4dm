@@ -21,6 +21,8 @@ Description:  This method will set a picture button icon.
 If (True:C214)  //Initialize
 	
 	C_TEXT:C284($1; $tButtonName)
+	C_TEXT:C284($2; $tIcon)
+	C_TEXT:C284($3; $tFamily)
 	
 	C_LONGINT:C283($nFlags)
 	C_LONGINT:C283($nSwitchBackWhenReleased; $nSwitchWhenRollOver)
@@ -71,7 +73,7 @@ If (True:C214)  //Initialize
 	
 	$nFlags:=$nSwitchWhenRollOver+$nSwitchBackWhenReleased+$nUseLastFrameAsDisabled
 	
-	$tPathName:="#Skin"+Folder separator:K24:12+$tFamily+Folder separator:K24:12++$tIcon
+	$tPathName:="#Skin"+Folder separator:K24:12+$tFamily+Folder separator:K24:12+$tIcon
 	
 	$tButtonFormat:="1; 4;"+$tPathName+";"+String:C10($nFlags)
 	

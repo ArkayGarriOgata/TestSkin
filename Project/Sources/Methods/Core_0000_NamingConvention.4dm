@@ -129,7 +129,7 @@
 // Pick   -  When user will pick the best option
 // Select -  When code will select based on users pick (think LISTBOX SELECT ROW)
 
-// Attribute - Is a quality given to an entity selection.
+// Attribute - Is a quality given to an entity or entity selection.
 // Property  - Is a quality given to an object.
 // Inherent  - Is an object that is derived from an entity or object.
 

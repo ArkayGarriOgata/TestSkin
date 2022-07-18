@@ -8,6 +8,8 @@ Notes: This is just used as a way to dynamically load a button
 
 If (True:C214)  //Initialize
 	
+	C_LONGINT:C283($nFormEvent)
+	
 	$nFormEvent:=Form event code:C388
 	
 End if   //Done initialize

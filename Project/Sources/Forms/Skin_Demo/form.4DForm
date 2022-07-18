@@ -285,20 +285,20 @@
 					"picture": "var:Skin_Demo_tPath",
 					"rowCount": 1
 				},
-				"Skin_Demo_tFamily": {
+				"Skin_Demo_Family": {
 					"type": "text",
 					"text": "Family",
-					"top": 23,
-					"left": 19,
-					"width": 73,
+					"top": 12,
+					"left": 13,
+					"width": 46,
 					"height": 16
 				},
 				"List Box": {
 					"type": "listbox",
 					"left": 13,
-					"top": 13,
+					"top": 44,
 					"width": 183,
-					"height": 350,
+					"height": 319,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -580,11 +580,22 @@
 					],
 					"method": "ObjectMethods/Skin_Demo_nOnLoad.4dm",
 					"visibility": "hidden"
+				},
+				"Form.oFamily.Family": {
+					"type": "dropdown",
+					"left": 67,
+					"top": 10,
+					"width": 129,
+					"height": 21,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object"
 				}
 			}
 		}
 	],
-	"geometryStamp": 443,
+	"geometryStamp": 454,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
