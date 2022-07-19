@@ -11,6 +11,4 @@ If (True:C214)  //Initialize
 	
 End if   //Done initialize
 
-//Get the icons from family folder
 
-//display them in listbox
