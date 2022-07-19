@@ -11,11 +11,6 @@ If (True:C214)  //Initialize
 	
 End if   //Done initialize
 
-<<<<<<< HEAD
 //Get the icons from family folder
 
 //display them in listbox
-=======
-If (True:C214)
-End if 
->>>>>>> Skin_Demo
