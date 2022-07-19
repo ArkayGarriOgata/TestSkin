@@ -291,9 +291,10 @@
 					"top": 12,
 					"left": 13,
 					"width": 46,
-					"height": 16
+					"height": 16,
+					"fontWeight": "normal"
 				},
-				"List Box": {
+				"Skin_Demo_Icon": {
 					"type": "listbox",
 					"left": 13,
 					"top": 44,
@@ -307,16 +308,39 @@
 					],
 					"listboxType": "collection",
 					"bottom": 363,
+					"dataSource": "Form:C1466.cIcon",
+					"currentItemSource": "Form:C1466.tIconCurrentItem",
+					"currentItemPositionSource": "Form:C1466.nIconCurrentItemPosition",
+					"selectedItemsSource": "Form:C1466.cIconSelectedItem",
+					"selectionMode": "single",
 					"columns": [
 						{
 							"header": {
-								"text": "Header1",
-								"name": "Header1"
+								"text": "√",
+								"name": "Skin_Demo_IconCheck"
 							},
-							"name": "Column1",
+							"name": "Skin_Demo_bIconCheck",
 							"footer": {
 								"name": "Footer1"
-							}
+							},
+							"width": 39,
+							"dataSource": "This:C1470.bIconCheck",
+							"dataSourceTypeHint": "boolean",
+							"enterable": false,
+							"resizable": false,
+							"truncateMode": "none"
+						},
+						{
+							"header": {
+								"name": "Skin_Demo_Icon1",
+								"text": "Icon"
+							},
+							"name": "Skin_Demo_tIcon",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.tIcon",
+							"enterable": false
 						}
 					]
 				},
@@ -374,7 +398,8 @@
 					"top": 12,
 					"left": 207,
 					"width": 55,
-					"height": 16
+					"height": 16,
+					"fontWeight": "normal"
 				},
 				"Skin_Demo_Family2": {
 					"type": "text",
@@ -382,7 +407,8 @@
 					"top": 12,
 					"left": 272,
 					"width": 55,
-					"height": 16
+					"height": 16,
+					"fontWeight": "normal"
 				},
 				"Skin_Demo_Family3": {
 					"type": "text",
@@ -390,7 +416,8 @@
 					"top": 12,
 					"left": 337,
 					"width": 55,
-					"height": 16
+					"height": 16,
+					"fontWeight": "normal"
 				},
 				"Skin_Demo_Title11": {
 					"type": "text",
@@ -597,7 +624,7 @@
 			}
 		}
 	],
-	"geometryStamp": 455,
+	"geometryStamp": 463,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

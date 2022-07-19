@@ -1,8 +1,14 @@
 //%attributes = {}
-//  Method:  Skin_Entr_Source()
-//  Description:  Prompts for file selection and stores it to the Form
+/*
+ Method:  Skin_Entr_Source()
+ Description:  Prompts for file selection and stores it to the Form
+*/
 
-If (True:C214)  // start initialize
+If (True:C214)  // Initialize
+	
+	C_COLLECTION:C1488($cFormFamily; $cFormPathnames)
+	
+	C_LONGINT:C283($nPathname; $nPathParts)
 	
 	ARRAY TEXT:C222($atDocuments; 0)
 	
@@ -10,8 +16,7 @@ If (True:C214)  // start initialize
 	
 	$cFormFamily:=New collection:C1472()
 	
-End if   // done initialize
-
+End if   // Done initialize
 
 Select document:C905(""; ".png"; "Select Files"; Multiple files:K24:7; $atDocuments)
 
@@ -27,9 +32,9 @@ End if
 
 ARRAY TO COLLECTION:C1563($cFormPathnames; $atDocuments; "pathName")
 
-For ($nCollCount; 0; $cFormPathnames.count()-1; 1)
+For ($nPathname; 0; $cFormPathnames.count()-1; 1)
 	
-	OB SET:C1220($cFormPathnames[$nCollCount]; "FamilyName"; $tSplitPath[$nPathParts-2])
+	OB SET:C1220($cFormPathnames[$nPathname]; "FamilyName"; $tSplitPath[$nPathParts-2])
 	
 End for 
 

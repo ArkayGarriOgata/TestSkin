@@ -2,26 +2,20 @@
 /*
 Method:  Skin_OM_DropDown(tDropDown)
 Description:  This method will handle dropdowns
-
 */
 
 If (True:C214)  //Initialize
 	
-	($1; $tDropDownName : Text)
+	C_TEXT:C284($1; $tDropDownName)
 	
-	
-	var ($nTable; $nField : l)
-	
-	$patDropDown:=$1
-	
-	RESOLVE POINTER:C394($patDropDown; $tDropDownName; $nTable; $nField)
+	$tDropDownName:=$1
 	
 End if   //Done Initialize
 
 Case of   //Dropdown
 		
-	: ($tDropDownName="UsSp_atEntry_Category")
+	: ($tDropDownName="Skin_Demo_atFamily")
 		
-		UsSp_Entry_Category
+		Skin_Demo_Family
 		
 End case   //Done Dropdown
